@@ -4109,6 +4109,11 @@
         topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT_Technical
   - name: EVS Neuron NAP - PROTECT
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
+  - name: EVS Neuron NAP - SHUFFLE
+    topicUid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE
+    items:
+    - name: EVS Neuron NAP - SHUFFLE Technical
+      topicUid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE_Technical
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
   - name: EVS XT Access
@@ -10726,6 +10731,9 @@
   items:
   - name: TestTree StreamProbe
     topicUid: Connector_help_TestTree_StreamProbe
+    items:
+    - name: TestTree StreamProbe Technical
+      topicUid: Connector_help_TestTree_StreamProbe_Technical
 - name: Tetronik
   items:
   - name: Tetronik DAKS
@@ -10865,6 +10873,11 @@
     topicUid: Connector_help_Tredess_CS_-_Transmitter
   - name: Tredess FS
     topicUid: Connector_help_Tredess_FS
+  - name: Tredess MultiTX
+    topicUid: Connector_help_Tredess_MultiTX
+    items:
+    - name: Tredess MultiTX Technical
+      topicUid: Connector_help_Tredess_MultiTX_Technical
   - name: Tredess Redundant Clock Reference
     topicUid: Connector_help_Tredess_Redundant_Clock_Reference
 - name: Trilithic
@@ -11668,6 +11681,11 @@
     items:
     - name: ZDF Prismon Mapper Technical
       topicUid: Connector_help_ZDF_Prismon_Mapper_Technical
+  - name: ZDF Room Switching Manager
+    topicUid: Connector_help_ZDF_Room_Switching_Manager
+    items:
+    - name: ZDF Room Switching Manager Technical
+      topicUid: Connector_help_ZDF_Room_Switching_Manager_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
