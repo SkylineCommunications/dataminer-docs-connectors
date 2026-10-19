@@ -121,3 +121,7 @@ This page contains the **Power Supply Status Table**, which displays data concer
 ### Setting Page
 
 This page contains several settings that can be used to configure the device, including a **reset** option.
+
+## DataMiner Connectivity Framework
+
+The 2.0.2.X and 2.1.1.X+ ranges of the Evertz Xenon Switch connector supports the usage of DCF.
