@@ -36,11 +36,9 @@ This connector cannot be used to create a standalone element. You need to create
 
 ### User Terminals Page
 
-The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which a Starlink Enterprise Account element is actively querying the Starlink API.
+The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which a Starlink Enterprise Account element is actively querying the Starlink API. Telemetry is polled every minute and stored using history sets for accurate backpolling. 
 
-The Telemetry API provides the current user terminals and is polled every minute. The telemetry content is stored using history sets for accurate backpolling. If a terminal is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
-
-Terminals that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
+If a terminal is no longer present in the API response, the connector will retain it in the table for as long as the **Terminal Retention Period** parameter defines to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
 User terminals for which the Timestamp column shows **N/A** are returned by the Management API and not by the Telemetry API. This means no telemetry (Signal Quality, Downlink Throughput, etc.) can be shown for these.
 
