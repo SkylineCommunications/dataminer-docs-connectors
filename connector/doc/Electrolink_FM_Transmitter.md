@@ -1,5 +1,5 @@
 ---
-uid: connector_Electrolink_FM_Transmitter_100W
+uid: connector_Electrolink_FM_Transmitter
 ---
 # Electrolink FM Transmitter 100W
 
