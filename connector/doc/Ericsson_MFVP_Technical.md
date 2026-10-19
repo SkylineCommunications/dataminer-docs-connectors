@@ -38,7 +38,7 @@ MDT API (HTTPS):
 
 This connector uses two HTTPS connections and requires the following input during element creation.
 
-HTTP CONNECTION:
+HTTPS CONNECTION:
 
 - **IP address/host**: `https://<IP of the destination>`.
 - **IP port**: The IP port of the destination (default: 30001).
@@ -57,7 +57,7 @@ For both connections to work, you will also need to go to the element's **Featur
 
 This connector uses five HTTPS connections and requires the following input during element creation.
 
-HTTP CONNECTION:
+HTTPS CONNECTION:
 
 - **IP address/host**: `https://<IP of the destination>`.
 - **IP port**: The IP port of the destination (default: 30001).
@@ -78,7 +78,7 @@ After element creation, go to the **Features** page and enable or disable the di
 
 If you encounter any issues after the element has been configured, check whether the **API Versions** parameter on the Features page matches the **supported firmware**.
 
-### Initialization - Range 1.2.0.x, 1.2.1.x, and 1.3.0.x
+### Initialization - Range 1.2.0.x
 
 After element creation, go to the **Features** page and set the **username and password** for both API groups.
 
@@ -97,7 +97,7 @@ This system implementation covers two different HTTPS interfaces with different 
 > [!NOTE]
 > If the element is properly authenticated, but Stream Viewer still shows **400 HTTP Bad Request** errors, **use range 1.1.0.x** instead. In this situation, an update action on behalf of the vendor is needed.
 
-### Initialization - Range 1.2.1.x
+### Initialization - Range  1.2.1.x and 1.3.0.x
 
 After element creation, go to the **Features** page and set the username and password for all three API groups.
 
