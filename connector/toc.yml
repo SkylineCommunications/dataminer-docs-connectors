@@ -4109,6 +4109,11 @@
         topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT_Technical
   - name: EVS Neuron NAP - PROTECT
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
+  - name: EVS Neuron NAP - SHUFFLE
+    topicUid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE
+    items:
+    - name: EVS Neuron NAP - SHUFFLE Technical
+      topicUid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE_Technical
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
   - name: EVS XT Access
