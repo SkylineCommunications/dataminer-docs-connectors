@@ -6,28 +6,6 @@ uid: Connector_help_Starlink_Enterprise_-_User_Terminal
 
 The Starlink Enterprise - User Terminal connector is exported by the parent connector [Starlink Enterprise](xref:Connector_help_Starlink_Enterprise). For each known user terminal, a separate child element (or "DVE", i.e., dynamic virtual element) using this connector will automatically be created. These DVEs contain only data related to the user terminal.
 
-## About
-
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | API V1             |
-| 1.0.1.x | API V1             |
-| 1.0.2.x | API V1             |
-| 1.0.3.x | API V1             |
-| 1.1.0.x | API V2             |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|-------------------- |
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
-| 1.0.1.x | No              | Yes                 | -                 | -                   |
-| 1.0.2.x | No              | Yes                 | -                 | -                   |
-| 1.0.3.x | No              | Yes                 | -                 | -                   |
-| 1.1.0.x | No              | Yes                 | -                 | -                   |
-
 ## Configuration
 
 ### Initialization

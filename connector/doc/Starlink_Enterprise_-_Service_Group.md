@@ -6,20 +6,6 @@ uid: Connector_help_Starlink_Enterprise_-_Service_Group
 
 The Starlink Enterprise - Service Group connector is exported by the parent connector [Starlink Enterprise](xref:Connector_help_Starlink_Enterprise). For each known service group, a separate child element (or "DVE", i.e., dynamic virtual element) using this connector will automatically be created. These DVEs contain only data related to the service group.
 
-## About
-
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.1.0.x | API V2             |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|-------------------- |
-| 1.1.0.x | No              | Yes                 | -                 | -                   |
-
 ## Configuration
 
 ### Initialization

@@ -24,26 +24,6 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 > [!TIP]
 > To optimize your use of this connector, we recommend deploying our **Standard Product Solution** [Starlink Enterprise](https://catalog.dataminer.services/details/66a4c259-0fb1-4c27-aede-8bbd3a4925d0) via the Catalog. This way, you will also be able to use the complementary low-code app and standard available dashboards.
 
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | API V1             |
-| 1.0.1.x | API V1             |
-| 1.0.2.x | API V1             |
-| 1.0.3.x | API V1             |
-| 1.1.0.x | API V2             |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components                                                              | Exported Components                                                                            |
-|---------|-----------------|---------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------- |
-| 1.0.0.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
-| 1.0.1.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
-| 1.0.2.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
-| 1.0.3.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
-| 1.1.0.x | No              | Yes                 | [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal), [Starlink Enterprise - Service Group](xref:Connector_help_Starlink_Enterprise_-_Service_Group) |
-
 ## Configuration
 
 Since the introduction of the Starlink API V2, credentials are required per account. These credentials have to be entered in a [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) element of which the name equals **Starlink Account [account name]**. The name of the Starlink Enterprise element has to be specified there as well.
