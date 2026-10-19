@@ -42,7 +42,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 | 1.0.1.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
 | 1.0.2.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
 | 1.0.3.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
-| 1.1.0.x | No              | Yes                 | [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
+| 1.1.0.x | No              | Yes                 | [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal), [Starlink Enterprise - Service Group](xref:Connector_help_Starlink_Enterprise_-_Service_Group) |
 
 ## Configuration
 
@@ -56,27 +56,27 @@ If changing one of the parameters does not seem to work (like topping up a servi
 
 ### Initialization
 
-Upon element creation, the **Demo Mode** of the element is enabled by default. This means that a simulation becomes active that utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. It uses history simulation data for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
+Upon element creation, the **Demo Mode** of the element is enabled by default. This means that a simulation becomes active that utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. Service Group DVEs are being generated per account and history simulation data is loaded for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
 
 The simulation will run until you enter the Client ID and Client Secret on the **Configuration** page of one or more **Starlink Enterprise Account** elements. After that, Demo Mode gets disabled, which stops the simulation. At this point, the Starlink Enterprise Account elements start polling real data.
+
+## How to Use
+
+### Inter-element Communication
 
 The Starlink Enterprise Account elements offload their information by setting the raw response content on a hidden parameter of the Starlink Enterprise element. Writing to these hidden parameters saves the content in a buffer, which is part of the SLScripting process. Every minute, the Starlink Enterprise element checks the buffer and pushes the received content to the correct tables.
 
 Because of this **buffer mechanism**, after you start a Starlink Enterprise Account element with valid credentials, it **can take a minute or two** for the tables of the Starlink Enterprise element to show information.
 
-## How to Use
-
-### Communication Logging
-
 To see the actual traffic between the Starlink Enterprise element and a Starlink Enterprise Account element, please check the element log file. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
+
+In case the element **does not show any data**, and traffic inside the element log file seems minimal, check if the **Authentication** parameters of the **Starlink Enterprise Account** elements all indicate *Successful*. If one of them instead indicates *Failed*, most likely the client ID or the client secret is not correct.
 
 ### User Terminals Page
 
 The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which a Starlink Enterprise Account element is actively querying the Starlink API.
 
-The columns **Device ID**, **Account Number**, and **Service Line Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
-
-The Telemetry API provides the current user terminals. Telemetry is polled every minute. The content is stored using history sets for accurate backpolling. If a terminal is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
+The Telemetry API provides the current user terminals and is polled every minute. The telemetry content is stored using history sets for accurate backpolling. If a terminal is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
 
 Terminals that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
@@ -85,6 +85,10 @@ User terminals for which the Timestamp column shows **N/A** are returned by the 
 The **Device Name** column will show the service nickname if a service is active on the user terminal. The device ID is used as device name if no service is active. Changing the device name from the User Terminals table is currently not possible. To change it, you will need to use the Starlink web interface instead. The new name will then appear in the table after the next poll cycle.
 
 The **Latitude** and **Longitude** combination represents a coordinate near the user terminal, but this is not the exact location. The longitude is calculated based on the H3 cell that is returned by the API (H3 geospatial indexing system). This H3 cell ID represents the center point of a hexagonal area, not the exact coordinates of a specific location within that area. If the exact location of the terminal is somewhere else within the hexagon, the latitude and longitude will differ.
+
+Please note that it's expected to see Not initialized or empty cells in the hidden **Service Group DVE ID** column. Only terminals that are assigned to a service group do have a value in this column.
+
+The columns **User Terminal Device ID**, **Account Number**, **Service Line Number**, **State**, **User Terminal DVE ID** and **Service Group DVE ID** in the User Terminals table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
 When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when no terminals are assigned to a specific account.
 
@@ -114,13 +118,13 @@ Each row in the **Service Line Statistics** table represents aggregated KPI data
 
 Each row in the **Alerts** table represents an alert that comes from a user terminal or from a router. Alerts will persist for as long as they are active.
 
-The **User Terminal Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+The columns **User Terminal Device ID**, **Router Device ID** and **Alert Kit Number** in the Alerts table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
 ### Routers Page
 
 Information related to routers is stored in the **Routers** table.
 
-The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+The **Account Number** column in the Routers table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 The Telemetry API provides the current routers. If a router is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
 
@@ -130,13 +134,21 @@ Routers that are no longer returned by the API for more than one day will be rem
 
 Information related to IP allocations is stored in the **IP Allocations** table.
 
-The **IP Allocation Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+The **IP Allocation Device ID** column in the IP Allocations table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 ### Services Page
 
 The rows in the **Services** table represent the active service plans of the accounts.
 
-The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+Setting a new group name in the **Group Name** column creates a new service group in the **Service Group DVEs** table, located on the **Service Group DVEs Configurations** page. Once the group is created, the service and all linked user terminals are assigned to that group.
+
+Selecting an existing group name assigns the service and all linked user terminals to that group. Selecting the **Unassign** group name unassigns the service and all linked user terminals from their current group. Unassigning a service from a group clears the value in the Service table columns Group Name and Group DVE ID and in the User Terminal table Service Group DVE ID column.
+
+If the **Service Group Mode** parameter, located on the Configuration page, is set to **Account Groups**, it's not possible to unassign services or to re-assign services to a different service group. It's also not possible to use the Service Group DVEs table **Delete** column to delete a service group. Switching the Service Group Mode to **Custom Groups** allows unassigning services, re-assigning services to a different service group and deleting service groups.
+
+Please note that it's expected to see Not initialized or empty cells in the columns Group Name and Group DVE ID. Only services that are assigned to a service group do have a value in these columns.
+
+The **Group DVE ID** column in the Services table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when no services are active for a specific account.
 
@@ -156,13 +168,13 @@ Because the Starlink Enterprise element relies on a Starlink Enterprise Account 
 
 This table shows the overages, which are additional services or data consumed beyond the limit.
 
-The **Service** column in the Overage Lines table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+The **Service Line Number** column in the Overage Lines table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 ### Monthly Data Usage Page
 
 On this page, you can review and monitor your data usage per month by type of data consumed (*Fixed* or *Mobile*, *Priority* or *Standard*).
 
-The **Service** column in the **Monthly Data Usage** table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+The columns **Priority Data**, **Standard Data** and **Service Line Number** in the **Monthly Data Usage** table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
 The data in the Monthly Data Usage table is retained for 12 months.
 
@@ -170,7 +182,7 @@ The data in the Monthly Data Usage table is retained for 12 months.
 
 On this page, you can review and monitor your data usage per day by type of data consumed (*Fixed* or *Mobile*, *Priority* or *Standard*).
 
-The **Service** column in the **Daily Data Usage** table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+The columns **Priority Data**, **Standard Data** and **Service Line Number** in the **Daily Data Usage** table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
 ### Accounts Page
 
@@ -178,7 +190,11 @@ All known accounts are listed in the Accounts table. Each row in this table cont
 
 ### Configuration Page
 
-In case the element **does not show any data**, and traffic inside the element log file seems minimal, check if the **Authentication** parameters of the **Starlink Enterprise Account** elements all indicate *Successful*. If one of them instead indicates *Failed*, most likely the client ID or the client secret is not correct.
+Switching the Service Group Mode parameter to Account Groups mode forces the grouping of services and linked user terminals by accounts. Please be careful, this discards custom grouping because it changes the content of the service group DVEs. Alarm monitoring will be impacted.
+
+In Account Groups mode, it's not possible to use the Services table Group Name column to unassign services or to re-assign services to a different service group. It's also not possible to use the Service Group DVEs table Delete column to delete a service group.
+
+Switching the Service Group Mode parameter to Custom Groups mode doesn't group the services and linked user terminals. This mode allows unassigning services, re-assigning services to a different service group and deleting service groups.
 
 ### User Terminal DVEs Configuration page
 
@@ -191,6 +207,16 @@ When a user generates a DVE by enabling the **DVE Creation** toggle button in th
 Removing a DVE is only possibly via the **Delete** button in the **User Terminal DVEs** table. See [User Terminal DVEs](#user-terminal-dves).
 
 ![Enable User Terminal DVE](~/connector/images/StarlinkEnterpriseEnableUserTerminalDve.png)
+
+### Service Group DVEs Configuration page
+
+Every row in the **Service Group DVEs** table represents a DVE.
+
+If the table is empty, this means no DVEs have been generated yet. By default, a new service group is only created when a new service or user terminal comes in. This is because the Service Group Mode parameter, located on the Configuration page, is initialized as Account Groups mode.
+
+When a user generates a DVE by setting a new group name in the **Group Name** column of the **Services** table, a new row will appear in this table.
+
+Pressing the **Delete** button removes the DVE of the selected service group. This can result in the loss of retrieved data (for example trend data). Deleting a Service Group is only possible if the Service Group Mode parameter, located on the Configuration page, is set to Custom Groups. Deleting a Service Group automatically unassigns the services and their linked user terminals from the group, before it gets deleted.
 
 ### Table Cleanup Mechanism
 

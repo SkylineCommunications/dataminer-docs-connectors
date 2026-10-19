@@ -10,15 +10,23 @@ The Starlink Enterprise - User Terminal connector is exported by the parent conn
 
 ### Product Info
 
-| Range     | Supported Firmware |
-|-----------|--------------------|
-| 1.0.0.x   | v1                 |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | API V1             |
+| 1.0.1.x | API V1             |
+| 1.0.2.x | API V1             |
+| 1.0.3.x | API V1             |
+| 1.1.0.x | API V2             |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|-------------------- |
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
+| 1.0.1.x | No              | Yes                 | -                 | -                   |
+| 1.0.2.x | No              | Yes                 | -                 | -                   |
+| 1.0.3.x | No              | Yes                 | -                 | -                   |
+| 1.1.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
