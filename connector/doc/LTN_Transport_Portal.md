@@ -12,13 +12,15 @@ The **LTN Transport Portal** connector provides DataMiner with centralized monit
 
 - **Booking lifecycle monitoring**: Monitor scheduled, running, past, canceled, and unknown bookings.
 
+- **Endpoint and distribution monitoring**: Track endpoint status and traffic rates, and review distribution group membership.
+
 ## Use Cases
 
 ### Monitor Transport Bookings
 
 **Challenge**: Operators need to follow transport activity across multiple booking states and quickly identify bookings that require attention.
 
-**Solution**: Use the booking pages to monitor scheduled, running, past, canceled, and unknown bookings, together with their timing, booking status, source and destination endpoints, rates, and API status.
+**Solution**: Use the booking pages to monitor scheduled, running, past, canceled, and unknown bookings, together with their timing, booking status, source and destination endpoints, traffic rates, and API status.
 
 **Benefit**: Operations teams gain a single operational view of booking activity and can more quickly investigate missing, failed, or unexpected bookings.
 

@@ -6,7 +6,7 @@ uid: Connector_help_LTN_Transport_Portal_Technical
 
 ## About
 
-The LTN transport portal is a platform for live video transmission solutions. It uses a global network of Points of Presence (PoPs) to ensure efficient and low-latency video delivery. With intelligent adaptive bit rate (ABR) encoding and dynamic stream routing, it optimizes video quality and routing paths based on real-time network conditions.
+The LTN Transport Portal is a platform for live video transmission solutions. It uses a global network of Points of Presence (PoPs) to ensure efficient and low-latency video delivery. With intelligent adaptive bit rate (ABR) encoding and dynamic stream routing, it optimizes video quality and routing paths based on real-time network conditions.
 
 The **LTN Transport Portal** connector provides DataMiner with centralized monitoring of LTN Transport Portal booking and distribution data. It retrieves booking information, endpoint details, endpoint statuses, distribution groups, and API health through the LTN Transport Portal HTTP API, giving operators a consolidated view of transport activity and service status.
 
@@ -56,7 +56,7 @@ Use this page to review multithreading statistics, including active threads and 
 
 ## Notes
 
-### Supported API data
+### Supported API Data
 
 The connector uses the LTN Transport Portal API to retrieve:
 
