@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Ericsson_MFVP
+description: "Monitor Ericsson MFVP in DataMiner to trace live video workflows, track server health, and spot failover, packaging, and publishing issues."
 ---
 
 # Ericsson MFVP
@@ -22,7 +23,7 @@ The Ericsson MFVP connector gives you a single view of an Ericsson MediaFirst Vi
 
 ## Use Cases
 
-### Finding the source of a live channel problem
+### Finding the Source of a Live Channel Problem
 
 **Challenge**: When a live channel degrades, operators have to work out whether the cause is the incoming signal, the encoding, or the output, often across several screens.
 
@@ -30,10 +31,15 @@ The Ericsson MFVP connector gives you a single view of an Ericsson MediaFirst Vi
 
 **Benefit**: Operators locate the faulty stage faster and reduce the time viewers are affected.
 
-### Keeping backup paths trustworthy
+### Keeping Backup Paths Trustworthy
 
-**Challenge**: Redundancy only helps if the backup is healthy. Issues on a standby server or input often go unnoticed until a failover is needed.
+**Challenge**: Redundancy only helps if the backup is healthy. Issues on a standby server or input often go unnoticed until failover is triggered.
 
 **Solution**: Failover groups, server status, and multiplexer input redundancy are monitored continuously and can raise alarms in DataMiner.
 
 **Benefit**: Teams are warned about weakened redundancy in advance and can fix it before it affects the service.
+
+## Technical Information
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Ericsson_MFVP_Technical).

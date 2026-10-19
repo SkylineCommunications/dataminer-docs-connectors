@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Ericsson_MFVP_Technical
+description: "Set up the Ericsson MFVP connector in DataMiner, including REST API connections, credentials, polling, and video service, server, and alarm monitoring."
 ---
 
 # Ericsson MFVP
@@ -8,76 +9,78 @@ The Ericsson MFVP is a DataMiner connector for the MediaKind Controller MediaFir
 
 The MediaKind Controller manages multiple MediaKind subproducts, such as:
 
-- MKP - MediaKind Packaging
-- MKEL - MediaKind Encoding Live
-- MKSP - MediaKind Stream Processor (Multiplexer)
-- MDT - MediaKind Development ToolKit (Orchestration Purposes)
+- MKP: MediaKind Packaging
+- MKEL: MediaKind Encoding Live
+- MKSP: MediaKind Stream Processor (Multiplexer)
+- MDT: MediaKind Development ToolKit (Orchestration Purposes)
 
 This connector is featured in the **Media Data Center (MDC)** project. Apart from monitoring, it can also be used to orchestrate a live encoding service joining the transcoding service and the containerized service (which supports the transcoding service) in a single DataMiner service. This feature requires **DataMiner Service & Resource Management (SRM).**
 
-The connector is capable of fully monitoring the Ericsson MediaFirst Video Processing System, including **alarms**, **services**, **servers** and the main system **statistics**. It uses multiple REST Web APIs to send and receive data to and from the system using the JSON and XML formats.
+The connector is capable of fully monitoring the Ericsson MediaFirst Video Processing System, including **alarms**, **services**, **servers**, and the main system **statistics**. It uses multiple REST Web APIs to send and receive data to and from the system using the JSON and XML formats.
 
 ## Configuration
 
 ### Connections - Range 1.1.0.x
 
-This connector uses 2 HTTP connections and requires the following input during element creation.
+This connector uses two HTTP connections and requires the following input during element creation.
 
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default = 30001).
+- **IP port**: The IP port of the destination (default: 30001).
 
 MDT API (HTTPS):
 
 - **IP Address/Host**: The polling IP or URL of the destination.
-- **IP Port**: The IP port of the destination (default = 80).
+- **IP Port**: The IP port of the destination (default: 80).
 
 ### Connections - Range 1.2.0.x
 
-This connector uses 2 HTTPS connections and requires the following input during element creation.
+This connector uses two HTTPS connections and requires the following input during element creation.
 
 HTTP CONNECTION:
 
-- **IP address/host**: https://&lt;IP of the destination&gt;
-- **IP port**: The IP port of the destination (default = 30001).
+- **IP address/host**: `https://<IP of the destination>`.
+- **IP port**: The IP port of the destination (default: 30001).
 
 HTTPS Connection - MDT API:
 
-- **IP Address/host**: https://&lt;IP of the destination&gt;.
-- **IP Port**: The IP port of the destination (default = 443).
+- **IP address/host**: `https://<IP of the destination>`.
+- **IP port**: The IP port of the destination (default: 443).
 
-For both connections to work, you will also need to go to element's Features page and specify the username and password for each connection.
+For both connections to work, you will also need to go to the element's **Features** page and specify the **username and password** for each connection.
 
-Note: The ports may vary depending on the implementation.
+> [!NOTE]
+> The ports may vary depending on the implementation.
 
-### Connections - Ranges 1.2.1.x & 1.3.0.x
+### Connections - Ranges 1.2.1.x and 1.3.0.x
 
-This connector uses 5 HTTPS connections and requires the following input during element creation.
+This connector uses five HTTPS connections and requires the following input during element creation.
 
 HTTP CONNECTION:
 
-- **IP address/host**: https://&lt;IP of the destination&gt;
-- **IP port**: The IP port of the destination (default = 30001).
+- **IP address/host**: `https://<IP of the destination>`.
+- **IP port**: The IP port of the destination (default: 30001).
 
 HTTPS Connection - MDT, STATS, CONFIG, and SOURCE APIs:
 
-- **IP Address/host**: https://&lt;IP of the destination&gt;.
-- **IP Port**: The IP port of the destination (default = 443).
+- **IP address/host**: `https://<IP of the destination>`.
+- **IP port**: The IP port of the destination (default: 443).
 
-For all connections to work, you will also need to go to element's Features page and specify the username and password for each connection. The credentials used for the MDT API are also used for the STATS, CONFIG, and SOURCE connection.
+For all connections to work, you will also need to go to the element's **Features** page and specify the **username and password** for each connection. The credentials used for the MDT API are also used for the STATS, CONFIG, and SOURCE connections.
 
-Note: The ports may vary depending on the implementation.
+> [!NOTE]
+> The ports may vary depending on the implementation.
 
-### Initialization - range 1.1.0.x
+### Initialization - Range 1.1.0.x
 
 After element creation, go to the **Features** page and enable or disable the different features according to your preference.
 
 If you encounter any issues after the element has been configured, check whether the **API Versions** parameter on the Features page matches the **supported firmware**.
 
-### Initialization - range 1.2.0.x & 1.2.1.x & 1.3.0.x
+### Initialization - Range 1.2.0.x, 1.2.1.x, and 1.3.0.x
 
-After element creation, go to the Features page and set the username and password for both API groups.
+After element creation, go to the **Features** page and set the **username and password** for both API groups.
 
 This system implementation covers two different HTTPS interfaces with different access credentials.
 
@@ -91,11 +94,12 @@ This system implementation covers two different HTTPS interfaces with different 
   - Username: *mdt-admin*
   - Password: *changeme*
 
-NOTE: If the element is properly authenticated, but still some **400 HTTP Bad Requests** are identified in Stream Viewer, **use range 1.1.0.x** instead. In this kind of situation, an update action on behalf of the vendor is needed.
+> [!NOTE]
+> If the element is properly authenticated, but Stream Viewer still shows **400 HTTP Bad Request** errors, **use range 1.1.0.x** instead. In this situation, an update action on behalf of the vendor is needed.
 
-### Initialization - range 1.2.1.x
+### Initialization - Range 1.2.1.x
 
-After element creation, go to the Features page and set the username and password for all three API groups.
+After element creation, go to the **Features** page and set the username and password for all three API groups.
 
 This system implementation covers two different HTTPS interfaces with different access credentials.
 
@@ -114,13 +118,14 @@ This system implementation covers two different HTTPS interfaces with different 
   - Username: *mdt-admin*
   - Password: *changeme*
 
-NOTE: If the element is properly authenticated, but still some **400 HTTP Bad Requests** are identified in Stream Viewer, **use range 1.1.0.x** instead. In this kind of situation, an update action on behalf of the vendor is needed.
+> [!NOTE]
+> If the element is properly authenticated, but Stream Viewer still shows **400 HTTP Bad Request** errors, **use range 1.1.0.x** instead. In this situation, an update action on behalf of the vendor is needed.
 
 ## Usage
 
 ### General
 
-This page displays the **Services** table, including parameters such as the service name, type, state and assigned servers.
+This page displays the **Services** table, including parameters such as the service name, type, state, and assigned servers.
 
 Each service can be started and stopped individually via the buttons in the **Operations** columns.
 
@@ -144,7 +149,7 @@ It also contains page buttons to the following subpages:
 - **Programs**: Lists the programs available in a live encoding service.
 - **Elementary Streams:** Lists the elementary streams available in a live encoding service.
 - **Input Subtitle Streams**: Lists the different live encoding service input subtitle streams.
-- **Input Metadata Streams**: Lists the different live encoding service input metada streams, such as SCTE35, AIT Metadata and Teletext.
+- **Input Metadata Streams**: Lists the different live encoding service input metadata streams, such as SCTE35, AIT Metadata and Teletext.
 
 ### Live Encoding Processings
 
@@ -179,12 +184,12 @@ The page also contains page buttons to the following subpages:
 - **Media Info**: Contains tables regarding video and audio input statistics.
 - **Outputs Statistics**: Contains the Output Statistics table, which displays the bitrate of each output generated by each service.
 
-### Live Packaging Dvrs
+### Live Packaging DVRs
 
 This page displays the following tables:
 
 - **Live Packaging Dvrs:** Lists generic configuration for live packaging services.
-- **Live Packaking Dvrs Publishing Points:** Lists all publishing points for live packaging services.
+- **Live Packaging Dvrs Publishing Points:** Lists all publishing points for live packaging services.
 
 ### Live Packaging Statistics
 
@@ -236,8 +241,8 @@ It also contains page buttons to the following subpages:
 
 This page displays the following tables:
 
-- **Failover Groups:** Lists all the Failover groups.
-- **Failover Groups Servers:** Lists all the Failover server groups.
+- **Failover Groups:** Lists all the failover groups.
+- **Failover Groups Servers:** Lists all the failover server groups.
 
 ### Features
 
@@ -252,7 +257,7 @@ In addition, it displays the API versions that should be compatible with the sel
 
 ### Alarms
 
-This page displays the **Alarms** table, which includes parameters such as the alarm ID, severity, description and impacted servers and services.
+This page displays the **Alarms** table, which includes parameters such as the alarm ID, severity, description, and impacted servers and services.
 
 It also contains a page button to the **History Alarms** subpage, which displays detailed information about past alarms.
 
