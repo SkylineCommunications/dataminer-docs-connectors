@@ -1,5 +1,6 @@
 ---
-uid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE_Technical
+uid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE
+description: "Monitor and control EVS Neuron Shuffle devices in DataMiner, with full visibility into IP audio routing paths and channels, and flexible polling options."
 ---
 
 # EVS Neuron NAP - SHUFFLE

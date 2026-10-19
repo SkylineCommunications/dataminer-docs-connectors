@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE_Technical
+description: "Configure and use the EVS Neuron NAP - SHUFFLE connector in DataMiner, including HTTP REST API setup, polling options, and audio channels."
 ---
 
 # EVS Neuron NAP - SHUFFLE
@@ -20,12 +21,13 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-Once the element has been created in DataMiner, the **General** page allows you to configure the **API Version** used to communicate with the device. Fill in the IP Address of the Device to start monitoring the device.
+Once the element has been created in DataMiner, the **General** page allows you to configure the **API Version** used to communicate with the device. Fill in the IP address of the device to start monitoring it.
+
 On the **Polling Settings** page, you can configure the polling intervals for each data group and enable or disable polling per group.
 
-## How to use
+## How to Use
 
-The connector polls data as soon as the IP Address parameter is filled in with the correct IP address. On-demand polling can be triggered via the **Polling Settings** page.
+The connector polls data as soon as the **IP Address** parameter is filled in with the correct IP address. On-demand polling can be triggered via the **Polling Settings** page.
 
 ### General Page
 
@@ -33,12 +35,12 @@ The **General** page provides essential device identity information, including t
 
 ### Polling Settings Page
 
-The **Polling Settings** page contains the **Polling Manager** table, which lists all configurable polling groups. For each group, you can view and adjust the **polling interval**, **admin status**, and the **last poll result**. This page gives you full control over how frequently each data set is retrieved from the device.
+The **Polling Settings** page contains the **Polling Manager** table, which lists all configurable polling groups. For each group, you can view and adjust the **polling interval**, **admin status**, and the **last poll result**. This page gives you full control over how frequently each dataset is retrieved from the device.
 
 ### Protocol Queue Page
 
 The **Protocol Queue** page provides insight into the connector's internal request handling. When changes are made, the connector builds and queues HTTP requests accordingly, and it may bundle multiple updates into a single request where possible. This page shows the item currently being processed and the full queue of pending requests, which is useful for understanding connector behavior or diagnosing unexpected communication patterns.
 
-### Input/Channel Configuration pages
+### Input/Channel Configuration Pages
 
-The **Audio Delay Banks**, **MADI Inputs**, **MADI Outputs**, **IP Inputs**, **IP Inputs** enable monitoring and configuration for the corresponding inputs, outputs and channels.
+The **Audio Delay Banks**, **MADI Inputs**, **MADI Outputs**, **IP Inputs**, and **IP Outputs** parameters enable monitoring and configuration for the corresponding inputs, outputs, and channels.
