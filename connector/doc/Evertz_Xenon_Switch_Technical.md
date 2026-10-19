@@ -4,7 +4,7 @@ uid: Connector_help_Evertz_Xenon_Switch_Technical
 
 # Evertz Xenon Switch
 
-The **Evertz Xenon Switch** offers both the flexibility of multiformat operation and the ability to add signal processing technology. To avoid single points of failure, active assemblies are hot-swappable from the front of the frame, and power, control, cooling and reference generation are available in redundant configurations.
+The **Evertz Xenon Switch** offers both the flexibility of multiformat operation and the ability to add signal processing technology. To avoid single points of failure, active assemblies are hot-swappable from the front of the frame, and power, control, cooling, and reference generation are available in redundant configurations.
 
 ## About
 
@@ -96,7 +96,7 @@ SERIAL CONNECTION (**TCP/IP**):
 
 This page contains general information on the device. In addition, it allows you to set the **System Destination**, and to **lock** or **unlock** the device.
 
-However, note that locking and unlocking is not possible in version 2.0.2.x, as there locking is done on software level.
+However, note that in version 2.0.2.x, the connector cannot lock or unlock the device, as locking is handled at the software level.
 
 ### Matrix Page
 
@@ -104,7 +104,7 @@ This page displays the **connection matrix** of the device.
 
 ### Matrix Details Page
 
-On this page, you can view the connection from the **Destination table**, **Source table** and the **Level**.
+On this page, you can view the connection from the **Destination table**, **Source table**, and the **Level**.
 
 ### Card Status Page
 
