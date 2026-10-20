@@ -1,6 +1,8 @@
 ---
-uid: connector_Electrolink_FM_Transmitter_Technical
+uid: Connector_help_Electrolink_FM_Transmitter_Technical
+description: "Monitor and configure an Electrolink FM transmitter with DataMiner over SNMPv2, including power, status, network settings, traps, and email configuration."
 ---
+
 # Electrolink FM Transmitter
 
 ## About
@@ -17,11 +19,9 @@ The connector requires DataMiner 10.4.0.0 build 14003 or later.
 
 This connector uses an SNMPv2 connection. During element creation, configure the transmitter's polling IP.
 
-| Setting | Value |
-|---------|-------|
-| **IP address/host** | The polling IP of the transmitter |
-| **IP port** | The IP port of the transmitter (default: *161*) |
-| **Bus address** | Not required |
+- **IP address/host**: The polling IP of the transmitter
+- **IP port**: The IP port of the transmitter (default: *161*)
+- **Bus address**: Not required
 
 ## How to Use
 
@@ -33,7 +33,7 @@ Review the transmitter system name and version, real-time clock (RTC) status, an
 
 Review the transmitter MAC address and configure its IP address, subnet mask, gateway, and primary and secondary DNS addresses.
 
-> [!WARNING]
+> [!CAUTION]
 > Changing the transmitter IP address interrupts communication with DataMiner until the element is updated to use the new address.
 
 ### SNMP

@@ -1,11 +1,13 @@
 ---
-uid: connector_Electrolink_FM_Transmitter
+uid: Connector_help_Electrolink_FM_Transmitter
+description: "Monitor Electrolink FM transmitter power, thermal and supply measurements, operating states, and remote controls in DataMiner using SNMP."
 ---
+
 # Electrolink FM Transmitter
 
 ## About
 
-The **Electrolink FM Transmitter** connector gives operators a consolidated view of transmitter operation through SNMP. Monitor RF output and reflected power, thermal and supply measurements, and key transmitter states in DataMiner, with alarming and trending for operational follow-up.
+The **Electrolink FM Transmitter** connector gives operators a consolidated view of transmitter operation through SNMP. It allows you to monitor RF output and reflected power, thermal and supply measurements, and key transmitter states in DataMiner, with alarming and trending for operational follow-up.
 
 ## Key Features
 
@@ -21,6 +23,11 @@ The **Electrolink FM Transmitter** connector gives operators a consolidated view
 - Manage transmitter state and output power level from the element interface.
 - Configure notification destinations and tune dataset polling to suit operational needs.
 
-## Compatibility
+## Technical Reference
 
-The connector requires DataMiner 10.4.0.0 build 14003 or later. The available protocol and MIB sources do not specify transmitter firmware compatibility; supported firmware versions are therefore unspecified.
+### Prerequisites
+
+- This connector requires **DataMiner version 10.4.0.0 - 14003** or higher.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Electrolink_FM_Transmitter_Technical).
