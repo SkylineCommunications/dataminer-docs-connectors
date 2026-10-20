@@ -3439,6 +3439,9 @@
     topicUid: Connector_help_Ericsson_MFCP
   - name: Ericsson MFVP
     topicUid: Connector_help_Ericsson_MFVP
+    items:
+      - name: Ericsson MFVP Technical
+        topicUid: Connector_help_Ericsson_MFVP_Technical
   - name: Ericsson Redbee EPG
     topicUid: Connector_help_Ericsson_Redbee_EPG
   - name: Ericsson RX8200
