@@ -26,7 +26,7 @@ It logs in to ScheduAll over HTTP, keeps the session alive, and exchanges work o
 
 **Challenge**: Confirming and acting on ScheduAll bookings manually slows down resource allocation for media operations.
 
-**Solution**: The connector receives interop and booking messages from ScheduAll and buffers them until a configured threshold or wait time is reached, then triggers an Orchestration Script to act on them automatically.
+**Solution**: The connector receives interop and booking messages from ScheduAll and buffers them until a configured threshold or wait time is reached, then triggers an orchestration script to act on them automatically.
 
 **Benefit**: Faster response to new or changed bookings, less manual intervention, and fewer missed updates.
 
@@ -40,9 +40,9 @@ It logs in to ScheduAll over HTTP, keeps the session alive, and exchanges work o
 
 ### Flexible Integration with Downstream Systems
 
-**Challenge**: ScheduAll custom tags don't always line up with the fields expected by other systems that need the booking data.
+**Challenge**: ScheduAll custom tags do not always line up with the fields expected by other systems that need the booking data.
 
-**Solution**: The Field Mapping table lets users map ScheduAll custom tags to the columns required by downstream integrations, and InterApp calls expose this data to other DataMiner elements or scripts.
+**Solution**: The Field Mapping table lets you map ScheduAll custom tags to the columns required by downstream integrations, and InterApp calls expose this data to other DataMiner elements or scripts.
 
 **Benefit**: The connector can be adapted to new integrations purely through configuration, without requiring driver changes.
 
