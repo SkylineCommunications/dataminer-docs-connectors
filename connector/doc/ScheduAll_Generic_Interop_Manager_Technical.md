@@ -20,7 +20,7 @@ This connector uses an HTTP connection and requires the following input during e
 - **IP port**: The IP port of the destination (default: *80*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-#### Serial Connection
+#### Serial Connection - Smart Serial Connection
 
 This connector uses a serial connection and requires the following input during element creation:
 
