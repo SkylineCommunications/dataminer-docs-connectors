@@ -45,3 +45,7 @@ The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 maste
 ### Exported Connector
 
 The connector exports a **Tektronix SPG8000 - PTP Interface** child connector for PTP-related monitoring. Connectivity for the exported connector is managed by the parent connector.
+
+## Technical
+
+Beginning with the 1.0.1.x range, this connector also uses a serial connection to poll the API.
