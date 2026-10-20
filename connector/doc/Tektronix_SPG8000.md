@@ -10,9 +10,9 @@ The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 maste
 
 ## Key Features
 
-- **Know your clock is healthy at a glance**: Monitor the overall status, uptime, and hardware health of your master clock so problems are caught early.
+- **Monitor clock health**: Monitor the overall status, uptime, and hardware health of your master clock so problems are caught early.
 
-- **Verify PTP synchronization at a glance**: Monitor grandmaster status and timing accuracy to confirm your PTP network is operating correctly.
+- **Verify PTP synchronization**: Monitor grandmaster status and timing accuracy to confirm your PTP network is operating correctly.
 
 - **Monitor every output from one place**: Keep an eye on all your signal outputs to make sure timing and reference distribution stays reliable.
 
