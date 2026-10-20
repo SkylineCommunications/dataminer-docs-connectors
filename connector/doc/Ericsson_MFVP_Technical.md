@@ -84,7 +84,7 @@ After element creation, go to the **Features** page and set the **username and p
 
 This system implementation covers two different HTTPS interfaces with different access credentials.
 
-- The **HTTP CONNECTION** using the **General API Credentials** has the following default credentials:
+- The **HTTPS CONNECTION** using the **General API Credentials** has the following default credentials:
 
   - Username: *admin*
   - Password: *admin*
@@ -97,13 +97,13 @@ This system implementation covers two different HTTPS interfaces with different 
 > [!NOTE]
 > If the element is properly authenticated, but Stream Viewer still shows **400 HTTP Bad Request** errors, **use range 1.1.0.x** instead. In this situation, an update action on behalf of the vendor is needed.
 
-### Initialization - Range  1.2.1.x and 1.3.0.x
+### Initialization - Range 1.2.1.x and 1.3.0.x
 
 After element creation, go to the **Features** page and set the username and password for all three API groups.
 
 This system implementation covers two different HTTPS interfaces with different access credentials.
 
-- The **HTTP CONNECTION** using the **General API Credentials** has the following default credentials:
+- The **HTTPS CONNECTION** using the **General API Credentials** has the following default credentials:
 
   - Username: *admin*
   - Password: *admin*
