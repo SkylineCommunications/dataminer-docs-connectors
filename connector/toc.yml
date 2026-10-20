@@ -234,7 +234,7 @@
     topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB
     items:
      - name: Advantech Wireless Genesis-HP Ku SSPA/SSPB Technical
-       topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_Technical
+       topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_technical
   - name: Advantech Wireless Remote Monitor and Control Panel 1-2 Redundant SSPB (BUC) System
     topicUid: Connector_help_Advantech_Wireless_Remote_Monitor_and_Control_Panel_1-2_Redundant_SSPB_(BUC)_System
   - name: Advantech Wireless SBD75e Demodulator
@@ -1732,6 +1732,10 @@
   items:
   - name: BA CM
     topicUid: Connector_help_BA_CM
+- name: Bachmann
+  items:
+  - name: Bachmann BlueNet PDU
+    topicUid: Connector_help_Bachmann_BlueNet_PDU
 - name: Bard
   items:
   - name: Bard MC4000 Series
@@ -3435,6 +3439,9 @@
     topicUid: Connector_help_Ericsson_MFCP
   - name: Ericsson MFVP
     topicUid: Connector_help_Ericsson_MFVP
+    items:
+      - name: Ericsson MFVP Technical
+        topicUid: Connector_help_Ericsson_MFVP_Technical
   - name: Ericsson Redbee EPG
     topicUid: Connector_help_Ericsson_Redbee_EPG
   - name: Ericsson RX8200
@@ -3577,6 +3584,11 @@
     topicUid: Connector_help_ETL_Systems_SRY-C2xx_-_SRY-TX-Y-281
   - name: ETL Systems VTR-10
     topicUid: Connector_help_ETL_Systems_VTR-10
+  - name: ETL Systems VTR-101
+    topicUid: Connector_help_ETL_Systems_VTR-101
+    items:
+    - name: ETL Systems VTR-101 Technical
+      topicUid: Connector_help_ETL_Systems_VTR-101_Technical
   - name: ETL Systems VTRC-56
     topicUid: Connector_help_ETL_Systems_VTRC-56
   - name: ETL Systems VTX-10
@@ -3684,7 +3696,7 @@
   - name: Evertz 670IPG-X19-25G-100G
     topicUid: Connector_help_Evertz_670IPG-X19-25G-100G
   - name: Evertz 670ITXE-HW-DUO
-    topicUid: Connector_marketing_Evertz_670ITXE-HW-DUO
+    topicUid: Connector_marketing_Evertz-670ITXE-HW-DUO
   - name: Evertz 7700DA7-3G
     topicUid: Connector_help_Evertz_7700DA7-3G
   - name: Evertz 7700FC
@@ -4065,6 +4077,9 @@
     topicUid: Connector_help_Evertz_X1202-HX_HDSDI
   - name: Evertz Xenon Switch
     topicUid: Connector_help_Evertz_Xenon_Switch
+    items:
+    - name: Evertz Xenon Switch Technical
+      topicUid: Connector_help_Evertz_Xenon_Switch_Technical
   - name: Evertz XPRF14
     topicUid: Connector_help_Evertz_XPRF14
   - name: Evertz XPS-EDGE
@@ -4100,6 +4115,11 @@
         topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT_Technical
   - name: EVS Neuron NAP - PROTECT
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
+  - name: EVS Neuron NAP - SHUFFLE
+    topicUid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE
+    items:
+    - name: EVS Neuron NAP - SHUFFLE Technical
+      topicUid: Connector_help_EVS_Neuron_NAP_-_SHUFFLE_Technical
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
   - name: EVS XT Access
@@ -4443,6 +4463,9 @@
     topicUid: Connector_help_Generic_Comparison_Tool
   - name: Generic Database
     topicUid: Connector_help_Generic_Database
+    items:
+      - name: Generic Database Technical
+        topicUid: Connector_help_Generic_Database_Technical
   - name: Generic DataMiner Log Reader
     topicUid: Connector_help_Generic_DataMiner_Log_Reader
   - name: Generic Data Burst Logger
@@ -4491,6 +4514,9 @@
     topicUid: Connector_help_Generic_Inter_Dataminer_Feedback
   - name: Generic IP Resolve JSON
     topicUid: Connector_help_Generic_IP_Resolve_JSON
+    items:
+      - name: Generic IP Resolve JSON Technical
+        topicUid: Connector_help_Generic_IP_Resolve_JSON_Technical
   - name: Generic IRD Key Manager
     topicUid: Connector_help_Generic_IRD_Key_Manager
   - name: Generic JMS Consumer
@@ -4499,6 +4525,9 @@
     topicUid: Connector_help_Generic_JMS_Producer
   - name: Generic KAFKA Consumer
     topicUid: Connector_help_Generic_KAFKA_Consumer
+    items:
+      - name: Generic KAFKA Consumer Technical
+        topicUid: Connector_help_Generic_KAFKA_Consumer_Technical
   - name: Generic KAFKA Producer
     topicUid: Connector_help_Generic_KAFKA_Producer
     items:
@@ -4600,6 +4629,9 @@
     topicUid: Connector_help_Generic_SQL_Query
   - name: Generic Sun Outage
     topicUid: Connector_help_Generic_Sun_Outage
+    items:
+    - name: Generic Sun Outage Technical
+      topicUid: Connector_help_Generic_Sun_Outage_Technical
   - name: Generic Syslog Receiver
     topicUid: Connector_help_Generic_Syslog_Receiver
     items:
@@ -5265,11 +5297,11 @@
     topicUid: Connector_help_iDirect_LineCard_Virtual
   - name: iDirect Multihub Manager
     topicUid: Connector_help_iDirect_Multihub_Manager
-  - name: iDirect Platform
-    topicUid: Connector_help_iDirect_Platform
+  - name: iDirect-Platform
+    topicUid: Connector_help_iDirect-Platform
     items:
-      - name: iDirect Platform Technical
-        topicUid: Connector_help_iDirect_Platform_Technical
+      - name: iDirect-Platform Technical
+        topicUid: Connector_help_iDirect-Platform_Technical
   - name: iDirect Platform Network Virtual
     topicUid: Connector_help_iDirect_Platform_Network_Virtual
   - name: iDirect Platform Virtual
@@ -6061,6 +6093,9 @@
   items:
   - name: LTN Transport Portal
     topicUid: Connector_help_LTN_Transport_Portal
+    items:
+    - name: LTN Transport Technical
+      topicUid: Connector_help_LTN_Transport_Portal_Technical
 - name: Lumen
   items:
   - name: Lumen VYVX Media Portal
@@ -7348,6 +7383,9 @@
     topicUid: Connector_help_Newtec_HZ914
   - name: Newtec M6100
     topicUid: Connector_help_Newtec_M6100
+    items:
+    - name: Newtec M6100 Technical
+      topicUid: Connector_help_Newtec_M6100_Technical
   - name: Newtec M6100R2
     topicUid: Connector_help_Newtec_M6100R2
   - name: Newtec MCD6000
@@ -7481,6 +7519,13 @@
     topicUid: Connector_help_Norkring_AS_Wonderware_Type2_DVE
   - name: Norkring Modulation Robot
     topicUid: Connector_help_Norkring_Modulation_Robot
+- name: Norsat
+  items:
+  - name: Norsat 1:1 LNB Redundant Controller
+    topicUid: Connector_help_Norsat_1_1_LNB_Redundant_Controller
+    items:
+    - name: Norsat 1:1 LNB Redundant Controller Technical
+      topicUid: Connector_help_Norsat_1_1_LNB_Redundant_Controller_Technical
 - name: Nortel
   items:
   - name: Nortel iEMS Log
@@ -8100,6 +8145,8 @@
     topicUid: Connector_help_Quintech_Matrix_SNMP
   - name: Quintech QRM Matrix SNMP
     topicUid: Connector_help_Quintech_QRM_Matrix_SNMP
+  - name: Quintech SRR1000
+    topicUid: Connector_help_Quintech_SRR1000
   - name: Quintech Xtreme 256
     topicUid: Connector_help_Quintech_Xtreme_256
   - name: Quintech Xtreme 32
@@ -8164,6 +8211,9 @@
     topicUid: Connector_help_Raritan_Dominion_PXG2
   - name: Raritan Xerus Platform
     topicUid: Connector_help_Raritan_Xerus_Platform
+    items:
+      - name: Raritan Xerus Platform Technical
+        topicUid: Connector_help_Raritan_Xerus_Platform_technical
 - name: RCI
   items:
   - name: RCI RC2000
@@ -8725,6 +8775,9 @@
   items:
   - name: ScheduAll Generic Interop Manager
     topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
+    items:
+    - name: ScheduAll Generic Interop Manager Technical
+      topicUid: Connector_help_ScheduAll_Generic_Interop_Manager_Technical
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
@@ -9156,8 +9209,8 @@
     topicUid: Connector_help_Skyline_Availability_Platform
   - name: Skyline Basic SDN Controller
     topicUid: Connector_help_Skyline_Basic_SDN_Controller
-  - name: Skyline Bookings Monitoring
-    topicUid: Connector_help_Skyline_Bookings_Monitoring
+  - name: Skyline Booking Monitoring
+    topicUid: Connector_help_Skyline_Booking_Monitoring
   - name: Skyline Booking Checker
     topicUid: Connector_help_Skyline_Booking_Checker
   - name: Skyline Booking Manager
@@ -9372,6 +9425,9 @@
     topicUid: Connector_help_Skyline_Protocol_Overview
   - name: Skyline PTP
     topicUid: Connector_help_Skyline_PTP
+    items:
+    - name: Skyline PTP Technical
+      topicUid: Connector_help_Skyline_PTP_Technical
   - name: Skyline QA_DVE_Subtables
     topicUid: Connector_help_Skyline_QA_DVE_Subtables
   - name: Skyline QAPortal
@@ -9862,15 +9918,17 @@
     items:
     - name: Starlink Enterprise Technical
       topicUid: Connector_help_Starlink_Enterprise_Technical
+    - name: Starlink Enterprise - Service Group
+      topicUid: Connector_help_Starlink_Enterprise_-_Service_Group
+    - name: Starlink Enterprise - User Terminal
+      topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
+    - name: Starlink Enterprise - API V2 Migration
+      topicUid: Connector_help_Starlink_Enterprise_API_V2_Migration
   - name: Starlink Enterprise Account
     topicUid: Connector_help_Starlink_Enterprise_Account
     items:
     - name: Starlink Enterprise Account Technical
       topicUid: Connector_help_Starlink_Enterprise_Account_Technical
-  - name: Starlink Enterprise - User Terminal
-    topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
-  - name: Starlink Enterprise - API V2 Migration
-    topicUid: Connector_help_Starlink_Enterprise_API_V2_Migration
 - name: Stormshield
   items:
   - name: Stormshield Network Security S-Series
@@ -10690,6 +10748,9 @@
   items:
   - name: TestTree StreamProbe
     topicUid: Connector_help_TestTree_StreamProbe
+    items:
+    - name: TestTree StreamProbe Technical
+      topicUid: Connector_help_TestTree_StreamProbe_Technical
 - name: Tetronik
   items:
   - name: Tetronik DAKS
@@ -10829,6 +10890,11 @@
     topicUid: Connector_help_Tredess_CS_-_Transmitter
   - name: Tredess FS
     topicUid: Connector_help_Tredess_FS
+  - name: Tredess MultiTX
+    topicUid: Connector_help_Tredess_MultiTX
+    items:
+    - name: Tredess MultiTX Technical
+      topicUid: Connector_help_Tredess_MultiTX_Technical
   - name: Tredess Redundant Clock Reference
     topicUid: Connector_help_Tredess_Redundant_Clock_Reference
 - name: Trilithic
@@ -10863,6 +10929,8 @@
     topicUid: Connector_help_TSL_MDU12-PM
   - name: TSL PAM2-IP AMU
     topicUid: Connector_help_TSL_PAM2-IP_AMU
+  - name: TSL PD14PMiD
+    topicUid: Connector_help_TSL_PD14PMiD
 - name: TV2 Norway
   items:
   - name: TV2 Norway Sumo Monitoring
@@ -11630,6 +11698,11 @@
     items:
     - name: ZDF Prismon Mapper Technical
       topicUid: Connector_help_ZDF_Prismon_Mapper_Technical
+  - name: ZDF Room Switching Manager
+    topicUid: Connector_help_ZDF_Room_Switching_Manager
+    items:
+    - name: ZDF Room Switching Manager Technical
+      topicUid: Connector_help_ZDF_Room_Switching_Manager_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
@@ -11705,6 +11778,9 @@
     topicUid: Connector_help_ZTE_ZMC
   - name: ZTE ZXA10 C600
     topicUid: Connector_help_ZTE_ZXA10_C600
+    items:
+    - name: ZTE ZXA10 C600 Technical
+      topicUid: Connector_help_ZTE_ZXA10_C600_Technical
   - name: ZTE ZXA10 C600 GPON Platform
     topicUid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
     items:

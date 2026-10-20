@@ -12,6 +12,7 @@ Please check the following things:
 - Fetch the Markdown conventions from <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html> and make sure these are followed.
 - Fetch the house style instructions from <https://docs.dataminer.services/contributing/CTB_Docs_house_style.html> and make sure these are followed, except if this conflicts with the guidelines provided in this instructions file.
 - The file name must never contain a space, e.g., if a file is named "My file.md", it should be renamed to "My_File.md".
+- All headings must use title case.
 - US English must be used, with correct spelling and grammar.
 - The text must be easily readable and consistent.
 - There must be an empty line between sections.
