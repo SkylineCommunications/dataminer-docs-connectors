@@ -1,8 +1,11 @@
 ---
 uid: Connector_help_Starlink_Enterprise_-_User_Terminal
+description: "Monitor Starlink Enterprise user terminal DVEs in DataMiner, tracking user terminal telemetry and active device alerts."
 ---
 
 # Starlink Enterprise - User Terminal
+
+## About
 
 The Starlink Enterprise - User Terminal connector is exported by the parent connector [Starlink Enterprise](xref:Connector_help_Starlink_Enterprise). For each known user terminal, a separate child element (or "DVE", i.e., dynamic virtual element) using this connector will automatically be created. These DVEs contain only data related to the user terminal.
 
@@ -29,4 +32,3 @@ All telemetry data can be found on the General page.
 Each row in the **Alerts** table represents an alert from a user terminal (not from a router). Alerts will persist for as long as they are active.
 
 The **User Terminal Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
-
