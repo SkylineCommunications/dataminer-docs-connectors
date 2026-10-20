@@ -45,7 +45,7 @@ The connector automatically creates the following DOM definitions on first run:
 
 The connector operates in two modes:
 
-- **Initial cache buildup**: On element startup, the connector performs paginated retrieval of all inventory items (50 records per page) for services, carriers, and resources. This process continues until all pages have been retrieved. During cache buildup, the connector tracks entity IDs across pages and performs cleanup of deprecated items only on the final page.
+- **Initial cache buildup**: On element startup, the connector performs paginated retrieval of all inventory items (50 records per page) for services, carriers, and resources. This process continues until all pages have been retrieved. During cache buildup, the connector tracks entity IDs across pages and performs filtering of deprecated items before they are added to the DOM module.
 
 - **Periodic cache updates**: After initial buildup, the connector periodically polls for items updated in the last 24 hours (`updatedDaysAgo=0`) based on the configured Cache Update Frequency. For services, cleanup of non-operational services runs every time data are polled after the initial cache buildup is completed.
 
@@ -69,7 +69,7 @@ The connector operates in two modes:
 
 - **Entity ID**: Uses `carrier.ExternalId` as the unique identifier.
 - **Deduplication**: Filters out carriers with null/empty external IDs and removes duplicates.
-- **Cleanup Logic**: Removes deprecated carriers only during final page of cache buildup.
+- **Cleanup Logic**: Filters out deprecated carriers before the data is added to the DOM module.
 - **Field Mapping**:
   - Basic fields: ID, Name, Operational Status
   - Location fields: Gateway, Terminal
@@ -82,7 +82,7 @@ The connector operates in two modes:
 - **Entity ID**: Uses `resource.Id` as the unique identifier.
 - **Type Filtering**: Excludes the following resource types before DOM processing: Card, BandwidthSegment, LogicalPort, Multicast, Slot, Port, Circuit
 - **Status Preservation**: For modem resources, preserves existing operational status during updates to maintain continuity.
-- **Cleanup Logic**: Removes deprecated resources only during final page of cache buildup.
+- **Cleanup Logic**: Filters out deprecated resources before the data is added to the DOM module.
 - **Field Mapping**:
   - Basic fields: ID, Name, Description, Status (preserved for modems)
   - Resource Specification: Type and specification details
@@ -138,6 +138,7 @@ The connector implements a two-phase approach:
 - **Duplicate IDs**: The first occurrence is kept; duplicates are logged and skipped.
 - **Batch Processing**: DOM operations are batched (100 instances per batch) for optimal performance.
 - **Failure Tracking**: Failed operations are logged with success/failure counts.
+- **SNOW Timeouts**: As the SNOW API sometimes returns a 504 Gateway Timeout for specific pages during initial cache buildup, those pages are skipped, and pagination continues with the next page. Other error responses (e.g., 502 Bad Gateway) advance to the next type in the poll flow instead.
 
 ## Notes
 

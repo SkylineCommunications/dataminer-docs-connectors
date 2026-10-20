@@ -10,7 +10,7 @@ The SES Service Problem Management connector integrates the DataMiner SDM Ticket
 
 ## Key Features
 
-- **Automated ticket synchronization**: Bidirectional synchronization between the DataMiner SDM Ticketing system and SES Service Problem Management with configurable frequency (10 seconds to 24 hours).
+- **Automated ticket synchronization**: Bidirectional synchronization between the DataMiner SDM Ticketing system and SES Service Problem Management with configurable frequency (10 seconds to 24 hours). In addition, the connector can subscribe to real-time ticket creation events for near-instant processing of new tickets.
 
 - **Complete lifecycle management**: Automatically creates, updates, and closes service problems based on DataMiner ticket state changes, ensuring accurate incident tracking throughout the resolution process.
 
@@ -19,6 +19,8 @@ The SES Service Problem Management connector integrates the DataMiner SDM Ticket
 - **Event problem creation**: Automatically generates event-level problems for device alarms, providing detailed correlation between infrastructure events and service-level impact.
 
 - **Real-time monitoring**: Live tracking of managed tickets with visibility on synchronization status, frequency, and ticket counts through an intuitive interface.
+
+- **Event-based ticket ingestion**: The connector supports near-real-time ticket processing, allowing newly created tickets to be detected and handled immediately. This helps teams accelerate incident response and reduce delays caused by synchronization intervals.
 
 ## Use Cases
 
@@ -49,7 +51,6 @@ The SES Service Problem Management connector integrates the DataMiner SDM Ticket
 ## Prerequisites
 
 - This connector requires **DataMiner 10.5.0** or higher because of dependencies on:
-
   - SDM Ticketing APIs (`TicketingApiHelper`).
   - The **DataMiner SDM Ticketing** solution, which must be available on the DataMiner System.
 

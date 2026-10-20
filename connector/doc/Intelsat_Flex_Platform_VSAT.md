@@ -4,7 +4,7 @@ uid: Connector_help_Intelsat_Flex_Platform_VSAT
 
 # Intelsat Flex Platform VSAT
 
-The IntelSat Flex Platform VSAT functions as a virtual connector designed to streamline the presentation of critical data sourced from Intelsat terminals. This platform offers an intuitive front-end interface that enables users to conveniently interact with the data. To facilitate this process, a separate connector known as the Generic Kafka Consumer operates autonomously to ingest data from the Intelsat Kafka broker. This consumer collects the data and saves it in files at a designated location. Subsequently, the IntelSat Flex Platform VSAT injects these saved files, populating the corresponding data tables. This integrated approach ensures that the data is efficiently organized and instantly accessible via the interface of the connector.
+The IntelSat Flex Platform VSAT functions as a virtual connector designed to streamline the presentation of critical data sourced from Intelsat terminals. This platform offers an intuitive frontend interface that enables users to conveniently interact with the data. To facilitate this process, a separate connector known as the Generic Kafka Consumer operates autonomously to ingest data from the Intelsat Kafka broker. This consumer collects the data and saves it in files at a designated location. Subsequently, the IntelSat Flex Platform VSAT injects these saved files, populating the corresponding data tables. This integrated approach ensures that the data is efficiently organized and instantly accessible via the interface of the connector.
 
 ## About
 

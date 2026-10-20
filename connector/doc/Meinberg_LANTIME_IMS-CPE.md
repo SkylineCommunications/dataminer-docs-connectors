@@ -4,7 +4,7 @@ uid: Connector_help_Meinberg_LANTIME_IMS-CPE
 
 # Meinberg LANTIME IMS-CPE
 
-The **CPE** module consists of a half-size standard controller card (back end) and a dockable port expander card (front end).
+The **CPE** module consists of a half-size standard controller card (backend) and a dockable port expander card (frontend).
 
 This allows a large variety of available and programmable output signals and physical connectors, including various electrical and optical interfaces.
 

@@ -4,7 +4,7 @@ uid: Connector_help_Synamedia_VSM
 
 # Synamedia VSM
 
-The Synamedia VSM (Video Service Manager) connector provides a set of tools for the monitoring and management of Synamedia's Video Processing Solutions. The connector integrates unified media workflows with support for a diverse range of applications that provide users with a service-oriented workflow management front end to operate and manage video signals.
+The Synamedia VSM (Video Service Manager) connector provides a set of tools for the monitoring and management of Synamedia's Video Processing Solutions. The connector integrates unified media workflows with support for a diverse range of applications that provide users with a service-oriented workflow management frontend to operate and manage video signals.
 
 ## About
 

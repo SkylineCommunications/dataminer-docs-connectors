@@ -90,7 +90,7 @@ This page displays contains 9 subpages pages which can be accessed by clicking t
 - **Temperatures**: Displays the **Temperature Table**, with the following parameters: **Sensor**, **Location**, **Status**, **Reading**, **Units**, and **Thresholds**.
 - **Fans**: Displays the **Fans Table**, with the following parameters: **Index**, **Location**, **Status**, **Speed**, and **Unit**.
 
-In case some piece of information seems to be missing, first check whether the actual web page of the ILO device does show the missing information.
+In case some piece of information seems to be missing, first check whether the actual webpage of the ILO device does show the missing information.
 
 ### Integrated Management Log
 

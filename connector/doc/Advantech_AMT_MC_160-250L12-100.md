@@ -4,23 +4,11 @@ uid: Connector_help_Advantech_AMT_MC_160-250L12-100
 
 # Advantech AMT MC 160-250L12-100
 
-The Advantech AMT MC 160-250L12-100 is a monitor and control panel for redundant amplifiers.
-
 ## About
 
+The Advantech AMT MC 160-250L12-100 is a monitor and control panel for redundant amplifiers.
+
 The monitor and control panel is used for redundant high-power amplifiers, monitoring the status of two units in a redundant system and providing control to the amplifiers. It can monitor three slave SSPA units continuously, collecting and updating information, as well as controlling these SSPAs when required. In other words, the monitor and control panel can control any slave system connected to it, such as the redundant 1:2 SSPA system.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | False                   |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 

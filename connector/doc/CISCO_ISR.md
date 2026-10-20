@@ -4,23 +4,11 @@ uid: Connector_help_CISCO_ISR
 
 # CISCO ISR
 
-The **CISCO ISR** will monitor Cisco switches with SNMP.
-
 ## About
 
-The **CISCO ISR** connector can retrieve information from different device types with SNMPv2. This is a custom-made connector for Ziggo which will only poll a limited set of parameters.
+The **CISCO ISR** will monitor Cisco switches with SNMP.
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
+This connector can retrieve information from different device types with SNMPv2. This is a custom-made connector for Ziggo which will only poll a limited set of parameters.
 
 ## Installation and configuration
 

@@ -4,23 +4,11 @@ uid: Connector_help_General_Dynamics_BUC-BDC_Redundancy_Controller
 
 # General Dynamics BUC-BDC Redundancy Controller
 
-Generic redundancy controller with serial interface. Redundant lock up-converter (BUC) and down-converter (BDC) systems contain either three converters in a 1:2 redundant configuration or two converters in a 1:1 redundant configuration. The systems include automatic switchover logic, redundant power supplies, and redundant AC line inputs. The systems are designed for installation at satellite earth stations in standard 19-inch EIA equipment racks.
-
 ## About
 
-This protocol uses a **serial** connection to allow the user to monitor and configure the device.
+Generic redundancy controller with serial interface. Redundant lock up-converter (BUC) and down-converter (BDC) systems contain either three converters in a 1:2 redundant configuration or two converters in a 1:1 redundant configuration. The systems include automatic switchover logic, redundant power supplies, and redundant AC line inputs. The systems are designed for installation at satellite earth stations in standard 19-inch EIA equipment racks.
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
+This connector uses a **serial** connection to allow the user to monitor and configure the device.
 
 ## Installation and configuration
 

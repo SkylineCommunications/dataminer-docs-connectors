@@ -40,4 +40,4 @@ Here it's available the **Interface Details** table where is possible to have in
 
 ### Web Interface
 
-To have access to the device's configuration web page.
+To have access to the device's configuration webpage.

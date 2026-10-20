@@ -8,8 +8,8 @@ This connector is used to aggregate information coming from one or more collecto
 
 The connector has two levels of complexity:
 
-- On the back-end (BE) level, the **BE Manager** is responsible for a specific **county**. At this level, you can define how many collectors there are. The BE Manager is responsible for managing the load balance between these elements, as well as aggregating information from the county to the front-end level.
-- On the front-end (FE) level, the **FE Manager** is responsible for aggregating the information from all BE Managers (i.e., from all the counties) and presenting the result to the end user. It is the FE Manager that creates and controls the BE Manager elements.
+- On the backend (BE) level, the **BE Manager** is responsible for a specific **county**. At this level, you can define how many collectors there are. The BE Manager is responsible for managing the load balance between these elements, as well as aggregating information from the county to the frontend level.
+- On the frontend (FE) level, the **FE Manager** is responsible for aggregating the information from all BE Managers (i.e., from all the counties) and presenting the result to the end user. It is the FE Manager that creates and controls the BE Manager elements.
 
 ## About
 

@@ -4,39 +4,20 @@ uid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9001
 
 # Cobalt Digital HPF 9000 - Cobalt Digital 9001
 
-The Cobalt Digital 9001 is an exported DVE SNMP card for a modular frame. The card contains temperature, voltage, as well as the slot on the frame it is inserted. The table is exported via DVE creation as requested by the user on the Cobalt Digital HPF 9000.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   |                        |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                          |
-|-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     |                       | [Cobalt Digital HPF 9000](xref:Connector_help_Cobalt_Digital_HPF_9000) |
+This is an exported Dynamic Virtual Element (DVE) representing a Cobalt Digital 9001 openGear card. It is created on demand from the parent [Cobalt Digital HPF 9000](xref:Connector_help_Cobalt_Digital_HPF_9000) frame connector and exposes the card's data, including temperature, voltage, and the frame slot in which the card is inserted.
 
 ## Configuration
 
-## Connections
+### Connections
 
-This element is created by the parent element using the **Cobalt Digital HPF 9000** connector by a toggle button. No additional configuration is needed.
+This element is created by the parent **Cobalt Digital HPF 9000** connector through the DVE toggle button in the Slots table. No additional configuration is needed.
 
 ### Initialization
 
-This exported element is defined in the Card 9001 of the parent element **Cobalt Digital HPF 9000** connector.
+This exported element is defined by the 9001 card table of the parent **Cobalt Digital HPF 9000** connector.
 
 ## How to use
 
-This dynamic virtual element is created by the SNMP connector Cobalt Digital HPF 9000 via a toggle button. The user can toggle DVE creation for the specific card in the slot which exports the information virtually.
-
+This dynamic virtual element is created by toggling DVE creation for a 9001 card in a slot on the parent connector. Its **General** and **Status** pages display the card's parameters. The element updates as long as the card is set to be displayed on the Card Display page of the parent element.

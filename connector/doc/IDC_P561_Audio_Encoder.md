@@ -4,25 +4,13 @@ uid: Connector_help_IDC_P561_Audio_Encoder
 
 # IDC P561 Audio Encoder
 
+## About
+
 The P561 Audio Encoder features MPEG-4 advanced audio coding (MPEG-4 AAC) and MPEG Layer II encoding capabilities. All of the common bit rates and sample rates are offered to enhance the IP delivery of audio.
 
 The P561 is an audio encoder for up to eight stereo channels, capable of transporting elementary streams over IP and DVB-compliant MPEG-2 transport stream output via IP or ASI.
 
-## About
-
 The **IDC P561 Audio Encoder** connector is used to monitor and control a P561 Audio Encoder device. It provides an overview of the different parameters of the device along with its statuses and generated alarms. The connector uses **SNMP** to retrieve the data from the device.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 
