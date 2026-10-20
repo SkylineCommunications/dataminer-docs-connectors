@@ -9906,15 +9906,17 @@
     items:
     - name: Starlink Enterprise Technical
       topicUid: Connector_help_Starlink_Enterprise_Technical
+    - name: Starlink Enterprise - Service Group
+      topicUid: Connector_help_Starlink_Enterprise_-_Service_Group
+    - name: Starlink Enterprise - User Terminal
+      topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
+    - name: Starlink Enterprise - API V2 Migration
+      topicUid: Connector_help_Starlink_Enterprise_API_V2_Migration
   - name: Starlink Enterprise Account
     topicUid: Connector_help_Starlink_Enterprise_Account
     items:
     - name: Starlink Enterprise Account Technical
       topicUid: Connector_help_Starlink_Enterprise_Account_Technical
-  - name: Starlink Enterprise - User Terminal
-    topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
-  - name: Starlink Enterprise - API V2 Migration
-    topicUid: Connector_help_Starlink_Enterprise_API_V2_Migration
 - name: Stormshield
   items:
   - name: Stormshield Network Security S-Series
