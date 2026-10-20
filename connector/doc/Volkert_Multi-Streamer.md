@@ -11,6 +11,8 @@ Multi-Streamer (by Volkert Software) is a cross-platform application for handlin
 ## Key Features
 
 - **Real-time monitoring**: View all media sources and monitor their health in one go.
+- **Input redundancy management**: Group multiple sources into a flow router, assign priorities, and automatically or manually switch to a backup source if the active one fails.
+- **Statistics reset**: Reset network or MPEG-TS statistics counters for a specific source directly from DataMiner.
 
 ## Use Cases
 
