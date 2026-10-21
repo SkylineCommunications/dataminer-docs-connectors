@@ -79,9 +79,9 @@ The longitude is calculated based on the H3 cell that is returned by the API (H3
 
 #### User Terminal Reboot
 
-A user terminal can be rebooted by clicking on the **Reboot** button.
+You can reboot a user terminal by clicking the **Reboot** button.
 
-The reboot can be verified on the appropriate Starlink Enterprise Account element by looking at the **Uptime** value resetting to zero, although it will reflect only after the next poll cycle.
+You can verify the reboot on the appropriate Starlink Enterprise Account element by checking if the **Uptime** value resets to zero; however, note that this will only be reflected after the next polling cycle.
 
 #### Hidden Columns
 
