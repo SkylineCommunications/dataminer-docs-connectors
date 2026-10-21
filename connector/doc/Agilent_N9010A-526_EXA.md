@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Agilent_N9010A-526_EXA
+description: "Monitor Agilent (Keysight) N9010A-526 EXA analyzers in DataMiner with live spectrum traces, remote measurement control, and VISA connectivity."
 ---
 
 # Agilent N9010A-526 EXA
@@ -12,11 +13,11 @@ The Agilent N9010A-526 EXA connector allows seamless integration of the Agilent 
 
 - **Real-time spectrum analysis**: View live trace data from the analyzer directly in DataMiner's spectrum analysis component.
 - **Instrument identification**: View information about the connected device, such as the manufacturer and model.
-- **Measurement control**: Adjust analyzer settings directly from DataMiner, including frequency, bandwidth, sweep, attenuation, and reference-level parameters.
+- **Measurement control**: Adjust analyzer settings directly from DataMiner, including center/start/stop frequency, reference level and scale, resolution bandwidth (RBW), video bandwidth (VBW), sweep time, input attenuation, and more.
 - **Sweep mode**: Choose your preferred mode of sweep acquisition: *Single* or *Continuous*.
 - **Zero-span sweep**: Start a zero-span, time-adjusted rolling trace acquisition on demand.
 - **Preset**: Restore the instrument to its default configuration directly from DataMiner.
-- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025), or HiSLIP.
+- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket, or HiSLIP.
 
 ## Use Cases
 
