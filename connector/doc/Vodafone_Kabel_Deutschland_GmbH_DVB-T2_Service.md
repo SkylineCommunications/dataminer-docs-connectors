@@ -1,54 +1,34 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service
+description: Explore DVB-T2 Service in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH DVB-T2 Service
 
-The Vodafone Kabel Deutschland GmbH Transcoding TS Service protocol monitors the active configuration of the Transcoding TS elements per service.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH DVB-T2 Service connector monitors the active configuration and stream states of elements included in a DVB-T2 service, including XSwitch source status.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
+- **Site-Level Status**: View active stream states per site.
+- **Configuration Visibility**: Inspect the active configuration of input and output devices.
+- **Source Monitoring**: Check current XSwitch status on the **Source Status** page.
+- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | -                       |
+### Investigating DVB-T2 Service Status
 
-## Configuration
+**Challenge**: Stream problems need to be investigated alongside device configuration and source switch status.
 
-To create a service using this service protocol:
+**Solution**: The connector brings stream states, active configuration, and XSwitch status into the enhanced service.
 
-1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol **Vodafone Kabel Deutschland GmbH DVB-T2 Service**, with the latest version or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+**Benefit**: You can review the information relevant to a DVB-T2 service without switching between unrelated overviews.
 
-## How to use
+## Technical Reference
 
-The **General** page contains the overview of the active stream states per site.
-
-The **Service Active Configuration** page contains the overview of the input and output devices configuration.
-
-The **Source Status** page contains a table displaying the current status of the XSwitches.
-
-The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
-
-The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
-
-The **General Parameters** page contains the list of parameters with important information regarding the system.
-
-## Notes
-
-This enhanced service protocol was designed for a specific project and is not expected to be reused in general.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service_Technical).

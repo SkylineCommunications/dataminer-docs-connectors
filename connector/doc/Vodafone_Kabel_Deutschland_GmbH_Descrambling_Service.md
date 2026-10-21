@@ -1,50 +1,33 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service
+description: Explore Descrambling Service in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH Descrambling Service
 
-The Vodafone Deutschland Descrambling service protocol monitors the outgoing streaming states per site included in the service.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH Descrambling Service connector monitors outgoing streaming states per site for the services included in an enhanced service.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
+- **Site-Level Status**: View outgoing streaming states for the sites included in the service.
+- **Alarm Visibility**: Retrieve active alarms for included services and elements.
+- **Debug Logging**: Enable logging related to elements and data retrieval.
 
-### System Info
+## Use Cases
 
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|--|
-| 1.0.0.x | No | Yes | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | - |
+### Monitoring Descrambling Service Streams
 
-## Configuration
+**Challenge**: Outgoing stream states and related alarms need to be reviewed across the sites in a descrambling service.
 
-### Connections
+**Solution**: The connector presents site-level stream states together with access to alarms and diagnostic logging.
 
-This is a service protocol. To create a service using this protocol:
+**Benefit**: You can investigate stream issues in the context of the affected service.
 
-1. In DataMiner Cube, right-click a view in the Surveyor and select *Create service*.
-1. Specify the name for the service.
-1. Open the advanced options and select the service protocol, *Vodafone Kabel Deutschland GmbH SAT DL Service*, with the latest version or production version.
-1. Go to the *parameters* tab and include the service you want to monitor.
+## Technical Reference
 
-## How to use
-
-The **General** page contains an overview of the active stream states per site.
-
-The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
-
-The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
-
-## Notes
-
-This enhanced service protocol was designed for a specific project and is not expected to be reused in general.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service_Technical).

@@ -1,46 +1,32 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TS_Bitrate_Optimization_APP
+description: Explore TS Bitrate Optimization APP in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP
 
-This connector can be used to manipulate the TS bitrate of output streams on the CISCO DCM.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP connector calculates optimal bitrates and lets you adjust output transport stream bitrates on CISCO DCM devices.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+## Key Features
 
-### Product Info
+- **Output Stream Overview**: Collect constant bitrate (CBR) output streams from configured DCM devices.
+- **Bitrate Calculation**: Calculate an optimal bitrate using a fixed Mbps delta or a percentage of the maximum bitrate.
+- **Stream Controls**: Adjust stream bitrates through row buttons or table context menus.
+- **App Access**: Open the connector through the Apps button in DataMiner Cube.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | Corbaloc IIOP 1.1      |
+## Use Cases
 
-### System Info
+### Adjusting DCM Output Stream Bitrates
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+**Challenge**: Output stream bitrates need to be reviewed and adjusted against a consistent calculation.
 
-## Configuration
+**Solution**: The connector collects CBR streams, calculates optimal bitrates using the configured delta, and provides bitrate controls.
 
-No connection needs to be configured during element creation.
+**Benefit**: You can review calculated targets and adjust output streams from one app.
 
-Once the element has been created, on the **General** page, fill in the CISCO DCM **IIOP credentials**, and specify the necessary devices in the **Devices Table**.
+## Technical Reference
 
-## How to use
-
-This connector is deployed as an app. This means that you can easily access it in Cube with the Apps button in the sidebar.
-
-The connector will poll all devices configured in the **Devices Table** (on the General page). All data will be parsed, and the Streams Table (on the Streams page) will be populated will all CBR output streams.
-
-For each output stream, the max bitrate will be shown, and an optimal bitrate will be calculated based on the **configuration settings**:
-
-- Bitrate Delta Setting \[Value\]: Calculates the optimal bitrate by adding a fixed (Mbps) value to the maximum bitrate.
-- Bitrate Delta Setting \[Percentage\]: Calculates the optimal bitrate by adding a percentage to the maximum bitrate.
-
-The **Streams** table provides several options to manipulate the output stream bitrates, using buttons on the row level or using the context menu.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_TS_Bitrate_Optimization_APP_Technical).

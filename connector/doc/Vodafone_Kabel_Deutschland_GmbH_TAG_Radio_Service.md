@@ -1,56 +1,33 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service
+description: Explore TAG Radio Service in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH TAG Radio Service
 
-The Vodafone Deutschland GmbH TAG Radio Service protocol monitors the active configuration of the TAG/Xswitch/RTP Gateway elements per service.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH TAG Radio Service connector monitors the active configuration of TAG, XSwitch, and RTP Gateway elements per service.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
+- **Radio Chain Monitoring**: Monitor active configuration across TAG, XSwitch, and RTP Gateway elements.
+- **Site-Level Status**: View active stream states per site.
+- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | -                       |
+### Monitoring TAG Radio Service Chains
 
-## Configuration
+**Challenge**: A radio service includes several element types whose configuration and status need to be considered together.
 
-To create a service using this service protocol:
+**Solution**: The connector monitors the included elements and presents site-level streaming states with related alarms.
 
-1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol **Vodafone Kabel Deutschland GmbH TAG Radio Service**, with the latest version or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+**Benefit**: You can investigate radio service issues using a dedicated service overview.
 
-### Initialization
+## Technical Reference
 
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
-
-The **General** page contains the overview of the active stream states per site.
-
-The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
-
-The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
-
-## Notes
-
-This enhanced service protocol was designed for a specific project and is not expected to be reused in general.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service_Technical).
