@@ -58,7 +58,7 @@ After creating the element, open the **Configuration** page. From there, open th
 
 #### Routing File
 
-- **System Directory Type**: Select **Local** when the routing directory is on the same DataMiner Agent as the WM element. Select **Remote** when it is on another server.
+- **System Directory Type**: Select **Local** when the routing directory path is on the same DataMiner agent as the WM element. Select **Remote** when the directory path is located in a remote server.
 - **Routing File Directory**: Enter the directory containing the routing file.
 - **Routing File Access Username** and **Routing File Access Password**: For a remote directory, enter an account that can access the share. These fields are not required for a local directory.
 
