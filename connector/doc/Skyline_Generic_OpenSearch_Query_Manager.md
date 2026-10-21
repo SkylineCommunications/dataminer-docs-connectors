@@ -3,35 +3,47 @@ uid: Connector_help_Skyline_Generic_OpenSearch_Query_Manager
 ---
 # Skyline Generic OpenSearch Query Manager
 
-> TODO: To be defined.
+## About
 
-## Knowledge graph (graphify)
+The **Skyline Generic OpenSearch Query Manager** connects OpenSearch data to DataMiner workflows. From one virtual DataMiner element, teams can define and schedule JSON-based OpenSearch queries, inspect their results, and route successful results to configured DataMiner destination elements. Queries and routing are managed through element tables, so they can be adapted without creating a custom connector for each query.
 
-This repository uses [graphify](https://github.com/safishamsi/graphify) to maintain a navigable knowledge graph of the codebase (`graphify-out/`, gitignored — not committed).
+This connector is intended for DataMiner teams that need to retrieve selected data from OpenSearch and make the raw query results available to other DataMiner elements. It executes the queries; destination elements remain responsible for interpreting or processing the returned data.
 
-Because `graphify-out/` is excluded from version control, a fresh clone starts with **no graph and no local git hook** (git hooks live in `.git/hooks/`, which is never part of a clone). Each contributor must run the setup below once after cloning.
+## Key Features
 
-### One-time setup after cloning
+- **Manage multiple scheduled queries:** Configure each query's index, JSON query body, polling interval, enabled state, timeout, and partition count in the Queries table. Review its latest status, response, execution time, duration, and error.
+- **Authenticate to OpenSearch:** Configure an endpoint and choose Basic authentication or API key authentication.
+- **Route results to DataMiner elements:** Map queries to one or more destinations in the Dispatch table. After a successful query, the connector sends the raw response to the configured destination elements using DataMiner InterApp messaging.
+- **Adapt queries at runtime:** Use time-bound and partition template variables in scheduled query bodies, and configure multiple partitions for sequential execution.
+- **Test and transfer query definitions:** Run an on-demand query from the Query Tool page and import or export query definitions.
+- **Operate without a device connection:** The connector is virtual; OpenSearch endpoint and authentication settings are configured on the element.
 
-```bash
-# Build the graph for the first time
-graphify .
+## Use Cases
 
-# Install a local post-commit hook that auto-rebuilds the graph after every commit
-graphify hook install
-```
+### Retrieve OpenSearch data on a schedule
 
-### Useful commands
+**Challenge:** DataMiner workflows need selected logs, events, or other indexed data from OpenSearch, but maintaining a separate custom integration for each query is cumbersome.
 
-| Command | Purpose |
-|---|---|
-| `graphify .` | Full pipeline build (interactive HTML, graph.json, GRAPH_REPORT.md) |
-| `graphify . --update` | Incremental rebuild — re-extracts only new/changed files |
-| `graphify . --cluster-only` | Re-run community clustering on the existing graph |
-| `graphify hook install` | Install the post-commit hook (auto-rebuilds graph on code changes after each commit) |
-| `graphify hook status` | Check whether the hook is installed |
-| `graphify hook uninstall` | Remove the hook |
-| `graphify query "<question>"` | Ask a question about the codebase using the graph |
-| `graphify explain "<Node>"` | Get a plain-language explanation of a node |
+**Solution:** Define the index, JSON query, and polling interval for each query in the connector's Queries table. Enable or disable individual queries and monitor their latest execution status and response.
 
-> **Note:** The post-commit hook only rebuilds the graph on **your own local commits**, and only for **code** file changes (doc/paper/image changes still need a manual `graphify . --update`). It is not distributed via git — every contributor must run `graphify hook install` locally after cloning.
+**Benefit:** Teams can manage recurring OpenSearch data retrieval in a single DataMiner element and adjust query definitions through configuration rather than custom connector code.
+
+### Deliver query results to existing DataMiner workflows
+
+**Challenge:** OpenSearch query results need to reach the DataMiner elements that use them, without coupling query execution to each consumer's processing logic.
+
+**Solution:** Add destination elements and map each query to one or more destinations in the Destinations and Dispatch tables. The connector forwards a successful query's raw response through InterApp messaging.
+
+**Benefit:** Query execution and result processing stay decoupled, allowing multiple DataMiner consumers to receive results from a centrally managed query.
+
+### Iterate on queries and handle large result sets
+
+**Challenge:** Query authors need to validate JSON query bodies against the configured OpenSearch endpoint and tailor scheduled queries for time windows or large indices.
+
+**Solution:** Test a query interactively with the Query Tool. For scheduled queries, use the supported time-bound template variables and configure sequential partitions where appropriate.
+
+**Benefit:** Operators can validate queries before scheduling them and adapt query execution to their data retrieval needs using element configuration.
+
+## Technical Reference
+
+For configuration details and usage guidance, see the [technical documentation](xref:Connector_help_Skyline_Generic_OpenSearch_Query_Manager_Technical).
