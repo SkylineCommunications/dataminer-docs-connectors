@@ -77,6 +77,12 @@ The **Latitude** and **Longitude** combination represents a coordinate near the 
 
 The longitude is calculated based on the H3 cell that is returned by the API (H3 geospatial indexing system). This H3 cell ID represents the center point of a hexagonal area, not the exact coordinates of a specific location within that area. If the exact location of the terminal is somewhere else within the hexagon, the latitude and longitude will differ.
 
+#### User Terminal Reboot
+
+You can reboot a user terminal by clicking the **Reboot** button.
+
+You can verify the reboot on the appropriate Starlink Enterprise Account element by checking if the **Uptime** value resets to zero; however, note that this will only be reflected after the next polling cycle.
+
 #### Hidden Columns
 
 The columns **User Terminal Device ID**, **Account Number**, **Service Line Number**, **State**, **User Terminal DVE ID**, and **Service Group DVE ID** in the User Terminals table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
