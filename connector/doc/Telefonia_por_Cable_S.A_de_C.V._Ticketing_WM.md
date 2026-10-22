@@ -9,9 +9,6 @@ description: "Configure Telefonia por Cable S.A de C.V. Ticketing WM to create i
 
 The **Telefonia por Cable S.A de C.V. Ticketing WM** connector acts as the middleware between infrastructure health monitoring and a ticketing backend. It periodically evaluates critical-incident aggregations produced by the Telefonia por Cable S.A de C.V. Topology Aggregator element, turns qualifying incidents into tickets, enriches them with branch/region and topology context, and forwards them to one or more Telefonia por Cable S.A de C.V. Ticketing BE elements.
 
-- **Integration ID**: DMS-DRV-9278
-- **Element type**: Ticketing System (virtual — no physical device connection)
-
 ## Key Features
 
 - **Automated ticket creation**: Turns critical service group incidents from aggregated topology data into trackable tickets, without manual triage.
