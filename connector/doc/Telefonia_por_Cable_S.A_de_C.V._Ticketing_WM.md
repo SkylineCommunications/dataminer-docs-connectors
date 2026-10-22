@@ -13,9 +13,6 @@ Telefonia por Cable S.A de C.V. Topology Aggregator element, turns qualifying in
 tickets, enriches them with branch/region and topology context, and forwards them to one or more
 Telefonia por Cable S.A de C.V. Ticketing BE elements over InterAppCalls.
 
-- **IntegrationID:** DMS-DRV-9278
-- **Element type:** Ticketing System (virtual — no physical device connection)
-
 ## Key Features
 
 - **Automated ticket creation**: detects critical SNR/upstream/downstream service-group incidents
