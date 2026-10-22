@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Skyline_Generic_OpenSearch_Query_Manager
+description: "Connect OpenSearch data to DataMiner workflows with Skyline Generic OpenSearch Query Manager to schedule JSON queries and route results."
 ---
 # Skyline Generic OpenSearch Query Manager
 
@@ -11,38 +12,41 @@ This connector is intended for DataMiner teams that need to retrieve selected da
 
 ## Key Features
 
-- **Manage multiple scheduled queries:** Configure each query's index, JSON query body, polling interval, enabled state, timeout, and partition count in the Queries table. Review its latest status, response, execution time, duration, and error.
-- **Authenticate to OpenSearch:** Configure an endpoint and choose Basic authentication or API key authentication.
-- **Route results to DataMiner elements:** Map queries to one or more destinations in the Dispatch table. After a successful query, the connector sends the raw response to the configured destination elements using DataMiner InterApp messaging.
-- **Adapt queries at runtime:** Use time-bound and partition template variables in scheduled query bodies, and configure multiple partitions for sequential execution.
-- **Test and transfer query definitions:** Run an on-demand query from the Query Tool page and import or export query definitions.
-- **Operate without a device connection:** The connector is virtual; OpenSearch endpoint and authentication settings are configured on the element.
+- **Manage multiple scheduled queries**: Set up recurring OpenSearch queries and quickly review the latest results and status for each one.
+- **Authenticate to OpenSearch**: Connect to OpenSearch using basic authentication or an API key.
+- **Route results to DataMiner elements**: Send successful query results directly to the DataMiner elements that need them.
+- **Adapt queries at runtime**: Narrow results to a time window and split larger searches into manageable parts that run one after another.
+- **Test and transfer query definitions**: Try a query before scheduling it, and import or export query definitions to reuse them.
 
 ## Use Cases
 
-### Retrieve OpenSearch data on a schedule
+### Retrieve OpenSearch Data on a Schedule
 
-**Challenge:** DataMiner workflows need selected logs, events, or other indexed data from OpenSearch, but maintaining a separate custom integration for each query is cumbersome.
+**Challenge**: DataMiner workflows need selected logs, events, or other indexed data from OpenSearch, but maintaining a separate custom integration for each query is cumbersome.
 
-**Solution:** Define the index, JSON query, and polling interval for each query in the connector's Queries table. Enable or disable individual queries and monitor their latest execution status and response.
+**Solution**: Define the index, JSON query, and polling interval for each query in the connector's Queries table. Enable or disable individual queries and monitor their latest execution status and response.
 
-**Benefit:** Teams can manage recurring OpenSearch data retrieval in a single DataMiner element and adjust query definitions through configuration rather than custom connector code.
+**Benefit**: Teams can manage recurring OpenSearch data retrieval in a single DataMiner element and adjust query definitions through configuration rather than custom connector code.
 
-### Deliver query results to existing DataMiner workflows
+### Deliver Query Results to Existing DataMiner Workflows
 
-**Challenge:** OpenSearch query results need to reach the DataMiner elements that use them, without coupling query execution to each consumer's processing logic.
+**Challenge**: OpenSearch query results need to reach the DataMiner elements that use them, without coupling query execution to each consumer's processing logic.
 
-**Solution:** Add destination elements and map each query to one or more destinations in the Destinations and Dispatch tables. The connector forwards a successful query's raw response through InterApp messaging.
+**Solution**: Add destination elements and map each query to one or more destinations in the Destinations and Dispatch tables. The connector forwards a successful query's raw response through InterApp messaging.
 
-**Benefit:** Query execution and result processing stay decoupled, allowing multiple DataMiner consumers to receive results from a centrally managed query.
+**Benefit**: Query execution and result processing stay decoupled, allowing multiple DataMiner consumers to receive results from a centrally managed query.
 
-### Iterate on queries and handle large result sets
+### Iterate on Queries and Handle Large Result Sets
 
-**Challenge:** Query authors need to validate JSON query bodies against the configured OpenSearch endpoint and tailor scheduled queries for time windows or large indices.
+**Challenge**: Query authors need to validate JSON query bodies against the configured OpenSearch endpoint and tailor scheduled queries for time windows or large indices.
 
-**Solution:** Test a query interactively with the Query Tool. For scheduled queries, use the supported time-bound template variables and configure sequential partitions where appropriate.
+**Solution**: Test a query interactively with the Query Tool. For scheduled queries, use the supported time-bound template variables and configure sequential partitions where appropriate.
 
-**Benefit:** Operators can validate queries before scheduling them and adapt query execution to their data retrieval needs using element configuration.
+**Benefit**: Operators can validate queries before scheduling them and adapt query execution to their data retrieval needs using element configuration.
+
+## Prerequisites
+
+This connector requires DataMiner version **10.4.0.0 - 14003** or higher.
 
 ## Technical Reference
 
