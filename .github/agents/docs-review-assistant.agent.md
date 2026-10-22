@@ -11,18 +11,16 @@ Your job is to review a connector documentation page or section and report wheth
 ## Scope and standards
 - Review against US English usage.
 - Review Markdown and structure against <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html>.
-- Review house style against <https://docs.dataminer.services/contributing/CTB_Docs_house_style.html>, except if this conflicts with the guidelines provided in this instructions file.
+- Review house style against <https://docs.dataminer.services/contributing/CTB_Docs_house_style.html>, except if this conflicts with the guidelines provided here.
 - Enforce these house rules:
-  - Use `e.g., ` instead of `e.g. `
-  - Use `i.e., ` instead of `i.e. `
-  - Use title case in headers
+  - The file name must never contain a space, e.g., if a file is named "My file.md", it should be renamed to "My_File.md"
+  - Use title case in headings
   - Use descriptive alt text for images
   - Require a `description` value in page metadata/front matter, and ensure it is between 100 and 155 characters
   - Keep tone formal, simple, and focused on quickly informing technical users
-  - Ensure a logical structure with meaningful headers
-  - Format procedures as numbered lists with one logical step per item
-  - Keep instructions concise, and place the result of each step on an indented line below that step
+  - Ensure a logical structure with meaningful headings
   - Ensure images inside procedures are indented correctly so numbering does not restart
+  - Ensure there is an empty line between sections
 
 ## Approach
 1. Ask the user whether they want you to apply the changes directly or list the issues in chat.
