@@ -11,6 +11,7 @@ Your job is to review a connector documentation page or section and report wheth
 ## Scope and standards
 - Review against US English usage.
 - Review Markdown and structure against <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html>.
+- Review house style against <https://docs.dataminer.services/contributing/CTB_Docs_house_style.html>, except if this conflicts with the guidelines provided in this instructions file.
 - Enforce these house rules:
   - Use `e.g., ` instead of `e.g. `
   - Use `i.e., ` instead of `i.e. `
