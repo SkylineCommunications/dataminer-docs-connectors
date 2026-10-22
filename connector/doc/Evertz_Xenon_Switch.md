@@ -4,131 +4,55 @@ uid: Connector_help_Evertz_Xenon_Switch
 
 # Evertz Xenon Switch
 
-The **Evertz Xenon Switch** offers both the flexibility of multiformat operation and the ability to add signal processing technology. To avoid single points of failure, active assemblies are hot-swappable from the front of the frame, and power, control, cooling and reference generation are available in redundant configurations.
-
 ## About
 
-The **Evertz Xenon Switch** connector uses both SNMP and serial communication to monitor the Evertz switch. The device contains two controllers, but only one can be in control at a time. The controller in control will be interrogated using SNMP queries and Ethernet queries.
+The **Evertz Xenon Switch** connector monitors and controls the Evertz Xenon series routing switcher. It provides real-time visibility into the state of the routing matrix, installed cards, and active faults, while enabling full crosspoint control directly from DataMiner.
 
-To avoid issues because of excessive polling, the device is polled at startup and whenever a message of type .UVxxx,xxx is received. In addition, in case the device is configured using a different tool so that such messages are not received, it is also polled daily.
+## Key Features
 
-Between requests, there is a pause of 0.5 seconds. This prevents the loop from going too fast and keeps the device from going into error state. Note, however, that this does mean that it will take a while for the element to load the entire matrix (since version 1.0.0.7).
+- **Simplify routing operations**: Set and manage crosspoints across your entire matrix from a single, unified DataMiner interface, without needing to rely on vendor-specific tools.
 
-### Version Info
+- **Keep operations running during failover**: Stay in control when a controller switchover happens, so routing operations continue uninterrupted.
 
-| Range     | Description                                                                   | DCF Integration     | Cassandra Compliant     |
-|------------------|--------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                | No                  | Yes                     |
-| 2.0.0.x          | Initial version (connector review)                                                | No                  | Yes                     |
-| 2.0.2.x          | Updates pushed from the device for the crosspoints (smart-serial) - to be used | Yes                 | Yes                     |
-| 2.1.0.x          | Hardware update SNMP v1                                                        | No                  | Yes                     |
-| 2.1.1.x          | DCF updated from matrix to tables                                              | Yes                 | Yes                     |
-| 2.1.2.x          | Improved tables for Router Control and Visio (smart-serial) - to be used       | Yes                 | Yes                     |
+- **Catch hardware problems before they impact viewers**: Get a clear, proactive view of the health of every installed card, so failing hardware can be replaced before it affects on-air signals.
 
-## Installation and configuration
+- **Trace your signal path end to end**: Visualize how signals travel across your infrastructure, making it easier to verify connectivity and troubleshoot issues.
 
-### Creation
+## Use Cases
 
-#### SNMP Main Connection
+### Centralized Routing Control in a Broadcast Facility
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+**Challenge**: Operators need to manage signal routing on an Evertz Xenon switcher from a unified control interface, without relying on vendor-specific tools.
 
-SNMP CONNECTION:
+**Solution**: The connector exposes the full routing matrix in the DataMiner Matrix UI, allowing operators to set crosspoints, lock destinations, rename inputs and outputs, and browse matrix levels — all from within DataMiner.
 
-- **IP address/host**: The polling IP of the device.
+**Benefit**: Reduces the need for separate vendor tools, speeds up routing operations, and enables routing changes to be automated through DataMiner Automation scripts.
 
-SNMP Settings:
+### Proactive Hardware Fault Detection
 
-- **IP port**: The IP port of the device.
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: The community string used when setting values on the device, by default *private*.
+**Challenge**: Card failures or reference signal issues on the Xenon chassis may go unnoticed until they impact on-air signals.
 
-#### Serial SerialPort Connection
+**Solution**: The connector continuously polls card status and fault tables via SNMP and raises DataMiner alarms when a card enters a fault state or a monitored fault becomes active.
 
-This connector uses a serial connection and requires the following input during element creation:
+**Benefit**: Operations teams receive immediate alarm notifications in DataMiner, enabling faster incident response and reducing unplanned downtime.
 
-SERIAL CONNECTION (**TCP/IP**):
+### End-to-End Signal Path Verification
 
-- Direct connection:
+**Challenge**: In complex signal chains, it is difficult to trace which source is routed to which destination and verify connectivity across multiple devices.
 
-  - **Baudrate**: Baudrate specified in the manual of the device.
-  - **Databits**: Databits specified in the manual of the device.
-  - **Stopbits**: Stopbits specified in the manual of the device.
-  - **Parity**: Parity specified in the manual of the device.
-  - **FlowControl**: FlowControl specified in the manual of the device.
+**Solution**: The connector registers all inputs and outputs as DCF interfaces, and the current crosspoint state is reflected as DCF connections. DataMiner can then combine this with DCF data from other elements to build a complete signal path map.
 
-- Interface connection:
+**Benefit**: Engineers can visually verify end-to-end connectivity in DataMiner Visual Overview diagrams, simplifying fault isolation and infrastructure audits.
 
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device (port *23*).
-  - **Bus address**: The bus address of the device (range: *16 - 1*). The bus address is used as the **Matrix Level**:
+## Technical Reference
 
-    | Bus Address number | Matrix Level |
-    |--------------------|--------------|
-    | 1                  | V            |
-    | 2                  | A            |
-    | 3                  | B            |
-    | 4                  | C            |
-    | 5                  | D            |
-    | 6                  | E            |
-    | 7                  | F            |
-    | 8                  | G            |
-    | 9                  | H            |
-    | 10                 | I            |
-    | 11                 | J            |
-    | 12                 | K            |
-    | 13                 | L            |
-    | 14                 | M            |
-    | 15                 | N            |
-    | 16                 | O            |
+### Prerequisites
 
-#### Serial SerialPortBackup Connection (2.0.2.x and 2.1.2.x)
+- **SNMP access** is required for card status, fault monitoring, and general device information polling.
 
-This connector uses a second serial connection to configure the redundant controller and requires the following input during element creation:
+- **Network reachability to the Q-Link serial port** is required to enable matrix routing control (crosspoint get/set, label read/write, lock/unlock). This can be disabled if only SNMP monitoring is needed.
 
-SERIAL CONNECTION (**TCP/IP**):
+- **A secondary IP address** for the redundant controller is required if redundant controller failover monitoring and switching are needed.
 
-- Direct connection:
-
-  - **Baudrate**: Baudrate specified in the manual of the device.
-  - **Databits**: Databits specified in the manual of the device.
-  - **Stopbits**: Stopbits specified in the manual of the device.
-  - **Parity**: Parity specified in the manual of the device.
-  - **FlowControl**: FlowControl specified in the manual of the device.
-
-- Interface connection:
-
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device (port *23*).
-
-## Usage
-
-### General Page
-
-This page contains general information on the device. In addition, it allows you to set the **System Destination**, and to **lock** or **unlock** the device.
-
-However, note that locking and unlocking is not possible in version 2.0.2.x, as there locking is done on software level.
-
-### Matrix Page
-
-This page displays the **connection matrix** of the device.
-
-### Matrix Details Page
-
-On this page, you can view the connection from the **Destination table**, **Source table** and the **Level**.
-
-### Card Status Page
-
-On this page, all the cards and their data are displayed.
-
-### Fan Page (not available in v 2.1.x.x)
-
-This page contains the **Fan Status Table**, which displays the speed of the fans.
-
-### Power Supply Status Page (not available in v 2.1.x.x)
-
-This page contains the **Power Supply Status Table**, which displays data concerning the power of the device.
-
-### Setting Page
-
-This page contains several settings that can be used to configure the device, including a **reset** option.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_Xenon_Switch_Technical).
