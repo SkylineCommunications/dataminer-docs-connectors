@@ -10,6 +10,10 @@ The Digital Alert Systems DASDEC-III is a professional Emergency Alert System (E
 
 The DASDEC-III connector integrates the device into DataMiner by acting as a smart-serial server, receiving EAS alerts pushed from the DASDEC-III over TCP/IP. It also uses SNMP for device status monitoring. Received alerts can be logged to an Elasticsearch database for historical records. Alert forwarding back to the DASDEC-III is handled securely via SCP using public-private key authentication.
 
+## Requirements
+
+The DASDEC-III connector primarily uses a Smart-Serial connection, meaning that the DASDEC-III device will forward EAS alerts to the DataMiner System over TCP/IP. Ensure that there are no firewalls or network restrictions that could block communication from the DASDEC-III to the DataMiner System as well as from the DataMiner System to the DASDEC-III for HTTP, SNMP, and SSH communication.
+
 ## Configuration
 
 ### Connections
@@ -24,6 +28,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The connector will act as a server. Set this field to *Any*.
   - **IP port**: By default, *20002*. A different port can be specified.
+  - **Accepted IP address**: The IP address of the DASDEC-III device that will be sending EAS alerts to the DataMiner System.
 
 #### SNMP Connection
 
@@ -94,9 +99,7 @@ With the **EAS_NET** license installed, the DASDEC-III can send data over TCP/IP
 
 To perform the public-private key initialization, follow these steps:
 
-1. On the **General** page, fill in the host IP of the DASDEC.
-
-1. On the **General** page, click the **Generate Keys** button.
+1. On the **General** page in the DataMiner Element, fill in the host IP of the DASDEC then click the **Generate Keys** button.
 
    ![SSH Key Generation](~/connector/images/DASDEC-III_SSH_Key_Generation.png)
 
@@ -127,6 +130,13 @@ SNMP on the DASDEC-III requires a package to be installed. To set this up, follo
 1. Navigate to **Setup** > **Main** > **Upgrade** and install the SNMP package.
 
 ![Package Installation](~/connector/images/DASDEC-III_Package_Upgrade.png)
+
+#### HTTP Initialization
+
+HTTP on the DASDEC-III requires the credentials to be set up. To set this up, follow these steps:
+
+1. On the DataMiner Element, navigate to the **Authentication** page and fill in the **Username** and **Password** parameters.
+1. The Operation Log Status Code on the **Authentication** page should now reflect the HTTP Status Code of the last request. If the status code is not initialized, the could mean that DataMiner cannot reach the DASDEC-III or does not trust the certificate. Check the network settings and firewall rules.
 
 ## How to Use
 
