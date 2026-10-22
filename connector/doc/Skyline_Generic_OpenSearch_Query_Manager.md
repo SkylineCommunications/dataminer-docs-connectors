@@ -2,6 +2,7 @@
 uid: Connector_help_Skyline_Generic_OpenSearch_Query_Manager
 description: "Connect OpenSearch data to DataMiner workflows with Skyline Generic OpenSearch Query Manager to schedule JSON queries and route results."
 ---
+
 # Skyline Generic OpenSearch Query Manager
 
 ## About
