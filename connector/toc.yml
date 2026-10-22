@@ -8181,6 +8181,11 @@
     topicUid: Connector_help_RAD_Data_Communications_RIC-LC
 - name: Radeus Labs
   items:
+  - name: Radeus Labs 3500 BTR
+    topicUid: Connector_help_Radeus_Labs_3500_BTR
+    items:
+    - name: Radeus Labs 3500 BTR Technical
+      topicUid: Connector_help_Radeus_Labs_3500_BTR_Technical
   - name: Radeus Labs ACU 8200
     topicUid: Connector_help_Radeus_Labs_ACU_8200
   - name: Radeus Labs ACU DL9000
