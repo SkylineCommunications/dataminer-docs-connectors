@@ -23,44 +23,55 @@ This connector uses an SNMPv2 connection. During element creation, configure the
 - **IP port**: The IP port of the transmitter (default: *161*)
 - **Bus address**: Not required
 
+## Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to Use
 
-### General
+### General Page
 
-Review the transmitter system name and version, real-time clock (RTC) status, and RTC date and time. The RTC date and time can be edited. In the current protocol layout, the editable system location is shown on the **Mail** page.
+On this page, you can review the transmitter system name and version, real-time clock (RTC) status, and RTC date and time. The RTC date and time can be edited.
 
-### LAN
+Note that the editable system location is shown on the **Mail** page instead.
 
-Review the transmitter MAC address and configure its IP address, subnet mask, gateway, and primary and secondary DNS addresses.
+### LAN Page
+
+On this page, you can view the transmitter MAC address and configure its IP address, subnet mask, gateway, and primary and secondary DNS addresses.
 
 > [!CAUTION]
 > Changing the transmitter IP address interrupts communication with DataMiner until the element is updated to use the new address.
 
-### SNMP
+### SNMP Page
 
-Enable or disable trap sending, set the trap destination address, and review the status of the last trap sent by the transmitter.
+On this page, you can enable or disable trap sending, set the trap destination address, and review the status of the last trap sent by the transmitter.
 
-### Mail
+### Mail Page
 
-Enable or disable email sending and configure the SMTP server and port, username, sender address, and up to two recipient addresses. The page also shows the last sending result, maximum and sent email counts, and the sending window. The SMTP password is an editable protected setting; it is not available as a readback value. The current protocol layout also places the editable system location on this page.
+On this page, you can enable or disable email sending and configure the SMTP server and port, username, sender address, and up to two recipient addresses. The system location can also be viewed and edited here.
 
-### System TX
+The page also shows the last sending result, maximum and sent email counts, and the sending window.
 
-Review overall transmitter status; forward and reflected power; heatsink temperature; driver forward power; supply voltage and current; and fan, interlock, VSWR, temperature, and RF output status. This page also shows the VSWR block state and transmitter enabled or disabled state. Operators can set the output power level, enable or disable the transmitter, and use **Reset VSWR Block**.
+The SMTP password is an editable protected setting; it is not available as a readback value.
 
-Alarm suitability and thresholds for analog measurements depend on the transmitter configuration or site wiring. The connector documentation does not define universal limit values.
+### System TX Page
 
-### Polling Settings
+On this page, you can view the overall transmitter status, forward and reflected power, heat sink temperature, driver forward power, and supply voltage and current, as well as the fan, interlock, VSWR, temperature, and RF output status.
 
-Use the Polling Manager table to configure each dataset's polling interval and enabled state, review its last poll time and result, or poll a row immediately. The context menu provides row and bulk operations, including enabling, disabling, polling, and resetting intervals to their defaults. **Refresh All** immediately polls all enabled datasets. Disabling a dataset clears its parameters. Polling intervals are configurable per dataset and are not a single fixed connector interval.
+This page also shows the VSWR block state and enabled or disabled state of the transmitter.
 
-## Web Interface
+You can set the output power level, enable or disable the transmitter, and use **Reset VSWR Block**.
 
-The **Webinterface** entry opens the transmitter's web interface using the configured polling IP.
+Alarm suitability and thresholds for analog measurements depend on the transmitter configuration or site wiring.
 
-The web interface is only accessible when the client machine has network access to the product.
+### Polling Settings Page
 
-## Notes
+Use the **Polling Manager** table to configure each dataset's polling interval and enabled state, review its last polling time and result, or poll a row immediately.
 
-- The connector uses dynamic Polling Manager intervals; configure them per dataset for the deployment.
-- Firmware compatibility is not specified in the available protocol and MIB sources.
+The context menu of the table provides row and bulk operations, including enabling, disabling, polling, and resetting intervals to their defaults. The **Refresh All** option immediately polls all enabled datasets.
+
+Disabling a dataset clears its parameters. The connector uses dynamic Polling Manager intervals; configure them **per dataset** for the deployment.
+
+## Web Interface Page
+
+The **Web Interface** page will open the transmitter's web interface using the configured polling IP.
