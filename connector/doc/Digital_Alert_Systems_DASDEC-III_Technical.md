@@ -12,7 +12,8 @@ The DASDEC-III connector integrates the device into DataMiner by acting as a sma
 
 ## Requirements
 
-The DASDEC-III connector primarily uses a Smart-Serial connection, meaning that the DASDEC-III device will forward EAS alerts to the DataMiner System over TCP/IP. Ensure that there are no firewalls or network restrictions that could block communication from the DASDEC-III to the DataMiner System as well as from the DataMiner System to the DASDEC-III for HTTP, SNMP, and SSH communication.
+The DASDEC-III connector primarily uses a Smart-Serial connection, meaning that the DASDEC-III device will forward EAS alerts to the DataMiner System over TCP/IP. Ensure that there are no firewalls or network restrictions that could block communication from the DASDEC-III to the DataMiner System.
+The connector also uses SNMP, HTTP, and SSH protocols for device monitoring and alert forwarding. Ensure that DataMiner has network access to the DASDEC-III device on the required ports for these protocols.
 
 ## Configuration
 
