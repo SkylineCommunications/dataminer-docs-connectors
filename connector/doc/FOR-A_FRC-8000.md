@@ -4,28 +4,26 @@ uid: Connector_help_FOR-A_FRC-8000
 
 # FOR-A FRC-8000
 
-This connector is used to monitor a FOR-A FRC-8000 frame rate converter.
-
 ## About
 
-The connector uses an **SNMP connection** to communicate with a FOR-A FRC-8000 device.
+The FOR-A FRC-8000 connector provides monitoring for a FOR-A FRC-8000 frame rate converter over SNMP.
 
-### Version Info
+## Key Features
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
+- **General status**: Displays system information, power supply status and temperature, installed options, and SNMP information.
+- **Audio status**: Displays the status of SDI and ASI inputs and outputs, and decoder and encoder status.
+- **Video status**: Displays the video standard, clock frequency, reference standard, genlock detection, and video I/O synchronization.
+- **Web interface**: Provides access to the device web interface from the connector.
 
-### Product Info
+## Use Case
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.42                        |
+Use this connector to monitor the general, audio, and video status of a FOR-A FRC-8000 frame rate converter in DataMiner.
 
-## Installation and configuration
+## Technical Reference
 
-### Creation
+The existing documentation records support for device firmware version 1.42.
 
+<<<<<<< Updated upstream
 #### SNMPv1 connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
@@ -60,3 +58,7 @@ This page displays the Video Standard, Clock Frequency, Reference Standard, Genl
 ### Web Interface
 
 This page displays the web interface of the device. Note that the client machine has to be able to access to the device, as otherwise it will not be possible to open the web interface.
+=======
+> [!NOTE]
+> For configuration details and page descriptions, refer to the [technical documentation](xref:Connector_help_FOR-A_FRC-8000_Technical).
+>>>>>>> Stashed changes
