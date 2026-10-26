@@ -4217,6 +4217,9 @@
     topicUid: Connector_help_FOR-A_FA-9520
   - name: FOR-A FRC-8000
     topicUid: Connector_help_FOR-A_FRC-8000
+    items:
+      - name: FOR-A FRC-8000 Technical
+        topicUid: Connector_help_FOR-A_FRC-8000_Technical
   - name: FOR-A FRC-9100
     topicUid: Connector_help_FOR-A_FRC-9100
   - name: FOR-A MFR-3000 Video Router
