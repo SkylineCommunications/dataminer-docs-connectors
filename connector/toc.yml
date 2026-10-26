@@ -1964,6 +1964,8 @@
       topicUid: Connector_help_Broadpeak_BKS350_Technical
   - name: Broadpeak CDN Mediator BkM100
     topicUid: Connector_help_Broadpeak_CDN_Mediator_BkM100
+  - name: Broadpeak CDN Prometheus Collector
+    topicUid: Connector_help_Broadpeak_CDN_Prometheus_Collector
 - name: BroadV
   items:
   - name: BroadV Apollo
