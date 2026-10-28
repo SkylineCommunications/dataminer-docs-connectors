@@ -8192,6 +8192,11 @@
     items:
     - name: Raisecom ISCOM 2900 Technical
       topicUid: Connector_help_Raisecom_ISCOM_2900_Technical
+  - name: Raisecom-RAX-721
+    topicUid: Connector_help_Raisecom-RAX-721
+    items:
+    - name: Raisecom-RAX-721 Technical
+      topicUid: Connector_help_Raisecom-RAX-721_Technical
 - name: Ramiaudio
   items:
   - name: Ramiaudio AUF600
