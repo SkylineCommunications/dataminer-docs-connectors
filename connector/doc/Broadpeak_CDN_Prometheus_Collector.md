@@ -1,13 +1,13 @@
 ---
 uid: Connector_help_Broadpeak_CDN_Prometheus_Collector
+description: "Explore key features and use cases of the Broadpeak CDN Prometheus Collector connector for monitoring CDN metrics and Grafana alerts in DataMiner."
 ---
 
-# Connector name
+# Broadpeak CDN Prometheus Collector
 
 ## About
 
 This connector connects to a Prometheus system monitoring a Broadpeak CDN system and retrieves all metrics that Prometheus provides for the CDN. The metrics are made available in DataMiner for monitoring and analysis. Optionally, the connector can also connect to a Grafana system to retrieve the CDN alerts.
-
 
 ## Key Features
 
