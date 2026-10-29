@@ -1,16 +1,23 @@
 ---
 uid: Connector_help_Skyline_Universal_Weather_Technical
+description: "Configure the Skyline Universal Weather connector, add locations, poll OpenWeather or Windy, and request weather from other elements via InterApp."
 ---
 
 # Skyline Universal Weather
 
 ## About
 
-The Skyline Universal Weather connector is designed to retrieve weather conditions from a **weather API** source of the user's choice for selected locations specified by the user. It is currently compatible with three distinct weather APIs: **OpenWeather OneCall 2.5**, **OpenWeather OneCall 3.0**, and **Windy Point-Forecast API v4**.
+The **Skyline Universal Weather** connector retrieves weather information from a weather API for a list of locations. Depending on the range, it supports the following service sources:
 
-This connector uses an **HTTPS** connection to communicate with the selected API. The weather information is then retrieved for the locations specified by the user.
+- **OpenWeather 2.5** and **OpenWeather 3.0** (One Call API): Current conditions, minutely, hourly, and daily forecasts, and national weather alerts. OpenWeather is available from version 1.0.0.4 onwards. OpenWeather 3.0 is available from version 1.0.2.3 onwards. In that version, the existing OpenWeather endpoint was renamed to OpenWeather 2.5.
+- **OpenWeather Group**: Current conditions for several cities in one request. Available from range 1.0.1.x onwards.
+- **Windy API** (Windy Point Forecast API v2): Forecasts per location, with a history table. Windy is available in range 1.0.4.x and from version 1.0.3.3 onwards.
+- **Dark Sky**: Only available up to range 1.0.3.x. Dark Sky was removed in version 1.1.0.1.
 
-The connector can retrieve current weather data from OpenWeather either manually via the ad hoc console or automatically through the InterApp framework, which enables external elements to trigger requests as needed. This reduces unnecessary API calls, helps manage usage quotas efficiently, and supports ticketing and diagnostics through response messages.
+In addition to polling the configured locations, the connector can answer on-demand requests for a single coordinate, either from the ad hoc console or from other DataMiner elements.
+
+> [!NOTE]
+> Range 1.0.4.x is a separate line based on version 1.0.3.1. Its features are not necessarily available in ranges 1.0.3.x, 1.1.0.x, 1.1.1.x, and 1.2.0.x, and features added in those ranges are not necessarily available in range 1.0.4.x. Unless a section below mentions a range, it applies to range 1.2.0.x.
 
 ## Configuration
 
@@ -18,182 +25,204 @@ The connector can retrieve current weather data from OpenWeather either manually
 
 #### HTTP Main Connection
 
-This connector uses an HTTPS connection and requires the following input during element creation:
+This connector uses an HTTP connection and requires the following input during element creation:
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the API.
-
-  - For OpenWeather OneCall: [https://api.openweathermap.org](https://api.openweathermap.org/)
-
-- **IP port**: The IP port of the device. By default: *443*.
+- **IP address/host**: The host of the API, e.g., `api.openweathermap.org`. In range 1.2.0.x, the connector builds the request URLs itself, based on the selected **Service Source** (`https://api.openweathermap.org:443` or `https://api.windy.com:443`), so any value can be entered.
+- **IP port**: The IP port of the API. By default: *443*.
 
 ### Initialization
 
-On the **Configuration** page, select the API using the **Service Source** parameter. Then set the API key for the selected API.
+1. On the **Configuration** page, select the **Service Source**.
 
-To add a location to be monitored, right-click the **Locations Overview** table and select **Add item**.
+1. Click the page button for the selected source (e.g., **OpenWeather 2.5**, **OpenWeather 3.0**, or **Windy API**) and fill in the **API Key** and the **Max Number of Request (24 Hours)** values that match your API subscription.
 
-## Usage
+1. For the Windy API, select the **Windy Forecast Model** and set **Windy API Polling Status** to *Enabled*.
+
+1. If the DataMiner Agent needs a proxy to reach the internet, fill in the **Proxy Server** on the **Configuration** page.
+
+   This setting is available from version 1.0.1.5 onwards.
+
+1. On the **Locations** page, right-click the **Locations Overview** table and select **Add item**, or import a CSV file.
+
+## How to Use
 
 ### General
 
-The General page, which is the **default** landing page, provides an overview of the system.
+The **General** page shows the **Service Status** (*OK*, *Connection Error*, *Integration Error*, *Max Number of Requests*, or *N/A*), the **Number of Requests (24 Hours)**, the **Number of Locations**, and the **Number of Ad-Hoc Locations**. The number of ad hoc locations also counts the requests received from other elements.
 
-This page contains parameters such as:
+### Locations
 
-- **Service Status**: The status of communication with the API.
+Right-click the **Locations Overview** table to add, edit, or delete locations. A location needs a **Name**, a **Latitude**, and a **Longitude**. From version 1.1.0.3 onwards, latitudes must be between -90 and 90, and longitudes between -180 and 180. Masked locations are not polled.
 
-- **Number of Requests**: The number of requests made to the weather API. **This may be important as some source APIs charge based on the number of calls**.
+From version 1.0.1.6 onwards, you can import locations from a CSV file with the columns **Name**, **Description**, **Latitude**, and **Longitude**, in this order. Use a period as the decimal separator for the coordinates.
 
-  Note that the **OpenWeather** API does not reply with the number of calls made, so the number of calls is counted for this specific element only.
+### Weather Forecast and Forecast Tables
 
-- **Number of Locations**: The number of locations for which weather conditions will be requested.
+The **Weather Forecast** page shows a tree view per location with the current conditions, the minutely, hourly, and daily forecasts, and the national weather alerts. The **Forecast Tables** page shows the same data as tables. The locations are polled at an interval configured with the **Auto Processing Time** parameter (default: 3600 seconds).
 
-- **Number of Quick Locations**: The number of locations requested using the **ad hoc feature**.
+The **Unit System** (*Imperial* or *Metric*) and **Ratio Unit** (*Relative* or *Percentage*) on the **Configuration** page define how values are displayed.
 
-### Forecast
+In range 1.0.4.x and from version 1.1.1.1 onwards, the display key format of the tables can be changed with the display key format parameters. Version 1.1.1.1 changes the display keys, so existing alarms are updated with the new display keys.
 
-This page contains the information that is retrieved **from the API for each location** in the **Current Conditions** table. This table among others includes the following parameters:
+### Windy API Forecast Tables (Range 1.0.4.x and from Version 1.0.3.3 Onwards)
 
-- **Name**: The name of the location.
-- **Latitude**: The latitude of the location.
-- **Longitude**: The longitude of the location.
-- **Precipitation Type**: The type of precipitation.
-- **Humidity**: The humidity level.
-- **Temperature**: The temperature.
+When the **Service Source** is *Windy API* and **Windy API Polling Status** is *Enabled*, the connector polls each location with the selected **Windy Forecast Model**.
 
-This page also contains a page button that opens the Locations subpage, where locations can be configured.
+- **Windy Forecast Last Polled**: The time of the last Windy API request.
+- **Windy Forecast Table**: The forecasts returned by the API, in fixed 3-hour intervals for at least the next 7 to 10 days. All forecast values are surface-level values.
+- **Windy Forecast History Table**: When a forecast expires, it is moved to this table. In range 1.2.0.x, forecasts that belong to another forecast model or to a deleted location are also moved to this table. You can delete history entries with the context menu of the table.
 
-#### Windy API Forecast Tables (Range 1.0.3.x, 1.0.4.x, and 1.1.0.x)
+### Windy API Settings
 
-This page contains forecast information retrieved from the Windy Point-Forecast API. It contains the following parameters:
+The **Windy API** page button on the **Configuration** page displays the following settings:
 
-- **Windy Forecast Last Polled**: Time when the last Windy API request was made.
-- **Windy Forecast Table**: Table that stores the API response. It returns predictions in fixed 3-hour intervals for at least the next 7-10 days. Returned forecast parameters are all recorded at surface level.
-- **Windy Forecast History Table**: When a prediction expires, it is sent to the history table. History entries can be deleted through the context menu.
+- **Windy API Key**: The Point Forecast API key.
+- **Windy Max Number of Request (24 Hours)**: The maximum number of Windy API calls per day. Configure this based on your Windy account to avoid unnecessary charges.
+- **Windy Forecast Model**: The forecast model to use:
+  - *arome*: France and surrounding areas.
+  - *iconEu*: Europe and surrounding areas.
+  - *gfs*: Global model.
+  - *namConus*: The US and surrounding areas (Canada, Mexico).
+  - *namHawaii*: Hawaii.
+  - *namAlaska*: Alaska and surrounding areas.
+- **Windy API Polling Status** (from range 1.0.3.x onwards): Enables or disables the polling of the Windy API.
 
-#### Locations
+In range 1.0.4.x, the page also contains the following parameters:
 
-On this subpage, **by right-clicking** in the table, you can **add**, **edit**, and **delete** locations that will be used to gather weather condition information from the API.
+- **Number of Windy API Requests Made (24 Hours)**: The number of Windy API requests made by the connector. This value is reset every 24 hours.
+- **Windy API Polling Frequency**: The frequency at which the connector makes Windy API requests.
 
-The table contains among others the following fields:
-
-- **Name**: A meaningful name for the location **must be specified** here.
-- **Description**: Allows you to add an optional description with additional meaningful information on the location.
-- **Latitude**: The latitude of the location **must be specified** here.
-- **Longitude**: The longitude of the location **must be specified** here.
-- **Masked**: Allows you to mask a location. If this feature is enabled, the location's weather conditions will not be requested. **By default, this is disabled.**
-
-You can also import a CSV file with the columns **Name**, **Description**, **Latitude**, and **Longitude**, in this order. **For Latitude and Longitude, do not use commas as decimal separators.**
+In all ranges with Windy support, the connector sends the Windy requests to the `api/point-forecast/v2` endpoint. For more information about the Windy API, see the [Windy Point Forecast API documentation](https://api.windy.com/point-forecast/docs).
 
 ### Ad-Hoc Forecast
 
-This page is divided into two sections, **Ad-Hoc Console** and **Ad-Hoc Current Conditions**.
+Use the ad hoc console to request the current conditions of one coordinate without adding a location:
 
-In the **Ad-Hoc Console** section, you can make a **quick request** to the API for a specific location by filling in a **few configuration parameters**.
+1. Make sure **Console Status** is *Enabled* on the **Ad-Hoc** page (page button on the **Configuration** page).
+1. On the **Ad-Hoc Forecast** page, select *Current Conditions* as **Request Type**.
+1. In **Request Parameters**, enter the coordinate as `latitude,longitude`, e.g., `51.05,3.72`.
+1. Enter a **Location Name** and optionally a **Location Description**.
+1. Click **Apply**.
 
-- **Request Type**: Allows you to select which type of request will be made to the API.
-- **Request Parameters**: Allows you to enter the **query parameters** that will be used in the request selected in **Request Type**.
-- **Location Name**: Allows you to enter a name.
-- **Location Description**: Allows you to enter a description of the location.
-- **Request Status**: Displays the status of the request that is sent.
-- **Apply button**: Allows you to send the request to the API.
+The result is added to the **Ad-Hoc Current Conditions** table. **Clear All** removes all entries.
 
-The section below this contains a table, **Ad-Hoc Current Conditions**, which contains the weather information requested by any call made in the section above. The table in this section is similar to the table on the **Forecast page**, containing among others the following parameters:
+When **Auto Delete** is *Enabled* (default), entries older than the **Auto Delete Delay** are removed automatically. With the default delay, *Real-Time*, all entries are removed at the next cleanup. In range 1.2.0.x, the cleanup runs every 30 seconds. In ranges 1.0.0.x to 1.0.2.x, it runs every hour.
 
-- **Name**: The name of the location.
-- **Latitude**: The latitude of the location.
-- **Longitude**: The longitude of the location.
-- **Precipitation Type**: The type of precipitation.
-- **Humidity**: The humidity level.
-- **Temperature**: The temperature.
+### Requests from Other Elements
 
-### Configuration
+Other elements can request the current weather of a coordinate when **Inter Element Service** is *Enabled* (default) on the **Ad-Hoc** page. The mechanism depends on the range:
 
-This page contains **configuration parameters** that allow you to modify **how the connector operates**:
+- **Prior to range 1.0.2.x**, the requesting element sets a JSON request with the **Request Type**, **Request Parameters**, **Location Name**, and **Location Description** on the listener parameter (PID 283). The connector then sends the response back to the response listener parameter of the requesting element.
+- **From range 1.0.2.x onwards**, the listener parameter is no longer used. Other elements communicate with the connector through the InterApp framework, as described below.
 
-- **Service Source**: Allows you to select the **Service Source API** of your choice.
-- **Powered By**: Displays by which provider the API is powered once the service source is selected. Some service source providers require this to be present.
-- **Auto Processing Time**: Allows you to specify how often a request is sent to the API for the locations that are entered in the **Locations Table**.
+In both cases, the connector requests the weather from the API, adds the result to the **Ad-Hoc Current Conditions** table, and sends the response to the requesting element.
 
-This page also contains several page buttons. You can find more information about these below.
+### InterApp Support (From Range 1.0.2.x Onwards)
 
-#### Ad Hoc
+Other elements can request the current weather of a coordinate through the InterApp framework. The connector receives the messages on parameter 9000000. The result is also added to the **Ad-Hoc Current Conditions** table.
 
-This subpage contains configuration parameters specific to the **ad hoc functionality** of the connector:
+The behavior differs per version:
 
-- **Console Status**: If this parameter is set to *Enabled*, you will be able to make calls to the API via the ad hoc console. This parameter is **enabled by default**.
+- From version 1.2.0.1 onwards, the connector replies with `Reply` when the requester expects a reply (InterApp 1.1.x broker), and otherwise sends the response to the return address of the request. Range 1.2.0.x requires **DataMiner 10.4.0.0-14003** or higher.
+- From version 1.2.0.2 onwards, every request receives exactly one response. Requests that cannot be handled receive a response with **Status** *Error* instead of no response, and each Skyline Universal Weather element has its own request buffer. In older versions, a request that cannot be handled can remain unanswered, so the requester only detects this through its own timeout.
 
-- **Inter Element Service**: If this parameter is set to *Enabled*, this allows **other elements** within the DMS to make calls to the element running this connector to **retrieve weather information**. This parameter is **enabled by default**.
+InterApp requests are only answered with weather data when the **Service Source** is *OpenWeather 2.5* or *OpenWeather 3.0*. From version 1.2.0.2 onwards, with *Windy API*, every request receives a failed response.
 
-  **Prior to range 1.0.2.x**, this feature uses a **listener parameter** that will retrieve the required information, such as **Request Type**, **Request Parameters (Query Parameters)**, **Location Name**, and **Location Description**, in JSON format. **From range 1.0.2.x onwards, the listener parameter is no longer used**, because the element communication uses InterApp calls instead. In either case, a call will be made to the API next, and then the ad hoc table will be updated, and the response from the API will be sent back to the element that requested the weather information.
+The messages are based on the `Skyline.DataMiner.Core.InterAppCalls.Common` NuGet package. No separate ConnectorAPI package is available, so the sender must define the message classes with the same names, namespace (`WeatherApi`), and properties as the connector. Pass the following known types, in this order:
 
-- **Auto Delete**: If this parameter is set to *Enabled*, the **Ad-Hoc Current Conditions** table is automatically **cleaned up every hour**. This parameter is **enabled by default.**
+1. `WeatherRequest`
+1. `WeatherResponse`
 
-- **Auto Delete Delay**: Allows you to specify when entries in the table should be cleaned up **when the Auto Delete functionality runs**. This parameter is set to ***Real Time*** by default.
+#### Request
 
-- **Clear All**: Allows you to clear all entries from the Ad-Hoc Current Conditions table.
+A **WeatherRequest** contains the following properties:
 
-#### OpenWeather
+- **RequestType**: Must be *Current Conditions*.
+- **Query**: The coordinate as `latitude,longitude` in signed decimal degrees, with a period as the decimal separator, e.g., `51.05,3.72`.
+- **Name**: The name of the location. Required.
+- **Description**: An optional description of the location.
 
-This subpage contains parameters that allow you to configure the communication with **OpenWeather 2.5** and **OpenWeather 3.0**:
+#### Response
 
-- **API Key**: The API key that will allow the connector to communicate with the API.
-- **Max Number of Request (24 Hours)**: The maximum number of calls that can be made to the API.
+A **WeatherResponse** contains the following properties:
 
-  Note: **1000 calls daily are free**, but there will be charges after the initial 1000.
+- **Guid**: The GUID of the request.
+- **Status**: *OK* if weather data is returned, *Error* if the request could not be handled. An *Error* response contains no weather data.
+- **Provider**: The weather provider, e.g., *OpenWeather*.
+- **Summary**: A short description of the current weather.
+- **PrecipitationType**: The type of precipitation.
+- **PrecipitationProbability**: Not provided for OpenWeather. The value is *-1*.
+- **Time**: The time of the current conditions.
 
-#### Windy (Range 1.0.3.x)
+From version 1.2.0.2 onwards, a request receives a response with **Status** *Error* in the following cases:
 
-This subpage contains parameters to configure the communication with the **Windy Point-Forecast API v4**.
+- The request type, a valid coordinate, or the name is missing.
+- No API key is configured for the selected service source, or the service source does not support InterApp requests.
+- The **Max Number of Request (24 Hours)** is reached.
+- The API returns an error or an invalid response.
+- No API response is received within 60 seconds.
+- The request waits in the buffer longer than the **Clear Buffer Timer** (default: 300 seconds).
+- The buffer is cleared with the **Clear All Buffer** button.
+- **Inter Element Service** is set to *Disabled* on the **Ad-Hoc** page.
 
-- **Windy API Key**: The Point-Forecast API key that is used to obtain forecast information from the Windy API.
+#### Example
 
-- **Windy Max Number of Request (24 Hours)**: The maximum number of calls that can be made to the API each day. Configure this based on your account to avoid incurring unnecessary charges.
+The following QAction snippet requests the weather for a coordinate and reads the response:
 
-- **Windy Forecast Model**: The forecast model that will be used to obtain information. The following models are currently supported:
+```csharp
+var request = new WeatherRequest
+{
+    Name = "Site A",
+    Description = "Site A",
+    RequestType = "Current Conditions",
+    Query = latitude.ToString(CultureInfo.InvariantCulture) + "," + longitude.ToString(CultureInfo.InvariantCulture),
+};
 
-  - *arome*: Covers France and surrounding areas.
-  - *iconEu*: Covers Europe and surrounding areas.
-  - *gfs*: Global model.
-  - *namConus*: Covers the USA and surrounding areas (Canada, Mexico).
-  - *namHawaii*: Covers Hawaii.
-  - *namAlaska*: Covers Alaska and surrounding areas.
+var knownTypes = new List<Type> { typeof(WeatherRequest), typeof(WeatherResponse) };
 
-For more information about the Windy API, see [Point Forecast API](https://api.windy.com/point-forecast/docs).
+IInterAppCall call = InterAppCallFactory.CreateNew();
+call.Messages.Add(request);
+call.Source = new Source("Weather request", protocol.DataMinerID, protocol.ElementID);
+call.ReturnAddress = new ReturnAddress(agentId, elementId, 9000001);
 
-#### Windy (Range 1.0.4.x)
+var response = call
+    .Send(protocol.SLNet.RawConnection, agentId, elementId, 9000000, TimeSpan.FromSeconds(120), knownTypes)
+    .OfType<WeatherResponse>()
+    .FirstOrDefault();
 
-This subpage contains parameters to configure the communication with the **Windy Point-Forecast API v4**.
+if (response == null || response.Status == ResponseStatus.Error)
+{
+    // No weather data available.
+}
+```
 
-- **Windy API Polling Status**: Enable/disable polling of the Windy API.
+The connector handles the requests one at a time, in the order in which they are received. Use a timeout that allows for the requests already in the buffer.
 
-- **Windy API Key**: The Point-Forecast API key that is used to obtain forecast information from the Windy API.
+#### Buffer Monitoring
 
-- **Windy Max Number of Request (24 Hours)**: The maximum number of calls that can be made to the API each day. Configure this based on your account to avoid incurring unnecessary charges.
+The **Debug** page shows the InterApp buffer when **Debug** is enabled on the **Configuration** page:
 
-- **Windy Forecast Model**: The forecast model that will be used to obtain information. The following models are currently supported:
+- **Buffer Size**: The number of requests that are waiting or being handled.
+- **Buffer Content**: The waiting requests. From version 1.2.0.2 onwards, the request being handled is listed first.
+- **Last Received Interelement**: The time when the last request was received.
+- **Clear Buffer Timer** (from version 1.0.3.4 onwards): The maximum time a request can wait in the buffer. Set it to *Disabled* to keep requests until they are handled.
+- **Clear All Buffer** (from version 1.0.3.4 onwards): Clears the buffer. From version 1.2.0.2 onwards, all requests in the buffer receive a failed response first.
 
-  - *arome*: Covers France and surrounding areas.
-  - *iconEu*: Covers Europe and surrounding areas.
-  - *gfs*: Global model.
-  - *namConus*: Covers the USA and surrounding areas (Canada, Mexico).
-  - *namHawaii*: Covers Hawaii.
-  - *namAlaska*: Covers Alaska and surrounding areas.
+Prior to version 1.2.0.2, **Last Received Interelement** is only updated while **Debug** is enabled. From version 1.2.0.2 onwards, all buffer parameters are always updated.
 
-- **Number of Windy API Requests Made (24 Hours)**: The number of Windy API requests made by the connector. This parameter resets every 24 hours.
+### Troubleshooting
 
-- **Windy API Polling Frequency**: The frequency at which the connector makes API requests.
-
-For more information about the Windy API, refer to the [Windy documentation](https://api.windy.com/point-forecast/docs).
+- **The Service Status is Max Number of Requests**: The **Number of Requests (24 Hours)** reached the configured maximum. Increase the maximum within the limits of your API subscription, mask locations, or increase the **Auto Processing Time**.
+- **The Service Status is Connection Error**: Check the API key, the **Proxy Server**, and whether the DataMiner Agent can reach `api.openweathermap.org` or `api.windy.com`.
+- **An InterApp request always returns Status Error** (from version 1.2.0.2 onwards): Check the element log. Each failed request is logged with its reason, e.g., *Request URL or API key not available*. Also check that the **Service Source** is *OpenWeather 2.5* or *OpenWeather 3.0*, that **Inter Element Service** is *Enabled*, and that the **Query** uses a period as the decimal separator.
+- **An InterApp request times out**: Check that the request is sent to the correct element, that the element is active, and that the timeout is long enough for the requests in the buffer. Prior to version 1.2.0.2, requests that cannot be handled are not answered, so check the same settings as for a response with **Status** *Error*. If the timeouts occur in range 1.2.0.x while **Debug** is disabled, upgrade to version 1.2.0.2 or higher.
+- **The Windy tables stay empty**: Check that the **Service Source** is *Windy API*, that **Windy API Polling Status** is *Enabled*, and that a **Windy API Key** is filled in.
 
 ## Notes
 
-- **Listener PID**: 283
-
-  Note: **From range 1.0.2.x onwards, the listener parameter is no longer used**, because the element communication uses InterApp calls instead.
-
-- **APIs integrated**: OpenWeather OneCall and Windy Point-Forecast.
-
-- The Windy API URL is built-in and uses the same proxy server as the OpenWeather OneCall APIs.
+- Dark Sky is only supported up to range 1.0.3.x. It was removed in version 1.1.0.1.
+- **Listener PID** (prior to range 1.0.2.x): 283. From range 1.0.2.x onwards, the listener parameter is no longer used, because the element communication uses InterApp calls instead.
+- The Windy API URL is built in and uses the same **Proxy Server** as the OpenWeather APIs.
+- For more information about the APIs, see the [OpenWeather One Call API 3.0](https://openweathermap.org/api/one-call-3) and the [Windy Point Forecast API](https://api.windy.com/point-forecast/docs) documentation.
