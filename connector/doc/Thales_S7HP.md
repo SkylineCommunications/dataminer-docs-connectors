@@ -35,3 +35,6 @@ Typical use cases include:
 
 - **SNMP connectivity**: The device must be reachable via SNMP from the DataMiner Agent.
 - **Web interface access**: To use the **web interface** feature, the client machine must have network access to the device.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Thales_S7HP_Technical).
