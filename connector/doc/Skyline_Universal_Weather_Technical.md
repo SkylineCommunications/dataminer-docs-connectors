@@ -14,10 +14,10 @@ The **Skyline Universal Weather** connector retrieves weather information from a
 - **Windy API** (Windy Point Forecast API v2): Forecasts per location, with a history table. Windy is available in range 1.0.4.x and from version 1.0.3.3 onwards.
 - **Dark Sky**: Only available up to range 1.0.3.x. Dark Sky was removed in version 1.1.0.1.
 
-Besides polling the configured locations, the connector can answer on-demand requests for a single coordinate, either from the ad hoc console or from other DataMiner elements.
+In addition to polling the configured locations, the connector can answer on-demand requests for a single coordinate, either from the ad hoc console or from other DataMiner elements.
 
 > [!NOTE]
-> Range 1.0.4.x is a separate line based on version 1.0.3.1. Its features are not necessarily available in ranges 1.0.3.x, 1.1.0.x, 1.1.1.x, and 1.2.0.x, and features added in those ranges are not necessarily available in range 1.0.4.x. Unless a section mentions a range, it applies to range 1.2.0.x.
+> Range 1.0.4.x is a separate line based on version 1.0.3.1. Its features are not necessarily available in ranges 1.0.3.x, 1.1.0.x, 1.1.1.x, and 1.2.0.x, and features added in those ranges are not necessarily available in range 1.0.4.x. Unless a section below mentions a range, it applies to range 1.2.0.x.
 
 ## Configuration
 
@@ -35,9 +35,15 @@ HTTP CONNECTION:
 ### Initialization
 
 1. On the **Configuration** page, select the **Service Source**.
-1. Open the page button of the selected source (e.g., **OpenWeather 2.5**, **OpenWeather 3.0**, or **Windy API**) and fill in the **API Key** and the **Max Number of Request (24 Hours)** that matches your API subscription.
+
+1. Click the page button for the selected source (e.g., **OpenWeather 2.5**, **OpenWeather 3.0**, or **Windy API**) and fill in the **API Key** and the **Max Number of Request (24 Hours)** values that match your API subscription.
+
 1. For the Windy API, select the **Windy Forecast Model** and set **Windy API Polling Status** to *Enabled*.
-1. If the DataMiner Agent needs a proxy to reach the internet, fill in the **Proxy Server** on the **Configuration** page. This setting is available from version 1.0.1.5 onwards.
+
+1. If the DataMiner Agent needs a proxy to reach the internet, fill in the **Proxy Server** on the **Configuration** page.
+
+   This setting is available from version 1.0.1.5 onwards.
+
 1. On the **Locations** page, right-click the **Locations Overview** table and select **Add item**, or import a CSV file.
 
 ## How to Use
@@ -54,7 +60,7 @@ From version 1.0.1.6 onwards, you can import locations from a CSV file with the 
 
 ### Weather Forecast and Forecast Tables
 
-The **Weather Forecast** page shows a tree per location with the current conditions, the minutely, hourly, and daily forecasts, and the national weather alerts. The **Forecast Tables** page shows the same data as tables. The locations are polled every **Auto Processing Time** (default: 3600 seconds).
+The **Weather Forecast** page shows a tree view per location with the current conditions, the minutely, hourly, and daily forecasts, and the national weather alerts. The **Forecast Tables** page shows the same data as tables. The locations are polled at an interval configured with the **Auto Processing Time** parameter (default: 3600 seconds).
 
 The **Unit System** (*Imperial* or *Metric*) and **Ratio Unit** (*Relative* or *Percentage*) on the **Configuration** page define how values are displayed.
 
@@ -70,7 +76,7 @@ When the **Service Source** is *Windy API* and **Windy API Polling Status** is *
 
 ### Windy API Settings
 
-The **Windy API** page button on the **Configuration** page contains the following settings:
+The **Windy API** page button on the **Configuration** page displays the following settings:
 
 - **Windy API Key**: The Point Forecast API key.
 - **Windy Max Number of Request (24 Hours)**: The maximum number of Windy API calls per day. Configure this based on your Windy account to avoid unnecessary charges.
@@ -78,7 +84,7 @@ The **Windy API** page button on the **Configuration** page contains the followi
   - *arome*: France and surrounding areas.
   - *iconEu*: Europe and surrounding areas.
   - *gfs*: Global model.
-  - *namConus*: The USA and surrounding areas (Canada, Mexico).
+  - *namConus*: The US and surrounding areas (Canada, Mexico).
   - *namHawaii*: Hawaii.
   - *namAlaska*: Alaska and surrounding areas.
 - **Windy API Polling Status** (from range 1.0.3.x onwards): Enables or disables the polling of the Windy API.
@@ -119,7 +125,7 @@ Other elements can request the current weather of a coordinate through the Inter
 
 The behavior differs per version:
 
-- From version 1.2.0.1 onwards, the connector replies with `Reply` when the requester expects a reply (InterApp 1.1.x broker), and otherwise sends the response to the return address of the request. Range 1.2.0.x requires DataMiner 10.4.0.0-14003 or higher.
+- From version 1.2.0.1 onwards, the connector replies with `Reply` when the requester expects a reply (InterApp 1.1.x broker), and otherwise sends the response to the return address of the request. Range 1.2.0.x requires **DataMiner 10.4.0.0-14003** or higher.
 - From version 1.2.0.2 onwards, every request receives exactly one response. Requests that cannot be handled receive a response with **Status** *Error* instead of no response, and each Skyline Universal Weather element has its own request buffer. In older versions, a request that cannot be handled can remain unanswered, so the requester only detects this through its own timeout.
 
 InterApp requests are only answered with weather data when the **Service Source** is *OpenWeather 2.5* or *OpenWeather 3.0*. From version 1.2.0.2 onwards, with *Windy API*, every request receives a failed response.
@@ -142,7 +148,7 @@ A **WeatherRequest** contains the following properties:
 
 A **WeatherResponse** contains the following properties:
 
-- **Guid**: The **Guid** of the request.
+- **Guid**: The GUID of the request.
 - **Status**: *OK* if weather data is returned, *Error* if the request could not be handled. An *Error* response contains no weather data.
 - **Provider**: The weather provider, e.g., *OpenWeather*.
 - **Summary**: A short description of the current weather.
