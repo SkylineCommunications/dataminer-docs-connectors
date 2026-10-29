@@ -51,6 +51,10 @@ SERIAL CONNECTION:
 
 No additional configuration is needed after the element is created. To control the receiver from DataMiner, set it to **Remote** mode with the **L/R** button on the front panel.
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to Use
 
 ### General Page
@@ -98,10 +102,8 @@ This page shows the **Model**, **Firmware Version**, **Control Mode**, **Active 
 
 This page shows the configuration web page of the Ethernet port of the receiver. It is only available when the element connects directly to the Ethernet port of the receiver, not when it connects through a serial-to-IP converter.
 
-The web interface is only accessible when the client machine has network access to the product.
-
 ## Notes
 
 - After a setting is changed, the connector reads it back from the receiver, so the displayed value always reflects the receiver.
-- If the receiver rejects a command, the error is shown in **Last Device Error** and the previous value is restored on the next poll.
+- If the receiver rejects a command, the error is shown in **Last Device Error**, and the previous value is restored after the next polling.
 - The baud rate, the active interface, and the RS-485 address cannot be changed remotely.

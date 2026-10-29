@@ -15,7 +15,7 @@ The connector communicates with the receiver through its remote monitoring and c
 
 ## Key Features
 
-- **Beacon level and lock monitoring**: The connector shows the signal strength voltage, the carrier lock, and the AFC status, and raises alarms when the receiver loses lock or the AFC leaves its normal range.
+- **Beacon level and lock monitoring**: The connector shows the signal strength voltage, the carrier lock, and the AFC status, and raises alarms when the receiver loses its lock or the AFC leaves its normal range.
 
 - **Remote tuning**: Operators can set the receive frequency and the reference level from DataMiner. The connector checks the values against the frequency band of the receiver before it sends them.
 
@@ -57,7 +57,7 @@ The connector communicates with the receiver through its remote monitoring and c
 
 ### Prerequisites
 
-- **DataMiner 10.4.0** or higher is required for range 1.0.0.x of the connector.
+- **DataMiner 10.4.0** or higher.
 
 - **A serial connection to the receiver** is needed. This can be the Ethernet port of the receiver, or the RS-232 or RS-485 port connected through a serial-to-IP converter or a serial port of the DataMiner Agent.
 
