@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH POC Tally connector for SI stream status aggregation and tally monitoring in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH POC Tally
@@ -16,13 +17,15 @@ The POC tally status is determined for each SI stream, so its status can be show
 - **24/7 monitoring**: Constant monitoring to support continuous status updates.
 - **Integrated endpoint**: The connector comes with an endpoint to retrieve the status data not only within DataMiner but also from external systems.
 
-## Use Case
+## Use Cases
+
+### Planning SI System Changes
 
 **Challenge**: The SI team needs a way to test, deploy, and monitor changes to their SI systems without causing outages.
 
-**Solution**: The *On-Air* and *Off-Air* aggregated status indicates which systems can be used for testing, and the switching mechanisms provided in the connector allow users to activate or switch to a certain system.
+**Solution**: The aggregated *On-Air* and *Off-Air* status indicates which systems you can use for testing. The connector's switching mechanisms allow you to activate or switch to a specific system.
 
-**Benefit**: Improves uptime and reliability.
+**Benefit**: You can identify systems available for testing and manage SI system changes from DataMiner.
 
 ## Technical Reference
 

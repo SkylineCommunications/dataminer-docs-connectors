@@ -1,52 +1,34 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH SRT GW Service connector for monitoring SRT gateway chains in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH SRT GW Service
 
-The Vodafone Kabel Deutschland GmbH SRT GW Service protocol monitors the active configuration and status of the SRT Gateway DCMs, the IP Gateway DCMs, and the final xSwitches.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH SRT GW Service connector monitors the active configuration and status of SRT Gateway DCMs, IP Gateway DCMs, and final XSwitches.
 
-| Range              | Key Features                                              | Based on   | System Impact   |
-|----------------------|-------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version: Monitors the SRT GW, IP GW, and xSwitches. | -            | -                 |
+This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware                   |
-|-----------|--------------------------------------|
-| 1.0.0.x   | N/A (CISCO DCM range 1.0.3.x and up) |
+- **Gateway chain monitoring**: Monitor SRT Gateway DCMs, IP Gateway DCMs, and final XSwitches.
+- **Configuration visibility**: Inspect active input and output device configuration.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | -                       |
+### Monitoring SRT Gateway Delivery Chains
 
-## Configuration
+**Challenge**: Service monitoring needs to cover multiple gateway and switching elements in the delivery chain.
 
-To create a service using this service protocol:
+**Solution**: The connector brings device configuration and site-level stream status into a dedicated enhanced service.
 
-1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol **Vodafone Kabel Deutschland GmbH SRT GW Service**, with the latest version or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+**Benefit**: You can investigate SRT gateway issues with visibility into the monitored delivery chain.
 
-## How to use
+## Technical Reference
 
-The **General** page contains the overview of the active stream states per site.
-
-The **Service Active Configuration** page contains the overview of the input and output devices configuration.
-
-The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
-
-The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
-
-The **General Parameters** page contains the list of parameters with important information regarding the system.
-
-## Notes
-
-This enhanced service protocol was designed for a specific project and is not expected to be reused in general.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service_Technical).

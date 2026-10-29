@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH SRT Delivery Service connector for monitoring SRT stream delivery in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH SRT Delivery Service
@@ -19,7 +20,9 @@ For each edge, the connector determines whether the outgoing stream is active, a
 - **Edge monitoring**: Evaluates the streaming state of each edge based on the outgoing SRT stream status.
 - **24/7 monitoring**: Continuously monitors the environment to ensure up-to-date status information.
 
-## Use Case
+## Use Cases
+
+### Monitoring Redundant SRT Delivery
 
 **Challenge**: Services often include multiple devices to provide redundancy within a site and across multiple sites. Determining the overall streaming health requires evaluating whether at least one device is operating correctly.
 

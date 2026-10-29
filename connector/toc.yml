@@ -11296,20 +11296,44 @@
   items:
   - name: Vodafone Kabel Deutschland GmbH ABR OTT Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_OTT_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH ABR OTT Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_OTT_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH ABR Profile Manager
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_Profile_Manager
+    items:
+    - name: Vodafone Kabel Deutschland GmbH ABR Profile Manager Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_Profile_Manager_Technical
   - name: Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Lineup_Configuration_Platform
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Lineup_Configuration_Platform_Technical
   - name: Vodafone Kabel Deutschland GmbH Active Service Configuration Platform
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Active Service Configuration Platform Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform_Technical
   - name: Vodafone Kabel Deutschland GmbH Channel Management
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Channel_Management
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Channel Management Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Channel_Management_Technical
   - name: Vodafone Kabel Deutschland GmbH DAVE DB
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DAVE_DB
+    items:
+    - name: Vodafone Kabel Deutschland GmbH DAVE DB Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DAVE_DB_Technical
   - name: Vodafone Kabel Deutschland GmbH Descrambling Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Descrambling Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH DVB-T2 Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH DVB-T2 Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH FRR on OpenShift
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift
     items:
@@ -11317,26 +11341,69 @@
       topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift_Technical
   - name: Vodafone Kabel Deutschland GmbH IP GW Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_GW_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH IP GW Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_GW_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH IP PEER DS Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_DS_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH IP PEER DS Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_DS_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH IP PEER OS Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_OS_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH IP PEER OS Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_OS_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH KEVAG Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH KEVAG Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service_Technical
+  - name: Vodafone Kabel Deutschland GmbH Origin Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Origin_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Origin Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Origin_Service_Technical
+  - name: Vodafone Kabel Deutschland GmbH POC Tally
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally
+    items:
+    - name: Vodafone Kabel Deutschland GmbH POC Tally Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally_Technical
   - name: Vodafone Kabel Deutschland GmbH Pre-Encoding Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Pre-Encoding Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH Probe Monitoring Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Probe Monitoring Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH Qbit Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Qbit Radio Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH SAT DL Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH SAT DL Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH SI Stream Mapping
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
+    items:
+    - name: Vodafone Kabel Deutschland GmbH SI Stream Mapping Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping_Technical
   - name: Vodafone Kabel Deutschland GmbH Site Switchover
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Site Switchover Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover_Technical
   - name: Vodafone Kabel Deutschland GmbH SRT Delivery Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service
     items:
@@ -11344,21 +11411,34 @@
       topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service
-  - name: Vodafone Kabel Deutschland GmbH POC Tally
-    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally
     items:
-    - name: Vodafone Kabel Deutschland GmbH POC Tally Technical
-      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally_Technical
+    - name: Vodafone Kabel Deutschland GmbH SRT GW Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH TAG Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH TAG Radio Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH Transcoding TS Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transcoding_TS_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Transcoding TS Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transcoding_TS_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH Transportstream Discovery
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transportstream_Discovery
+    items:
+    - name: Vodafone Kabel Deutschland GmbH Transportstream Discovery Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transportstream_Discovery_Technical
   - name: Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TS_Bitrate_Optimization_APP
+    items:
+    - name: Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TS_Bitrate_Optimization_APP_Technical
   - name: Vodafone Kabel Deutschland GmbH UDP-RTP GW Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_UDP-RTP_GW_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH UDP-RTP GW Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_UDP-RTP_GW_Service_Technical
 - name: VodafoneZiggo
   items:
   - name: VodafoneZiggo SAM Callback Receiver

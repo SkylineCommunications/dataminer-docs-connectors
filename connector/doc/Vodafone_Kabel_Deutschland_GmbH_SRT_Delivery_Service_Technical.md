@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service_Technical
+description: "Configure and use the Vodafone Kabel Deutschland GmbH SRT Delivery Service connector to monitor SRT Techex MWCore devices and stream status in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH SRT Delivery Service
@@ -14,9 +15,12 @@ For each edge, the connector determines whether the outgoing stream is active, a
 
 ### Connections
 
-#### Virtual Connection
+To create a service using this service protocol:
 
-This connector uses a **virtual connection** and does not require any configuration during element creation.
+1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
+1. Specify the name for the service.
+1. Open the advanced options and select *Vodafone Kabel Deutschland GmbH SRT Delivery Service* as the service protocol, using the latest or production version.
+1. Go to the **parameters** tab and include the service you want to monitor.
 
 ## How to Use
 
@@ -31,3 +35,9 @@ The following pages provide more detailed information about the service configur
 - **Alarms**: Shows the active alarms related to the service.
 
 Tables on these pages support additional actions through the context menu. To access these options, right-click a table.
+
+## Notes
+
+### Linked Components
+
+- [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform)
