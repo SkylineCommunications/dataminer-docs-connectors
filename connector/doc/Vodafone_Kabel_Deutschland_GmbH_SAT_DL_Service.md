@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service
-description: Explore SAT DL Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH SAT DL Service connector for satellite downlink monitoring in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH SAT DL Service
@@ -11,15 +11,15 @@ The Vodafone Kabel Deutschland GmbH SAT DL Service connector monitors the stream
 
 ## Key Features
 
-- **Site-Level Stream Status**: View active stream states for the included downlink sites.
-- **Alarm Visibility**: Retrieve active alarms for included services and elements.
-- **Debug Logging**: Enable logging for element monitoring and data retrieval.
+- **Site-level stream status**: View active stream states for the included downlink sites.
+- **Alarm visibility**: Retrieve active alarms for included services and elements.
+- **Debug logging**: Enable logging for element monitoring and data retrieval.
 
 ## Use Cases
 
 ### Monitoring Satellite Downlink Streams
 
-**Challenge**: Satellite Downlink stream states need to be checked across the sites included in the service.
+**Challenge**: Satellite downlink stream states need to be checked across the sites included in the service.
 
 **Solution**: The connector presents the last XSwitch streaming states per site and provides access to related alarms.
 

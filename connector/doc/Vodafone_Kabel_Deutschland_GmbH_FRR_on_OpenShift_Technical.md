@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift_Technical
-description: Configure and use the FRR on OpenShift connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH FRR on OpenShift connector to monitor pods and manage routes via the OpenShift CLI in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH FRR on OpenShift

@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_Profile_Manager
-description: Explore ABR Profile Manager in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH ABR Profile Manager connector for tracking OTT profile usage in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH ABR Profile Manager
@@ -11,9 +11,9 @@ The Vodafone Kabel Deutschland GmbH ABR Profile Manager is a virtual connector t
 
 ## Key Features
 
-- **Profile Visibility**: Identify the encoding and destination profiles used by OTT services.
-- **Service Overview**: View services present on OTT encoder devices in one place.
-- **Configurable Polling**: Set the retrieval interval and check the last poll time.
+- **Profile visibility**: Identify the encoding and destination profiles used by OTT services.
+- **Service overview**: View services present on OTT encoder devices in one place.
+- **Configurable polling**: Set the retrieval interval and check the last poll time.
 
 ## Use Cases
 

@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transcoding_TS_Service_Technical
-description: Configure and use the Transcoding TS Service connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Transcoding TS Service connector to monitor Transcoding TS element stream states and alarms."
 ---
 
 # Vodafone Kabel Deutschland GmbH Transcoding TS Service
@@ -16,14 +16,16 @@ The Vodafone Kabel Deutschland GmbH Transcoding TS Service connector monitors th
 To create a service using this service protocol:
 
 1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select *Vodafone Kabel Deutschland GmbH Transcoding TS Service* as the service protocol, using the latest or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+1. Specify the name for the service.
+1. Open the advanced options and select *Vodafone Kabel Deutschland GmbH Transcoding TS Service* as the service protocol, using the latest or production version.
+1. Go to the **parameters** tab and include the service you want to monitor.
 
 ## How to Use
 
 The **General** page contains the overview of the active stream states per site.
+
 The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
+
 The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
 
 ## Notes

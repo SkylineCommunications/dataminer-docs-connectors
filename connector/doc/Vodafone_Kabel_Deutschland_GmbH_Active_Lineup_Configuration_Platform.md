@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Lineup_Configuration_Platform
-description: Explore Active Lineup Configuration Platform in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform connector for lineup tracking in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform
@@ -11,9 +11,9 @@ The Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform connect
 
 ## Key Features
 
-- **Centralized Lineup View**: Collect active lineup configurations from enhanced services.
-- **Service Discovery**: Configure how frequently the connector searches for new enhanced services.
-- **Configurable Collection**: Set the heartbeat interval used to collect lineup data.
+- **Centralized lineup view**: Collect active lineup configurations from enhanced services.
+- **Service discovery**: Configure how frequently the connector searches for new enhanced services.
+- **Configurable collection**: Set the heartbeat interval used to collect lineup data.
 
 ## Use Cases
 

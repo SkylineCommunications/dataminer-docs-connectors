@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transportstream_Discovery
-description: Explore Transportstream Discovery in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Transportstream Discovery connector for transport stream inventory in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Transportstream Discovery
@@ -11,10 +11,10 @@ The Vodafone Kabel Deutschland GmbH Transportstream Discovery connector discover
 
 ## Key Features
 
-- **Element Discovery**: List supported connector types and discovered elements in the DataMiner System.
-- **Selective Polling**: Choose which discovered elements to include in data polling.
-- **Aggregated Stream Data**: Review transport stream, service, and PID information in dedicated database pages.
-- **Configurable Frequency**: Adjust polling frequency for enabled elements.
+- **Element discovery**: List supported connector types and discovered elements in the DataMiner System.
+- **Selective polling**: Choose which discovered elements to include in data polling.
+- **Aggregated stream data**: Review transport stream, service, and PID information in dedicated database pages.
+- **Configurable frequency**: Adjust polling frequency for enabled elements.
 
 ## Use Cases
 

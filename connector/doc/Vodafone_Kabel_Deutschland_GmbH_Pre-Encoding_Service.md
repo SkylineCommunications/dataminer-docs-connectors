@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service
-description: Explore Pre-Encoding Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Pre-Encoding Service connector for site-level stream monitoring in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Pre-Encoding Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Site-Level Stream Status**: View active stream states for each included site.
-- **Alarm Visibility**: Retrieve active alarms for included services and elements.
-- **Debug Logging**: Enable logging for element monitoring and data retrieval.
+- **Site-level stream status**: View active stream states for each included site.
+- **Alarm visibility**: Retrieve active alarms for included services and elements.
+- **Debug logging**: Enable logging for element monitoring and data retrieval.
 
 ## Use Cases
 

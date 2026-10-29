@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service
-description: Explore Qbit Radio Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Qbit Radio Service connector for monitoring Qbit radio services in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Qbit Radio Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Radio Configuration**: Monitor the active configuration of the Qbit element.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Radio configuration**: Monitor the active configuration of the Qbit element.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

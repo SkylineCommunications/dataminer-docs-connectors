@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transportstream_Discovery_Technical
-description: Configure and use the Transportstream Discovery connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Transportstream Discovery connector to discover transport streams, services, and PIDs in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Transportstream Discovery

@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_UDP-RTP_GW_Service
-description: Explore UDP-RTP GW Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH UDP-RTP GW Service connector for multiplexer streaming status monitoring."
 ---
 
 # Vodafone Kabel Deutschland GmbH UDP-RTP GW Service
@@ -11,9 +11,9 @@ The Vodafone Kabel Deutschland GmbH UDP-RTP GW Service connector monitors the st
 
 ## Key Features
 
-- **Multiplexer Monitoring**: Monitor the streaming states of included ProStream X multiplexers.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Multiplexer monitoring**: Monitor the streaming states of included ProStream X multiplexers.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
-description: Explore Site Switchover in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Site Switchover connector for downlink stream KPI monitoring in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Site Switchover
@@ -11,9 +11,9 @@ The Vodafone Kabel Deutschland GmbH Site Switchover connector monitors and retri
 
 ## Key Features
 
-- **Downlink KPIs**: Retrieve monitoring information related to active downlink streams.
-- **Multiple Use Cases**: Support Satellite Downlink, Pre-Encoding, and IP Gateway monitoring.
-- **DCM Device Overview**: View polled DCM devices and access table actions.
+- **Downlink KPIs**: Retrieves monitoring information related to active downlink streams.
+- **Multiple use cases**: Supports Satellite Downlink, Pre-Encoding, and IP Gateway monitoring.
+- **DCM device overview**: Displays polled DCM devices and allows table actions.
 
 ## Use Cases
 

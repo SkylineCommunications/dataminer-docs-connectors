@@ -1,13 +1,13 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Origin_Service_Technical
-description: Configure and use the Origin Service connector in DataMiner, including service creation, alarm monitoring, and configuration sharing.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Origin Service connector to collect Origin service metadata, element status, and active alarms."
 ---
 
 # Vodafone Kabel Deutschland GmbH Origin Service
 
 ## About
 
-The Vodafone Kabel Deutschland GmbH Origin Service connector is an enhanced service connector that collects service metadata, element status, and active alarms. Its service aggregation use case is *Origin*.
+The Vodafone Kabel Deutschland GmbH Origin Service connector is an enhanced service connector that collects service metadata, element status information, and active alarms. Its service aggregation use case is *Origin*.
 
 The connector sends aggregated service information to subscribed [Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) elements.
 
@@ -18,9 +18,9 @@ The connector sends aggregated service information to subscribed [Active Service
 This connector is a service protocol. To create a service using this protocol:
 
 1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select *Vodafone Kabel Deutschland GmbH Origin Service* as the service protocol, using the latest or production version.
-4. Go to the **parameters** tab and include the elements and services you want to monitor.
+1. Specify the name for the service.
+1. Open the advanced options and select *Vodafone Kabel Deutschland GmbH Origin Service* as the service protocol, using the latest or production version.
+1. Go to the **parameters** tab and include the elements and services you want to monitor.
 
 ### Initialization
 

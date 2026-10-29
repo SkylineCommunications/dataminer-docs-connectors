@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service
-description: Explore DVB-T2 Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH DVB-T2 Service connector for monitoring DVB-T2 stream states in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH DVB-T2 Service
@@ -13,10 +13,10 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Site-Level Status**: View active stream states per site.
-- **Configuration Visibility**: Inspect the active configuration of input and output devices.
-- **Source Monitoring**: Check current XSwitch status on the **Source Status** page.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Site-level status**: View active stream states per site.
+- **Configuration visibility**: Inspect the active configuration of input and output devices.
+- **Source monitoring**: Check current XSwitch status on the Source Status page.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

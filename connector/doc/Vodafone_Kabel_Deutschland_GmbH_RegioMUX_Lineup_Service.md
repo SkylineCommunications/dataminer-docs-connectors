@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service
-description: Explore RegioMUX Lineup Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service connector for ProStream X lineups in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Regional Lineup Monitoring**: Monitor the regional lineup of ProStream X devices.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Regional lineup monitoring**: Monitor the regional lineup of ProStream X devices.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

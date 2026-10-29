@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transcoding_TS_Service
-description: Explore Transcoding TS Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Transcoding TS Service connector for monitoring transcoding services in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Transcoding TS Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Transcoding Configuration**: Monitor the active configuration of Transcoding TS elements.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Transcoding configuration**: Monitor the active configuration of Transcoding TS elements.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

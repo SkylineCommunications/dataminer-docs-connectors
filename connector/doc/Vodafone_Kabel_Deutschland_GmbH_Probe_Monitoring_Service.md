@@ -1,22 +1,22 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service
-description: Explore Probe Monitoring Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Probe Monitoring Service connector for probe stream lifecycles in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Probe Monitoring Service
 
 ## About
 
-The Vodafone Kabel Deutschland GmbH Probe Monitoring Service connector monitors and controls the life cycle of an Ethernet stream configured on a probe. Services are created automatically by the Ad Hoc Probe Monitoring Solution.
+The Vodafone Kabel Deutschland GmbH Probe Monitoring Service connector monitors and controls the lifecycle of an Ethernet stream configured on a probe. Services are created automatically by the **Ad Hoc Probe Monitoring Solution**.
 
 This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
 ## Key Features
 
-- **Automatic Service Creation**: Create and configure the service when a new probe session starts.
-- **Session Management**: Review session details and adjust the session end time.
-- **Automatic Expiration**: Finish expired sessions and remove their DataMiner services to limit concurrent probe streams.
-- **Service Diagnostics**: Inspect related alarms and monitored elements.
+- **Automatic service creation**: A service is created and configured when a new probe session starts.
+- **Session management**: Review session details and adjust the session end time.
+- **Automatic expiration**: Expired sessions are finished and their DataMiner services are removed to limit concurrent probe streams.
+- **Service diagnostics**: Inspect related alarms and monitored elements.
 
 ## Use Cases
 

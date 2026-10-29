@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_DS_Service
-description: Explore IP PEER DS Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH IP PEER DS Service connector for monitoring peering DCM elements in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH IP PEER DS Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Peering Configuration**: Monitor IP Peering DCM and connected XSwitch elements in the service.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging for included elements.
+- **Peering configuration**: Monitor IP Peering DCM and connected XSwitch elements in the service.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging for included elements.
 
 ## Use Cases
 

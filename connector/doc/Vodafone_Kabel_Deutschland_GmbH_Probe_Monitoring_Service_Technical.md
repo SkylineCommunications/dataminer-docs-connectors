@@ -1,19 +1,19 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service_Technical
-description: Configure and use the Probe Monitoring Service connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Probe Monitoring Service connector to monitor probe sessions and Ethernet stream lifecycles."
 ---
 
 # Vodafone Kabel Deutschland GmbH Probe Monitoring Service
 
 ## About
 
-The Vodafone Kabel Deutschland GmbH Probe Monitoring Service connector monitors and controls the life cycle of an Ethernet stream configured on a probe. Services are created automatically by the Ad Hoc Probe Monitoring Solution.
+The Vodafone Kabel Deutschland GmbH Probe Monitoring Service connector monitors and controls the lifecycle of an Ethernet stream configured on a probe. Services are created automatically by the **Ad Hoc Probe Monitoring Solution**.
 
 ## Configuration
 
 ### Connections
 
-This connector is a service protocol. Service creation and configuration happen automatically through the *Ad Hoc Probe Monitoring Solution* when a new probe session is created.
+This connector is a service protocol. Service creation and configuration happen automatically through the **Ad Hoc Probe Monitoring Solution** when a new probe session is created.
 
 No manual connection configuration is needed to create this service.
 
@@ -21,8 +21,8 @@ No manual connection configuration is needed to create this service.
 
 - The **General** page contains the details of the probe monitoring session and allows you to adjust the session end time.
 
-  > [!CAUTION]
-  > Once the session end time expires, an automatic action will finish the session to prevent too many concurrent streams being configured on the probes. This also means that the DataMiner service will be removed at expiration and will not be accessible anymore.
+  > [!IMPORTANT]
+  > Once the session end time expires, an automatic action will finish the session to prevent too many concurrent streams being configured on the probes. This also means that the DataMiner service will be removed at expiration and will no longer be accessible.
 
 - The **Alarms** page shows all alarms linked to this service.
 

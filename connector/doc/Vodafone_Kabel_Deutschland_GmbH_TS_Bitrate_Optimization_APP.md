@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TS_Bitrate_Optimization_APP
-description: Explore TS Bitrate Optimization APP in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP connector for CISCO DCM stream bitrates in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP
@@ -11,10 +11,10 @@ The Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP connector calcul
 
 ## Key Features
 
-- **Output Stream Overview**: Collect constant bitrate (CBR) output streams from configured DCM devices.
-- **Bitrate Calculation**: Calculate an optimal bitrate using a fixed Mbps delta or a percentage of the maximum bitrate.
-- **Stream Controls**: Adjust stream bitrates through row buttons or table context menus.
-- **App Access**: Open the connector through the Apps button in DataMiner Cube.
+- **Output stream overview**: Collects constant bitrate (CBR) output streams from configured DCM devices.
+- **Bitrate calculation**: Calculates an optimal bitrate using a fixed Mbps delta or a percentage of the maximum bitrate.
+- **Stream controls**: Allows you to adjust stream bitrates through row buttons or table context menus.
+- **App access**: Accessible via the Apps pane in DataMiner Cube.
 
 ## Use Cases
 

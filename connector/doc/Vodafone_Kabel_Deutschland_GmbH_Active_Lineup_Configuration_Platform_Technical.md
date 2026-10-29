@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Lineup_Configuration_Platform_Technical
-description: Configure and use the Active Lineup Configuration Platform connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform connector to collect lineup configurations from enhanced services."
 ---
 
 # Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform

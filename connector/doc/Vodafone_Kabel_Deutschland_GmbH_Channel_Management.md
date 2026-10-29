@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Channel_Management
-description: Explore Channel Management in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Channel Management connector for DOM-based channel and service data in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Channel Management
@@ -11,9 +11,9 @@ The Vodafone Kabel Deutschland GmbH Channel Management connector retrieves and d
 
 ## Key Features
 
-- **Channel and Service Visibility**: Display the Channels and Services tables from the DOM database.
-- **Database Initialization**: Create the database if it does not already exist.
-- **Data Refresh**: Refresh table data periodically or request a refresh manually.
+- **Channel and service visibility**: Displays the Channels and Services tables from the DOM database.
+- **Database initialization**: Creates the database if it does not already exist.
+- **Data refresh**: Refreshes table data periodically, with the option to force a refresh manually.
 
 ## Use Cases
 

@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DAVE_DB_Technical
-description: Configure and use the DAVE DB connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH DAVE DB connector to retrieve node data and manage database tables via HTTP in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH DAVE DB
@@ -28,6 +28,7 @@ HTTP CONNECTION:
   If you want to use HTTPS, you can either specify the **IP address/host** preceded by `https://` or set the port to *443*.
 
 - **IP port**: The IP port of the destination (default: *80*).
+
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization

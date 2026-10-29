@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service
-description: Explore Descrambling Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Descrambling Service connector for monitoring site-level streams in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Descrambling Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Site-Level Status**: View outgoing streaming states for the sites included in the service.
-- **Alarm Visibility**: Retrieve active alarms for included services and elements.
-- **Debug Logging**: Enable logging related to elements and data retrieval.
+- **Site-level status**: View outgoing streaming states for the sites included in the service.
+- **Alarm visibility**: Retrieve active alarms for included services and elements.
+- **Debug logging**: Enable logging related to elements and data retrieval.
 
 ## Use Cases
 

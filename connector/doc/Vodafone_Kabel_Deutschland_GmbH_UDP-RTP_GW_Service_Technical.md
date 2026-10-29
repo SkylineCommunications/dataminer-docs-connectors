@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_UDP-RTP_GW_Service_Technical
-description: Configure and use the UDP-RTP GW Service connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH UDP-RTP GW Service connector to monitor ProStream X multiplexer streaming states in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH UDP-RTP GW Service
@@ -16,9 +16,9 @@ The Vodafone Kabel Deutschland GmbH UDP-RTP GW Service connector monitors the st
 This connector is a service protocol and only requires the following input during service creation:
 
 1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select *Vodafone Kabel Deutschland GmbH UDP-RTP GW Service* as the service protocol, using the latest or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+1. Specify the name for the service.
+1. Open the advanced options and select *Vodafone Kabel Deutschland GmbH UDP-RTP GW Service* as the service protocol, using the latest or production version.
+1. Go to the **parameters** tab and include the service you want to monitor.
 
 ## How to Use
 

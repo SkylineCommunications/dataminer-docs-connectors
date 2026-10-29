@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally
-description: Explore POC Tally in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH POC Tally connector for SI stream status aggregation and tally monitoring in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH POC Tally

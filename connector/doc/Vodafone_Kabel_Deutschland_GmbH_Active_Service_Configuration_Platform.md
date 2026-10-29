@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform
-description: Explore Active Service Configuration Platform in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Active Service Configuration Platform connector for active services in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Active Service Configuration Platform
@@ -11,9 +11,9 @@ The Vodafone Kabel Deutschland GmbH Active Service Configuration Platform connec
 
 ## Key Features
 
-- **Centralized Service View**: Collect active configurations from enhanced services.
-- **Use Case Identification**: Distinguish configurations by their associated service use case.
-- **Configurable Discovery**: Set discovery and heartbeat intervals for service discovery and data collection.
+- **Centralized service view**: Collect active configurations from enhanced services.
+- **Use case identification**: Distinguish configurations by their associated service use case.
+- **Configurable discovery**: Set discovery and heartbeat intervals for service discovery and data collection.
 
 ## Use Cases
 

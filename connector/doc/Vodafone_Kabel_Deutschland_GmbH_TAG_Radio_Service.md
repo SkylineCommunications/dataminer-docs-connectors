@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service
-description: Explore TAG Radio Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH TAG Radio Service connector for radio chain stream monitoring in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH TAG Radio Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Radio Chain Monitoring**: Monitor active configuration across TAG, XSwitch, and RTP Gateway elements.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Radio chain monitoring**: Monitor the active configuration across TAG, XSwitch, and RTP Gateway elements.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

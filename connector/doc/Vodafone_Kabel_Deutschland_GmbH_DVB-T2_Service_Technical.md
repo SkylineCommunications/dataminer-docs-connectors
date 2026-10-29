@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service_Technical
-description: Configure and use the DVB-T2 Service connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH DVB-T2 Service connector to monitor stream states, active configuration, and XSwitch sources."
 ---
 
 # Vodafone Kabel Deutschland GmbH DVB-T2 Service
@@ -16,9 +16,9 @@ The Vodafone Kabel Deutschland GmbH DVB-T2 Service connector monitors the active
 To create a service using this service protocol:
 
 1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select *Vodafone Kabel Deutschland GmbH DVB-T2 Service* as the service protocol, using the latest or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+1. Specify the name for the service.
+1. Open the advanced options and select *Vodafone Kabel Deutschland GmbH DVB-T2 Service* as the service protocol, using the latest or production version.
+1. Go to the **parameters** tab and include the service you want to monitor.
 
 ## How to Use
 

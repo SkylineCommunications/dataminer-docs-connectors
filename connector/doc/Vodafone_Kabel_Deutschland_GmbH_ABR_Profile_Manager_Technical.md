@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_Profile_Manager_Technical
-description: Configure and use the ABR Profile Manager connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH ABR Profile Manager connector to monitor OTT encoder services and their associated profiles."
 ---
 
 # Vodafone Kabel Deutschland GmbH ABR Profile Manager

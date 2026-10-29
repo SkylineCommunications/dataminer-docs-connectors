@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Channel_Management_Technical
-description: Configure and use the Channel Management connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Channel Management connector to view and refresh channel and service DOM data in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Channel Management

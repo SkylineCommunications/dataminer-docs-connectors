@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service
-description: Explore SRT GW Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH SRT GW Service connector for monitoring SRT gateway chains in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH SRT GW Service
@@ -13,10 +13,10 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Gateway Chain Monitoring**: Monitor SRT Gateway DCMs, IP Gateway DCMs, and final XSwitches.
-- **Configuration Visibility**: Inspect active input and output device configuration.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Gateway chain monitoring**: Monitor SRT Gateway DCMs, IP Gateway DCMs, and final XSwitches.
+- **Configuration visibility**: Inspect active input and output device configuration.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

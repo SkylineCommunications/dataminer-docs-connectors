@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift
-description: Explore FRR on OpenShift in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH FRR on OpenShift connector for managing cluster routing in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH FRR on OpenShift
@@ -13,9 +13,9 @@ FRRouting is a network routing suite used to manage and deploy routes within the
 
 ## Key Features
 
-- **Status overview**: View aggregated and individual status data per pod and all available FRR routes.
-- **24/7 monitoring**: Constant monitoring to support continuous status updates.
-- **Real-time configuration**: Add, manage, and remove FRR routes from DataMiner.
+- **Status overview**: Displays aggregated and individual status data per pod and all available FRR routes.
+- **24/7 monitoring**: Monitors continuously to provide constant status updates.
+- **Real-time configuration**: Allows you to add, manage, and remove FRR routes from DataMiner.
 
 ## Use Cases
 

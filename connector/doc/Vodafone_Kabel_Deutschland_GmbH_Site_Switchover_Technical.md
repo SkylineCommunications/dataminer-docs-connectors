@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover_Technical
-description: Configure and use the Site Switchover connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Site Switchover connector to monitor active downlink stream KPIs across DCM devices in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Site Switchover

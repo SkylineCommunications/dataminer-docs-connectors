@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service
-description: Explore KEVAG Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH KEVAG Service connector for monitoring peering DCM elements in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH KEVAG Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Peering Configuration**: Monitor the active configuration of KEVAG Peering DCM elements.
-- **Site-Level Status**: View active stream states per site.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging.
+- **Peering configuration**: Monitor the active configuration of KEVAG Peering DCM elements.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
 ## Use Cases
 

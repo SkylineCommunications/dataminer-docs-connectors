@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform_Technical
-description: Configure and use the Active Service Configuration Platform connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH Active Service Configuration Platform connector to collect service configurations in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Active Service Configuration Platform

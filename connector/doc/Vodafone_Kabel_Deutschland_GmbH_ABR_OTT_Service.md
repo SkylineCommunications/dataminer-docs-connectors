@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_OTT_Service
-description: Explore ABR OTT Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH ABR OTT Service connector for monitoring Harmonic VOS/XOS elements in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH ABR OTT Service
@@ -13,9 +13,9 @@ This connector is an enhanced service connector designed for a specific project 
 
 ## Key Features
 
-- **Streaming Status**: View active stream states per site for the included OTT services.
-- **Configuration Visibility**: Inspect the active configuration of input and output devices.
-- **Service Diagnostics**: Retrieve active alarms and enable debug logging for included services and elements.
+- **Streaming status**: View active stream states per site for the included OTT services.
+- **Configuration visibility**: Inspect the active configuration of input and output devices.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging for included services and elements.
 
 ## Use Cases
 

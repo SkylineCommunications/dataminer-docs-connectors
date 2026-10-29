@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DAVE_DB
-description: Explore DAVE DB in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH DAVE DB connector for managing DAVE database nodes and items in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH DAVE DB
@@ -11,9 +11,9 @@ The Vodafone Kabel Deutschland GmbH DAVE DB connector communicates with the Digi
 
 ## Key Features
 
-- **Authenticated Database Access**: Connect to the database and select the polling stage after authentication.
-- **Per-Node Polling**: Adjust each node's state and polling interval, or request a hard refresh.
-- **Table Management**: Add, update, and delete items through table context menus, subject to Service-Names restrictions.
+- **Authenticated database access**: Connect to the database and select the polling stage after authentication.
+- **Per-node polling**: Adjust each node's state and polling interval, or request a hard refresh.
+- **Table management**: Add, update, and delete items through table context menus.
 
 ## Use Cases
 

@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service
-description: Explore SRT Delivery Service in DataMiner, including connector capabilities, operational benefits, and use cases.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH SRT Delivery Service connector for monitoring SRT stream delivery in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH SRT Delivery Service

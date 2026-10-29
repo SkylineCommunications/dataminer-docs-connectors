@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Origin_Service
-description: Explore Origin Service in DataMiner, including service metadata, element status, alarm monitoring, and configuration sharing.
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Origin Service connector for monitoring Origin services in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH Origin Service
@@ -13,11 +13,11 @@ The connector shares aggregated service information with the [Active Service Con
 
 ## Key Features
 
-- **Service Metadata**: View the service lifecycle, service CID, tenant, and reservation GUID.
-- **Element Status**: Review the state, alarm severity, and alarm counts of elements included in the service.
-- **Alarm Monitoring**: Enable active alarm monitoring to inspect alarms associated with the service.
-- **Configuration Sharing**: Share aggregated service information with subscribed Active Service Configuration Platform elements.
-- **Service Diagnostics**: Enable debug logging to investigate service monitoring and data retrieval.
+- **Service metadata**: View the service lifecycle, service CID, tenant, and reservation GUID.
+- **Element status**: Review the state, alarm severity, and alarm counts of elements included in the service.
+- **Alarm monitoring**: Enable active alarm monitoring to inspect alarms associated with the service.
+- **Configuration sharing**: Share aggregated service information with subscribed Active Service Configuration Platform elements.
+- **Service diagnostics**: Enable debug logging to investigate service monitoring and data retrieval.
 
 ## Use Cases
 
@@ -30,8 +30,6 @@ The connector shares aggregated service information with the [Active Service Con
 **Benefit**: You can investigate Origin service issues using a dedicated overview while keeping service information available for centralized configuration monitoring.
 
 ## Technical Reference
-
-The connector is available in the [DataMiner Catalog](https://catalog.dataminer.services/details/7fa08c79-3beb-4fac-99b4-524bc065d7d7).
 
 > [!NOTE]
 > For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Origin_Service_Technical).

@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TS_Bitrate_Optimization_APP_Technical
-description: Configure and use the TS Bitrate Optimization APP connector in DataMiner, with connection settings and operational guidance.
+description: "Configure and use the Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP connector to calculate and adjust CISCO DCM bitrates in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH TS Bitrate Optimization APP
@@ -25,7 +25,7 @@ Once the element has been created, on the **General** page, fill in the CISCO DC
 
 ## How to Use
 
-This connector is deployed as an app. This means that you can easily access it in Cube with the **Apps** button in the sidebar.
+This connector is deployed as an app. This means that you can easily access it in Cube via the **Apps** pane of the sidebar.
 
 The connector will poll all devices configured in the **Devices Table** (on the **General** page). All data will be parsed, and the **Streams** table (on the **Streams** page) will be populated with all CBR output streams.
 
