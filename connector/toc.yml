@@ -1964,6 +1964,8 @@
       topicUid: Connector_help_Broadpeak_BKS350_Technical
   - name: Broadpeak CDN Mediator BkM100
     topicUid: Connector_help_Broadpeak_CDN_Mediator_BkM100
+  - name: Broadpeak CDN Prometheus Collector
+    topicUid: Connector_help_Broadpeak_CDN_Prometheus_Collector
 - name: BroadV
   items:
   - name: BroadV Apollo
@@ -10431,6 +10433,8 @@
     topicUid: Connector_help_Telenor_Adaptation_Engine
   - name: Telenor Adaptation Engine CMS
     topicUid: Connector_help_Telenor_Adaptation_Engine_CMS
+  - name: Telenor Agama OTT Status
+    topicUid: Connector_help_Telenor_Agama_OTT_Status
   - name: Telenor BCDB Multiviewer Manager
     topicUid: Connector_help_Telenor_BCDB_Multiviewer_Manager
   - name: Telenor Channel Correlation Service Broadcast
