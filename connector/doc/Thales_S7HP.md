@@ -12,7 +12,7 @@ The Thales S7HP is a high-power shortwave radio transmitter. With this connector
 
 - **Transmitter monitoring**: Monitor the key transmitter functions, such as frequency, measured power, modulation mode, and operating status.
 - **Modulator monitoring**: Monitor the full set of modulator parameters, including audio, MDI, DRM, GPS timing, and version information.
-- **Alarm and fault management**: Keep track of the device alarms, faults, and module states, including status tables with date information.
+- **Alarm and fault management**: Track device alarms, faults, and module states, and define custom descriptions for matching alarms in the Alarm and Status Global tables.
 - **Transmitter control**: Send commands to the transmitter, such as power on/off, rearm, frequency, and audio configuration changes.
 - **Modulator configuration**: Configure the modulator remotely, including audio, SFN, network, and alarm threshold settings.
 - **Customizable polling**: Fine-tune the polling frequency of each data group via the Polling Manager.
@@ -35,3 +35,6 @@ Typical use cases include:
 
 - **SNMP connectivity**: The device must be reachable via SNMP from the DataMiner Agent.
 - **Web interface access**: To use the **web interface** feature, the client machine must have network access to the device.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Thales_S7HP_Technical).
