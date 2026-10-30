@@ -1,82 +1,53 @@
 ---
 uid: Connector_help_Tandberg_TT6120
-description: Monitor the Tandberg TT6120 Transport Stream Processor in DataMiner over SNMP, including boards, transport streams, services, demodulators, and ATM interfaces.
+description: Monitor the Tandberg TT6120 transport stream processor over SNMP: boards, transport streams, services, satellite demodulators, and ATM interfaces.
 ---
 
 # Tandberg TT6120
 
-The Tandberg TT6120 is a modular 1RU transport stream processor that converts transport streams between ASI, satellite RF, IP, G.703, and ATM interfaces, with PID, component, and service filtering.
-
-This connector retrieves information from the device via SNMP. It provides a single view of the installed boards, the transport stream input and output of a selected slot, the services and components carried in the stream, the satellite demodulators, and the ATM receive and transmit interfaces.
-
 ## About
 
-### Version Info
+The **Tandberg TT6120** connector integrates the Tandberg TT6120 transport stream processor into DataMiner over SNMP. The TT6120 is a modular transport stream processor that converts transport streams between ASI, satellite RF, IP, G.703, and ATM interfaces, with PID, component, and service filtering.
 
-| Range                | Key Features                                                                                                                              | Based on | System Impact |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|----------|---------------|
-| 1.1.0.x [Obsolete]   | Initial version.                                                                                                                          | -        | -             |
-| 1.1.1.x [SLC Main]   | Tables migrated to the newer table format, board list QAction converted to C#, **TCF Version** parameter made visible on the General page. | 1.1.0.5  | -             |
+This connector gives headend operators a single view of the unit's **boards, transport streams, services, demodulators, and ATM interfaces**. It exposes the processor's MMI alarms and per-component status, so that faults in the incoming or outgoing transport stream can be spotted and attributed to the right slot, service, or component.
 
-### Product Info
+## Key Features
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.1.0.x | -                  |
-| 1.1.1.x | -                  |
+- **Monitor transport stream services and components**: Track every service, its PCR and PMT PIDs, and the individual components carried in the stream, including their type, bit rate, and language.
 
-### System Info
+- **Supervise satellite demodulators**: Follow LNC voltage and frequency, satellite frequency, symbol rate, inner code, BER, and AGC level per demodulator slot, together with the clock, carrier, Viterbi, and frame sync status.
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.1.0.x | No              | No                  | -                 | -                   |
-| 1.1.1.x | No              | Yes                 | -                 | -                   |
+- **Inventory the chassis**: List all installed boards with slot, type, serial number, and software, hardware, PLD, and Xilinx firmware versions.
 
-## Configuration
+- **Track ATM Rx/Tx interfaces**: Expose the ATM receive and transmit slots, their VPI/VCI configuration, cell and MPEG rates, HEC and MPEG sync, and PDH framing status.
 
-### Connections
+- **Monitor transport stream input and output per slot**: Follow the bit rate, effective bit rate, packet length, output interface, and alarm status of the selected slot.
 
-#### SNMP Main connection
+## Use Cases
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+### Attributing a transport stream fault to the right slot
 
-SNMP CONNECTION:
+**Challenge**: When a downstream service drops, operators need to know quickly whether the problem is on the incoming feed, in the processor, or on the output interface.
 
-- **IP address/host**: The polling IP of the device.
-- **Device address**: This is not required.
+**Solution**: The connector shows the input and output alarm status and bit rates for the selected slot, the demodulator sync and BER, and the ATM sync status in one element, on the Transport Stream, Demodulator, and ATM Information pages.
 
-SNMP Settings:
+**Benefit**: Faults are isolated to a specific slot and stage of the signal path without opening the device's own interface.
 
-- **Port number**: The port of the device, by default *161*.
-- **Get community string**: The community string used when reading values from the device. The default value is *public*.
-- **Set community string**: The community string used when setting values on the device. The default value is *private*.
+### Keeping an up-to-date inventory of TT6120 units
 
-### Initialization
+**Challenge**: Headends with several TT6120 chassis need to know which boards and firmware versions are installed in each unit.
 
-Range 1.1.1.x of this connector requires DataMiner version **10.3.0.0 - 12752** or higher.
+**Solution**: The board list can be retrieved on demand and shows the board type, serial number, and all firmware versions per slot.
 
-No further configuration is required. The general device information is polled as soon as the element is created. Polling of the slot-specific data (transport stream, demodulator, and ATM interfaces) only starts after you select a slot number on the corresponding page, as described below.
+**Benefit**: Spare-part planning and firmware upgrades are based on actual, centrally available inventory data.
 
-## How to use
+## Technical Reference
 
-The element consists of the following data pages:
+### Prerequisites
 
-- **General**: Displays the network configuration of the device (**IP Address**, **Subnet Mask**, **Gateway Address**, **MAC Address**, and **Use of BootP**), as well as the **MIB Version**, **Model Number**, **TCF Version**, **Configuration Status**, and **Summary Alarm**, and the **TS Configuration Status** and **Default PID Handling** settings. The **Use of BootP**, **Configuration Status**, **TS Configuration Status**, and **Default PID Handling** settings can be changed from this page. The **Reset** button resets the device.
+- DataMiner **10.3.0.0 - 12752** or higher.
 
-  - The **MMI Alarms** page button opens a subpage with the alarm states derived from the device alarm status: **MMI Configuration**, **MMI Configuration Status**, **MMI Display**, and **MMI Interface**.
-  - The **Board Info** page button opens a subpage where you can click **Load** to retrieve the **BoardList Table**, a text overview that lists every installed board with its slot number, board type, channel number, software, hardware, PLD, and Xilinx firmware versions, serial number, and description.
+- **SNMP access** from the DataMiner Agent to the TT6120 management interface.
 
-- **Services**: Displays the **Ts Service Overview** table, which lists each service detected in the transport stream with its slot number, service ID, name, PCR PID, PMT PID, original network ID, provider, and type. The **Ts Component Overview** table lists the individual components (PIDs) with their type, bit rate, language, decoded component type, and the service they belong to. The page also contains the **Default Service Handling** and **PSI/SI Analyse** settings.
-
-  - The **More Info** page button opens the **Service Handling Information** subpage. Click **Load** to retrieve the **Service Handling Overview** table, which shows the slot number, port number, ID, and service state of each handled service.
-  - The **PSI/PS Info** page button opens a subpage where you can click **Load** to retrieve the **PSI/SI Information Overview** table, which shows the type, repetition rate, and mode of each PSI/SI table.
-
-- **Transport Stream**: Select the **TS Slot Number** of the board you want to monitor. Once a slot is selected, the page displays the **TS Input** parameters of that slot (**Input Selection**, **Bit Rate**, **Effective Bitrate**, **Packet Length**, and **Alarm Status**) and the **TS Output** parameters (**Rate**, **Packet Length**, **External Clock**, **Interface**, **Effective Bitrate**, and **Alarm Status**). The **Input Selection** and most of the output settings can be changed from this page.
-
-- **Demodulator**: Select the **Demodulator Slot Number** of the satellite demodulator board you want to monitor. The page then displays and allows you to configure the **LNC Voltage**, **LNC Frequency**, **Satellite Frequency**, **Symbol Rate**, **Inner Code**, **Tuner Type**, **Spectral Invertion**, and **Output Select**, and shows the measured **BER**, **AGC Level**, and **AFC**. The sync status (**Clock Sync**, **Carrier Sync**, **Viterbi Sync**, and **Frame Sync**) and the demodulator alarms (**Response**, **Absence RF**, **BER above 10e-4**, **No Frame Sync**, and **Sync**) are also shown here.
-
-  - The **More Settings** page button opens a subpage with the **Minimum**, **Maximum**, and **Step Tuner Frequency** settings and the **LNC 22kHzTone** setting.
-
-- **ATM Information**: Select the **ATM Rx Slot Number** and **ATM Tx Slot Number** of the ATM boards you want to monitor. For both the receive and transmit side, the page displays and allows you to configure the **Output Select**, **Cell Discard**, **HEC Correction**, **Payload Scrambler**, **Virtual Path Identifier**, and **Virtual Channel Identifier**, and shows the measured **Cell Rate** and **Mpeg Rate**. The status parameters (**Response**, **MPEG Sync**, **HEC Sync**, **PDH Framing**, **G703 Signal**, **Fluctuating Input**, **PDH Remote**, and **PDH Local**) are also shown for each side.
-
-- **Webinterface**: Displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Tandberg_TT6120_Technical).
