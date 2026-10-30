@@ -10177,6 +10177,11 @@
     topicUid: Connector_help_Tandberg_TT1260_SNMP
   - name: Tandberg TT4030 HTTP
     topicUid: Connector_help_Tandberg_TT4030_HTTP
+  - name: Tandberg TT6120
+    topicUid: Connector_help_Tandberg_TT6120
+    items:
+    - name: Tandberg TT6120 Technical
+      topicUid: Connector_help_Tandberg_TT6120_Technical
   - name: Tandberg TT7116
     topicUid: Connector_help_Tandberg_TT7116
 - name: Tata Communications
