@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Fortinet_FortiManager
+description: "Explore key features, use cases, and technical details of the Fortinet FortiManager connector for monitoring security infrastructure using DataMiner."
 ---
 
 # Fortinet FortiManager
@@ -24,7 +25,7 @@ Fortinet FortiManager provides centralized management of Fortinet security infra
 
 **Solution**: Bring CPU, memory, disk, RAID, power supply, and HA information into DataMiner. Configure DataMiner alarming around the monitored parameters to match operational requirements.
 
-**Benefit**: Help operators identify deteriorating conditions earlier and prioritize investigation and maintenance.
+**Benefit**: You can identify deteriorating conditions earlier and prioritize investigation and maintenance.
 
 ### Maintain Visibility Across Managed Devices and Domains
 
@@ -32,7 +33,7 @@ Fortinet FortiManager provides centralized management of Fortinet security infra
 
 **Solution**: Use the connector's device and administrative domain tables to review inventory, domain membership, connection state, database state, configuration state, and policy package state.
 
-**Benefit**: Give operations teams a consolidated view for identifying disconnected devices and investigating configuration inconsistencies.
+**Benefit**: You get a consolidated view to identify disconnected devices and investigate configuration inconsistencies.
 
 ### Plan Security License Renewals
 
@@ -40,13 +41,13 @@ Fortinet FortiManager provides centralized management of Fortinet security infra
 
 **Solution**: Collect antivirus, intrusion prevention, web content filtering, and antispam license expiration dates in the managed device table.
 
-**Benefit**: Support renewal planning and help reduce the risk of interruptions to licensed security services.
+**Benefit**: Facilitates renewal planning and helps reduce the risk of interruptions to licensed security services.
 
 ## Technical Reference
 
 ### Prerequisites
 
-- **DataMiner 10.4.0.0 - 14003 or later** is required for connector version 1.0.0.2.
+- **DataMiner 10.4.0.0 - 14003** or later.
 - **An SNMPv2-enabled Fortinet FortiManager server** exposing the relevant FORTINET-FORTIMANAGER-FORTIANALYZER-MIB objects is needed for monitoring.
 - **Network access and a valid SNMP read community string** are required for DataMiner to poll the server.
 
@@ -64,9 +65,4 @@ The embedded web interface requires network access from the client machine to th
 
 ### Version 1.0.0.2
 
-Version **1.0.0.2** is based on **1.0.0.1** and records the connector's migration to GitHub.
-
-A new version was required to restore availability in DataMiner Catalog because version **1.0.0.1** was lost from Catalog and cannot be recovered.
-
-> [!NOTE]
-> For detailed configuration information, refer to the [connector help](xref:Connector_help_Fortinet_FortiManager).
+Version **1.0.0.2** is based on **1.0.0.1** and records the connector's migration to GitHub. This new version was required to restore availability in the DataMiner Catalog. Version 1.0.0.1 is not available in the Catalog.
