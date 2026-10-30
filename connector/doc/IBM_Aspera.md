@@ -14,7 +14,7 @@ IBM Aspera provides a fast alternative to FTP server software for reliable and s
 |----------------------|------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                                                       | -            | -                 |
 | 1.0.1.x              | File name column, file table display key changes, transfer loss table. | 1.0.0.3      | -                 |
-| 1.0.2.x [SLC Main]   | Added minimumversion requirement.                                      | 1.0.1.2      | -                 |
+| 1.1.0.x [SLC Main]   | Added minimumversion requirement.                                      | 1.0.1.2      | -                 |
 
 
 ### Product Info
@@ -23,7 +23,7 @@ IBM Aspera provides a fast alternative to FTP server software for reliable and s
 |-----------|------------------------|
 | 1.0.0.x   | 3.9.1.168954           |
 | 1.0.1.x   | 3.9.1.168954           |
-| 1.0.2.x   | 3.9.1.168954           |
+| 1.1.0.x   | 3.9.1.168954           |
 
 ### System Info
 
@@ -31,7 +31,7 @@ IBM Aspera provides a fast alternative to FTP server software for reliable and s
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 
 ## Configuration
