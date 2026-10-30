@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Raisecom-RAX-721
-description: Monitor Raisecom RAX 721 device health, interface traffic, optical diagnostics, power supplies, and fans in DataMiner using SNMP.
+description: "Monitor Raisecom RAX 721 device health, interface traffic, optical diagnostics, power supplies, and fans in DataMiner through SNMP."
 ---
 
 # Raisecom-RAX-721
@@ -13,11 +13,11 @@ For service troubleshooting, start with the interface overview and inspect recei
 
 ## Key Features
 
-- **Device Health**: Monitor system uptime, CPU and memory utilization, and device temperature.
-- **Interface Performance**: Compare administrative and operational status, traffic rates, and bandwidth utilization, with detailed receive and transmit packet, discard, and error rates.
-- **Optical Diagnostics**: Inspect reported transmit and receive power, bias current, transceiver and laser temperatures, and optical alarm states.
-- **Hardware Monitoring**: Check power supply presence, input and warning states, and fan presence, status, and speed.
-- **Operational Context and Control**: Label interfaces in DataMiner independently of device aliases, receive supported Ethernet OAM threshold-crossing events, and manage selected interface settings through SNMP writes.
+- **Device health**: Monitor system uptime, CPU and memory utilization, and device temperature.
+- **Interface performance**: Compare administrative and operational status, traffic rates, and bandwidth utilization, with detailed receive and transmit packet, discard, and error rates.
+- **Optical diagnostics**: Inspect reported transmit and receive power, bias current, transceiver and laser temperatures, and optical alarm states.
+- **Hardware monitoring**: Check power supply presence, input and warning states, and fan presence, status, and speed.
+- **Operational context and control**: Label interfaces in DataMiner independently of device aliases, receive supported Ethernet OAM threshold-crossing events, and manage selected interface settings through SNMP writes.
 
 ## Use Cases
 
@@ -33,7 +33,7 @@ For service troubleshooting, start with the interface overview and inspect recei
 
 **Challenge**: Traffic measurements alone do not reveal cooling, power supply, or system resource problems.
 
-**Solution**: Review device temperature, CPU and memory utilization alongside power supply warnings and fan status and speed.
+**Solution**: Review device temperature and CPU and memory utilization alongside power supply warnings and fan status and speed.
 
 **Benefit**: Maintenance teams can focus their investigation on the equipment condition behind a service risk.
 
@@ -52,7 +52,6 @@ For service troubleshooting, start with the interface overview and inspect recei
 - **Supported Model**: Raisecom RAX 721. Compatibility with other RAX or ISCOM models is not established by this connector.
 - **DataMiner**: Minimum version **10.4.0.0 - 14003**.
 - **Connectivity**: SNMPv2 access to the device. Device-side write permissions are required for SNMP controls; event monitoring also requires device traps to reach DataMiner.
-- **Firmware**: No validated firmware version is specified in the connector source.
 
 > [!NOTE]
 > For connection settings, polling behavior, supported controls, and page descriptions, refer to the [technical documentation](xref:Connector_help_Raisecom-RAX-721_Technical).

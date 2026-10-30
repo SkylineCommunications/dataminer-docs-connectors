@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Raisecom-RAX-721_Technical
-description: Configure SNMP polling and traps for Raisecom RAX 721, inspect device and interface health, and use interface controls safely in DataMiner.
+description: "Configure SNMP polling and traps for Raisecom RAX 721, inspect device and interface health, and use interface controls safely in DataMiner."
 ---
 
 # Raisecom-RAX-721 Technical
@@ -9,7 +9,7 @@ description: Configure SNMP polling and traps for Raisecom RAX 721, inspect devi
 
 The **Raisecom-RAX-721** connector monitors Raisecom RAX 721 system health, interface traffic, optical measurements, power supplies, and fans through SNMPv2. It also exposes selected device settings as SNMP write controls.
 
-The connector requires **DataMiner 10.4.0.0 - 14003** or higher. No validated firmware version is specified in the source. Support for other RAX or ISCOM models is not established.
+The connector requires **DataMiner 10.4.0.0 - 14003** or higher. No specific firmware version has been validated for this connector. Support for other RAX or ISCOM models is not established.
 
 The deployed protocol name is **Raisecom RAX 721**. The Catalog title is **Raisecom-RAX-721**.
 
@@ -17,18 +17,14 @@ The deployed protocol name is **Raisecom RAX 721**. The Catalog title is **Raise
 
 ### Connections
 
-#### Main SNMP Connection
+#### SNMP Connection - Main
 
 Configure the following settings when you create the element:
 
-| Setting | Value |
-|---------|-------|
-| **IP Address/Host** | The management IP address of the Raisecom RAX 721. |
-| **Port Number** | The device's SNMP polling port, normally *161*. The connector does not override this standard port. |
-| **Get Community String** | The read community configured on the device. |
-| **Set Community String** | A community with device-side write permissions, if you intend to use SNMP controls. |
-
-Use the communities configured for your deployment. The connector does not prescribe credentials.
+- **IP address/host**: The management IP address of the Raisecom RAX 721.
+- **Port number**: The device's SNMP polling port, usually *161*. The connector does not override this standard port.
+- **Get community string**: The read community string configured on the device.
+- **Set community string**: A community string with device-side write permissions, if you intend to use SNMP controls.
 
 #### SNMP Connection - Traps
 
@@ -38,44 +34,39 @@ The implemented event handler processes Ethernet OAM event notifications with tr
 
 ### Initialization
 
-1. Create an element using **Raisecom RAX 721** and configure its SNMP connections.
-1. Open **General** and confirm that **Polling IP Address** identifies the intended management address and that **System Uptime** updates.
-1. Open **Interfaces** and confirm that the device interfaces appear.
-1. Review **Power Devices** and **Fans** for the hardware reported by the device.
+When you have created the element:
+
+1. Go to the **General** page and confirm that **Polling IP Address** identifies the intended management address and that **System Uptime** updates.
+1. Go to the **Interfaces** page and confirm that the device interfaces are shown.
+1. Review the **Power Devices** and **Fans** pages for the hardware reported by the device.
 1. If event monitoring is required, configure device-side trap forwarding and check the per-interface **Threshold Crossing Event** values.
 
-Polling starts automatically. There is no device-family selector to configure.
+## How to Use
 
 ### Polling Behavior
 
 The connector defines three initial polling schedules:
 
-| Schedule | Data |
-|----------|------|
-| *30 seconds* | System uptime. |
-| *3 minutes* | Interface and Ethernet statistics, optical diagnostics, CPU and memory measurements, device temperature, power supplies, and fans. |
-| *1 hour* | System name, contact, location, and description. |
+- **30 seconds**: System uptime.
+- **3 minutes**: Interface and Ethernet statistics, optical diagnostics, CPU and memory measurements, device temperature, power supplies, and fans.
+- **1 hour**: System name, contact, location, and description.
 
-The timers are configured to run initially. Rate measurements require successive successful counter samples and might not be available immediately after startup.
+The timers are configured to run at element startup. Rate measurements require successive successful counter samples and might not be available immediately after startup.
 
-There are no connector-specific polling interval or dataset enable/disable controls on the data pages. **Rates Calculation Method for Interfaces Tables** changes rate calculation, not the polling interval.
+There are no connector-specific controls on the data pages to set the polling interval or enable or disable datasets. **Rates Calculation Method for Interfaces Tables** changes rate calculation, not the polling interval.
 
-## How to Use
+### General Page
 
-### General
-
-Use **General** to review:
+This page displays the following general information about the device:
 
 - **System Uptime**, **System Name**, **System Contact**, **System Location**, and **System Description**.
 - **Polling IP Address**, captured from the main connection at element startup.
 - **CPU Utilization**, **Memory Total**, **Memory Available**, **Memory Utilization**, and **Temperature**.
-- **Shutdown Reason**, which initially displays *None*.
+- **Shutdown Reason**, which initially displays *None*. Do not treat this parameter as a complete shutdown event history. For incoming Ethernet OAM event information, use **Threshold Crossing Event** on the **Interfaces** page, which is updated based on traps.
 
-You can edit **System Name**, **System Contact**, and **System Location** through SNMP writes. These controls change the device, not only the DataMiner display.
+You can edit the **System Name**, **System Contact**, and **System Location** parameters. These controls change the device, not only the DataMiner display.
 
-For incoming Ethernet OAM event information, use **Threshold Crossing Event** on **Interfaces**. The implemented trap handler updates that per-interface column; do not treat **Shutdown Reason** as a complete shutdown event history.
-
-### Interfaces
+### Interfaces Page
 
 The **Interfaces** table combines the device's interface and extended-interface statistics into one row per interface. It shows interface descriptions, aliases, custom descriptions, administrative and operational status, type, MTU, speed, duplex status, promiscuous mode, and last-change and counter-discontinuity information.
 
@@ -89,10 +80,10 @@ Use **RX Bit Rate**, **TX Bit Rate**, and the corresponding bandwidth utilizatio
 
 #### Rate Calculation
 
-Set **Rates Calculation Method for Interfaces Tables** to:
+**Rates Calculation Method for Interfaces Tables** can be set to:
 
-- *Fast* (default): Use elapsed time at group level, with lower resource usage.
-- *Accurate*: Use elapsed time at table-row level, with higher resource usage and improved accuracy in some circumstances.
+- *Fast* (default): Uses elapsed time at group level, with lower resource usage.
+- *Accurate*: Uses elapsed time at table-row level, with higher resource usage and improved accuracy in some circumstances.
 
 This setting applies to the underlying interface and extended-interface rate calculations.
 
@@ -111,7 +102,7 @@ You can set **Admin Status** to *Up*, *Down*, or *Testing*, and set **Promiscuou
 
 **Last Clear** is counter-discontinuity information, not a button to clear counters.
 
-### Interfaces Details
+### Interfaces Details Page
 
 The **Interfaces Details** page contains two tables linked to the corresponding **Interfaces** rows:
 
@@ -120,12 +111,12 @@ The **Interfaces Details** page contains two tables linked to the corresponding 
 
 Use the shared display keys to compare the same interface across the overview and both detail tables. These tables show rates rather than a packet capture.
 
-### Power Devices
+### Power Devices Page
 
-The **Power Devices** table shows each reported power supply's SNMP instance and index, presence (**Exist**), **Input Type**, input availability (**Input**), and **Warning Type**. Warning values include *Unknown*, *Voltage Over*, *Power Normal*, *Voltage Under*, and *Power Down*.
+The **Power Devices** table shows each reported power supply's SNMP instance and index, presence ("Exist"), input type, input availability ("Input"), and warning type. Warning values include *Unknown*, *Voltage Over*, *Power Normal*, *Voltage Under*, and *Power Down*.
 
 Use this page to distinguish a missing supply or missing input from a supply warning. The displayed table is read-only and does not provide a power reset control.
 
-### Fans
+### Fans Page
 
-The **Fans** table shows each reported fan's SNMP instance and index, presence (**Exist**), **Status**, and **Speed**. Status values distinguish *Normal* from *Abnormal*. The table is read-only.
+The **Fans** table shows each reported fan's SNMP instance and index, presence ("Exist"), status, and speed. Status values distinguish *Normal* from *Abnormal*. The table is read-only.
