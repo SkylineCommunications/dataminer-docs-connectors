@@ -18,6 +18,24 @@ With this connector, operators get a clear, real-time view of antenna positionin
 - **Remote configuration**: Configure site, receiver, encoder, limit, motion, timing, option, positioner, and target settings.
 - **SNMP-based integration**: Connects to the device through SNMP for fast and reliable communication.
 
+## Use Cases
+
+### Use Case 1
+
+**Challenge**: Operators of satellite teleports with multiple antennas need to know at any moment whether each antenna is correctly pointed and whether the received signal is healthy, without visiting the antenna site.
+
+**Solution**: The connector polls the ACU for the actual antenna positions and receiver parameters, such as the receiver signal level, and displays them clearly on the Main View page.
+
+**Benefit**: Enables quick detection of pointing or signal issues and proactive action before service is affected.
+
+### Use Case 2
+
+**Challenge**: Operators need to react quickly to ACU faults and limit conditions, and adjust antenna targets and motion settings remotely.
+
+**Solution**: The connector exposes the device status and faults, and lets operators configure targets, limits, and motion settings from the Settings pages.
+
+**Benefit**: Reduces site visits and speeds up fault resolution and antenna repointing.
+
 ## Technical Reference
 
 > [!NOTE]
