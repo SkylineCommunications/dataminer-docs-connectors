@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Enensys_SmartGate_S2_S2X
+description: "Monitor Enensys SmartGate S2/S2X encapsulation gateways, RF modulation, BaseBand Framing, and IP-to-satellite streams in DataMiner."
 ---
 
 # Enensys SmartGate
@@ -10,23 +11,13 @@ The **Enensys SmartGate** connector communicates with the **Enensys SmartGate S2
 
 Operating as an essential link between IP distribution networks and satellite broadcast infrastructure, the Enensys SmartGate ingests Gigabit Ethernet traffic and encapsulates it into DVB-S2/S2X BaseBand Frames (BBF) using Generic Stream Encapsulation (GSE) or Multi-Protocol Encapsulation (MPE). This connector delivers continuous visibility into RF modulation metrics, input stream health, encapsulation parameters, and network interfaces to maintain uninterrupted satellite transmission.
 
-### Version Info
-
-| Range | Features | Based on | System Impact |
-|---|---|---|---|
-| 1.0.0.x [SLC Main] | Initial version. Full 3.1.1 firmware version support. | - | - |
-
 ## Key Features
 
 - **RF transmission and modulation monitoring**: Inspect DVB-S2 and DVB-S2X RF output parameters in real time, including symbol rate, roll-off factor, physical layer scrambling (PLS) code, output frequency, and carrier transmission states.
-
 - **Encapsulation and BaseBand Framing tracking**: Supervise BaseBand Framing (BBF) tables, GSE streams, MPEG-TS stream tables, and detected OpenTMP stream activity across active channels.
-
 - **Multi-port Gigabit Ethernet interface management**: Track link status, throughput, IP configurations, and DHCP lease information across control and data Ethernet interfaces.
-
 - **Input streams and service mapping oversight**: Verify virtual channels, input platform tables, component PID mapping, and service statuses for end-to-end signal tracking.
-
-- **Real-time asynchronous alarm handling**: Process incoming device SNMP traps to immediately register changes in power supplies, temperature, and transmission lock.
+- **Real-time asynchronous alarm handling**: View changes to power supplies, temperature, and transmission lock in real time thanks to SNMP trap processing.
 
 ## Use Cases
 
@@ -49,4 +40,4 @@ Operating as an essential link between IP distribution networks and satellite br
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Enensys_SmartGate_S2_S2X_Technical).
+> For detailed technical information, refer to the [technical documentation page](xref:Connector_help_Enensys_SmartGate_S2_S2X_Technical).
