@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Tandberg_TT6120
-description: Monitor the Tandberg TT6120 transport stream processor over SNMP: boards, transport streams, services, satellite demodulators, and ATM interfaces.
+description: Monitor the Tandberg TT6120 transport stream processor over SNMP, including boards, transport streams, services, demodulators, and ATM interfaces.
 ---
 
 # Tandberg TT6120
