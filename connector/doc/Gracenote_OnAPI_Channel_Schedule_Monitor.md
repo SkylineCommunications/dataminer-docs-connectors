@@ -1,53 +1,40 @@
 ---
-uid: Connector_help_Gracenote_OnAPI_Channel_Schedule_Monitor
+uid: Gracenote_OnAPI_Channel_Schedule_Monitor
 ---
 
 # Gracenote OnAPI Channel Schedule Monitor
 
-This is a limited SRM-project-specific connector with a limited feature set created on T&M.
-
 ## About
+The Gracenote OnAPI Channel Schedule Monitor is a limited SRM-project-specific connector for DataMiner. It enables monitoring and retrieval of channel schedule data from the Gracenote OnAPI service, supporting streamlined integration and visibility for broadcast and media operations.
 
-### Version Info
+## Key Features
+- **Channel Schedule Monitoring**: Retrieves channel schedule information.
+- **Schedule Data Integration**: Exposes retrieved schedule information through tables and parameters.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+## Use Cases
 
-### Product Info
+### Channel Schedule Monitoring
+**Challenge**: Need for real-time visibility into broadcast channel schedules.  
+**Solution**: Automated retrieval and display of schedule data from Gracenote OnAPI.  
+**Benefit**: Improved operational awareness and scheduling accuracy.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
+### Integration with Broadcast Operations
+**Challenge**: Integrating external schedule data into existing workflows.  
+**Solution**: Seamless HTTP-based connector for DataMiner elements.  
+**Benefit**: Enhanced workflow efficiency and reduced manual intervention.
 
-### System Info
+### Integration with Broadcast Operations
+**Challenge**: Integrating external schedule data into existing workflows.  
+**Solution**: Seamless HTTP-based connector for DataMiner elements.  
+**Benefit**: Enhanced workflow efficiency and reduced manual intervention.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+## Technical Reference
 
-## Configuration
+### Prerequisites
+- **Gracenote API Key** is required for authentication and data access.
+- **Gracenote ID** is provided by Gracenote representative.
+- **HTTP Connection**: IP address/host (http://on-api.gracenote.com), port (default: 443), and timeout (default: 10000 ms).
 
-### Connections
 
-#### HTTP Connection - Main
-
-This connector uses a HyperText Transfer Protocol (HTTP) connection and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **IP address/host**: *http://on-api.gracenote.com*.
-
-HTTP Settings:
-
-- **Port number**: The port of the connected device, by default *443*.
-- **Timeout of a single command**: Default value: *10000* ms.
-
-## How to Use
-
-This connector uses HTTP requests to populate tables and parameters within the element.
-
-When you have created the element, configure the following parameters to ensure that the connector can retrieve data:
-
-- **API Key**: Specify your key. If you do not have a key yet, contact your Gracenote representative for your API Key Account.
-- **Gracenote ID**: Specify your ID provided by your Gracenote representative.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Gracenote_OnAPI_Channel_Schedule_Monitor_Technical).

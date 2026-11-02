@@ -4809,6 +4809,9 @@
   items:
   - name: Gracenote OnAPI Channel Schedule Monitor
     topicUid: Connector_help_Gracenote_OnAPI_Channel_Schedule_Monitor
+    items:
+    - name: Gracenote OnAPI Channel Schedule Monitor Technical
+      topicUid: Connector_help_Gracenote_OnAPI_Channel_Schedule_Monitor_Technical
 - name: Grafana
   items:
   - name: Grafana Alerting API
