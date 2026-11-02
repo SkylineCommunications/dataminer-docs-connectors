@@ -19,7 +19,6 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The IP port of the device (default: *161*).
-- **Bus address**: Not required.
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when configuring values on the device (default: *public*).
 
@@ -74,7 +73,7 @@ This page displays encapsulation and framing configuration:
 
 This page monitors satellite RF modulation output:
 
-- **Modulation Settings**: Displays and configures transmission parameters, including standard selection (DVB-S2 or DVB-S2X), Constellation and Code Rate (MODCOD—e.g., QPSK up to 256APSK), Symbol Rate (Mbaud), Roll-off Factor (0.05 to 0.35), Pilot Insertion (on/off), and framing format.
+- **Modulation Settings**: Displays and configures transmission parameters, including standard selection (DVB-S2 or DVB-S2X), Constellation and Code Rate (MODCOD, e.g., QPSK up to 256APSK), Symbol Rate (Mbaud), Roll-off Factor (0.05 to 0.35), Pilot Insertion (on/off), and framing format.
 - **RF Parameters**: Monitors physical RF output parameters, including center output frequency, RF output power level (dBm), carrier state (Carrier On, Muted, or Pure Carrier CW mode), Physical Layer Scrambling (PLS) codes (Gold code sequences or root codes), and spectrum inversion.
 
 ### Ethernet & Network Page
