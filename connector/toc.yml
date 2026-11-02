@@ -4071,6 +4071,9 @@
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-DLY2
   - name: Evertz Scorpion 18 MIO-APP-UDX-3G
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G
+    items:
+    - name: Evertz Scorpion 18 MIO-APP-UDX-3G Technical
+      topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G_Technical
   - name: Evertz Scorpion 18 MIO-APP-UDX-4K
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-4K
   - name: Evertz Scorpion 18 MIO-HDMI-2-4K-IP
