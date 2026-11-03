@@ -86,9 +86,9 @@ The RF Hawkeye analysis can be configured from this table:
 
 ### FM Receiver Page
 
-This page shows one row per tuned FM frequency, with the **Frequency MHz**, the RDS **PI** code, **PS Name**, **PTY**, and **RT** (radio text), the RDS **BLER** (block error rate, where -1 means not available), and the **AudioLevel** in dBFS.
+This page shows one row per tuned FM frequency, with the **Frequency MHz**, the RDS **PI** code, **PS Name**, **PTY**, and **RT** (radio text), the RDS **BLER** (block error rate, where -1 means not available), and the **Audio Level** in dBFS.
 
-The **AudioLevel** column comes with default silence detection thresholds (warning at -35 dBFS, minor at -40 dBFS, major at -50 dBFS, and critical at -60 dBFS). The raise and clear delays that avoid false alarms on short pauses are configured in the DataMiner alarm template.
+The **Audio Level** column comes with default silence detection thresholds (warning at -35 dBFS, minor at -40 dBFS, major at -50 dBFS, and critical at -60 dBFS). The raise and clear delays that avoid false alarms on short pauses are configured in the DataMiner alarm template.
 
 ### Web Interface Page
 
