@@ -31,6 +31,8 @@ HTTP CONNECTION:
 
 When you have created the element, on the General page, specify the Client ID and Client Secret provided by OneWeb. Once these credentials have been submitted, the connector will send a "Hello OneWeb" message to the OneWeb API. If authentication is successful, a confirmation will be displayed, and the connector will start a polling timer to begin regular data polling.
 
+For certain features, such as bolt-on, suspend and activate products, a distribution partner contact identifier is required. It can be filled in and validated on the General page.
+
 ## How to use
 
 To use this connector, create an element in DataMiner using the OneWeb Enterprise connector and configure the necessary HTTP connection details. The connector communicates with the OneWeb API using JSON over HTTP to retrieve monitoring data.
