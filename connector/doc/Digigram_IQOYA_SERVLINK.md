@@ -72,10 +72,38 @@ This page contains tables with the states and the parameters of the audio input 
 
 The Send page contains a table with the states and the parameters of the different programs, a table that allows you to view and declare the IP services to be streamed over IP, and a table with the URL of each destination.
 
+In the **Custom Name** column of the Send IP Service table, you can define a name for each IP service. This name must be unique and is only stored in the element, not on the device.
+
+With the **Send IP Service Display Key Format** parameter, you can select how the rows of the Send IP Service table are identified, e.g., in alarms: **Custom Name** (default) or **Custom Name - Type - Program Name**. If no custom name is defined for an IP service, the name reported by the device is used instead.
+
 ### Receive
 
-The Receive page is similar to the Send page. It contains a table with the information about the programs list, a table with network metrics available on the main sources and backups, and a table with information about the priority of the receivers.
+The Receive page is similar to the Send page. It contains a table with the information about the programs list, a table with the states and the parameters of the receive IP services, a table with network metrics available on the main sources and backups, and a table with information about the priority of the receivers.
+
+With the **Receive IP Service Display Key Format** parameter, you can select which value identifies the rows of the Receive IP Service table, e.g., in alarms: **Index**, **Name** (default), or **SNMP Name** (the name reported by the device). The selected value is shown in the **Display Key** column. If the selected value is empty for a row, the index is used instead.
 
 ### Network
 
-This page contain status and other information about Vlans and Ethernet interfaces available on the device.
+This page contains status and other information about the VLANs and Ethernet interfaces available on the device.
+
+### Auxiliary Data
+
+This page contains a table with the configuration of the auxiliary data that is received and sent over UDP. The first row is used for the input and the second row for the output. For each row, you can enable or disable the UDP channel and configure its IP address, port, local port, and DSCP value. The **IP Address** and **Local Port** only apply to the output.
+
+### High Availability
+
+This page contains a table with the high availability instances of the device. For each instance, it shows the virtual router ID, the current, initial, and wanted state (e.g., Master or Backup), the base and effective priority, the primary interface, and the delay between two advertisements.
+
+To force an instance to become backup or master, change its **Base Priority**.
+
+### Polling Settings
+
+On this page, the Polling Manager table lists the datasets polled by the connector (e.g., the Receive IP Service table), with their polling interval and the time and status of their last poll. You can:
+
+- Change the **Interval** of a dataset, or set its **Admin Status** to **Disabled** to stop polling it.
+- Click **Poll** to poll a dataset immediately.
+- Right-click the table to enable, disable, or poll one or all datasets, or to reset them to their default settings.
+
+The **Refresh All** button immediately polls all enabled datasets.
+
+With the **Update Name** parameter, you can select whether a name defined in the **Name** column of the Receive IP Service, Receive Program, or Receive Priority table is applied on both the element and the device (**On Element and Device**, default) or only in the element (**Only on Element**). With **On Element and Device**, the names in these tables are also updated with the names on the device.
