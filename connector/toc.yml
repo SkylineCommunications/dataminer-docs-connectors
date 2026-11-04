@@ -9994,6 +9994,11 @@
     topicUid: Connector_help_Suitelife_Systems_Axess
   - name: Suitelife Systems GPX-32
     topicUid: Connector_help_Suitelife_Systems_GPX-32
+  - name: Suitelife Systems GPX-Pro
+    topicUid: Connector_help_Suitelife_Systems_GPX-Pro
+    items:
+    - name: Suitelife Systems GPX-Pro Technical
+      topicUid: Connector_help_Suitelife_Systems_GPX-Pro_Technical
 - name: Sumavision
   items:
   - name: Sumavision CAS
