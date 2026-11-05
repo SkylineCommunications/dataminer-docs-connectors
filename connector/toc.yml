@@ -77,7 +77,7 @@
 - name: ACE
   items:
   - name: ACE Media Tool INES
-    topicUid: Connector_help_ACE_Media_Tool_INES 
+    topicUid: Connector_help_ACE_Media_Tool_INES
 - name: Acorde
   items:
   - name: Acorde ACTX-KA

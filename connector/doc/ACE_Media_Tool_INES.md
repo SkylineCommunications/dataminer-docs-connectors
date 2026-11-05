@@ -1,5 +1,6 @@
 ---
-uid: Connector_marketing_ACE_Media_Tool_INES
+uid: Connector_help_ACE_Media_Tool_INES
+description: "Use the ACE Media Tool INES connector to monitor and control AETA audio codec lines through the INES REST API."
 ---
 
 # ACE Media Tool INES
@@ -54,14 +55,14 @@ The ACE Media Tool INES connector integrates AETA audio codecs into DataMiner vi
 
 - **Network connectivity** on port 443 (HTTPS) between the DataMiner Agent and the codec device. The connector defaults to HTTPS on port 443.
 
-- **DataMiner 10.4.0.0-14003 or higher** is required to run this connector.
+- **DataMiner 10.4.0.0-14003 or higher**.
 
 ### HTTP API Interface
 
 The connector communicates exclusively over HTTP(S) using the INES REST API. The following endpoints are used:
 
 | Endpoint | Method | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | `/api/rest/lines` | GET | Retrieve all codec lines and their current status |
 | `/api/rest/lines/:lineId/active-call` | GET | Retrieve active call details for a specific line |
 | `/api/rest/lines/:lineId/startcall` | POST | Initiate an outgoing call on a line |
