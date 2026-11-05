@@ -8594,6 +8594,8 @@
     topicUid: Connector_help_Romantis_NMS_-_Station
 - name: Ross Video
   items:
+  - name: Ross-Video-Carbonite
+    topicUid: Connector_help_Ross-Video-Carbonite
   - name: Ross Video General Frame
     topicUid: Connector_help_Ross_Video_General_Frame
   - name: Ross Video General Frame - Cobalt Digital 9004
