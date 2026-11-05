@@ -1,5 +1,5 @@
 ---
-uid: Gracenote_OnAPI_Channel_Schedule_Monitor
+uid: Connector_help_Gracenote_OnAPI_Channel_Schedule_Monitor
 ---
 
 # Gracenote OnAPI Channel Schedule Monitor
