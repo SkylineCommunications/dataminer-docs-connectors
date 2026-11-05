@@ -4,7 +4,7 @@ uid: Connector_help_Amphinicy_Technologies_Monica
 
 # Amphinicy Technologies Monica
 
-The Amphinicy Monica connector integrates a monitoring and control software suite with the same name. This integration provides a monitoring and control solution for different types of instruments (e.g. BUC and switches).
+The Amphinicy Monica connector integrates a monitoring and control software suite with the same name. This integration provides a monitoring and control solution for different types of instruments (e.g., BUC and switches).
 
 ## About
 

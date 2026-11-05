@@ -6,13 +6,7 @@ uid: Connector_help_Generic_Dummy
 
 ## About
 
-This connector is a virtual connector developed to store parameter information. From range 1.0.2.x onwards, connections are made between all externally added interfaces (E.g. added by VC4 IMS).
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.2.x          | DCF Integration | Yes                 | Yes                     |
+This connector is a virtual connector developed to store parameter information. From range 1.0.2.x onwards, connections are made between all externally added interfaces (e.g., added by VC4 IMS).
 
 ## Installation and configuration
 
@@ -30,7 +24,7 @@ Dummy parameters are shown and editable from this page. In range 1.0.2.x, the du
 
 ## DataMiner Connectivity Framework
 
-The 1.0.2.x connector range of the **Generic Dummy** protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The 1.0.2.x connector range of the **Generic Dummy** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -38,7 +32,7 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 #### Dynamic Interfaces
 
-Interfaces are added externally (E.g. added by VC4 IMS)
+Interfaces are added externally (e.g., added by VC4 IMS)
 
 Virtual dynamic interfaces:
 

@@ -16,7 +16,7 @@ The connector supports one board per element and receives SNMP traps from the de
 
 ### Version Info
 
-| **Range** | **Description**       | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description       | DCF Integration | Cassandra Compliant |
 |------------------|-----------------------|---------------------|-------------------------|
 | 1.0.0.x          | One element per board | No                  | Yes                     |
 

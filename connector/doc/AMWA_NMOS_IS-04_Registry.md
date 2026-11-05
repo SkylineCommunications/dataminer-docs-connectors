@@ -42,14 +42,6 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination.
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
-Set Element configurations. Websockets will be open in run time.
+Set element configurations. Websockets will be open at runtime.

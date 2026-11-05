@@ -30,7 +30,7 @@ This connector uses a virtual connection and does not require any input during e
 
 As the source file for this application is an Excel sheet, the Microsoft Access Database Engine 2010 has to be installed on the DataMiner server (see <https://www.microsoft.com/en-us/download/details.aspx?id=13255>).
 
-In addition, some parameters need to be configured on the data pages of the element, i.e. the **Import Excel File Path** and **Excel File Name (Xls, Xlsx)**. Once these have been configured, the **Import** button allows you to load the file into DataMiner so that all the information from the file is stored in the element data.
+In addition, some parameters need to be configured on the data pages of the element, i.e., the **Import Excel File Path** and **Excel File Name (Xls, Xlsx)**. Once these have been configured, the **Import** button allows you to load the file into DataMiner so that all the information from the file is stored in the element data.
 
 Finally, element references are needed in order for the truck app to calculate the whole flow. The following element references are required:
 
@@ -50,7 +50,7 @@ On the left, you can select the source. There are two ways of narrowing down the
 
 When you have selected the group, you can load the lists of flows by clicking the **Fetch Flows** button at the bottom.
 
-Flow analysis can be started based on the selected group. An interactive Automation script will be launched when the **Flow Analysis button** is clicked. This will allow you to configure PRISM and start live Wireshark captures.
+Flow analysis can be started based on the selected group. An interactive automation script will be launched when the **Flow Analysis button** is clicked. This will allow you to configure PRISM and start live Wireshark captures.
 
 ### Incoming Flows
 
@@ -88,7 +88,7 @@ All receivers that are linked with the outgoing flow are listed. This informatio
 - **Tiles**: A quick overview of the receivers is visualized.
 - **Table**: A list of all the receivers is displayed. You can copy values or export the table data via the context menu.
 
-There is a slider control available to toggle the data set between ***All*** and ***Configured Only***. *Configured Only* displays all receivers that are listed in VSM but where no active stream was detected.
+There is a slider control available to toggle the dataset between ***All*** and ***Configured Only***. *Configured Only* displays all receivers that are listed in VSM but where no active stream was detected.
 
 The states are calculated via the IGMP Snooping tables from the linked Arista switches. DCF is used to find the interface link and check if the multicasts are sent to these interfaces.
 

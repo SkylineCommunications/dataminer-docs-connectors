@@ -59,4 +59,4 @@ From version 1.0.0.3 onwards, a new list called **AC Upstream Issue Types with O
 
 ### Webservice
 
-On the Webservice page, the Webservice **port** needs to be configured. When the port is configured the **state** will indicate **Ok** if the service is running or **Error** when the service fails, e.g. because of the port is already in use. If an error occurs, the **Webservice feedback** parameter shows the **information about this error.**
+On the Webservice page, the Webservice **port** needs to be configured. When the port is configured the **state** will indicate **Ok** if the service is running or **Error** when the service fails, e.g., because of the port is already in use. If an error occurs, the **Webservice feedback** parameter shows the **information about this error.**

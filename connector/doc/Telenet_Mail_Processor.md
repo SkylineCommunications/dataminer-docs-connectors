@@ -6,13 +6,13 @@ uid: Connector_help_Telenet_Mail_Processor
 
 The **Telenet Mail Processor** is part of the **SAM** project and will collect emails and create/update/close tickets accordingly.
 
-This connector will fetch and process specific emails. According to the email, a flow is started to create/update/close a ticket via the **SAM** drivers and scripts (e.g. **Telenet Ticket Gateway**). The results of these processed emails are available.
+This connector will fetch and process specific emails. According to the email, a flow is started to create/update/close a ticket via the **SAM** drivers and scripts (e.g., **Telenet Ticket Gateway**). The results of these processed emails are available.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features**                              | **Based on** | **System Impact** |
+| Range              | Key Features                                | Based on   | System Impact   |
 |----------------------|-----------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Integrates mail processing into SAM's system. | -            | -                 |
 

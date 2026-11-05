@@ -16,10 +16,10 @@ The connector polls data from the device using SNMPv2.
 
 ### Version Info
 
-| **Range**     | **Description**         | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version         | No                  | Yes                     |
-| 1.0.1.x              | New connection (serial) | No                  | Yes                     |
+| Range              | Description             | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version         | No              | Yes                 |
+| 1.0.1.x            | New connection (serial) | No              | Yes                 |
 
 ### Product Info
 
@@ -38,7 +38,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: Not used.
 
 SNMP Settings:

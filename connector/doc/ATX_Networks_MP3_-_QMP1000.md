@@ -10,11 +10,11 @@ The **QMP1000 MAXNET II** modules are forward RF amplifiers, which are dual-widt
 
 This connector was designed to monitor and receive statistics from the **QMP1000**.
 
-The connector is generated automatically by the connector **ATX Networks MP3.**
+The connector is generated automatically by the connector **ATX Networks MP3**.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Complaint** |
+| Range     | Description     | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------|---------------------|-------------------------|
 | 2.0.0.x          | DVE Creation    | No                  | Yes                     |
 
@@ -28,7 +28,7 @@ This connector is used by DVEs that are **automatically generated** when DVE cre
 
 ### General
 
-This page displays general parameters, such as the **Description**, **Hardware** and **Firmware** **Revision**, **Serial** **Number**, **Manufacturer**, **Model**, **Alias** and **Asset ID** for the QMP1000 module.
+This page displays general parameters, such as the **Description**, **Hardware** and **Firmware Revision**, **Serial Number**, **Manufacturer**, **Model**, **Alias** and **Asset ID** for the QMP1000 module.
 
 ### Properties
 

@@ -36,8 +36,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The pooling IP of the device, e.g. *bcam.broadcast.bskyb.com.*
-- **IP port**: The IP port of the device, e.g. *80.*
+- **IP address/host**: The pooling IP of the device, e.g., *bcam.broadcast.bskyb.com.*
+- **IP port**: The IP port of the device, e.g., *80.*
 - **Bus address**: This should consist of a combination of the node/device name, the BUS value representing the channel, and the channel type (Standard, Entertainment or Sports). If the proxy server has to be bypassed, also specify *BypassProxy*.
   For example: *ByPassProxy;NodeName/DeviceName;Bus;ChannelType*
 

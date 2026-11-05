@@ -12,46 +12,12 @@ The **ND Satcom RCU5000** is an SNMP connector designed to communicate with RCU 
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Initial version</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x</td>
-<td>Branch version based on 1.0.0.x. Added DVE functionality and HPA tables</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>3.3.3.x</td>
-<td>New tables added</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>3.3.11.x</td>
-<td><h4 id="added-dcf-support">Added DCF support</h4></td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
+| Range       | Description                                          | DCF Integration     | Cassandra Compliant |
+|-------------|------------------------------------------------------|---------------------|-------------------------|
+| 1.0.0.x     | Initial version                                      | No                  | No                      |
+| 2.0.0.x     | Branch version based on 1.0.0.x. Added DVE functionality and HPA tables | No                  | No                      |
+| 3.3.3.x     | New tables added                                     | No                  | No                      |
+| 3.3.11.x    | Added DCF support                               | Yes                 | No                      |
 
 ### Product Info
 
@@ -61,7 +27,7 @@ The **ND Satcom RCU5000** is an SNMP connector designed to communicate with RCU 
 
 ### Exported connectors
 
-| **Exported Connector** | **Description** |
+| Exported Connector | Description |
 |-----------------------|-----------------|
 | ND Satcom RCU5000 HPA | HPA modules     |
 | ND Satcom RCU5000 RFT | RFT modules     |

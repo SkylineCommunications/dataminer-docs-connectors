@@ -10,7 +10,7 @@ The Newtec 2280 connector uses a serial connection to monitor and configure the 
 
 ### Version Info
 
-| **Range**            | **Key Features**                        | **Based on** | **System Impact** |
+| Range                | Key Features                            | Based on     | System Impact     |
 |----------------------|-----------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                         | -            | -                 |
 | 1.0.3.x              | Software version 3                      | 1.0.0.x      | -                 |

@@ -18,7 +18,7 @@ The minimum framework required is .NET 4.0, so that System.Web.Extensions.dll is
 
 ### Version Info
 
-| **Range** | **Description**                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                    | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                | No                  | Yes                     |
 | 1.0.1.x          | Changed keys and naming format | No                  | Yes                     |
@@ -32,7 +32,7 @@ The minimum framework required is .NET 4.0, so that System.Web.Extensions.dll is
 
 ### Exported connectors
 
-| **Exported Connector**                                                                        | **Description**    |
+| Exported Connector                                                                        | Description    |
 |----------------------------------------------------------------------------------------------|--------------------|
 | [Ereca Broadcast NetRacer - 2Rx](xref:Connector_help_Ereca_Broadcast_NetRacer_-_2Rx) | Receiver module    |
 | [Ereca Broadcast NetRacer - 2Tx](xref:Connector_help_Ereca_Broadcast_NetRacer_-_2Tx) | Transmitter module |

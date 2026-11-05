@@ -52,7 +52,7 @@ This page includes general information from the standard MIB-2, such as the devi
 
 ### Transmitter
 
-On this page, you can configure transmitter behavior, such as the operation mode or the input. You can also monitor the state of the transmitter, e.g. the state of the inputs, and check for the presence of alarms and warnings.
+On this page, you can configure transmitter behavior, such as the operation mode or the input. You can also monitor the state of the transmitter, e.g., the state of the inputs, and check for the presence of alarms and warnings.
 
 ### Event Settings
 

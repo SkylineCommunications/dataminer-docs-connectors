@@ -52,6 +52,6 @@ The web interface is only accessible when the client machine has network access 
 
 The Synamedia VSM connector maps all monitored appliances or software instances of for instance DCM, vDCM, etc. into the VSM topology views.
 
-The **Resources** page contains information related to DCM resources (e.g. name, software version, model, responding, alarm and device states, etc.).
+The **Resources** page contains information related to DCM resources (e.g., name, software version, model, responding, alarm and device states, etc.).
 
 License information related to availability and usage per resource and function is available under **License Usage**, **License Function Usage**, and **License Central**.

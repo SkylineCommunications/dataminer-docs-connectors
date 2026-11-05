@@ -70,7 +70,7 @@ When a new element is created, the connector will be initialized to monitor and 
 
 ### Monitor and Control Individual Unit
 
-If you select the *Not Applicable* check box for the **Switch Address** selector at the top of the **General** page, switch polling will be disabled. All corresponding DataMiner parameters will then have the value "N/A". You will only be able to use the connector to monitor and control one or more converters.
+If you select the *Not Applicable* checkbox for the **Switch Address** selector at the top of the **General** page, switch polling will be disabled. All corresponding DataMiner parameters will then have the value "N/A". You will only be able to use the connector to monitor and control one or more converters.
 
 The **Outdoor Units Table** has options to delete a row (in the Table Options column) and add a row (with the Add Row button). When you add a row, it will include a default polling address, which you can adjust if needed.
 

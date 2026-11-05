@@ -16,17 +16,17 @@ This is a generic connector for UT-4500, which uses a **serial** connection. The
 
 ### Version Info
 
-| **Range**         | **Description**                                                                                                                                                                                                                                                                                                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial version.                                                                                                                                                                                                                                                                                                                                                                                               | No                  | No                      |
-| 2.0.0.x **\[SLC Main\]** | Support for all 4505, 4514 and 4518 models. Configuration via interface (Device Specification page): - Frequency range (mandatory, no default) - Frequency step size (default: 125 KHz) - Attenuation step size (default: 0.25 dB) Fixed "packed configuration state" response. Fixed "equipment type" response. Supports a virtual address in bus address to access converter controlled by backup converter. | No                  | No                      |
-| 2.0.1.x                  | Major update on parameter descriptions.                                                                                                                                                                                                                                                                                                                                                                        | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | No |
+| 2.0.0.x **\[SLC Main\]** | Support for all 4505, 4514 and 4518 models. Configuration via interface (Device Specification page): - Frequency range (mandatory, no default) - Frequency step size (default: 125 KHz) - Attenuation step size (default: 0.25 dB) Fixed "packed configuration state" response. Fixed "equipment type" response. Supports a virtual address in bus address to access converter controlled by backup converter. | No | No |
+| 2.0.1.x | Major update on parameter descriptions. | No | Yes |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.0.x          | 5.11                        |
+|--|--|
+| 2.0.0.x | 5.11 |
 
 ## Installation and configuration
 
@@ -39,8 +39,11 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
+
   - **IP port**: The IP port of the device.
+
   - **Bus address**: The bus address of the device.
 
 ## Usage

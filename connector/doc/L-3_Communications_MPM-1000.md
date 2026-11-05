@@ -68,7 +68,7 @@ The element created with this connector has two sets of data pages. The first se
 
 - **Antenna**: Allows you to configure antenna parameters. Page buttons are available to **Antenna Status**, **EIRP Density**, **Beacon**, and **Kiv-19 Module** subpages
 
-- **Satellite**: Contains three tables that allow you to configure the different satellite parameters, i.e. the Satellite Configuration, Satellite Network, and Satellite Network Bandwidth Segment tables. Page buttons are available to the **Ku Satellite** and **GPS** subpages
+- **Satellite**: Contains three tables that allow you to configure the different satellite parameters, i.e., the Satellite Configuration, Satellite Network, and Satellite Network Bandwidth Segment tables. Page buttons are available to the **Ku Satellite** and **GPS** subpages
 
 - **Enhanced Tactical Satellite Processing Specification** (ETSSP) pages:
 

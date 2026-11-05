@@ -14,19 +14,22 @@ Besides polling the API for monitoring devices and interfaces parameters, the Ar
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x              | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Minimum required version increased to 10.4.5.0 - 14239  | 1.0.0.3            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                               | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | InterApp messages via Automation scripts using Flow Engineering | -                       |
+| 1.0.0.x   | Yes                 | Yes                     | InterApp messages via automation scripts using Flow Engineering | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | InterApp messages via automation scripts using Flow Engineering | -                       |
 
 ## Configuration
 
@@ -54,9 +57,9 @@ The following pages are available:
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of the Arista MCS connector supports the usage of DCF and can only be used on a DMA with DataMiner version **8.5.4** or higher.
+The **1.0.0.x** range of the Arista MCS connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
 
 ### Interfaces
 
@@ -69,5 +72,5 @@ Physical dynamic interfaces:
 ## Notes
 
 - The connector contains a **hidden Debug page** with parameters for quick debugging and testing. To make this page visible, use the **Debug Page** parameter under the **General** page.
-- The Arista MCS also implements an **InterApp receiver**. This allows the connector to receive messages from external sources, such as Automation scripts or applications.
+- The Arista MCS also implements an **InterApp receiver**. This allows the connector to receive messages from external sources, such as automation scripts or applications.
   Currently, the connector supports the reception of certain **Flow Engineering messages**. These messages will then make use of the connector in order to configure a flow by setting up the configuration of senders and receivers for the MCS.

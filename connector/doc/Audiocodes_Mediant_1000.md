@@ -64,37 +64,37 @@ This page contains **IP to Tel** and **Tel to IP** call statistics. There is als
 
 ### Tel to IP Routing
 
-This page contains the **Tel to IP Routing Table**, where you can modify the **Route** **Name**, **Destination** **Phone**, **Destination** **IP**, **Transport** **Type**, etc.
+This page contains the **Tel to IP Routing Table**, where you can modify the **Route Name**, **Destination Phone**, **Destination IP**, **Transport Type**, etc.
 
 ### IP to Tel Routing
 
-This page contains the **IP to Tel Routing** **Table**, where you can modify the **Route Name**, **Source IP Address**, **Destination Phone**, **Phone Prefix**, etc.
+This page contains the **IP to Tel Routing Table**, where you can modify the **Route Name**, **Source IP Address**, **Destination Phone**, **Phone Prefix**, etc.
 
 ### SRDs
 
-This page contains the **SRD** **Table**, which can be used to monitor and edit the **Name**, **Max** **Number** **of** **Registered** **Users**, **Media** **Anchoring**, etc.
+This page contains the **SRD Table**, which can be used to monitor and edit the **Name**, **Max Number of Registered Users**, **Media Anchoring**, etc.
 
 ### Proxy Sets
 
-This page contains both the **Proxy Sets Table** and **Proxy** **IP** **Table**.
+This page contains both the **Proxy Sets Table** and **Proxy IP Table**.
 
-In the Proxy IP Table, you can edit the **Proxy** **Set** **ID** to assign the **IP** corresponding to that row to a Proxy Sets row by matching the primary key of that table.
+In the Proxy IP Table, you can edit the **Proxy Set ID** to assign the **IP** corresponding to that row to a Proxy Sets row by matching the primary key of that table.
 
 ### IP Groups
 
-This page contains the **IP** **Groups Table**, which contains information for each IP group, such as the **name**, the **SRD**, the **Proxy** **Set** it is linked to, the **Type**, and a few other options that can be edited.
+This page contains the **IP Groups Table**, which contains information for each IP group, such as the **name**, the **SRD**, the **Proxy Set** it is linked to, the **Type**, and a few other options that can be edited.
 
 ### Trunks
 
-This page contains various tables related to the **trunks** **settings**, **configuration** and **status**.
+This page contains various tables related to the **trunks settings**, **configuration** and **status**.
 
 ### Trunk Groups
 
-This page contains the **Trunk** **Groups** **Table**, where you can edit the **From** and **To** **Trunk**, the **Starting** and **Last** **Channel**, the **Phone** **Number** and the **Module** of each row.
+This page contains the **Trunk Groups Table**, where you can edit the **From** and **To Trunk**, the **Starting** and **Last Channel**, the **Phone Number** and the **Module** of each row.
 
 ### Trunks Group Settings
 
-This page contains the **Trunks** **Group** **Settings Table**, which can be used to manage the **Channel** **Select** **Mode**, **Registration** **Mode**, **Serving** **IP** **Group** and **Gateway** **Name**.
+This page contains the **Trunks Group Settings Table**, which can be used to manage the **Channel Select Mode**, **Registration Mode**, **Serving IP Group** and **Gateway Name**.
 
 ### Web Interface
 

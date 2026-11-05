@@ -12,7 +12,7 @@ This connector uses a serial connection to communicate with this satellite modem
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version     | -            | -                 |
 | 2.0.0.x [SLC Main]   | HTTP implementation | 1.0.0.1      | -                 |
@@ -59,10 +59,6 @@ SERIAL CONNECTION:
 ### Initialization
 
 Go to the Settings subpage and set the Username and Password for the HTTP and SSH connections (parameters 100, 102, 110 and 112).
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

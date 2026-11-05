@@ -23,7 +23,7 @@ It is also possible to import **channel** information and then manually select t
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                     |
+| Range | Device Firmware Version                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | MKIII 2.1.2 'Saulire' (c) RedRat Ltd 2013, USB-IF 1.01- irNetBox Network Control Protocol V3.03 |
 | 1.0.1.x          | MKIII 2.1.2 'Saulire' (c) RedRat Ltd 2013, USB-IF 1.01- irNetBox Network Control Protocol V3.03 |
@@ -89,7 +89,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the RedRat irNetBox protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.1.x** connector range of the RedRat irNetBox connector supports the usage of DCF.
 
 Note that DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

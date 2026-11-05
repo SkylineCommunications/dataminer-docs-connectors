@@ -16,12 +16,6 @@ The connector is **automatically generated** when a slot is created with the par
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ## How to use
 
 The DVE has contains one page, **Slot Information**, which shows the relevant information available for the slot represented by this DVE.

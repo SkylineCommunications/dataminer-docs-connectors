@@ -36,7 +36,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.1.2*.
+- **IP address/host**: The polling IP of the device, e.g., *192.168.1.2*.
 - **IP port**: The IP port of the device, by default *5000*.
 - **Bus address**: If the proxy server needs to be bypassed, make sure the default value *bypassproxy* is specified.
 

@@ -8,13 +8,13 @@ The **Avcom of Virginia RSA-6500** is used as a **spectrum analyzer** that measu
 
 ## About
 
-This connector uses a **serial** connection to gather data from the device. Critical information related to the **spectrum analyzer** is displayed on a dedicated Spectrum Analyzer page, where advanced configuration is possible, e.g. adjusting the **Center Frequency** and **Resolution Bandwidth**.
+This connector uses a **serial** connection to gather data from the device. Critical information related to the **spectrum analyzer** is displayed on a dedicated Spectrum Analyzer page, where advanced configuration is possible, e.g., adjusting the **Center Frequency** and **Resolution Bandwidth**.
 
 ### Version Info
 
-| **Range** | **Description**                                                       | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version, based on version 1.0.0.4 Avcom of Virginia RSA-2500B | No                  | Yes                     |
+| Range   | Description                                                           | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version, based on version 1.0.0.4 Avcom of Virginia RSA-2500B | No              | Yes                 |
 
 ### Product Info
 

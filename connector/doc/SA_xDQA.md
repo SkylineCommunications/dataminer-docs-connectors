@@ -10,7 +10,7 @@ This connector is a **QAM modulator**, which allows you to monitor alarms and co
 
 ### Version Info
 
-| **Range**            | **Key Features**                           | **Based on** | **System Impact** |
+| Range              | Key Features                             | Based on   | System Impact   |
 |----------------------|--------------------------------------------|--------------|-------------------|
 | 1.1.1.x [SLC Main]   | Monitoring and setting of QAM frequencies. | -            | -                 |
 

@@ -17,7 +17,7 @@ This connector can be used to monitor parameters of the transmitter and configur
 
 ### Version Info
 
-| **Range** | **Description**                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial protocol                                 | No                  | Yes                     |
 | 1.1.0.x          | No                                               | Yes                 |                         |

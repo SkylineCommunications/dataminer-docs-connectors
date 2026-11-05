@@ -10,7 +10,7 @@ This protocol uses SNMP to monitor the SEE Telecom Acsys 2Rx Us receiver.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                  | **Based on** | **System Impact** |
+| Range            | Key Features                                                                                                                  | Based on | System Impact |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Development version                                                                                                               | -            | -                 |
 | 1.1.0.x [SLC Main]   | Main version, with two timers: fast timer (every 30 s) for important parameters and slow timer (every hour) for other parameters. | -            | -                 |

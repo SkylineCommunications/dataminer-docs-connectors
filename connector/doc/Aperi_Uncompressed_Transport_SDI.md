@@ -14,17 +14,17 @@ It uses the REST API to get and set all parameters associated with this type of 
 
 ### Version Info
 
-| **Range**         | **Description**               | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|-------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial version               | No                  | Yes                     |
-| 1.0.1.x **\[SLC Main\]** | Streamlined all Aperi connectors | No                  | Yes                     |
+| Range                | Description                      | DCF Integration | Cassandra Compliant |
+|----------------------|----------------------------------|-----------------|---------------------|
+| 1.0.0.x              | Initial version                  | No              | Yes                 |
+| 1.0.1.x \[SLC Main\] | Streamlined all Aperi connectors | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.2.0                       |
-| 1.0.1.x          | 1.2.0                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 1.2.0                      |
+| 1.0.1.x | 1.2.0                      |
 
 ## Installation and configuration
 

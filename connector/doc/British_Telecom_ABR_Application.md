@@ -4,23 +4,11 @@ uid: Connector_help_British_Telecom_ABR_Application
 
 # British Telecom ABR Application
 
-The **British Telecom ABR Application** connector is used to test BT's online TV service.
-
 ## About
 
+The **British Telecom ABR Application** connector is used to test BT's online TV service.
+
 This connector uses TCP/IP communication and the Selenium framework for web applications to test the online service.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 
@@ -32,7 +20,7 @@ This connector uses a TCP/IP connection and requires the following input during 
 
 TCP/IP CONNECTION:
 
-- **IP address/host**: The IP of the remote server, e.g. *10.11.12.13*.
+- **IP address/host**: The IP of the remote server, e.g., *10.11.12.13*.
 - **IP port**: *4444*.
 
 The connector also uses the **WebDriver.dll** and **WebDriverSupport.dll** files from the Selenium software.

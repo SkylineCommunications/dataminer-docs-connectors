@@ -4,25 +4,11 @@ uid: Connector_help_GlenSound_Atomic_Copper_29S
 
 # GlenSound Atomic Copper 29S
 
-The **GlenSound Atomic Copper 29S** is a **Telephone Interface**.
-
-The Glensound Copper 29 is a high-performance Telephone Balance Unit designed to interface with analogue telephone lines. A high-performance network echo canceller enables the unit to achieve excellent isolation between send and receive circuits.
-
 ## About
 
+The **GlenSound Atomic Copper 29S** is a high-performance Telephone Balance Unit designed to interface with analogue telephone lines. A high-performance network echo canceller enables the unit to achieve excellent isolation between send and receive circuits.
+
 This connector uses **smart-serial** communication in order to communicate with the device.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 

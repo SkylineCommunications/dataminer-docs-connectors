@@ -20,7 +20,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device e.g., *10.11.12.13.*
 
 SNMP Settings:
 
@@ -36,7 +36,7 @@ This page displays the **Time** of the device and information on the device's ha
 
 ### Network
 
-The **Data** and **M&C Network** are displayed separately on this page. The configuration of both networks is displayed (i.e. their **Speed** and **Duplex** mode), as well as the **Received** and **Sent** amount of **Bytes**, **Packets** and **Errors/Drops**.
+The **Data** and **M&C Network** are displayed separately on this page. The configuration of both networks is displayed (i.e., their **Speed** and **Duplex** mode), as well as the **Received** and **Sent** amount of **Bytes**, **Packets** and **Errors/Drops**.
 
 ### Encapsulation
 

@@ -12,7 +12,7 @@ This connector is intended to communicate with the device using SNMP and serial 
 
 ### Version Info
 
-| **Range** | **Description**                              | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                  | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial Version                              | No                  | No                      |
 | 1.0.1.x          | Addition of GbE stream and auto trap removal | No                  | Yes                     |

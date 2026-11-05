@@ -46,14 +46,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 To set some of the parameters, you need to set other parameters first (some are mandatory and others are optional). This means that you must fill in the required parameters first before attempting to set the other parameters. You can find more information about this below.

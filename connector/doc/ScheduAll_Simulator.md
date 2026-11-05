@@ -12,7 +12,7 @@ This connector can communicate with the ScheduAll Manager, simulating the usual 
 
 ### Version Info
 
-| **Range** | **Description**                                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                        | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.1          | Initial version                                                     | No                  | Yes                     |
 | 2.1.0.7          | Additional check on number of fields                                | No                  | Yes                     |
@@ -61,7 +61,7 @@ You can find two parameters on this page, **Username** and **Password**. This us
 
 ### Session Overview
 
-This page contains configuration parameters for **Session Timeout** and the maximum number of user sessions (i.e. **Session Maximum**). At the bottom of the page, the **Session Overview** table, displays current sessions and allows you to delete a session.
+This page contains configuration parameters for **Session Timeout** and the maximum number of user sessions (i.e., **Session Maximum**). At the bottom of the page, the **Session Overview** table, displays current sessions and allows you to delete a session.
 
 ### Visio
 

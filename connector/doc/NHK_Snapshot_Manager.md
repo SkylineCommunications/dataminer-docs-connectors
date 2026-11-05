@@ -6,7 +6,7 @@ uid: Connector_help_NHK_Snapshot_Manager
 
 The NHK Snapshot Manager is a virtual connector designed to take snapshots of elements and create debug elements using created snapshots and debug connectors.
 
-The *NHK_CreateSnapshots* and *NHK_CreateDebugElements* Automation scripts are required in order to create snapshots and debug elements. Debug connectors are created using the [protocol debug tools](https://aka.dataminer.services/Protocol_debug_tools).
+The *NHK_CreateSnapshots* and *NHK_CreateDebugElements* automation scripts are required in order to create snapshots and debug elements. Debug connectors are created using the [protocol debug tools](https://aka.dataminer.services/Protocol_debug_tools).
 
 ## About
 
@@ -38,13 +38,13 @@ Within the Snapshot Manager table, the following actions are possible:
 
 - **Create Debug Connector**: Creates a debug connector based on the snapshot file information. The extension of the debug connector version can be specified with the **Connector Version Extension** parameter (the default extension is `debug`).
 
-- **Create Debug Element**: Creates a debug element based on the snapshot file. The new element will have the same name as the snapshot file. The element will be created using the *NHK_CreateDebugElements* Automation script.
+- **Create Debug Element**: Creates a debug element based on the snapshot file. The new element will have the same name as the snapshot file. The element will be created using the *NHK_CreateDebugElements* automation script.
 
 - **Delete Snapshot File**: Deletes the snapshot file from the system.
 
 This page also has several standalone parameters:
 
-- **Create Snapshot**: Snapshots are created using the Snapshot Creator Wizard and stored in the location specified with the **Snapshot File Location** parameter. The snapshots will be created with the *NHK_CreateSnapshots* Automation script.
+- **Create Snapshot**: Snapshots are created using the Snapshot Creator Wizard and stored in the location specified with the **Snapshot File Location** parameter. The snapshots will be created with the *NHK_CreateSnapshots* automation script.
 
 - **Snapshot File Location**: By default, the file location will be `C:\Skyline DataMiner\Documents\Snapshot Files`.
 

@@ -52,6 +52,6 @@ At the bottom of the **General** page, the **Import/Export** page button can be 
 
 ## Notes
 
-In order to automatically poll the data, a Scheduler task and Automation script are required.
+In order to automatically poll the data, a Scheduler task and automation script are required.
 
-The frequency when data should be gathered can be set in the Scheduler task, and the Automation script only has to set the **Poll Information** button of the connector to any value.
+The frequency when data should be gathered can be set in the Scheduler task, and the automation script only has to set the **Poll Information** button of the connector to any value.

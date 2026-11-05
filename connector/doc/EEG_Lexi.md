@@ -52,10 +52,6 @@ When the element has been created, also configure the parameters on the **Genera
 - **Username**: The username used to log in to EEG Lexi.
 - **Password**: The password used to log in to EEG Lexi.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 When the element has been created and the correct credentials have been filled in on the General page, it will automatically begin to poll the information of the engines, models, base models, and instances.

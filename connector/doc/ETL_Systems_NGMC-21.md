@@ -39,8 +39,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SERIAL CONNECTION:
 
 - **Type of port:** TCP/IP.
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10145.1.12*.
-- **IP port**: The port of the destination, e.g. 1*3000*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10145.1.12*.
+- **IP port**: The port of the destination, e.g., 1*3000*.
 - **Timeout of a single command:** 2500 ms (minimum).
 
 #### SNMP connection
@@ -49,7 +49,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string required to read from the device. The default value is *public*.
 - **Set community string**: The community string required to set to the device. The default value is *private*.

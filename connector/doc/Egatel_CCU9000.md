@@ -12,7 +12,7 @@ The Egatel CCU9000 connector will communicate with the device via SNMP, enabling
 
 ### Version Info
 
-| **Range** | **Description**                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                         | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                     | No                  | Yes                     |
 | 1.1.0.x          | New version to support Firmware V12 | No                  | Yes                     |

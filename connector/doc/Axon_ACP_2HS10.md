@@ -62,16 +62,16 @@ The element has the following pages:
 
 - **General**: Displays information about the identity of the card and other general information: **Card Name**, **Card Description**, **SW Revision**, **HW Revision**, etc.
 - **I/O:** Contains the input and output settings and status information.
-- **Down** **Converter A**: Contains down conversion setting parameters of Channel A.
-- **Down** **Converter B**: Contains down conversion setting parameters of Channel B.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Down Converter A**: Contains down conversion setting parameters of Channel A.
+- **Down Converter B**: Contains down conversion setting parameters of Channel B.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 > [!NOTE]
 > If the setting of a parameter depends on another parameter, when the user tries to set the second parameter before the first parameter is set, a pop-up window will be displayed indicating what to do first. In this case, the user must set the first parameter according to the information in the pop-up window before setting the second parameter. For example, in order to set Coring Level (on the Down Converter pages), the Coring has to be set to *Level_dep*.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP 2HS10 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Axon ACP 2HS10 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -81,7 +81,7 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 Physical fixed interfaces:
 
-- **SDI Input** **A:** A single fixed interface of type **in**
+- **SDI Input A**: A single fixed interface of type **in**
 - **SDI Input B**: A single fixed interface of type **in**.
 - **SDI HD/SD Output A**: A single fixed interface of type **out**.
 - **SDI Output A**: A single fixed interface of type **out**.

@@ -61,7 +61,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element using this connector consists of the following data pages:
 
-- **General**: Allows you to monitor and configure basic information about the device, e.g. **System Description**, **Firmware Version**.
-- **Hardware**: Allows you to monitor hardware information, e.g. **Fan Speed**, **Power Supply Voltage**.
+- **General**: Allows you to monitor and configure basic information about the device, e.g., **System Description**, **Firmware Version**.
+- **Hardware**: Allows you to monitor hardware information, e.g., **Fan Speed**, **Power Supply Voltage**.
 - **GPIO**: Allows you to monitor GPIO information.
-- **Cards**: Allows you to monitor card information, e.g. **Software Revision**, **DIP switches position**.
+- **Cards**: Allows you to monitor card information, e.g., **Software Revision**, **DIP switches position**.

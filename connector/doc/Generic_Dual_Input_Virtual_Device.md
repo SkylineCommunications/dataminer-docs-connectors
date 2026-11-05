@@ -34,20 +34,12 @@ The main purpose of this connector is to have elements that provide DCF interfac
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector consists of only one page, the **General** page. On this page, the **Web Interface URL** must be specified.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Generic Dual Input Virtual Device protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Generic Dual Input Virtual Device connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).

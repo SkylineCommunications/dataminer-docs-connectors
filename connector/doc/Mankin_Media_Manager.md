@@ -8,7 +8,7 @@ This connector provides a management application with ticketing, with the final 
 
 ## About
 
-This connector is used together with Automation scripts and a Visio overlay, allowing the creation, viewing, checking and editing of tickets, in order to keep track of problems in a system.
+This connector is used together with automation scripts and a Visio overlay, allowing the creation, viewing, checking and editing of tickets, in order to keep track of problems in a system.
 
 ### Version Info
 
@@ -54,7 +54,7 @@ The page also has a subpage that displays tables with general information on the
 
 - **Ticket Monitor Table:** Lists the resolved tickets that remain in latency for a period of time determined by the client, during which a repetition of the failure will activate the ticket again.
 - **Panel Key Assignments:** Displays the position of the engineering stations and clients in the Clear Com device, so that these panels can be reconfigured.
-- **GUI Messages Table:** Displays important information for the correct operation of the application, required by Automation scripts.
+- **GUI Messages Table:** Displays important information for the correct operation of the application, required by automation scripts.
 
 ### Customers
 

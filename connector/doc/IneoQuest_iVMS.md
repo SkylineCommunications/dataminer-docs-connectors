@@ -8,13 +8,13 @@ The IneoQuest iVMS shows all the current alarms from the different probes in the
 
 It will send a **SOAP** command every minute to receive a list with available probes and their statuses in the iVMS system. For each new probe in that list, a **Dynamic Virtual Element (DVE)** will automatically be created for separate monitoring. The user can decide afterwards whether they want to keep the DVE or remove it.
 
-The **SNMP** interface is used to receive L4 traps from the iVMS system and to back up the trap tables in case a trap was not received (e.g. because of network problems, the element that is not active, etc.).
+The **SNMP** interface is used to receive L4 traps from the iVMS system and to back up the trap tables in case a trap was not received (e.g., because of network problems, the element that is not active, etc.).
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
+| Range            | Description                                                | DCF Integration | Cassandra Compliant |
 |----------------------|----------------------------------------------------------------|---------------------|-------------------------|
 | 4.0.0.x              | Current version                                                | No                  | Yes                     |
 | 4.0.1.x [SLC Main]   | Connector revision with fixed format name of virtual elements. | No                  | Yes                     |
@@ -28,7 +28,7 @@ The **SNMP** interface is used to receive L4 traps from the iVMS system and to b
 
 ### Exported connectors
 
-| **Exported Connector**                                                 | **Description**                                                |
+| Exported Connector                                                 | Description                                                |
 |------------------------------------------------------------------------|----------------------------------------------------------------|
 | [IneoQuest iVMS Probe](xref:Connector_help_IneoQuest_iVMS_Probe)   | DVE connector for IneoQuest iVMS Probe \[exported by 4.0.0.x\] |
 | [IneoQuest iVMS - Probe](xref:Connector_help_IneoQuest_iVMS_Probe) | DVE connector for IneoQuest iVMS Probe \[exported by 4.0.1.x\] |

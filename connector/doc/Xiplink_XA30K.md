@@ -12,11 +12,11 @@ This connector uses 2 connections, **SNMP** and **HTTP**. It mainly uses HTTP.
 
 ### Version Info
 
-| **Range**      | **Description**                                                         | **DCF Integration** | **Cassandra Compliant** |
-|----------------|-------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.1.0.x        | New connector version compatible with Xiplink v5.0.                     | No                  | No                      |
-| 1.2.0.x        | Token-based authentication is available as well as processing of traps. | No                  | Yes                     |
-| 1.3.0.x (Main) | Removed credential authentication.                                      | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.1.0.x | New connector version compatible with Xiplink v5.0. | No | No |
+| 1.2.0.x | Token-based authentication is available as well as processing of traps. | No | Yes |
+| 1.3.0.x (Main) | Removed credential authentication. | No | Yes |
 
 ### Product Info
 
@@ -66,7 +66,7 @@ From range **1.2.0.x** onwards, the login subpage offers **token-based authentic
 
 This is the default page of the connector. It displays general data such as the **Device Name**, **Version**, **Uptime**, etc.
 
-In the **Optimization Monitoring** section of the page, you can find some important performance optimization parameters, on which trending can be enabled, i.e. **CPU Load, Memory Usage, Optimized TCP Connections** and **Up/Downlink Savings**.
+In the **Optimization Monitoring** section of the page, you can find some important performance optimization parameters, on which trending can be enabled, i.e., **CPU Load, Memory Usage, Optimized TCP Connections** and **Up/Downlink Savings**.
 
 A page button is available that provides access to the **Login** subpage, where you can log in and connect to the device. For more information, refer to the "Configuration of Login" section above.
 

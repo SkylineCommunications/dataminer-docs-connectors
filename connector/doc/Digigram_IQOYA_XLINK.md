@@ -13,7 +13,7 @@ IQOYA X/LINK is a 1U-rack streamlined IP audio codec designed for **live remote 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x | Initial version | - | - |
-| 1.0.1.x | - Fixed Table Display keys <br>- Fixed Discreet Priority (Receivers Priority) | 1.0.0.1 | Updates may be needed for filters, Automation scripts, visual overviews, reports, web API. |
+| 1.0.1.x | - Fixed Table Display keys <br>- Fixed Discreet Priority (Receivers Priority) | 1.0.0.1 | Updates may be needed for filters, automation scripts, visual overviews, reports, web API. |
 | 1.0.2.x [SLC Main] | Set Multicast address via HTTP | 1.0.1.1 | New HTTP connection must be configured for existing elements. |
 
 ### Product Info
@@ -59,14 +59,6 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: 443.
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

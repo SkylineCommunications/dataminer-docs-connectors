@@ -12,7 +12,7 @@ The TSL MDU12-PM connector is used to monitor and control a TSL MDU12-PM device.
 
 ### Version Info
 
-| **Range** | **Description**                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                         | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version, based on "SA DCM 2.0.0.36" connector. | No                  | Yes                     |
 | 1.0.1.x          | Connector review.                                      | No                  | Yes                     |
@@ -36,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 

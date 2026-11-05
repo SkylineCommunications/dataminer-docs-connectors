@@ -12,12 +12,12 @@ Using the **HTTP API**, this connector both collects information from the device
 
 ### Version Info
 
-| **Range**         | **Description**                                      | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial version.                                     | No                  | Yes                     |
-| 1.0.1.x                  | Streamlined all Aperi connectors.                       | No                  | Yes                     |
-| 1.0.2.x                  | Transport table overhauled to show correct bitrates. | No                  | Yes                     |
-| 1.0.3.x **\[SLC Main\]** | Extra parameters added to the IP flow table.         | No                  | Yes                     |
+| Range                | Description                                          | DCF Integration | Cassandra Compliant |
+|----------------------|------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x              | Initial version.                                     | No              | Yes                 |
+| 1.0.1.x              | Streamlined all Aperi connectors.                    | No              | Yes                 |
+| 1.0.2.x              | Transport table overhauled to show correct bitrates. | No              | Yes                 |
+| 1.0.3.x \[SLC Main\] | Extra parameters added to the IP flow table.         | No              | Yes                 |
 
 ### Product Info
 

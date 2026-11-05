@@ -4,24 +4,18 @@ uid: Connector_help_Systembase_C310xr
 
 # Systembase C310xr
 
-This connector is used to monitor and configure the **C310xr** codec from **Systembase**.
-
 ## About
+
+This connector is used to monitor and configure the **C310xr** codec from **Systembase**.
 
 The connector displays information about the different patches in a table and in a tree view. It is possible to disable some of the patches, so that the communication traffic over the network is kept to an absolute minimum.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                                    | DCF Integration | Cassandra Compliant |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.1          | Initial version.                                                                                                                                   | No                  | Yes                     |
 | 1.0.0.2          | Renamed ISDN 1 to Channel 1 and ISDN 2 to Channel 2. Added extra ISDN status values. Fixed remote addresses starting with 0. Reduced polling rate. | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 

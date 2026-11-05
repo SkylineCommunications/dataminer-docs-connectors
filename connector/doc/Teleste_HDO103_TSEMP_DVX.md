@@ -34,8 +34,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the Moxa connected to the DVX bus, e.g. *10.11.12.13.*
-  - **IP port**: The port of the local TCP connection used by the Moxa, e.g. *4001.*
+  - **IP address/host**: The polling IP of the Moxa connected to the DVX bus, e.g., *10.11.12.13.*
+  - **IP port**: The port of the local TCP connection used by the Moxa, e.g., *4001.*
   - **Bus address**: The bus address of the connected device, in the format *X.Y* (where X = Rack Number, Y = Slot Number).
 
 ## Usage

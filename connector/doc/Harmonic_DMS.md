@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 When you have created the element, go to the **Login** page, and configure the **Username** and **Password** for polling to work.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 HTTP REST calls are used to retrieve all relevant information from the DMS. The **API Endpoint Status** page contains a table of all GET endpoints that are polled. **Refresh Frequency** determines how often that specific endpoint is polled. The **Status** determines if the endpoint should be polled or not. The **Refresh** button will automatically poll the endpoint.

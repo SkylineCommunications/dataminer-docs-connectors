@@ -30,8 +30,8 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **IP port**: The port of the connected device, e.g. *23.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **IP port**: The port of the connected device, e.g., *23.*
 - **Bus address**: The bus address of the connected device. The range is defined from *64* to *95*.
 
 ## Usage

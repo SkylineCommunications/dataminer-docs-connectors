@@ -44,14 +44,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device default: *public.*
 - **Set community string**: The community string used when setting values on the device default: *private*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -91,7 +83,7 @@ The page contains six page buttons, which display the following subpages:
 
 ### Events
 
-This page gives an overview of the event parameters related to the tuner (e.g. Tuner RF Power Event Value, Tuner RF TS Sync Event T1), ASI (e.g. ASI TS Sync Event T1) and IP TS (e.g. IP TS Sync Event T1).
+This page gives an overview of the event parameters related to the tuner (e.g., Tuner RF Power Event Value, Tuner RF TS Sync Event T1), ASI (e.g., ASI TS Sync Event T1) and IP TS (e.g., IP TS Sync Event T1).
 
 Several page buttons are available, which show more detailed event information and settings. The **Other Events** page button shows settings for case temperature events and internal storage.
 

@@ -15,13 +15,8 @@ The connector only polls the services from one of the transport streams of the I
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.1.0.7 | Initial version. | - | - |
-| 1.1.1.x [SLC Main] | Normalized parameters removed. New display key for Transport Stream PIDs table. | 1.1.0.7 | - Loss of normalized parameters. <br>- Loss of trend and alarm data in the Transport Stream PIDs table. |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.1.1.x   | 2.9.2.r1.588           |
+| 1.1.1.x | Normalized parameters removed. New display key for Transport Stream PIDs table. | 1.1.0.7 | - Loss of normalized parameters. <br>- Loss of trend and alarm data in the Transport Stream PIDs table. |
+| 1.1.2.x [SLC Main] | - Display key implemented in Transport Stream Services table. <br>- Adjustable name for element creation. | 1.1.0.7 | Loss of trend and alarm data in the Transport Stream Services table. |
 
 ### System Info
 
@@ -29,6 +24,7 @@ The connector only polls the services from one of the transport streams of the I
 |--|--|--|--|--|
 | 1.1.0.x | No | No | - | [ITNM Systems IDM100 Service](xref:Connector_help_ITNM_Systems_IDM100_Service) (generated via button) |
 | 1.1.1.x | No | No | - | [ITNM Systems IDM100 Service](xref:Connector_help_ITNM_Systems_IDM100_Service) (generated via button) |
+| 1.1.2.x | No | No | - | [ITNM Systems IDM100 Service](xref:Connector_help_ITNM_Systems_IDM100_Service) (generated via button) |
 
 ## Configuration
 
@@ -42,16 +38,16 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
-  - **Databits**: Databits specified in the manual of the device, e.g. *7*.
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1*.
-  - **Parity**: Parity specified in the manual of the device, e.g. *No*.
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600*.
+  - **Databits**: Databits specified in the manual of the device, e.g., *7*.
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1*.
+  - **Parity**: Parity specified in the manual of the device, e.g., *No*.
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-  - **IP port**: The port of the connected device, e.g. *81.*
+  - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+  - **IP port**: The port of the connected device, e.g., *81.*
   - **Bus address**: The bus address of the device.
 
 ### Initialization

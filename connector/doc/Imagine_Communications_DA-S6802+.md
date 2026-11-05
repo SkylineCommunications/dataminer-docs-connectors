@@ -53,14 +53,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (fixed value: *4000*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

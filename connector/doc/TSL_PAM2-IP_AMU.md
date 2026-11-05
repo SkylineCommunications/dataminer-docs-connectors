@@ -16,12 +16,6 @@ The protocol gets and sets data on the device through an HTTP API.
 |--------------------|-------------------------------|----------|---------------|
 | 1.0.0.x [SLC Main] | - Audio control<br>- SFP data | -        | -             |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

@@ -12,7 +12,7 @@ This connector uses an SNMP connection to display information on a Quintech matr
 
 ### Version Info
 
-| **Range** | **Description**                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                      | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                 | No                  | Yes                     |
 | 1.1.0.x          | Updated to support new firmware. | No                  | Yes                     |
@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *172.19.19.30*.
+- **IP address/host**: The polling IP of the device, e.g., *172.19.19.30*.
 
 SNMP Settings:
 

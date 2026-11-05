@@ -14,21 +14,21 @@ The **versioning** for the connector is specifically engineered to tie in with t
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                               | DCF Integration | Cassandra Compliant |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No                  | Yes                     |
+| \<10.0.0.x [SLC Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No                  | Yes                     |
 | 10.0.0.x         | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                                        | No                  | Yes                     |
 
 ### Product Info
 
 | Range     | Device Firmware Version                                                                                                                       |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
+| \<10.0.0.x [SLC Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
 | 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware.                                       |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### SNMP main connection
 
@@ -67,6 +67,10 @@ Data gets retrieved from the device in three ways.
 
 > [!NOTE]
 > You can toggle alarm information to be retrieved either every 30 seconds or every 3 seconds. The default value is every 3 seconds. It is recommended to only change this to 30 seconds when you enable traps to be sent to DataMiner.
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
 
 ## Usage
 

@@ -28,7 +28,7 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Exported connectors
 
-| **Exported Connector**                      | **Description**                                                            |
+| Exported Connector                      | Description                                                            |
 |--------------------------------------------|----------------------------------------------------------------------------|
 | Crucible Technologies Meter Driver - Meter | Retrieved consumption information for every activated meter of the device. |
 

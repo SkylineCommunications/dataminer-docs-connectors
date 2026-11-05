@@ -16,14 +16,6 @@ This connector allows you to manage the Evertz 7882IRD-S2X-10G card. It communic
 | 1.0.1.x              | Initial version  | 1.0.0.2      | Descriptions and parameter placement have changed.                                        |
 | 1.0.2.x [SLC Main]   | Initial version  | 1.0.1.1      | - Connects to the card directly instead of the frame. <br>- New OIDs for every parameter. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-| 1.0.2.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -54,10 +46,6 @@ SNMP Settings:
 ### Initialization
 
 The connector is designed to poll the information of a single card. The slot position within the frame needs to be configured in the element under the **Device Address**.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

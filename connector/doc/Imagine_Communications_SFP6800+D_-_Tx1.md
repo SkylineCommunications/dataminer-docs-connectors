@@ -2,7 +2,7 @@
 uid: Connector_help_Imagine_Communications_SFP6800+D_-_Tx1
 ---
 
-Imagine Communications SFP6800+D - Tx1
+# Imagine Communications SFP6800+D - Tx1
 
 This connector can be used to view information and configure settings of **Tx1 cards** connected to the Imagine Communications SFP6800+D Chassis. This includes information regarding HDMI, CMPST, Electrical and Optical of the Tx1 cage.
 

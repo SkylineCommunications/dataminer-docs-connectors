@@ -18,15 +18,15 @@ This connector uses an HTTP connection and requires the following input during e
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
-- **IP port**: The port of the destination, e.g. *443*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
+- **IP port**: The port of the destination, e.g., *443*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy*.
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and needs following user information:
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:

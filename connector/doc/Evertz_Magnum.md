@@ -10,10 +10,10 @@ This connector can be used to monitor faults in the Evertz Magnum controller. Th
 
 ### Version Info
 
-| **Range** | **Key Features**                                     | **Based on** | **System Impact** |
-|-----------|------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.                                     | -            | -                 |
-| 1.0.1.x   | Fixed primary keys and added display keys to tables. | -            | -                 |
+| Range   | Key Features                                         | Based on | System Impact |
+|---------|------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version.                                     | -        | -             |
+| 1.0.1.x | Fixed primary keys and added display keys to tables. | -        | -             |
 
 ### Product Info
 
@@ -39,7 +39,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 SNMP Settings:
 

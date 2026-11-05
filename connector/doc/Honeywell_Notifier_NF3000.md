@@ -34,7 +34,7 @@ SMART-SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600.*
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600.*
 
 - Interface connection:
 

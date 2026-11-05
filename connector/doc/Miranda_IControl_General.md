@@ -22,7 +22,7 @@ From version **2.0.0.17** onwards, sets can be made to cards using the Oxtel pro
 | 2.0.1.x [For DM 7.5] | Only for DataMiner 7.5. Parameter sets on output and switch mode on HCO card added. | No | Yes |
 | 2.0.2.x | Reviewed standalone parameters and added new parameters for cards LGK-3901 and DSK-3901. | No | Yes |
 | 2.0.3.x [SLC Main] | Support added for HDA 1851 card. | No | Yes |
-| 3.0.0.x | Initial version. <br>**Reason**: This is a completely new connector version that was created from scratch. The impact of the changes is such that a new range was required: the information is no longer polled via a serial connection, no IDs have been preserved, etc. <br>**Impact**: All previous references can no longer be used. If they are reused, it can occur that entries in the database, e.g. for trend data, have a different meaning. <br>In this range, all data is polled and can be controlled/set via iControl's REST API. (An iControl license is required for this.) Only the general system parameters are still polled over SNMP like in the 2.0.2.x range. This connector range currently supports **XVP-3901**, **SCO-1421**, **SDA-1402** and **IRG-3401** cards. | Yes | Yes |
+| 3.0.0.x | Initial version. <br>**Reason**: This is a completely new connector version that was created from scratch. The impact of the changes is such that a new range was required: the information is no longer polled via a serial connection, no IDs have been preserved, etc. <br>**Impact**: All previous references can no longer be used. If they are reused, it can occur that entries in the database, e.g., for trend data, have a different meaning. <br>In this range, all data is polled and can be controlled/set via iControl's REST API. (An iControl license is required for this.) Only the general system parameters are still polled over SNMP like in the 2.0.2.x range. This connector range currently supports **XVP-3901**, **SCO-1421**, **SDA-1402** and **IRG-3401** cards. | Yes | Yes |
 | 3.0.1.x [Obsolete] | Based on 3.0.0.15. Changed the discretes of parameter Program Output Status present in Miranda IControl General - SCO-1421 DVEs. | Yes | Yes |
 | 3.0.2.x | Based on 3.0.1.8. Adds connection for HCO GSM Alarms. Supports HCO 3901 cards. <br>**Impact**: Element reconfiguration is needed. | Yes | Yes |
 | 3.0.3.x | Based on 3.0.2.22. Changed the primary key for HDA1911 Export Table. <br>**Impact**: Loss of data for HDA1911 exported DVEs. | Yes | Yes |
@@ -81,6 +81,7 @@ From version **2.0.0.17** onwards, sets can be made to cards using the Oxtel pro
 | [Miranda IControl General - IRG-3401](xref:Connector_help_Miranda_IControl_General_-_IRG-3401) | ASI gateway |
 | [Miranda IControl General - HCP-1801](xref:Connector_help_Miranda_IControl_HCP-1801) | HCP-1801 SDI Video and Embedded Audio Control Probe (available from 3.0.1.7 onwards) |
 | [Miranda IControl General - HDA-1851](xref:Connector_help_Miranda_IControl_General_-_HDA-1851) | HDA 1851 Card |
+| [Miranda IControl General - HRS-1801](xref:Connector_help_Miranda_IControl_General_-_HRS-1801) | HRS 1801 Card |
 
 ## Configuration
 
@@ -234,3 +235,4 @@ Note: For now, only the XVP-3901 card is supported.
 ## Notes
 
 The connector supports traps (1.3.6.1.4.1.3872.11.4.\*).
+

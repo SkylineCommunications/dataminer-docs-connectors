@@ -18,7 +18,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Settings**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *161.*
 - **Get community string**: The community string in order to read from the device.
 - **Set community string**: The community string in order to set to the device.

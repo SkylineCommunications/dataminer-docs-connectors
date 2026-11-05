@@ -12,17 +12,17 @@ The connector contains information related to the current configuration of the N
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                             | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                                            | No                  | Yes                     |
-| 1.1.0.x [SLC Main]   | Service Area name for Heights changed. ViperSat Overview and Service Area Overview tables now sorted by name instead of ID. | No                  | Yes                     |
-| 1.1.1.x              | Based on 1.1.0.7. Method of filling in the BWM Overview table updated. New VMS architecture.                                | No                  | Yes                     |
+| Range              | Description                                                                                                                 | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                                                            | No              | Yes                 |
+| 1.1.0.x [SLC Main] | Service Area name for Heights changed. ViperSat Overview and Service Area Overview tables now sorted by name instead of ID. | No              | Yes                 |
+| 1.1.1.x            | Based on 1.1.0.7. Method of filling in the BWM Overview table updated. New VMS architecture.                                | No              | Yes                 |
 
 ## Installation and configuration
 
 ### Creation
 
-The element using this connector is created by the connector CEFD NetVue Provisioning, by means of an Automation script. In the script, you will need to fill in the name of the element.
+The element using this connector is created by the connector CEFD NetVue Provisioning, by means of an automation script. In the script, you will need to fill in the name of the element.
 
 This is a virtual connector, which does not require any further configuration to function correctly.
 

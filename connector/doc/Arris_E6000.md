@@ -16,12 +16,12 @@ Range **2.0.1.x** of the connector only uses one SNMPv3 connection to monitor th
 
 ### Version Info
 
-| **Range**            | **Description**                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version.                 | No                  | Yes                     |
-| 2.0.0.x              | Supports a new firmware version. | No                  | Yes                     |
-| 2.0.1.x              | Based on 2.0.0.3. Uses SNMPv3.   | No                  | Yes                     |
-| 3.0.0.x              | Customer-specific version.       | No                  | Yes                     |
+| Range              | Description                      | DCF Integration | Cassandra Compliant |
+|--------------------|----------------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version.                 | No              | Yes                 |
+| 2.0.0.x            | Supports a new firmware version. | No              | Yes                 |
+| 2.0.1.x            | Based on 2.0.0.3. Uses SNMPv3.   | No              | Yes                 |
+| 3.0.0.x            | Customer-specific version.       | No              | Yes                 |
 
 ### Product Info
 
@@ -42,7 +42,7 @@ This connector uses two Simple Network Management Protocol version 3 (**SNMPv3**
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2*.
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2*.
 
 SNMP Settings:
 
@@ -51,14 +51,14 @@ SNMP Settings:
 - **User name**: The SNMPv3 username as configured on the Arris E6000 device.
 - **Authentication password**: The SNMPv3 authentication password as configured on the Arris E6000 device.
 - **Encryption password**: The SNMPv3 encryption password as configured on the Arris E6000 device.
-- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g. *HMAC-MD5*.
-- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g. *DES*.
+- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g., *HMAC-MD5*.
+- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g., *DES*.
 
 #### SNMP traps connection
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -67,12 +67,12 @@ SNMP Settings:
 - **User name**: The SNMPv3 username as configured on the Arris E6000 device.
 - **Authentication password**: The SNMPv3 authentication password as configured on the Arris E6000 device.
 - **Encryption password**: The SNMPv3 encryption password as configured on the Arris E6000 device.
-- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g. *HMAC-MD5*.
-- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g. *DES*.
+- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g., *HMAC-MD5*.
+- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g., *DES*.
 
 #### Serial connection
 
-- **IP address/host**: The IP address of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The IP address of the device, e.g., *192.168.10.2.*
 - **IP port**: The port of the connected device, by default *22*.
 
 ### Creation (Range 2.0.0.x)
@@ -81,7 +81,7 @@ This connector uses a Simple Network Management Protocol version 2 (**SNMPv2**) 
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -95,7 +95,7 @@ This connector uses a Simple Network Management Protocol version 3 (**SNMPv3**) 
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -104,8 +104,8 @@ SNMP Settings:
 - **User name:** The SNMPv3 username as configured on the Arris E6000 device.
 - **Authentication password**: The SNMPv3 authentication password as configured on the Arris E6000 device.
 - **Encryption password**: The SNMPv3 encryption password as configured on the Arris E6000 device.
-- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g. *HMAC-MD5*.
-- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g. *DES*.
+- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g., *HMAC-MD5*.
+- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g., *DES*.
 
 ### Creation (Range 3.0.0.x)
 
@@ -113,7 +113,7 @@ This connector uses a Simple Network Management Protocol version 2 (**SNMPv2**) 
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -138,7 +138,7 @@ On the right-hand side of this page, several page buttons are displayed, which d
 - **Linecard Status**: Displays a table with the status of the linecards on the Arris E6000 device. The table contains status parameters, the serial number, the hardware version, and the type.
 - **Transceivers**: Displays a table with the status of the transceivers per slot and port.
 - **PIC Table**: Displays a table that shows the link between a PIC (connector) and RF segment (ifAlias). Aside from the PIC and alias, it also shows the PIC MAC Index. The **Port Information** page button displays the indexes, consisting of the Card ID and Port ID, the PortConnector ID, and the MAC Interface Index.
-- **Login**: Here you can provide the credentials (**User Name** and **Password**) used for SSH communication with the Arris E6000 device. The **Connection Status** parameter indicates the status of the connection. When you set the credentials, **Connection Status** is set to *Unknown*. When a CLI command is sent and succeeds, **Connection Status** is set to *Connected*. When the SSH connection could not be set up and a timeout occurs (e.g. because of invalid credentials), **Connection Status** is set to *Session Timeout*.
+- **Login**: Here you can provide the credentials (**User Name** and **Password**) used for SSH communication with the Arris E6000 device. The **Connection Status** parameter indicates the status of the connection. When you set the credentials, **Connection Status** is set to *Unknown*. When a CLI command is sent and succeeds, **Connection Status** is set to *Connected*. When the SSH connection could not be set up and a timeout occurs (e.g., because of invalid credentials), **Connection Status** is set to *Session Timeout*.
 
 ### Interfaces Page
 
@@ -146,10 +146,10 @@ The interfaces page contains an overview of the interfaces of the Arris E6000 de
 
 The **Interface Entry** page button allows you to visualize more information about the interfaces in the **Interface Entry Table**. This table contains information about packets that have been sent or received through an interface. Link up/down traps for the interface can be enabled/disabled via the **Link Up Down Trap Enable** parameter.
 
-Note**:**
-
-- The interface utilization (Utilization In and Utilization Out) can be calculated from the Interfaces MIB tables, used from the Card Utilization Hidden Table (OID: 1.3.6.1.4.1.4998.1.1.10.2.23), or taken from the CLI with the command "show interface utilization". The parameter **Card Utilization Source** allows you to select which of these options should be used.
-- The displayed interface speeds (Bandwidth) are based on the ifTable and the ifxTable. By default, the speed from the ifTable is used, unless its value is equal to 2^32 (4,294,967,295), in which case the speed from the ifxTable (ifHighSpeed) is used instead.
+> [!NOTE]
+>
+> - The interface utilization (Utilization In and Utilization Out) can be calculated from the Interfaces MIB tables, used from the Card Utilization Hidden Table (OID: 1.3.6.1.4.1.4998.1.1.10.2.23), or taken from the CLI with the command "show interface utilization". The parameter **Card Utilization Source** allows you to select which of these options should be used.
+> - The displayed interface speeds (Bandwidth) are based on the ifTable and the ifxTable. By default, the speed from the ifTable is used, unless its value is equal to 2^32 (4,294,967,295), in which case the speed from the ifxTable (ifHighSpeed) is used instead.
 
 ### Cards Page
 
@@ -163,48 +163,48 @@ This page provides an overview of notifications and alarms received from the Arr
 
 A distinction is made between alarms and notifications. When the device sends an alarm trap, the device is expected to send another related trap to acknowledge that the alarm has been cleared. Notifications, however, are considered to be just informational, so the device will not send any subsequent traps related to a notification. The connector contains two types of tables related to alarms and notifications.
 
-The notifications tables (**Notifications Table** and **Generic Notifications** **Table**) contain notifications and the **Alarms Table** contains alarms.
+The notifications tables (**Notifications Table** and **Generic Notifications Table**) contain notifications and the **Alarms Table** contains alarms.
 
 With the **Auto Clear** page button, the number of notifications that should be stored in a notification table (Notifications Table and Generic Notifications Table) can be configured. A maximum duration (**Notification Max Duration**) can be set as a number of days. Notifications that are older than the set number of days will automatically be removed from the table. In addition, the maximum number of notifications that the notification table should contain can be set through the **Notification Max Number** parameter. Once the table contains more notifications than the specified number, the oldest notifications will automatically be removed from the table. The parameter **Notification Count** shows the number of notifications present in the table.
 
 You can remove individual notifications from the table with the **Delete** button in the corresponding row. For each notification, the table provides the following information (when available): the timestamp, description, severity, OID, and event ID.
 
-The **Alarms Table** contains entries for alarms. When a new alarm is received (e.g. card overload alarm), a new row is added to the table. Any subsequent alarms that are related to this alarm will update the row in the table. When a trap is received that indicates that the alarm is cleared, the row is removed from the table. An individual row can be deleted with the **Delete** button displayed in the row. As the expected number of entries in this table is small, the table has no auto-clearing configuration options.
+The **Alarms Table** contains entries for alarms. When a new alarm is received (e.g., card overload alarm), a new row is added to the table. Any subsequent alarms that are related to this alarm will update the row in the table. When a trap is received that indicates that the alarm is cleared, the row is removed from the table. An individual row can be deleted with the **Delete** button displayed in the row. As the expected number of entries in this table is small, the table has no auto-clearing configuration options.
 
 Note that some traps will not appear in the table but will immediately update the corresponding value in the table.
 
 The following table provides an overview of the traps that are processed by the connector. The "Type" column indicates whether the trap is shown in a notification table (type Notification), is shown in an alarm table (type Alarm), or updates a parameter in another table (type Table Update). In the latter case, the name of the table and the parameters that are updated are shown in the columns "Table" and "Updated Columns", respectively.
 
-| **Trap OID**                   | **Trap Name**                           | **Type**     | **Table**                   | **Updated Columns**                                    |
-|--------------------------------|-----------------------------------------|--------------|-----------------------------|--------------------------------------------------------|
-| 1.3.6.1.4.1.4998.1.1.5.3.0.1   | cardOverload                            | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.5.3.0.2   | sysOverload                             | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.1 | aaaServerUnreachableTrap                | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.2 | aaaServerGroupUnreachableTrap           | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.3 | aaaServerAuthFailTrap                   | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.4 | secuLocalAuthFailTrap                   | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.5 | secuLineAuthFailTrap                    | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.7 | cadIpdrNoPrimaryCollector               | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.8 | cadIpdrStreamingDisabled                | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.9 | cadIpdrReportCycleMissed                | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.19 | cardTempOutOfRangeNotification          | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.20 | cardTempNoReportNotification            | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.21 | cardTempOverHeatNotification            | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.24 | noLicenseNotification                   | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.25 | cerCardPrStateChange                    | Table Update | Card Table                  | Card Primary State                                     |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.26 | cerCardSecStateChange                   | Table Update | Card Table                  | Card Secondary State                                   |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.27 | cerCardDetectedChange                   | Table Update | Card Table                  | Card Detected, Card Sub Detected                       |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.28 | cerCardDplxStatusChange                 | Table Update | Card Table                  | Card Duplexing Status,Card Detected, Card Sub Detected |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.29 | cerPortPrStateChange                    | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.30 | cerPortSecStateChange                   | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.35 | cerDiskVolumeUsageNotification          | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.36 | cerDiskVolumeAutoDeleteFileNotification | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.100.1.0.1 | cadCmtsExportNotification               | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.100.1.0.2 | cadCmtsImportNotification               | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.6.3.1.1.5.1            | coldStart                               | Notification | Generic Notifications Table |                                                        |
-| 1.3.6.1.6.3.1.1.5.3            | linkDown                                | Table Update | Interface Table             | Admin Status, Operational Status                       |
-| 1.3.6.1.6.3.1.1.5.4            | linkUp                                  | Table Update | Interface Table             | Admin Status, Operational Status                       |
-| 1.3.6.1.6.3.1.1.5.5            | authenticationFailure                   | Notification | Generic Notifications Table |                                                        |
+| Trap OID | Trap Name | Type | Table | Updated Columns |
+|--|--|--|--|--|
+| 1.3.6.1.4.1.4998.1.1.5.3.0.1 | cardOverload | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.5.3.0.2 | sysOverload | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.1 | aaaServerUnreachableTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.2 | aaaServerGroupUnreachableTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.3 | aaaServerAuthFailTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.4 | secuLocalAuthFailTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.5 | secuLineAuthFailTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.7 | cadIpdrNoPrimaryCollector | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.8 | cadIpdrStreamingDisabled | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.9 | cadIpdrReportCycleMissed | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.19 | cardTempOutOfRangeNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.20 | cardTempNoReportNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.21 | cardTempOverHeatNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.24 | noLicenseNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.25 | cerCardPrStateChange | Table Update | Card Table | Card Primary State |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.26 | cerCardSecStateChange | Table Update | Card Table | Card Secondary State |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.27 | cerCardDetectedChange | Table Update | Card Table | Card Detected, Card Sub Detected |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.28 | cerCardDplxStatusChange | Table Update | Card Table | Card Duplexing Status,Card Detected, Card Sub Detected |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.29 | cerPortPrStateChange | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.30 | cerPortSecStateChange | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.35 | cerDiskVolumeUsageNotification | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.36 | cerDiskVolumeAutoDeleteFileNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.100.1.0.1 | cadCmtsExportNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.100.1.0.2 | cadCmtsImportNotification | Notification | Notifications Table |  |
+| 1.3.6.1.6.3.1.1.5.1 | coldStart | Notification | Generic Notifications Table |  |
+| 1.3.6.1.6.3.1.1.5.3 | linkDown | Table Update | Interface Table | Admin Status, Operational Status |
+| 1.3.6.1.6.3.1.1.5.4 | linkUp | Table Update | Interface Table | Admin Status, Operational Status |
+| 1.3.6.1.6.3.1.1.5.5 | authenticationFailure | Notification | Generic Notifications Table |  |
 
 ### Backup & Restore Config Page
 
@@ -217,7 +217,7 @@ This section allows you to create a backup of the running configuration. To do s
 1. First provide a folder where the running configuration will be transferred after it has been created on the device.
 1. Click the **Create Backup** button to trigger the creation of a backup file for the running configuration on the Arris E6000 device (in the directory "/system/cfgfiles/").
 
-The name of the backup file has the following format: "ELEMENTNAME_YYYYMMDD_HHMMSS.cfg". Once a backup file has been created, the connector will check for the presence of old configuration files on the device (i.e. files that were created more than 48 hours before the new .cfg file was created). If such files are found, the connector will delete them. Note that an element will only manage the backup files that start with the name of that element (i.e. backup files that start with ELEMENTNAME\_, where ELEMENTNAME is the name of the element).
+The name of the backup file has the following format: "ELEMENTNAME_YYYYMMDD_HHMMSS.cfg". Once a backup file has been created, the connector will check for the presence of old configuration files on the device (i.e., files that were created more than 48 hours before the new .cfg file was created). If such files are found, the connector will delete them. Note that an element will only manage the backup files that start with the name of that element (i.e., backup files that start with ELEMENTNAME\_, where ELEMENTNAME is the name of the element).
 
 Note: It is advisable to limit the number of backup files to manage in the device.
 

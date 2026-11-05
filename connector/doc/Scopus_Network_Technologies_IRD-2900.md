@@ -4,7 +4,7 @@ uid: Connector_help_Scopus_Network_Technologies_IRD-2900
 
 # Scopus Network Technologies IRD-2900
 
-The IRD-2900 is a broadcast-quality decoder, decryptor and interface converter that provides MPEG-2 and AVC SD decoding, advanced transport stream processing, cutting-edge IP processing technologies and a variety of front ends, including DVB-S2, MPEG over IP and more.
+The IRD-2900 is a broadcast-quality decoder, decryptor and interface converter that provides MPEG-2 and AVC SD decoding, advanced transport stream processing, cutting-edge IP processing technologies and a variety of frontends, including DVB-S2, MPEG over IP and more.
 
 ## About
 
@@ -14,7 +14,7 @@ The data for monitoring and controlling the device can be found on different pag
 
 ### Version Info
 
-| **Range** | **Description**                                                                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                        | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.1.2.1          | Review: Update from 'displaycolumn' to 'naming'. Changed Name/Description/Displaying values. | No                  | No                      |
 | 1.1.2.2          | Sets Reviewed. Added SNMP type tags.                                                                | No                  | No                      |
@@ -35,7 +35,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 SNMP Settings:

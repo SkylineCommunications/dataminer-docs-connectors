@@ -70,14 +70,14 @@ For each module in the DMTx Modules Table, the **Slot State** indicates the stat
 
 With the **DMTx Auto Remove** parameter, you can enable or disable the automatic removal of **unequipped** DVE modules.
 
-Laser entries that are no longer available for the duration of the **DMTx Lasers** **Expiration Time** will be removed from the table. In case you want the table entries to stay present for a longer period of time, set this parameter to a different value than the default value of 0.
+Laser entries that are no longer available for the duration of the **DMTx Lasers Expiration Time** will be removed from the table. In case you want the table entries to stay present for a longer period of time, set this parameter to a different value than the default value of 0.
 
 ### QRRX
 
-This page contains 2 tables: **QRRX** **Modules Table** and **QRRX Lasers Table**.
+This page contains 2 tables: **QRRX Modules Table** and **QRRX Lasers Table**.
 
 For each module in QRRX Modules Table, the **Slot State** indicates the status of the DVE, and the **Remove Module** button allows you to delete the DVE.
 
-With the **QRRX** **Auto Remove** parameter, you can enable or disable the automatic removal of **unequipped** DVE modules.
+With the **QRRX Auto Remove** parameter, you can enable or disable the automatic removal of **unequipped** DVE modules.
 
-Laser entries that are no longer available for the duration of the **QRRX** **Lasers** **Expiration Time** will be removed from the table. In case you want the table entries to stay present for a longer period of time, set this parameter to a different value than the default value of 0.
+Laser entries that are no longer available for the duration of the **QRRX Lasers Expiration Time** will be removed from the table. In case you want the table entries to stay present for a longer period of time, set this parameter to a different value than the default value of 0.

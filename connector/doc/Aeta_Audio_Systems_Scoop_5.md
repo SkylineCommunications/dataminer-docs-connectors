@@ -46,7 +46,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+  - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
   - **IP port**: The port of the connected device, by default *161*.
   - **Bus address**: Range 1 to 8.
 
@@ -66,7 +66,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+  - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
   - **IP port**: The port of the connected device, by default *161.*
   - **Bus address**: Range 1 to 8.
 
@@ -82,7 +82,7 @@ This page allows you to easily **start** and **stop calls** for the two codecs. 
 
 ### Connections
 
-This page is an extension of the previous page. It allows you to make calls but also to set other parameters, e.g. to **mask events**.
+This page is an extension of the previous page. It allows you to make calls but also to set other parameters, e.g., to **mask events**.
 
 On the **Local Numbers** and **Remote Numbers** subpages, up to 8 numbers can be set.
 

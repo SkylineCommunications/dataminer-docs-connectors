@@ -63,13 +63,13 @@ To configure new encoder elements that need to be included in the service monito
 
 1. Configure the following settings for the item:
 
-   - **Main Element**: Select the encoding element you wish to include for monitoring (e.g. *VOS Cluster 1*).
+   - **Main Element**: Select the encoding element you wish to include for monitoring (e.g., *VOS Cluster 1*).
 
-   - **Configuration Platform Element**: Select the underlying orchestration platform element corresponding to the main element you selected (e.g. *Kubernetes Manager Cluster 1*).
+   - **Configuration Platform Element**: Select the underlying orchestration platform element corresponding to the main element you selected (e.g., *Kubernetes Manager Cluster 1*).
 
-   - **Services View**: Specify the view where the DataMiner service will be located (e.g. *Services VOS Cluster 1*).
+   - **Services View**: Specify the view where the DataMiner service will be located (e.g., *Services VOS Cluster 1*).
 
-   - **Hardware Type**: Specify the type of underlying hardware. This is used to filter the correct data for the service (e.g. *HP ILO*).
+   - **Hardware Type**: Specify the type of underlying hardware. This is used to filter the correct data for the service (e.g., *HP ILO*).
 
 ## How to use
 

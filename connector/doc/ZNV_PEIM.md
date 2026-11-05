@@ -10,7 +10,7 @@ The ZNV PEIM (Power Environment Intelligent Management) platform is a solution d
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                 | **Based on** | **System Impact** |
+| Range              | Key Features                                                   | Based on   | System Impact   |
 |----------------------|------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. Monitors the state of all available components. | -            | -                 |
 

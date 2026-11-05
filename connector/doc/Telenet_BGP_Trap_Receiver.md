@@ -76,7 +76,7 @@ There is no redundancy defined.
 
 ## How to use
 
-The connector only polls information per request of the user, i.e. whenever you click the button to retrieve information from Telenet's Network Inventory Management system. Apart from that, the connector also receives information via SNMP traps.
+The connector only polls information per request of the user, i.e., whenever you click the button to retrieve information from Telenet's Network Inventory Management system. Apart from that, the connector also receives information via SNMP traps.
 
 The element created with this connector consists of the data pages detailed below.
 

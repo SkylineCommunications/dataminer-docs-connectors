@@ -66,7 +66,7 @@ The router instance can be defined on the *Matrix Configuration* page.
 
 ### General
 
-This page displays information about the current **connections**, as well as **WebSocket Info** and information about the **Router** **Instances** and dimensions.
+This page displays information about the current **connections**, as well as **WebSocket Info** and information about the **Router Instances** and dimensions.
 
 ### Router
 
@@ -74,7 +74,7 @@ This page contains information about the available **router inputs** and **outpu
 
 ### Matrix Configuration
 
-This page allows you to configure the **Router** **Instance** and check its dimensions.
+This page allows you to configure the **Router Instance** and check its dimensions.
 
 ### Subscription Details
 
@@ -92,7 +92,8 @@ This page contains connection information related to redundancy and automatic sw
 
 ## DataMiner Connectivity Framework
 
-The 1.0.0.1 range of the Atos BNCS Router protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The 1.0.0.1 range of the Atos BNCS Router connector supports the usage of DCF.
+
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
 ### Interfaces

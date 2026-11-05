@@ -64,7 +64,7 @@ It is possible to create a virtual element per stream in the device.
 
 The name of such an element will be the *name of the element (parent) + the name of the stream + the index of the stream in square brackets*.
 For example, if the element is called "*Evertz MVP-DEC32-4-IP Backup*" and there is a stream "*DEC8:BNC_P*" then the virtual element will be "*Evertz MVP-DEC32-4-IP.DEC8_BNC_P \[16\]*".
-Note that any illegal characters in element names (e.g. ':') will be replaced with an underscore '\_'.
+Note that any illegal characters in element names (e.g., ':') will be replaced with an underscore '\_'.
 
 Until version 1.0.0.3, virtual elements were automatically created for all streams. From version 1.0.0.4 onwards, you can select for which streams an element should be created.
 Note: when you update from a version older than 1.0.0.4 to a more recent version (1.0.0.4 and higher), or the other way around, all existing DVEs will be removed. This could have an impact on services or visual overviews that use the element IDs to include or select a target.

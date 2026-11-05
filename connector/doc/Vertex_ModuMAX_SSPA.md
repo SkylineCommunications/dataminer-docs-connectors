@@ -12,7 +12,7 @@ The connector uses SNMP communication to retrieve information related to the amp
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                             | **Based on** | **System Impact** |
+| Range              | Key Features                                                               | Based on   | System Impact   |
 |----------------------|------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Generates/updates a DataMiner service with the received channel information. | -            | -                 |
 

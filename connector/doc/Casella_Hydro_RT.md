@@ -18,8 +18,8 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *172.32.65.38*.
-- **IP port**: The IP port of the device, e.g. *4001.*
+- **IP address/host**: The polling IP of the device, e.g., *172.32.65.38*.
+- **IP port**: The IP port of the device, e.g., *4001.*
 - **Bus address**: The bus address of the device. This configuration parameter is not required for this connector.
 
 ## Usage

@@ -12,23 +12,23 @@ This connector displays information on different pages, described in the **Usage
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 6.0.69.x         | DCF support.                                                                                                                                  | Yes                 | Yes                     |
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No                  | Yes                     |
-| 10.0.0.x         | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                                        | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 6.0.69.x | DCF support. | Yes | Yes |
+| \<10.0.0.x [SLC Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No | Yes |
+| 10.0.0.x | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. | No | Yes |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                                                                                                                                                                                                                                                                                                                                                |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 6.0.69.x         | 6.0.68                                                                                                                                                                                                                                                                                                                                                                                 |
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. It uses the following format: X.X.X.Y, with X.X.X being the firmware version of the card and .Y the specific connector iteration for this firmware. For example, *5.0.28.2* means the connector is the second iteration for firmware *5.0.28.* |
-| 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware.                                                                                                                                                                                                                                                                                |
+| Range | Device Firmware Version |
+|--|--|
+| 6.0.69.x | 6.0.68 |
+| \<10.0.0.x [SLC Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. It uses the following format: X.X.X.Y, with X.X.X being the firmware version of the card and .Y the specific connector iteration for this firmware. For example, *5.0.28.2* means the connector is the second iteration for firmware *5.0.28.* |
+| 10.0.0.x | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware. |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### SNMP main connection
 
@@ -68,6 +68,10 @@ All data gets retrieved from the device in three ways.
 > [!NOTE]
 > You can toggle alarm information to be retrieved either every 30 seconds or every 3 seconds. The default value is every 3 seconds. It is recommended not to change this to 30 seconds unless you enable traps to be sent to DataMiner.
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## Usage
 
 The connector contains different pages divided into several sections using separators.
@@ -99,11 +103,11 @@ This section contains the following pages:
 
 ### TS Input section
 
-This section contains 5 pages listing statuses and general settings concerning the transport stream input, such as primary and secondary IP configurations, general IP status, ASI status and the source of the stream.
+This section contains 5 pages listing statuses and general settings concerning the transport stream input, such as primary and secondary IP configurations, general IP status, ASI status, and the source of the stream.
 
 ### TS Demux section
 
-This section displays all relevant data regarding individual components extracted from the **transport stream**. Among the different components are **Video**, **Audio**, **Data**, **Subtitles** and **BISS Scrambling**.
+This section displays all relevant data regarding individual components extracted from the **transport stream**. Among the different components are **Video**, **Audio**, **Data**, **Subtitles**, and **BISS Scrambling**.
 
 ### Control section
 
@@ -116,7 +120,3 @@ This section contains the following pages:
 ### Misc section
 
 This section contains a number of miscellaneous parameters.
-
-### Web Interface
-
-This section displays the webpage of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

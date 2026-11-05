@@ -10,10 +10,10 @@ The DEVA Broadcast DB45 connector can be used to monitor the FM signals analyzed
 
 ### Version Info
 
-| **Range**            | **Key Features**             | **Based on** | **System Impact**                                                                       |
-|----------------------|------------------------------|--------------|-----------------------------------------------------------------------------------------|
-| 1.0.0.x [SLC Main]   | Implements DB45-MIB.         | -            | -                                                                                       |
-| 1.1.0.x              | Supports firmware v1.7.1841. | 1.0.0.1      | If the device does not support the new firmware, some parameters will not be filled in. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Implements DB45-MIB. | - | - |
+| 1.1.0.x | Supports firmware v1.7.1841. | 1.0.0.1 | If the device does not support the new firmware, some parameters will not be filled in. |
 
 ### Product Info
 
@@ -47,14 +47,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -68,4 +60,4 @@ This connector can be used to measure the **signals** for **multiple frequencies
 Depending on the configured **Round Robin Interval**, every x seconds, the signals for a frequency in the Channel Measurements table will be retrieved. When a time interval has elapsed, the next frequency will be set and polled during a next interval.
 
 To add a new frequency that should be measured, simply click the **Add Channel** button and configure the **frequency** in the table. Once everything is configured, you can **enable** this channel to add it to the round-robin loop.
-In case you want to make sure it is **polled** **immediately**, use the **Force** button to immediately start polling the signals for that frequency.
+In case you want to make sure it is **polled immediately**, use the **Force** button to immediately start polling the signals for that frequency.

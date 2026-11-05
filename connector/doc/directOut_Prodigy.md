@@ -43,10 +43,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (default: *5003*).
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This connector uses the DirectOut custom TCP communication protocol. When the element is started, a message is sent to the device to get all current status data. Afterwards, messages will be received from the device whenever a change happens on the device.

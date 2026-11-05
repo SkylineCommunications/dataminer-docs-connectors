@@ -48,10 +48,6 @@ SERIAL CONNECTION:
 
 To make sure information can be retrieved from the device, log in on the **General** page of the element. When the **Logged In** status parameter shows "Yes", the login has been successful.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 ### General

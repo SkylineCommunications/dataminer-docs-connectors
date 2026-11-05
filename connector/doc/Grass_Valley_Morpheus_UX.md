@@ -46,10 +46,6 @@ HTTP CONNECTION:
 
 After element creation, specify a valid **User Name**, **Password** and an **Operator Station**, to start polling data from the device. This is available directly in the **General** page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

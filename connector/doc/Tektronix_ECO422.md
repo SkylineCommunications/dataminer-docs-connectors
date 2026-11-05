@@ -4,7 +4,7 @@ uid: Connector_help_Tektronix_ECO422
 
 # Tektronix ECO422
 
-The **Tektronix ECO422** connector is used to display information from another connector, i.e. the Adam Converter connector (which converts I/O to Ethernet).
+The **Tektronix ECO422** connector is used to display information from another connector, i.e., the Adam Converter connector (which converts I/O to Ethernet).
 
 ## About
 

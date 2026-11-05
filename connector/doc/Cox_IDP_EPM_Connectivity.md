@@ -34,14 +34,6 @@ This connector is used to manage DCF connections between non-CI Type elements.
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Use the **IDP_Helper_DVE_Connectivity** script as a starting point to start using this connector. The script will get the interfaces/ports information of the elements and send it to the COX IDP EPM Connectivity element. This element will then process the data and start creating DCF connections between non-CI Type elements.

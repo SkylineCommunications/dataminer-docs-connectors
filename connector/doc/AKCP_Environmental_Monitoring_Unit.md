@@ -67,7 +67,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 
@@ -82,7 +82,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### General Page
 
-Because the switch table contains sensors of different types, it has been divided into separate tables for each requested type, i.e. **Voltage** and **Motion Sensors**. Each table is displayed on a separate page in the element.
+Because the switch table contains sensors of different types, it has been divided into separate tables for each requested type, i.e., **Voltage** and **Motion Sensors**. Each table is displayed on a separate page in the element.
 
 #### Creating DVEs
 
@@ -121,7 +121,7 @@ When a DVE is created, however, the alarm will be:
 
 For example: *CH 27 Tx* \| *Status - SwVoltage* \| *N/A*
 
-To adjust a **parameter description** in the Alarm Console, use the *Parameter Names* tab under *Settings...* in the right-click menu of **Element Display**. Only the Status and Temperature can be monitored, so these are the values you might want to change. Please note that these will not change the parameter descriptions inside the DVEs, and inconsistent names will be displayed. e.g. *CH 27 Tx* \| *Voltage Status* \| *N/A* if *Status - SwVoltage* is changed to *Voltage Status*.
+To adjust a **parameter description** in the Alarm Console, use the *Parameter Names* tab under *Settings...* in the right-click menu of **Element Display**. Only the Status and Temperature can be monitored, so these are the values you might want to change. Please note that these will not change the parameter descriptions inside the DVEs, and inconsistent names will be displayed. e.g., *CH 27 Tx* \| *Voltage Status* \| *N/A* if *Status - SwVoltage* is changed to *Voltage Status*.
 
 ### General page on DVE
 
@@ -166,7 +166,7 @@ It is also possible to do this using a context menu. You can:
 
 ### DVE Naming
 
-Naming occurs in a similar way as in the 1.0.0.x range. It is possible to set the DVE name in the **Sensor DVE Name** column, and when the name already exists, a suffix will be added to it. E.g. "*Temperature Sensor (1)*".
+Naming occurs in a similar way as in the 1.0.0.x range. It is possible to set the DVE name in the **Sensor DVE Name** column, and when the name already exists, a suffix will be added to it. For example: "*Temperature Sensor (1)*".
 
 The default name is the same as the naming key for the row, except that the ": " is replaced by " - " (because colons are not allowed in element names). An example of a default DVE name could be: "*Smoke Sensor - Smoke Detector Port 1 (#30)*".
 

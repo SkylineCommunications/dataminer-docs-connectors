@@ -61,4 +61,4 @@ The element created with this connector consists of the data pages described bel
 - **General**: Displays the **Mode** (which can be *Signal Tower Mode* or *Smart Mode*), **LED Unit Firmware Version**, **LAN Unit** **Firmware Version** and **MAC Address.**
 - **Units**: Contains the Units table, displaying the **Status** and **Colors** for the units.
 - **Smart Mode**: If the system is running in *Smart Mode*, the **Group Number** parameter on this page will display a value other than *Disabled*. The page also contains the **Mute** and **Stop** options, and displays the **Pattern Number**.
-- **Debug**: Used for debugging purposes. To use this, specify the **Connection URL** (e.g. "*api/control?clear=1*"), and click the **Get Dynamic Request** button. The results will be displayed at the top of the page.
+- **Debug**: Used for debugging purposes. To use this, specify the **Connection URL** (e.g., "*api/control?clear=1*"), and click the **Get Dynamic Request** button. The results will be displayed at the top of the page.

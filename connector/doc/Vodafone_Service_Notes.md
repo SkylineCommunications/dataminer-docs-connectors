@@ -12,15 +12,9 @@ The connector requires DataMiner version **9.0.3** or higher.
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on**                             | **System Impact** |
-|----------------------|------------------|------------------------------------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | Skyline Service Definition Basic 1.0.0.7 | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
+| Range                | Key Features     | Based on                                 | System Impact |
+|----------------------|------------------|------------------------------------------|---------------|
+| 1.0.0.x [SLC Main]   | Initial version  | Skyline Service Definition Basic 1.0.0.7 | -             |
 
 ### System Info
 
@@ -33,10 +27,6 @@ The connector requires DataMiner version **9.0.3** or higher.
 ### Initialization
 
 No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 
@@ -58,7 +48,7 @@ The **Notes** table lists all the notes posted on the service. The context menu 
 
 ## Notes
 
-This connector has a Visio file available to allow more user-friendly interactions. The interaction between Visual Overview and the connector is managed using the provided "Edit Note.xml" Automation script.
+This connector has a Visio file available to allow more user-friendly interactions. The interaction between Visual Overview and the connector is managed using the provided "Edit Note.xml" automation script.
 
 Visio icons reference:
 

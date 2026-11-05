@@ -16,10 +16,10 @@ Note that **no data traffic** will be visible for this connector in the **Stream
 
 ### Version Info
 
-| **Range**               | **Description**                                                        | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------------|------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\]           | Initial version (22/12/2017)                                           | No                  | Yes                     |
-| 1.0.1.x \[Standard Solutions\] | Log message request format changed. Not compatible with range 1.0.0.x. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x \[SLC Main\] | Initial version (22/12/2017) | No | Yes |
+| 1.0.1.x \[Standard Solutions\] | Log message request format changed. Not compatible with range 1.0.0.x. | No | Yes |
 
 ## Installation and configuration
 
@@ -38,7 +38,7 @@ replicate the logging files on all the DMAs in the DMS.
 
 ### General
 
-This page displays the **Folder Statistics** of the **path** configured for the element. This includes the **Number of Files** in the folder, the **Folder** **Size** and the **Log Status Table Size**.
+This page displays the **Folder Statistics** of the **path** configured for the element. This includes the **Number of Files** in the folder, the **Folder Size** and the **Log Status Table Size**.
 
 In addition, the page also contains the **Log Status** table, which lists the current log files in the folder. For each log file, the **File Name**, **Prefix** and **Postfix**, and the current **Status** are displayed.
 

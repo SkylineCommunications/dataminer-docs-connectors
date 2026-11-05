@@ -48,10 +48,6 @@ When the element has been created, the API token needs to be configured on the *
 
 On the same page, you can also configure whether finished channels should be displayed.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

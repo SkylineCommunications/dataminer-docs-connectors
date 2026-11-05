@@ -24,7 +24,7 @@ This connector polls information about the **Rohde Schwarz NetCCU800 1+1** in ge
 
 ### Exported connectors
 
-| **Exported Connector**                                                                          | **Description**                                     |
+| Exported Connector                                                                          | Description                                     |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | [Rohde Schwarz NetCCU800 1+1 TxA](xref:Connector_help_Rohde_Schwarz_NetCCU800_1%2B1_TxA) | Exported connector containing info about transmitter A |
 | [Rohde Schwarz NetCCU800 1+1 TxB](xref:Connector_help_Rohde_Schwarz_NetCCU800_1%2B1_TxB) | Exported connector containing info about transmitter B |
@@ -39,7 +39,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.17.250.16*.
+- **IP address/host**: The polling IP of the device, e.g., *10.17.250.16*.
 
 SNMP Settings:
 
@@ -95,7 +95,7 @@ This page displays more detailed transmitter status information.
 
 ## DataMiner Connectivity Framework
 
-The **2.0.0.15** range of the Rohde Schwarz NetCCU800 1+1 connector supports the usage of DCF and can only be used on a DMA with **9.0.3** as the minimum version.
+The **2.0.0.15** range of the Rohde Schwarz NetCCU800 1+1 connector supports the usage of DCF.
 
 Connectivity for all exported connectors is managed by this connector.
 
@@ -137,3 +137,4 @@ For each transmitter B (DVE) in the **Summary Info Tx Table B**, the following i
 
 - If the transmitter A is in redundancy switchover, the **ASI 1 input** or **ASI 2 input** is connected to the **inout** of transmitter B.
 - This **inout** is connected to the **output** of the corresponding transmitter A.
+

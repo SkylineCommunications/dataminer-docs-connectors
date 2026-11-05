@@ -59,14 +59,6 @@ SMART SERIAL CONNECTION:
 > [!NOTE]
 > The configuration of the element can also be performed via the Axon ACP Frame Manager. The Frame Manager will auto-populate the elements in the system if the card connectors are available.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following data pages:
@@ -84,11 +76,11 @@ The element has the following data pages:
 - **GPI:** Contains parameters used to configure the GPI contacts and pools.
 - **Network:** Contains the **IP Configuration** and **Network Status** information.
 - **Status:** Contains status information of the card.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP HXT150 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Axon ACP HXT150 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance, a manager).
 

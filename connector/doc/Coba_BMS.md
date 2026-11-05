@@ -48,4 +48,4 @@ SNMP Settings:
 
 ### General
 
-This page displays the **Room Temperature** in degrees Celsius and the **PCU Status** from 1 to 4. Two possible states are possible for the PCU status, i.e. *On* or *Off*.
+This page displays the **Room Temperature** in degrees Celsius and the **PCU Status** from 1 to 4. Two possible states are possible for the PCU status, i.e., *On* or *Off*.

@@ -19,7 +19,7 @@ As an extra check to monitor the correct operation of the entire ticketing flow,
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitor and control | -            | -                 |
 
@@ -45,7 +45,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- IP address/host: A random address, e.g. *127.0.0.1*, as the IP that will actually be used is the one of the selected service in the **Connection Details**.
+- IP address/host: A random address, e.g., *127.0.0.1*, as the IP that will actually be used is the one of the selected service in the **Connection Details**.
 - IP port: A random port, as the port that will actually be used is the one from the selected service in the **Connection Details**. Default value: *8650.*
 
 ### Initialization

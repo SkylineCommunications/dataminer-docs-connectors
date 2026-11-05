@@ -42,4 +42,4 @@ On the **Configuration** page, you can define the default parameter values used 
 
 ## Notes
 
-This connector runs in conjunction with an Automation script (*Carrier Configurations.xml*).
+This connector runs in conjunction with an automation script (*Carrier Configurations.xml*).

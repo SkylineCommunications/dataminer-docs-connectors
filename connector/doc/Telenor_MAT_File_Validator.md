@@ -50,7 +50,7 @@ After creating the element, you can set up the connector using the following ste
     - Make sure the path does not end with a backslash ("\\).
     - Locations must end with a folder named "Signal", "Beacon", "TB" or "WXT" (used to indicate the type of data).
     - The same location cannot be added twice. If this is attempted anyway, a notification will appear.
-    - E.g. [\\192.168.0.2\c\$\RemoteServerRootFolder\Signal](file://///192.168.0.2/c$/RemoteServerRootFolder/Signal).
+    - E.g., [\\192.168.0.2\c\$\RemoteServerRootFolder\Signal](file://///192.168.0.2/c$/RemoteServerRootFolder/Signal).
 
   - Polling is by default *Disabled*. Use the button **Enable All** to start polling, or use the button **Resync All Locations** to manually request a resync.
 
@@ -78,7 +78,7 @@ This page contains the **Location Mapping** table. This table indicates all the 
 
 - The **Sync Threshold** indicates from which date the connector should begin syncing the files. All files that have their **Last Edit Date** set to lower than this threshold will be ignored.
 
-  - To enter a date, use the following format: *yyyy.MM.dd*. E.g. "*2014.01.17*" indicates that all files from this folder are to be copied when their last edit date is larger than or equal to the 17th of January, 2014.
+  - To enter a date, use the following format: *yyyy.MM.dd*. E.g., "*2014.01.17*" indicates that all files from this folder are to be copied when their last edit date is larger than or equal to the 17th of January, 2014.
   - Adding a new location will set the **Threshold Date** to the current date by default.
   - When you leave the **Sync Threshold** blank, this indicates that a Full Sync of all files should occur.
 

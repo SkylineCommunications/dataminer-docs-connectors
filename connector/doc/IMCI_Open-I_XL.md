@@ -4,7 +4,7 @@ uid: Connector_help_IMCI_Open-I_XL
 
 # IMCI Open-I XL
 
-This connector is used to monitor IMCI Open-I XL devices, i.e. **SNMP-based Network Element Managers**.
+This connector is used to monitor IMCI Open-I XL devices, i.e., **SNMP-based Network Element Managers**.
 
 ## About
 
@@ -30,7 +30,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 

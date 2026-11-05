@@ -14,12 +14,6 @@ This connector monitors parameters of a remote control and monitoring system thr
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -38,11 +32,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600* (default: *9600*).
-  - **Databits**: Databits specified in the manual of the device, e.g. *7* (default: *8*).
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1* (default: *1*).
-  - **Parity**: Parity specified in the manual of the device, e.g. *No* (default: *even*).
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600* (default: *9600*).
+  - **Databits**: Databits specified in the manual of the device, e.g., *7* (default: *8*).
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1* (default: *1*).
+  - **Parity**: Parity specified in the manual of the device, e.g., *No* (default: *even*).
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.
 
 - Interface connection:
 

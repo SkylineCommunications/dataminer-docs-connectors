@@ -71,13 +71,13 @@ This page contains an overview of the inputs (ASI, SS2, Ethernet, TSoIP, TT2 and
 
 This page contains an overview of all transport streams in the **Transport Streams** table. This table contains parameters related to the transport stream, such as **Status**, **Mode**, **Total Rate**, **Effective Rate**, **TS ID**, and **ON ID**.
 
-In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular transport stream (e.g. **Sync Byte Error**, **PAT Repetition Interval**, etc.).
+In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular transport stream (e.g., **Sync Byte Error**, **PAT Repetition Interval**, etc.).
 
 ### Services Page
 
 This page provides an overview of all services in the **Services** table. This table contains service-specific information for each service, such as **Provider**, **Type**, **EIT Schedule Signaled**, **Scrambling Signaled**, **PMT PID**, **PCR PID**, and **Total Rate**.
 
-In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular service (e.g. **PMT Missing**, **Too Many PIDs**, etc.).
+In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular service (e.g., **PMT Missing**, **Too Many PIDs**, etc.).
 
 ### SCTE35 Page (from version 1.0.1.10)
 
@@ -109,7 +109,7 @@ This page contains information related to the PIDs. Two tables are displayed: th
 
 The PIDs table displays an overview of all PIDs, showing among others which service each PID is part of (**Ref. by service**), and the **Type**, **Rate**, **Continuity Error Counter**, etc.
 
-In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular PID (e.g. **Unreferenced PID**, **PID Rate** **Too High**, etc.).
+In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular PID (e.g., **Unreferenced PID**, **PID Rate** **Too High**, etc.).
 
 The PCR PIDs table contains information about the PCR PIDs, such as **Clock**, **Local Clock**, **Max Jitter**, etc.
 

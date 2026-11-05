@@ -12,10 +12,10 @@ The **Andrew ACS3000** device is an Antenna Control Unit. It supports a wide ran
 
 ### Version Info
 
-| **Range**     | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version                      | No                  | Yes                     |
-| 2.0.0.x              | Changed port settings: Local IP Port | No                  | Yes                     |
+| Range              | Description                          | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version                      | No              | Yes                 |
+| 2.0.0.x            | Changed port settings: Local IP Port | No              | Yes                 |
 
 ## Installation and configuration
 
@@ -27,7 +27,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the Andrew ACS3000 connected to the network, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the Andrew ACS3000 connected to the network, e.g., *10.11.12.13.*
 - **IP port**: The port of the local TCP connection used by the Andrew ACS3000 (default: *6192*).
 
 ## Usage

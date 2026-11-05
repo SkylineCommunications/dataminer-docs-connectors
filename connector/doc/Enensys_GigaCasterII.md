@@ -85,7 +85,7 @@ This page contains the **Current Alarms** table and allows access to the **Alarm
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.1.x** connector range of the connector supports the usage of DCF.
 
 ### Interfaces
 

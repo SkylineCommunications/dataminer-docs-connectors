@@ -31,7 +31,7 @@ This connector uses a serial connection and requires the following input during 
 **SERIAL CONNECTION**:
 
 - **Type of Port:** TCP/IP
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The IP port of the device, by default 9993*.*
 - **Bus address**: Not used*.*
 

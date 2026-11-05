@@ -54,7 +54,7 @@ You can also fill in the **credentials** to enable access to the file locations 
 
 In addition, you can specify the interval for logging data to the database, by setting the **Logging Time Interval parameter** to a particular value. When no value is set for this parameter, *5 minutes* will be used by default.
 
-The **Interval Time Files** parameter can also be set. This value represents the time between two logs in a log file, e.g. *10 seconds*.
+The **Interval Time Files** parameter can also be set. This value represents the time between two logs in a log file, e.g., *10 seconds*.
 
 ### File Table page
 

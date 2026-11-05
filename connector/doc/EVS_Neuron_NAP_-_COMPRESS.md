@@ -10,21 +10,24 @@ This connector is intended to be used with the Neuron COMPRESS, which provides t
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+| Range                | Key Features     | Based on     | System Impact                                            |
+|----------------------|------------------|--------------|----------------------------------------------------------|
+| 1.0.0.x              | Initial version. | -            | -                                                        |
+| 1.1.0.x [SLC Main]   | Support v5.9.1   | 1.0.0.2      | Possible impact on alarms, trending, and Visual Overview |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 5.0.0                  |
+| 1.1.0.x   | 5.9.1                  |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 An access token is required to access the API in the V2PC system. You can obtain this access token via the login API, for which a valid **username** and **password** must be specified on the Credentials subpage of the General page of this connector.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

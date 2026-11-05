@@ -97,7 +97,7 @@ This page contains the configuration settings in order to reach the data.
 
 This connector requires an **API Key** from worldweatheronline.com in order to receive weather forecasts.
 
-You may want to configure the **Forecast Date** (e.g. today) and the **Forecast Interval** (e.g. 1 hourly).
+You may want to configure the **Forecast Date** (e.g., today) and the **Forecast Interval** (e.g., 1 hourly).
 
 You also need to provide the **Location Name** (custom name), **Latitude** and **Longitude**. To do so, right-click the Location table and select to add a row.
 

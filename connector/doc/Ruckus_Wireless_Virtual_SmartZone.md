@@ -12,7 +12,7 @@ The connector uses SNMPv2 to retrieve data from the Ruckus Wireless Virtual Smar
 
 ### Version Info
 
-| **Range** | **Description**                                        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                            | DCF Integration     | Cassandra Compliant     |
 |-----------|--------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x   | Initial version.                                       | No                  | Yes                     |
 | 1.0.1.x   | Updated display key for Access Point Statistics table. | No                  | Yes                     |
@@ -36,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMPv2) connection and
 
 SNMP Connection:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 

@@ -12,17 +12,17 @@ This connector uses an **SNMP** connection to monitor Ciena CN6500 Platform devi
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version. Features interface data, equipment data, SNMP data, NMM topology, Nortel optical performance, and alarm data. | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | DCF                                                                                                                            | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. Features interface data, equipment data, SNMP data, NMM topology, Nortel optical performance, and alarm data. | No | Yes |
+| 1.0.1.x [SLC Main] | DCF | Yes | Yes |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 10.10Z.OF              |
-| 1.0.1.x   | 10.10Z.OF              |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | 10.10Z.OF |
+| 1.0.1.x | 10.10Z.OF |
 
 ## Configuration
 
@@ -39,7 +39,9 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device (default: 161).
+
 - **Read Community**: The community string in order to read from the device.
+
 - **Write Community**: The community string in order to write in the device.
 
 ## How to Use
@@ -55,7 +57,9 @@ This page contains the general system data such as the **System Description**, *
 The polling of the device is not enabled by default. To start the polling, you need to enable the **polling state** of the connector. For each page, select the **polling configuration**:
 
 - **No polling**: No data will be polled from device.
+
 - **Slow polling**: Polling will be based on the slow timer.
+
 - **Fast polling**: Polling will be based on the fast timer.
 
 ### Shelf Equipment
@@ -63,6 +67,7 @@ The polling of the device is not enabled by default. To start the polling, you n
 On this page, you can find shelf-related data, including **shelf identification parameters** and the following tables:
 
 - **Equipment Provision table**: Contains information regarding the cards that are equipped on the device. You can configure the administrative state and check its status.
+
 - **Inventory Table**: Provides more detailed information for a card and allows you to send a cold or warm restart command to a given card.
 
 ### Physical Entities

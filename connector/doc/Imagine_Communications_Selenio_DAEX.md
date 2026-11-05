@@ -8,7 +8,7 @@ The **Imagine Communications Selenio DAEX** is a type of card that can be slotte
 
 ## About
 
-The **Versioning** for the connector is specifically engineered to tie in with the firmware version of the card the connector supports. It uses the following format: X.X.X.Y, with X.X.X being the firmware version of the card, and .Y the specific connector iteration for this firmware. E.g.: *5.0.28.2* means the connector is the second iteration for firmware *5.0.28.*
+The **Versioning** for the connector is specifically engineered to tie in with the firmware version of the card the connector supports. It uses the following format: X.X.X.Y, with X.X.X being the firmware version of the card, and .Y the specific connector iteration for this firmware. For example, *5.0.28.2* means the connector is the second iteration for firmware *5.0.28.*
 
 The current version is *1.4.0.2.*
 

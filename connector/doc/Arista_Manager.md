@@ -4,16 +4,13 @@ uid: Connector_help_Arista_Manager
 
 # Arista Manager
 
-The Arista Manager connector can monitor Arista switches of type **7010T** and **7050SX:**
-
-- **7010 series**: 1U low power (52 W) line-rate 1 Gb top-of-rack switch, with 4x10 Gb uplinks.
-- **7050 series**: 1U low-latency cut-through line-rate 10 Gb and 40 Gb switches. Higher port density than the 7100 series, with a minimum of 52 x 10 GbE ports but slightly increased latency (1.2 æs or less).
+The Arista Manager connector can monitor all Arista systems running the **Arista EOS** operating system.
 
 ## About
 
-This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are available for **TCP/UDP**, **ICMP**, and **IP**. Some settings can be configured for **sFlow** and **OSPF**. **Environment Control** parameters are available for **Cooling**, **Power**, **Temperature**, and **Hardware**. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
+This connector can be used to monitor **interfaces**. Statistics are available for **TCP/UDP**, **ICMP**, and **IP**. Some settings can be configured for **sFlow** and **OSPF**. **Environment Control** parameters are available for **Cooling**, **Power**, **Temperature**, and **Hardware**. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
 
-- **SNMP** is used to retrieve device information (e.g. **System Name**, **System Description**, **Detailed Interface Info tables**, etc.) and to receive the **traps**.
+- **SNMP** is used to retrieve device information (e.g., **System Name**, **System Description**, **Detailed Interface Info tables**, etc.) and to receive the **traps**.
 - **HTTP** is used to retrieve information that is available in the Arista Command API.
 - **Smart-serial** communication is used to receive the **Syslog Messages**.
 
@@ -33,7 +30,8 @@ This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are a
 | 2.0.9.x | Credential Manager with the latest implementation. | Yes | Yes |
 | 2.0.10.x | Changed the way the polling is executed to get a more consistent result. | Yes | Yes |
 | 2.0.11.x | Changed the key of the IP multicast routing table. | Yes | Yes |
-| 2.0.12.x | - Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. <br>- Trunk Table has been converted to SwitchPort Table. It now shows more extended information. <br>- Fixed various incorrect "Interpretes". | Yes | Yes |
+| 2.0.12.x | - Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. <br>- Trunk Table has been converted to SwitchPort Table. It now shows more extended information. <br>- Fixed various incorrect "Interpretes". | Yes | Yes | 
+| 2.0.13.x | Traps table is now volatile and generation of keys are not using auto increment feature. Alarming and trending is no longer possible | Yes | Yes |
 
 ### Product Info
 
@@ -51,7 +49,8 @@ This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are a
 | 2.0.9.x             | 4.15.2F <br>4.20.5F <br>4.21.1F             |
 | 2.0.10.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
 | 2.0.11.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
-| 2.0.12.x [SLC Main] | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.12.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.13.x [SLC Main] | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
 
 ## Configuration
 
@@ -127,7 +126,7 @@ The **Copy Run Start** button can be used to save the content of the running con
 
 On this page, you can execute a command through the command API. This includes configuration commands. To do so, fill in the command in the **Commands** box and click the **Submit** button.
 
-You can execute multiple commands with one call, e.g. by filling in *sflow run;show sflow*.
+You can execute multiple commands with one call, e.g., by filling in *sflow run;show sflow*.
 
 The result will be displayed in the **Response Viewer** box.
 
@@ -139,7 +138,7 @@ The **Detailed Interface Info** table contains a column with the **Uptime** of t
 
 The **Detailed Interface Info - Rx** table contains Rx parameters: **Rx (Non) Unicast Packets**, **Rx (Non) Unicast Rate**, **Rx Errors**, **Rx Errors Rate**, etc. Similarly, the **Detailed Interface Info - Tx** table contains Tx parameters: **Tx (Non) Unicast Packets**, **Tx (Non) Unicast Rate**, **Tx Errors**, **Tx Errors Rate**, etc.
 
-From version 2.0.5.2 of the connector onwards, the **Detailed Interface Queue Info** table contains the result of the "get interfaces counters queue" command. It includes the **Interface Queue Interfaces** text box, which allows you to specify which interfaces you would like to queue. To specify multiple interfaces, use a comma as separator, e.g. "1,2,3" for interfaces 1, 2 and 3. Click the **Submit If Request** button to send the request so that the table is filled up.
+From version 2.0.5.2 of the connector onwards, the **Detailed Interface Queue Info** table contains the result of the "get interfaces counters queue" command. It includes the **Interface Queue Interfaces** text box, which allows you to specify which interfaces you would like to queue. To specify multiple interfaces, use a comma as separator, e.g., "1,2,3" for interfaces 1, 2 and 3. Click the **Submit If Request** button to send the request so that the table is filled up.
 
 You can disable/enable interfaces to show in the **Measurement Configuration** table, which can be opened from the **Detailed Interface Queue Info page**. When the measure port parameter is disabled, the interface will not be shown in the **detailed interface info** and **detailed interface info - Rx/Tx** tables.
 
@@ -264,7 +263,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.6** range of the Arista Manager connector supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.1.6** range of the Arista Manager connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -284,3 +283,4 @@ Physical dynamic interfaces:
 - Between interfaces and VLANs tagged on the specific interface, an internal connection is created with the following properties:
 
 - **VLAN ID** connection property with as its value the VLAN Filtering Database ID.
+

@@ -10,9 +10,9 @@ This connector monitors the activity of the Grass Valley IQASI25 device, an ASI 
 
 ### Version Info
 
-| **Range**            | **Key Features** |
-|----------------------|------------------|
-| 1.0.0.x [SLC Main]   | Initial Version  |
+| Range              | Key Features     |
+|--------------------|------------------|
+| 1.0.0.x [SLC Main] | Initial version. |
 
 ### Product Info
 
@@ -22,7 +22,7 @@ This connector monitors the activity of the Grass Valley IQASI25 device, an ASI 
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** |
+| Range     | DCF Integration     | Cassandra Compliant     |
 |-----------|---------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     |
 
@@ -66,7 +66,7 @@ In this page it is possible to check the Roll Track information.
 
 ### Logging
 
-In this page the user can configure the Logging. There are subpages for specific configurations: **Input 1**, **Input 2,** **Output** and **MIsc.**
+In this page the user can configure the Logging. There are subpages for specific configurations: **Input 1**, **Input 2**, **Output**, and **MIsc.**
 
 ### Connection Info
 

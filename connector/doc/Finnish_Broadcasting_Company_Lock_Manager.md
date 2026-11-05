@@ -4,7 +4,9 @@ uid: Connector_help_Finnish_Broadcasting_Company_Lock_Manager
 
 # Finnish Broadcasting Company Lock Manager
 
-This connector is used in the YLE Media Services solution to hold locks for orders and events.
+This connector is **obsolete** and has been replaced by the more generic [Skyline Lock Manager](xref:Connector_help_Skyline_Lock_Manager) connector. It is no longer recommended for use in new solutions.
+
+This connector was used in the YLE Media Services solution to hold locks for orders and events.
 
 ## About
 
@@ -12,7 +14,7 @@ This connector is used in the YLE Media Services solution to hold locks for orde
 
 | Range              | Features        | Based on | System Impact |
 |--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
+| 1.0.0.x [Obsolete] | Initial version | -        | -             |
 
 ### System Info
 
@@ -34,7 +36,7 @@ No additional configuration of parameters is required in a newly created element
 
 ## How to use
 
-The connector only works in conjunction with the *Skyline.DataMiner.ConnectorAPI.FinnishBroadcastingCompanyLockManager* NuGet package. This package is used from an Automation script or connector to lock and unlock orders and events. Internally, InterApp messages are used to facilitate the communication.
+The connector only works in conjunction with the *Skyline.DataMiner.ConnectorAPI.FinnishBroadcastingCompanyLockManager* NuGet package. This package is used from an automation script or connector to lock and unlock orders and events. Internally, InterApp messages are used to facilitate the communication.
 
 The locks are stored in memory by an element using this connector.
 

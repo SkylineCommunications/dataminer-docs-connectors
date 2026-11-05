@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Configuration_Manager
 
 # Skyline Configuration Manager
 
-The Skyline Configuration Manager is used to manage scheduling of jobs (i.e. groups of tasks related to retrieving, editing and provisioning of device configurations) on selected elements of a DataMiner System and the associated file repository.
+The Skyline Configuration Manager is used to manage scheduling of jobs (i.e., groups of tasks related to retrieving, editing and provisioning of device configurations) on selected elements of a DataMiner System and the associated file repository.
 
 ## About
 
@@ -43,6 +43,6 @@ In range **1.0.0.x** of this connector, depending on the version, the element cr
 - **Configurations**: Contains comparison information on the stored configurations in the repository.
 - **Jobs**: Contains a general overview of the scheduled jobs. A page button displays information on the associated job results.
 - **Internal Configuration**: Lists the protocols run by the target elements in the DMS and the parameters from which the values are retrieved for the Configuration Table.
-- **IAC**: Displays status info on the ongoing driver IAC communication, i.e. communication between DMS elements.
+- **IAC**: Displays status info on the ongoing driver IAC communication, i.e., communication between DMS elements.
 
 Range **2.0.0.x** is only intended to be used as part of DataMiner IDP, not as a separate element.

@@ -40,7 +40,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Configuration of the remote contacts
 
-After creating an element, it must be linked with an IO contacts device, i.e. Advantech ADAM. This must be done via the "**Element Connections**" application in DataMiner Cube. For more information see the DataMiner help.
+After creating an element, it must be linked with an IO contacts device, i.e., Advantech ADAM. This must be done via the "**Element Connections**" application in DataMiner Cube. For more information see the DataMiner help.
 
 ## Usage
 

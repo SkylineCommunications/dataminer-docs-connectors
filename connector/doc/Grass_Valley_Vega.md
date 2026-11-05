@@ -52,11 +52,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600* (default: *9600*).
-  - **Databits**: Databits specified in the manual of the device, e.g. *7* (default: *8*).
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1* (default: *1*).
-  - **Parity**: Parity specified in the manual of the device, e.g. *No* (default: *no*).
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No* (default: *no*).
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600* (default: *9600*).
+  - **Databits**: Databits specified in the manual of the device, e.g., *7* (default: *8*).
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1* (default: *1*).
+  - **Parity**: Parity specified in the manual of the device, e.g., *No* (default: *no*).
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No* (default: *no*).
 
 - Interface connection:
 
@@ -64,10 +64,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination.
   - **Bus address**: The **matrix number**, **level number**, **number of inputs** and **number of outputs** of the matrix separated by periods (".") The matrix number range is 0-15, the level number range is 0-7, and the range of inputs and outputs is 1-1024.
     For example: *"0.0.1024.1024".*
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

@@ -10,7 +10,7 @@ Audio Live is a multi-channel audio routing and processing solution for the IP d
 
 ### Version Info
 
-| **Range**            | **Key Features**                                          | **Based on** | **System Impact** |
+| Range              | Key Features                                            | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Audio channel shuffling Audio channel delay configuration | -            | -                 |
 
@@ -45,10 +45,6 @@ SERIAL CONNECTION:
 ### Initialization
 
 Default stream names are used in the router control tables. If you want custom names to be displayed, you can change the names in the DataMiner element. Custom names already configured on the device need to be retrieved separately. This can be done via the **Get Stream Names** button on the **General** page. **Do not change any configuration while this action is running, because then that change could be applied on the wrong stream!**
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

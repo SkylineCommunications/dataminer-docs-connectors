@@ -12,7 +12,7 @@ A **serial** connection is used in order to retrieve information from the device
 
 ### Version Info
 
-| **Range** | **Description**                                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                       | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.1.x          | Initial version for software version 1.                                                            | No                  | Yes                     |
 | 1.2.11.x         | Based on Newtec 2185 connector<br>Software version: 2.11<br>Software ID: 6234 <br>Config ID: U1184 Rx config    | No                  | Yes                     |

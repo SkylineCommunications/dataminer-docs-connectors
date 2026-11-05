@@ -10,15 +10,9 @@ This connector is intended to catch traps from the Witbe Experience Center and l
 
 ### Version Info
 
-| **Range**            | **Key Features**                                 | **Based on** | **System Impact** |
+| Range              | Key Features                                   | Based on   | System Impact   |
 |----------------------|--------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. Collects traps in Alarms table. | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
 
 ### System Info
 

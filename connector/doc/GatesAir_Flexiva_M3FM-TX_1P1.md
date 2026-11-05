@@ -12,7 +12,7 @@ This connector is used to monitor the GatesAir Flexiva M3FM-TX 1P1. It uses **SN
 
 ### Version Info
 
-| **Range**            | **Key Features**                           | **Based on** | **System Impact** |
+| Range              | Key Features                             | Based on   | System Impact   |
 |----------------------|--------------------------------------------|--------------|-------------------|
 | 1.0.1.x [SLC Main]   | Polling on group changed from hour to min. | 1.0.1.3      | -                 |
 
@@ -38,7 +38,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: Not used.
 
 SNMP Settings:

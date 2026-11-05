@@ -18,7 +18,7 @@ This is an SNMP protocol that is used to monitor the **Timelink Microsystems SW1
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.64.31.16*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.64.31.16*.
 
 **SNMP Settings:**
 

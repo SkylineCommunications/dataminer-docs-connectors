@@ -221,7 +221,7 @@ A backup contains the complete configuration of a device. When you take a backup
 Backups are usually stored on the local DataMiner agent. The default folder is the Windows %Temp% folder.
 
 Important note:
-While you are taking a backup, all other polling is set on hold. Taking a backup should take at most 30 seconds in most circumstances; however, it is possible that it takes up to several minutes. Keep this in mind if you decide to take regular backups using the Poll Manager or an Automation script. Usually, the time it takes to complete a backup does not change, so you can first take a backup manually and see how long it takes, and then decide if this is acceptable. However, the duration can change if you modify many streams and settings, so it is best to only test this after the DCM is fully (re-)configured.
+While you are taking a backup, all other polling is set on hold. Taking a backup should take at most 30 seconds in most circumstances; however, it is possible that it takes up to several minutes. Keep this in mind if you decide to take regular backups using the Poll Manager or an automation script. Usually, the time it takes to complete a backup does not change, so you can first take a backup manually and see how long it takes, and then decide if this is acceptable. However, the duration can change if you modify many streams and settings, so it is best to only test this after the DCM is fully (re-)configured.
 
 #### Backup Save Path
 
@@ -339,7 +339,7 @@ The following tables are related to the **VSE** tab in the web interface:
 
 - *App Objects*
 
-  This page contains a list of all application objects and a second table listing a mapping of the keys of the tables in the parameter and the XPath required to select the source of those parameters in an xml file. These tables should be considered background information, although they could be very important for advanced configuration in Automation scripts.
+  This page contains a list of all application objects and a second table listing a mapping of the keys of the tables in the parameter and the XPath required to select the source of those parameters in an xml file. These tables should be considered background information, although they could be very important for advanced configuration in automation scripts.
 
 - *All parameter schema tables in the second column:*
 
@@ -354,7 +354,7 @@ This page contains page buttons to parameters and tables specifically requested 
 Examples could be:
 
 - extra parameters for Visio files.
-- an alternative interface for Automation scripts.
+- an alternative interface for automation scripts.
 - extra (saved) parameters for management.
 
 There are several reasons why these parameters are tucked away behind page buttons, the most notable being:
@@ -367,7 +367,7 @@ This is why these features are by default disabled. If a customer requested a pa
 
 Notes:
 
-- Because these features are usually tightly integrated with other components (Visio, alarm filters, Automation scripts) changes to these features can only be requested by the customer who requested them. Other customers should not use them or rely on them. The requesting customer may at any point request additional changes that may not be backwards compatible, and no effort will be done to keep changes backwards compatible or to consider other customers using the feature even though they did not request it.
+- Because these features are usually tightly integrated with other components (Visio, alarm filters, automation scripts) changes to these features can only be requested by the customer who requested them. Other customers should not use them or rely on them. The requesting customer may at any point request additional changes that may not be backwards compatible, and no effort will be done to keep changes backwards compatible or to consider other customers using the feature even though they did not request it.
 - These features are not always fully documented in the connector documentation. Customers who specifically requested a feature are expected to know what it does.
 
 #### TV2 Norway

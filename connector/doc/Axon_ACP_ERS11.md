@@ -14,10 +14,10 @@ In addition, there are different possibilities for alarm monitoring and trending
 
 ### Version Info
 
-| **Range** | **Description**      | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version      | No                  | No                      |
-| 2.0.0.x          | Override DVE timeout | No                  | No                      |
+| Range   | Description          | DCF Integration | Cassandra Compliant |
+|---------|----------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version      | No              | No                  |
+| 2.0.0.x | Override DVE timeout | No              | No                  |
 
 ### Product Info
 
@@ -29,7 +29,7 @@ The implemented firmware versions for each supported card type are described in 
 
 ### Exported connectors
 
-| **Exported Connector**  | **Description**                                                                                                                |
+| Exported Connector     | Description                                                                                                                    |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Axon ACP ERS11 - 2IX08 | Dual-channel basic signal integrity monitor with switch-over function.                                                         |
 | Axon ACP ERS11 - 2IX11 | Dual-channel high performance SDI video and embedded audio probe with clean switch-over function.                              |
@@ -66,11 +66,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
-  - **Databits**: Databits specified in the manual of the device, e.g. *7*.
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1*.
-  - **Parity**: Parity specified in the manual of the device, e.g. *No*.
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600*.
+  - **Databits**: Databits specified in the manual of the device, e.g., *7*.
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1*.
+  - **Parity**: Parity specified in the manual of the device, e.g., *No*.
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.
 
 - Interface connection:
 

@@ -97,7 +97,7 @@ The page also contains the following parameters:
 
 ### Passthrough
 
-This page contains statistics about the passthrough service, i.e. the **Bytes Sent**, **Packets Sent**, **Bytes Received**, **Packets Received**, **Bytes Dropped** and **Packets Dropped**.
+This page contains statistics about the passthrough service, i.e., the **Bytes Sent**, **Packets Sent**, **Bytes Received**, **Packets Received**, **Bytes Dropped** and **Packets Dropped**.
 
 ### Routes
 
@@ -137,7 +137,7 @@ For both conduits and dynamic conduits, more data is available on subpages. For 
 
 ### Internet
 
-This page displays statistics regarding the Internet service, i.e. the **Bytes Sent**, **Packets Sent**, **Bytes Received**, **Packets Received**, **Bytes Dropped** and **Packets Dropped**.
+This page displays statistics regarding the Internet service, i.e., the **Bytes Sent**, **Packets Sent**, **Bytes Received**, **Packets Received**, **Bytes Dropped** and **Packets Dropped**.
 
 The page also contains statistics for rules associated with the Internet service, specifically in the **Internet Rules** table. The counter data in this table is updated once a minute and is measured over the past active minute.
 

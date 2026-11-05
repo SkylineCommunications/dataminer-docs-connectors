@@ -16,7 +16,7 @@ This is an HTTP REST protocol that is used to monitor the **Ateme KFE** video tr
 
 **HTTP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.64.31.16.*
+- **IP Address/host**: The polling IP of the device, e.g., *10.64.31.16.*
 - **Bus Address**: Default value is *byPassProxy.*
 
 ## Usage

@@ -18,9 +18,9 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.236.79.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.236.79.*
 - **IP port**: The port of the connected device. For Modbus this is often port *502*.
-- **Bus address**: The bus address of the connected device, *e.g. 4*.
+- **Bus address**: The bus address of the connected device, *e.g., 4*.
 
 ## Usage
 

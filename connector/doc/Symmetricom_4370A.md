@@ -62,7 +62,7 @@ The page also contains a page button that opens a page with power supply informa
 
 ### Power Supply
 
-This page contains critical information about each power supply the device has, e.g. Type, Serial Number and Status.
+This page contains critical information about each power supply the device has, e.g., Type, Serial Number and Status.
 
 ### Slot
 

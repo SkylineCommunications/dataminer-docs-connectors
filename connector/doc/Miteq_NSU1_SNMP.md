@@ -4,7 +4,7 @@ uid: Connector_help_Miteq_NSU1_SNMP
 
 # Miteq NSU1 SNMP
 
-This is a New Switchover Unit (NSU) redundant switchover system with a fixed 1:1 configuration. This means that one backup unit is present for one primary unit. Other models can have other (non-)fixed configurations (e.g. NSU2 = 1:2 and NSUN = 1:1 to 1:12). If a primary unit fails, the backup unit will take over, on the condition that **Redundancy Mode** is set to *Automatic*.
+This is a New Switchover Unit (NSU) redundant switchover system with a fixed 1:1 configuration. This means that one backup unit is present for one primary unit. Other models can have other (non-)fixed configurations (e.g., NSU2 = 1:2 and NSUN = 1:1 to 1:12). If a primary unit fails, the backup unit will take over, on the condition that **Redundancy Mode** is set to *Automatic*.
 
 This connector can be used as a remote control for the Miteq NSU1 device and also monitors the device.
 

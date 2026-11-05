@@ -12,7 +12,7 @@ This connector can be used to monitor the **Cisco AS Series platform**.
 
 Via **SNMP**, a number of monitoring parameters are polled. A **serial** connection is used to send commands to the device over HTTP using the Spinnaker Message Service XML API.
 
-As the device can also send messages (e.g. heartbeat messages and messages indicating system events, such as allocation or start of encoding) a **smart serial** connection is also defined.
+As the device can also send messages (e.g., heartbeat messages and messages indicating system events, such as allocation or start of encoding) a **smart serial** connection is also defined.
 
 As the media processor is typically deployed on a Windows server machine, **WMI** is used to poll server information such as processor usage, memory usage, process info, etc.
 

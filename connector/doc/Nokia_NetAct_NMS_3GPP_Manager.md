@@ -15,7 +15,7 @@ Alarm information received through SNMP traps will also be processed and mapped 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x | Initial version | - | - |
-| 1.0.1.x [SLC Main] | DVE removal timer is now configurable | 1.0.0.8 | Parameter ID 116 is now configurable: <br>- The displayed value can be used in Automation scripts to perform sets. DMS filters can be used with wildcards on the display value. <br>- Layout changes have been implemented. <br>- The alarm template may need to be adjusted. |
+| 1.0.1.x [SLC Main] | DVE removal timer is now configurable | 1.0.0.8 | Parameter ID 116 is now configurable: <br>- The displayed value can be used in automation scripts to perform sets. DMS filters can be used with wildcards on the display value. <br>- Layout changes have been implemented. <br>- The alarm template may need to be adjusted. |
 
 ### Product Info
 

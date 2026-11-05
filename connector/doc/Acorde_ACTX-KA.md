@@ -51,10 +51,6 @@ It is possible to switch this mode between *Telnet* (TCP) and *Serial* (RS232/RS
 The **Polling Status** will indicate if data is being retrieved. For example: when it is not possible to log in via the Telnet, the **Polling Status** will indicate *Disabled* and no data will be retrieved until the Telnet connection could be established.
 An automatic log in attempt is done every hour.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 In case the **Connection Mode** is set to *Telnet*, the log in session must succeed before data is retrieved. This will be indicated via the **Polling Status**.
@@ -70,8 +66,8 @@ These settings are dong in the communication interface that links the data sourc
 
 - Serial settings:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
-  - **Databits**: Databits specified in the manual of the device, e.g. *7*.
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1*.
-  - **Parity**: Parity specified in the manual of the device, e.g. *No*.
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600*.
+  - **Databits**: Databits specified in the manual of the device, e.g., *7*.
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1*.
+  - **Parity**: Parity specified in the manual of the device, e.g., *No*.
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.

@@ -70,6 +70,6 @@ On the **General** page of this connector, you can configure the **API Token** a
 
 The **Debug** page contains basic information about the communication with the device, as well as specific logs for every entry.
 
-The **Service Configuration** page contains raw information regarding input sources, encoder profiles, MSC items, MSC layouts, and the active service configuration. It also contains controls to create new input sources, encoder profiles, MSC items, and MSC layouts, and it allows you to activate an existing MSC layout. These controls can be used manually, but as these all require JSON snippets, they can also be set from an external Automation script (outside of the connector).
+The **Service Configuration** page contains raw information regarding input sources, encoder profiles, MSC items, MSC layouts, and the active service configuration. It also contains controls to create new input sources, encoder profiles, MSC items, and MSC layouts, and it allows you to activate an existing MSC layout. These controls can be used manually, but as these all require JSON snippets, they can also be set from an external automation script (outside of the connector).
 
 The remaining pages contain status information for the multiplexer and general information.

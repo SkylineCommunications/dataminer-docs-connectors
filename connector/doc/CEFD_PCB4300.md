@@ -46,14 +46,6 @@ SERIAL CONNECTION:
   - **IP port**: Depending on the customer
   - **Bus address**: Not required
 
-### Initialization
-
-No need to configure anything else.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This connector is very simple to use. There are only two settings that might make sense to configure. Are they:

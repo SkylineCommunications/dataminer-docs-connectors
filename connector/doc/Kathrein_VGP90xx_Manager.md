@@ -80,46 +80,13 @@ All the other lines in the file are considered possible data lines. They are spl
 
 The following table provides more information on the different columns:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Parameter</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr class="even">
-<td><strong>ID</strong> <em>(optional)</em></td>
-<td><p>A number identifying the device. This number must be unique per manager. It becomes the index in the <strong>Management Table</strong> on the <strong>Management</strong> page.</p>
-<p>If empty, the line will always create a new element, of which the ID will be dynamically assigned by the manager.</p>
-<p>If the manager already contains a record with this ID, then that element will be updated (instead of deleted and recreated, possibly with another element ID).</p></td>
-</tr>
-<tr class="odd">
-<td><strong>IP</strong> <em>(required)</em></td>
-<td><p>The IP address of the Kathrein VGP device. Can be either IPv4, IPv6 or a name that can be resolved by the DNS server.</p>
-<p>It is also possible to add a port number. If you do not do so, the default port will be used that was specified in the element's port settings during creation or editing.</p>
-<p>Examples:</p>
-<p>"<em>10.1.23.251</em>" or "<em>10.2.44.245:161</em>" or "<em>fdda:5cc1:23:4::1f</em>" or "<em>[1e:223:10::234]:161</em>" or "<em>vgp.katherein.bru</em>" or "<em>vgp.kat.bru:161</em>"</p></td>
-</tr>
-<tr class="even">
-<td><strong>Manager</strong> <em>(required)</em></td>
-<td><p>The name of the manager that should poll the device. This column may not be empty. If it is, the entire row will be ignored. The content of the line will only be parsed if the manager's name matches the <strong>Manager Name</strong> parameter.</p>
-<p>This makes it possible to add the data for all elements on all managers in one file, and let the manager filter out its own elements. Note that the <strong>Manager Name</strong> by default is the name of the (manager) element.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>Virtual Element Name</strong> <em>(required)</em></td>
-<td><p>The name of the DVE that is created for this record. This name must be unique in the DMS.</p>
-<p>During the import, the manager will check if the name is unique within its own list of elements, but not if no other element exists with this name in the DMS. If the name already exists, it will either be changed by the manager or by DataMiner to make it unique. (This can be done by adding a number to the name, or any other method in the feature. )</p></td>
-</tr>
-<tr class="even">
-<td><strong>View Name(s)</strong> <em>(optional)</em></td>
-<td><p>The name or names of the view(s) where the element should be added. It is possible to separate several views with a pipe character ("|") or with a semicolon (";"). If you use a semicolon, and the file is not created in Excel but in a text editor such as Notepad, add quotes ('"') around the value.</p>
-<p>If no view name is specified, the element will be added to the same view as the manager.</p></td>
-</tr>
-</tbody>
-</table>
+| Parameter | Description |
+|--|--|
+| **ID** *(optional)* | A number identifying the device. This number must be unique per manager. It becomes the index in the **Management Table** on the **Management** page.<br><br>If empty, the line will always create a new element, of which the ID will be dynamically assigned by the manager.<br><br>If the manager already contains a record with this ID, then that element will be updated (instead of deleted and recreated, possibly with another element ID). |
+| **IP** *(required)* | The IP address of the Kathrein VGP device. Can be either IPv4, IPv6 or a name that can be resolved by the DNS server.<br><br>It is also possible to add a port number. If you do not do so, the default port will be used that was specified in the element's port settings during creation or editing.<br><br>Examples:<br><br>"*10.1.23.251*" or "*10.2.44.245:161*" or "*fdda:5cc1:23:4::1f*" or "*[1e:223:10::234]:161*" or "*vgp.katherein.bru*" or "*vgp.kat.bru:161*" |
+| **Manager** *(required)* | The name of the manager that should poll the device. This column may not be empty. If it is, the entire row will be ignored. The content of the line will only be parsed if the manager's name matches the **Manager Name** parameter.<br><br>This makes it possible to add the data for all elements on all managers in one file, and let the manager filter out its own elements. Note that the **Manager Name** by default is the name of the (manager) element. |
+| **Virtual Element Name** <em>(required)</em> | The name of the DVE that is created for this record. This name must be unique in the DMS.<br><br>During the import, the manager will check if the name is unique within its own list of elements, but not if no other element exists with this name in the DMS. If the name already exists, it will either be changed by the manager or by DataMiner to make it unique. (This can be done by adding a number to the name, or any other method in the feature. ) |
+| **View Name(s)** <em>(optional)</em> | The name or names of the view(s) where the element should be added. It is possible to separate several views with a pipe character ("\|") or with a semicolon (";"). If you use a semicolon, and the file is not created in Excel but in a text editor such as Notepad, add quotes ('"') around the value.<br><br>If no view name is specified, the element will be added to the same view as the manager. |
 
 Note: If a field is optional, this means that the column does not need to contain any data, not that all other columns shift one position to the left.
 

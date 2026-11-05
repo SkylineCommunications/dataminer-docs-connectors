@@ -14,11 +14,11 @@ It is important that this connector is used in combination with the **Visio draw
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                    | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                                                                    | -            | -                 |
-| 2.0.0.x [Obsolete]     |Strobe Manager 2.0: Workflow with IneoQuest Inspector Live and CISCO Nexus devices. | -            | -                 |
-| 2.0.1.x [SLC Main]   | Decoupled MIP tables for Static Joins Interface 1 and Interface 2 tables.           | -            | -                 |
+| Range              | Key Features                                                                        | Based on | System Impact |
+|--------------------|-------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.                                                                    | -        | -             |
+| 2.0.0.x [Obsolete] | Strobe Manager 2.0: Workflow with IneoQuest Inspector Live and CISCO Nexus devices. | -        | -             |
+| 2.0.1.x [SLC Main] | Decoupled MIP tables for Static Joins Interface 1 and Interface 2 tables.           | -        | -             |
 
 ### System Info
 
@@ -47,7 +47,7 @@ When the element has been created, you need to configure several things on its *
 In addition, on the **MIP** page, you need to provide the references to the primary keys of the Cisco Nexus switches in order to have cross checking on the expectations vs. the actual routes and joins being made:
 
 - **API Ref Routes**, **Static Join Interface 1 API Ref**, and **Static Join Interface 2 API Ref**: These should point to the *Primary Key* *(PID:17201) as GUID values* of the **API Polling** table (see **CLI** page on the CISCO Nexus element that is configured per probe).
-- Via the context menu on the MIP tables you can add, update or remove trackers. Note that typically, linked Automation scripts ("*Control Path Nexus Auto*" or "*Control Path Nexus Manual*") take care of adding/updating the trackers list instead, which means that no manual configuration is needed.
+- Via the context menu on the MIP tables you can add, update or remove trackers. Note that typically, linked automation scripts ("*Control Path Nexus Auto*" or "*Control Path Nexus Manual*") take care of adding/updating the trackers list instead, which means that no manual configuration is needed.
 
 ## How to Use
 

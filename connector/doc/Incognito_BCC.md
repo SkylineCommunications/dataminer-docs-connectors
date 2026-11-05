@@ -38,7 +38,7 @@ This connector uses an SNMPv3 connection and requires the following input during
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.11*.
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.11*.
 
 **SNMP Settings:**
 
@@ -84,7 +84,7 @@ The failover statistics of the following objects are also displayed:
 
 ### DHCPv4
 
-On this page, you can find general information related to the DHCP service, e.g. DHCPv4 server system description, DHCPv4 counters (error packets, sent packets, DHCPv4 and BOOTP), optional statistics regarding DHCPv4, and the **Server Configuration.**
+On this page, you can find general information related to the DHCP service, e.g., DHCPv4 server system description, DHCPv4 counters (error packets, sent packets, DHCPv4 and BOOTP), optional statistics regarding DHCPv4, and the **Server Configuration.**
 
 ### DHCPv6
 

@@ -18,8 +18,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **Device address**: Slot number of the module in the chassis, e.g. *4.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **Device address**: Slot number of the module in the chassis, e.g., *4.*
 
 **SNMP Settings**:
 
@@ -117,7 +117,7 @@ You can use the RollTrack settings to:
 
 ### System-Setup
 
-This page displays general information (e.g. **Slot Number**, **Serial Number**, .).
+This page displays general information (e.g., **Slot Number**, **Serial Number**, .).
 
 On this page, you can also **Restart** the unit or to reset it to the **Default Settings**.
 

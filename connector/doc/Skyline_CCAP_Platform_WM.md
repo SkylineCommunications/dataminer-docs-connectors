@@ -68,6 +68,6 @@ On the **Configuration** page, the following settings are available:
 
 ## Notes
 
-This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as **Cisco Smart PHY**, **HP Network Automation**, and **Vecima RPM** and EPM connectors such as **CISCO CBR-8 CCAP Platform Collector**, **CISCO Manager CIN Platform**, and **Juniper Networks Manager CIN Platform**. The Correlation rules and Automation scripts must be configured and enabled in order to get the full functionality of this connector.
+This connector requires specific correlation rules and automation scripts for communication with auxiliary connectors such as **Cisco Smart PHY**, **HP Network Automation**, and **Vecima RPM** and EPM connectors such as **CISCO CBR-8 CCAP Platform Collector**, **CISCO Manager CIN Platform**, and **Juniper Networks Manager CIN Platform**. The correlation rules and automation scripts must be configured and enabled in order to get the full functionality of this connector.
 
 For the DCF workflow to have its full use with the DCF framework, the **DCF Connectivity Discovery** script and **Cox IDP EPM Connectivity** connector are needed.

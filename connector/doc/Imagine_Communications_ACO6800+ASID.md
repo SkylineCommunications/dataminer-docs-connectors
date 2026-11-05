@@ -14,7 +14,7 @@ ACO6800+ASID switches the signal between redundant signals at the point of inges
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. Full support for all feature of this specific card. Support for both ASI mode and SDI mode | No                  | Yes                     |
 

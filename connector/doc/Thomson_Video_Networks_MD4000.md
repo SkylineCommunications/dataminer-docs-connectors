@@ -98,4 +98,4 @@ On this page, you can manage the customizable timers for each of the tables in t
 
 ### Device Web Page
 
-This page displays the web page of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page displays the webpage of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

@@ -12,7 +12,7 @@ This SNMP-based connector is used to monitor and configure the **Newtec EL470**.
 
 ### Version Info
 
-| **Range** | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. | No                  | Yes                     |
 

@@ -17,7 +17,7 @@ The **FiberAir IP-20G** connector displays the general information, available in
 | Range   | Description      | Based on | System Impact |
 |---------|------------------|----------|---------------------|
 | 1.0.0.x | Initial version  | -        | -             |
-| 1.0.1.x | - Displayed column layout for the Interfaces table changed because of added new rate parameters.<br>- Display key Interfaces table changed because previous format was not unique. Format now consists of "\[Description\].\[Index\] - \[Alias\]".<br>- Added bit rate in Ethernet Statistics table.<br>- Added rate parameters for Discarded, Broadcast, Unicast (in/out) packets.<br>- Added rate parameters for all counters available in Interface Physical Port RMON Statistics table. | 1.0.0.4  | - Verify applications, e.g. Reporter, that take the order of columns into account.<br> - Verify any configured alarm filter in the DMS to match the new format. |
+| 1.0.1.x | - Displayed column layout for the Interfaces table changed because of added new rate parameters.<br>- Display key Interfaces table changed because previous format was not unique. Format now consists of "\[Description\].\[Index\] - \[Alias\]".<br>- Added bit rate in Ethernet Statistics table.<br>- Added rate parameters for Discarded, Broadcast, Unicast (in/out) packets.<br>- Added rate parameters for all counters available in Interface Physical Port RMON Statistics table. | 1.0.0.4  | - Verify applications, e.g., Reporter, that take the order of columns into account.<br> - Verify any configured alarm filter in the DMS to match the new format. |
 
 ### Product Info
 
@@ -106,9 +106,9 @@ This page shows four tables in total. Two are mainly used for management purpose
 
 - **Ethernet Ports Table**: This table displays the Ethernet port status information. The status can be *Available*, *Used*, *Booked and Used*, *Booked*, and *Booked and available*. Another column shows the booked bandwidth allocated to each port.
 
-- **E1 Virtual Interfaces Table**: This table displays all the 16 E1 "ports" that can be booked via an Automation script. In this table, each entry has the following information: Port Status, Reference, End Date, Booked Bandwidth, Contact, Metadata, and "Valid", which shows how much time still remains until the booking expires.
+- **E1 Virtual Interfaces Table**: This table displays all the 16 E1 "ports" that can be booked via an automation script. In this table, each entry has the following information: Port Status, Reference, End Date, Booked Bandwidth, Contact, Metadata, and "Valid", which shows how much time still remains until the booking expires.
 
-- **Ethernet Virtual Interfaces Table**: This table displays all 6 Ethernet ports that can be booked via an Automation script. This is similar to the E1 Virtual Interfaces table.
+- **Ethernet Virtual Interfaces Table**: This table displays all 6 Ethernet ports that can be booked via an automation script. This is similar to the E1 Virtual Interfaces table.
 
 ### Web Interface
 

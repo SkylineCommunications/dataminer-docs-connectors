@@ -14,7 +14,7 @@ Starting from version **3.0.0.1** of the **Imagine Communications Selenio J2K1 D
 
 Ranges of the connector
 
-| **Range** | **Description**        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description            | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------|---------------------|-------------------------|
 | 3.0.0.x          | DVEs for each decoder | No                  | Yes                     |
 

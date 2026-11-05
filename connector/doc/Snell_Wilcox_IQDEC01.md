@@ -4,7 +4,7 @@ uid: Connector_help_Snell_Wilcox_IQDEC01
 
 # Snell Wilcox IQDEC01
 
-The IQDEC01 provides a complete analog front-end with 12-bit composite decoding, synchronization and analog audio ingest in one compact module. Advanced adaptive 2-D decoding technology makes the IQDEC01 usefull for most analog to digital or, when paired with an upconverter, analog to HD applications. The IQDEC01 handles most composite analog signal formats including PAL, NTSC and SECAM. The full frame synchronizer with horizontal and vertical phasing controls allows the output to be timed to your house or studio reference. The IQDEC01 can digitize up to 4 channels of analog audio for both embedding into the SDI stream and outputting as two AES streams. Proc. amp controls and a built-in noise reducer complete the speci? cation.
+The IQDEC01 provides a complete analog frontend with 12-bit composite decoding, synchronization and analog audio ingest in one compact module. Advanced adaptive 2-D decoding technology makes the IQDEC01 useful for most analog to digital or, when paired with an upconverter, analog to HD applications. The IQDEC01 handles most composite analog signal formats including PAL, NTSC and SECAM. The full frame synchronizer with horizontal and vertical phasing controls allows the output to be timed to your house or studio reference. The IQDEC01 can digitize up to 4 channels of analog audio for both embedding into the SDI stream and outputting as two AES streams. Proc. amp controls and a built-in noise reducer complete the specification.
 
 ## About
 
@@ -44,12 +44,12 @@ SERIAL CONNECTION:
   Both values should be hex encoded. Example: "15.0A"
 
 Note:
-If you have installed the "RollCall Control Panel" software (, by Snell & Wilcox) and have the interface of the card open, then the full address should be visible under the tab "Connected Units". This could look like "0000:11:01". You need the "11:01" but should replace the semicolumn with a dot '.' to "11.01". (Note also that the network address should always be "0000" because the connector does not support communication over bridges.
+If you have installed the "RollCall Control Panel" software (, by Snell & Wilcox) and have the interface of the card open, then the full address should be visible under the tab "Connected Units". This could look like "0000:11:01". You need the "11:01" but should replace the semicolon with a dot '.' to "11.01". (Note also that the network address should always be "0000" because the connector does not support communication over bridges.
 
 ### Configuration
 
 The connector needs no configuration except for the card address, which needs to be configured in the **bus address** field in the element wizard.
-If the value cannot be parsed as a valid slot number the connector will automatically and immideatly stop after startup. This to make sure that no commands (and espetially sets) are send to a random device.
+If the value cannot be parsed as a valid slot number the connector will automatically and immediately stop after startup. This to make sure that no commands (and especially sets) are send to a random device.
 
 The log file will contain a message indicating that the connector failed to parse the bus address and the expected format of the address.
 

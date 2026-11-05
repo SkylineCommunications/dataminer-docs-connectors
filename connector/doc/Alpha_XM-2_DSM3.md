@@ -12,10 +12,10 @@ The **Alpha XM-2-DSM3** connector uses **SNMP** to retrieve data from the device
 
 ### Version Info
 
-| **Range** | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                      | No                  | Yes                     |
-| 2.0.0.x          | Backwards compatibility with 8.0.6.3 | No                  | Yes                     |
+| Range   | Description                          | DCF Integration | Cassandra Compliant |
+|---------|--------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                      | No              | Yes                 |
+| 2.0.0.x | Backwards compatibility with 8.0.6.3 | No              | Yes                 |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ The **Alpha XM-2-DSM3** connector uses **SNMP** to retrieve data from the device
 
 ### Creation
 
-#### SNMP \[Main\] connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 

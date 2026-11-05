@@ -1,80 +1,51 @@
 ---
 uid: Connector_help_Generic_KAFKA_Consumer
+description: "Learn how to use the Generic KAFKA Consumer connector to consume Kafka topics and export messages for DataMiner workflows."
 ---
 
 # Generic KAFKA Consumer
 
-This connector uses a virtual connection that interfaces with KAFKA using a Confluent DLL that polls information for one or more topics via one or more brokers that can be defined in the DataMiner element.
-
-The data retrieved from the API will be offloaded to a compressed GZ file with JSON data per topic. This file can then be ingested and used in other workflows by connectors, Automation scripts, etc.
-
 ## About
 
-### Version Info
+The **Generic KAFKA Consumer** connector integrates Apache Kafka data streams with DataMiner. It connects to one or more configured brokers, consumes messages from selected topics, and exports the received data as compressed GZ files containing JSON.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+The connector uses a virtual connection, so no connection details are required when creating the DataMiner element. Broker, topic, authentication, schema registry, and export settings are configured in the element after creation.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 3.0.0                  |
+- Consumes multiple Kafka topics through one or more configured brokers.
+- Supports configurable subscription intervals and poll durations per topic.
+- Supports unsecured, SSL, SASL/SSL, SCRAM, and OAuth-based authentication scenarios.
+- Supports string messages and Avro messages through a Confluent Schema Registry.
+- Exports topic data as compressed GZ files to local or remote storage.
+- Provides polling-buffer visibility, automatic cleanup, file-retention settings, and optional InterApp notifications.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+### Bring Kafka Event Data into DataMiner Workflows
 
-## Configuration
+**Challenge**: Operational data is published to Kafka but must be made available to DataMiner connectors, automation scripts, or other processing workflows.
 
-### Connections
+**Solution**: Configure the relevant brokers and topics in the connector. The connector consumes the messages and exports them as compressed JSON data files.
 
-#### Virtual connection
+**Benefit**: Kafka data becomes available to DataMiner-based monitoring and orchestration without requiring each downstream workflow to implement its own Kafka client.
 
-This connector uses a virtual connection and does not require any input during element creation.
+### Consume Secured Enterprise Kafka Streams
 
-### Initialization
+**Challenge**: Kafka environments can require SSL certificates, SASL credentials, OAuth, or Schema Registry authentication.
 
-When you have created an element, you still need to configure several things based on your KAFKA system.
+**Solution**: Configure the required security method and credentials on the Authentication, OAuth, and Schema Registry pages.
 
-#### Mandatory configuration
+**Benefit**: The connector can be adapted to different enterprise Kafka security configurations while keeping consumption and export behavior consistent.
 
-Add one or more **brokers** to the element:
+### Control Data Volume and Retention
 
-1. Go to the **Broker** page of the element.
+**Challenge**: High-volume topics can create large exports and accumulated files.
 
-1. Right-click the table and select **Add** in the context menu.
+**Solution**: Configure topic polling, maximum export size, export location, and housekeeping retention settings.
 
-1. Enter the information for the broker(s).
+**Benefit**: Operators can balance data freshness, file size, storage usage, and downstream processing requirements.
 
-Add one or more **topics** to the element:
+## Technical Reference
 
-1. Go to the **Topics** page of the element.
-
-1. Right-click the table and select **Add** in the context menu.
-
-1. Specify the **Topic name** and the following settings:
-
-   - **Subscription Interval**: Determines how frequently the topic will be polled. Default: 5 minutes.
-
-   - **Poll Duration**: Will be used in the API call to determine how long it will poll before the call ends. Default: 1 minute.
-
-#### Optional Configuration
-
-To configure authentication, go to the **Authentication page** of the element and fill out the parameters with the necessary information.
-
-## How to use
-
-After the initialization detailed above is performed, based on a timer, the connector will retrieve data from the **API** for the specified **topic(s)**. This data will be offloaded to the directory path specified in the **Export Directory parameter** in a **GZ** file per topic. These GZ files can then be used in other workflows by connectors, Automation scripts, etc.
-
-The following settings are often of use:
-
-- **Brokers**: Via the right-click menu of the Brokers table, you can add, edit, or delete brokers. Multiple delete is possible by highlighting multiple rows and selecting the delete option in the right-click menu.
-- **Topics**: Via the right-click menu of the Topics table, you can add, edit, or delete topics. Multiple delete is possible by highlighting multiple rows and selecting the delete option in the context menu.
-- **Consumer & Authentication**: These pages allow you to configure different settings for the Consumer element within the KAFKA API.
-  Note: Double-check your KAFKA settings with the parameters on these pages, because these parameters can directly affect the polling of data from KAFKA.
-- **Export Settings**: These settings allow you to toggle the export functionality of the connector and choose whether a local or remote directory should be used.
-  Note: For the remote file handling feature to work, you must enter a local directory in the **Local Export Directory**. The connector will write to this location and then copy over to the remote location. You must also provide the credentials for the system in the **System Credentials** section and enter the path to the remote directory in the **Export Directory** parameter. The **path** **must be shared/accessible**.
+For configuration details and operating instructions, refer to the [technical documentation](xref:Connector_help_Generic_KAFKA_Consumer_Technical).

@@ -14,9 +14,9 @@ A **serial** connection is used in order to successfully retrieve and configure 
 
 ### Product Info
 
-| **Range** | **Device Revision** |
-|------------------|---------------------|
-| 1.0.0.x          | Rev. 100            |
+| Range   | Device Revision |
+|---------|-----------------|
+| 1.0.0.x | Rev. 100        |
 
 ## Installation and configuration
 
@@ -28,15 +28,15 @@ This connector uses a **virtual connection** and does not require any input duri
 
 ### General
 
-This page contains general information (**Slot Number**, **Card Name**, etc.) regarding the card type. Some of the information can be modified, e.g. the **User Label**.
+This page contains general information (**Slot Number**, **Card Name**, etc.) regarding the card type. Some of the information can be modified, e.g., the **User Label**.
 
 ### Status
 
-This page contains all status parameters for this specific card. These are all non-modifiable parameters, e.g. **HD-Capable** and **MAC0**.
+This page contains all status parameters for this specific card. These are all non-modifiable parameters, e.g., **HD-Capable** and **MAC0**.
 
 ### Settings
 
-This page contains only parameters that can be modified by the user, e.g. **Output Configuration** and **Format**.
+This page contains only parameters that can be modified by the user, e.g., **Output Configuration** and **Format**.
 
 ### Alarm Priority
 

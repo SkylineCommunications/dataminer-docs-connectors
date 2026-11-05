@@ -12,10 +12,10 @@ This device uses the **SNMP** protocol for the communication with the device.
 
 ### Version Info
 
-| **Range**     | **Description**  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version  | No                  | Yes                     |
-| 1.1.0.x [SLC Main]   | Firmware changes | No                  | Yes                     |
+| Range              | Description      | DCF Integration | Cassandra Compliant |
+|--------------------|------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version  | No              | Yes                 |
+| 1.1.0.x [SLC Main] | Firmware changes | No              | Yes                 |
 
 ### Product Info
 
@@ -32,7 +32,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.64.7.62*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.64.7.62*.
 
 SNMP Settings:
 
@@ -44,7 +44,7 @@ SNMP Settings:
 
 ### General Page
 
-This page displays general information about the device, such as the **System Description**, **Up Time** and **Name**.
+This page displays general information about the device, such as the **System Description**, **Up Time**, and **Name**.
 
 ### Interface Page
 

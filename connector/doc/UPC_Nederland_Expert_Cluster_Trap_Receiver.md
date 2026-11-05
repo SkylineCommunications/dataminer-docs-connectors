@@ -20,7 +20,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2*
 
 SNMP Settings:
 
@@ -45,7 +45,7 @@ This page also contains the **Alarm Traps** table, which displays all alarms tha
 
 The connector processes the following bindings from a trap:
 
-| Binding | **OID** | **Comments** | **Mandatory** | **Column Name in table Alarm Traps** |
+| Binding | OID | Comments | Mandatory | Column Name in table Alarm Traps |
 |--|--|--|--|--|
 | System name | 1.3.6.1.2.1.1.5 | Possible values:<br>- Element name<br>- DataMiner name | Yes | Element Name |
 | Parameter description | 1.3.6.1.4.1.8813.1.1.2.2.1 |  | Yes | Parameter Name |
@@ -101,7 +101,7 @@ The connector processes the following bindings from a trap:
 
 ### General (version 1.0.0.7)
 
-From version 1.0.0.7 onwards, a queue is introduced in order to prevent all the alarms from being added to the **Alarm Traps** table immediately. The parameter **Maximum Active Alarm Count** defines the maximum number of active alarms (i.e. alarms with another severity than Normal (=5), in the Severity ID column) that can be present in the **Alarm Traps** table, before a new active alarm will be queued.
+From version 1.0.0.7 onwards, a queue is introduced in order to prevent all the alarms from being added to the **Alarm Traps** table immediately. The parameter **Maximum Active Alarm Count** defines the maximum number of active alarms (i.e., alarms with another severity than Normal (=5), in the Severity ID column) that can be present in the **Alarm Traps** table, before a new active alarm will be queued.
 
 If there are more active alarms, these will be queued until there is room in the Alarm Traps table again. If an alarm goes back to state Normal while it is queued, it will be removed from the queue, and it will therefore never enter the Alarm Traps table. Alarms in the queue are processed in a first-in-first-out (FIFO) manner. This means that the alarm that first entered the queue will be the first alarm that leaves the queue and enters the Alarm Traps table.
 

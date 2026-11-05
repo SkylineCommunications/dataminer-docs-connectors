@@ -20,7 +20,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 **HTTP Connection**
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13*.
 - **IP port**: The IP port of the destination.
 - **Bus address**: If the proxy server has to be bypassed, specify: *byPassProxy.* This is enabled by default.
 
@@ -107,7 +107,7 @@ This page allows you to update the Packager.
 
 The upload file must be located in the following DataMiner Documents folder: "*Documents/RGB Networks TransAct Packager/\[Element Name\]/Update*".
 
-You will need to specify the **Username** and **Password** of a DataMiner user. In order to do this, it is recommended to create a user with minimal rights, dedicated to this task (e.g. Update/Update).
+You will need to specify the **Username** and **Password** of a DataMiner user. In order to do this, it is recommended to create a user with minimal rights, dedicated to this task (e.g., Update/Update).
 
 ### Syslog Servers
 

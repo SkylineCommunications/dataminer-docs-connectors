@@ -14,17 +14,17 @@ Range 1.0.1.x of the connector contains updated features.
 
 ### Version Info
 
-| **Range** | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                               | No                  | Yes                     |
-| 1.0.1.x          | Fixed DIS issues and updated to new features. | No                  | Yes                     |
+| Range   | Description                                   | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                               | No              | Yes                 |
+| 1.0.1.x | Fixed DIS issues and updated to new features. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.43 and prior              |
-| 1.0.1.x          | 2.43                        |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 2.43 and prior             |
+| 1.0.1.x | 2.43                       |
 
 ## Installation and configuration
 

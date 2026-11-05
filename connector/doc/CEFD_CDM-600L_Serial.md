@@ -12,10 +12,10 @@ This connector uses serial communication to retrieve information from the device
 
 ### Version Info
 
-| **Range**     | **Description**                                   | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version (EF Data CDM600L)                 | No                  | Yes                     |
-| 2.0.0.x [SLC Main]   | Change of protocol name, based on EF Data CDM600L | No                  | Yes                     |
+| Range              | Description                                       | DCF Integration | Cassandra Compliant |
+|--------------------|---------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version (EF Data CDM600L)                 | No              | Yes                 |
+| 2.0.0.x [SLC Main] | Change of protocol name, based on EF Data CDM600L | No              | Yes                 |
 
 ## Installation and configuration
 
@@ -27,9 +27,9 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the Ethernet to serial converter, e.g. *10.11.12.13*.
-- **IP port**: The port addressed to connect the device, set in the Ethernet to serial converter, e.g. *4001*.
-- **Bus address**: The BUS address set in the device, e.g. *1*. (Range: 1 to 9999.)
+- **IP address/host**: The polling IP of the Ethernet to serial converter, e.g., *10.11.12.13*.
+- **IP port**: The port addressed to connect the device, set in the Ethernet to serial converter, e.g., *4001*.
+- **Bus address**: The BUS address set in the device, e.g., *1*. (Range: 1 to 9999.)
 
 ## Usage
 

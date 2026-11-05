@@ -77,7 +77,7 @@ REST (Representational State Transfer) calls are used to retrieve the device inf
 
 On the **HTTP Communication** page, you can track the HTTP sessions used for communicating with the device.
 
-This makes it possible to follow the communication flow and provides some useful statistics, e.g. request time, response time, time span (RTT), etc.
+This makes it possible to follow the communication flow and provides some useful statistics, e.g., request time, response time, time span (RTT), etc.
 
 - **HTTP Sessions State**: If you enable this setting, the active HTTP sessions will be tracked.
 - **HTTP Sessions Max Count**: This determines the maximum number of HTTP sessions that will be tracked.

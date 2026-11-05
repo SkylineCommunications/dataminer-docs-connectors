@@ -127,7 +127,7 @@ The following subpages are available:
 
 ### Remote Video Wall
 
-For each remote video wall of the device, there is a page available with the related settings, e.g. **Mode**, **SuperFrame**, etc.
+For each remote video wall of the device, there is a page available with the related settings, e.g., **Mode**, **SuperFrame**, etc.
 
 ### Mosaic
 

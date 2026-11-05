@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Regression_Test_Result_Collector
 
 # Skyline Regression Test Result Collector
 
-The Skyline Regression Test Result Collector is a connector that will aggregate the results from regression tests that are run using the Regression Test Runner Automation script. This script provides a UI for users to manually run a subset of regression tests. It can also be run without user interaction, for example through a scheduled task.
+The Skyline Regression Test Result Collector is a connector that will aggregate the results from regression tests that are run using the Regression Test Runner automation script. This script provides a UI for users to manually run a subset of regression tests. It can also be run without user interaction, for example through a scheduled task.
 
 ## About
 
@@ -18,7 +18,7 @@ The Skyline Regression Test Result Collector is a connector that will aggregate 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                      | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | RegressionTestRunner Automation script | -                       |
+| 1.0.0.x   | No                  | Yes                     | RegressionTestRunner automation script | -                       |
 
 ## Configuration
 

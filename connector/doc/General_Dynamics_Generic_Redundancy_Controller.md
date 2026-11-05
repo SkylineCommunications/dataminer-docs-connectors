@@ -45,6 +45,6 @@ This page contains general information and settings for the device, such as the 
 
 ### Alarms
 
-This page displays the **general status** of the device, including internal and external alarm sources (e.g. external oscillator faults), active or latched.
+This page displays the **general status** of the device, including internal and external alarm sources (e.g., external oscillator faults), active or latched.
 
 In case there is a fault, you can see more detailed information about the failure, reset latched faults and mask active alarms.

@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Configuration_Manager_DMA
 
 # Skyline Configuration Manager DMA
 
-The Skyline Configuration Manager DMA connector is used to manage the scheduling of jobs (i.e. groups of tasks) on the elements of a given DataMiner Agent. On DataMiner System level, management is handled by an element running the Skyline Configuration Manager connector.
+The Skyline Configuration Manager DMA connector is used to manage the scheduling of jobs (i.e., groups of tasks) on the elements of a given DataMiner Agent. On DataMiner System level, management is handled by an element running the Skyline Configuration Manager connector.
 
 Once the target elements are specified in the manager's configuration tables, you can schedule jobs, such as retrieving configuration files or pushing previously saved configurations to those elements. You can access this functionality via the **Create Scheduler Task** button of the DMS Manager element, known as the Primary element. The specifications of these jobs and elements affected by them are determined by filtering job parameters such as periodicity (once, daily, etc.), time of execution, job type, configuration type, and the affected connectors, views, and Agents. The DMA Manager, known as the Secondary element, is then responsible for scheduling the respective DMA job and informing the Primary of any updates.
 

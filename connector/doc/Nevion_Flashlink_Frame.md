@@ -12,7 +12,7 @@ This SNMP connector is a **DVE manager** that will create a Dynamic Virtual Elem
 
 ### Version Info
 
-| **Range** | **Description**                                                           | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                              | DCF Integration     | Cassandra Compliant     |
 |-----------|---------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x   | Basic range.                                                              | No                  | Yes                     |
 | 2.0.0.x   | Tree controls added to monitor parameters.                                | No                  | Yes                     |
@@ -32,7 +32,7 @@ This SNMP connector is a **DVE manager** that will create a Dynamic Virtual Elem
 
 ### Exported Connectors
 
-| **Exported Connectors**                                                                                              | **Description**  |
+| Exported Connectors                                                                                              | Description  |
 |----------------------------------------------------------------------------------------------------------------------|------------------|
 | [Nevion Flashlink Frame - GYDA](xref:Connector_help_Nevion_Flashlink_Frame_-_GYDA)                           | Flashlink Module |
 | [Nevion Flashlink Frame - ETH100](xref:Connector_help_Nevion_Flashlink_Frame_-_ETH100)                       | Flashlink Module |

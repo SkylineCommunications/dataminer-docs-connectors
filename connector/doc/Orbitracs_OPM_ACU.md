@@ -20,7 +20,7 @@ This connector uses **SNMP** to extract the relevant information used to monitor
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | RU-4.1                 |
+| 1.0.0.x   | RU-5.7-202             |
 
 ### System Info
 

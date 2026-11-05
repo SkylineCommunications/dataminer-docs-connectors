@@ -8,16 +8,16 @@ This connector is used to aggregate information coming from one or more collecto
 
 The connector has two levels of complexity:
 
-- On the back-end (BE) level, the **BE Manager** is responsible for a specific **county**. At this level, you can define how many collectors there are. The BE Manager is responsible for managing the load balance between these elements, as well as aggregating information from the county to the front-end level.
-- On the front-end (FE) level, the **FE Manager** is responsible for aggregating the information from all BE Managers (i.e. from all the counties) and presenting the result to the end user. It is the FE Manager that creates and controls the BE Manager elements.
+- On the backend (BE) level, the **BE Manager** is responsible for a specific **county**. At this level, you can define how many collectors there are. The BE Manager is responsible for managing the load balance between these elements, as well as aggregating information from the county to the frontend level.
+- On the frontend (FE) level, the **FE Manager** is responsible for aggregating the information from all BE Managers (i.e., from all the counties) and presenting the result to the end user. It is the FE Manager that creates and controls the BE Manager elements.
 
 ## About
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range                | Key Features     | Based on     | System Impact                                                                                                       |
+|----------------------|------------------|--------------|---------------------------------------------------------------------------------------------------------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | From version 1.0.0.45 onwards, the channel file name must be configured manually. For details, see [Initialization](#initialization). |
 
 ### Product Info
 
@@ -47,15 +47,19 @@ First you need to configure an **FE Manager**. To do this, follow these steps:
 
 1. Go to the **General** page, and set **Element Manager Type** to *Front-End* and **County to Monitor** to *N/A* (the default setting).
 
-1. Go to the **Configurations** page, and specify the time configuration:
+1. Go to the **Configurations** page, and configure the following settings:
 
-   - **Starting Period Minute**: Indicates when the first new period with collector data after the hour starts (e.g. if a new period starts each time at xx:01, set the parameter to 1).
+   - The time configuration settings:
 
-   - **Period Length**: Indicates how long a period takes (e.g. 4 minutes). This period should be seen as the periodicity for the generation of Agama files.
+     - **Starting Period Minute**: Indicates when the first new period with collector data after the hour starts (e.g., if a new period starts each time at xx:01, set the parameter to 1).
 
-   - **Period Margin**: Indicates how long the connector should wait before starting the aggregation cycle. There are two different margins, depending on the type of the element you are configuring (FE or BE). After the period margin has passed, data will be written into the parameter tables.
+     - **Period Length**: Indicates how long a period takes (e.g., 4 minutes). This period should be seen as the periodicity for the generation of Agama files.
 
-1. Also on the **Configurations** page, specify the **Provisioning Share Location LPI Folder** and **Provisioning Share Location SDP Folder** and add the credentials to access these folders.
+     - **Period Margin**: Indicates how long the connector should wait before starting the aggregation cycle. There are two different margins, depending on the type of the element you are configuring (FE or BE). After the period margin has passed, data will be written into the parameter tables.
+
+   - The **Provisioning Share Location LPI Folder** and **Provisioning Share Location SDP Folder**, as well as the credentials to access these folders.
+
+   - If you are using version **1.0.0.45** or higher, manually configure the channel file name by specifying the desired value in the **Provisioning Channel File Name** parameter.
 
 1. On the **Configurations** page, you can also define the path where the FE Manager can create **logging files**. These will contain information on the inconsistencies that the FE Manager encounters when trying to build the infrastructure topology diagram.
 

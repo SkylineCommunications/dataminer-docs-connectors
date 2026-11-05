@@ -10,10 +10,10 @@ The Generic Resource connector allows you to combine alarm states of different e
 
 ### Version Info
 
-| **Range**     | **Description**                                                 | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.1              | Initial version                                                 | Yes                 | Yes                     |
-| 1.0.1.x [SLC Main]   | Implementation of custom Input/Output table. Added DCF support. | Yes                 | Yes                     |
+| Range              | Description                                                     | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.1            | Initial version                                                 | Yes             | Yes                 |
+| 1.0.1.x [SLC Main] | Implementation of custom Input/Output table. Added DCF support. | Yes             | Yes                 |
 
 ## Installation and configuration
 
@@ -45,4 +45,4 @@ With the **Quick Type Table Set** parameter, you can populate the table with a s
 
 When the number of rows in the **Alarm table** is determined via **Selected Type**, the element connections can be configured under **Element Connections**.
 
-For every key in the table, an element can be selected; as parameter, choose **\[Element Alarm State\].**
+For every key in the table, an element can be selected; as parameter, choose **\[Element Alarm State\]**.

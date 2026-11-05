@@ -14,15 +14,21 @@ This connector can create different elements based on the retrieved data. Whethe
 
 ### Version Info
 
-| **Range**            | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range     | Supported Firmware                                                                                                                                                                              |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | **ERS118:** 0801, 0901, 1001, 1201, 1601, 1801, 1901, 2001, 2201,2301 **ERC108:** 1801,1901,2001,2101,2201 **ERC118:** 2001, 2201 **RRS08:** 1801, 3400, 3600 **RRS18:** 1801, 3100, 3400, 3600 |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | **ERS118:** 0801, 0901, 1001, 1201, 1601, 1801, 1901, 2001, 2201,2301 <br>**ERC108:** 1801,1901,2001,2101,2201 <br>**ERC118:** 2001, 2201 <br>**RRS08:** 1801, 3400, 3600 <br>**RRS18:** 1801, 3100, 3400, 3600 <br>**RRS04:** 3400 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ### Linked Connectors
 
@@ -30,7 +36,7 @@ The linked connectors represent cards that are inserted in the frame. For a list
 
 Below, you can also find an overview of the currently available cards and the firmware versions the connector currently supports.
 
-| **Card Connector** | **Range** | **Firmware Version**                                             |
+| Card Connector     | Range     | Firmware Version                                                 |
 |--------------------|-----------|------------------------------------------------------------------|
 | Axon ACP 2GF100    | 1.0.0.x   | 6034, 6040                                                       |
 | Axon ACP 2GU100    | 1.0.0.x   | 7498                                                             |
@@ -175,7 +181,7 @@ The **Insert Card** subpage can be used to insert an existing card element into 
 
 This page provides an overview of the frame's generic information, such as **Card Name**, **SW Rev.**, **HW Rev.**, **Serial Number**, etc.
 
-On the subpages, such as **Status**, **PSU**, **FAN**, **MIB**, **Network** and **Alarm Priority**, you can find the related frame status and/or configuration parameters.
+On the subpages, such as **Status**, **PSU**, **FAN**, **MIB**, **Network**, and **Alarm Priority**, you can find the related frame status and/or configuration parameters.
 
 ### Element Reflection
 

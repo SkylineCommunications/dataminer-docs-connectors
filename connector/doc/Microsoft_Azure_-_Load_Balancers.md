@@ -4,15 +4,9 @@ uid: Connector_help_Microsoft_Azure_-_Load_Balancers
 
 # Microsoft Azure - Load Balancers
 
-Azure Load Balancer distributes inbound flows that arrive at the load balancer's front end to back-end pool instances.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+Azure Load Balancer distributes inbound flows that arrive at the load balancer's frontend to backend pool instances.
 
 ### Product Info
 

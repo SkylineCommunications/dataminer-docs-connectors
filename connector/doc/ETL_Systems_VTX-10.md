@@ -14,13 +14,13 @@ This connector makes it possible to connect the inputs of a device to certain ou
 
 ### Creation
 
-#### SNMP connection (1.x.x.x version)
+#### SNMP connection (1.x.x.x version, reintroduced in 2.0.1.x)
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.19.93.5*.
+- **IP address/host**: The polling IP of the device, e.g., *10.19.93.5*.
 
 SNMP Settings:
 
@@ -34,8 +34,11 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.19.93.5*.
-- **IP port**: The IP port of the device., e.g. 4000.
+- **IP address/host**: The polling IP of the device, e.g., *10.19.93.5*.
+- **IP port**: The IP port of the device., e.g., 4000.
+
+> [!NOTE]
+> The 2.0.0.x range is obsolete; the current main range is 2.0.1.x, which supports both a serial and an SNMP connection (SNMP interface to enable polling/locking outputs).
 
 ### Configuration
 

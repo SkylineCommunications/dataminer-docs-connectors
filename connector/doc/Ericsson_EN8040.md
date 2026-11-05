@@ -14,9 +14,9 @@ The connector uses the **SNMP** protocol to communicate with the device.
 
 ### Version Info
 
-| **Range** | **Description**         | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------|---------------------|-------------------------|
-| 1.0.1.x          | Added output selection. | No                  | Yes                     |
+| Range   | Description             | DCF Integration | Cassandra Compliant |
+|---------|-------------------------|-----------------|---------------------|
+| 1.0.1.x | Added output selection. | No              | Yes                 |
 
 ### Product Info
 
@@ -95,7 +95,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-The **1.0.2.x** connector range of the **Ericsson EN8040** protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.2.x** connector range of the **Ericsson EN8040** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

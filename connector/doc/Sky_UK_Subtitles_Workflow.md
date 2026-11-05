@@ -30,7 +30,7 @@ To use this connector, create a service that uses it as its service definition. 
 
 This is the default service configuration:
 
-| **Connector**                             | **Description**                                                    | **Subscription Name**          |
+| Connector                             | Description                                                    | Subscription Name          |
 |----------------------------------------|--------------------------------------------------------------------|--------------------------------|
 | Axon ACP - HSI10                       | Slot Status 0                                                      | InserterSlot0Status            |
 | Axon ACP - HSI10                       | Protocol Status                                                    | InserterProtocolStatus         |
@@ -46,7 +46,7 @@ This is the default service configuration:
 | Cavena Subtitle Unit                   | Status (Event)                                                     | SubtitleUnitOnAir              |
 | Cavena Subtitle Unit                   | Message (Event)                                                    | SubtitleUnitMessage            |
 
-The connector will automatically assign a subscription name to specific parameters. This subscription name works as an alias that can be used in the Condition column of the Workflow Logic Table and Input Faults Table. Every subscription name that is used in the Workflow Logic Table should be also present in the Subscriptions Table. If this is not the case, the connector will assume that the condition is invalid and it will be considered false in the workflow. If you include a parameter that is not listed above, the connector will set a generic subscription name (e.g. S1).
+The connector will automatically assign a subscription name to specific parameters. This subscription name works as an alias that can be used in the Condition column of the Workflow Logic Table and Input Faults Table. Every subscription name that is used in the Workflow Logic Table should be also present in the Subscriptions Table. If this is not the case, the connector will assume that the condition is invalid and it will be considered false in the workflow. If you include a parameter that is not listed above, the connector will set a generic subscription name (e.g., S1).
 
 If the **Service Status** parameter from BSS Schedule Data - Bus is added, this workflow will not trigger any alarms if this parameter is set to *Off-Air*. If it is set to *NA* or *On-Air*, or if this parameter is not included, the workflow will run as expected.
 
@@ -82,7 +82,7 @@ The **Workflow Logic Table** has the following columns:
 
 - **Process**: Description of the condition defined for this workflow
 - **Condition**: The logical expression that will determine the value of the condition.
-  The logical expressions used in the Condition column need to use the following format: "\<A\>or\<B\>or\<C\>;A\|S1=12;B-\|S2=3;C\|S1=5", where A, B and C are groups, which are defined with simple logical conditions. The allowed logical operators for groups are AND, OR and NOT. For conditions, the allowed operators are: Equal: "=", Not Equal:"!=", Greater: "\>", Minor: "\<", Greater and Equal: "\>=" and Minor and Equal: "\<=". A condition can also be made based on another subscription value, e.g. "\<A\>;A\|S1=S2".
+  The logical expressions used in the Condition column need to use the following format: "\<A\>or\<B\>or\<C\>;A\|S1=12;B-\|S2=3;C\|S1=5", where A, B and C are groups, which are defined with simple logical conditions. The allowed logical operators for groups are AND, OR and NOT. For conditions, the allowed operators are: Equal: "=", Not Equal:"!=", Greater: "\>", Minor: "\<", Greater and Equal: "\>=" and Minor and Equal: "\<=". A condition can also be made based on another subscription value, e.g., "\<A\>;A\|S1=S2".
 - **Value**: The current value of the condition (*Yes* or *No*).
 
 ### General Parameters

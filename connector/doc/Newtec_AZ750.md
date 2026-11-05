@@ -14,7 +14,7 @@ Range **2.0.0.x** of the protocol uses **SNMP** communication to monitor the dev
 
 ### Version Info
 
-| **Range** | **Description**        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description            | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial serial version | No                  | Yes                     |
 | 2.0.0.x          | Initial SNMP version   | No                  | Yes                     |
@@ -31,11 +31,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600.*
-  - **Databits**: Databits specified in the manual of the device, e.g. *7.*
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1.*
-  - **Parity**: Parity specified in the manual of the device, e.g. *No.*
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No.*
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600.*
+  - **Databits**: Databits specified in the manual of the device, e.g., *7.*
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1.*
+  - **Parity**: Parity specified in the manual of the device, e.g., *No.*
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No.*
 
 - Interface connection:
 

@@ -55,4 +55,4 @@ There is no redundancy defined.
 
 ## How to use
 
-When the Destination Address and Source Address have been correctly specified on the Configuration page, you can check status information on the General page, configuration information on the System Settings page, and various measurements (e.g. temperature, current, voltage) on the System Conditions page.
+When the Destination Address and Source Address have been correctly specified on the Configuration page, you can check status information on the General page, configuration information on the System Settings page, and various measurements (e.g., temperature, current, voltage) on the System Conditions page.

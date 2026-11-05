@@ -50,10 +50,6 @@ SNMP Settings:
 
 On the web interface of the device, look for the SNMP module to add the IP of the DataMiner Agent to a host. If the SNMP menu module is not present, a firmware upgrade will be required from EEG.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

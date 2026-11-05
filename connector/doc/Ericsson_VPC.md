@@ -12,7 +12,7 @@ Ericsson VPC will retrieve the active configuration file from the Video Processi
 
 ### Version Info
 
-| **Range** | **Description**                 | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                     | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                 | No                  | No                      |
 | 2.0.0.x          | New range without DVE creation. | No                  | No                      |

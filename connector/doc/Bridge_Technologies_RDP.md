@@ -96,7 +96,7 @@ Contains a parameter that can be set by an automation script or manager protocol
 
 Format: *engine=1&dst_ipa=10:0:30:216&src_ipa=239:255:0:4&src_port=5500&src_ssm=0:0:0:0&protocol=eth&dst_ipa=10:0:30:21&dst_iface=data&enable=false*
 
-| **Argument** | **Description**                                                                                                         |
+| Argument | Description                                                                                                         |
 |--------------|-------------------------------------------------------------------------------------------------------------------------|
 | dst_ipa      | The IP address to forward to.                                                                                           |
 | dst_port     | The UDP port to forward to.                                                                                             |

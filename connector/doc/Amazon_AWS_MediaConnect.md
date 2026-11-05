@@ -4,9 +4,12 @@ uid: Connector_help_Amazon_AWS_MediaConnect
 
 # Amazon AWS MediaConnect
 
+## About
+
 This connector implements part of the communication with the AWS Elemental MediaConnect REST API, AWS CloudWatch REST API, and AWS SNS REST API. Its goal is to retrieve information related to AWS MediaConnect flows and their related metrics. The connector is capable of receiving unsolicited messages from SNS topics related to MediaConnect Flow Alarms. These will be used to poll the related flow metrics.
 
-## About
+> [!NOTE]
+> When you upgrade this connector to version 1.0.1.21 or higher, we recommend installing the [Amazon AWS MediaConnect DataMiner Solution](https://catalog.dataminer.services/details/007eb8fa-68be-4307-aa70-94edb2a03d23) to be able to use all the features of the connector.
 
 ### Version Info
 
@@ -71,6 +74,8 @@ The element created with this connector consists of the following data pages:
 
 - **General**: Contains the parameters **Account**, **Access Key ID**, and **Secret Access Key**, which are used for authentication and verification. The parameters SNS URL and SNS Topic ARN contain the information related to the SNS subscription topic from which the connector received unsolicited messages.
 
+  Three different types of authentication mechanisms (*Key Pair*, *Metadata*, and *Assume Role*) are available in range **1.0.1.x**. You can select the preferred mechanism using the **Credentials Source** parameter.
+
 - **SNS Debug**: The parameter **SNS Message** contains the last received SNS message. This can be used for debug purposes to determine which information was received.
 
 - **Flow Tree**: Contains a tree control that shows the current flows. For each flow, there is a tab with **Sources**, **Outputs**, and **Metrics**.
@@ -91,3 +96,10 @@ The element created with this connector consists of the following data pages:
 - **Flow Metric**: Contains the **Flow Metrics** table, which is linked to the **Flows** table. It contains 53 metrics related to a flow. This information is retrieved from CloudWatch. In case a notification is received via **SNS** for a flow, the related metrics will be polled again.
 
 - **Source Metric**: Contains the **Source Metrics** table, which is linked to the **Sources** table. It contains 26 metrics related to a source. This information is retrieved from CloudWatch.
+
+- **Router Control**: Contains the **Router Inputs**, **Router Outputs**, and **Router Network Interfaces** tables. Inputs and outputs are linked to network interfaces, and outputs can be linked to an input when the output is configured to use the router input.
+
+  > [!NOTE]
+  > To create and update router inputs, outputs, and network interfaces, you will need to install the [Amazon AWS MediaConnect DataMiner Solution](https://catalog.dataminer.services/details/007eb8fa-68be-4307-aa70-94edb2a03d23), as this connector relies on scripts included in the solution to perform these operations.
+
+  **InterApp**: Contains the **InterApp Messages** table, which shows messages that the connector received using InterApp communication.

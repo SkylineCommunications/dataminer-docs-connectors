@@ -93,7 +93,7 @@ This page displays general information on the device, such as the **Unit Name**,
 
 To make sure the connector can poll data from the device, you need to first fill in the **Username** and **Password** and then click the **Log in** button. This step is **mandatory** in order to poll data from the device.
 
-You can also execute some **System Actions** (e.g. **Reset**, **Shutdown**, **Database Load**) on this page, by first selecting the action with the **System Actions** parameter and then clicking the **Execute Action** button.
+You can also execute some **System Actions** (e.g., **Reset**, **Shutdown**, **Database Load**) on this page, by first selecting the action with the **System Actions** parameter and then clicking the **Execute Action** button.
 
 ### Firewall
 
@@ -139,7 +139,7 @@ This page displays general information on the device, such as the **Unit Name**,
 
 To make sure the connector can poll data from the device, you need to first fill in the **Username** and **Password** and then click the **Log in** button. This step is **mandatory** in order to poll data from the device. After entering or changing the required credentials, please restart the DataMiner element.
 
-You can also execute some **System Actions** (e.g. **Reset**, **Shutdown**, **Database Load**), by first selecting the action on the **System Actions** subpage and then clicking the relevant button.
+You can also execute some **System Actions** (e.g., **Reset**, **Shutdown**, **Database Load**), by first selecting the action on the **System Actions** subpage and then clicking the relevant button.
 
 ### Firewall
 

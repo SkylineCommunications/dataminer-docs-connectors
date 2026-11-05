@@ -12,7 +12,7 @@ This is a **serial** or **SNMP** connector used to monitor and control the **Mit
 
 ### Version Info
 
-| **Range** | **Description**                                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                    | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                | Yes                 | Yes                     |
 | 2.0.0.x          | Serial connection replaced by SNMP connection. | No                  | Yes                     |
@@ -34,7 +34,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device.
 - **Bus address**: The bus address of the connected device, between *64* and *95.*
 
@@ -44,7 +44,7 @@ This connector uses an SNMP connection and requires the following input during e
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device.
 
 ## Usage (1.0.0.x range)

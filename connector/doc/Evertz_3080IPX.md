@@ -16,16 +16,16 @@ The connector communicates via **SNMP calls**. To process alarms as quickly as p
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                              | No                  | Yes                     |
-| 1.0.1.x              | Added HTTP connection.                                                                                                                                        | No                  | Yes                     |
-| 1.0.2.x              | Added port name to display key of all port-related tables.                                                                                                    | No                  | Yes                     |
-| 1.0.3.x              | Added Syslog message support.                                                                                                                                 | No                  | Yes                     |
-| 1.0.5.x              | Changed Timezone Offset from number to discrete. Changed Speed from number to discrete. Changed discrete display values in Auto Routing - IGMP Routing Table. | No                  | Yes                     |
-| 1.1.0.x [Obsolete]     |New discrete values for port configuration speed; usability enhancements.                                                                                     | No                  | Yes                     |
-| 1.1.1.x [Obsolete]     |Adds redundant polling.                                                                                                                                       | No                  | Yes                     |
-| 1.1.3.x [SLC Main]   | Fixed SNMP redundant polling. HTTP dynamic polling.                                                                                                           | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | Yes |
+| 1.0.1.x | Added HTTP connection. | No | Yes |
+| 1.0.2.x | Added port name to display key of all port-related tables. | No | Yes |
+| 1.0.3.x | Added Syslog message support. | No | Yes |
+| 1.0.5.x | Changed Timezone Offset from number to discrete. Changed Speed from number to discrete. Changed discrete display values in Auto Routing - IGMP Routing Table. | No | Yes |
+| 1.1.0.x [Obsolete] | New discrete values for port configuration speed; usability enhancements. | No | Yes |
+| 1.1.1.x [Obsolete] | Adds redundant polling. | No | Yes |
+| 1.1.3.x [SLC Main] | Fixed SNMP redundant polling. HTTP dynamic polling. | No | Yes |
 
 ### Product Info
 
@@ -47,7 +47,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -150,4 +150,4 @@ This page contains the routing matrix control.
 
 ### Web Interface Page
 
-On this page you can directly connect to the web page of the device itself. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+On this page you can directly connect to the webpage of the device itself. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

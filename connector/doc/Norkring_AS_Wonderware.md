@@ -14,13 +14,13 @@ It will export different connectors based on the information present in the Stat
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 
 ### Exported Connectors
 
-| **Exported Connector**            | **Description**            |
+| Exported Connector            | Description            |
 |----------------------------------|----------------------------|
 | Norkring AS Wonderware Type1 DVE | Connector for Type1 Stations  |
 | Norkring AS Wonderware Type2 DVE | Connector for Type 2 Stations |

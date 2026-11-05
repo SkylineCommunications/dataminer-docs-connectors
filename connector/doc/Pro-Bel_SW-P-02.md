@@ -14,7 +14,7 @@ A matrix is used in order to easily connect a destination with a source.
 
 ### Version Info
 
-| **Range** | **Description**                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                         | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial range. Serial interface.                    | No                  | Yes                     |
 | 2.0.0.x          | Based on 1.0.0.1. Smart-serial interface.           | No                  | Yes                     |

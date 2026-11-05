@@ -14,7 +14,7 @@ Through SFTP, the topology files will be retrieved. These files will be split pe
 
 ### Version Info
 
-| **Range** | **Description**                        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                            | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                        | No                  | Yes                     |
 | 2.0.0.x          | Virtual Protocol. SNMP pages are gone. | No                  | Yes                     |

@@ -10,16 +10,15 @@ Imagine Communications' Software-Defined Networking (SDN) framework is a hybrid 
 
 ### Version Info
 
-| **Range**            | **Key Features**                       | **Based on** | **System Impact**                                                                                                                       |
-|----------------------|----------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                       | -            | This implementation is considered obsolete. Please use Imagine Communications LRC instead.                                              |
-| 2.0.0.x [SLC Main]   | Support for REST API and LRC protocol. | -            | This implementation uses the REST API as the main source of information and uses LRC for information not yet available on the REST API. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | This implementation is considered obsolete. Please use Imagine Communications LRC instead. |
+| 2.0.0.x [SLC Main] | Support for REST API and LRC protocol. | - | This implementation uses the REST API as the main source of information and uses LRC for information not yet available on the REST API. |
 
 ### Product Info
 
 | Range     | Supported Firmware                                      |
 |-----------|---------------------------------------------------------|
-| 1.0.0.x   | 2.9.2.r1.588                                            |
 | 2.0.0.x   | REST API SDNO Controller 3.6 Logical Router Control 1.5 |
 
 ### System Info
@@ -40,7 +39,7 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination (default: *52116*).
+- **IP port**: The IP port of the destination (default: *52116*).
 
 #### HTTP Connection
 
@@ -49,13 +48,13 @@ This connector uses an HTTP Rest API connection and requires the following input
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination (default: 80).
+- **IP port**: The IP port of the destination (default: *80*).
 
 ### Initialization
 
 The **Poll Configuration** page allows you to specify which information should be retrieved from the REST API and from LRC. Polling is only done on startup or on demand. The source/destination information will be updated with LRC notifications.
 
-Web Interface
+### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 

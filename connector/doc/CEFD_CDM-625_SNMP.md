@@ -30,7 +30,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 
@@ -129,7 +129,7 @@ VLAN Mode: This mode is supported if Working Mode is set to *Managed Switch*, wi
 
 Below this, you can find the **VLAN Table**, which contains the following parameters:
 
-- **VLAN ID:** This parameter is read-only and reflects the ID value assigned in de PVID column of the Per Port Configuration Table (i.e. any ID has a value range of 0001-4095).
+- **VLAN ID:** This parameter is read-only and reflects the ID value assigned in de PVID column of the Per Port Configuration Table (i.e., any ID has a value range of 0001-4095).
 - **Port 1** through **Port 4:** Use the drop-down menu to set the port to *Untagged*, *Tagged* or *Filtered*.
 - **VLAN Row Status:** You can use the button to **Delete** the VLAN ID.
 - **Create VLAN:** Allows you to create a new VLAN ID.
@@ -267,7 +267,7 @@ In the **Redundancy** section, you can configure the following parameters:
 
 When redundant modems are used and the selected unit is currently the online unit, click **Force 1:1 Switch** to force a switchover so the unit will then be in offline (standby) mode. This command is only valid for the online unit in a 1:1 pair.
 
-Finally, the **Redundancy State and Offline Unit Status** allow you to monitor the redundancy setup - both the status of the active modem (i.e. *Online* or *Offline*) and the detected presence of a redundancy switch.
+Finally, the **Redundancy State and Offline Unit Status** allow you to monitor the redundancy setup - both the status of the active modem (i.e., *Online* or *Offline*) and the detected presence of a redundancy switch.
 
 ### FTP
 

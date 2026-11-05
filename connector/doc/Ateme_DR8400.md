@@ -10,11 +10,11 @@ This SNMP connector can be used to monitor and control the Ateme DR8400. Alarm m
 
 ### Version Info
 
-| **Range**            | **Key Features**             | **Based on** | **System Impact** |
-|----------------------|------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.             | -            | -                 |
-| 1.0.1.x              | New firmware version 2.0.0.x | -            | -                 |
-| 1.1.0.x [SLC Main]   | New firmware version.        | -            | -                 |
+| Range              | Key Features                 | Based on | System Impact |
+|--------------------|------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.             | -        | -             |
+| 1.0.1.x            | New firmware version 2.0.0.x | -        | -             |
+| 1.1.0.x [SLC Main] | New firmware version.        | -        | -             |
 
 ### Product Info
 
@@ -47,14 +47,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

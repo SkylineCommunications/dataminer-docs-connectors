@@ -62,14 +62,6 @@ SERIAL CONNECTION:
   - **IP address**: The polling IP of the destination, containing four digits.
   - **Bus address**: The bus address of the device.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following data pages:
@@ -87,4 +79,4 @@ The element has the following data pages:
 - **Pro Logic II**
 - **Dolby Stream Muxing**
 - **Add-On**
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.

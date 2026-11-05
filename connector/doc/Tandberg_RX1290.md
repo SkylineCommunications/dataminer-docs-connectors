@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not needed.
 
 SNMP Settings:
@@ -117,7 +117,7 @@ The following page buttons are available:
 
 - **Teletext**: Displays the status of and lets you change the parameters for Teletext, such as **Teletext Status, Teletext Reason** and **Teletext PID**.
 
-The page also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered** **externally** (e.g. via Automation scripts) or from within the connector.
+The page also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered** **externally** (e.g., via automation scripts) or from within the connector.
 
 ### Video Page
 
@@ -147,11 +147,11 @@ This page contains parameters related to redundancy parameters, such as **CA Det
 
 ### Embedded Web Server
 
-This page contains a link to the web page of the actual device.
+This page contains a link to the webpage of the actual device.
 
 ### Web Interface
 
-This page shows the web page of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page shows the webpage of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## Notes
 

@@ -10,7 +10,7 @@ The Miteq NSUN (New Switchover Unit - N) is designed to provide improved reliabi
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                           | **Based on** | **System Impact** |
+| Range              | Key Features                                                             | Based on   | System Impact   |
 |----------------------|----------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. Converter Settings table with forward control capability. | -            | -                 |
 

@@ -4,7 +4,7 @@ uid: Connector_help_Route_Mobile_SmsPlus
 
 # Route Mobile SmsPlus
 
-The **Route Mobile SmsPlus** is used to send text messages using an HTTP request. The connector is mainly used with an Automation script to send certain messages to customer mobile phones.
+The **Route Mobile SmsPlus** is used to send text messages using an HTTP request. The connector is mainly used with an automation script to send certain messages to customer mobile phones.
 
 ## About
 
@@ -52,8 +52,8 @@ This section contains the following information:
 - **Message Type:** The type of message that needs to be sent.
 - **Delivery Report:** Whether a delivery report is required or not.
 - **Automation:** Combination of the recipient mobile number and message, separated by a pipe character ("\|").
-- **Mobile Number:** The mobile number that will be processed by Automation.
-- **Message:** The message that will be processed by Automation.
+- **Mobile Number:** The mobile number that will be processed by automation.
+- **Message:** The message that will be processed by automation.
 - **Date Time**: The date and time when the message is sent.
 - **Logging**: The status of the sent message.
 - **HTTP Status Code:** The status of the HTTP code.

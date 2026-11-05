@@ -19,13 +19,6 @@ The connector also allows manual configuration of monitoring via SNMP.
 | 1.0.0.x [Obsolete] | Initial version.                              | -            | -                 |
 | 1.0.1.x [SLC Main] | Update for compliance with current standards. | 1.0.0.6      | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -43,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the Evertz 7x00 Frame containing the card, e.g. *192.168.100.161*.
+- **IP address/host**: The polling IP or URL of the Evertz 7x00 Frame containing the card, e.g., *192.168.100.161*.
 - **IP port**: The IP port of the destination. Default: *161*.
 - **Bus address**: The frame card slot number for the device. Default: *15*. Range: *1* - *100.*
 
@@ -51,14 +44,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to Use
 

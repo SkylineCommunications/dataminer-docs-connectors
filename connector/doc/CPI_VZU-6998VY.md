@@ -10,7 +10,7 @@ The CPI VZU-6998VY is a 750 W High-Power Amplifier (HPA). This connector uses se
 
 ### Version Info
 
-| **Range**            | **Key Features**                         | **Based on** | **System Impact** |
+| Range              | Key Features                           | Based on   | System Impact   |
 |----------------------|------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                          | -            | -                 |
 | 1.1.0.x [SLC Main]   | Ranges changed for RF output parameters. | -            | -                 |
@@ -49,7 +49,7 @@ The element consists of the data pages detailed below.
 
 ### Main View
 
-Contains important information related to the device itself, e.g. High Reflected RF Fault, RF Output Power (dBm), Helix Voltage, System State.
+Contains important information related to the device itself, e.g., High Reflected RF Fault, RF Output Power (dBm), Helix Voltage, System State.
 
 ### General Control
 

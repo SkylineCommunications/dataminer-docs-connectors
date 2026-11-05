@@ -12,13 +12,15 @@ Evertz's Nielsen Universal Reader module provides a solution for monitoring the 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x              | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Cassandra compliant  | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.0.x   | No                  | No                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -37,14 +39,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

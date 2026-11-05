@@ -14,7 +14,7 @@ The different parameters from the device are displayed on multiple pages grouped
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                | **DCF Integration** | **Cassandra Compliant** |
+| Range            | Description                                                                                                | DCF Integration | Cassandra Compliant |
 |----------------------|----------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                                                               | No                  | Yes                     |
 | 1.0.1.x              | New range that adds new HTTP connection and creation of DVEs. Supports node redundancy. Supports new firmware. | No                  | Yes                     |
@@ -30,7 +30,7 @@ The different parameters from the device are displayed on multiple pages grouped
 
 ### Exported Connectors
 
-| **Exported Connectors**     | **Description**                                                                                                                                                                        |
+| Exported Connectors     | Description                                                                                                                                                                        |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ruckus Wireless vSCG - AP   | Separate connector that represents each individual access point. Shows its general parameters and statistics.                                                                          |
 | Ruckus Wireless vSCG - Zone | Separate connector that represents each individual zone. Shows the general parameters, the access points, and WLANs that belong to that zone along with the data for each one of them. |
@@ -83,7 +83,7 @@ Once created, the element can be used immediately. There are 8 pages available, 
 
 ### System Statistics
 
-This page displays general statistical information about the device, e.g. **Number AP**, **Number STA**, **WLAN Total Rx Pkts**, etc.
+This page displays general statistical information about the device, e.g., **Number AP**, **Number STA**, **WLAN Total Rx Pkts**, etc.
 
 ### Interfaces
 
@@ -95,7 +95,7 @@ This page contains information organized by **Service Set Identifier (SSID)**. F
 
 ### SCG WLAN
 
-The information on this page is also organized by SSID and is similar to the information on the WLAN page, with a number of additional details, e.g. **Zone**, **Domain**, and **Authentication Type**.
+The information on this page is also organized by SSID and is similar to the information on the WLAN page, with a number of additional details, e.g., **Zone**, **Domain**, and **Authentication Type**.
 
 ### WLAN AP
 
@@ -207,7 +207,7 @@ Finally, the page also contains a page button, **SCG AP DVEs**, which displays t
 
 ### SCG WLAN
 
-The information on this page is also organized by SSID and is similar to the information on the WLAN page, with a number of additional details, e.g. **Zone**, **Domain**, and **Authentication Type**.
+The information on this page is also organized by SSID and is similar to the information on the WLAN page, with a number of additional details, e.g., **Zone**, **Domain**, and **Authentication Type**.
 
 ### SCG SoftGRE Tunnels
 

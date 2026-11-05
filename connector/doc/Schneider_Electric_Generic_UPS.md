@@ -41,7 +41,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The IP address of the device, e.g. *192.168.3.12*.
+- **IP address/host**: The IP address of the device, e.g., *192.168.3.12*.
 - **Device address**: Not required.
 
 SNMP Settings:

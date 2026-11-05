@@ -14,7 +14,7 @@ In the main Newtec dialog element, you can indicate whether a DVE should be crea
 
 ### Version Info
 
-| **Range**            | **Description**               | **DCF Integration** | **Cassandra Compliant** |
+| Range            | Description               | DCF Integration | Cassandra Compliant |
 |----------------------|-------------------------------|---------------------|-------------------------|
 | 1.0.1.x [SLC Main]   | DVE structure changed. | No                  | Yes                     |
 

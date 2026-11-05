@@ -60,7 +60,7 @@ This page displays the crosspoints of the **Matrix** and allows you to set new c
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Jupiter VM 3000 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Jupiter VM 3000 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party protocols (for instance a manager).
 

@@ -14,7 +14,7 @@ The SES S.A. CMCS connector monitors the inputs on this PLC through the Factoryt
 
 ### Version Info
 
-| **Range**     | **Description**                                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                | DCF Integration | Cassandra Compliant |
 |----------------------|------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                               | No                  | Yes                     |
 | 1.0.1.x [SLC Main]   | Filters signals for specific listening groups. | No                  | Yes                     |
@@ -75,4 +75,4 @@ The **Data Access Subscriptions** **Table** contains the following columns:
 - **TimeStamp:** The time when the server sent an update for this subscription item.
 - **Tag:** The tag of the subscription item.
 
-This page also contains a subpage **Advanced Configuration**, which displays a table where you can **Import, Export, Remove,** **Clear** or **Add** the input subscriptions to the element. It is also in this table that subscriptions can be configured (e.g. Signal Name; GOC; SMC1;SMC2; Spare Listening Group 1;Spare Listening Group 2;Spare Listening Group 3).
+This page also contains a subpage **Advanced Configuration**, which displays a table where you can **Import, Export, Remove,** **Clear** or **Add** the input subscriptions to the element. It is also in this table that subscriptions can be configured (e.g., Signal Name; GOC; SMC1;SMC2; Spare Listening Group 1;Spare Listening Group 2;Spare Listening Group 3).

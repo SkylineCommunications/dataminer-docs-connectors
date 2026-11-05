@@ -44,7 +44,7 @@ SNMP Settings:
 
 ### General
 
-This page contains the main information and status of the device, i.e. its **Name**, current **Uptime** and **Temperature**.
+This page contains the main information and status of the device, i.e., its **Name**, current **Uptime** and **Temperature**.
 
 ### Power Supply
 

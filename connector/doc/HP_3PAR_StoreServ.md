@@ -79,15 +79,15 @@ This page displays the **Fibre Channel Table**, with information about the **Fib
 
 ### SAS Ports
 
-This page displays the **SAS Ports Table**, with information about the SAS ports, i.e. the **WWN**, **State**, **Mode**, **Rate**, **Connected Device Type**, **Connected Device** and **Topology**.
+This page displays the **SAS Ports Table**, with information about the SAS ports, i.e., the **WWN**, **State**, **Mode**, **Rate**, **Connected Device Type**, **Connected Device** and **Topology**.
 
 ### Fans
 
-This page displays the **Fans Table**, with information about the **Fans Ports**, i.e. the **Device ID**, **Element Name**, **State** and **Speed**.
+This page displays the **Fans Table**, with information about the **Fans Ports**, i.e., the **Device ID**, **Element Name**, **State** and **Speed**.
 
 ### Power Supply
 
-This page displays the **Power Supply Table**, with information about the **Power Supply Ports**, i.e. the **ID**, **Model**, **Manufacturer**, **Model Name**, **ACState, DC State** and **State**.
+This page displays the **Power Supply Table**, with information about the **Power Supply Ports**, i.e., the **ID**, **Model**, **Manufacturer**, **Model Name**, **ACState, DC State** and **State**.
 
 ### Admin
 

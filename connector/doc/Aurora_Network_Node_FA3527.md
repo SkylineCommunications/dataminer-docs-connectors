@@ -39,7 +39,7 @@ The element created with this connector has the following data pages:
 - **Alarming**: Allows you to configure the alarm severity/state for the module, EDFA, and lasers. Also shows whether an alarm is active or if it was active in the past. The clear button allows you to clear the complete alarm history.
 
   > [!NOTE]
-  > Because the device is slow to implement a parameter set, a delay of 1.5 seconds is used. In some rare situations, it can occur that this delay is not enough. In that case, it will be changed to 30 seconds when the connector polls next. Please take this into account if you use Automation scripts.
+  > Because the device is slow to implement a parameter set, a delay of 1.5 seconds is used. In some rare situations, it can occur that this delay is not enough. In that case, it will be changed to 30 seconds when the connector polls next. Please take this into account if you use automation scripts.
 
 - **User Setup**: Contains information regarding the Mode Selection, Laser Setup, and Alarm Setup.
 

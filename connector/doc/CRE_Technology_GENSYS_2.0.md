@@ -14,12 +14,6 @@ The **CRE Technology GENSYS 2.0** is a control unit designed for generator elect
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version. | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -41,14 +35,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: *502*
   - **Bus address**: *1*
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

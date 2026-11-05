@@ -1,0 +1,20 @@
+@startuml Connection State
+!theme reddress-darkblue
+
+'This diagram describes the possible states from the parameter Connection States, available in the connector'
+
+skinparam LifeLineStrategy solid
+skinparam LIfeLineBorderThickness 10
+
+[*] --> Not_Initialized : Element started
+Not_Initialized --> OK : Correct\ncredentials
+Not_Initialized --> Unauthorized: Incorrect\ncredentials
+Unauthorized -> OK: Correct\ncredentials
+OK --> [*]: Element\nstopped
+OK --> Error: Element\nnot polling (timeout)
+Error --> OK: Element\n resume polling
+Unauthorized --> [*] : Element\nstopped
+Not_Initialized --> [*]: Element\nstopped
+Error --> [*]: Element\nstopped
+
+@enduml

@@ -61,4 +61,4 @@ The connector displays all data on the **Monitoring** page.
 
 ## Notes
 
-The average temperature parameters are not polled from the device, but calculated by the connector. If the **timer base** is changed, the period over which the averages are calculated will not match the displayed period (e.g. 10 and 20 min).
+The average temperature parameters are not polled from the device, but calculated by the connector. If the **timer base** is changed, the period over which the averages are calculated will not match the displayed period (e.g., 10 and 20 min).

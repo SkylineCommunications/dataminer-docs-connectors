@@ -21,19 +21,19 @@ The most important features of the **Heights Networking Platform** are the follo
 
 ### Version Info
 
-| **Range**         | **Description**                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial Comtech Netvue-specific branch.                                                                                          | No                  | Yes                     |
-| 1.1.0.x                  | Comtech Netvue: Branched from 1.0.0.16 - supports firmware 2.4.1.                                                                | No                  | Yes                     |
-| 1.2.0.x                  | Comtech Netvue: Branched from 1.1.0.13 - supports firmware 2.6.1.                                                                | No                  | Yes                     |
-| 1.3.0.x                  | Comtech Netvue: Branched from 1.2.0.1 - supports firmware 3.x.                                                                   | No                  | Yes                     |
-| 1.3.1.x                  | Comtech Netvue: Branched from 1.3.0.10 - layout + SNMP type tags fix.                                                            | No                  | Yes                     |
-| 1.4.0.x                  | Comtech Netvue: Branched from 1.3.1.5 - rearranged Netvue IDs functionality.                                                     | No                  | Yes                     |
-| 1.5.0.x                  | Comtech NetVue: Branched from 1.4.0.15 - updated mechanism to sync element data over multiple VMSs.                              | No                  | Yes                     |
-| 1.5.1.x                  | Comtech NetVue: Support for Mobility/PICO.                                                                                       | No                  | Yes                     |
-| 1.5.2.x **\[SLC Main\]** | Comtech NetVue: Branched from 1.5.1.14 - supports MODCOD changes.                                                                | No                  | Yes                     |
-| 1.6.0.x                  | Comtech NetVue: Support for new architecture - not currently released.                                                           | No                  | Yes                     |
-| 2.0.0.x                  | Branched from 1.1.0.15 - removed Netvue-specific functionality in order to let the connector function outside a Netvue environment. | No                  | Yes                     |
+| Range                | Description                                                                                                                         | DCF Integration | Cassandra Compliant |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x              | Initial Comtech Netvue-specific branch.                                                                                             | No              | Yes                 |
+| 1.1.0.x              | Comtech Netvue: Branched from 1.0.0.16 - supports firmware 2.4.1.                                                                   | No              | Yes                 |
+| 1.2.0.x              | Comtech Netvue: Branched from 1.1.0.13 - supports firmware 2.6.1.                                                                   | No              | Yes                 |
+| 1.3.0.x              | Comtech Netvue: Branched from 1.2.0.1 - supports firmware 3.x.                                                                      | No              | Yes                 |
+| 1.3.1.x              | Comtech Netvue: Branched from 1.3.0.10 - layout + SNMP type tags fix.                                                               | No              | Yes                 |
+| 1.4.0.x              | Comtech Netvue: Branched from 1.3.1.5 - rearranged Netvue IDs functionality.                                                        | No              | Yes                 |
+| 1.5.0.x              | Comtech NetVue: Branched from 1.4.0.15 - updated mechanism to sync element data over multiple VMSs.                                 | No              | Yes                 |
+| 1.5.1.x              | Comtech NetVue: Support for Mobility/PICO.                                                                                          | No              | Yes                 |
+| 1.5.2.x \[SLC Main\] | Comtech NetVue: Branched from 1.5.1.14 - supports MODCOD changes.                                                                   | No              | Yes                 |
+| 1.6.0.x              | Comtech NetVue: Support for new architecture - not currently released.                                                              | No              | Yes                 |
+| 2.0.0.x              | Branched from 1.1.0.15 - removed Netvue-specific functionality in order to let the connector function outside a Netvue environment. | No              | Yes                 |
 
 ### Product Info
 
@@ -75,7 +75,7 @@ SNMP Settings:
 
 This page displays general information about the device: **system information**, **contact information** and several **device status parameters.**
 
-These status parameters include **status alarms** (e.g. Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
+These status parameters include **status alarms** (e.g., Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
 
 ### Admin
 
@@ -129,7 +129,7 @@ Via the **Encryption/Decryption Keys** page button, you can preconfigure the enc
 
 This page contains the following tables:
 
-- The **Remote Site List table**, which contains information on the device communication with the associated remote sites (e.g. Remote Site IP Address, currently assigned MODCOD, last Es/No, etc.).
+- The **Remote Site List table**, which contains information on the device communication with the associated remote sites (e.g., Remote Site IP Address, currently assigned MODCOD, last Es/No, etc.).
 - The **ACM Events log table**.
 
 ### Config - WAN - BUC

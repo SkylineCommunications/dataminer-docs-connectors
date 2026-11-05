@@ -4,27 +4,9 @@ uid: Connector_help_Newtec_MDM5010
 
 # Newtec MDM5010
 
-This connector allows you to monitor and manage the Newtec MDM5010 equipment.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | MDM5010 v1.0 STE/6883  |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector allows you to monitor and manage the Newtec MDM5010 equipment.
 
 ## Configuration
 
@@ -66,7 +48,7 @@ This page allows you to configure the data interface, routes, and IP interfaces.
 
 This page allows you to monitor and control the Ethernet settings associated with the system.
 
-The **Ethernet Alarms** subpage displays the alarm status information for the Ethernet interface, as well as various settings, e.g. related to redundancy and VLANs.
+The **Ethernet Alarms** subpage displays the alarm status information for the Ethernet interface, as well as various settings, e.g., related to redundancy and VLANs.
 
 ### Config
 

@@ -4,27 +4,25 @@ uid: Connector_help_Victron_UPS
 
 # Victron UPS
 
-The **Victron UPS** is an Uninterruptible Power Supply made by Victron.
-
 ## About
 
-The **Victron UPS** operates in the **SNMP** protocol and in the serial **Modbus TCP** protocol. The connector implements two ranges: one range is used with **SNMP**, the second range is used for **serial Modbus**.
+The **Victron UPS** is an Uninterruptible Power Supply made by Victron. This connector uses the **SNMP** protocol and the serial **Modbus TCP** protocol. The connector implements two ranges: one range is used with **SNMP**, the second range is used for **serial Modbus**.
 
 ### Version Info
 
-| **Range** | **Description**          | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version (SNMP)   | No                  | Yes                     |
-| 1.0.1.x          | Initial version (SNMP)   | No                  | Yes                     |
-| 2.0.0.x          | Initial version (Modbus) | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version (SNMP) | No | Yes |
+| 1.0.1.x | Initial version (SNMP) | No | Yes |
+| 2.0.0.x | Initial version (Modbus) | No | Yes |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | -                           |
-| 1.0.1.x          | -                           |
-| 2.0.0.x          | Modbus TCP                  |
+|--|--|
+| 1.0.0.x | - |
+| 1.0.1.x | - |
+| 2.0.0.x | Modbus TCP |
 
 ## Installation and configuration
 
@@ -61,7 +59,7 @@ This page contains general information about the device, such as the **Manufactu
 
 ### Input/Output
 
-This page displays information about the I/O of the device, including the **Frequency**, **Voltage**, **Current** and **Power.**
+This page displays information about the I/O of the device, including the **Frequency**, **Voltage**, **Current**, and **Power.**
 
 ### Bypass/Battery
 

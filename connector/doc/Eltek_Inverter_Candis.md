@@ -17,12 +17,6 @@ This connector uses an **SNMP** interface to communicate with the Eltek Inverter
 | 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
 | 1.0.1.x [SLC Main]   | Removed DVEs     | 1.0.0.6      | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -40,7 +34,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12.*
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12.*
 
 SNMP Settings:
 

@@ -44,14 +44,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination (default: *2050*).
   - **Bus address**: The bus address of the device. The format is *NNNN.UU.PP* (all hex values), where NNNN is the network route/address, UU is the unit address and PP is the port address of the unit.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -146,7 +138,7 @@ In the Hardware Configuration section of this page, you can select the supported
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range (since version 1.0.0.2) of the **Grass Valley Alchemist Live** protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range (since version 1.0.0.2) of the **Grass Valley Alchemist Live** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

@@ -44,8 +44,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 **SNMP Settings:**
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, by default e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, by default e.g. *private*.
+- **Get community string**: The community string used when reading values from the device, by default e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, by default e.g., *private*.
 
 ## Usage
 
@@ -57,9 +57,9 @@ This page contains general parameters that can be used to configure the device (
 
 On this page, you can monitor the **Word Rate**, **Input Bitrate**, **Filtered Bitrate**, etc. of the transmitter interfaces.
 
-### Front End
+### frontend
 
-This page displays all the parameters related to the front end. You can check the status using parameters such as **Carrier Offset**, **SNR**, **Signal Quality** or **Bitrate**.
+This page displays all the parameters related to the frontend. You can check the status using parameters such as **Carrier Offset**, **SNR**, **Signal Quality** or **Bitrate**.
 
 Pre-signaling parameters are also monitored, such as **Input Stream Type**, **FFT Size, Modulation Scheme**, **Code Rate**, etc.
 

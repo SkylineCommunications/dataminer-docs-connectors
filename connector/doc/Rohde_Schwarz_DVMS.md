@@ -12,7 +12,7 @@ By means of a tree view, the connector displays all streams, services and PIDs. 
 
 ### Version Info
 
-| **Range** | **Description**                                                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                         | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. This range uses the Round Robin type scheduler from Rohde Schwarz. | No                  | No                      |
 | 2.0.0.x          | Based on full review of range 1.0.0.x. This range only uses the DVMS directly.      | No                  | No                      |

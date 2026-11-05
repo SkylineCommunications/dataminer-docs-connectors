@@ -32,8 +32,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.5.1.27*.
-- **IP port**: The IP port of the destination, e.g. *8888*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.5.1.27*.
+- **IP port**: The IP port of the destination, e.g., *8888*.
 - **Bus address**: *bypassproxy.*
 
 ## Usage

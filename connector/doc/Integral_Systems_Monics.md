@@ -12,7 +12,7 @@ This connector has two ranges, each with their own table layout depending on cus
 
 ### Version Info
 
-| **Range** | **Description**                                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. In range 1.x.x.x, the minimum and maximum EIRP values are provided by a manager connector. | No                  | No                      |
 | 2.0.0.x          | Different table design.                                                                                  | No                  | No                      |
@@ -33,10 +33,10 @@ This connector uses a virtual connection and does not require any input during e
 
 Once the element has been created, fill in the following information on its **General** page.
 
-- **Server**: The URL or IP address of the database server, e.g. *localhost.*
-- **UserName**: The username of an account with sufficient access rights, e.g. *guest.*
-- **Password**: The password for the account specified above, e.g. *guestPassword.*
-- **Database** **Name**: The name of the database to access, e.g. *SCDB.*
+- **Server**: The URL or IP address of the database server, e.g., *localhost.*
+- **UserName**: The username of an account with sufficient access rights, e.g., *guest.*
+- **Password**: The password for the account specified above, e.g., *guestPassword.*
+- **Database** **Name**: The name of the database to access, e.g., *SCDB.*
 
 When all information has been filled in, click the **Connect** button.
 

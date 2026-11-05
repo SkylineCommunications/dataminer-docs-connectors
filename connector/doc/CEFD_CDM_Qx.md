@@ -18,7 +18,7 @@ This connector uses an SNMP connection and requires the following input during e
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:
@@ -31,9 +31,9 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **IP port**: The IP port of the device, e.g. *4000*.
-- **Bus address**: The bus address of the device, e.g. *30*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **IP port**: The IP port of the device, e.g., *4000*.
+- **Bus address**: The bus address of the device, e.g., *30*.
 
 ## Usage
 

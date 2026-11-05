@@ -4,9 +4,9 @@ uid: Connector_help_Evertz_7700FC
 
 # Evertz 7700FC
 
-The 7700FC VistaLINKr Frame Controller handles all SNMP communication between the frame (7700) and the network manager (NMS), and serves as a gateway to individual cards in the frame.
+The 7700FC VistaLINK Frame Controller handles all SNMP communication between the frame (7700) and the network manager (NMS), and serves as a gateway to individual cards in the frame.
 
-This connector can be used to monitor and configure the Evertz 7700FC VistaLINKr Frame Controller card.
+This connector can be used to monitor and configure the Evertz 7700FC VistaLINK Frame Controller card.
 
 ## About
 
@@ -45,14 +45,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

@@ -42,14 +42,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination.
   - **Bus address**: The bus address of the device (range: *1* - *32*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This connector allows you to monitor and trend the temperature and machine status parameters. In addition, you also have access to the alarm parameters that will indicate if something is wrong with certain components of the product.

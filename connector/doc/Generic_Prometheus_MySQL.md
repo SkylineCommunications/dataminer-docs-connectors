@@ -38,14 +38,6 @@ MySQL is a freely available open-source Relational Database Management System (R
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 This connector gets its data via an element using the **Generic Prometheus Collector** connector, which means that no data traffic will be seen in the **Stream Viewer**.

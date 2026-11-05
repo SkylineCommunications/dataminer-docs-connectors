@@ -18,7 +18,7 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device.
 - **Bus address**: The bus address of the connected device, by default *7*. The bus address can be read on the front panel of the device. It's in hexadecimal format and needs to be converted to decimal to be used in the bus address field of the DataMiner element.
 

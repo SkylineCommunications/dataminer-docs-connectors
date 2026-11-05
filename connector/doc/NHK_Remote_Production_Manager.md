@@ -10,7 +10,7 @@ The NHK Remote Production Manager connector can be used to visualize and manage 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                              | **Based on** | **System Impact** |
+| Range            | Key Features                                                                                                              | Based on | System Impact |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitoring for all NHK Generic DCF elements and monitoring for all elements with maximum three different port configurations. | -            | -                 |
 

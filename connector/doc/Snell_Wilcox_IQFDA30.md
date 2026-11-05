@@ -40,9 +40,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.14.10*.
-  - **IP Port**: The IP port of the device, e.g. *2050*.
-  - **Bus address**: The Unit Address and the Unit Port, e.g. *26.02* for Unit Address *0x26* and Unit Port *0x02*.
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.14.10*.
+  - **IP Port**: The IP port of the device, e.g., *2050*.
+  - **Bus address**: The Unit Address and the Unit Port, e.g., *26.02* for Unit Address *0x26* and Unit Port *0x02*.
 
 ## Usage
 
@@ -90,7 +90,7 @@ This page provides an overview of RollCall-related settings.
 
 ### System Setup Page
 
-This page contains information about the card, e.g. Product, Software Version, Build.
+This page contains information about the card, e.g., Product, Software Version, Build.
 
 The page also contains buttons that allow you to restart the device (**Restart**), and set the device back to the factory settings **(Factory Default**) or default settings (**Default Settings**).
 
@@ -100,7 +100,7 @@ This page contains information about the SFP setup.
 
 ### Connection Info Page
 
-This page displays information related to the connection, e.g. **Unit Address**, **Unit Port**.
+This page displays information related to the connection, e.g., **Unit Address**, **Unit Port**.
 
 ### Web Interface Page
 

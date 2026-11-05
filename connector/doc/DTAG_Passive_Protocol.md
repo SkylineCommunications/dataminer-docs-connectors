@@ -6,7 +6,7 @@ uid: Connector_help_DTAG_Passive_Protocol
 
 The **DTAG Passive Protocol** is a virtual connector designed to show information about the created element.
 
-A common situation where this protocol is used is in an environment with passive devices (i.e. devices without an interface to communicate with), where you still want to point out to the users in DataMiner that these devices exist and are present. In such cases you can create an element using this passive protocol, so you have an instance of the device available in the DataMiner system even though there is no means of communicating with the device.
+A common situation where this protocol is used is in an environment with passive devices (i.e., devices without an interface to communicate with), where you still want to point out to the users in DataMiner that these devices exist and are present. In such cases you can create an element using this passive protocol, so you have an instance of the device available in the DataMiner system even though there is no means of communicating with the device.
 
 ## About
 

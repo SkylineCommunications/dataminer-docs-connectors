@@ -6,7 +6,7 @@ uid: Connector_help_BMC_Remedy_ORCA
 
 This connector is used to interface with the **Fusion Remedy**.
 
-It will not poll any information from the Fusion Remedy. An **external source** (for example an Automation script) can send an XML request to the BMC Remedy ORCA connector. This request will then be encapsulated into an "**executeRequest**" SOAP request that will be sent towards the Fusion Remedy. The response can then be further handled by the external source.
+It will not poll any information from the Fusion Remedy. An **external source** (for example an automation script) can send an XML request to the BMC Remedy ORCA connector. This request will then be encapsulated into an "**executeRequest**" SOAP request that will be sent towards the Fusion Remedy. The response can then be further handled by the external source.
 
 ## About
 

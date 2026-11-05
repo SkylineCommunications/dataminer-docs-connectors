@@ -38,7 +38,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP settings:
 
@@ -48,7 +48,7 @@ SNMP settings:
 
 ## Usage
 
-The **Rohde Schwarz FHR9 FM N+1** protocol generates a virtual element (**DVE**) for each transmitter in the rack/frame, defined by the **Rohde Schwarz THR9 FM N+1 Transmitter** protocol. Each DVE automatically receives a specific name based on the slot number of the device and the main element's name, e.g. "*Rohde Schwarz FHR9 FM N+1.Transmitter A2"*.
+The **Rohde Schwarz FHR9 FM N+1** protocol generates a virtual element (**DVE**) for each transmitter in the rack/frame, defined by the **Rohde Schwarz THR9 FM N+1 Transmitter** protocol. Each DVE automatically receives a specific name based on the slot number of the device and the main element's name, e.g., "*Rohde Schwarz FHR9 FM N+1.Transmitter A2"*.
 
 ### Main Element
 

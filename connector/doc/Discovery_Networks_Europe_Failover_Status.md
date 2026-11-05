@@ -14,7 +14,7 @@ Alarm monitoring and trending can be activated on these parameters.
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on   | System Impact   |
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | License and Failover information are shown. | -            | -                 |
 
@@ -35,10 +35,6 @@ This connector uses a virtual connection and does not require any input during e
 ### Initialization
 
 Create a user in DataMiner that has access to the Agents module of System Center. Fill in the credentials of that user on the Failover Status page.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

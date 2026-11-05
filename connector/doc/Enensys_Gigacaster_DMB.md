@@ -12,17 +12,10 @@ This connector monitors and configures Enensys GigaCaster DMB devices over **SNM
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                   | **Based on** | **System Impact**                              |
-|----------------------|------------------------------------------------------------------------------------|--------------|------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                   | -            | -                                              |
-| 1.0.1.x [SLC Main]   | Compliancies, version history, and new parameters have been added in this version. | 1.0.0.3      | Page name changed. Cassandra compliance added. |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | Compliancies, version history, and new parameters have been added in this version. | 1.0.0.3 | Page name changed. Cassandra compliance added. |
 
 ### System Info
 
@@ -39,21 +32,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161.*
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 
@@ -67,8 +52,8 @@ The element created with this connector consists of the data pages described bel
 
 This page contains information about the device itself:
 
-- Identification, e.g. **Device Name**, **Device Type**, **Device Serial Number**, etc.
-- Hardware status, e.g. **Product Mode**, **Current Temperature**, etc.
+- Identification, e.g., **Device Name**, **Device Type**, **Device Serial Number**, etc.
+- Hardware status, e.g., **Product Mode**, **Current Temperature**, etc.
 - Generic alarm information: **Current Status**, **Alarm Current Count**.
 - Date and time: **Date Time ISO**, **Date Time Unix**.
 - Options: **Device Option Table**.

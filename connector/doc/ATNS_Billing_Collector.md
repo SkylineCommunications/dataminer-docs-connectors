@@ -30,7 +30,7 @@ This is a virtual connector. No user input is required during the creation of th
 
 ### Configuration
 
-To make sure this connector works correctly, fill in the **configuration** parameters on the **Configurations** **page**.
+To make sure this connector works correctly, fill in the **configuration** parameters on the **Configurations page**.
 
 ## Usage
 
@@ -38,7 +38,7 @@ To make sure this connector works correctly, fill in the **configuration** param
 
 This page contains all the configuration parameters to set up the billing collector. The parameter **Remote Central Server Path** is used to define where the zipped statistics files from the DMP Billing Statistics elements can be found. This location is the same for all DMPs and the DMA.
 
-The **Remote Central User Name**, **Domain** and **Password** parameters must be filled in if you need to log on explicitly to read out the zipped files.
+The **Remote Central User Name**, **Domain**, and **Password** parameters must be filled in if you need to log on explicitly to read out the zipped files.
 
 The parameter **Last Get Midnight Files Date** is a debug value that indicates the next day that needs to be processed. The parameter **Keep Database Entries** is a configuration parameter that defines for how many hours the database entries need to exist.
 

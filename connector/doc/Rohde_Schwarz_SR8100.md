@@ -18,7 +18,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. 10.220.224.16
+- **IP Address/host**: The polling IP of the device, e.g., 10.220.224.16
 
 **SNMP Settings:**
 
@@ -30,7 +30,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### General Page
 
-This page displays general information about the device, e.g. **System Description**, **Up Time**, **Software Version**.
+This page displays general information about the device, e.g., **System Description**, **Up Time**, **Software Version**.
 
 This page also contains a page button, **DVE Config**, which allows you to enable or disable DVE creation.
 
@@ -52,7 +52,7 @@ This page displays the device's web interface. Note that the client machine has 
 
 Each DVE has the following pages:
 
-- **General Page**: Displays general parameters of the transmitter, e.g. Transmitter Name, Transmitter Mode.
+- **General Page**: Displays general parameters of the transmitter, e.g., Transmitter Name, Transmitter Mode.
 - **Tx Configuration Page**: Allows the configuration of the transmitter.
 - **Input Status Page**: Displays the input status of the transmitters.
 - **Analog Input Status Page**: Displays a table with the analog input status of the transmitter.

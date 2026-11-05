@@ -46,3 +46,4 @@ The Enatel SMX3 NT2 connector provides comprehensive monitoring and control capa
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Enatel_SMX3_NT2_Technical).
+

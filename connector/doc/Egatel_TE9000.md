@@ -12,7 +12,7 @@ This connector was designed to work with the model **TE9000E6**. With it, you ca
 
 ### Version Info
 
-| **Range** | **Description**                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                  | No                  | No                      |
 | 1.1.0.x          | New firmware for model E6 based on range 1.0.0.x | No                  | No                      |
@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (**SNMP**) connection a
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device. e.g. *10.10.12.3*.
+- **IP address/host**: The polling IP of the device. e.g., *10.10.12.3*.
 
 SNMP Settings:
 
@@ -52,7 +52,7 @@ This page contains general information, such as **Control Mode**, **Input Module
 
 ### Input
 
-On this page, information is displayed regarding the device itself, e.g. **Asynchronous Serial Interface Delays**, **Transport Stream over IP and RF Delays**, **Transport Stream Commutation**, **Input Impedance**, **Frequency**, **Lost Mute Time**, **Input Selection**.
+On this page, information is displayed regarding the device itself, e.g., **Asynchronous Serial Interface Delays**, **Transport Stream over IP and RF Delays**, **Transport Stream Commutation**, **Input Impedance**, **Frequency**, **Lost Mute Time**, **Input Selection**.
 
 ### GPS
 
@@ -94,7 +94,7 @@ This page displays the following configurable parameters: **IP Addresses**, **Ga
 
 ### Notifications
 
-This page displays different notification alarms, which can be enabled/disabled by means of the **Setup** page button in the lower right corner. These are for example:
+This page displays different notification alarms, which can be enabled/disabled by means of the **Setup** page button in the lower-right corner. These are for example:
 
 - Exciter Output Power Failure
 - Amplifier Output Power Failure

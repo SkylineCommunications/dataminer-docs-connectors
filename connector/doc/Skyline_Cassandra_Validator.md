@@ -28,7 +28,7 @@ This connector uses a virtual connection. No connection information has to be sp
 
 ### Initialization
 
-When the element has been created, go to the **Settings** subpage of the **General** page, and specify the domain user (i.e. *Domain\User*) and password that will be used to do remote scripting to retrieve the Cassandra information through Cassandra Nodetool. This user must belong to the Administrators group.
+When the element has been created, go to the **Settings** subpage of the **General** page, and specify the domain user (i.e., *Domain\User*) and password that will be used to do remote scripting to retrieve the Cassandra information through Cassandra Nodetool. This user must belong to the Administrators group.
 
 As the connector will use remote scripting on all the servers in the DMS, you will need to enable remote scripting and set the settings accordingly. To enable remote scripting on the servers, execute "winrm quickconfig" with PowerShell.
 
@@ -68,7 +68,7 @@ You can also poll the table manually with the **Get Data** button, but in that c
 
 ### DataPoints
 
-This page allows you to retrieve information on how many cells (i.e. parameters) are being trended and how much data is stored in the database for these cells.
+This page allows you to retrieve information on how many cells (i.e., parameters) are being trended and how much data is stored in the database for these cells.
 
 Keep in mind that this is the information that is in the database, so it is possible that information is displayed for parameters for which trending has recently been disabled.
 
@@ -80,7 +80,7 @@ This page displays all elements that have trending information in the database. 
 
 To retrieve the number of cells that are being trended for an element, use the **Get Count** button in the **Get DataPoints Count** column. To retrieve this information for all elements at once, use the **DataPoint Count** button.
 
-To check how much data is stored for an element, go to the **DataPoints** page or use the **Get Count** button in the **Get Data Count** column of this table. However, keep in mind that **this can take some time** depending on the number of data points (i.e. trended cells).
+To check how much data is stored for an element, go to the **DataPoints** page or use the **Get Count** button in the **Get Data Count** column of this table. However, keep in mind that **this can take some time** depending on the number of data points (i.e., trended cells).
 
 ## Troubleshooting
 
@@ -108,7 +108,7 @@ This error is thrown if you specified a **local user** in the settings instead o
 
 ### WinRM - Cannot connect to the destination
 
-In case the PowerShell commands cannot retrieve the needed information (e.g. GetTime fails), test the connection manually.
+In case the PowerShell commands cannot retrieve the needed information (e.g., GetTime fails), test the connection manually.
 
 You can do so using the following procedure in a PowerShell window:
 

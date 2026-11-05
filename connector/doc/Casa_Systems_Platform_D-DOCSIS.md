@@ -73,10 +73,6 @@ SERIAL CONNECTION:
 
 Once you have created the element, on the **Configuration** page, enter the **CLI/Serial credentials** so the CLI polling can work properly. Once this is done, the element will start regular polling.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -101,13 +97,13 @@ When you first start using this element, navigate to the Configuration page and 
 
 ## Notes
 
-This connector requires specific Correlation rules and Automation scripts for communication with EPM connectors such as Skyline CCAP Platform EPM and Skyline CCAP Platform WM. The Correlation rules and Automation scripts must be configured and enabled in order to get the full functionality of this connector.
+This connector requires specific correlation rules and automation scripts for communication with EPM connectors such as Skyline CCAP Platform EPM and Skyline CCAP Platform WM. The correlation rules and automation scripts must be configured and enabled in order to get the full functionality of this connector.
 
-With larger devices/large data sets the polling performance may vary. You can control the number of rows and cells requested for larger tables by navigating to the Configuration page and enabling debug in the other settings section. This will make the debug page visible, where you can then change SNMP Cell Amount and SNMP Row Amount to a value that works optimally for your system. Increasing these values can cause polling issues such as RTEs and missing data, so be careful and always double-check to make sure the system is stable.
+With larger devices/large datasets the polling performance may vary. You can control the number of rows and cells requested for larger tables by navigating to the Configuration page and enabling debug in the other settings section. This will make the debug page visible, where you can then change SNMP Cell Amount and SNMP Row Amount to a value that works optimally for your system. Increasing these values can cause polling issues such as RTEs and missing data, so be careful and always double-check to make sure the system is stable.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of the CISCO CBR-8 CCAP Platform Collector protocol supports the usage of DCF.
+The **1.0.0.x** range of the CISCO CBR-8 CCAP Platform Collector connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

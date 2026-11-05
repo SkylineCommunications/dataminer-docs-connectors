@@ -10,7 +10,7 @@ This connector is used to retrieve events from a SolarWinds database system.
 
 ### Version Info
 
-| **Range**                | **Key Features**                                         | **Based on** | **System Impact**            |
+| Range                | Key Features                                         | Based on | System Impact            |
 |--------------------------|----------------------------------------------------------|--------------|------------------------------|
 | 1.0.0.x                  | Initial version.                                         | -            | -                            |
 | 2.0.0.x \[**Obsolete**\] | Changed protocol name to include vendor name.            | 1.0.0.4      | -                            |

@@ -133,7 +133,7 @@ This page provides access to the web interface of the device (http:// Port 80). 
 
 ## DataMiner Connectivity Framework
 
-The 2.1.1.x connector range of the protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The 2.1.1.x connector range of the connector supports the usage of DCF.
 
 ### Interfaces
 

@@ -14,12 +14,6 @@ The iDirect X7 Satellite Router is a multi-core hardware system that enables ser
 |--|--|--|--|
 | 1.0.0.x [SLC Main] | - A Telnet connection is established with the product through serial communication in order to retrieve system information.<br>- An HTTP connection is used to retrieve modem status information. | - | - |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

@@ -16,12 +16,6 @@ It can also be configured to trigger an alarm if a flow goes missing.
 |----------------------|------------------|--------------|-------------------|
 | 0.0.0.x [SLC Main]   | Alpha release    | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 0.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

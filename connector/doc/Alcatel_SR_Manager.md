@@ -23,7 +23,9 @@ This connector can be used to control and monitor the services via **SNMPv2**. T
 | 2.0.5.x (obsolete) | Improved bitrate calculation feature. | 2.0.4.3 | You will need to add *renci.sshnet.dll* to the folder *C:/Skyline DataMiner/Protocol Scripts*. |
 | 2.0.6.x (obsolete) | Added new columns to SAP Ingress QoS Queue Table. | 2.0.5.8 | - |
 | 2.0.7.x (obsolete) | Fixed case where Legacy General Statistics were poorly calculated. Implemented a fix for the 7210 SAS-X and SAS-R models when using SAP filtering. Updated bitrate calculation logic to handle cases where the element goes into timeout. Support for extra columns in BGP Tables. Added support for alternate accounting file source (VSFTP). Added table vRtrPimNgGrpSrcTable. Added TMNX tables. Added option to switch between Static Router and INET Static Router Data. SAP filter entries were not cleared when inter-app message had no interfaces. Polling Configuration table included. Fixed Polling Configuration table operation mode. Changed default SFTP connection timeout to avoid cases where the logic could be stuck. Fixed situation where SAP and SDP accounting file processing did not calculate rates. Updated Accounting File processing to reduce load on SLDataGateway. The polling of the tables in the TMNX debug page is disabled when the page is not visible. Added calculated time since last change columns to the interface, SAP Base, SDP Base, SDP Info, Service Base Info, and TMNX Ports tables. Bit rates are no longer set to 0 during the first polling cycle after startup. Included VPRN ID and Vrtr Name as a parameter in BGP Tables 10700 and 10900. Fixed situation where interface rates go to zero before going to N/A if the element goes into timeout but interface data is polled before. Added toggle button to enable timeout handling outside of standard procedure. Fixed issue with polling control logic. Default polling is now disabled for TMX VDO GRP tables. Fix calculation for Port Last Change parameters. Fixed a memory leak related to XmsSerializer usage. Fixed an exception with DateTime parsing. Fixed an exception in Stream Viewer with PortQueuesSumTable. Fixed an issue where polling table logic was stuck behind other groups, causing the table to be polled significantly more slowly than intended. Fixed an issue where rates were halved in the interface table. TMNX Debug tables are now disabled on startup if the collective toggle button (23010) is disabled. Polling for TMNS VDO GRP tables is now by default disabled because they can cause some devices to break temporarily. Added encryption key group tables. Exception value (N/A) is now shown when counters wrap for accounting files, because of edge cases that would be difficult to predict otherwise (device restart, counters reset, etc.). Interface Table Polling Interval and Polling Interval Overrun parameters added. Multiplied exception values to avoid issues with trending exception values with decimals. | 2.0.6.8 | - |
-| 2.0.8.x [SLC Main]| Major cleanup of connector. Overhaul of most bit rate calculation for more precise results. | 2.0.7.32 | - |
+| 2.0.8.x (obsolete) | Major cleanup of connector. Overhaul of most bit rate calculation for more precise results. | 2.0.7.32 | - |
+| 2.0.9.x (obsolete) | New unique display keys for NFM-P integration tables. New columns added to TMNX Port Egress table. | 2.0.8.4 | - |
+| 2.0.10.x [SLC Main] | Update Rates NuGets (security code updates). | 2.0.9.6 | - |
 
 ## Configuration
 
@@ -61,7 +63,7 @@ SNMP Settings:
 
 ### General
 
-This page displays general system information (e.g. System Up Time, System CPU Usage, System Memory Available, etc.).
+This page displays general system information (e.g., System Up Time, System CPU Usage, System Memory Available, etc.).
 
 The following subpages are available:
 
@@ -118,7 +120,7 @@ From version **2.0.1.2** onwards, the layout of the data pages has changed to ac
 
 ### General
 
-This page is similar to the General page in previous ranges but shows additional general information (e.g. System Software Version, System Memory Used, etc.).
+This page is similar to the General page in previous ranges but shows additional general information (e.g., System Software Version, System Memory Used, etc.).
 
 It also allows you to save the SSI config.
 
@@ -202,13 +204,13 @@ The page displays an overview of the RIP statistics.
 
 ### Accounting
 
-This page displays the **SAA and SAP Monitoring** tables from both devices with newer firmware and devices with older (i.e. legacy) firmware. It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
+This page displays the **SAA and SAP Monitoring** tables from both devices with newer firmware and devices with older (i.e., legacy) firmware. It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
 
 This page contains the following buttons:
 
 - **Refresh Table**: Forces a refresh of the table using the current settings on the **Table Configuration** page.
 - **Get Files:** Tries to get XML files before the next timer.
-- **Table Configuration:** Opens a subpage that allows you to define how the SAA Statistics table should be cleaned up, i.e. by number of rows or by entry age, how many rows should be cleaned up each time, and the time window for the first poll.
+- **Table Configuration:** Opens a subpage that allows you to define how the SAA Statistics table should be cleaned up, i.e., by number of rows or by entry age, how many rows should be cleaned up each time, and the time window for the first poll.
 - **SAA Accounting Files**: Opens a subpage with the statistics tables for the SAA accounting files.
 - **SAP Accounting Files**: Opens a subpage with the statistics tables for the SAP accounting files.
 - **FTP Configuration:** Opens a subpage where you can define the credentials to access the FTP server as well as the folder where the files should be found. Also contains status information on the connection.
@@ -221,7 +223,7 @@ This page contains the following buttons:
 
 ### General
 
-This page displays general system information (e.g. System Up Time, System CPU Usage, System Memory Available, etc.).
+This page displays general system information (e.g., System Up Time, System CPU Usage, System Memory Available, etc.).
 
 The following subpages are available:
 
@@ -364,7 +366,7 @@ This page displays NGE key group bindings and statistics.
 
 Accounting files contain SAA, SAP, and SDP statistics for a 5-minute interval. Accounting files are retrieved every 2.5 minutes.
 
-This page displays the **SAA, SAP, and SDP Monitoring** tables from both devices with newer firmware and devices with older (i.e. legacy) firmware (72xx). It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
+This page displays the **SAA, SAP, and SDP Monitoring** tables from both devices with newer firmware and devices with older (i.e., legacy) firmware (72xx). It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
 
 This page contains the following buttons:
 
@@ -395,6 +397,8 @@ This page contains the following buttons:
 ## DataMiner Connectivity Framework
 
 From the **2.0.0.x** range of the Alcatel SR Manager connector onwards, the usage of DCF is supported. This can only be used on a DMA with **8.5.4** as the minimum version.
+
+From the **2.0.10.x** range of the Alcatel SR Manager connector onwards, the minimum required DataMiner version is **10.3.0.0 - 12752**.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

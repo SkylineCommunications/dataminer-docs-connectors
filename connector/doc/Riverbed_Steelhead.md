@@ -12,7 +12,7 @@ The connector uses the **SNMP** protocol to communicate with the device.
 
 ### Version Info
 
-| **Range** | **Description**                                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                 | No                  | No                      |
 | 1.1.0.x          | New MIBs used.                                                   | No                  | No                      |
@@ -36,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.90.140.200*.
+- **IP address/host**: The polling IP of the device, e.g., *10.90.140.200*.
 - **Device address**: Not required.
 
 SNMP Settings:

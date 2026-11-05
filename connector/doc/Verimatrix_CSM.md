@@ -16,7 +16,7 @@ This connector uses **SNMP** to monitor and control **Verimatrix CSM** device.
 
 ### Version Info
 
-| **Range** | **Description**                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                              | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                          | No                  | Yes                     |
 | 1.3.6.x          | Based on 1.0.0.1 Added support for firmware version 3.6. | No                  | Yes                     |
@@ -40,7 +40,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *192.168.1.31*.
+- **IP Address/host**: The polling IP of the device, e.g., *192.168.1.31*.
 
 **SNMP Settings:**
 

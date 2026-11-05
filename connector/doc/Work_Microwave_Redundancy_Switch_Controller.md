@@ -16,7 +16,7 @@ The different parameters from the device are displayed on multiple pages. Specif
 
 This connector uses a **Serial** connection and requires the following input during element creation:
 
-- **IP address/host**: The IP address of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The IP address of the device, e.g., *192.168.10.2.*
 - **IP port**: The port of the connected device, by default *22*.
 
 ### Version Info
@@ -72,7 +72,7 @@ The "**Factory Reset**" button allows the user to reset the device configuration
 
 ## DataMiner Connectivity Framework
 
-The Work Microwave supports the usage of DCF from version 1.0.0.2 onwards and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The Work Microwave supports the usage of DCF from version 1.0.0.2 onwards.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

@@ -10,10 +10,10 @@ This connector can be used to monitor and configure the Black Box Boxilla. This 
 
 ### Version Info
 
-| **Range**            | **Key Features**        | **Based on** | **System Impact** |
-|----------------------|-------------------------|--------------|-------------------|
-| 1.0.0.x [Obsolete]     |POC. Pings the device.  | -            | -                 |
-| 2.0.0.x [SLC Main]   | Initial implementation. | -            | -                 |
+| Range              | Key Features            | Based on | System Impact |
+|--------------------|-------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | POC. Pings the device.  | -        | -             |
+| 2.0.0.x [SLC Main] | Initial implementation. | -        | -             |
 
 ### Product Info
 

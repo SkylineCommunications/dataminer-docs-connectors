@@ -4,7 +4,7 @@ uid: Connector_help_Autronica_AutroPrime
 
 # Autronica AutroPrime
 
-This protocol provides information about the system status of the device, which is a fire detection system, and about the status of the different available detectors. It is also possible to configure which detectors there are for each register address and how these should be interpreted, i.e. as a loop, detector, FAD or FPE.
+This protocol provides information about the system status of the device, which is a fire detection system, and about the status of the different available detectors. It is also possible to configure which detectors there are for each register address and how these should be interpreted, i.e., as a loop, detector, FAD or FPE.
 
 ## About
 

@@ -51,7 +51,7 @@ To configure a manager element using this connector, follow these steps:
 1. **Configuring the mappings**: Every destination monitor should have a **program mapping** to complete the matching logic implemented in the manager. A mapping is a pair of strings indicating the program or stream name in the reference SCTE monitor and the program name in the destination SCTE monitor. More than one mapping is possible. Mappings can be created on the Mapping Configuration page.
 
    1. Click **Mapping Configuration**. This will display two tables, **Channel Mappings** and **Channel Mapping Relation**.
-   1. If necessary, in the **Channel Mappings** table, add a new row with the strings in the source reference and destination monitors (i.e. the stream in the SCTE 104 reference and the program name in the SCTE 35 monitor).
+   1. If necessary, in the **Channel Mappings** table, add a new row with the strings in the source reference and destination monitors (i.e., the stream in the SCTE 104 reference and the program name in the SCTE 35 monitor).
    1. Once a mapping configuration string is available, in the **Relation Destination** and **Relation Mapping** boxes, select the **string configuration and destination pair** you created earlier.
    1. Click **Add Relation** to add the new mapping.
    1. Click **Update Mappings** to recreate the list of mappings of the destination pairs monitors. This will effectively implement the new mapping configuration.

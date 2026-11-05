@@ -12,7 +12,7 @@ This connector is used as an OPC DA (Data Access) client. You can specify the ho
 
 ### Version Info
 
-| **Range** | **Description**                                                      | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                         | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                      | No                  | No                      |
 | 1.0.1.x          | Added Signal Name, Analog Value and Text Value to Subscription Table | No                  | No                      |
@@ -36,11 +36,11 @@ To set up DCOM correctly, make the following changes on the computer running the
   1. In the **General** tab, verify that the **Authentication Level** is set to **Default**.
   1. In the **Location** tab, verify that the **Run Application on this computer** option is **enabled**.
   1. Open the **Security** tab.
-  1. In **Launch and Activation Permissions**, select **Customize** and click **Edit**. This is necessary to grant permissions to users to start the OPC server. **Add** the same **user** (or **group**) as you created earlier. Use the **Check Names** button to check/select the correct user. Then make sure the Allow check boxes are checked for Local Launch, Remote Launch, Local Activation and Remote Activation:
+  1. In **Launch and Activation Permissions**, select **Customize** and click **Edit**. This is necessary to grant permissions to users to start the OPC server. **Add** the same **user** (or **group**) as you created earlier. Use the **Check Names** button to check/select the correct user. Then make sure the Allow checkboxes are checked for Local Launch, Remote Launch, Local Activation and Remote Activation:
 
      ![Launch and Activation Permissions.png](~/connector/images/Generic_OPC_Data_Access_Launch_and_Activation_Permissions.png)
 
-  1. In **Access Permissions**, select **Customize** and click **Edit**. This is necessary to grant permission to users/groups to make calls to the OPC server. **Add** the same **user** (or **group**) as you created earlier. Use the **Check Names** button to check/select the correct user. Then make sure the Allow check boxes are checked for Local Access and Remote Access:
+  1. In **Access Permissions**, select **Customize** and click **Edit**. This is necessary to grant permission to users/groups to make calls to the OPC server. **Add** the same **user** (or **group**) as you created earlier. Use the **Check Names** button to check/select the correct user. Then make sure the Allow checkboxes are checked for Local Access and Remote Access:
 
      ![Access Permission Permissions.png](~/connector/images/Generic_OPC_Data_Access_Access_Permission_Permissions.png)
 

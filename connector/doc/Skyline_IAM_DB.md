@@ -46,24 +46,24 @@ For this connector to work, the **DSL Files Configuration**, **Network Credentia
 
 Note:
 
-- The DSL files are generated through the processing of different sources by **DSL-compatible connectors** (e.g. Huawei iManager U2000 D-CCAP) **or via a manual input file**.
-- To use a **manual input file** (e.g. *IngestLocationDataOnDeviceManualIngest_xx_yy_zz*), the file has to be placed at the configured DSL path, as specified with the parameter **DSL Directory** on the **General** Page of the IAM DB element. It has to be placed on any server that is not excluded (cf. "Exclude DMA" parameter on the General page).
+- The DSL files are generated through the processing of different sources by **DSL-compatible connectors** (e.g., Huawei iManager U2000 D-CCAP) **or via a manual input file**.
+- To use a **manual input file** (e.g., *IngestLocationDataOnDeviceManualIngest_xx_yy_zz*), the file has to be placed at the configured DSL path, as specified with the parameter **DSL Directory** on the **General** Page of the IAM DB element. It has to be placed on any server that is not excluded (cf. "Exclude DMA" parameter on the General page).
 - Only manual files based on a **template** provided by Skyline can be used. Custom-made files will fail to be ingested.
-- A DSL file is a **semicolon-separated CSV file**. It is important to check whether the file is formatted correctly, as some programs (e.g. Microsoft Excel) can add double quotes between the fields.
+- A DSL file is a **semicolon-separated CSV file**. It is important to check whether the file is formatted correctly, as some programs (e.g., Microsoft Excel) can add double quotes between the fields.
 - When the processing of a file fails, you can find the reason for the failure in the **Log** table (cf. "IAM DB Information Page" section below). The file that could not be processed is moved into the folder *C:\Skyline_Data\IAM DB\Faulty Files,* on the DMA hosting the IAM DB element.
 
 #### Network Configuration
 
-- **Domain**: e.g. "SKYLINE2"
-- **User Name**: e.g. "Admin"
-- **Password**: e.g. "\*\*\*\*"
+- **Domain**: e.g., "SKYLINE2"
+- **User Name**: e.g., "Admin"
+- **Password**: e.g., "\*\*\*\*"
 
 #### DB Configuration
 
-- **DB Name**: e.g. "IAM"
-- **Server Name**: e.g. "localhost"
-- **DB User Name**: e.g. "root"
-- **DB Password**: e.g. ""
+- **DB Name**: e.g., "IAM"
+- **Server Name**: e.g., "localhost"
+- **DB User Name**: e.g., "root"
+- **DB Password**: e.g., ""
 
 To decrease the fetch time of the queries, you can increase the innodb_buffer_pool_size in the *my.ini* configuration file. The larger this is set, the less disk I/O is needed to access data in tables. On a dedicated database server, you can set this parameter to up to 80% of the machine physical memory size. However, be careful not to set it too large, because competition of the physical memory may cause paging in the operating system. Note that on 32-bit systems you may be limited to 2-3.5 G of user level memory per process, so do not set it too high.
 
@@ -102,7 +102,7 @@ For the following **common issues**, you can find the **probable cause in the Lo
 
 - DMA access
 
-  If the connection to a specific DMA failed, an exception is thrown, e.g. "*\|Unable to retrieved data from the following DMA: ...* ".
+  If the connection to a specific DMA failed, an exception is thrown, e.g., "*\|Unable to retrieved data from the following DMA: ...* ".
 
   In addition, the following message is logged: "*The connection has failed ... Last Error: ... Please recheck all network fields.*".
 
@@ -118,7 +118,7 @@ For the following **common issues**, you can find the **probable cause in the Lo
 
 - StoredProcedure
 
-  When inserting data into the DB, the input parameters of storedProcedure must be respected, as otherwise an exception is thrown and the processing of the file is stopped. E.g. "*Incorrect number of arguments for PROCEDURE iam.IngestAMPData; expected 8, got 9*". The DSL file is then also moved to the *Faulty Files* folder.
+  When inserting data into the DB, the input parameters of storedProcedure must be respected, as otherwise an exception is thrown and the processing of the file is stopped, e.g., "*Incorrect number of arguments for PROCEDURE iam.IngestAMPData; expected 8, got 9*". The DSL file is then also moved to the *Faulty Files* folder.
 
 This information will be updated and logged each polling cycle.
 

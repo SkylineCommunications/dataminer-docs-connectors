@@ -12,7 +12,7 @@ A **TCP/IP connection** is used to retrieve data from the device. The connector 
 
 ### Version Info
 
-| **Range** | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------|---------------------|-------------------------|
 | 3.1.0.X          | Firmware version | No                  | Yes                     |
 

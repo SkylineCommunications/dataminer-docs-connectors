@@ -50,11 +50,13 @@ If a connection has been established, data will be displayed on the following pa
 
 - **Contracts**: Displays the Contracts table.
 - **Groups**: Displays the Groups table.
-- **CP Codes**: Displays the CP Codes table.
+- **CP Codes**: Displays the CP Codes table. Enable the **Poll Metrics** parameter to get data in the Traffic per CP Code table. Enable the **Poll Real-Time Metrics** parameter to get data in the Real-Time Traffic per CP Code table and Dimensions table.
 - **Network Storage**: Displays the storage groups and associated upload accounts.
-- **Traffic**: Displays the Traffic per CP code table.
+- **Traffic**: Displays the Traffic per CP Code table and Real-Time Traffic per CP Code table.
 - **Structure Overview**: Contains the Structure Overview tree control.
 - **Media Services Live**: Displays a list of all streams.
 - **Alert Summaries**: Displays the Alert Summaries table.
 - **Alert Details**: Displays the Alert Details table.
 - **Alert Overview**: Displays the relationship between the Alert Summaries and Alert Details tables.
+- **Dimensions**: Displays the dimension information per CP Code from the Media Services Live 4 Reports API.
+

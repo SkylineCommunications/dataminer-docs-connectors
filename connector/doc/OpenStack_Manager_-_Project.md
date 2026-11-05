@@ -12,7 +12,7 @@ This connector uses HTTP to monitor and configure any OpenStack cloud. It curren
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                           |
+| Range | Device Firmware Version                                           |
 |------------------|-----------------------------------------------------------------------|
 | 1.0.0.x          | Nova: v2.x, Neutron: v2.0, Cinder: v3.0, Keystone: v3.0, Glance: v2.0 |
 | 1.0.1.x          | Nova: v2.x, Neutron: v2.0, Cinder: v3.0, Keystone: v3.0, Glance: v2.0 |

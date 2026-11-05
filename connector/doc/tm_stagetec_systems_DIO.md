@@ -10,7 +10,7 @@ The tm stagetec systems DIO (Dante Input Output) has a wide variety of interface
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on**            | **System Impact** |
+| Range | Key Features | Based on            | System Impact |
 |-----------|------------------|-------------------------|-------------------|
 | 1.0.0.x   | Initial version  | Delec Unito DIO 1.0.0.x | -                 |
 

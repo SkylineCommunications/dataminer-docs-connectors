@@ -43,7 +43,7 @@ This connector implements the parameters like in the previous **CEFD CDM-570 Ser
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 **SNMP Settings**:
 

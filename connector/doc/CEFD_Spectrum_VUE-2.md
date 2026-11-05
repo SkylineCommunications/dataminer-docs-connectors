@@ -10,7 +10,7 @@ The Spectrum VUE-2 is a next-generation spectrum measurement and analysis unit w
 
 ### Version Info
 
-| **Range**            | **Key Features**                                  | **Based On** | **System Impact** |
+| Range                | Key Features                                      | Based On     | System Impact     |
 |----------------------|---------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                                  | -            | -                 |
 | 1.0.1.x [SLC Main]   | DataMiner protocol feature for lengthy responses. | 1.0.0.4      | -                 |

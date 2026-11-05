@@ -8,17 +8,10 @@ The Sony XVS-G1 is a vision mixer controller to which different cards can be att
 
 ## About
 
-| **Range**            | **Key Features**  | **Based on** | **System Impact** |
+| Range                | Key Features      | Based on     | System Impact     |
 |----------------------|-------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version   | -            | -                 |
 | 1.0.1.x [SLC Main]   | Added DCF support | 1.0.0.3      | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
 
 ### System Info
 

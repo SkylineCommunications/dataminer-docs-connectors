@@ -12,16 +12,16 @@ This connector monitors the state of each of the transport streams. The connecto
 
 ### Version Info
 
-| **Range**     | **Description**                                         | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                                         | Yes                 | Yes                     |
-| 1.0.1.X [SLC Main]   | Auto clear functionality for TS, Service and PID tables | Yes                 | Yes                     |
+| Range              | Description                                             | DCF Integration | Cassandra Compliant |
+|--------------------|---------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version                                         | Yes             | Yes                 |
+| 1.0.1.X [SLC Main] | Auto clear functionality for TS, Service and PID tables | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Version 2.3.0.21            |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Version 2.3.0.21           |
 
 ## Installation and configuration
 
@@ -82,7 +82,7 @@ Alternatively, you can also import and export a CSV file to update the table. Th
 > [!NOTE]
 > In version 1.0.0.9, the file type is changed from CSV to XML.
 
-Once an alarm preset has been assigned to a certain TS, Service or PID, this preset name can be used as a filter when creating alarm templates in DataMiner. This way, different thresholds can be configured for one and the same parameter (e.g. PID bitrate), depending on the selected alarm preset filter.
+Once an alarm preset has been assigned to a certain TS, Service or PID, this preset name can be used as a filter when creating alarm templates in DataMiner. This way, different thresholds can be configured for one and the same parameter (e.g., PID bitrate), depending on the selected alarm preset filter.
 
 ### Debug
 

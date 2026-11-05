@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 In case the API requires authorization, please enter the **HTTP X-IBM-Client-ID** and **HTTP Authenticate Token** (this is a fixed permanent token) on the **Configurations** page along with the **HTTP URL**.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the General page you can find the current responsible person via the **On Call Name** and the **On Call Telephone Number**. All **Matches** are listed in a table.

@@ -20,7 +20,7 @@ The read and write actions occur over two different connections for security rea
 
 This connection is used to send the GetIncident, GetPain and GetRLog SOAP requests.
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
 - **IP port**: A fixed destination port has been set to *80.*
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy*.
 - **Timeout**: Although the HTTP interface internally follows the TCP/IP standards, please fill in a high enough value to receive large responses.
@@ -30,7 +30,7 @@ This connection is used to send the GetIncident, GetPain and GetRLog SOAP reques
 
 This connection is used to send the write SOAP requests: CallServerMethod, login, logout and serverstatus. CallServerMethod has the methods *z_incident_create*, *z_incident_update_description*, *z_incident_set_outage_stop* and *z_rlog_create*.
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
 - **IP port**: A fixed destination port has been set to *8080.*
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy*.
 - **Timeout**: Although the HTTP interface internally follows the TCP/IP standards, please fill in a high enough value so that ServiceDesk can process the requests in case there are many affected services.
@@ -80,7 +80,7 @@ Page buttons for read and write requests:
 - **Custom Poll**: The **Custom Polling** page allows you to build a custom read request. Since only one value will be interpreted by ServiceDesk, to avoid confusion, all other values will be cleared whenever one of the values is set. This does not influence **Tickets Type**, however, as this is required to determine which table to poll.
 
 - **Create Incident**, **Create Rodlampelogger**, **Update Incident** and **End Incident**:
-  The ticket creation/update page can be used to add a write request to the element's cache. These values are also available for Automation scripts, so it is best to use the appropriate medium, which is likely to be the hyperlinks in the Alarm Console. When the create button is clicked, the mandatory values will be presented once more for validation. If one or more mandatory values are skipped, the write request will be denied and shown in the **~ Status Message** box. The values will not be cleared until a valid request has been made.
+  The ticket creation/update page can be used to add a write request to the element's cache. These values are also available for automation scripts, so it is best to use the appropriate medium, which is likely to be the hyperlinks in the Alarm Console. When the create button is clicked, the mandatory values will be presented once more for validation. If one or more mandatory values are skipped, the write request will be denied and shown in the **~ Status Message** box. The values will not be cleared until a valid request has been made.
 
 - **Incident Creation**: Mandatory values are **Event ID**, **Station INSA**, **Event Time** and **Description**.
   - **Rodlampelogg Creation**: Mandatory values are **Event ID**, **Station**, **Event Time** and **Description**.

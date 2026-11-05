@@ -14,7 +14,7 @@ Configuration input must be specified manually or by importing a file from previ
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                                   | DCF Integration | Cassandra Compliant |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                                                                                  | No                  | No                      |
 | 1.0.1.x          | Added support for source-to-probe linking.                                                                                                        | No                  | Yes                     |
@@ -89,7 +89,7 @@ The **Output Ports Table** provides an overview of the port definitions. A port 
 The following restrictions apply:
 
 - A port name must be unique.
-- The primary IP address and secondary IP address must be either an IPv4 address (e.g. "192.168.10.1") or the wildcard character (i.e. "\*").
+- The primary IP address and secondary IP address must be either an IPv4 address (e.g., "192.168.10.1") or the wildcard character (i.e., "\*").
 - The primary and secondary IP address cannot be the same.
 - The combination of source element, primary IP address and secondary IP address must be unique.
 
@@ -147,11 +147,11 @@ With this page, you can generate all the necessary CSV files to configure the pr
 
 ### Source Elements
 
-This page contains an overview of the source elements (i.e. the DataMiner elements running the protocol "Cisco DCM") in the **Source Elements Table**.
+This page contains an overview of the source elements (i.e., the DataMiner elements running the protocol "Cisco DCM") in the **Source Elements Table**.
 
 In this table:
 
-- The **State** column indicates whether the device is *Available* (i.e. the element is active and is not in timeout state) or *Unavailable*.
+- The **State** column indicates whether the device is *Available* (i.e., the element is active and is not in timeout state) or *Unavailable*.
 - The toggle button in the **Source Subscription** column allows you to enable or disable SLNet subscriptions for a given source element.
   In order to retrieve messages from a source element, Source Subscription has to be set to *Enabled*.
   *Note:* The **SLNet Subscriptions** parameter on the General page needs to be set to *Enabled* before any source element can be subscribed to.
@@ -160,11 +160,11 @@ The **Source Elements Table** is automatically refreshed every 30 minutes. You c
 
 ### Probe Elements
 
-This page contains an overview of the probe elements (i.e. elements in the DataMiner System running the "Tektronix Sentry" or "Tektronix Sentry PVQ" protocol) in the **Probe Elements Table**.
+This page contains an overview of the probe elements (i.e., elements in the DataMiner System running the "Tektronix Sentry" or "Tektronix Sentry PVQ" protocol) in the **Probe Elements Table**.
 
 In this table:
 
-- The **State** column indicates whether the probe is *Available* (i.e. the element is active and is not in timeout) or *Unavailable*.
+- The **State** column indicates whether the probe is *Available* (i.e., the element is active and is not in timeout) or *Unavailable*.
 - The toggle button in the **Source Subscription** column allows you to enable or disable SLNet subscriptions for a given probe.
   In order to retrieve messages from a probe element, **Source Subscription** has to be set to *Enabled*.
   *Note:* The **SLNet Subscriptions** parameter on the General page needs to be set to *Enabled* before any probe element can be subscribed to.
@@ -188,7 +188,7 @@ A stream can be masked until a certain time or until further notice. In both cas
 
 ### TS Reconfiguration
 
-When a message arrives from a probe reporting that a transport stream is down (i.e. the Port Status parameter is down for a given transport stream), a new row will be added to the **Transport Stream Reconfiguration Table**.
+When a message arrives from a probe reporting that a transport stream is down (i.e., the Port Status parameter is down for a given transport stream), a new row will be added to the **Transport Stream Reconfiguration Table**.
 
 - In case of manual reconfiguration, the possible configuration options will be displayed in the **Manual Reconfiguration Selection** column. When you select one of these options, a new message will be added to the message queue.
 - In case of automatic reconfiguration, if there are reconfiguration options available, the connector will automatically start reconfiguring. The connector will try all possible configurations until a reconfiguration succeeds. Note that between every reconfiguration, the connector will wait for a certain amount of time (configurable via the **Delay** parameter on the **Options** page). When every possible configuration has been tried and has failed, the connector will wait for an additional amount of time (configurable via the **Sliding Window** parameter on the **Options** page).
@@ -197,7 +197,7 @@ When a message arrives from a probe reporting that a transport stream is down (i
 
 This page allows you to configure the links between the source elements and the probe elements.
 
-The **Output Ports Table** provides an overview of the output ports that have been defined in the current configuration. Each output port defines a primary IP (**Source Primary IP Address**) and secondary IP address (**Source Secondary IP Address**) for a given output port (i.e. a port (**Port Idx**) on a given board (**Board Idx**) of a source element (**Source Element Name**)).
+The **Output Ports Table** provides an overview of the output ports that have been defined in the current configuration. Each output port defines a primary IP (**Source Primary IP Address**) and secondary IP address (**Source Secondary IP Address**) for a given output port (i.e., a port (**Port Idx**) on a given board (**Board Idx**) of a source element (**Source Element Name**)).
 
 The **Output Pairs Table** provides an overview of the defined output pairs in the current configuration. Each output pair is a combination of two output ports defined in the **Output Ports Table**. Note that a port can only be part of one output pair.
 
@@ -297,7 +297,7 @@ To import a DCM Configuration table:
 
 1. Right-click the DCM Configuration table and select **Import** in the context menu.
 
-1. In the pop-up window, specify the **Import File Name**, i.e. the name of one of the files in the folder *Documents\Tektronix Config Manager\DCM Configuration\DCM Configuration Table\\*.
+1. In the pop-up window, specify the **Import File Name**, i.e., the name of one of the files in the folder *Documents\Tektronix Config Manager\DCM Configuration\DCM Configuration Table\\*.
 
 1. Clicking **OK** to import the table from the CSV file.
 
@@ -370,7 +370,7 @@ To import a Probe Configuration table:
 
 1. Right-click the Probe Configuration table and select **Import** in the context menu.
 
-1. In the pop-up window, specify the **Import File Name**, i.e. the name of one of the files in the folder *Documents\Tektronix Config Manager\DCM Configuration\Probe Configuration Table\\*.
+1. In the pop-up window, specify the **Import File Name**, i.e., the name of one of the files in the folder *Documents\Tektronix Config Manager\DCM Configuration\Probe Configuration Table\\*.
 
 1. Click **OK** to import the table from the CSV file.
 
@@ -378,7 +378,7 @@ To import a Probe Configuration table:
 
 This page is similar to the DCM TS Detection page, but is only applicable for **Tektronix Sentry Edge** probes.
 
-It displays the **Detected Ports Table**, with data read out from the defined Cisco RFGWs (i.e. RF gateways) (see "RF Configuration" page). As this table does not change often, it is only refreshed daily. However, you can also trigger a manual refresh at any time with the **Refresh** button.
+It displays the **Detected Ports Table**, with data read out from the defined Cisco RFGWs (i.e., RF gateways) (see "RF Configuration" page). As this table does not change often, it is only refreshed daily. However, you can also trigger a manual refresh at any time with the **Refresh** button.
 
 To apply one or more detected RF ports:
 
@@ -439,7 +439,7 @@ To import an RF Pairs Table:
 
 1. Right-click the table and select **Import** in the context menu.
 
-1. In the pop-up window, specify the **Import File Name**, i.e. the name of one of the files in the folder *Documents\Tektronix Config Manager\RF Configuration\RF Pairs Table\\*.
+1. In the pop-up window, specify the **Import File Name**, i.e., the name of one of the files in the folder *Documents\Tektronix Config Manager\RF Configuration\RF Pairs Table\\*.
 
 1. Click **OK** to import the table from the CSV file.
 
@@ -465,7 +465,7 @@ To configure a service:
 
    1. In the context menu, select **Configure** to push the alert template configurations to the probes that contain these services.
 
-To remove empty services (i.e. services that are no longer in any probe):
+To remove empty services (i.e., services that are no longer in any probe):
 
 1. Via a button in the row:
 
@@ -494,7 +494,7 @@ To import a table:
 
 1. Right-click the table and select **Import** in the context menu.
 
-1. In the pop-up window, specify the **Import File Name**, i.e. the name of one of the files in the folder *Documents\Tektronix Config Manager\Service Configuration\Service Configuration Table.*
+1. In the pop-up window, specify the **Import File Name**, i.e., the name of one of the files in the folder *Documents\Tektronix Config Manager\Service Configuration\Service Configuration Table.*
 
 1. Click **OK** to import the table from the CSV file.
 
@@ -551,7 +551,7 @@ To export the Alert Template Configuration Table:
 To import the Alert Template Configuration Table:
 
 1. Right-click the table and select **Import** in the context menu.
-1. In the pop-up window, specify the **Import File Name**, i.e. the name of one of the files in the folder *Documents\Tektronix Config Manager\Service Configuration\Alert Template Configuration Table\\*.
+1. In the pop-up window, specify the **Import File Name**, i.e., the name of one of the files in the folder *Documents\Tektronix Config Manager\Service Configuration\Alert Template Configuration Table\\*.
 1. Click **OK** to import the table from the CSV file.
 
 To configure an alert template to all probes:
@@ -560,7 +560,7 @@ To configure an alert template to all probes:
 
 ### Source Elements
 
-This page contains an overview of the source elements (i.e. the DataMiner elements running the protocol "Cisco DCM") in the **Source Elements Table**.
+This page contains an overview of the source elements (i.e., the DataMiner elements running the protocol "Cisco DCM") in the **Source Elements Table**.
 
 In this table, the **State** column indicates whether the device is *Active, Stopped*, etc.
 
@@ -568,7 +568,7 @@ The table is automatically refreshed every 30 minutes, but can also be refreshed
 
 ### Probe Elements
 
-On this page, the Probe Elements Table displays an overview of the probe elements, i.e. the elements in the DataMiner System running the "Tektronix Sentry", "Tektronix Sentry Edge" or "Tektronix Sentry PVQ" protocol.
+On this page, the Probe Elements Table displays an overview of the probe elements, i.e., the elements in the DataMiner System running the "Tektronix Sentry", "Tektronix Sentry Edge" or "Tektronix Sentry PVQ" protocol.
 
 In this table, the **State** column indicates whether each probe is *Active, Stopped*, etc.
 

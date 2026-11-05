@@ -56,19 +56,11 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination.
   - **Bus address**: Use the value "any".
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This element has the following data pages:
 
-- **General:** Displays general information about the card, e.g. **Status**, **State**, **Card Name**, **User Label**, **Card Description**, etc.
+- **General:** Displays general information about the card, e.g., **Status**, **State**, **Card Name**, **User Label**, **Card Description**, etc.
 - **Control:** Allows you to set the parameters **Input Format**, **Lock Mode**, **Reference Type**, **Add on Mode**, **GPI Control** and **Output 4**.
 - **Keyer Options:** Allows you to modify parameters such as **Keyer**, **Program Key**, **Preview Key**, etc.
 - **Embedder:** Allows you to turn each different embedder on or off.

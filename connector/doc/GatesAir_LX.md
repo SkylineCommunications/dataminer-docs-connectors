@@ -17,7 +17,7 @@ The GatesAir LX connector can be used to monitor and control the **GatesAir** **
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
+| 1.0.0.x   | TBD                    |
 | 1.0.1.x   | 1.0.9                  |
 
 ### System Info

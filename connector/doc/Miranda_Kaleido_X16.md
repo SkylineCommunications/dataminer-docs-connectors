@@ -22,7 +22,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 SNMP Settings:
 
@@ -37,8 +37,8 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - **Type of port:** TCP/IP.
-- **IP address/host**: The same IP as is used for the SNMP communication, e.g. *10.145.1.12*.
-- **IP port**: The IP port of the device, e.g. *13000*.
+- **IP address/host**: The same IP as is used for the SNMP communication, e.g., *10.145.1.12*.
+- **IP port**: The IP port of the device, e.g., *13000*.
 - **Timeout of a single command**: At least *2500* ms.
 
 ## Usage

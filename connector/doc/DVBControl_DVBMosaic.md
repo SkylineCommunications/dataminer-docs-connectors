@@ -15,19 +15,19 @@ The 3.0.0.x range was created because of memory problems with the SNMP agent on 
 
 ### Version Info
 
-| **Range**     | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                    | Yes                 | Yes                     |
-| 3.0.0.x              | Initial version with HTTP          | Yes                 | Yes                     |
-| 3.0.1.x [SLC Main]   | Changed Tally color label to State | Yes                 | Yes                     |
+| Range              | Description                        | DCF Integration | Cassandra Compliant |
+|--------------------|------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version                    | Yes             | Yes                 |
+| 3.0.0.x            | Initial version with HTTP          | Yes             | Yes                 |
+| 3.0.1.x [SLC Main] | Changed Tally color label to State | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 3.0.9.x                     |
-| 3.0.0.x          | \> 3.0.9.28                 |
-| 3.0.1.x          | \> 3.0.9.28                 |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 3.0.9.x                    |
+| 3.0.0.x | \> 3.0.9.28                |
+| 3.0.1.x | \> 3.0.9.28                |
 
 ## Installation and configuration
 
@@ -89,7 +89,7 @@ On this page, you can perform the following actions:
 
 ### Inputs
 
-This page displays the **Input Table**, which contains the **ID**, **Name** and **Status** (*Stopped*, *Running* or *Error*) of the inputs. This table also indicates if an input has a Continuity Counter Error (**CC Error**). The **Acknowledge** button of this table allows you to acknowledge alarms of a specific input.
+This page displays the **Input Table**, which contains the **ID**, **Name**, and **Status** (*Stopped*, *Running* or *Error*) of the inputs. This table also indicates if an input has a Continuity Counter Error (**CC Error**). The **Acknowledge** button of this table allows you to acknowledge alarms of a specific input.
 
 The page also contains the **ERT290 Error Table**, which displays information on all received **ERT290 Error Traps**. Via the **Auto Clear** page button, you can configure the maximum number of days that an entry should be displayed and the maximum number of entries in the table.
 
@@ -137,7 +137,7 @@ Configuring presets in the **Alarm Preset Table** can be done by importing an XM
 
 You can also add a preset in the table by selecting **Create Preset** in the table's context menu. This way, you can add the presets one by one. To delete a preset, right-click the entry in the table and select **Delete Preset**. The **Remove All** button can be used to delete all the entries from the table at once. To save an alarm preset in an XML file, click the button **Export Alarm Preset**.
 
-Once an alarm preset has been assigned to a certain input, channel or PID, this preset name can be used as a filter when you create alarm templates in DataMiner. This will allow you to configure different thresholds for the same parameter (e.g. PID bitrate), depending on the alarm preset filter.
+Once an alarm preset has been assigned to a certain input, channel or PID, this preset name can be used as a filter when you create alarm templates in DataMiner. This will allow you to configure different thresholds for the same parameter (e.g., PID bitrate), depending on the alarm preset filter.
 
 ### Tallys
 

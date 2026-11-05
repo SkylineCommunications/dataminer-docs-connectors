@@ -18,8 +18,8 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **IP port**: The port of the connected device, e.g. *81.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **IP port**: The port of the connected device, e.g., *81.*
 
 ## Usage
 

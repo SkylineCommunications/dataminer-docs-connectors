@@ -21,7 +21,8 @@ With this connector, you can gather and view information from the device **Ateme
 | 4.0.3.x | - Corrections to service output logic.<br>- New primary key format for all output tables. | Yes | Yes |
 | 4.0.4.x | Primary key of trap table changed. Display key unchanged. | Yes | Yes |
 | 4.0.5.x | DCF rework to create internal connection for services from input (both SDI and IP) to output | Yes | Yes |
-| 4.0.6.x [Main range] | - Fixed column parameter descriptions according to the guidelines.<br>- Added exception values for NTP parameters. | Yes | Yes |
+| 4.0.6.x | - Fixed column parameter descriptions according to the guidelines.<br>- Added exception values for NTP parameters. | Yes | Yes |
+| 4.0.7.x [Main range] | - Added ability to change active output to associated services.<br>- Services table display order has been updated. | Yes | Yes |
 
 ### Product Info
 
@@ -36,6 +37,7 @@ With this connector, you can gather and view information from the device **Ateme
 | 4.0.4.x          | 4.1.10.5                    |
 | 4.0.5.x          | 4.1.10.5                    |
 | 4.0.6.x          | 4.1.10.5                    |
+| 4.0.7.x          | 4.1.10.5                    |
 
 ## Configuration
 
@@ -47,7 +49,7 @@ From connector range 4.0.0.x onwards, only an HTTP connection is used.
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. 10.24.4.138
+- **IP Address/host**: The polling IP of the device, e.g., 10.24.4.138
 
 **SNMP Settings:**
 
@@ -79,15 +81,15 @@ This page displays a table with the blades present on the device.
 
 ### Device Page (DVE)
 
-This page will show general information about the device, e.g. **Device Name**, **Device State**, **Device Output URL**, etc.
+This page will show general information about the device, e.g., **Device Name**, **Device State**, **Device Output URL**, etc.
 
 ### Service (DVE)
 
-This page displays information regarding the service provided by this device, e.g. **Service Name**, **Service State**, etc.
+This page displays information regarding the service provided by this device, e.g., **Service Name**, **Service State**, etc.
 
 ### Blade (DVE)
 
-This page shows information about the blade to which the device is connected, e.g. **Blade Name**, **Blade Serial Number**, etc.
+This page shows information about the blade to which the device is connected, e.g., **Blade Name**, **Blade Serial Number**, etc.
 
 ## Usage - Range 4.0.0.x
 
@@ -95,7 +97,7 @@ From version 4.0.0.7 onwards, it is possible to export each service as a DVE. Th
 
 ### General Page
 
-This page displays general information about the device, e.g. Device Name, Firmware Version, CPU Load, Memory Usage, etc.
+This page displays general information about the device, e.g., Device Name, Firmware Version, CPU Load, Memory Usage, etc.
 
 ### SDI Cards Page
 
@@ -105,7 +107,7 @@ This page displays a table with SDI cards information (card name, status, FPGA I
 
 This page displays the Services table. This table displays the service name, service status, streaming status, input information, and output. You can also stop, delete, or start a single service or all services.
 
-From version 4.0.0.8 onwards, a **Manage** button is available for the services, which starts a wizard that allows you to configure some parameters for a service. The wizard uses the Automation script *Ateme_Titan_Live_Manage_Service*.
+From version 4.0.0.8 onwards, a **Manage** button is available for the services, which starts a wizard that allows you to configure some parameters for a service. The wizard uses the automation script *Ateme_Titan_Live_Manage_Service*.
 
 From version 4.0.0.2 onwards, you can change the format of the SDI input port name. For legacy reasons, this cannot be changed automatically. The old format is `sdi-card-x Input y`; the new format is `sdi-card-x/y`.
 

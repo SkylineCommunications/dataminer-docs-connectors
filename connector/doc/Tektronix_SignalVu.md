@@ -12,7 +12,7 @@ The connector communicates through a VISA interface, using the GPIB protocol.
 
 ### Version Info
 
-| **Range** | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. | No                  | Yes                     |
 

@@ -34,10 +34,11 @@ This page displays the generic status of the card, which includes **slot informa
 
 ### Amplifier
 
-This page displays the amplifier information. **Amplifier** **Input**, **Laser** and **Output** tables are included.
+This page displays the amplifier information. **Amplifier Input**, **Laser** and **Output** tables are included.
 
 ### Configuration
 
 This page provides access to generic configuration and actions, such as the **Module Reset**, **Factory Default** reset and **Slot Reset** for the relevant card. You can also change the status of the **Front Panel Lock**, and **Blink** the card's front status LED.
 
 From version 1.0.0.3 onwards, you can also change some system configuration settings, specifically **Date/Time** and **Alarm Detection**, and make a **Software Reset**.
+

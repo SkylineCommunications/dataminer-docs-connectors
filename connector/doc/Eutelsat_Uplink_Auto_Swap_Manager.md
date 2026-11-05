@@ -12,7 +12,7 @@ The connector will monitor the uplink and downlink sites. Based on detected issu
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

@@ -14,7 +14,7 @@ The received parameter values are used in a series of checks that help the conne
 
 The **Active Bearer** is determined by first checking the **latency** value. The expected values for latency for GX or WGS should fall between the lower and higher threshold values. The connector will then check if GX or WGS is configured to be active, based on the parameters from the EBEM and/or Cobra devices, in order to determine if the active bearer is **GX, WGS, Unknown, Blocked, Down** or **Off**.
 
-The EBEM and/or Cobra parameter values are then used to determine if **Statistics** parameters should be started, such as **Uptime**, **Downtime** and **Outage Time**. Basically, if the EBEM and/or the Cobra are configured to transmit as GX and/or WGS, but the measured latency indicates that this is not the case (i.e. the latency is outside of the expected lower or upper ranges for GX or WGS), this is considered to be an outage.
+The EBEM and/or Cobra parameter values are then used to determine if **Statistics** parameters should be started, such as **Uptime**, **Downtime** and **Outage Time**. Basically, if the EBEM and/or the Cobra are configured to transmit as GX and/or WGS, but the measured latency indicates that this is not the case (i.e., the latency is outside of the expected lower or upper ranges for GX or WGS), this is considered to be an outage.
 
 ### Version Info
 

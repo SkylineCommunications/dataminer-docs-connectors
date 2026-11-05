@@ -16,12 +16,6 @@ From DataMiner 10.0.3 onwards, you can also generate a button panel UI component
 |--|--|--|--|
 | 1.0.0.x [SLC Main] | Page system for button panel. <br>Supported actions for buttons: <br>- Page jump <br>- DataMiner parameter get <br>- DataMiner parameter set <br>- DataMiner element alarm state | - | - |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

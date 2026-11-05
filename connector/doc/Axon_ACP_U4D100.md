@@ -56,14 +56,6 @@ SMART-SERIAL CONNECTION:
   - **IP port**: The IP port of the destination (fixed value: *2071*).
   - **Bus address**: The bus address or slot number/position of the card in the frame.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following pages:
@@ -73,4 +65,4 @@ The element has the following pages:
 - **I/O**: This page contains input/output control parameters that are used to configure the I/O settings of the card.
 - **Video**: This page contains Gain and Black control parameters. These parameters are available for firmware versions 1417 and above.
 - **Settings**: This page contains control parameters other than I/O and Gain such as the Lock Mode, Reference Type, etc.
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.

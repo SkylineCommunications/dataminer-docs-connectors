@@ -46,14 +46,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 To do SNMP sets on the Switch Position Table, go to the **Position** page and set the **Switch Mode** parameter to ***Manual.***

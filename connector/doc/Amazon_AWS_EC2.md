@@ -81,3 +81,5 @@ This **Instances** page provides an overview of all EC2 instances available for 
 The **Configuration** page (available below the Instances page in range **1.0.1.x**) contains the naming format for the retrieved instances. Enter a format based on the instructions in the Help parameter. This will take effect after the next polling cycle of the instances.
 
 The **Debug** page (available in range 1.0.1.x) contains a table with records of all interactions with AWS.
+
+On the **Events** page, you can select the **format of the display key** for the **Scheduled Events table** by selecting the option of your choice in the dropdown parameter **Scheduled Events Display Key Format**. The default format is `Instance ID/Events ID`.

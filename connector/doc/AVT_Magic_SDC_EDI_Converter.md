@@ -15,12 +15,6 @@ This connector makes it possible to monitor an AVT Magic SDC EDI Converter with 
 | 1.0.0.x | Initial version. | - | - |
 | 1.0.1.x [SLC Main] | - Updated DCF version. <br>- Changed type string to fit units. <br>- Additional minor fixes | 1.0.0.4 | - New DCF version increases the minimum DataMiner version. <br>- Changing type of parameter affects versioning. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -46,14 +40,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element consists of the data pages described below. Each table is updated based on traps.
@@ -67,7 +53,7 @@ The element consists of the data pages described below. Each table is updated ba
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the AVT Magic SDC EDI Converter protocol supports the usage of DCF and can only be used on a DMA with **9.5.0** as the minimum version.
+The **1.0.1.x** connector range of the AVT Magic SDC EDI Converter connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

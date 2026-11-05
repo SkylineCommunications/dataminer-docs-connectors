@@ -10,7 +10,7 @@ This connector allows you to set up and manage the IQMIX40 multi-channel video-o
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                       | **Based on** | **System Impact** |
+| Range              | Key Features                                                         | Based on   | System Impact   |
 |----------------------|------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]     |Initial version.                                                       | -            | -                 |
 | 1.0.1.x [SLC Main]   | Reworked backend. Works with initial polling and unsolicited messages. | -            | -                 |
@@ -43,7 +43,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (default: *2050*).
-  - **Bus address**: The bus address of the device. Specify the bus address in the following format: **UU.PP**, with UU being the rollnet address and PP being the slot number (chassis is 00), e.g. **10.00**.
+  - **Bus address**: The bus address of the device. Specify the bus address in the following format: **UU.PP**, with UU being the rollnet address and PP being the slot number (chassis is 00), e.g., **10.00**.
 
 ### Web Interface
 

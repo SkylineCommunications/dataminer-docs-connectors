@@ -15,7 +15,7 @@ With this manager, you will be able to track the usage of resources, change the 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version (POC). | - | - |
-| 1.0.1.x [SLC Main] | - User input now runs via interactive Automation scripts. <br>- Visual Overview layer has been added to the application. | 1.0.0.1 | - |
+| 1.0.1.x [SLC Main] | - User input now runs via interactive automation scripts. <br>- Visual Overview layer has been added to the application. | 1.0.0.1 | - |
 
 ### System Info
 
@@ -38,10 +38,6 @@ On the **FAS Configurations** subpage, you can configure the file locations for 
 With the **File Server User Name**, **Domain** and **Password**, you can specify how DataMiner needs to be impersonated in order to reach the network directory.
 
 With **Encoder Mount Path**, you can specify what the path will look like on the encoder itself. By default, this should start with */data/mnt/...*
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

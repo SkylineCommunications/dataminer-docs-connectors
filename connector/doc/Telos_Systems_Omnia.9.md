@@ -44,8 +44,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, i.e. *public*.
-- **Set community string**: The community string used when setting values on the device, i.e. *private*.
+- **Get community string**: The community string used when reading values from the device, i.e., *public*.
+- **Set community string**: The community string used when setting values on the device, i.e., *private*.
 
 #### HTTP Connection [range 1.0.1.x]
 
@@ -72,7 +72,7 @@ This page contains **preset** parameters (**Input**, **FM**, **HD**, **Stream**,
 
 ### RDS [Range 1.0.1.x]
 
-This page contains **Radio Data System (RDS)** parameters (e.g. UECP, Radiotext).
+This page contains **Radio Data System (RDS)** parameters (e.g., UECP, Radiotext).
 
 ### FM Options [Range 1.0.1.x]
 

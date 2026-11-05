@@ -40,7 +40,7 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Port number**: The IP port of the storage system. e.g. *161*.
+- **Port number**: The IP port of the storage system. e.g., *161*.
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 

@@ -18,7 +18,7 @@ A **serial** connection is used to display the settings of the controller.
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                                               | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                                                                                              | No                  | No                      |
 | 1.1.0.x [SLC Main]   | Based on 1.0.0.3. Implemented support for new firmware (cf. "Supported firmware versions" table). **UDP Broadcast** status messages (Rev. L). | No                  | Yes                     |

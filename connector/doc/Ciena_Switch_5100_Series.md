@@ -12,19 +12,19 @@ The connector polls data from the device using SNMP. It supports different switc
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                     | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [Obsolete]     |Initial version                                                                                                                     | No                  | Yes                     |
-| 1.0.1.x [Obsolete]     |Improved bitrate calculation                                                                                                        | No                  | Yes                     |
-| 1.0.2.x [SLC Main]   | Added new table wwpLeosPortStatsTable, added button for removing error in interface table, and resolved high bandwidth utilization. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | No | Yes |
+| 1.0.1.x [Obsolete] | Improved bitrate calculation | No | Yes |
+| 1.0.2.x [SLC Main] | Added new table wwpLeosPortStatsTable, added button for removing error in interface table, and resolved high bandwidth utilization. | No | Yes |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | saos-06-14-00-0337     |
-| 1.0.1.x   | saos-06-14-00-0337     |
-| 1.0.2.x   | saos-06-14-00-0337     |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | saos-06-14-00-0337 |
+| 1.0.1.x | saos-06-14-00-0337 |
+| 1.0.2.x | saos-06-14-00-0337 |
 
 ## Configuration
 
@@ -41,7 +41,9 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device.
+
 - **Get community string**: The community string used when reading values from the device (default: *public*).
+
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ## Usage

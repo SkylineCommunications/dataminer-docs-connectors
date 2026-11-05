@@ -12,16 +12,10 @@ This connector is intended to work with the **Evertz MVP OV** card. It was desig
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | SNMP set not working.                                                                            | No                  | Yes                     |
-| 2.0.0.x [SLC Main]   | Now uses DVEs for each bus address instead of using the bus address to look at a single channel. | No                  | Yes                     |
-
-### Supported Firmware Versions
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | SNMP set not working. | No | Yes |
+| 2.0.0.x [SLC Main] | Now uses DVEs for each bus address instead of using the bus address to look at a single channel. | No | Yes |
 
 ## Installation and Configuration
 
@@ -33,7 +27,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Range *1-8* (obsolete from version 2.0.0.1 onwards).
 
 SNMP Settings:

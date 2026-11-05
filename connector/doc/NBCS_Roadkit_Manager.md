@@ -10,29 +10,9 @@ This connector can be used to manage the NBCS Roadkit.
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><p>Initial version: - Processes CSV events through inter-app calls. - Merges CSV events with job data. - Polls job information from the Jobs app. - Allows you to approve jobs and create bookings, as well as edit bookings from the Jobs app.</p>
-<p>This version is still an MVP.</p></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version:<br>- Processes CSV events through inter-app calls.<br>- Merges CSV events with job data.<br>- Polls job information from the Jobs app.<br>- Allows you to approve jobs and create bookings, as well as edit bookings from the Jobs app.<br><br>This version is still an MVP. | - | - |
 
 ### Product Info
 
@@ -64,9 +44,9 @@ On the **General** page, a table lists the events known by the connector. This t
 
 - **Event State Details**: Displays more details in case the Event State is *Fail*.
 
-- **Job State**: Reflects the state of the job, if any. Possible values are *N/A* (i.e. Not Applicable), *Not Created* (if a job could not be created), and *Created* (if a job has been created).
+- **Job State**: Reflects the state of the job, if any. Possible values are *N/A* (i.e., Not Applicable), *Not Created* (if a job could not be created), and *Created* (if a job has been created).
 
-- **Booking State**: Reflects the state of the booking, if any. If there is **no booking**, the possible values are *N/A* (i.e. Not Applicable) or *Not Created* (if the booking could not be created). When there **is a booking**, the values fall back to the same values as the booking status (i.e. *Undefined*, *Pending*, *Confirmed*, *Completed*, *Disconnected*, *Interrupted*, or *Canceled*). The booking state is updated based on a timer.
+- **Booking State**: Reflects the state of the booking, if any. If there is **no booking**, the possible values are *N/A* (i.e., Not Applicable) or *Not Created* (if the booking could not be created). When there **is a booking**, the values fall back to the same values as the booking status (i.e., *Undefined*, *Pending*, *Confirmed*, *Completed*, *Disconnected*, *Interrupted*, or *Canceled*). The booking state is updated based on a timer.
 
 - **Start Proximity**
 

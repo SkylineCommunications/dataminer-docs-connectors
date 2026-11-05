@@ -34,7 +34,7 @@ On the **Setting** page of this connector, you can configure the **Singtel Event
 
 ## API
 
-This connector implements an API that can be used to run certain calls from an Automation script.
+This connector implements an API that can be used to run certain calls from an automation script.
 
 To send a request, a JSON string has to be set to the parameter with ID 49999. The response will be available in the parameter with ID 49998. Each request has a GUID that will be replicated in the response so that each request can be identified.
 
@@ -42,7 +42,7 @@ In the documents folder for the connector, there is a namespace implementing the
 
 The following actions are possible:
 
-| **Action**                 | **Example request**                                                                                                                                                                                                                                                                                     |
+| Action                 | Example request                                                                                                                                                                                                                                                                                     |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Create recording           | { "**Action**": "Create", "**Object**": "Recording", "**Guid**": "Random guid", "**Data**": { "**Id**": "int", "**Title**": "string", "**Ird**": "string", "**Recorder**": "string", "**StartTime**": "Datetime (as oadate)", "**StopTime**": "Datetime (as oadate)", "**EventId**": "int", }}          |
 | Update recording           | { "**Action**": "Update", "**Object**": "Recording", "**Guid**": "Random guide", "**Data**": { "**Id**": "int", "**Title**": "string", "**Ird**": "string", "**Recorder**": "string", "**StartTime**": "Datetime (as oadate)", "**StopTime**": "Datetime (as oadate)", "**EventId**": "int", }}         |

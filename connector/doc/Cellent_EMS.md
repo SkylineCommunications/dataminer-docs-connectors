@@ -4,11 +4,11 @@ uid: Connector_help_Cellent_EMS
 
 # Cellent EMS
 
-The Cellent EMS makes it possible to send text messages with an Automation script using an HTTP request.
+The Cellent EMS makes it possible to send text messages with an automation script using an HTTP request.
 
 ## About
 
-With an Automation script, the number and message separated by an '\|' can be given to this connector.
+With an automation script, the number and message separated by an '\|' can be given to this connector.
 
 After this, the connector will process this information together with the information set in the element like the username, password, etc. to make the HTTP request.
 

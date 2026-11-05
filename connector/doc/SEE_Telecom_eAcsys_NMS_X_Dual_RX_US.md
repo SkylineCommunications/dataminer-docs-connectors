@@ -12,7 +12,7 @@ With this connector, you can inspect general information about the module, monit
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**           |
+| Range | Device Firmware Version           |
 |------------------|---------------------------------------|
 | 1.0.0.x          | Compatible with software version 1.1. |
 | 2.0.0.x          | Compatible with software version 1.1. |

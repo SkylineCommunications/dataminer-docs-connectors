@@ -56,14 +56,6 @@ SMART-SERIAL CONNECTION:
   - **IP port**: The IP port of the destination (fixed value: *2071*).
   - **Bus address**: The bus address or slot number/position of the card in the frame.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following pages:
@@ -79,13 +71,13 @@ The element has the following pages:
 - **Embedder/AddOn Status:** This page displays Embedder Channels and Quad Speed Add On Input Status information.
 - **Monitoring:** This page displays status information of the monitoring parameters.
 - **Debug:** This page contains debug information.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 Note: If the setting of a parameter depends on another parameter, when you try to set the first of these parameters before the other parameter is set, a message box is displayed that explains what to do first. Follow the instructions in the message box and set the required parameter before you set the other parameter.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP GAW300 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Axon ACP GAW300 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

@@ -32,7 +32,7 @@ Once created, the element can be used immediately. There are 5 pages available.
 
 ### Matrix
 
-On this page, the device matrix can be configured, i.e. the wiring of inputs and outputs.
+On this page, the device matrix can be configured, i.e., the wiring of inputs and outputs.
 
 ### General
 

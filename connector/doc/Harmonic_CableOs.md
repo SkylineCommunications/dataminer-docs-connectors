@@ -53,14 +53,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Threshold Table
 
 In the threshold table, you can define limits for each polled modulation. The available Key Performance Indicators (KPIs) for setting thresholds are:

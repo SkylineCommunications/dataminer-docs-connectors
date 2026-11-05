@@ -8,10 +8,10 @@ This is a virtual connector that is used to manage carrier monitoring (including
 
 ### Version Info
 
-| **Range**            | **Key Features**   | **Based on** | **System Impact**                                                                                              |
+| Range            | Key Features   | Based on | System Impact                                                                                              |
 |----------------------|--------------------|--------------|----------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version    | -            | -                                                                                                              |
-| 1.0.1.x [SLC Main]   | Renamed parameters | 1.0.1.5      | Filters, Automation scripts, Visio drawings, reports, and DataMiner Web API usage may need to be reconfigured. |
+| 1.0.1.x [SLC Main]   | Renamed parameters | 1.0.1.5      | Filters, automation scripts, Visio drawings, reports, and DataMiner Web API usage may need to be reconfigured. |
 
 ### Product Info
 
@@ -35,13 +35,13 @@ This connector uses a **virtual** connection and does not require any input duri
 
 ### Initialization
 
-The connector uses an interactive Automation script to perform the "Create" and "Update Carrier" actions. Make sure this **Carrier Configurations** script is installed.
+The connector uses an interactive automation script to perform the "Create" and "Update Carrier" actions. Make sure this **Carrier Configurations** script is installed.
 
 You can also assign the dedicated **Visio drawing** to the element for easy navigation between the configured carriers and their spectrum thumbnails.
 
 ## How to use
 
-- **Driver Status**: Will show *Not Busy* if no operation is being done or *Busy* if an operation is being executed (e.g. creating a new carrier).
+- **Driver Status**: Will show *Not Busy* if no operation is being done or *Busy* if an operation is being executed (e.g., creating a new carrier).
 - **Carrier Table**: In this table, you can add, update, or delete specific carriers via the right-click menu.
 - **Spectrum Monitor Table**: This table is automatically filled in with all available spectrum monitor elements and their measurement points.
 - **Configuration:** On this page, you can configure default values that will be used to configure carriers.

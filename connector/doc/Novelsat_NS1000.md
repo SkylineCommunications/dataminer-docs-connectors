@@ -12,7 +12,7 @@ This SNMP connector can be used to monitor and configure the **Novelsat NS1000 M
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                                                                  | DCF Integration | Cassandra Compliant |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                                                                                                                 | No                  | Yes                     |
 | 1.0.1.x              | New range for firmware 1.1.1 (build 2592).                                                                                                                       | No                  | Yes                     |
@@ -83,6 +83,10 @@ This page displays the modulator line settings of the device, such as **TX State
 ### Channel Settings
 
 This page displays the modulator channel settings for both channel 1 and channel 2, such as **Source**, **Frame size**, **Modulation**, **Stream Format**, etc.
+
+### Device Configuration
+
+This page displays the Database File Name, along with a button **(Save Configuration)** that can be used to save the device configuration in the device's database. 
 
 ### Alarms
 

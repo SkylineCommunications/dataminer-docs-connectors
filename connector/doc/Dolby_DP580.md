@@ -39,14 +39,6 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *80*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Since most of the parameters for **Dolby Digital** and **Dolby Digital Plus** codecs are similar, they are grouped together in tables on the **Dolby Digital** page. The Dolby Digital page therefore contains information about both Dolby Digital and Dolby Digital Plus audio signal formats.

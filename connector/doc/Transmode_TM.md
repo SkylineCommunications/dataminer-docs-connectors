@@ -4,7 +4,7 @@ uid: Connector_help_Transmode_TM
 
 # Transmode TM
 
-The Transmode TM is a **transponder/muxponder** that is used as a buffer between the "client layer" and the "WDM domain". As a result of this buffer, client equipment of different types and from different vendors can be connected to the Transmode network. A transponder/muxponder also enables encapsulation of the client signal into a digital wrapper, i.e. extra bytes are added to the client signal at the client ingress point and removed at the client egress point. These overhead bytes can be used for a number of features such as performance and fault management, FEC, automatic laser shutdown, etc.
+The Transmode TM is a **transponder/muxponder** that is used as a buffer between the "client layer" and the "WDM domain". As a result of this buffer, client equipment of different types and from different vendors can be connected to the Transmode network. A transponder/muxponder also enables encapsulation of the client signal into a digital wrapper, i.e., extra bytes are added to the client signal at the client ingress point and removed at the client egress point. These overhead bytes can be used for a number of features such as performance and fault management, FEC, automatic laser shutdown, etc.
 
 This connector retrieves and sets data via **SNMP**.
 

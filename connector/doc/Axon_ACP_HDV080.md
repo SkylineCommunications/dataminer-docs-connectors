@@ -56,14 +56,6 @@ Interface connection:
 - **IP port**: The IP port of the destination (fixed value: *2071*).
 - **Bus address**: The bus address or slot number/position of the card in the frame.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following pages:
@@ -78,14 +70,14 @@ The element has the following pages:
 
 - **Inserter:** Contains the **WSS**, **Timecode**, and **Video Index** parameters.
 
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 > [!NOTE]
 > If the setting of a parameter depends on another parameter, when the user tries to set the second parameter before the first parameter is set, a pop-up window will be displayed indicating what to do first. In this case, the user must set the first parameter according to the information in the pop-up window before setting the second parameter. For example, in order to set Active Preset (on the Preset page), the Preset Control has to be set to Manual mode.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP HDV080 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Axon ACP HDV080 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

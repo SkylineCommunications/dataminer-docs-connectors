@@ -14,12 +14,6 @@ The 7800PA-10GE2 is an integrated switch fabric that leverages 1GbE signaling, n
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -43,10 +37,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

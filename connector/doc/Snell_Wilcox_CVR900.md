@@ -12,7 +12,7 @@ It also handles embedded, AES and analog audio. It can do aspect ratio conversio
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                      | **Based on** | **System Impact** |
+| Range              | Key Features                                                        | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version, enables monitoring and setting of device parameters. | -            | -                 |
 
@@ -38,7 +38,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **IP port**: The IP port of the destination (default: *161*).
 
 SNMP Settings:

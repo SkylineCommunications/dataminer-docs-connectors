@@ -34,14 +34,6 @@ Prometheus is an open-source systems monitoring and alerting toolkit. It scrapes
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 This connector gets its data via an element using the **Generic Prometheus Collector** connector, which means that no data traffic will be seen in the **Stream Viewer**.
@@ -94,3 +86,4 @@ The primary key will be constructed by the mapped label columns. The label value
 When the **Instance Name Filter** is changed, the connector pushes the default queries with all the necessary data to allow the connector to be populated completely by the selected **Generic Prometheus Collector** element. However, if you want to add a new parameter to the connector, you will need to also add the necessary information to a collector element. If you fill in the *additionalUserDefinedQueries* list in QAction 5 (After Startup) with the targeted parameter ID, the poll speed, the query you wish to use and, if necessary, the additional labels, you will be able to push them to the **Generic Prometheus Collector Query Table.**
 
 Examples can be found in the code.
+

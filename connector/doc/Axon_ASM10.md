@@ -22,12 +22,12 @@ The connector uses a Simple Network Management Protocol (SNMP) connection and re
 **SNMP Settings:**
 
 - **Port number**: The port of the connected device, by default *161.*
-- **Get community** **string**: The community string used when reading values from the device. The default value is *public*
+- **Get community string**: The community string used when reading values from the device. The default value is *public*
 - **Set community string**: The community string used when setting values on the device. The default value is *private*
 
 ## Usage
 
-This connector has five pages: **Main View,** **General Info, Settings_1, Settings_2** and **Events.**
+This connector has five pages: **Main View**, **General Info**, **Settings_1, Settings_2**, and **Events**.
 
 ### Main View Page
 
@@ -55,7 +55,7 @@ On this page, the following parameters are displayed:
 
 - **SDI Input** status
 - **Error Detection Handling (EDH)** status
-- **Ancilliary (ANC)** status
+- **Ancillary (ANC)** status
 - **Card Name**
 - **User Label:** the only configurable parameter.
 - **Description**

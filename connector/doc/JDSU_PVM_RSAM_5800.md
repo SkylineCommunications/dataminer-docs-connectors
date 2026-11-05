@@ -14,7 +14,7 @@ When **SNMP** **traps** are received, the element will update the corresponding 
 
 ### Version Info
 
-| **Range** | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                             | No                  | Yes                     |
 | 2.0.0.x          | Branch version based on 1.0.0.x (see below) | No                  | Yes                     |

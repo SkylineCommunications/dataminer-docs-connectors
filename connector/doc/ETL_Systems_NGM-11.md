@@ -10,7 +10,7 @@ This connector is intended for use with ETL Systems NGM matrix devices. The ETL 
 
 ### Version Info
 
-| **Range**            | **Key Features**         | **Based on** | **System Impact** |
+| Range                | Key Features             | Based on     | System Impact     |
 |----------------------|--------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Matrix device management | -            | -                 |
 
@@ -52,25 +52,21 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600* (default: *19200*).
-  - **Databits**: Databits specified in the manual of the device, e.g. *7* (default: *8*).
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1* (default: *1*).
-  - **Parity**: Parity specified in the manual of the device, e.g. *No* (default: *no*).
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No* (default: *no*).
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600* (default: *19200*).
+  - **Databits**: Databits specified in the manual of the device, e.g., *7* (default: *8*).
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1* (default: *1*).
+  - **Parity**: Parity specified in the manual of the device, e.g., *No* (default: *no*).
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No* (default: *no*).
 
 - Interface connection:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (default: *4000*).
-  - **Bus address**: The bus address of the device. (default: *65*) (range: *32* - *122*). Use the decimal ASCII value of the **matrix address** configured in the device, e.g. A = *65*, P = *80*.
+  - **Bus address**: The bus address of the device. (default: *65*) (range: *32* - *122*). Use the decimal ASCII value of the **matrix address** configured in the device, e.g., A = *65*, P = *80*.
 
 ### Initialization
 
 Please review the connection settings for elements initialized in version 1.0.0.2 or below. The SNMP connection has become the primary connection to enable sets. This can cause incorrect connection settings when you upgrade an existing element.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

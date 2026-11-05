@@ -62,14 +62,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **Bus address**: The bus address of the device.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following data pages:
@@ -91,11 +83,11 @@ The element has the following data pages:
 - **Decoder Metadata**
 - **LUT Control**
 - **Network**
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 
-The Axon ACP protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The Axon ACP connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

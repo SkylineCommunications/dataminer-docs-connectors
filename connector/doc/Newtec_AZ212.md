@@ -12,7 +12,7 @@ With this connector, you can configure the main networking options and receive t
 
 ### Version Info
 
-| **Range** | **Description**                                                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                  | No                  | No                      |
 | 1.2.0.2(.x)      | For software version 2.0.2, based on 1.0.0.1. \[Obsolete: Use range 1.3.0.x.\]    | No                  | No                      |
@@ -28,7 +28,7 @@ With this connector, you can configure the main networking options and receive t
 
 ### Product Info
 
-| **Range**            | **Device Firmware Version**                |
+| Range            | Device Firmware Version                |
 |-----------------------------|--------------------------------------------|
 | 1.0.0.x                     | Bucket Name: AZ212-1.1.2 SW version: 1.1.0 |
 | 1.2.0.2(.x) 1.3.0.x 1.3.1.x | Bucket Name: AZ212-2.0.2                   |

@@ -8,7 +8,7 @@ The **Marlink Trouble Ticket Interface** element can create and resolve trouble 
 
 ## About
 
-The **Marlink Trouble Ticket Interface** connector makes it possible to create or resolve tickets by sending queries to the element via Automation, or by manually adding tickets in a table.
+The **Marlink Trouble Ticket Interface** connector makes it possible to create or resolve tickets by sending queries to the element via automation, or by manually adding tickets in a table.
 
 The ticket data is sent via an HTTP POST command and the ticket response ID is parsed by DataMiner. In case ticket creation fails, the entry in question will be entered in the **Failed** table.
 
@@ -31,7 +31,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The IP of the online service where the tickets need to be placed, e.g. *27.96.104.57.*
+- **IP address/host**: The IP of the online service where the tickets need to be placed, e.g., *27.96.104.57.*
 - **IP Port**: The IP port of the service is port "*80*" (fixed).
 - **Bus Address**: "*byPassProxy*" (fixed).
 

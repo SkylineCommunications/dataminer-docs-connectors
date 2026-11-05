@@ -17,8 +17,8 @@ This protocol can be used to monitor and control the Xicom Technology XTD-750DBS
 **SERIAL CONNECTION:**
 
 - **Type of port:** *TCP/IP.*
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **IP port**: The IP port of the device, e.g. *4001.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **IP port**: The IP port of the device, e.g., *4001.*
 
 **TCP/IP Settings:**
 
@@ -40,4 +40,4 @@ This page contains all amplifier-related readings and settings of the controller
 
 This page contains the controller's alarm reading, with parameters such as **Summary Alarm**, **Current Alarm Status**, etc.
 
-The sub-page **Alarm Control** contains the controller's alarm settings, e.g. **Power High**, **Power Low** and **Reverse Power**.
+The sub-page **Alarm Control** contains the controller's alarm settings, e.g., **Power High**, **Power Low** and **Reverse Power**.

@@ -22,7 +22,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
   **SNMP Settings:**
 
   - **Port number**: The port number used to poll the device, by default *161.*
-  - **Get community** **string**: The community string used to read from the device. The default value is *public*.
+  - **Get community string**: The community string used to read from the device. The default value is *public*.
   - **Set community string**: The community string used to write on the device. The default value is *private*.
 
 ## Usage

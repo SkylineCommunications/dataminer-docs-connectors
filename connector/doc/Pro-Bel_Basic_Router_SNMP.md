@@ -14,7 +14,7 @@ The SNMP protocol is used to retrieve information from the device.
 
 ### Version Info
 
-| **Range** | **Description**                                        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                            | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                        | No                  | Yes                     |
 | 1.1.0.x          | Name changed to Basic Router (old name: Sirius Router) | No                  | Yes                     |

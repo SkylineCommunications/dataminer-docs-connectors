@@ -12,7 +12,7 @@ This connector interacts with the ETMS Platform via Apigee endpoints.
 
 ### Version Info
 
-| **Range**     | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                    | DCF Integration | Cassandra Compliant |
 |----------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.0.x [SLC Main]   | Initial version                    | No                  | Yes                     |
 | 1.1.0.x              | New proxy DLL integrated           | No                  | Yes                     |
@@ -20,7 +20,7 @@ This connector interacts with the ETMS Platform via Apigee endpoints.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                    |
+| Range | Device Firmware Version                    |
 |------------------|------------------------------------------------|
 | 1.0.0.x          | 18.8.1.1.August18 (Wed, Aug 08 2018 20:09 GMT) |
 | 1.1.0.x          | 19.7.1.3.July19 (Wed, Jul 10 2019 23:32 GMT)   |
@@ -52,12 +52,12 @@ The **Ticket List ID** contains the ID of the ticket list that the connector wil
 
 ### Configuration of ETMS Integration
 
-With the **Element Type**, you can configure whether the connector should act as front end or back end.
+With the **Element Type**, you can configure whether the connector should act as frontend or backend.
 
-- *Frontend* (1): Can poll all the tickets and show them on the Ticketing page. The front end is also responsible for the communication with the DataMiner Ticketing system.
+- *Frontend* (1): Can poll all the tickets and show them on the Ticketing page. The frontend is also responsible for the communication with the DataMiner Ticketing system.
 - *Backend* (1+): Responsible for the processing of incoming tickets and updates towards the ETMS.
 
-When the element is acting as back end, you can enable/disable the **Ticket Handling**. If this is disabled, no communication is allowed via the ETMS.
+When the element is acting as backend, you can enable/disable the **Ticket Handling**. If this is disabled, no communication is allowed via the ETMS.
 
 ## Usage
 
@@ -76,7 +76,7 @@ This page contains statistics for all the tickets on the ETMS:
 
 ### Ticketing
 
-This page is only visible for an element configured as front end and gives an overview of all the tickets. The **Refresh Time** parameter allows you to select the polling time for the ETMS tickets.
+This page is only visible for an element configured as frontend and gives an overview of all the tickets. The **Refresh Time** parameter allows you to select the polling time for the ETMS tickets.
 
 Right-clicking a row in the **Ticket Overview** table will display a context menu where you can select **Show Activity Log**. This will copy the full activity log of the **Activity Log** parameter.
 

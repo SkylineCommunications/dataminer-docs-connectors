@@ -18,20 +18,20 @@ This connector uses both a serial connection (HTTP) and an SNMP connection and r
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Port**: The port of the device, by default *80.*
 - **Bus address**: Not needed.
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Port**: The port of the device, by default *161.*
 - **Get Community**: The community string used when reading values from the device. The default value is *public.*
 - **Set Community**: The community string used when setting values on the device. The default value is *private.*
 
 ### Configuration
 
-To configure the user credentials for Telnet communication, go to the **General** page, and configure the username and password in the lower right corner.
+To configure the user credentials for Telnet communication, go to the **General** page, and configure the username and password in the lower-right corner.
 
 ## Usage
 
@@ -52,7 +52,7 @@ On the right-hand side, there is a **Reset** button, as well as several page but
 - The **Board Table** contains more information about the boards installed in the system.
 - The **Configurations** subpage allows you to back up or restore a configuration.
 
-In the lower right corner, you can configure the username and password necessary for **Telnet** communication, and also start a **Full Reset**.
+In the lower-right corner, you can configure the username and password necessary for **Telnet** communication, and also start a **Full Reset**.
 
 ### Inputs Page
 

@@ -37,7 +37,7 @@ This connector uses an HTTP connection and requires the following input during e
 #### HTTP Connection
 
 - **IP address/host**: The IP address e.g `https://api.cloud.telestream.net`.
-- **IP port**: The port of the destination e.g. *443*.
+- **IP port**: The port of the destination e.g., *443*.
 
 ### Configuration
 

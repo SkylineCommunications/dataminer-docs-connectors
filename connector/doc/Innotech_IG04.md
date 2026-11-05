@@ -36,7 +36,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-The **Device Address** parameter on the **General** page must be filled with the IP address and UDP port of the device, in the format \<IP address\>:\<port\> (e.g. *192.168.1.10:47808*).
+The **Device Address** parameter on the **General** page must be filled with the IP address and UDP port of the device, in the format \<IP address\>:\<port\> (e.g., *192.168.1.10:47808*).
 
 Once this parameter has been filled in correctly, the element will start polling the device.
 

@@ -64,10 +64,6 @@ Once the element has been created in DataMiner, the **Element Configuration** pa
 - Configuring how to handle probe alarms.
 - Enable more verbose logging if needed.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

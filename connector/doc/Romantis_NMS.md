@@ -16,7 +16,7 @@ All data in the element is read-only. It is not posible to configure the Romanti
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                                       | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                                                                                                                       | DCF Integration | Cassandra Compliant |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                                                                                                                                                                                       | No                  | Yes                     |
 | 1.0.1.x          | Added secondary HTTP connection to allow polling of a redundant system. There is no way to determine which NMS is online, so switching must be done manually.                                                                         | No                  | Yes                     |
@@ -32,7 +32,7 @@ All data in the element is read-only. It is not posible to configure the Romanti
 
 ### Exported connectors
 
-| **Exported Connector**                                                            | **Description**                                                 |
+| Exported Connector                                                            | Description                                                 |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | [Romantis NMS - Controller](xref:Connector_help_Romantis_NMS_-_Controller) | Retrieves information on a controller connected to the NMS.     |
 | [Romantis NMS - Station](xref:Connector_help_Romantis_NMS_-_Station)       | Retrieves information on a remote station connected to the NMS. |

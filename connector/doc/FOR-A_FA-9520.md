@@ -12,7 +12,7 @@ This connector was designed to work only with model **FA-9520**. It allows the u
 
 ### Version Info
 
-| **Range** | **Description**                                                                                 |
+| Range     | Description                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | Initial version                                                                                 |
 | 1.1.0.x          | Version compatible with firmware 2.10 (parameters added in correspondence with the MIB update). |

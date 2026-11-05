@@ -10,7 +10,7 @@ This connector is used by Dynamic Virtual Elements (DVEs) exported by the Techex
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on   | System Impact   |
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version (includes DCF integration). | -            | -                 |
 
@@ -34,7 +34,7 @@ The element contains general information, network information and settings for a
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Techex MWCore - Generic Device protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Techex MWCore - Generic Device connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -47,3 +47,4 @@ Connectivity for this protocol is managed by the parent protocol Techex MWCore.
 Virtual dynamic interfaces:
 
 - **Output:** Created to interface with the DVE table with **interface type** **out**.
+

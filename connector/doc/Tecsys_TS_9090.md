@@ -10,7 +10,7 @@ The **TECSYS TS 9090** is a media encoder solution for audio and video. This con
 
 ### Version Info
 
-| **Range** | **Key Features**   | **Based on** | **System Impact** |
+| Range | Key Features   | Based on | System Impact |
 |-----------|--------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version.   | -            | -                 |
 | 1.1.0.x   | New firmware.      | -            | -                 |
@@ -42,7 +42,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 

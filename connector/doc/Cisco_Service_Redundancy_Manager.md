@@ -13,7 +13,7 @@ A service is marked as IP service if it meets the following requirements:
 - The service is linked to a transport stream.
 - Service Multicast IP is not "0.0.0.0".
 
-Using the service group and the status of each service, an Automation script can be used to change the VLAN of a service to the active VLAN (or vice versa).
+Using the service group and the status of each service, an automation script can be used to change the VLAN of a service to the active VLAN (or vice versa).
 
 Service Status:
 

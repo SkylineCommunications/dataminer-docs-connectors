@@ -14,7 +14,7 @@ To achieve this, the connector uses **AVI Networks REST API**.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                       | **Based on** | **System Impact** |
+| Range              | Key Features                                                         | Based on   | System Impact   |
 |----------------------|------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Cluster Information, Virtual Services, Pools, and Pool Servers tables. | -            | -                 |
 

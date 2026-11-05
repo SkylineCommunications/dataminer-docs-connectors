@@ -12,23 +12,23 @@ This connector displays information on different pages, described in the **Usage
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 5.0.43.x         | DCF support                                                                                                                                   | Yes                 | Yes                     |
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No                  | Yes                     |
-| 10.0.0.x         | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                                        | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 5.0.43.x | DCF support | Yes | Yes |
+| \<10.0.0.x [SLC Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No | Yes |
+| 10.0.0.x | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. | No | Yes |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                                                                                                                                                                                                                                                                                                                                                |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.43.x         | 5.0.42                                                                                                                                                                                                                                                                                                                                                                                 |
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. It uses the following format: X.X.X.Y, with X.X.X being the firmware version of the card and .Y the specific connector iteration for this firmware. For example, *5.0.28.2* means the connector is the second iteration for firmware *5.0.28.* |
-| 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware.                                                                                                                                                                                                                                                                                |
+| Range | Device Firmware Version |
+|--|--|
+| 5.0.43.x | 5.0.42 |
+| \<10.0.0.x [SLC Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. It uses the following format: X.X.X.Y, with X.X.X being the firmware version of the card and .Y the specific connector iteration for this firmware. For example, *5.0.28.2* means the connector is the second iteration for firmware *5.0.28.* |
+| 10.0.0.x | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware. |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### SNMP main connection
 
@@ -90,7 +90,7 @@ This section contains the following pages:
 This section contains the following pages:
 
 - **Audio Input Status:** AES and EMB statuses.
-- **Audio 1 -\> Audio 8**: These pages contain all configurable and status parameters concerning the audio. Further subpages are available via page buttons, providing information concerning **Status**, **Metadata**, **Dolby E Encoder** and **AAC**.
+- **Audio 1 -\> Audio 8**: These pages contain all configurable and status parameters concerning the audio. Further subpages are available via page buttons, providing information concerning **Status**, **Metadata**, **Dolby E Encoder**, and **AAC**.
 - **Metadata Generator 1 and 2**: Settings used for the encoding of metadata.
 
 ### Data section
@@ -103,7 +103,7 @@ This section provides all relevant data regarding individual components to inser
 
 ### IP Encapsulation section
 
-This section lists data concerning the **Program IP**, **PIP Status** and **ATSC MH IP**.
+This section lists data concerning the **Program IP**, **PIP Status**, and **ATSC MH IP**.
 
 ### Preset Indicated section
 

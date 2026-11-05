@@ -32,7 +32,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device.
 - **Bus address**: The bus address of the connected device. (Between *48* and *111*.)
 
@@ -40,7 +40,7 @@ SERIAL CONNECTION:
 
 ### General
 
-This page displays general information about the device, e.g. the **CMPA** **Model** and **Computer** **Information** **Version**. With the page buttons, you can also display extra information about the **Time** and **ALC**. The **Transmit** and **Reset to Defaults** buttons can be used to respectively transmit and reset the device.
+This page displays general information about the device, e.g., the **CMPA** **Model** and **Computer** **Information** **Version**. With the page buttons, you can also display extra information about the **Time** and **ALC**. The **Transmit** and **Reset to Defaults** buttons can be used to respectively transmit and reset the device.
 
 ### Amplifier
 
@@ -68,7 +68,7 @@ This page displays the web interface of the amplifier. Note that the client mach
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the protocol CPI VZC-6967 supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the protocol CPI VZC-6967 supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

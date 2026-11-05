@@ -32,7 +32,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -102,7 +102,7 @@ This page can be used to access the web interface of the device. Note that the c
 
 ## Dateminer Connectivity Framework
 
-The version **2.1.1.x** of the Wellav UMH160R-IP supports the usage of DCF and can only be used on a DMA with **8.5.7** as the minimum version.
+The version **2.1.1.x** of the Wellav UMH160R-IP supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

@@ -12,7 +12,7 @@ The SAF Tehnika Integra-W SNMPv2/v3 connector controls and monitors this radio s
 
 ### Version Info
 
-| **Range**            | **Key Features**            | **Based on** | **System Impact** |
+| Range                | Key Features                | Based on     | System Impact     |
 |----------------------|-----------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version             | -            | -                 |
 | 1.0.1.x [SLC Main]   | Added serial/SSH connection | 1.0.0.6      | -                 |

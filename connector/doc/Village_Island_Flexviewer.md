@@ -8,21 +8,13 @@ Village Island Flexviewer is responsible for monitoring every stream (audio, vid
 
 ## About
 
-A minimum version (10.0.3.0 - 8964) is required for this connector.
-
-Version Info
+### Version Info
 
 | Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.1   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
-System Info
+### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|

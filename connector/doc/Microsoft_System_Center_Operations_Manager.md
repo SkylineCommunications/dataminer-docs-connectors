@@ -69,7 +69,7 @@ The data can also be accessed in table form on the **Servers**, **Alerts** or **
 
 Polling intervals can be configured on the **Settings** page. Note that you can also use filters for the **Events** and **Alerts**. With these filters, you can limit the displayed data to what you want to view.
 
-In the **Categories** table, you can define custom categories. This will be a first logical level for organizing the listed servers (i.e. the top level in the tree view).
+In the **Categories** table, you can define custom categories. This will be a first logical level for organizing the listed servers (i.e., the top level in the tree view).
 Uncategorized servers are displayed under the *Default* category. For each category, you can choose to *enable* or *disable* DVE creation.
 To **add**, **rename** or **remove** **categories**, right-click the table to use its context menu.
 

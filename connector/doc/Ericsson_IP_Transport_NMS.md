@@ -72,7 +72,7 @@ This page displays information about all the alarm events that are affecting the
 
 - **Poll Alarm Tables**: This button will poll the Alarm Table and Detailed Alarm Table.
 - **Alarm Table**: This table contains all numeric and descriptive information about the system's alarms. When a DVE is exported, content in this table that relates to the corresponding Network Element will be the same as the data represented in the DVE, since each row in the Alarm Table corresponds to the alarm events for a specific Network Element. The information in the table includes the **Alarm ID (Index)**, **Raising Time**, **Network Element ID (NE ID)** and **Severity**. This table also receives trap events that update each parameter when there is a change in a Network Element.
-- **Detailed Alarm Table**: This table is a smaller version of the Alarm Table, which contains descriptive information about the alarm events. All entries (i.e. alarm events) present in the Alarm Table will have a corresponding entry in the Detailed Alarm Table, so that it can be used as a quick overview of the state of the system. The same set of traps as mentioned above is also received for this table.
+- **Detailed Alarm Table**: This table is a smaller version of the Alarm Table, which contains descriptive information about the alarm events. All entries (i.e., alarm events) present in the Alarm Table will have a corresponding entry in the Detailed Alarm Table, so that it can be used as a quick overview of the state of the system. The same set of traps as mentioned above is also received for this table.
 
 ### Core
 
@@ -200,7 +200,7 @@ This page contains information about the different alarm filters that could be a
 
 ### System DVE
 
-This page shows information about the currently created DVEs (i.e. those set to *Enabled* in the Device Table).
+This page shows information about the currently created DVEs (i.e., those set to *Enabled* in the Device Table).
 
 - **DVE Export Table**: This table contains information on the settings for each created DVE.
 
@@ -218,4 +218,4 @@ This page displays information about all the alarm events that are affecting the
 - **Poll Alarm Tables**: This button will poll the Alarm Table and Detailed Alarm Table.
 - **Alarm Table**: This table contains all numeric and descriptive information about the system's alarms. When a DVE is exported, content in this table that relates to the corresponding Network Element will be the same as the data represented in the DVE, since each row in the Alarm Table corresponds to the alarm events for a specific Network Element. The information in the table includes the **Alarm ID (Index)**, **Raising Time**, **Network Element ID (NE ID)** and **Severity**. This table also receives trap events that update each parameter when there is a change in a Network Element.
 - **New Alarm Table:** This is an exact replication of the Alarm Table, with one difference, which is that the index used for the table is a combination of 8 different bindings of the trap. All 8 bindings were concatenated as **\[mv36AlarmStrNeUniqueName\]/\[mv36AlarmStrCard\].\[mv36AlarmPortId\]/\[mv36AlarmStrScheme\]/\[mv36AlarmStr\]/\[mv36AlarmStrProbCause\]/\[mv36AlarmStrSource\]/\[mv36AlarmField1\]** to form the index of the New Alarm Table.
-- **Detailed Alarm Table**: This table is a smaller version of the Alarm Table, which contains descriptive information about the alarm events. All entries (i.e. alarm events) present in the Alarm Table will have a corresponding entry in the Detailed Alarm Table, so that it can be used as a quick overview of the state of the system. The same set of traps as mentioned above is also received for this table.
+- **Detailed Alarm Table**: This table is a smaller version of the Alarm Table, which contains descriptive information about the alarm events. All entries (i.e., alarm events) present in the Alarm Table will have a corresponding entry in the Detailed Alarm Table, so that it can be used as a quick overview of the state of the system. The same set of traps as mentioned above is also received for this table.

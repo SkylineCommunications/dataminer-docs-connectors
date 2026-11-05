@@ -20,8 +20,8 @@ Coordinates of the vessels are also forwarded to the **Weather Retriever** eleme
 
 **HTTP connection:**
 
-- **IP address/host**: The polling IP of the device, e.g. *27.96.104.57*.
-- **IP Port**: The polling IP port of the device, e.g. *443.*
+- **IP address/host**: The polling IP of the device, e.g., *27.96.104.57*.
+- **IP Port**: The polling IP port of the device, e.g., *443.*
 - **Bus Address**: If there are problems with the proxy server on the DMA, specify "*byPassProxy*".
 
 ## Usage

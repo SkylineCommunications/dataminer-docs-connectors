@@ -14,12 +14,6 @@ With the **Skyline Protocol Overview** connector you can parse multiple protocol
 |--|--|--|--|
 | 1.0.0.x [SLC Main]<br> 1.0.1.x | Initial version. Parse XML version history; Metric on number of found matches; Support for XPath filters; Refresh more efficient; Cancel buttons; Search case-insensitive; Support code library in detection for manipulation external elements; Add indexed items - Class Library & Community Class Library | - 1.0.0.5 | - <br>- |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -141,7 +135,7 @@ Features:
 
   - Usage of Search Type:
 
-    - Think about which search type you could use for which search location (e.g. greater than only with numeric search locations)
+    - Think about which search type you could use for which search location (e.g., greater than only with numeric search locations)
 
     - XPath:
 

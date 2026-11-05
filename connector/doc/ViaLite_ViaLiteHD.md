@@ -49,7 +49,7 @@ This connector uses an SNMP connection and requires the following input during e
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the ViaLiteHD Chassis, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the ViaLiteHD Chassis, e.g., *10.11.12.13*.
 
 SNMP Settings:
 

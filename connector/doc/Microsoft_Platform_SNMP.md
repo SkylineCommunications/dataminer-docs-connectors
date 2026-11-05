@@ -4,11 +4,12 @@ uid: Connector_help_Microsoft_Platform_SNMP
 
 # Microsoft Platform SNMP
 
-With the **Microsoft Platform** connector, it is possible to monitor a Microsoft server.
+> [!IMPORTANT]
+> Unless your integration requires SNMP, we strongly recommend using the [Microsoft Platform](https://catalog.dataminer.services/details/4abcf220-c001-4ffd-bab8-559dee47088f) connector instead, which communicates via WMI and complies with our latest quality standards. If your integration requires SNMP, you can use this connector until SNMP communication becomes available in the **Microsoft Platform** connector.
 
 ## About
 
-The Microsoft Platform connector retrieves basic information from a Microsoft server. Extra information can be enabled or disabled, e.g. Task Manager, Service List, etc.
+The Microsoft Platform connector retrieves basic information from a Microsoft server. Extra information can be enabled or disabled, e.g., Task Manager, Service List, etc.
 On the Task Manager page, a button allows you to normalize alarms in order to set the current values as normal.
 
 ### Version Info
@@ -55,13 +56,42 @@ To clear all processes that are no longer running from the table, click the butt
 
 To set the current values in the table as the normal reference for alarms, click the button **Normalize Alarms**. You can then view these references via the **Nominal** **Values** button at the bottom of the page.
 
+In the right-click menu of the Task Manager table, you can select **Validate Processes** to add the selected process or processes to the Processes Validation table.
+
+### Process Validation
+
+This page allows you to validate selected processes according to features such as the number of active process instances in order to monitor inactive processes.
+
+The following options are available in the right-click menu of the **Processes Validation** table:
+
+- **Remove Processes**: Removes the selected process or processes from Processes Validation table.
+- **Add Process**: Allows you to add a process with the provided process name to the Processes Validation table. You can use this to add inactive processes.
+
 ### Services
+
+This page shows all active services that are being monitored from the **Service Monitor Config** page.
 
 To enable or disable the polling of the service list, click the toggle button next to **Poll Services**.
 
-When polling is enabled, the various services with their status, description, etc. will be shown in the table below.
+When polling is enabled, active services with their status, description, etc. will be shown in the table on the **Service Monitor Config** page.
 
-The **Service Monitor Config** page allows you to enable or disable the polling of individual services.
+The following options are available in the right-click menu of the Services table:
+
+- **Validate Services**: Add the selected service(s) to the Services Validation table.
+
+### Service Monitor Config
+
+This page allows you to monitor individual active services. Monitored services will be listed in the Services table.
+
+### Service Validation
+
+This page allows you to validate selected services according to features such as availability in order to monitor inactive services.
+
+The following options are available in the right-click menu of the Services Validation table:
+
+- **Remove Services**: Removes the selected service(s) from Services Validation table.
+
+- **Add Service**: Allows you to add a service with the provided service name to the Services Validation table. You can use this to add inactive services.
 
 ### Network Info
 
@@ -133,3 +163,10 @@ Physical dynamic interfaces:
 ## Notes
 
 To be able to poll using SNMP, the client Microsoft machine needs the SNMP service to be configured correctly (community strings and accepted hosts).
+
+In order to correctly configure the SNMP service on devices running a Windows Server OS, make sure the following features are enabled:
+
+- SNMP Service
+- Remote Server Administration Tools -> Feature Administration Tools -> SNMP Tools. This feature allows additional settings in the SNMP agent (e.g., setting the community string, defining hosts that can monitor the server, etc.)
+
+For more information on how to enable features on Windows Server, refer to [Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard).

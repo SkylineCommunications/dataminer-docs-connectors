@@ -54,14 +54,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination. (fixed value: *2071*).
   - **Bus address**: The bus address of the device.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The connector needs to be uploaded on the system and the Axon Rack Manager will do the rest and will create the correct elements.
@@ -70,7 +62,7 @@ The parameters will be filled in when the Rack Manager has created the element.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP HAF900 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Axon ACP HAF900 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

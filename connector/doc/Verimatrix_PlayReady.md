@@ -38,13 +38,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The IP address of the device, e.g. *194.206.71.180.*
+- **IP address/host**: The IP address of the device, e.g., *194.206.71.180.*
 
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public.*
-- **Set community string**: The community string used when setting values on the device, e.g. *private.*
+- **Get community string**: The community string used when reading values from the device, e.g., *public.*
+- **Set community string**: The community string used when setting values on the device, e.g., *private.*
 
 ## Usage
 

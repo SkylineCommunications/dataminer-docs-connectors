@@ -24,7 +24,7 @@ The IBM Tivoli Netcool-OMNIbus SNMP Writer Gateway device is a **monitoring plat
 
 ### Exported connectors
 
-| **Exported Connector**                                    | **Description**                                                   |
+| Exported Connector                                    | Description                                                   |
 |----------------------------------------------------------|-------------------------------------------------------------------|
 | IBM Tivoli Netcool-OMNIbus SNMP Writer Gateway Subdomain | This protocol is used to show the events based on their subdomain |
 | IBM Tivoli Netcool-OMNIbus SNMP Writer Gateway Location  | This protocol is used to show the events based on their location  |
@@ -55,11 +55,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600.*
-  - **Databits**: Databits specified in the manual of the device, e.g. *7.*
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1.*
-  - **Parity**: Parity specified in the manual of the device, e.g. *No.*
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No.*
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600.*
+  - **Databits**: Databits specified in the manual of the device, e.g., *7.*
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1.*
+  - **Parity**: Parity specified in the manual of the device, e.g., *No.*
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No.*
 
 - Interface connection:
 

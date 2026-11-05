@@ -86,7 +86,7 @@ Note that these are only available when the **Matrix State** is *Enabled*.
 
 ## DataMiner Connectivity Framework
 
-The 2.0.1.x connector range of the LSB VSM protocol supports the usage of DCF.
+The 2.0.1.x connector range of the LSB VSM connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

@@ -40,10 +40,6 @@ HTTP CONNECTION:
 - **IP port**: 443
 - **Bus address**: The proxy server has not to be bypassed, leave this field empty.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 To be able to use the control table, you will need to fill in the **username** and **password** on the **Configurations** page.

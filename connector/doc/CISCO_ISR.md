@@ -4,23 +4,11 @@ uid: Connector_help_CISCO_ISR
 
 # CISCO ISR
 
-The **CISCO ISR** will monitor Cisco switches with SNMP.
-
 ## About
 
-The **CISCO ISR** connector can retrieve information from different device types with SNMPv2. This is a custom-made connector for Ziggo which will only poll a limited set of parameters.
+The **CISCO ISR** will monitor Cisco switches with SNMP.
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
+This connector can retrieve information from different device types with SNMPv2. This is a custom-made connector for Ziggo which will only poll a limited set of parameters.
 
 ## Installation and configuration
 
@@ -45,7 +33,7 @@ SNMP Settings:
 
 ### General
 
-On this page, an overview of general device settings is displayed, e.g. **Model**, **Software Description**, etc. **Memory Usage** is only calculated when polling of **Memory Details** is enabled.
+On this page, an overview of general device settings is displayed, e.g., **Model**, **Software Description**, etc. **Memory Usage** is only calculated when polling of **Memory Details** is enabled.
 
 The **Availability** will show a percentage of the device online time. This value will decrease if the element is in timeout state or was not active. The **Availability - Last Month** shows the availability from the previous month.
 

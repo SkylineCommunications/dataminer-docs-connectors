@@ -12,7 +12,7 @@ This connector allows you to read the time-series data from the device via an HT
 
 ### Version Info
 
-| **Range**            | **Key Features**                             | **Based on** | **System Impact** |
+| Range              | Key Features                               | Based on   | System Impact   |
 |----------------------|----------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version (minimum .NET Framework 4.0) | -            | -                 |
 

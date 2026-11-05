@@ -10,12 +10,12 @@ This connector implements the available parameters present in the device's MIB. 
 
 ## About
 
-# Version Info
+### Version Info
 
-| **Range** | **Description**     | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version     | No                  | No                      |
-| 1.0.1.x          | Cassandra compliant | No                  | Yes                     |
+| Range   | Description         | DCF Integration | Cassandra Compliant |
+|---------|---------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version     | No              | No                  |
+| 1.0.1.x | Cassandra compliant | No              | Yes                 |
 
 ## Configuration
 

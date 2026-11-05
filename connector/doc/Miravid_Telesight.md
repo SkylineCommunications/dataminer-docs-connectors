@@ -12,7 +12,7 @@ The connector is used to monitor a Miravid Telesight.
 
 ### Version Info
 
-| **Range** | **Description**                                   |
+| Range | Description                                   |
 |------------------|---------------------------------------------------|
 | 1.0.0.x          | Initial version                                   |
 | 2.0.0.x          | Review based on 1.0.0.x (table PIDs are the same) |
@@ -25,7 +25,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 

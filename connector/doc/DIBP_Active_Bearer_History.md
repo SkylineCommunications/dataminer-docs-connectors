@@ -48,7 +48,7 @@ This page contains parameters to configure the **automatic removal feature** tha
 - **Maximum Number of Rows**: The maximum number of rows allowed in the table.
 - **Clean Up Amount**: The number of rows that are to be cleaned up every 15 minutes.
 - **Maximum Age of Rows:** Determines how long a row can remain in the table before it is automatically removed.
-- **Clean Up Method**: Determines the method used to clean up the table, i.e. either via **Row Count, Row Age** or a **Combination of both**.
+- **Clean Up Method**: Determines the method used to clean up the table, i.e., either via **Row Count, Row Age** or a **Combination of both**.
 
 ## Notes
 

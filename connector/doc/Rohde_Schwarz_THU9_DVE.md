@@ -36,21 +36,21 @@ The information displayed in this connector is divided over seven pages:
 
 ### Version Info
 
-| **Range** | **Description**                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                              | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                         | No                  | No                      |
 | 1.1.0.1          | Branch version based on 1.0.0.x.DVE functionality added. | No                  | No                      |
 
 ### Product Info
 
-| **Connector Version** | **Device Firmware Version** |
+| Connector Version | Device Firmware Version |
 |--------------------|-----------------------------|
 | 1.0.0.1            | tce900-103250               |
 | 1.1.0.1            | tce900-103250               |
 
 ### Exported connectors
 
-| **Exported Connector** | **Description**                                                                                                                                  |
+| Exported Connector | Description                                                                                                                                  |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | Transmitter           | The controller can have multiple transmitters. The necessary transmitters will be exported according to the information the controller receives. |
 
@@ -62,7 +62,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:

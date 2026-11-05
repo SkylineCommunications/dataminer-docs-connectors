@@ -8,13 +8,13 @@ This device provides multiple outputs used for networked devices and other techn
 
 - 1 Pulse-Per-Second (1PPS): counts off seconds in a selected timescale (UTC, TAI or GPS).
 - 10 MHz: used as a signal for control systems and clocks.
-- Optional Cards: e.g. Precise Time Protocol (PTP), IRIG, etc.
+- Optional Cards: e.g., Precise Time Protocol (PTP), IRIG, etc.
 
 These outputs are driven by their inputs. The standard inputs are:
 
 - Global Positioning System (GPS)
 - Network Time Protocol (NTP)
-- Optional Cards: e.g. PTP (some cards are both in and output), extra 1PPS cards, etc.
+- Optional Cards: e.g., PTP (some cards are both in and output), extra 1PPS cards, etc.
 - Manual
 
 ## About
@@ -29,7 +29,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 

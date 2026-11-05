@@ -12,7 +12,7 @@ The **initial range** of the connector (1.0.0.x) only displays detailed informat
 
 ### Version info
 
-| **Range** | **Description**       |
+| Range | Description       |
 |-----------|-----------------------|
 | 1.0.0.x   | Initial version.      |
 | 2.0.0.x   | Reviewed version.     |
@@ -20,7 +20,7 @@ The **initial range** of the connector (1.0.0.x) only displays detailed informat
 
 ### Product Info
 
-| **Range**               | **Supported Firmware** |
+| Range               | Supported Firmware |
 |-------------------------|------------------------|
 | 1.0.0.x 2.0.0.x 2.0.1.x | 9.7(0.0) 9.13(0.3)     |
 
@@ -65,7 +65,7 @@ This page displays general information about the device, such as the **descripti
 
 This page displays the **Detailed Interface Info** table. This table contains information for all interfaces in the system.
 
-The information in the table is retrieved from the following SNMP tables: **ifTable**, **ifXTable** and **f10IfTable**.
+The information in the table is retrieved from the following SNMP tables: **ifTable**, **ifXTable**, and **f10IfTable**.
 
 ### Vlan
 

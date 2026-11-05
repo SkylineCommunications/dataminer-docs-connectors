@@ -14,7 +14,7 @@ The Ember+ version of the connector is much more extensive than the SNMP version
 
 ### Version Info
 
-| **Range** | **Description**                                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                    | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version based on SNMP                  | No                  | Yes                     |
 | 2.0.0.x          | Initial version based on Ember+ (smart-serial) | No                  | Yes                     |

@@ -8,15 +8,9 @@ The Meridian II Precision TimeBase is a modular, network-centric, time and frequ
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                            | **Based on** | **System Impact** |
+| Range              | Key Features                                                              | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Implemented SNMP parameters for meridianGPS sub-tree (1.3.6.1.4.1.13827.10) | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
 
 ### System Info
 
@@ -68,7 +62,7 @@ This page displays information on the interfaces, such as the operational state 
 
 ### Storage
 
-On this page, you can monitor the status of the storage (e.g. the size available per partition).
+On this page, you can monitor the status of the storage (e.g., the size available per partition).
 
 ### NTP
 

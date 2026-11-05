@@ -14,7 +14,7 @@ This connector needs to be on the same DMA as the VoD Workflow Application to be
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

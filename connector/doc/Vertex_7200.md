@@ -121,7 +121,7 @@ For the 1.1.0.x branch, CRC is required. However, for the 1.2.0.x branch, CRC is
 
 #### Security level
 
-The device contains two ports from which set commands can be done: the front panel and remote. A remote (e.g. DataMiner element) cannot execute any successful set commands while the remote security level is set to "Monitor". You first need to update the Security Level to Operator or Supervisor to make the appropriate sets (this set action can be done remotely).
+The device contains two ports from which set commands can be done: the front panel and remote. A remote (e.g., DataMiner element) cannot execute any successful set commands while the remote security level is set to "Monitor". You first need to update the Security Level to Operator or Supervisor to make the appropriate sets (this set action can be done remotely).
 
 - Note: Only one of the ports can have the Supervisor state at a time. This means that if the front panel is configured as Supervisor, the remote connection will not be able to take on the role of Supervisor and make the necessary sets.
   For security reasons, the remote will not be able to change the Security Level of the front panel.

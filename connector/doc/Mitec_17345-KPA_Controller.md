@@ -55,8 +55,8 @@ On this page, you can find the following general information and settings for th
 - **Software Version**: The software version of the RSU.
 - **Mode**: Shows if the device is operating in *Local* or *Remote* mode.
 - **Operating Mode**: Displays whether the device is operating in *Manual*, *Automatic* or *Smart Manual* mode, and allows the user to set the mode to *Manual* or *Auto*.
-- **HPA S/B X Backup**: Shows if the standby HPA X (i.e. 1 or 2) is working as a backup.
-- **HPA S/B X Backup Failures**: Shows if the standby HPA X (i.e. 1 or 2) is experiencing failures as a backup.
+- **HPA S/B X Backup**: Shows if the standby HPA X (i.e., 1 or 2) is working as a backup.
+- **HPA S/B X Backup Failures**: Shows if the standby HPA X (i.e., 1 or 2) is experiencing failures as a backup.
 - **PSU Alarms**: Displays whether there are active alarms for the PSU.
 - **SW Alarms**: Displays whether there are active alarms for the active switches.
 - **Fan Alarms:** Displays whether there are active alarms for the fans.
@@ -64,17 +64,17 @@ On this page, you can find the following general information and settings for th
 
 ### Switches
 
-This page displays the position of each switch, i.e. from **Switch 1** to **18**. The position can be either 1 or 2.
+This page displays the position of each switch, i.e., from **Switch 1** to **18**. The position can be either 1 or 2.
 
 ### Chain Alarm
 
-This page shows whether there are active alarms for each of the chains, i.e. the online HPAs (**HPA 1** to **HPA 6)** and the standby ones (**HPA S/B 1** and **2**).
+This page shows whether there are active alarms for each of the chains, i.e., the online HPAs (**HPA 1** to **HPA 6)** and the standby ones (**HPA S/B 1** and **2**).
 
 In addition, you can set the chain priority with the **Chain Priority** parameter.
 
 ### Maintenance
 
-On this page, you can view and control the maintenance status for the online HPAs (**HPA 1 Status** up to **HPA 6 Status**) and the standby HPAs (**HPA S/B 1** and **2 Status**). The available values are *Maintenance* or *OK* (i.e. no maintenance).
+On this page, you can view and control the maintenance status for the online HPAs (**HPA 1 Status** up to **HPA 6 Status**) and the standby HPAs (**HPA S/B 1** and **2 Status**). The available values are *Maintenance* or *OK* (i.e., no maintenance).
 
 ### Fan/PSU Alarm
 

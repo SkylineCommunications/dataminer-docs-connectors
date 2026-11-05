@@ -12,7 +12,7 @@ This connector uses an **SNMP** interface to communicate with the Spectracom Eps
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                          | DCF Integration | Cassandra Compliant |
 |----------------------|----------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                          | Yes                 | Yes                     |
 | 1.0.1.x [SLC Main]   | Based on 1.0.0.6. HTTP connection support implemented to support polling of data not available via SNMP. | Yes                 | Yes                     |
@@ -27,7 +27,7 @@ This connector uses an SNMP connection and requires the following input during e
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 SNMP Settings:
 

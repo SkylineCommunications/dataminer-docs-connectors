@@ -18,7 +18,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:
@@ -61,4 +61,4 @@ On this page, you can set the **Read/Write Community Strings** and **Trap Destin
 
 ### Web Interface
 
-This page provides access to the device's configuration web page. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page provides access to the device's configuration webpage. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

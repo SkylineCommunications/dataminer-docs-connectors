@@ -52,7 +52,7 @@ The FortiSandbox web interface is available from the connector. However, the web
 
 ### General page
 
-The General page displays general information about the device: the **system name**, **serial number**, **firmware version** and **system up time**. This page also displays some key device metrics, i.e. the **CPU usage** (with and without Nice processes), **memory usage**, **memory capacity** (amount of RAM installed in the system), **disk usage** and **disk capacity**.
+The General page displays general information about the device: the **system name**, **serial number**, **firmware version** and **system up time**. This page also displays some key device metrics, i.e., the **CPU usage** (with and without Nice processes), **memory usage**, **memory capacity** (amount of RAM installed in the system), **disk usage** and **disk capacity**.
 
 ### Software
 

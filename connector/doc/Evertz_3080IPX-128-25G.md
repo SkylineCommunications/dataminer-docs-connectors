@@ -10,21 +10,27 @@ The 3080IPX is an integrated multicast label switching fabric that allows 10GE a
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+| Range              | Key Features           | Based on | System Impact |
+|--------------------|------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.       | -        | -             |
+| 1.0.1.x            |                        | 1.0.0.2  | -             |
+| 1.0.2.x [SLC Main] | HTTP connection added. | 1.0.1.1  | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 2.3                    |
+| 1.0.1.x   | 2.3                    |
+| 1.0.2.x   | 2.3                    |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -58,9 +64,13 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
+#### HTTP Connection
+
+This connection is used to poll the Evertz REST API.
+
 ### Initialization
 
-No extra configuration is needed.
+For the HTTP connection, the **API Key** parameter on the **General** page needs to be set for the outgoing requests to work.
 
 ### Web Interface
 
@@ -68,7 +78,7 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-The **General** page of this connector shows the version running on the device. You can also see and configure the alias name there.
+The **General** page of this connector shows the version running on the device. You can also see and configure the alias name and the API key there.
 
 The **Ports** page contains information about the ports, such as the Maximum Ports, the Port Config Table, and the Port Status Table. This page also contains a Port Measurement subpage, where you can enable or disable the measurement of each port. If the measurement of the port is disabled, it will not be displayed in the Port Config, Port Status, and IGMP Ports tables.
 

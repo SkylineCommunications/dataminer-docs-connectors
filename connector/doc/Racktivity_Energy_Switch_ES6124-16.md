@@ -63,7 +63,7 @@ The following page buttons lead to subpages with additional information and sett
 
 - **Agent:** Displays the **Agent Table**, with information about Ports, Agent status and Agent IP.
 
-- **Fuse:** Displays three different tables, i.e. the **Line**, **Line Current** and **Fuse table**, with information on the current and the status per fuse. Also allows you to set the thresholds and warnings.
+- **Fuse:** Displays three different tables, i.e., the **Line**, **Line Current** and **Fuse table**, with information on the current and the status per fuse. Also allows you to set the thresholds and warnings.
 
 - **Scheduler:** Displays the **Scheduler Table**, which contains information about the port name, the port state and the port on and off time, and allows you to enable or disable ports by outlet.
 

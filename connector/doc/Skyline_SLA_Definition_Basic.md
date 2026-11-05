@@ -46,12 +46,12 @@ Once the SLA element has been created, go to the **SLA Configuration** page to c
 - **Window settings**
 
   - **Type**: *Fixed Time Window* or *Sliding Time Window.*
-  - **Time** and **Unit**: e.g. *1 month*.
+  - **Time** and **Unit**: e.g., *1 month*.
 
 - **Alarm settings**
 
   - **Violation level**: Defines from which service alarm level the SLA must indicate that it has been violated.
-  - **Delay time**: A delay (in seconds) before the SLA starts indicating that it has been violated (e.g. for backup delays).
+  - **Delay time**: A delay (in seconds) before the SLA starts indicating that it has been violated (e.g., for backup delays).
   - **Minimum outage threshold**: An initial timespan during which a new alarm is not taken into account.
   - **Violation settings**: Optional filters to modify the impact of certain types of alarms.
 
@@ -59,13 +59,13 @@ Once the SLA element has been created, go to the **SLA Configuration** page to c
 
   - **Admin State**: Activate or deactivate tracking of the SLA.
   - **Reset** of the counters of the SLA.
-  - **Base timestamp**: Can be customized to define a fixed window that does not start at e.g. the beginning of the month.
+  - **Base timestamp**: Can be customized to define a fixed window that does not start at e.g., the beginning of the month.
   - **Time to keep outages**: Determines how long outages are kept in the SLA outage list.
   - **SLA validity start and end time**: The start and end time for the period during which the SLA is valid.
 
 In addition, on the **Compliance Configuration** page, configure the following settings:
 
-- **Total violation**: Defines for how long the SLA may be violated during the SLA window before it is considered breached. Two types of total violation can be configured: **Absolute** (e.g. 5 minutes) or **Relative** (e.g. 0.010 percent of the total window size).
+- **Total violation**: Defines for how long the SLA may be violated during the SLA window before it is considered breached. Two types of total violation can be configured: **Absolute** (e.g., 5 minutes) or **Relative** (e.g., 0.010 percent of the total window size).
 - **Single violation**: Defines how long one single violation may last before the SLA is considered breached. This is configured in the same way as the total violation.
 - **Violation count**: Specifies how many violations may occur before the SLA will be considered breached.
 
@@ -80,7 +80,7 @@ In the Compliance Info section, the following parameters are displayed:
 - **Compliance**, with the following possible values:
 
   - *Compliant*: The SLA has never been violated and is currently not being violated.
-  - *Breached*: The SLA has been violated beyond the acceptable limits, i.e. penalties could be due.
+  - *Breached*: The SLA has been violated beyond the acceptable limits, i.e., penalties could be due.
   - *Compliant (degraded)*: The SLA has been violated, but not beyond the acceptable limits.
   - *Compliant (degrading)*: The SLA is currently being violated.
 
@@ -130,7 +130,7 @@ Refer to the Configuration section above.
 
 ### Ticket Creation page
 
-This page contains a parameter that can be picked up by an Automation script to automatically create a ticket.
+This page contains a parameter that can be picked up by an automation script to automatically create a ticket.
 
 ### Offline window
 

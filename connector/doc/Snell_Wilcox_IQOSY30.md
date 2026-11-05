@@ -4,19 +4,21 @@ uid: Connector_help_Snell_Wilcox_IQOSY30
 
 # Snell Wilcox IQOSY30
 
-The Snell Wilcox IQOSY30 is a 3G/HD/SD-SDI Frame Synchronizer with Fiber Interfacing.
-
 ## About
 
-The connector generates DVEs for each Module in the Module table.
+The Snell Wilcox IQOSY30 is a 3G/HD/SD-SDI frame synchronizer with fiber interfacing.
 
-## Installation and configuration
+In the 1.0.0.x range of this connector, DVEs are generated for each module in the Module table.
 
-### Creation
+While the 1.0.0.x branch of the connector uses SNMP communication, the 2.0.0.x branch, which is the main branch, uses the RollCall communication protocol.
+
+## Configuration
+
+### Connections
+
+### SNMP Connection (1.0.0.x range)
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-**SNMP CONNECTION**:
 
 - **IP address/host**: The polling IP of the device.
 - **Device address**: Not required.
@@ -26,6 +28,12 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.
 - **Set community string**: The community string used when setting values on the device. The default value is *private*.
+
+### Serial Connection - RollCall (2.0.0.x range)
+
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The port of the connected device.
+- **Bus address**: The bus address of the connected device, specified in XX.XX format.
 
 ## Usage
 
@@ -60,3 +68,7 @@ This page contains page buttons for **Logging Misc**, **Logging Video Input**, *
 ### Rolltrack
 
 This page contains Roll Track parameters and a button to **Restart** the device.
+
+### Embedder Router (2.0.0.x range)
+
+This page features a matrix that visualizes the routing of embedders and enables you to control the routing directly.

@@ -16,12 +16,6 @@ With this connector you can monitor multiple KPIs and configure various settings
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -61,7 +55,7 @@ This page has several subpages:
 
 - **Date Time**: Configuration page where you can change the **system time** (available in multiple formats), **NTP settings**, **time zone**, etc.
 - **Network**: Displays the **Network Interfaces** table, where you can access and modify various information, **IPv4 address/netmask/gateway**, **Link Speed, Link Mode**, etc.
-- **IPV2**: Displays two tables, i.e. **IP Statistics** and **IP Configuration**.
+- **IPV2**: Displays two tables, i.e., **IP Statistics** and **IP Configuration**.
 
 ### Transport Stream
 

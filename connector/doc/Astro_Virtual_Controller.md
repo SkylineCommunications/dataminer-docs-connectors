@@ -26,7 +26,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Configuration
 
-The connector will determine which modules must be controlled based on the **element** **names**.
+The connector will determine which modules must be controlled based on the **element names**.
 
 For a module to be recognized as to be controlled by this connector, its name must start with the controller name.
 
@@ -68,7 +68,7 @@ On this page, the **Firmware Update Schedule Table** lists all the scheduled fir
 
 To schedule a new firmware update, right-click the table and click **Launch new schedule wizard**. This will open a pop-up window where updates can be scheduled.
 
-Note that the Automation scripts "Astro Firmware Update Wizard" and "Astro Firmware Update Execute" must be present in the DMS to be able to launch the wizard.
+Note that the automation scripts "Astro Firmware Update Wizard" and "Astro Firmware Update Execute" must be present in the DMS to be able to launch the wizard.
 
 ### Module Configuration Page
 

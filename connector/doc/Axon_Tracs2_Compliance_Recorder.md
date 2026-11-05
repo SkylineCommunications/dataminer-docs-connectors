@@ -16,12 +16,6 @@ With this connector, it is possible to monitor the **hard disks**, **channel inf
 |----------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.9.2.r1.588                |
-
 ## Installation and configuration
 
 ### Creation

@@ -44,14 +44,10 @@ HTTP CONNECTION:
 
 Fill in the **Username** and **API Key** on the **General** page. Basic authentication with passwords is deprecated, and instead of the password an **API token needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element polls all service desks for the environment specified in the URL of the element. This includes the **Service Desks**, **Queues**, and **Issues**. You can choose to enable or disable polling of certain queues.
 
 From the **Issues** page, it is possible to create a small issue given some input data.
 
-Alternatively, by following the given format in the API documentation for [Create Request](https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-request/#api-rest-servicedeskapi-request-post), you can also use an Automation script to set PID 51 with your own JSON data. Make sure, when sending the JSON, that all required fields for the request are included.
+Alternatively, by following the given format in the API documentation for [Create Request](https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-request/#api-rest-servicedeskapi-request-post), you can also use an automation script to set PID 51 with your own JSON data. Make sure, when sending the JSON, that all required fields for the request are included.

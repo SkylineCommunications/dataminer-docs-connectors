@@ -12,10 +12,10 @@ The CEFD CDD-S2 connector is used to monitor and control a CEFD CDD-S2 device. T
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                    | **Based on** | **System Impact**                                 |
-|----------------------|---------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                     | -            | -                                                 |
-| 1.0.1.x [SLC Main]   | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.9      | **Old trend data will be lost for these tables.** |
+| Range              | Key Features                                                                                                        | Based on | System Impact                                     |
+|--------------------|---------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------------|
+| 1.0.0.x            | Initial version                                                                                                     | -        | -                                                 |
+| 1.0.1.x [SLC Main] | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.9  | **Old trend data will be lost for these tables.** |
 
 ### Product Info
 
@@ -41,7 +41,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- IP address/host: the polling IP of the device, e.g. *10.11.12.13*
+- IP address/host: the polling IP of the device, e.g., *10.11.12.13*
 - Device address: not used
 
 SNMP Settings:

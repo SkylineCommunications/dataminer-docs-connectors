@@ -4,13 +4,15 @@ uid: Connector_help_Skyline_ICMP_Platform_Manager
 
 # Skyline ICMP Platform Manager
 
+## About
+
 This connector is part of a generic solution that monitors the connection health of several ICMP-capable devices via ping and aggregates the results to provide an overview at different levels.
 
 The Skyline ICMP Platform Manager element can be configured in two ways:
 
-- **Front end:** The front-end element acts as the main entry point to the solution. It will gather all information from the back end and the collector elements to calculate the KPI. Only one front-end element should be created for the solution.
+- **Frontend:** The frontend element acts as the main entry point to the solution. It will gather all information from the backend and the collector elements to calculate the KPI. Only one frontend element should be created for the solution.
 
-- **Back end:** A back-end element is responsible for the aggregation of the data from the collector elements. It is possible to have more than one back-end element integrated in the system. We suggest that you create one per DMA.
+- **Backend:** A backend element is responsible for the aggregation of the data from the collector elements. It is possible to have more than one backend element integrated in the system. We suggest that you create one per DMA.
 
 Different search **topologies** are presented in the Skyline ICMP Platform Manager. These topologies are diagrams shown in Visual Overview that describe the logical connections between the entities of the infrastructure. The current implementation integrates the following topologies: **Location**, **State**, **Model**, **Station,** and **Quick**. Each topology represents a connected entity from top to bottom. The following chains are present:
 
@@ -41,20 +43,6 @@ Different search **topologies** are presented in the Skyline ICMP Platform Manag
 
 - **Configuration**
 
-## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
@@ -67,9 +55,9 @@ This connector uses a virtual connection and does not require any input during e
 
 To configure the entire system properly, as a **DataMiner** **System Administrator**, you should follow these steps:
 
-1. Create a front-end Skyline ICMP Platform Manager element by setting the parameter **Element Manager Type** to *Front-End* on the **Configuration** page.
+1. Create a frontend Skyline ICMP Platform Manager element by setting the parameter **Element Manager Type** to *Front-End* on the **Configuration** page.
 
-1. Create one or more back-end Skyline ICMP Platform Manager elements by setting this same parameter to *Back-End* on their **Configuration** page.
+1. Create one or more backend Skyline ICMP Platform Manager elements by setting this same parameter to *Back-End* on their **Configuration** page.
 
 1. Create a **Collector** element.
 
@@ -79,7 +67,7 @@ To configure the entire system properly, as a **DataMiner** **System Administrat
 
 1. Register the **Collector** element (DMA ID/element ID) in the **Collector Registration** table on the Front-End or Back-End page.
 
-1. If you are configuring the front end, register the back end (DMA ID/element ID) in the **FE-BE Registration** table; otherwise register the front end.
+1. If you are configuring the frontend, register the backend (DMA ID/element ID) in the **FE-BE Registration** table; otherwise register the frontend.
 
 1. In the location specified in the File Import Path parameter earlier, provide a CSV file (separated by ";") with the format illustrated below.
 
@@ -97,6 +85,6 @@ There is no redundancy defined.
 
 ## How to use
 
-When the initialization steps have been completed, go to the **Configuration** page of the **front-end** element, and click the **Import** button to load the information of the provided CSV file. This action will create a CSV file with the IDs for every entry to be read by the back-end element and a **Device_Config.json** file with those generated IDs.
+When the initialization steps have been completed, go to the **Configuration** page of the **frontend** element, and click the **Import** button to load the information of the provided CSV file. This action will create a CSV file with the IDs for every entry to be read by the backend element and a **Device_Config.json** file with those generated IDs.
 
-Then click the **Import** button in the **back-end** element to generate the CSV file that the collector needs to fill all its tables.
+Then click the **Import** button in the **backend** element to generate the CSV file that the collector needs to fill all its tables.

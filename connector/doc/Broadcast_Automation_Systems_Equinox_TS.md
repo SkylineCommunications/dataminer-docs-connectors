@@ -12,7 +12,7 @@ The Equinox TS is a logger for transmission streams that is mainly used for vide
 
 ### Version Info
 
-| **Range** | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description      | DCF Integration     | Cassandra Compliant     |
 |-----------|------------------|---------------------|-------------------------|
 | 1.0.0.x   | Initial version. | No                  | Yes                     |
 | 1.1.0.x   | New firmware.    | No                  | Yes                     |
@@ -34,8 +34,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.80.117.4.*
-- **IP port**: The IP port of the destination, e.g. *80*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.80.117.4.*
+- **IP port**: The IP port of the destination, e.g., *80*.
 - **Bus address**: *bypassproxy.*
 
 Note: In order to access the Equinox Web Service API, you need a dedicated login.

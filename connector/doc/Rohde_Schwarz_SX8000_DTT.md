@@ -12,7 +12,7 @@ With three different timers, all parameters related to the transmitter are polle
 
 ### Version Info
 
-| **Range** | **Description**         | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description         | DCF Integration | Cassandra Compliant |
 |------------------|-------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version         | Yes                 | Yes                     |
 | 2.0.0.x          | Added serial connection | Yes                 | Yes                     |
@@ -33,7 +33,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.17.250.17*.
+- **IP address/host**: The polling IP of the device, e.g., *10.17.250.17*.
 - **Device address**: Not required.
 
 SNMP Settings:

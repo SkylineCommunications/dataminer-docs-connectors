@@ -14,7 +14,7 @@ SNMP based connector for the Kubotek MNB962.
 
 This will list the different ranges of this connector and a short description what the reason of the range change was.
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

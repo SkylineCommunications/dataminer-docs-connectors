@@ -44,14 +44,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -60,7 +52,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element created with this connector consists of the following data pages:
 
-- **General**: Allows you to monitor and configure basic information about the device, e.g. **System Description, Controller Status**.
+- **General**: Allows you to monitor and configure basic information about the device, e.g., **System Description, Controller Status**.
 - **Interfaces**: Displays the Interfaces table.
 - **Processes**: Displays the Processes table.
 - **Devices**: Displays the Devices table.

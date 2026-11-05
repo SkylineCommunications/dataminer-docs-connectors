@@ -4,43 +4,25 @@ uid: Connector_help_Ziggo_CPE_WiFi_Provisioning
 
 # Ziggo CPE WiFi Provisioning
 
-The **Ziggo CPE WiFi Provisioning** connector converts CSV files containing a list of cable modems to **DSL** (**DataMiner Structured Language**) files ready to be processed by a **Skyline IAM DB** element.
-
 ## About
+
+The **Ziggo CPE WiFi Provisioning** connector converts CSV files containing a list of cable modems to **DSL** (**DataMiner Structured Language**) files ready to be processed by a **Skyline IAM DB** element.
 
 Every day, at a configurable time, the connector retrieves CSV files from a specific folder. There are two types of CSV files, one type per footprint (**fZiggo** or **fUPC)**. The CSV file names must have the following format:
 
 - **fUPC**: *YYYYMMDD*-fUPC.csv
 
-  E.g*. '20170418-fUPC.csv'*
+  Example: `20170418-fUPC.csv`
 
 - **fZiggo**: *YYYY*-*MM*-*DD*-*HH*-*MM*-fZiggo.csv\[.gz\]\>
 
-  E.g. *'2017-06-05-01-08-fZiggo.csv'*
+  Example: `2017-06-05-01-08-fZiggo.csv`
 
 The connector will parse the CSV files and convert them to **DSL** files.
 
 When all the files are processed, the connector checks if there is an element using the **Skyline IAM DB** protocol in the DMS. If such an element exists, the connector triggers a set to that element to start the processing of the **DSL** file. The **Skyline IAM DB** element then calls the appropriate MySQL procedures to insert the modems in the IAM Database.
 
 The connector also allows the configuration of the community string for both footprints.
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

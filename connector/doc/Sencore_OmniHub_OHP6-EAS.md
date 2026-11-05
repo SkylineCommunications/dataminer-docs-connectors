@@ -10,7 +10,7 @@ Similar to the **Sencore OmniHub 6-16**, the **OmniHub OHP6-EAS** polls data fro
 
 ### Version Info
 
-| **Range**            | **Key Features**                                          | **Based on** | **System Impact** |
+| Range              | Key Features                                            | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version.                                          | -            | -                 |
 | 1.1.0.x              | Changed from "SNMP" connection type to "HTTP" connection. | -            | -                 |

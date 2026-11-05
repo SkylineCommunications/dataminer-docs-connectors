@@ -16,19 +16,19 @@ The communication is based on the RollCall serial protocol.
 
 ### Version Info
 
-| **Range** | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                               | No                  | Yes                     |
-| 2.0.0.x          | Smart-serial implementation instead of serial | No                  | Yes                     |
-| 3.0.0.x          | RollCall version.                             | No                  | Yes                     |
+| Range   | Description                                   | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                               | No              | Yes                 |
+| 2.0.0.x | Smart-serial implementation instead of serial | No              | Yes                 |
+| 3.0.0.x | RollCall version.                             | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | All                         |
-| 2.0.0.x          | All                         |
-| 3.0.0.x          | 2.213                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | All                        |
+| 2.0.0.x | All                        |
+| 3.0.0.x | 2.213                      |
 
 ## Installation and configuration
 
@@ -42,7 +42,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device (e.g. *127.0.0.1*).
+  - **IP address/host**: The polling IP of the device (e.g., *127.0.0.1*).
   - **IP port**: The IP port of the device. Required (default: *2050*).
   - **Bus address**: The bus address of the device. Required (format: '\*.\*.\*'; for example: *0000.47.03*).
 
@@ -54,7 +54,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device (e.g. *127.0.0.2*).
+  - **IP address/host**: The polling IP of the device (e.g., *127.0.0.2*).
   - **IP port**: The IP port of the device. Required (default: *2050*).
   - **Bus address**: The bus address of the device. Required (format: '\*.\*.\*'; for example: *0000.47.04*).
 

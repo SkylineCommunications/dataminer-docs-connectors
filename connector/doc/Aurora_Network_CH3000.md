@@ -16,12 +16,12 @@ Note: This connector will export different connectors based on the retrieved dat
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                           | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version.                                                                                                                                          | No                  | Yes                     |
-| 1.0.1.x              | Some parameters descriptions have been modified, which can cause the loss of alarms and trend data for these parameters.                                  | No                  | Yes                     |
-| 1.0.2.x              | Added support for HT35xxH & HT330xH.                                                                                                                      | No                  | Yes                     |
-| 1.0.3.x              | Fixed DVE creation for HT35xxH & HT330xH. Added AT Status Unsupported Cards table. Renamed HT330xH to HT33xxH. **Impact**: The element must be recreated. | No                  | Yes                     |
+| Range              | Description                                                                                                                                               | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version.                                                                                                                                          | No              | Yes                 |
+| 1.0.1.x            | Some parameters descriptions have been modified, which can cause the loss of alarms and trend data for these parameters.                                  | No              | Yes                 |
+| 1.0.2.x            | Added support for HT35xxH & HT330xH.                                                                                                                      | No              | Yes                 |
+| 1.0.3.x            | Fixed DVE creation for HT35xxH & HT330xH. Added AT Status Unsupported Cards table. Renamed HT330xH to HT33xxH. **Impact**: The element must be recreated. | No              | Yes                 |
 
 ### Product Info
 
@@ -34,8 +34,8 @@ Note: This connector will export different connectors based on the retrieved dat
 
 ### Exported connectors
 
-| **Exported Connector**                                                                                                                            | **Description**     |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
+| Exported Connector                                                                                                                       | Description         |
+|------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | [Aurora Network CH3000 - CC300x](xref:Connector_help_Aurora_Network_CH3000_-_CC300x)                                                     | AT controller       |
 | [Aurora Network CH3000 - OS32MxM](xref:Connector_help_Aurora_Network_CH3000_-_OS32MxM)                                                   | Optical switch      |
 | [Aurora Network CH3000 - PS30xx](xref:Connector_help_Aurora_Network_CH3000_-_PS30xx)                                                     | Power supply        |

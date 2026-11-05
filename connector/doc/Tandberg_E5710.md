@@ -14,7 +14,7 @@ This is an **SNMP** connector that is used to display the status of the differen
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
-| 1.1.0.x | Release version. Added embedded web page. Enabled backup on all parameters. | No | Yes |
+| 1.1.0.x | Release version. Added embedded webpage. Enabled backup on all parameters. | No | Yes |
 | 1.1.1.x | Dynamic table used for the audio params. New MIBs implemented. **DCF** form version 1.1.1.20 implemented. | Yes | Yes |
 
 ## Configuration
@@ -25,7 +25,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection, as w
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not needed.
 
 **SNMP Settings**:
@@ -152,7 +152,7 @@ This page allows you to view the original web interface of the device itself. No
 
 ## DataMiner Connectivity Framework
 
-The **1.1.1.x** connector range of the Tandberg E5710 protocol supports the usage of DCF and can only be used on a DMA with **9.0.0 \[CU5\]** as the minimum version.
+The **1.1.1.x** connector range of the Tandberg E5710 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

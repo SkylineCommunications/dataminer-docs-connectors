@@ -30,7 +30,7 @@ This connector uses a virtual connection and does not require any input during e
 
 There is an option to push the results to the **Skyline QA Portal**. This will give **Skyline Communications** visibility on your test results. To enable this:
 
-1. Make sure you have a [mail server configured](https://docs.dataminer.services/user-guide/Advanced_Functionality/DataMiner_Agents/Configuring_a_DMA/Configuring_outgoing_email.html) on your DMS, so the results can be mailed to the portal
+1. Make sure you have a [mail server configured](https://aka.dataminer.services/Configuring_outgoing_email) on your DMS, so the results can be mailed to the portal
 
 1. Configure the **API Key** and the **Client ID** on the **Settings** page of the Skyline QAPortal element.
 
@@ -40,7 +40,7 @@ The API key and client ID will need to be provided by Skyline. The client ID def
 
 ## How to Use
 
-The connector will automatically detect any regression tests available in your DMS. Regression tests are added in the form of an Automation script.
+The connector will automatically detect any regression tests available in your DMS. Regression tests are added in the form of an automation script.
 
 If a regression test requires input parameters, you can add them on the **Input Parameters** page. The connector is designed so that you can add the same test multiple times with different inputs. This way, you can make your regression tests generic and reusable.
 
@@ -57,7 +57,7 @@ If you have just added a new regression test, you may need to use the **Refresh 
 
 If your regression test has input parameters, configure these in the **Input** column of the **Regression Tests** table.
 
-If you have not yet defined any **input group** (i.e. the dropdown is empty), create a new input group:
+If you have not yet defined any **input group** (i.e., the dropdown is empty), create a new input group:
 
 1. After you have clicked the pencil icon in the **Input** column of the **Regression Tests** table, click **...**.
 

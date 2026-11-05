@@ -14,17 +14,17 @@ This connector uses a serial communication and it has been designed to work usin
 
 ### Version Info
 
-| **Range** | **Description**                 | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version - Serial RS-232 | No                  | No                      |
-| 2.0.0.x          | Initial Version - Serial RS-485 | No                  | No                      |
+| Range   | Description                     | DCF Integration | Cassandra Compliant |
+|---------|---------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial Version - Serial RS-232 | No              | No                  |
+| 2.0.0.x | Initial Version - Serial RS-485 | No              | No                  |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.0                         |
-| 2.0.0.x          | 1.0                         |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 1.0                        |
+| 2.0.0.x | 1.0                        |
 
 ## Installation and configuration
 

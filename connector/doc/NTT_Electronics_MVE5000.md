@@ -54,33 +54,33 @@ This page displays information about the state of the device, including the **De
 
 ### Output Status
 
-This page displays the state of the outputs, e.g. the **Output Stream1 IP Rate**, **Stream 1 Packets Counter Media** and **Output Stream2 ARQ Receive**.
+This page displays the state of the outputs, e.g., the **Output Stream1 IP Rate**, **Stream 1 Packets Counter Media** and **Output Stream2 ARQ Receive**.
 
 ### Input
 
-This page allows you to configure the input, e.g. the **Interface Audio/Video**, **Superimpose Text Display** and **Superimpose Upper Text**.
+This page allows you to configure the input, e.g., the **Interface Audio/Video**, **Superimpose Text Display** and **Superimpose Upper Text**.
 
 The **Advanced Input** page button provides access to additional settings.
 
 ### Encode
 
-This page allows you to configure the encoder, e.g. the **Latency Mode**, **TS Rate** and **Audio 1 Format**.
+This page allows you to configure the encoder, e.g., the **Latency Mode**, **TS Rate** and **Audio 1 Format**.
 
 A number of page buttons provide access to additional settings: **Advanced Video**, **Advanced Audio**, **Advanced PID**, **Advanced PMT**, **Advanced NIT** and **Advanced SDT**.
 
 ### Output
 
-This page allows you to configure the output, e.g. the **IP TS Transmission Mode**, **IP Number of Transmit TS** and **DVB ASI Mode**.
+This page allows you to configure the output, e.g., the **IP TS Transmission Mode**, **IP Number of Transmit TS** and **DVB ASI Mode**.
 
 ### Stream1
 
-This page allows you to configure the first stream, e.g. the **IP Version**, **Protocol** and **Port Number**.
+This page allows you to configure the first stream, e.g., the **IP Version**, **Protocol** and **Port Number**.
 
 Additional settings are available via the **Advanced Output2** page button.
 
 ### Stream2
 
-This page allows you to configure the second stream, e.g. the **IP Version**, **Protocol** and **Port Number**.
+This page allows you to configure the second stream, e.g., the **IP Version**, **Protocol** and **Port Number**.
 
 Additional settings are available via the **Advanced Output1** page button.
 
@@ -114,7 +114,7 @@ This page shows the web interface of the device. Note that the client machine ha
 
 ## DataMiner Connectivity Framework
 
-The **1**.**0.1.x** connector range of the **NTT Electronics MVE5000** protocol supports the usage of DCF and can only be used on a DMA with **8.5.7.2** as the minimum version.
+The **1**.**0.1.x** connector range of the **NTT Electronics MVE5000** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

@@ -12,7 +12,7 @@ This connector needs an SNMP connection to retrieve data from the device and to 
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                                                                                                                  | DCF Integration | Cassandra Compliant |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | New version for Sencore MRD-3187x based on 3187a version 1.2.0.13. VsbTable and Decoders Table added from MIB files. General review according to development rules. Supported by MRD-3187A and MRD-3187B since version 1.2.0.12. | No                  | Yes                     |
 

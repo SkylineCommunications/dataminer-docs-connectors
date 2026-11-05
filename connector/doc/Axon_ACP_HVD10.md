@@ -56,14 +56,6 @@ SMART-SERIAL CONNECTION:
   - **IP port**: The IP port of the destination (fixed value: *2071*).
   - **Bus address**: The bus address or slot number/position of the card in the frame.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following pages:
@@ -73,11 +65,11 @@ The element has the following pages:
 - **I/O**: This page contains input/output control parameters that are used to configure the I/O settings of the card.
 - **Video**: This page contains control parameters used to configure the video settings of the card.
 - **Audio**: This page contains audio status information for each individual channel, as well as control parameters to configure the audio settings of the card.
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP HVD10 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Axon ACP HVD10 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

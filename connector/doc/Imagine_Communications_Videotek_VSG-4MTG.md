@@ -12,7 +12,7 @@ SNMP connector to manage the Master Timing Generator.
 
 ### Version Info
 
-| **Range** | **Description**                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.1.x          | New firmware changes, OIDs shift, removal and addition of new parameters | No                  | Yes                     |
 

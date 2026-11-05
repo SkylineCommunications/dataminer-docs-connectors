@@ -12,7 +12,7 @@ This connector uses **SNMP** to monitor and control the Axon HJA420 Loudness Con
 
 ### Version Info
 
-| **Range** | **Description**      | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description          | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version      | No                  | Yes                     |
 | 1.1.0.x          | New firmware version | No                  | Yes                     |

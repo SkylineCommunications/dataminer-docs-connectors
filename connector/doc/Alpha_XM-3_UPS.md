@@ -12,10 +12,10 @@ This connector uses **SNMP** to retrieve data from the device. An **HTTP** conne
 
 ### Version Info
 
-| **Range** | **Description**        | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version        | No                  | No                      |
-| 2.0.0.x          | Added support for DDNS | No                  | No                      |
+| Range   | Description            | DCF Integration | Cassandra Compliant |
+|---------|------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version        | No              | No                  |
+| 2.0.0.x | Added support for DDNS | No              | No                  |
 
 ## Installation and Configuration
 
@@ -27,7 +27,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: A unique address used by the XM to communicate with the system controller. The format of the bus address is "*\<DNS server\>:\<hostname\>*".
 
 Note:

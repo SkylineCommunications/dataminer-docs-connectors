@@ -14,13 +14,15 @@ This connector for the **TeamCast Neptune** displays the demodulator configurati
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
+| 1.0.0.x              | Initial version | Yes                 | Yes                     |
+| 1.0.1.x [SLC Main]   | Polling manager integration| Yes                 | Yes                     |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | 100                         |
+| 1.0.1.x          | 100                         |
 
 ## Installation and configuration
 
@@ -80,10 +82,14 @@ This page displays the **TSOIP Tx** and **TSOIP Tx Status** table, which can be 
 
 On this page, the **Trap Logs** table displays a log of the traps received from the device. Via the available buttons and page button, you can manipulate the table.
 
+### Polling Settings 
+
+On this page, group polling can be configured. You can either enable or disable group polling, and you can configure the polling time.
+
 ### Web Interface Page
 
 This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## DataMiner Connectivity Framework
 
-This connector supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+This connector supports the usage of DCF.

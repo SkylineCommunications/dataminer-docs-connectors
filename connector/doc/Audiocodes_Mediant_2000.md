@@ -4,27 +4,15 @@ uid: Connector_help_Audiocodes_Mediant_2000
 
 # Audiocodes Mediant 2000
 
-The AudioCodes Mediant 2000 Media Gateway is designed to provide connectivity between small-to-medium-sized enterprises and service providers' networks. Supporting up to 480 voice channels in a 1U platform, the Mediant 2000 offers performance in connecting legacy telephone and PBX systems to IP networks, as well as seamless connection of IP-PBXs to the PSTN.
-
 ## About
+
+The AudioCodes Mediant 2000 Media Gateway is designed to provide connectivity between small-to-medium-sized enterprises and service providers' networks. Supporting up to 480 voice channels in a 1U platform, the Mediant 2000 offers performance in connecting legacy telephone and PBX systems to IP networks, as well as seamless connection of IP-PBXs to the PSTN.
 
 With this connector, it is possible to monitor the state of the interfaces and to monitor the performance KPIs related to the IP-to-PSTN and PSTN-to-IP conversion. The structure of the connector pages mirrors that of the web interface of the device.
 
-### Version Info
+## Configuration
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | True                    |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-
-## Installation and configuration
-
-### Creation
+### Connections
 
 #### SNMP main connection
 
@@ -40,7 +28,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, default value *public*.
 - **Set community string**: The community string used when setting values on the device, default value *private*.
 
-## Usage
+## How to Use
 
 ### Alarms
 

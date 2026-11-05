@@ -46,7 +46,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: Not used.
 
 SNMPv1 & SNMPv2 Settings:
@@ -186,4 +186,4 @@ Click **Save** to save the submitted configuration changes to the NPort 6000's f
 
 ### Web Interface
 
-This page provides access to the configuration web page of the device. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page provides access to the configuration webpage of the device. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

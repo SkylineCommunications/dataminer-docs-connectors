@@ -16,13 +16,13 @@ The GPS coordinates of each site are tracked and logged in a table. This table c
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 
 ### Exported Connectors
 
-| **Exported Connector**          | **Description**                 |
+| Exported Connector          | Description                 |
 |--------------------------------|---------------------------------|
 | SpeedCast Smart SatManage Site | A DVE is created for each site. |
 

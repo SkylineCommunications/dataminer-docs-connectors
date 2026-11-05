@@ -12,7 +12,7 @@ With this connector, it is possible to monitor a NEC PNMS. The connector creates
 
 ### Version Info
 
-| **Range**            | **Key Features**   | **Based on** | **System Impact** |
+| Range            | Key Features   | Based on | System Impact |
 |----------------------|--------------------|--------------|-------------------|
 | 1.0.0.x              | Sources monitoring | -            | -                 |
 | 2.0.0.x [SLC Main]   | Sources monitoring | 1.0.0.x      | -                 |

@@ -14,13 +14,13 @@ Aside from the IP address parameter, all settings in this connector require that
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version.                                                                                                                                  | No                  | No                      |
-| 1.0.1.x   | New firmware based on 1.0.1.x (see below).                                                                                                        | No                  | No                      |
-| 1.1.0.x   | HTTP-over-serial connection implemented for gzip encoding (because not yet supported by DataMiner via HTTP connection).                           | No                  | No                      |
-| 1.1.1.x   | HTTP connection for non-gzip encoding along with HTTP-over-serial for gzip encoding (because not yet supported by DataMiner via HTTP connection). | No                  | No                      |
-| 1.1.2.x   | More meaningful display keys.                                                                                                                     | No                  | Yes (1.1.2.3 onwards)   |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | No |
+| 1.0.1.x | New firmware based on 1.0.1.x (see below). | No | No |
+| 1.1.0.x | HTTP-over-serial connection implemented for gzip encoding (because not yet supported by DataMiner via HTTP connection). | No | No |
+| 1.1.1.x | HTTP connection for non-gzip encoding along with HTTP-over-serial for gzip encoding (because not yet supported by DataMiner via HTTP connection). | No | No |
+| 1.1.2.x | More meaningful display keys. | No | Yes (1.1.2.3 onwards) |
 
 ### Product Info
 
@@ -54,7 +54,7 @@ This connector uses an HTTP connection to access the device and retrieve informa
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *80*.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
@@ -150,6 +150,7 @@ The set will be done from within a script. It should set a string value on the B
 - Read PID: 12000
 - Write PID:12001
 
-The string should consist of semicolon-separated commands, where a single command is a "\|"-separated string containing the key and its value: *KEY\|value*. The value can be 1 (Primary) or 2 (Backup). E.g. *index_X\|Value;index_Y\|Value;index_Z\|Value;*...
+The string should consist of semicolon-separated commands, where a single command is a "\|"-separated string containing the key and its value: *KEY\|value*. The value can be 1 (Primary) or 2 (Backup). For example: `index_X|Value;index_Y|Value;index_Z|Value;`.
 
-**Important Note**: When you **update** elements that use a connector version **prior to 1.0.0.9** to version 1.0.0.9 or higher, you need to clean the element data of these elements while they are stopped. From version 1.0.0.9 onwards, the option UNICODE is enabled in the connector. Old saved data from an element using an older connector that does not have this option will become unreadable because of this encoding change.
+> [!IMPORTANT]
+> When you **update** elements that use a connector version **prior to 1.0.0.9** to version 1.0.0.9 or higher, you need to clean the element data of these elements while they are stopped. From version 1.0.0.9 onwards, the option UNICODE is enabled in the connector. Old saved data from an element using an older connector that does not have this option will become unreadable because of this encoding change.

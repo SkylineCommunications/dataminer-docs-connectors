@@ -18,7 +18,7 @@ The protocol also has **alarming** and **trending**.
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.107.128.38*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.107.128.38*.
 
 **SNMP Settings:**
 

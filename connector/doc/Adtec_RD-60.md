@@ -14,7 +14,7 @@ The range 1.1.0.1 only supports the **Adtec RD-60**.
 
 ### Version Info
 
-| **connector Range** | **Description**                              | **DCF Integration** | **Cassandra Compliant** |
+| connector Range | Description                              | DCF Integration | Cassandra Compliant |
 |------------------|----------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                              | No                  | Yes                     |
 | 1.0.1.x          | connector review and expansion to support RD-70 | No                  | Yes                     |

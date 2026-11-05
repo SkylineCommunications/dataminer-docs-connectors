@@ -16,19 +16,23 @@ This connector will export different connectors based on the retrieved data. A l
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x   | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Fixed duplicate description on DVE protocols  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | Software version 2.50  |
+| 1.0.1.x   | Software version 2.50  |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | See table below.        |
+| 1.0.1.x   | No                  | Yes                     | -                     | See table below.        |
+
 
 ### Exported Connectors
 

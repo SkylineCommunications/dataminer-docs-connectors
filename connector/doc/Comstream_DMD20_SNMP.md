@@ -30,7 +30,7 @@ The connector has several pages with general information, alarms, information re
 
 ### Main View
 
-This page displays some main info of the device. E.g.: summary alarms, voltage alarms, modulator and demodulator general parameters.
+This page displays some main info of the device, e.g., summary alarms, voltage alarms, modulator and demodulator general parameters.
 
 ### General
 

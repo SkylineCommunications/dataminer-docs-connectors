@@ -27,14 +27,6 @@ It has a single SDI video path with a de-embedder and an embedder, which allow t
 
 This SNMP connector is used by DVE child elements that are **automatically created** by the parent connector [Crystal Vision Vision 3 Frame](xref:Connector_help_Crystal_Vision_Vision_3_Frame).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -61,3 +53,4 @@ The web interface is only accessible when the client machine has network access 
 
 - Allows you to select, store and recall presets, or return to a default preset.
   - Allows you to configure **alarm delays** for Video Black, Video Frozen, Audio Silence and Audio Silence Level.
+

@@ -4,7 +4,7 @@ uid: Connector_help_Sky_UK_SSR
 
 # Sky UK SSR
 
-This connector can be used to obtain a list of "services" (e.g. TV shows, movies, etc.), each with its own information about duration, genre, name and subtitle.
+This connector can be used to obtain a list of "services" (e.g., TV shows, movies, etc.), each with its own information about duration, genre, name and subtitle.
 
 ## About
 
@@ -36,8 +36,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device e.g. 10.66.53.102
-- **IP port**: The IP Port of the device e.g. *80*
+- **IP address/host**: The polling IP of the device e.g., 10.66.53.102
+- **IP port**: The IP Port of the device e.g., *80*
 
 ### Configuration
 

@@ -55,7 +55,7 @@ This page displays the **Circuits Overview** table, which contains the main info
 - **Status**: *Active*/*Inactive* status of the circuit.
 - **NOC Status**: *Managed*/*Unmanaged*.
 - **Service Tier**: The service tier: *0*, *1*, *2* or *3*. Only 2 and 3 are monitored for trouble ticketing.
-- **Maintenance Option**: The maintenance option for a given customer (e.g. *Next Business Day*).
+- **Maintenance Option**: The maintenance option for a given customer (e.g., *Next Business Day*).
 - **Service Type**: The service type *Primary*/*Secondary* for a given customer.
 
 It also displays information about customers and contact information:
@@ -79,9 +79,9 @@ This page contains information about each device available per circuit and its o
 
 - **Circuit ID**: The circuit ID.
 - **Circuit Name:** The circuit alias.
-- **Type**: The device type (e.g. *Antenna*, *BUC*, *Modem*).
-- **Description:** The device description (e.g. *1.2 Meter Tier-3*, *Ku-Band with De-Ice*).
-- **Model:** The device model (e.g. *1134-992*).
+- **Type**: The device type (e.g., *Antenna*, *BUC*, *Modem*).
+- **Description:** The device description (e.g., *1.2 Meter Tier-3*, *Ku-Band with De-Ice*).
+- **Model:** The device model (e.g., *1134-992*).
 - **Serial Number:** The device serial number.
 - **DNS Entity Name:** Verizon-assigned identifier for the circuit modem.
 - **Has Deice:** *True*/*False*.
@@ -91,9 +91,9 @@ This page contains information about each device available per circuit and its o
 
 This page contains information on all interfaces available per device, as well as the **Circuits ID** and some parameters to contextualize each element.
 
-- **Type**: The interface type (e.g. *eth0*).
-- **Circuit Path**: The circuit path (e.g. *Primary*).
-- **VLAN**: The interface VLAN (e.g. *275*).
+- **Type**: The interface type (e.g., *eth0*).
+- **Circuit Path**: The circuit path (e.g., *Primary*).
+- **VLAN**: The interface VLAN (e.g., *275*).
 - **IP Address**: The interface IP.
 - **Subnet**: The interface subnet.
 - **PIP Circuits**: *True* or *False* depending on whether PIP circuits are available.

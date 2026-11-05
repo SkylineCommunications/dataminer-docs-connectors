@@ -60,7 +60,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-The HTTP credentials, i.e. the username and password, need to be provided in a newly created element.
+The HTTP credentials, i.e., the username and password, need to be provided in a newly created element.
 
 ### Web Interface
 

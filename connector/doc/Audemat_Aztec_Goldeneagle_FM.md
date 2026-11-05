@@ -12,19 +12,19 @@ This connector is used to gather information from the **Audemat Aztec Goldeneagl
 
 ### Version Info
 
-| **Range** | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                           | No                  | No                      |
-| 2.0.0.x          | New firmware                              | No                  | Yes                     |
-| 2.1.0.x          | Added support for device firmware 10.9.0. | No                  | Yes                     |
+| Range   | Description                               | DCF Integration | Cassandra Compliant |
+|---------|-------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                           | No              | No                  |
+| 2.0.0.x | New firmware                              | No              | Yes                 |
+| 2.1.0.x | Added support for device firmware 10.9.0. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 8.5                         |
-| 2.0.0.x          | 10.8                        |
-| 2.1.0.x          | 10.9.0                      |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 8.5                        |
+| 2.0.0.x | 10.8                       |
+| 2.1.0.x | 10.9.0                     |
 
 ## Installation and configuration
 

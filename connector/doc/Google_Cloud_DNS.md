@@ -8,19 +8,13 @@ This connector manages Google Cloud DNS, which is a high-performance, resilient,
 
 ## About
 
-Version Info
+### Version Info
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
-System Info
+### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|

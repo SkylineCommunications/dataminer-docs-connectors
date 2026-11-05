@@ -44,11 +44,11 @@ This connector uses a virtual connection and does not require any input during e
 
 ### General
 
-This page summarizes the **missing languages** and **missing files** for four days of playlists (i.e. the **D1**, **D2**, **D3** and **D4** playlist). It also contains a count of the number of events with missing languages per day for all four days.
+This page summarizes the **missing languages** and **missing files** for four days of playlists (i.e., the **D1**, **D2**, **D3** and **D4** playlist). It also contains a count of the number of events with missing languages per day for all four days.
 
 ### D1 Playlist
 
-This page contains information on the D1 playlist, i.e. the playlist of the current day.
+This page contains information on the D1 playlist, i.e., the playlist of the current day.
 
 On the left side of this page, you can check which program is currently running. In this same column, the **D1 Playlist Refresh** and **D1 Subtitle Refresh** buttons allow you to refresh the D1 program table's playlist and subtitles, respectively. The **D1 Preload Playlist** page button displays the **D1 Preload Program Table**, with the **D1 Preload Refresh** button. This allows you to preload the playlist of the current day in advance to avoid any gap time in monitoring.
 

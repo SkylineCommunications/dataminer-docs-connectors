@@ -54,7 +54,7 @@ There is no redundancy defined.
 
 In the **Data Subscription** table, KPI and config entries are defined. You can add, edit or delete entries via the right-click menu. This data is used to generate both performance_data and sunoutage_data files.
 
-- Enter the Name (i.e. the name displayed in DataMiner), and the connector automatically adds the alias to the Alias column. If the Name does not occur in the pre-configured pairs, the connector will return an empty string.
+- Enter the Name (i.e., the name displayed in DataMiner), and the connector automatically adds the alias to the Alias column. If the Name does not occur in the pre-configured pairs, the connector will return an empty string.
 - Four types exist in the connector: KPI, N/A, Sun Outage, and Config.
 
   - **KPI**

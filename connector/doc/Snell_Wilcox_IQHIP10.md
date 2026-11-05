@@ -12,7 +12,7 @@ The connector allows the management of the **Snell Wilcox IQHIP10** using a smar
 
 ### Version Info
 
-| **Range** | **Description**    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description        | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version    | No                  | Yes                     |
 | 1.0.1.x          | DCF Implementation | Yes                 | Yes                     |
@@ -36,9 +36,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device (e.g. *192.168.14.15*).
-  - **IP port**: The IP port of the device (e.g. *2050*).
-  - **Bus address**: Used to fill in the Unit Address and the Unit Port (e.g. 10*.04* is for Unit Address *0x10* and Unit Port *0x04*).
+  - **IP address/host**: The polling IP of the device (e.g., *192.168.14.15*).
+  - **IP port**: The IP port of the device (e.g., *2050*).
+  - **Bus address**: Used to fill in the Unit Address and the Unit Port (e.g., 10*.04* is for Unit Address *0x10* and Unit Port *0x04*).
 
 ## Usage
 

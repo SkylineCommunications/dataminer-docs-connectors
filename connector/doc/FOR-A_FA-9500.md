@@ -12,17 +12,17 @@ This connector was designed to work only with model **FA-9500**. It allows the u
 
 ### Version Info
 
-| **Range** | **Description**                                                                                 | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                 | No                  | Yes                     |
-| 1.1.0.x          | Version compatible with firmware 8.10 (parameters added in correspondence with the MIB update). | Yes                 | Yes                     |
+| Range   | Description                                                                                     | DCF Integration | Cassandra Compliant |
+|---------|-------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                                                                 | No              | Yes                 |
+| 1.1.0.x | Version compatible with firmware 8.10 (parameters added in correspondence with the MIB update). | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 8.00                        |
-| 1.1.0.x          | 8.10                        |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 8.00                       |
+| 1.1.0.x | 8.10                       |
 
 ## Installation and configuration
 

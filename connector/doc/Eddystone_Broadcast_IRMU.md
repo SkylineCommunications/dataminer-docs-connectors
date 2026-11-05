@@ -8,26 +8,13 @@ The Eddystone Broadcast RMU enabled FM transmitters can enable your network oper
 
 ## About
 
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x | Initial version. | - | - |
-| 1.0.1.x | - Changed the Description parameter as the index. <br>- Changed [IDX] tag from primary key. | 1.0.0.1 | Alarm and trend information will be affected. |
-
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 4.0.4612.24969         |
 | 1.0.1.x   | 4.0.4612.24969         |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | 5.6.7310.16328         |
 
 ## Configuration
 

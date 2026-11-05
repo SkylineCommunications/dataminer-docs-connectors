@@ -14,7 +14,7 @@ When a webpage can be safely executed inside DataMiner to scrape the contents, i
 
 ### Version Info
 
-| **Range** | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                               | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                           | No                  | Yes                     |
 | 1.1.0.x          | New firmware based on 1.0.0.x (see below) | No                  | Yes                     |
@@ -36,7 +36,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
 - **IP port**: A fixed destination port has been set to *80.*
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy*.
 

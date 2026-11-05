@@ -28,7 +28,7 @@ REST API calls are used to retrieve/send information from/to the server. The con
 
 ### Exported connectors
 
-| **Exported Connector**              | **Description**           |
+| Exported Connector              | Description           |
 |------------------------------------|---------------------------|
 | Techex MW4 Server - Generic Device | Techex MW4 Server Device. |
 
@@ -42,7 +42,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The server URL (e.g. *[https://middleware.techex.co.uk](https://middleware.techex.co.uk/))*
+- **IP address/host**: The server URL (e.g., *[https://middleware.techex.co.uk](https://middleware.techex.co.uk/))*
 
 ## Usage
 
@@ -72,7 +72,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the Techex MW4 Server protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.1.x** connector range of the Techex MW4 Server connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

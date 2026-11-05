@@ -41,10 +41,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination. (default: *5001*)
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Every 10 seconds, status parameters such as Azimuth Position, Elevation Position, and Polarization Position are retrieved from the device. You can configure alarm monitoring and trending on these status parameters to keep track of the operation of the ACU.

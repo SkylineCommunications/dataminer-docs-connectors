@@ -14,7 +14,7 @@ The connector also has an HTTP interface that will gather all the alarms registe
 
 ### Version Info
 
-| **Range**            | **Key Features**       | **Based on** | **System Impact** |
+| Range                | Key Features           | Based on     | System Impact     |
 |----------------------|------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.       | -            | -                 |
 | 1.1.0.x              | Initial version.       | -            | -                 |
@@ -46,7 +46,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.220.224.16*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.220.224.16*.
 
 SNMP Settings:
 
@@ -60,8 +60,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 SERIAL Connection:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.220.224.16*.
-- **IP port**: The port of the destination, e.g. *8080*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.220.224.16*.
+- **IP port**: The port of the destination, e.g., *8080*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 ## Usage

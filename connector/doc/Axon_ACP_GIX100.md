@@ -8,26 +8,6 @@ The **GIX100** is dual-channel high-performance 3 Gb/s, HD and SD SDI video and 
 
 The Axon ACP GIX100 connector is used to monitor these Axon cards.
 
-## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 1925                   |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
@@ -56,21 +36,13 @@ SMART-SERIAL CONNECTION:
   - **IP port**: The IP port of the destination (fixed value: *2071*).
   - **Bus address**: The bus address or slot number/position of the card in the frame.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The setting of some parameters depends on other parameters' current value. For example, on the Network page, in order to set the Preferred IP Address, you need to make sure the IP Configuration is set to *Manual* mode. When such a parameter is not set to the correct value, a message box will be displayed. Follow the instructions in the message box and set the required parameter to the appropriate value before setting the other parameter.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP GIX100 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.1** connector range of the Axon ACP GIX100 protocol supports the usage of DCF and can only be used on a DMA with **10.2.0** as the minimum version.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

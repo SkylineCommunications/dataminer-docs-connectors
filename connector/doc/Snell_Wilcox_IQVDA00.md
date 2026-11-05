@@ -18,8 +18,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **Device address**: Slot number of the module in the chassis, e.g. *1.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **Device address**: Slot number of the module in the chassis, e.g., *1.*
 
 **SNMP Settings**:
 
@@ -31,7 +31,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### General Page
 
-This page displays some general information (e.g. **Slot Number**, **Serial Number**, .).
+This page displays some general information (e.g., **Slot Number**, **Serial Number**, .).
 
 On this page, you can also **Restart the Unit** or reset it to the **Default Settings**.
 

@@ -8,7 +8,7 @@ This connector will be used to automatically create and configure elements of th
 
 ## About
 
-This connector will execute soap calls to retrieve data. Every 5 minutes there will be a version check. If there is a newer version then the other soap calls will be executed. The **Get Devices** soap command will create the missing **CISCO ISR** elements in the correct views in the Surveyor or reconfigure existing elements, e.g. if the alarm template has changed. The **Get Interfaces** and **Get QoS** soap commands will contain the interfaces for which the polling does or does not need to be enabled in the **CISCO ISR Measurement Configuration Table**.
+This connector will execute soap calls to retrieve data. Every 5 minutes there will be a version check. If there is a newer version then the other soap calls will be executed. The **Get Devices** soap command will create the missing **CISCO ISR** elements in the correct views in the Surveyor or reconfigure existing elements, e.g., if the alarm template has changed. The **Get Interfaces** and **Get QoS** soap commands will contain the interfaces for which the polling does or does not need to be enabled in the **CISCO ISR Measurement Configuration Table**.
 
 ### Version Info
 

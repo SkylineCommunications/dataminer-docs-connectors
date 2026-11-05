@@ -37,7 +37,7 @@ The Axon RRS18 protocol can be used for different Axon cards. As there are somet
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **UDP** connection is selected automatically.
 
 ## Usage

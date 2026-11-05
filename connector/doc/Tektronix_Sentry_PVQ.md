@@ -8,7 +8,7 @@ The **Tektronix Sentry PVQ** connector is used to display information related to
 
 ## About
 
-This connector will display information related to the selected **Sentry PVQ** device. This information and details such as Ports, Transport and Services, are available on different pages, described in the "Usage" section of this document. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g. the **bitrate**.
+This connector will display information related to the selected **Sentry PVQ** device. This information and details such as Ports, Transport and Services, are available on different pages, described in the "Usage" section of this document. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g., the **bitrate**.
 
 > [!NOTE]
 > This connector requires .Net Framework 4.0.

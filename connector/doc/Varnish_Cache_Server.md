@@ -65,7 +65,7 @@ In the 1.0.0.x version of the connector, the **Service Status** is not yet funct
 
 #### Simulation
 
-After you upload a new version, always verify if new data is coming in (i.e. verify when a parameter changes if the **x Per Time Period** parameter is not 0).
+After you upload a new version, always verify if new data is coming in (i.e., verify when a parameter changes if the **x Per Time Period** parameter is not 0).
 If this is not the case, it may be because *\#define SIMULATE* is activated in the connector. You can disable this in the connector by prefixing it with two forward slashes (*//#define SIMULATE*).
 In this case, contact the TAM or System Developer.
 

@@ -110,7 +110,7 @@ This page displays general information about Ethernet interfaces.
 The following subpages are available:
 
 - **Management/Data:** Allows you to configure the Ethernet interfaces.
-- **Configuration/Redundancy/Link/Monitorization/Alarms:** Displays alarm status information for the Ethernet interfaces, as well as various settings, e.g. related to redundancy and VLANs.
+- **Configuration/Redundancy/Link/Monitorization/Alarms:** Displays alarm status information for the Ethernet interfaces, as well as various settings, e.g., related to redundancy and VLANs.
 
 ### ASI In Out
 

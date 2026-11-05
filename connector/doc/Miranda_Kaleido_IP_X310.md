@@ -16,6 +16,7 @@ This connector supports the Miranda Kaleido IP X310. This is an IP video multivi
 | 1.0.1.x | 1.0.0.4 | Different display key for virtual alarm table. Changes in import file and mandatory value in service table. |
 | 1.0.2.x [Obsolete] | 1.0.1.2 | Audio alarms were separated from the service table. |
 | 1.0.3.x [SLC Main] | 1.0.2.3 | Changes to Health Information Table to allow trending and alarm monitoring. |
+| 1.1.0.x | 1.1.0.1 | SNMP no longer works for this firmware; only traps work as they can be received via Miranda IControl (while showing the source IP as the Miranda Kaleido device). |
 
 ### Product Info
 
@@ -25,12 +26,14 @@ This connector supports the Miranda Kaleido IP X310. This is an IP video multivi
 | 1.0.1.x   | 7.60 (build552)        |
 | 1.0.2.x   | 7.60 (build552)        |
 | 1.0.3.x   | 7.60 (build552)        |
+| 1.1.0.x   | 12.1.0 (Build 1037)    |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -44,7 +47,7 @@ This connector uses Simple Network Management Protocol (SNMP) connections and re
 
 SNMP CONNECTION (KaleidoK3):
 
-- **IP address/host**: The polling IP of the device, e.g. *127.0.0.1.*
+- **IP address/host**: The polling IP of the device, e.g., *127.0.0.1.*
 
 SNMP Settings:
 
@@ -78,7 +81,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *127.0.0.1.*
+- **IP address/host**: The polling IP of the device, e.g., *127.0.0.1.*
 - **IP port**: The port of the connected device, by default *13000*.
 - **Timeout time**: The timeout of a single command in ms, by default *10000*.
 
@@ -101,6 +104,8 @@ This page displays basic information about the device. The **channel** and **lay
 The page also contains two page buttons:
 
 - **Load File**: Opens the configuration file import window.
+
+The **Baseboard Connection State** parameter on this page periodically checks the connection to the baseboard. If the connection cannot be established, the **System**, **Processor**, **Power**, **Voltage**, **Memory**, **Cooling**, **Temperature**, and **Drive Slot** pages are hidden, and polling of the baseboard parameters is stopped.
 
 > To load the services that need to be monitored, an Excel file is required with a fixed format (.xls or .xlsx). Go to the **General** page and open the pop-up page **Load File**. Then specify the **File Path** and **File Name** of the file, and finally click **Import**.
 >

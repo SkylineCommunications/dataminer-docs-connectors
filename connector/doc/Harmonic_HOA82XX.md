@@ -18,7 +18,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 
@@ -30,7 +30,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### General
 
-This page displays standard device parameters (e.g. **Model, Temperature, Location**). The configurable parameters are on the right side and are **Serial Number, Location, Name** and **Contact.**
+This page displays standard device parameters (e.g., **Model, Temperature, Location**). The configurable parameters are on the right side and are **Serial Number, Location, Name** and **Contact.**
 
 ### Controls
 

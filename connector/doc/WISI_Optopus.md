@@ -20,21 +20,23 @@ For more information about the device, please refer to the website <http://wisi.
 
 ### Version Info
 
-| **Range** | **Description**                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                              | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                         | No                  | No                      |
 | 1.0.1.x          | Tables display column changed to naming. | No                  | No                      |
+| 1.0.2.x          | Secondary SNMP connection removed.       | No                  | No                      |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                       |
+| Range | Device Firmware Version                                                       |
 |------------------|-----------------------------------------------------------------------------------|
 | 1.0.0.x          | 1.0.0.0 BOOT_LX51 1.0.0.2 BOOT_LX_Module 1.0.0.4 BOOT_LX_Module 2.1.1.0 APPL_LX51 |
 | 1.0.1.x          | 1.0.0.0 BOOT_LX51 1.0.0.2 BOOT_LX_Module 1.0.0.4 BOOT_LX_Module 2.1.1.0 APPL_LX51 |
+| 1.0.2.x          | 1.0.0.0 BOOT_LX51 1.0.0.2 BOOT_LX_Module 1.0.0.4 BOOT_LX_Module 2.1.1.0 APPL_LX51 |
 
 ### Exported connectors
 
-| **Exported Connector**                                                                  | **Description**                     |
+| Exported Connector                                                                  | Description                     |
 |----------------------------------------------------------------------------------------|-------------------------------------|
 | [WISI Optopus RF Amplifier](xref:Connector_help_WISI_Optopus_RF_Amplifier)       | LX70 Wideband Amplifier             |
 | [WISI Optopus Ext Transmitter](xref:Connector_help_WISI_Optopus_Ext_Transmitter) | LX10 Longhaul Broadcast Transmitter |
@@ -53,7 +55,7 @@ This connector uses two Simple Network Management Protocol (SNMP) connections an
 
 **SNMP Connection**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:
@@ -64,7 +66,7 @@ This connector uses two Simple Network Management Protocol (SNMP) connections an
 
 **SnmpConnection2:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:

@@ -12,7 +12,7 @@ This connector uses serial commands to retrieve the data from the **Peak Communi
 
 ### Version Info
 
-| **Range**     | **Description**    | **DCF Integration** | **Cassandra Compliant** |
+| Range         | Description        | DCF Integration     | Cassandra Compliant     |
 |----------------------|--------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version    | No                  | Yes                     |
 | 1.0.1.x              | DCF implementation | Yes                 | Yes                     |
@@ -38,11 +38,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600.*
-  - **Databits**: Databits specified in the manual of the device, e.g. *7.*
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1.*
-  - **Parity**: Parity specified in the manual of the device, e.g. *No.*
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No.*
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600.*
+  - **Databits**: Databits specified in the manual of the device, e.g., *7.*
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1.*
+  - **Parity**: Parity specified in the manual of the device, e.g., *No.*
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No.*
 
 - Interface connection:
 
