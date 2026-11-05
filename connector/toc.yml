@@ -9077,6 +9077,11 @@
     topicUid: Connector_help_SES_S.A._Digital_Video_Switch-Over_Unit
   - name: SES S.A. Global Telemetry System
     topicUid: Connector_help_SES_S.A._Global_Telemetry_System
+  - name: SES S.A. MAS
+    topicUid: Connector_help_SES_S.A._MAS_Solution
+    items:
+    - name: SES S.A. MAS Technical
+      topicUid: Connector_help_SES_S.A._MAS_Solution_Technical
   - name: SES S.A. Monics200 DB
     topicUid: Connector_help_SES_S.A._Monics200_DB
   - name: SES S.A. O3b mPOWER
