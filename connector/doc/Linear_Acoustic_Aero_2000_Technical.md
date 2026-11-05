@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Linear_Acoustic_Aero_2000_Technical
+description: "Configure the Linear Acoustic AERO 2000 SNMP connector and monitor device status, hardware, inputs, program loudness, silence states, and traps."
 ---
 
 # Linear Acoustic AERO 2000
@@ -14,7 +15,7 @@ The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of h
 
 ### Connections
 
-#### SNMP connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -26,8 +27,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string in order to read from the device. The default value is *public*.
-- **Set community string**: The community string in order to set to the device. The default value is *private*.
+- **Get community string**: The community string to read from the device. The default value is *public*.
+- **Set community string**: The community string to set to the device. The default value is *private*.
 
 ### Web Interface
 
@@ -43,7 +44,7 @@ This page contains information about the connection status of the device's SNMP 
 
 ### Status
 
-This page can be used to quickly gather information about the state of the device. The page is subdivided into the following categories:
+This page can be used to quickly gather information about the state of the device. The page displays information in the following categories:
 
 - **Hardware**: Displays information about the device's CPU and RAM usage, as well as indicators that show if these resources are overloaded or depleted.
 - **Temperature**: Provides temperature readings for the device's CPU and chassis, as well as fan speed measurements. Should the CPU fan fail, or should the CPU or chassis become too hot, that state will be displayed here.

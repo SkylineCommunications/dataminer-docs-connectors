@@ -1,12 +1,13 @@
 ---
 uid: Connector_help_Linear_Acoustic_Aero_2000
+description: "Monitor Linear Acoustic AERO 2000 device status, hardware, inputs, program loudness and silence states, and incoming SNMP traps in DataMiner."
 ---
 
 # Linear Acoustic Aero 2000
 
 ## About
 
-The Linear Acoustic AERO 2000 connector enables seamless integration of the AERO.2000 loudness management platform with DataMiner. It provides real-time monitoring and control of audio processing parameters, hardware status, and SNMP trap management, ensuring broadcasters maintain optimal audio quality and system reliability.
+The Linear Acoustic AERO 2000 connector enables seamless integration of the AERO.2000 loudness management platform with DataMiner. It provides real-time monitoring of audio processing parameters, hardware status, and SNMP trap management, ensuring broadcasters maintain optimal audio quality and system reliability.
 
 ## Key Features
 
