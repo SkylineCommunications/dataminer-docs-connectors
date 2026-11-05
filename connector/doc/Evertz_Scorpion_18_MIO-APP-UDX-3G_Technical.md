@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G_Technical
+description: "Learn how to configure and use the Evertz Scorpion 18 MIO-APP-UDX-3G connector in DataMiner, including SNMP connection settings and available pages."
 ---
 
 # Evertz Scorpion 18 MIO-APP-UDX-3G
@@ -14,15 +15,10 @@ This connector is used to monitor the Evertz Scorpion 18 MIO-APP-UDX-3G module.
 
 #### SNMP Connection
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-SNMP CONNECTION:
+This connector uses an SNMP connection and requires the following input during element creation:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
-
-SNMP Settings:
-
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 

@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G
+description: "Discover how the Evertz Scorpion 18 MIO-APP-UDX-3G connector lets you monitor signal health and control video and audio processing directly in DataMiner."
 ---
 
 # Evertz Scorpion 18 MIO-APP-UDX-3G
@@ -32,7 +33,7 @@ This connector brings the MIO-APP-UDX-3G into DataMiner, giving operators a sing
 
 **Solution**: Operators review and adjust the HDR/SDR conversion settings and custom 3D LUTs of every MIO-APP-UDX-3G module from DataMiner.
 
-**Benefit**: A consistent picture across all outputs and faster corrections when a look needs to change.
+**Benefit**: A consistent picture across all outputs and faster corrections when changes are needed.
 
 ### Loudness and Audio Compliance
 
@@ -40,7 +41,7 @@ This connector brings the MIO-APP-UDX-3G into DataMiner, giving operators a sing
 
 **Solution**: Intelligain loudness control, downmix, and upmix settings are configured and monitored centrally, with alarms when audio groups or programs go missing.
 
-**Benefit**: Compliant, predictable audio for viewers and early warning before an audio issue goes on air.
+**Benefit**: Compliant, predictable audio for viewers and early warnings before audio issues go on air.
 
 ### Accessibility Services Assurance
 
@@ -50,7 +51,6 @@ This connector brings the MIO-APP-UDX-3G into DataMiner, giving operators a sing
 
 **Benefit**: Accessibility problems are detected and resolved quickly, protecting both the audience experience and regulatory standing.
 
-
 ## Technical Reference
 
 ### Prerequisites
@@ -58,7 +58,6 @@ This connector brings the MIO-APP-UDX-3G into DataMiner, giving operators a sing
 - **SNMP access** to the Scorpion 18 device is required for DataMiner to monitor and control the MIO-APP-UDX-3G.
 
 - **Network access** from the client machine to the device is required to open the device's web interface from DataMiner.
-
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G_Technical).
