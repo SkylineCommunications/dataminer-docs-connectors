@@ -9062,7 +9062,7 @@
   - name: SES S.A. Global Telemetry System
     topicUid: Connector_help_SES_S.A._Global_Telemetry_System
   - name: SES S.A. MAS
-    topicUid: Connector_SES_S.A._MAS_Solution
+    topicUid: Connector_help_SES_S.A._MAS_Solution
     items:
     - name: SES S.A. MAS Technical
       topicUid: Connector_help_SES_S.A._MAS_Solution_Technical

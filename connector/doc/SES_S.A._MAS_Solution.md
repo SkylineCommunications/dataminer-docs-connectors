@@ -1,12 +1,13 @@
 ---
-uid: Connector_SES_S.A._MAS_Solution
+uid: Connector_help_SES_S.A._MAS_Solution
+description: "Coordinate satellite broadcast monitoring and automation with SES S.A. MAS, including signal routing, IRD configuration, mode switching, and reporting."
 ---
 
 # SES S.A. MAS Solution
 
-The **SES S.A. MAS Solution** delivers an integrated automation, management, and reporting suite for SES Monitoring and Analysis Systems (MAS). Designed for satellite broadcast and telecommunications operations, this solution coordinates the end-to-end monitoring of downlink and uplink chains, bridging RF spectrum analysis, matrix routing, integrated receiver/decoder (IRD) configuration, and IP multicast distribution.
-
 ## About
+
+The **SES S.A. MAS Solution** delivers an integrated automation, management, and reporting suite for SES Monitoring and Analysis Systems (MAS). Designed for satellite broadcast and telecommunications operations, this solution coordinates the end-to-end monitoring of downlink and uplink chains, bridging RF spectrum analysis, matrix routing, integrated receiver/decoder (IRD) configuration, and IP multicast distribution.
 
 Managing complex satellite downlink and uplink infrastructure requires continuous coordination across multiple hardware domains. The **SES S.A. MAS Solution** provides operators with centralized control and unified visibility over satellite transponders, matrix cross-points, spectrum analyzers, digital video monitoring systems (DVMS), and primary/backup IRD receivers.
 
@@ -36,12 +37,12 @@ Organizations modernizing legacy multi-instance monitoring setups (`SES S.A. MAS
 
 ## Prerequisites
 
-- **DataMiner Version**: DataMiner Agent version **10.4.0.0 - 14003** or higher.
-- **Protocol Drivers**:
-  - Supported IRD drivers: *MediaKind RX8200*, *Sencore MRD6000*
-  - Supported Spectrum Analyzer drivers
-  - Supported DVMS drivers
+- **DataMiner version**: DataMiner Agent version **10.4.0.0 - 14003** or higher.
+- **Connectors**:
+  - Supported IRD connectors: *MediaKind RX8200*, *Sencore MRD6000*
+  - Supported Spectrum Analyzer connectors
+  - Supported DVMS connectors
 
 ## Technical Reference
 
-For step-by-step configuration, automation script details, DCF matrix interface mapping, and migration instructions, refer to the [SES S.A. MAS Solution Technical Documentation](xref:connector_SES_S.A._MAS_Solution_technical).
+For step-by-step configuration, automation script details, DCF matrix interface mapping, and migration instructions, refer to the [SES S.A. MAS Solution Technical Documentation](xref:Connector_help_SES_S.A._MAS_Solution_Technical).
