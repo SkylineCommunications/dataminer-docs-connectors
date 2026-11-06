@@ -2010,6 +2010,13 @@
     topicUid: Connector_help_CA_Spectrum
   - name: CA Spectrum Device
     topicUid: Connector_help_CA_Spectrum_Device
+- name: Calian
+  items:
+  - name: Calian Multiport Decimator
+    topicUid: Connector_help_Calian_Multiport_Decimator
+    items:
+      - name: Calian Multiport Decimator Technical
+        topicUid: Connector_help_Calian_Multiport_Decimator_Technical
 - name: Calix
   items:
   - name: Calix AXOS
@@ -8469,11 +8476,21 @@
         topicUid: Connector_help_Rohde_Schwarz_FSC3_Technical
   - name: Rohde Schwarz FSH3
     topicUid: Connector_help_Rohde_Schwarz_FSH3
+  - name: Rohde Schwarz FSL18
+    topicUid: Connector_help_Rohde_Schwarz_FSL18
+    items:
+      - name: Rohde Schwarz FSL18 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSL18_Technical
   - name: Rohde Schwarz FSL3
     topicUid: Connector_help_Rohde_Schwarz_FSL3
     items:
       - name: Rohde Schwarz FSL3 Technical
         topicUid: Connector_help_Rohde_Schwarz_FSL3_Technical
+  - name: Rohde Schwarz FSP30
+    topicUid: Connector_help_Rohde_Schwarz_FSP30
+    items:
+      - name: Rohde Schwarz FSP30 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSP30_Technical
   - name: Rohde Schwarz FSV
     topicUid: Connector_help_Rohde_Schwarz_FSV
     items:
