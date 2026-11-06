@@ -98,7 +98,7 @@ To force an instance to become backup or master, change its **Base Priority**.
 
 ### Polling Settings
 
-On this page, the Polling Manager table lists the datasets polled by the connector (e.g., the Receive IP Service table), with their polling interval and the time and status of their last poll. You can:
+On this page, the Polling Manager table lists the datasets polled by the connector (e.g., the Receive IP Service table), along with each dataset's polling interval, the time when it was last polled, and the polling status. You can:
 
 - Change the **Interval** of a dataset, or set its **Admin Status** to **Disabled** to stop polling it.
 - Click **Poll** to poll a dataset immediately.
