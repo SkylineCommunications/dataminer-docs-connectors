@@ -1,44 +1,63 @@
 ---
 uid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G
+description: "Discover how the Evertz Scorpion 18 MIO-APP-UDX-3G connector lets you monitor signal health and control video and audio processing directly in DataMiner."
 ---
 
 # Evertz Scorpion 18 MIO-APP-UDX-3G
 
 ## About
 
-This connector is used to monitor the Evertz Scorpion 18 MIO-APP-UDX-3G module.
+The Evertz MIO-APP-UDX-3G is a processing application for the Scorpion 18 platform that converts, corrects, and conditions video, audio, and ancillary data on its way through a broadcast facility. It handles tasks such as up/down/cross-conversion, HDR/SDR conversion, audio shuffling and loudness control, and closed captioning and teletext handling, for both SDI and IP signals.
 
-## Configuration
+This connector brings the MIO-APP-UDX-3G into DataMiner, giving operators a single place to see the health of every signal passing through the module and to adjust its processing without having to log in to the device itself.
 
-### Connections
+## Key Features
 
-#### SNMP Connection
+- **End-to-end signal health**: See at a glance whether video, audio, ancillary data, and the reference signal are arriving as expected, with alarms on missing signals, audio group loss, IP stream errors, caption and teletext faults, and high temperature.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+- **Central control of video processing**: Adjust scaling, aspect ratio and AFD handling, deinterlacing, noise reduction, color correction, and HDR/SDR conversion directly from DataMiner, so picture quality can be tuned without going to the device.
 
-SNMP CONNECTION:
+- **Custom HDR/SDR looks**: Upload and select your own 3D lookup tables (LUTs), identified by their file names, to apply a consistent house look across HDR and SDR deliverables.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+- **Audio control and loudness management**: Manage audio routing, mixing, downmix and upmix, and Intelligain loudness control, keeping audio levels compliant and consistent for viewers.
 
-SNMP Settings:
+- **Caption, teletext, and time code assurance**: Monitor and configure closed captions, WST teletext, and time code, helping you to meet accessibility and regulatory obligations.
 
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+- **Presets**: Save and recall module configurations, making it fast and repeatable to switch between production setups.
 
-### Web Interface
+## Use Cases
 
-The web interface is only accessible when the client machine has network access to the product.
+### Consistent HDR and SDR Delivery
 
-## How to use
+**Challenge**: Delivering both HDR and SDR versions of the same content requires accurate conversion settings, and mismatched settings across modules lead to visible differences in picture quality.
 
-Once the element has been set up, no further configuration is needed.
+**Solution**: Operators review and adjust the HDR/SDR conversion settings and custom 3D LUTs of every MIO-APP-UDX-3G module from DataMiner.
 
-This connector is mainly used to monitor the device and adjust some important settings of the device.
+**Benefit**: A consistent picture across all outputs and faster corrections when changes are needed.
 
-The layout of the connector is very similar to that of the web UI, with the following sections:
+### Loudness and Audio Compliance
 
-- **System**: Contains the same parameters as the **System section of the web UI**. The parameters are **read-only**.
-- **Video**: Contains the same parameters as the **Video section of the web UI**. Some parameters allow you to adjust settings on the device.
-- **Audio**: Contains the same parameters as the **Audio section of the web UI**. Some parameters allow you to adjust settings on the device.
-- **ANC**: Contains the same parameters as the **ANC section of the web UI**. Some parameters allow you to adjust settings on the device.
+**Challenge**: Audio arriving from different sources varies in level and channel layout, risking loudness complaints and non-compliance.
+
+**Solution**: Intelligain loudness control, downmix, and upmix settings are configured and monitored centrally, with alarms when audio groups or programs go missing.
+
+**Benefit**: Compliant, predictable audio for viewers and early warnings before audio issues go on air.
+
+### Accessibility Services Assurance
+
+**Challenge**: Missing closed captions or teletext often go unnoticed until viewers complain, which can result in regulatory penalties.
+
+**Solution**: DataMiner continuously monitors caption and teletext presence and raises alarms on faults.
+
+**Benefit**: Accessibility problems are detected and resolved quickly, protecting both the audience experience and regulatory standing.
+
+## Technical Reference
+
+### Prerequisites
+
+- **SNMP access** to the Scorpion 18 device is required for DataMiner to monitor and control the MIO-APP-UDX-3G.
+
+- **Network access** from the client machine to the device is required to open the device's web interface from DataMiner.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G_Technical).

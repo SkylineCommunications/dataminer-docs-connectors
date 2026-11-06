@@ -2807,6 +2807,11 @@
   items:
   - name: DAC System Data Logger
     topicUid: Connector_help_DAC_System_Data_Logger
+  - name: DAC System PMB and RDS Monitor
+    topicUid: Connector_help_DAC_System_PMB_and_RDS_Monitor
+    items:
+    - name: DAC System PMB and RDS Monitor Technical
+      topicUid: Connector_help_DAC_System_PMB_and_RDS_Monitor_Technical
 - name: Dalet
   items:
   - name: Dalet Ooyala Flex Platform
@@ -4071,6 +4076,9 @@
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-DLY2
   - name: Evertz Scorpion 18 MIO-APP-UDX-3G
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G
+    items:
+    - name: Evertz Scorpion 18 MIO-APP-UDX-3G Technical
+      topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G_Technical
   - name: Evertz Scorpion 18 MIO-APP-UDX-4K
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-4K
   - name: Evertz Scorpion 18 MIO-HDMI-2-4K-IP
@@ -4224,6 +4232,9 @@
     topicUid: Connector_help_FOR-A_FA-9520
   - name: FOR-A FRC-8000
     topicUid: Connector_help_FOR-A_FRC-8000
+    items:
+      - name: FOR-A FRC-8000 Technical
+        topicUid: Connector_help_FOR-A_FRC-8000_Technical
   - name: FOR-A FRC-9100
     topicUid: Connector_help_FOR-A_FRC-9100
   - name: FOR-A MFR-3000 Video Router
@@ -4816,6 +4827,9 @@
   items:
   - name: Gracenote OnAPI Channel Schedule Monitor
     topicUid: Connector_help_Gracenote_OnAPI_Channel_Schedule_Monitor
+    items:
+    - name: Gracenote OnAPI Channel Schedule Monitor Technical
+      topicUid: Connector_help_Gracenote_OnAPI_Channel_Schedule_Monitor_Technical
 - name: Grafana
   items:
   - name: Grafana Alerting API
@@ -6049,6 +6063,9 @@
   items:
   - name: Linear Acoustic Aero 2000
     topicUid: Connector_help_Linear_Acoustic_Aero_2000
+    items:
+    - name: Linear Acoustic Aero 2000 Technical
+      topicUid: Connector_help_Linear_Acoustic_Aero_2000_Technical
 - name: Linux
   items:
   - name: Linux Platform
@@ -9996,6 +10013,11 @@
     topicUid: Connector_help_Suitelife_Systems_Axess
   - name: Suitelife Systems GPX-32
     topicUid: Connector_help_Suitelife_Systems_GPX-32
+  - name: Suitelife Systems GPX-Pro
+    topicUid: Connector_help_Suitelife_Systems_GPX-Pro
+    items:
+    - name: Suitelife Systems GPX-Pro Technical
+      topicUid: Connector_help_Suitelife_Systems_GPX-Pro_Technical
 - name: Sumavision
   items:
   - name: Sumavision CAS

@@ -11,6 +11,7 @@ When creating or editing connector documentation pages, apply the following rule
 
 - Fetch the Markdown conventions from <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html> and make sure these are followed.
 - Fetch the house style instructions from <https://docs.dataminer.services/contributing/CTB_Docs_house_style.html> and make sure these are followed, except if this conflicts with the guidelines provided in this instructions file.
+- File names must not contain spaces.
 - Use title case in headers.
 - Use a formal but simple technical style that helps users find information quickly.
 - Avoid using contractions (e.g., use "do not" instead of "don't").
@@ -21,6 +22,7 @@ When creating or editing connector documentation pages, apply the following rule
 - Use bold text to emphasize specific words or passages when necessary, but make sure not to overuse it.
 - Use bold text for exact references to UI text, such as buttons, menus, and labels, but use italics for values that can be selected by the user, e.g., `In the **Mode** box, select *Enabled*`.
 - HTML comments must never be used.
+- Always make sure there is an empty line between sections.
 
 ## Procedure Formatting
 
