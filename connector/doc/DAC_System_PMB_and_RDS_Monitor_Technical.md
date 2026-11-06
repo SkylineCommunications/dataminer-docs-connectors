@@ -19,13 +19,7 @@ This connector retrieves the data logger information via SNMP, and polls the com
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-SNMP CONNECTION:
-
 - **IP address/host**: The polling IP of the PMB data logger.
-- **Device address**: Not required.
-
-SNMP Settings:
-
 - **IP port**: The IP port of the device, by default *161*.
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
@@ -34,21 +28,27 @@ SNMP Settings:
 
 This connector uses an HTTP connection to the FM receiver and requires the following input during element creation:
 
-HTTP CONNECTION:
-
 - **IP address/host**: The IP address or host name of the FM receiver HTTP API.
 - **IP port**: The IP port of the FM receiver, by default *80*.
 - **Bus address**: *ByPassProxy*.
-
-### Initialization
-
-No further configuration is required. All data is retrieved by polling; the connector does not process traps. The ATS rules, IOU, and RF Hawkeye tables are polled every 10 seconds, the junction box, sensor, open alarm, and detector tables every minute, and the general data logger information every hour. The FM receiver RDS data is polled every 30 seconds and the audio level every 5 seconds.
 
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
+
+### Polling
+
+The connector uses different polling timers:
+
+| Polling frequency | Polled data |
+| --- | --- |
+| Every 5 seconds | Audio level |
+| Every 10 seconds | ATS rules, IOU, and RF Hawkeye tables |
+| Every 30 seconds | FM receiver RDS data |
+| Every minute | Junction box, sensor, open alarm, and detector tables |
+| Every hour | General data logger information |
 
 ### General Page
 
@@ -58,7 +58,7 @@ The page buttons give access to the following subpages:
 
 - **Junction Box**: For each connected junction box, the **Temperature** and **Humidity**, as well as the **No Response** and **Hardware Mismatch** flags, with the **Timestamp** of the last measurement.
 - **Sensors**: For each RF sensor, the forward power (**PTX**), reflected power (**PRX**), **Return Loss**, and **VSWR**, together with the degraded and failure flags that the data logger raises for return loss, transmit level, current, temperature, and humidity. The **Monitoring Point** column indicates whether the sensor is enabled on the device. The **Last Measurement** column shows when the data logger performed the measurement.
-- **Alarms**: The alarms currently open on the data logger, with their **Source**, **Threshold**, the **Value** that triggered them, the **Current Value**, and the number of **Occurrences**.
+- **Alarms**: The alarms currently open on the data logger, with their **Source**, their **Threshold**, the **Value** that triggered them, the **Current Value**, and the number of **Occurrences**.
 - **Detector**: The **Status**, **PTX**, **PRX**, **Return Loss**, and **VSWR** per detector.
 
 ### ATS Rules Page
@@ -71,7 +71,7 @@ This page shows the connected I/O units with their **Serial Number** and **IPv4 
 
 ### Hawkeye Page
 
-This page shows one row per RF Hawkeye processing unit, with the **PU Model**, serial numbers, software and hardware versions, **IP Address**, **Rf Status**, **Output PW**, **TX Power**, and the **Total Length** and **Horizontal Path Length** of the monitored transmission line.
+This page shows one row per RF Hawkeye processing unit, with the **PU Model**, serial numbers, software and hardware versions, **IP Address**, **RF Status**, **Output PW**, **TX Power**, and the **Total Length** and **Horizontal Path Length** of the monitored transmission line.
 
 The RF Hawkeye analysis can be configured from this table:
 
