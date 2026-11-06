@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Suitelife_Systems_GPX-Pro_Technical
+description: "Configure and monitor the Suitelife Systems GPX-Pro connector in DataMiner, covering MQTT broker setup, channel tables, relay control, and device alarms."
 ---
 
 # Suitelife Systems GPX-Pro
@@ -29,15 +30,11 @@ After you create the element, configure the following parameters on the **Config
   - *Mutual*: Server TLS plus a client certificate. Configure **Certificates Folder**, **CA Certificate**, **Client Certificate**, and **Client Certificate Password** on the **Client TLS** subpage.
 - **GPX Topic Prefix**: The MQTT topic prefix configured on the GPX device (for example *fox/gpx32*). While this is empty, no GPX topics are subscribed to or published.
 
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
+## How to Use
 
 ### General
 
-This page shows the **Connection Status** with the broker, the **Reconnect Attempts**, and the device information: **Device State**, **Device Name**, **Device Model**, **Device Serial Number**, **Device Firmware Version**, **Device Free Storage**, **Uptime**, **Reboot Detected**, and **Reboot Count**.
+This page shows the **Connection Status** with the broker, the **Reconnect Attempts**, and the device information, including the **Device State**, **Device Firmware Version**, **Reboot Detected**, **Uptime**, and more.
 
 - **Device State** is *Online* while the GPX publishes its heartbeat (every 30 seconds). It becomes *Offline* when the device's last will message arrives or when no device message has been received for about 90 seconds.
 - **Reboot Detected** is set when the device uptime drops, and **Reboot Count** keeps the number of detected reboots across element restarts.
@@ -47,13 +44,17 @@ This page shows the **Connection Status** with the broker, the **Reconnect Attem
 
 The **Status** table lists the GPX status channels. The **Value** is digital (0/1) and **Display** shows the configured on or off text.
 
-You can edit **Label**, **Off Text**, **On Text**, and **GPX Channel**. The changes are sent to the device. Use the **Delete** button to remove a channel from the GPX.
+You can edit **Label**, **Off Text**, **On Text**, and **GPX Channel**. The changes are sent to the device.
+
+Use the **Delete** button to remove a channel from the GPX.
 
 ### Analog Inputs
 
 The **Analog** table lists the GPX analog channels, with their value, units, state, and minimum, maximum, and sample statistics.
 
-You can edit **GPX Channel** and **Calibrate To**. In **Calibrate To**, enter the engineering value that the current reading should show. The connector calculates the calibration factor and sends it to the device. Use the **Delete** button to remove a channel from the GPX.
+You can edit **GPX Channel** and **Calibrate To**. In **Calibrate To**, enter the engineering value that the current reading should show. The connector calculates the calibration factor and sends it to the device.
+
+Use the **Delete** button to remove a channel from the GPX.
 
 ### Relays
 

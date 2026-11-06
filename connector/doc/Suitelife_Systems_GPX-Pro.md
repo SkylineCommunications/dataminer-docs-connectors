@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Suitelife_Systems_GPX-Pro
+description: "Monitor and control Suitelife Systems GPX-Pro remote site units via MQTT in DataMiner, tracking channels, sensor readings, alarms, and relay control."
 ---
 
 # Suitelife Systems GPX-Pro
@@ -26,23 +27,23 @@ This connector connects to the MQTT broker used by the GPX-Pro. It shows all dev
 
 ## Use Cases
 
-### Use Case 1
+### Remote Site Monitoring
 
 **Challenge**: Remote sites such as transmitter or cabinet locations have door contacts, power and HVAC status inputs, and environmental sensors that must be monitored centrally.
 
-**Solution**: The GPX-Pro publishes all status and analog channels to MQTT, and the connector shows them in DataMiner as alarmable and trendable table rows.
+**Solution**: The GPX-Pro publishes all status and analog channels to MQTT, and the connector shows them in DataMiner as table rows for which alarm monitoring and trending can be enabled.
 
 **Benefit**: Operators see site conditions next to the rest of the infrastructure in DataMiner and get alarms as soon as a sensor or input changes.
 
-### Use Case 2
+### Remote Equipment Power Cycling
 
-**Challenge**: Recovering equipment at an unmanned site often requires a truck roll to power-cycle a device.
+**Challenge**: Recovering equipment at an unmanned site often requires a truck roll to power cycle a device.
 
-**Solution**: Operators use the Relay table to switch or pulse a GPX relay from DataMiner, for example to power-cycle a frozen device.
+**Solution**: Operators use the Relay table to switch or pulse a GPX relay from DataMiner, for example to power cycle a frozen device.
 
 **Benefit**: Faster recovery and fewer site visits.
 
-### Use Case 3
+### Centralized Alarm Handling and Acknowledgment
 
 **Challenge**: Alarms raised by the GPX-Pro are only visible in its own web interface, so they are easily missed.
 
