@@ -10326,6 +10326,9 @@
     topicUid: Connector_help_Techex_MW4_Server_-_Generic_Device
   - name: Techex MWCore
     topicUid: Connector_help_Techex_MWCore
+    items:
+    - name: Techex MWCore Technical
+      topicUid: Connector_help_Techex_MWCore_Technical
   - name: Techex MWCore - Generic Device
     topicUid: Connector_help_Techex_MWCore_-_Generic_Device
 - name: Technetix
