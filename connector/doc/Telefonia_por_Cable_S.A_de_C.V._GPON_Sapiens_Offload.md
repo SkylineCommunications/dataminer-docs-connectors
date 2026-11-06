@@ -13,7 +13,8 @@ The connector is responsible for saving the topology KPI data from all the confi
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]   | Change to all levels tables according to new possible RX Power states and counters.  | 1.0.0.3 | - |
+| 1.0.1.x [Obsolete]   | Change to all levels tables according to new possible RX Power states and counters.  | 1.0.0.3 | - |
+| 1.0.2.x [SLC Main]   | ONTs and Subscribers now offloaded to Parquet Files instead of ElasticSearch. Database Request Table changed to Offload Request Table.  | 1.0.1.3 | - |
 
 ### System Info
 
@@ -21,6 +22,7 @@ The connector is responsible for saving the topology KPI data from all the confi
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
