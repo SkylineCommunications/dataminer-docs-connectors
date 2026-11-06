@@ -2807,6 +2807,11 @@
   items:
   - name: DAC System Data Logger
     topicUid: Connector_help_DAC_System_Data_Logger
+  - name: DAC System PMB and RDS Monitor
+    topicUid: Connector_help_DAC_System_PMB_and_RDS_Monitor
+    items:
+    - name: DAC System PMB and RDS Monitor Technical
+      topicUid: Connector_help_DAC_System_PMB_and_RDS_Monitor_Technical
 - name: Dalet
   items:
   - name: Dalet Ooyala Flex Platform
