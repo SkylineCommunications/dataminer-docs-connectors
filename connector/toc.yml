@@ -9706,10 +9706,16 @@
     topicUid: Connector_help_Socomec_Diris_A40-A41
   - name: Socomec Diris D-50
     topicUid: Connector_help_Socomec_Diris_D-50
-  - name: Socomec Diris D-50 - B30
-    topicUid: Connector_help_Socomec_Diris_D-50_-_B30
+  - name: Socomec Diris D-50 - B-30
+    topicUid: Connector_help_Socomec_Diris_D-50_-_B-30
+  - name: Socomec Diris D-50 - I-35
+    topicUid: Connector_help_Socomec_Diris_D-50_-_I-35
   - name: Socomec Diris D-50 - I-60
     topicUid: Connector_help_Socomec_Diris_D-50_-_I-60
+  - name: Socomec Diris D-50 - S-130
+    topicUid: Connector_help_Socomec_Diris_D-50_-_S-130
+  - name: Socomec Diris D-50 - U-10
+    topicUid: Connector_help_Socomec_Diris_D-50_-_U-10
   - name: Socomec Diris D-50 - U-30
     topicUid: Connector_help_Socomec_Diris_D-50_-_U-30
   - name: Socomec Diris Digiware DC
