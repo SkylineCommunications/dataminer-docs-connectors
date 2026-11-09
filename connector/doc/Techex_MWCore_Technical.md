@@ -15,39 +15,6 @@ Through the TXCore REST API, the connector monitors and configures devices, chan
 
 Optionally, the connector can **export a DVE for each device** monitored by the TXCore platform.
 
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x [Obsolete] | Initial version (includes DCF integration). | - | - |
-| 1.0.1.x [Obsolete] | Reformat of the MWEdge stream keys. | 1.0.0.2 | **Old trend and alarm data will be lost for Streams, Input Sources, and Outputs.** |
-| 1.0.2.x [Obsolete] | - Single output/input is retrieved upon context menu operation instead of MWEdge polling.<br>- MWEdges are retrieved separately instead of all at once.<br>- Reverse foreign key relation between Streams Resources table and Streams table. | 1.0.1.19 | **Because NuGet packages are now used, the minimum DataMiner version is now 10.0.10.** |
-| 1.0.3.x [Obsolete] | - Statistics Connections table and "IP Connection - Statistics Interface" connection removed.<br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
-| 1.0.4.x [Obsolete] | - Secondary interface has been removed from element creation (additional cluster nodes are now added in the Connections table).<br>- Pages associated with SRM resources and debugging are now hidden by default.<br>- The debugging logs for the statistics interface have been enhanced (Serilog is now used), and the default path is now the logging folder.<br>- The Sources and Outputs tables have been divided into configurations and metrics/statistics.<br>- Logger tables have been restructured to include more metrics and are now designed to use DirectConnection.<br>- Support for the 2022-7 version has been added. | 1.0.3.33 | **Existing elements need to be reconfigured to accommodate the connection changes.<br>We highly recommend recreating the elements.** |
-| 1.1.0.x [Obsolete] | TS Information polling cycles no longer overlap: a new cycle is skipped if the previous cycle is still in progress when the configured interval elapses. | - | - |
-| 1.1.1.x [SLC Main] | - Reworked Streams table.<br>- Converted logger tables from DirectConnection to Indexing.<br>- Removed TreeControl and made the Available Source Types and Source Options tables dynamic.<br>- Added Failover Triggers and Output Mute Triggers tables. | - | - |
-
-### Product Info
-
-| Range | Supported Firmware |
-|--|--|
-| 1.0.0.x [Obsolete]<br>1.0.1.x [Obsolete]<br>1.0.2.x [Obsolete] | **TXCore (MWCore) version:** 5.2.3, 5.2.4<br>**TXEdge (MWEdge) version:** 1.9.2, 1.9.3 |
-| 1.0.3.x [Obsolete] | **TXCore (MWCore) version:** 5.22.4<br>**TXEdge (MWEdge) version:** 1.24.1 |
-| 1.0.4.x [Obsolete]<br>1.1.0.x [Obsolete] | **TXCore (MWCore) version:** 5.22.4, 5.29.0<br>**TXEdge (MWEdge) version:** 1.24.1, 1.34.0 |
-| 1.1.1.x [SLC Main] | **TXCore (MWCore) version:** 5.22.4, 5.29.0<br>**TXEdge (MWEdge) version:** 1.24.1, 1.34.0 |
-
-### System Info
-
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|--|
-| 1.0.0.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.0.1.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.0.2.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.0.3.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.0.4.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.1.0.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.1.1.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-
 ## Configuration
 
 ### Connections
