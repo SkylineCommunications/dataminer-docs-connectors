@@ -4,139 +4,61 @@ uid: Connector_help_TDC_OLT_CM_Collector
 
 # TDC OLT CM Collector
 
-This connector will poll info from cable modems (CMs) and Huawei MA5800-MA5633 (OLT) via SNMP.
-
 ## About
 
-This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs and OLT.
+The **TDC OLT CM Collector** brings cable-modem and channel measurements from cable modems and Huawei MA5800-MA5633 equipment into your TDC CPE monitoring environment. Use the data to investigate service and signal-quality problems.
 
-The CM data is polled multithreaded and the OLT data is polled with three threads (multipleGetBulk). This is different from the Generic DOCSIS Cable Modem Collector where all data is polled multithreaded.
+The collector works with the [TDC CPE Manager](xref:Connector_help_TDC_CPE_Manager), which brings the data together and provides the operator interface. It runs in the background rather than serving as a standalone monitoring interface.
 
-This data should be aggregated and displayed by a CPE Manager. The data is not intended to be consulted directly by an operator, so the data pages of the element will not be accessible.
+## Key Features
 
-### Version Info
+- **Modem Health**: Review registration status, uptime, latency, and packet loss when investigating a modem's service.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+- **Channel Measurements**: Collect power levels, modulation error ratio, and codeword statistics across QAM, OFDM, and OFDMA channels.
 
-### Product Info
+- **CPE Manager Integration**: View the collected data in your existing TDC CPE monitoring environment.
 
-| Range   | Supported Firmware                 |
-|---------|------------------------------------|
-| 1.0.0.x | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
+- **CSV Exports**: Choose which modem, interface, and channel measurements to export, and how long to keep the files.
 
-### System Info
+- **Amplifier-Chain Mapping**: Link modem channels to their amplifier paths using data from the CPE backend manager.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+## Use Cases
 
-## Installation and configuration
+### Investigate Poor Modem Service
 
-### Creation
+**Challenge**: A modem can remain registered even when signal problems affect its service.
 
-#### SNMP Main connection
+**Solution**: Review its status alongside power levels, modulation error ratio, and codeword statistics in the CPE Manager.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection to connect to the CMs and requires the following input during element creation:
+**Benefit**: Get a clearer picture of the affected modem and channels before deciding what to investigate next.
 
-SNMP CONNECTION:
+### Investigate a Shared Amplifier Path
 
-- **IP address/host**: 127.0.0.1 (random)
+**Challenge**: It can be hard to tell whether channel problems on several modems share the same amplifier path.
 
-SNMP Settings:
+**Solution**: Import amplifier-chain mappings from the CPE backend manager and view the associations in your existing views or dashboards.
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device. Default value: *public*.
-- **Set community string**: The community string used when setting values on the device. Currently no sets are done from the connector. Default value: *private*.
+**Benefit**: See which modems and channels share an amplifier path and narrow down the source of the problem.
 
-#### SNMP CMTS connection
+### Supply Measurements to External Analysis
 
-This connector uses a Simple Network Management Protocol (SNMP) connection to connect to the CMTS and requires the following input during element creation:
+**Challenge**: External reporting or analysis needs selected measurements outside the live monitoring environment.
 
-SNMP CONNECTION:
+**Solution**: Choose the columns to export and collect the timestamped CSV files from the OLT folders.
 
-- **IP address/host**: 127.0.0.1 (random)
+**Benefit**: Make selected measurements available to your other workflows without extracting them by hand.
 
-SNMP Settings:
+## Technical Reference
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device. Default value: *public*.
-- **Set community string**: The community string used when setting values on the device. Currently no sets are done from the connector. Default value: **private*.*
+### Prerequisites
 
-### Configuration of Provisioning
+- A DataMiner release that meets the requirements for your connector version.
+- A configured [TDC CPE Manager](xref:Connector_help_TDC_CPE_Manager) and a connection between the collector and the appropriate backend manager.
+- Network and SNMP read access to the cable modems and Huawei MA5800-MA5633 equipment. Supported modem standards include DOCSIS 2.0, 3.0, and 3.1.
+- Access to your CPE deployment's IAM provisioning database.
+- A writable output folder and, if you use a network share, credentials with the necessary access.
+- To use amplifier-chain mapping, AMP Chain export files from the CPE backend manager.
 
-After the collector element has been created, all configuration should be done via the CPE Manager element.
-
-### Configuration of Offload
-
-The following parameters can be set via **multiple set** in order to configure the offload mechanism:
-
-- **CM Offload State**: Enables or disables the offload mechanism. Default value: *Disabled.*
-
-- **CM Offload Directory**: The root directory where the CM offload files will be stored.
-
-  - The directory can be a shared folder, where the credentials can be set using the **PNM Share Username** and **PNM Share Password** parameters.
-  - A folder will be created per OLT with its name - the **OLT Name** is retrieved via **full provisioning** (see important note below).
-  - Default value: *\\80.62.121.234\c\$\Skyline_Data\CM Offload\\*
-
-- **Cleanup State**: Enables or disables the file cleanup mechanism.
-
-  - If enabled, all files in the **CM Offload Directory** that are older than the age defined in the **File Age Threshold** parameter will be deleted.
-  - This parameter is automatically enabled when the **CM Offload State** is also enabled.
-  - Default value: *Disabled.*
-
-- **File Age Threshold**: Determines for how long files are stored in the **CM Offload Directory** before they are deleted to free up space.
-
-  - Range between *8 hours* and *1 year*, with 8-hour increments.
-  - Default value: *2 weeks*
-
-- **CM Config String**: All the column parameters that should be offloaded for the **CM** table, except the data related to **CM QAM DS Channels**.
-
-  - Multiple columns are allowed, using a comma (",") as separator.
-  - The primary key will always be offloaded as the first column.
-
-- **CM QAM DS Channels Config String**: All the column parameters related to **CM QAM DS Channels** that should be offloaded for the **CM** table.
-
-  - Multiple columns are allowed, using a comma (",") as separator.
-
-  - The primary key will always be offloaded as the first column.
-
-  - The columns related to **CM QAM DS Channels** data are:
-
-    - CM QAM DS Avg Rx Power
-    - CM QAM DS Avg Rx MER
-    - CM QAM DS Sum Codewords
-    - CM QAM DS Sum Corrected Codewords
-    - CM QAM DS Sum Uncorrected Codewords
-
-- **CM QAM US Channels Config String**: All the column parameters that should be offloaded for the **CM QAM US Channels** table.
-
-  - Multiple columns are allowed, using a comma (",") as separator.
-  - The primary key will always be offloaded as the first column.
-
-- **CM OFDM DS Channels Config String**: All the column parameters that should be offloaded for the **CM OFDM DS Channels** table.
-
-  - Multiple columns are allowed, using a comma (",") as separator.
-  - The primary key will always be offloaded as the first column.
-
-- **CM OFDMA US Channels Config String**: All the column parameters that should be offloaded for the **CM OFDMA US Channels** table.
-
-  - Multiple columns are allowed, using a comma (",") as separator.
-  - The primary key will always be offloaded as the first column.
-
-Important note: The collector element needs to retrieve its **OLT Name** from the IAM database, so the offload files are stored in the correct folder structure. The retrieval is done via **full provisioning**.
-
-## Usage
-
-The data pages of this element are not intended to be accessed by operators. As such, there are no parameters available that can be configured on these pages.
-
-All monitoring and configuration should be done through a CPE Manager element.
-
-### AMP Chain Import
-
-The **BE Managers** have the possibility to export AMP Chain data to be further ingested by the **CM Collectors** (*TDC OLT CM Collector*). This data is useful to map the CM's channels to amplifiers (on dashboards, for example).
-
-If **CM AMP Chain Import State** is *enabled*, the **CM Collector** will search for the newest file in the **CM AMP Chain Import Folder**, during the full provisioning and once 35 minutes after the startup of the element. The collector will not search in the backup folder. The result status is displayed by the **CM AMP Chain Import Status** parameter.
-
-The data will be added to the **AMP Chain** column of all 4 channel tables (**CM QAM DS Channels**, **CM QAM US Channels**, **CM OFDM DS Channels** and **CM OFDMA US Channels**).
+> [!NOTE]
+> For connection settings, provisioning, CSV export configuration, and amplifier-chain import procedures, see the [technical documentation](xref:Connector_help_TDC_OLT_CM_Collector_Technical).
+> 
