@@ -6,15 +6,9 @@ uid: Connector_help_Druid_Raemis
 
 Raemis is a technology platform by Druid Software that harnesses 5G, 4G, 3G, 2G, and Wi-Fi radios to implement standalone cellular core network solutions.
 
-The Druid Raemis connector monitors this platform, by enlisting active alarms and also implementing a heartbeat mechanism that evaluates the liveliness of the Raemis platform.
+The Druid Raemis connector monitors the platform through active alarms and SNMP heartbeat traps. It also collects MGW control flow statistics, including ingress, egress, and dropped traffic counters.
 
 ## About
-
-### Version Info
-
-| Range              | Features        | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
@@ -65,8 +59,10 @@ On that same page, you can also configure the proxy server.
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to Use
 
-The **Active Alarms** table on the Alarms page fetches the information from the REST API.
+The **Active Alarms** table on the **Alarms** page displays alarms retrieved from the REST API.
 
-The **heartbeat mechanism** is based on receiving a specific, periodic SNMP trap (heartbeat). If the time between heartbeats is greater than the configured Heartbeat Delay parameter, an alarm is raised (with the Heartbeat Status parameter).
+The connector monitors platform availability using periodic SNMP heartbeat traps. If the time between heartbeats exceeds **Heartbeat Delay**, an alarm is raised on **Heartbeat Status**.
+
+The **Flow Stats** page displays MGW control flow statistics, including ingress, egress, and dropped packet and octet counts. Use **Polling Configuration** to enable or disable this dataset and set its polling interval (60 seconds by default).

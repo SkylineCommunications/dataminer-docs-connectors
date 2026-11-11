@@ -3117,6 +3117,9 @@
   items:
   - name: Druid Raemis
     topicUid: Connector_help_Druid_Raemis
+    items:
+    - name: Druid Raemis Technical
+      topicUid: Connector_help_Druid_Raemis_Technical
 - name: DTAG
   items:
   - name: DTAG Passive Protocol
