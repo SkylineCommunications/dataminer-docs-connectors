@@ -9137,6 +9137,8 @@
   items:
   - name: Signiant Manager
     topicUid: Connector_help_Signiant_Manager
+  - name: Signiant Media Shuttle
+    topicUid: Connector_help_Signiant_Media_Shuttle
 - name: SingTel
   items:
   - name: Singtel ANTlabs Tru Auth Radius
