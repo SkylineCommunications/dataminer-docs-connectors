@@ -1,29 +1,27 @@
 ---
 uid: Connector_help_Suitelife_Systems_GPX-Pro
-description: "Monitor and control Suitelife Systems GPX-Pro remote site units via MQTT in DataMiner, tracking channels, sensor readings, alarms, and relay control."
+description: "Monitor and control Suitelife Systems GPX-8 Pro and GPX-32 Pro remote site units over MQTT, with relay control and device alarm handling."
 ---
 
 # Suitelife Systems GPX-Pro
 
 ## About
 
-The Suitelife Systems GPX-Pro is a remote site monitoring and control unit that collects status inputs, analog sensor readings, ping and SNMP checks, and drives relay outputs. It publishes its data through the GPX-PRO MQTT API.
+The Suitelife Systems GPX-Pro (GPX-8 Pro and GPX-32 Pro) is a remote site monitoring and control unit that collects status inputs, analog sensor readings, and ping and SNMP checks, and drives relay outputs. It publishes its data through the GPX-Pro MQTT API.
 
-This connector connects to the MQTT broker used by the GPX-Pro. It shows all device channels, alarms, and connections in DataMiner, and it lets operators control relays and change channel settings on the device directly from DataMiner.
+This connector subscribes to the MQTT broker used by the GPX-Pro, for example [Eclipse Mosquitto](https://mosquitto.org/), and receives device updates in near real time. It shows all device channels, alarms, and connections, and lets operators control relays and change channel settings on the device. The connector also has an HTTP connection to the device IP address, but this is only used to open the device web interface.
 
 ## Key Features
 
-- **Automatic channel discovery**: Status inputs, analog inputs, relays, SNMP channels, and ping channels are detected from the device and placed in separate tables, without manual configuration per channel.
+- **Near real-time updates over MQTT**: Status inputs, analog inputs, relays, and SNMP and ping channels are received from the broker as soon as the device publishes them, and placed in separate tables.
 
-- **Relay control**: Latching relays can be switched on and off, and pulse relays can be triggered, directly from DataMiner.
+- **Relay control**: Latching relays can be switched on and off, and pulse relays can be triggered, with a confirmation before each command.
 
 - **Device alarm overview**: Active GPX alarms are listed with severity, value, and acknowledgment details, and can be acknowledged individually or all at once.
 
-- **Write-through channel configuration**: Labels, on/off texts, GPX channel numbers, ping hosts, pulse durations, and analog calibration can be changed in DataMiner and are sent to the device.
+- **Write-through channel configuration**: Labels, on/off texts, GPX channel numbers, ping hosts, pulse durations, and analog calibration can be changed and are sent to the device.
 
-- **Device health monitoring**: Device online state, firmware version, free storage, uptime, and reboot detection are available for alarming and trending.
-
-- **Secure MQTT connection**: Username/password authentication and server or mutual TLS are supported.
+- **Secure broker connection**: Username/password authentication and server or mutual TLS are supported.
 
 ## Use Cases
 
@@ -31,15 +29,15 @@ This connector connects to the MQTT broker used by the GPX-Pro. It shows all dev
 
 **Challenge**: Remote sites such as transmitter or cabinet locations have door contacts, power and HVAC status inputs, and environmental sensors that must be monitored centrally.
 
-**Solution**: The GPX-Pro publishes all status and analog channels to MQTT, and the connector shows them in DataMiner as table rows for which alarm monitoring and trending can be enabled.
+**Solution**: The GPX-Pro publishes all status and analog channels to an MQTT broker, and the connector shows them as soon as they change.
 
-**Benefit**: Operators see site conditions next to the rest of the infrastructure in DataMiner and get alarms as soon as a sensor or input changes.
+**Benefit**: Operators see site conditions next to the rest of the infrastructure and are informed as soon as a sensor or input changes.
 
 ### Remote Equipment Power Cycling
 
 **Challenge**: Recovering equipment at an unmanned site often requires a truck roll to power cycle a device.
 
-**Solution**: Operators use the Relay table to switch or pulse a GPX relay from DataMiner, for example to power cycle a frozen device.
+**Solution**: Operators switch or pulse a GPX relay from the Relays table, for example to power cycle a frozen device.
 
 **Benefit**: Faster recovery and fewer site visits.
 
@@ -47,19 +45,19 @@ This connector connects to the MQTT broker used by the GPX-Pro. It shows all dev
 
 **Challenge**: Alarms raised by the GPX-Pro are only visible in its own web interface, so they are easily missed.
 
-**Solution**: The connector lists the active GPX alarms in DataMiner and lets operators acknowledge them there.
+**Solution**: The connector lists the active GPX alarms and lets operators acknowledge them on the device.
 
-**Benefit**: One place to handle alarms, with acknowledgment status kept in sync with the device.
+**Benefit**: One place to handle alarms from all GPX-Pro units.
 
 ## Technical Reference
 
 ### Prerequisites
 
-- **An MQTT broker** reachable from the DataMiner Agent is needed for the communication between DataMiner and the GPX-Pro.
+- **An MQTT broker**, such as Eclipse Mosquitto, reachable from both the GPX-Pro and the DataMiner Agent.
 
-- **A GPX-Pro with the MQTT API enabled** and a known topic prefix is required to receive data and send commands.
+- **A GPX-Pro with firmware 3.0.x**, with MQTT enabled and a known topic prefix.
 
-- **DataMiner 10.4.0.0-14003 or higher** is required to run the connector.
+- **DataMiner 10.4.0.0-14003 or higher**.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Suitelife_Systems_GPX-Pro_Technical).
