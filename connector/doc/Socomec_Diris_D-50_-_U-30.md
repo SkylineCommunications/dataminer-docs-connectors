@@ -1,31 +1,37 @@
 ---
 uid: Connector_help_Socomec_Diris_D-50_-_U-30
+description: "Monitor a Socomec Diris U-30 voltage measurement module exported by the Diris D-50 connector in DataMiner, with network voltages and alarm status."
 ---
 
 # Socomec Diris D-50 - U-30
 
-The Socomec Diris U-30 is Voltage Measurement Module. This connector can be used to control and monitor this device.
-
 ## About
 
-The Diris U-30 is a Voltage Measurement Device that is part of the DIRIS Digiware System. It provides the voltage clips, interruptions and swells of the system. It also captures the Alarms and the History of the average values.
+The Socomec Diris U-30 is a voltage measurement module that is part of the DIRIS Digiware system. It measures the system voltages and detects voltage dips, interruptions, and swells. It also captures alarms and keeps a history of the average values.
 
-## Installation and configuration
+This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the U-30 module through the D-50 gateway and shows its voltage measurements and alarms in this DVE.
 
-### Creation
+## Configuration
+
+### Connections
+
+#### Virtual Connection - Main
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-## Usage
+> [!IMPORTANT]
+> Do not create elements with this connector manually. The parent Socomec Diris D-50 element creates a DVE automatically for each U-30 module for which **DVE Creation** is enabled.
+
+## How to Use
 
 ### General
 
-This page contains the Device **Name**, **Type**, **Modbus Address**, **Network** and **Product ID**, **Detection Status**, **Table** and **Software** **Version**, **Serial**, **Product** and **Software Technical Base Version Information**. It also includes the **Vendor** and **Product Name** along with the **Resource Version**
+This page shows the product information of the module, such as the **Product Order ID**, **Product ID**, **JBUS Table Version**, **Product Software Version**, serial number fields, the product version and build information, **Vendor Name**, **Product Name**, **Extended Name**, and **Resource Version**.
 
 ### Network Settings
 
-This page shows the **Device Description, Date of Last Instance, Integration Time, System Ph-N and Ph-Ph Voltages** and **Frequency**. It also displays the **Ph-N Voltage V1, V2, V3** and **Vn**, the **Ph-Ph Voltage U12, U23, U31** along with other multiple parameters.
+This page shows the network measurements of the module, including the date of the last instance, the integration time, the system phase-to-neutral and phase-to-phase voltages, the frequency, the phase-to-neutral voltages V1, V2, V3, and Vn, and the phase-to-phase voltages U12, U23, and U31.
 
-### Alarms
+### Alarm Pages
 
-This page shows the **Analog, Combination, EN50160** and **System Alarm Current Status Tables.**
+The **System Alarms**, **Analog Alarms**, **Combination Alarms**, and **EN50160 Alarms** pages each contain a table with the current status of the alarms of that type, including the cause, criticality, start date, and duration.
