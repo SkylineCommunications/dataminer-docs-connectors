@@ -9,11 +9,11 @@ description: "Monitor and control Suitelife Systems GPX-8 Pro and GPX-32 Pro rem
 
 The Suitelife Systems GPX-Pro (GPX-8 Pro and GPX-32 Pro) is a remote site monitoring and control unit that collects status inputs, analog sensor readings, and ping and SNMP checks, and drives relay outputs. It publishes its data through the GPX-Pro MQTT API.
 
-This connector subscribes to the MQTT broker used by the GPX-Pro, for example [Eclipse Mosquitto](https://mosquitto.org/), and receives device updates in near real time. It shows all device channels, alarms, and connections, and lets operators control relays and change channel settings on the device. The connector also has an HTTP connection to the device IP address, but this is only used to open the device web interface.
+This connector connects to the MQTT broker used by the GPX-Pro, for example [Eclipse Mosquitto](https://mosquitto.org/), and receives device updates in near real time. It shows all device channels, alarms, and connections, and lets operators control relays and change channel settings on the device. The connector also has an HTTP connection to the device IP address, but this is only used to open the device web interface.
 
 ## Key Features
 
-- **Near real-time updates over MQTT**: Status inputs, analog inputs, relays, and SNMP and ping channels are received from the broker as soon as the device publishes them, and placed in separate tables.
+- **Automatic channel discovery**: Status inputs, analog inputs, relays, and SNMP and ping channels are received from the broker as soon as the device publishes them, and placed in separate tables.
 
 - **Relay control**: Latching relays can be switched on and off, and pulse relays can be triggered, with a confirmation before each command.
 
