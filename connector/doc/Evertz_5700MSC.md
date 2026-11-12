@@ -1,110 +1,44 @@
 ---
-uid: Connector_help_Evertz_5700MSC
+uid: Connector_marketing_Evertz_5700MSC
 ---
 
 # Evertz 5700MSC
 
-The 5700MSC-IP is an IP Network Grand Master Clock and a Video Master Sync Generator both referenced to GPS and/or GLONASS. The system features 2x GbE, 2x10 GbE ports, 6x fully timeable sync outputs, 4x SDI outputs and a loop-thru reference input.
-
-This connector displays the status and controls of the generators and system information.
-
 ## About
 
-### Version Info
+The Evertz 5700MSC-IP is a master clock and sync generator that takes its time from GPS and GLONASS satellites. It supplies precise timing to the devices in a broadcast facility, over IP networks as well as through traditional video and audio signals. This DataMiner connector shows the state of the clock and its outputs and lets you adjust its settings remotely, so you can be confident that your whole facility stays in step.
 
-| Range                | Key Features                                                                             | Based on     | System Impact     |
-|----------------------|------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                         | -            | -                 |
-| 1.1.0.x              | Trap/Syslog Table implementation; various display key and parameter description changes. | -            | -                 |
-| 1.1.1.x [SLC Main]   | Changes to various display discrete values and position of columns.                      | -            | -                 |
+## Key Features
 
-### Product Info
+- **Satellite reference status**: See whether the clock is locked to GPS or GLONASS and how it is performing, so you know right away if the source of your timing is at risk.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 1.0 1289               |
-| 1.1.0.x   | 1.0 1286               |
-| 1.1.1.x   | 1.0 1286               |
+- **Reference and sync control**: Choose and adjust the reference sources and the timing of the sync outputs, without needing to go to the device.
 
-### System Info
+- **Network timing management**: Manage the PTP and NTP timing services of the clock, including which master devices are accepted, and follow the related faults as they occur.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
+- **Test signal control**: Configure the test generators and audio test tones remotely, which helps with commissioning and troubleshooting.
 
-## Configuration
+- **Fault overview**: Find control and clock faults and event history in one place, which makes it easier to understand what went wrong and when.
 
-### Connections
+## Use Cases
 
-#### SNMP Connection - Main
+### Protecting Facility Timing
 
-This connector uses a Simple Network Management Protocol (SNMP) connection to communicate with the device, and requires the following input during element creation:
+**Challenge**: If the reference of a master clock is lost or drifts, equipment across the facility can fall out of sync, which can cause picture and audio glitches that are difficult to trace back to their source.
 
-SNMP CONNECTION:
+**Solution**: DataMiner continuously shows the satellite lock state, reference selection, and clock faults of the 5700MSC, and can raise alarms as soon as anything changes.
 
-- **IP address/host**: The IP of the Evertz device.
-- **IP port**: The IP port of the destination, by default *161*.
+**Benefit**: Your team is warned before a timing problem reaches the air and can react quickly, which protects the quality of your output.
 
-### Web Interface
+### Remote Timing Configuration
 
-The web interface is only accessible when the client machine has network access to the product.
+**Challenge**: Changing sync outputs, reference sources, or PTP settings usually means working on the device itself, which is time-consuming and increases the risk of mistakes.
 
-## How to use
+**Solution**: The connector makes these settings available in DataMiner, so authorized users can review and change them from one central location.
 
-The element consists of the data pages detailed below.
+**Benefit**: Changes are made faster and more consistently, and the settings of the clock can be reviewed without visiting the equipment room.
 
-### General
+## Technical Reference
 
-Contains the general device configuration, including the **GPS State, Glonass, Leap Time**, and **GPO 1 and 2.**
-
-### Status
-
-Displays device status parameters, including the **PTP State** table.
-
-### Reference Control
-
-Contains the configuration parameters for the reference controls, including the **Frequency**, **Time** and **VITC Line Time References.**
-
-At the bottom of the page, you can find the **IP Servers** table.
-
-### Sync Controls
-
-Contains the **Sync Information** table, which can be used to configure the syncing of the device.
-
-### Global
-
-Contains global configuration parameters, primarily the **GPS, Video, 10 MHz, Free Run,** and **Payload Type** configuration.
-
-### PTP Controls
-
-Contains PTP controls. The **PTP Engines** table contains the engines configuration, while the **Acceptable Masters** table contains the configuration of acceptable master devices.
-
-Via a page button, you can configure and view the **PTP Faults** table.
-
-### NTP General
-
-Contains the **Spoofing Control** and **NTP Information** table.
-
-### TG Control
-
-Allows you to configure the test generators. The main page includes the **Test Generator Controls** table and **Test Generator IP Table**, while the **TG Audio Controls** are available via a page button.
-
-### LTC Control
-
-Displays the **LTC Controls** table.
-
-### Analog Audio
-
-Allows you to configure the **Level Left, Level Right, Frequency Left,** and **Frequency Right.**
-
-At the bottom of the page, you can find the **Analog Audio Events** table.
-
-### AES DARS
-
-Contains the DARS/AES configuration parameters, including the **Fine** and **Coarse Phase**, as well as the **Channel 1-3 Frequency and Levels.**
-
-### Control and MGM Faults
-
-Contains a table listing the **Control Faults** and **MGM Faults**.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_5700MSC_Technical).
