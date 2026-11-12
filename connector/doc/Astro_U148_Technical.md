@@ -86,7 +86,27 @@ The **Satellites** page button displays a list of all the detected satellites.
 
 ### Transponder
 
-This page contains two tables, the first containing the configuration settings of each of the transponders, and the second containing information on the current transponder status.
+This page contains several tables:
+
+- **Transponder Settings**: Contains the configuration settings for each transponder, including enable state, alias, TS ID, ON ID, frequency, symbol rate, manual selection mode, and satellite input assignment.
+
+- **Transponder**: Shows additional transponder metadata including current bit rate and stuffing rate.
+
+- **Transponder Status**: Displays real-time status information for each transponder, including lock status, signal quality metrics (C/N, BER, power level), frequency, symbol rate, and modulation parameters (spectrum, pilots, frame length).
+
+- **Service Info**: Lists all services (channels) detected on each transponder, including service name, SID, PMT PID, PCR PID, video/audio PIDs, and service type.
+
+In addition, **Display Key Configuration** dropdowns are available, which allow you to customize how table rows are identified:
+
+- **Transponder Display Key Format**: Controls the display key for the Transponder and Transponder Status tables.
+
+  - *Port*: Uses the port number only (e.g., 1.1).
+  - *Port and Transponder Name*: Combines port and alias (e.g., 1.1/E9B-E01).
+
+- **Service Info Display Key Format**: Controls the display key for the Service Info table.
+
+  - *Port/SID*: Uses the port and service ID (e.g., 1.1 860).
+  - *Port/Transponder Name/Alias/SID*: Uses the full path (e.g., 1.1/E9B-E01/DAB Radio Italian 1 (data broadcast)/860).
 
 ### IP TX Settings
 

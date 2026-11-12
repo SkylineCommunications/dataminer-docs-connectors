@@ -1,13 +1,22 @@
 ---
 uid: Connector_help_Standard_DataMiner_PTP_Device
+description: "Learn about the retired DataMiner PTP Device mediation protocol, supported PTP device connectors, configuration, and migration to Skyline PTP."
 ---
 
 # Standard DataMiner PTP Device
+
+## About
+
+> [!IMPORTANT]
+> As of [DataMiner PTP Solution](https://aka.dataminer.services/PTPHelp) 2.0.0 and Skyline PTP 2.0.0.X, the Standard DataMiner PTP Device mediation protocol is **retired**. In-connector mediation within Skyline PTP is used instead.
+>
+> Refer to the [Skyline PTP Technical](xref:Connector_help_Skyline_PTP_Technical) page for the current single source of truth for supported connectors.
 
 The Standard DataMiner PTP Device is a **mediation** protocol used by the **PTP application** to easily get data from PTP devices.
 
 The following connectors are currently mediated with the latest version:
 
+- ADVA Optical Networking OSA 5422
 - Arista Manager
 - Arista eOS Manager
 - Bridge Technologies VB Probe Series
@@ -15,6 +24,7 @@ The following connectors are currently mediated with the latest version:
 - directOut montone.42
 - Evertz 5700MSC
 - Evertz 5700MSC - PTP Interface
+- Evertz DreamCatcher
 - Generic Edge Chassis
 - Generic Edge Chassis - PTP Card
 - Generic Switch
@@ -26,6 +36,7 @@ The following connectors are currently mediated with the latest version:
 - Lawo V__matrix
 - Meinberg LANTIME IMS-HPS - PTPv2 Instance
 - Meinberg LANTIME IMS-HPS API V10 - PTPv2 Instance
+- Meinberg LANTIME IMS-PSX API V17 - PTPv2 Instance
 - Meinberg Lantime M3000 - PTPv2 Module
 - Mellanox Technologies MLNX-OS Manager
 - Pebble Beach Dolphin
@@ -37,23 +48,7 @@ The following connectors are currently mediated with the latest version:
 - Tektronix Prism
 - Tektronix SPG8000 - PTP Interface
 
-## About
-
-### Version Info
-
-| Range     | Key Features     | Based on     | System Impact     |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. | -            | -                 |
-
-### System Info
-
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|--|
-| 1.0.0.x | No | Yes | - Arista Manager <br>- Lawo HD Core Ravenna <br>- Lawo Power Core <br>- Meinberg Lantime M3000 <br>- PTPv2 Module <br>- Skyline PTP (application and scripts) | - |
-
 ## Configuration
-
-### Initialization
 
 This is a **mediation** protocol, which means no element needs to be created. The only thing needed to activate this mediation protocol is to set it as **Production**.
 

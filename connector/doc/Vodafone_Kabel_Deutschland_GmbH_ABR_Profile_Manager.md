@@ -1,37 +1,31 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_Profile_Manager
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH ABR Profile Manager connector for tracking OTT profile usage in DataMiner."
 ---
 
 # Vodafone Kabel Deutschland GmbH ABR Profile Manager
 
-The ABR Profile Manager is a virtual connector that collects data from existing OTT-related elements and displays which encoding and destination profiles are used by which services.
+## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH ABR Profile Manager is a virtual connector that collects data from existing OTT-related elements and shows which encoding and destination profiles are used by which services.
 
-| Range                | Key Features                                    | Based on     | System Impact     |
-|----------------------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Harmonic VOS profiles and services integration. | -            | -                 |
+## Key Features
 
-### System Info
+- **Profile visibility**: Identify the encoding and destination profiles used by OTT services.
+- **Service overview**: View services present on OTT encoder devices in one place.
+- **Configurable polling**: Set the retrieval interval and check the last poll time.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+## Use Cases
 
-## Configuration
+### Understanding OTT Profile Usage
 
-### Connections
+**Challenge**: Checking profile usage across multiple OTT encoder elements requires a consolidated view.
 
-#### Virtual Connection
+**Solution**: The connector collects service and profile information from existing OTT-related elements.
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Benefit**: You can identify the profiles associated with services without inspecting each encoder separately.
 
-### Initialization
+## Technical Reference
 
-On the **Configuration** page, you can configure the polling interval to retrieve all details.
-
-## How to use
-
-On the **General** page of this connector, you can find a list of all the services present on the OTT encoder devices and the encoding profiles used by these services.
-
-On the **Configuration** page, you can configure the polling interval and view the last poll time.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_ABR_Profile_Manager_Technical).

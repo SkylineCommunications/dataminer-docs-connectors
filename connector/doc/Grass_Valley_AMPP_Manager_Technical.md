@@ -49,7 +49,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-This page contains general configuration parameters: API Key, Last Login Time, and Token Expiration. Token Expiration is by default set to 24 hours, but a new token will automatically be requested whenever there is an API key change and every 12 hours.
+This page contains general configuration parameters: API Keys, Last Login Time, and Token Expiration. Token Expiration is by default set to 24 hours, but a new token will automatically be requested whenever there is an API key change and every 12 hours.
 
 ### Application Types
 

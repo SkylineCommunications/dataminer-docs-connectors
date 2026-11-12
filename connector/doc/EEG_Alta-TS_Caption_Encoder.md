@@ -6,69 +6,65 @@ uid: Connector_help_EEG_Alta-TS_Caption_Encoder
 
 ## About
 
-This connector is designed to monitor the EEG Alta-TS for use with MPEG Transport Streams as the input and output format. The iCap Alta software is packaged on a virtual machine for placement inside a customer video facility. The virtual machine "guest" operating system is 64-bit Debian 8 Linux. The VM can be hosted on VirtualBox, Cisco, or Microsoft HyperV controllers. The default distribution format is an "OVA" file, though alternative disk image formats can often be provided on request. Once the iCap Alta virtual machine is running and reachable on a local network, all interaction with the software can be performed over HTTP on the network, as a web service or in a browser.
+This connector allows DataMiner to monitor and manage the EEG / AI-Media Alta-TS Caption Encoder.
 
-## Configuration
+Alta-TS is a software-based caption encoder designed for MPEG Transport Stream (MPEG-TS) workflows. It enables insertion, transport, and monitoring of closed captions and subtitles in IP video environments and can integrate with the AI-Media iCap cloud captioning platform. Alta-TS is typically deployed as a virtual machine.
 
-### Connections
+## Key Features
 
-#### HTTP Main Connection
+- **Centralized monitoring of Alta-TS encoder instances**: Provides visibility into all configured encoder instances, including operational status, instance configuration, and runtime information from a single DataMiner element.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+- **Transport stream workflow monitoring**: Monitors MPEG-TS transport stream inputs and outputs, including RTP, UDP unicast, and UDP multicast stream configurations used by caption encoding workflows.
 
-HTTP CONNECTION:
+- **Caption workflow visibility**: Tracks caption insertion and caption bridging configurations to help operators verify that caption services are correctly configured and operational.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *80*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+- **Operational logging and diagnostics**: Provides access to instance-specific logs and status information, enabling faster root cause analysis of stream, captioning, and service-related issues.
 
-## How to use
+- **Configuration awareness across multiple channels**: Monitors key instance settings, including primary streams, source streams, and output destinations, allowing operators to validate channel configurations from a centralized platform.
 
-The **General** page of this connector contains the username and password to access the device.
+## Use Cases
 
-The **Instance Settings** page contains a table with basic information about the existing instances, as well as logs for every instance. This page has multiple subpages, which can among others be used to add new instances or edit existing ones:
+### Broadcast Captioning Service Assurance
 
-- **New Instance Settings**: Allows you to create a new instance with the necessary basic information.
+**Challenge**: Broadcast operators need to ensure that caption encoding services remain operational across multiple transport stream channels while minimizing the risk of undetected caption failures.
 
-- **Stream Settings**: Allows you to edit the stream settings for existing instances.
+**Solution**: The connector provides centralized monitoring of Alta-TS encoder instances, including channel status, caption configuration, and operational health.
 
-  - **Name**: This is the name that will be displayed in the instance list for this channel of settings.
+**Benefit**: Operators can quickly detect service degradation, reduce downtime, and maintain compliance with captioning requirements.
 
-  - **Primary**: This parameter indicates the source for the IP video input stream. The setting can have the following values:
+### MPEG-TS Stream Monitoring
 
-    - *3000*: Listen for RTP unicast on port 3000. The sending device will need to send to the virtual machine IP address on port 3000.
-    - *udp://0.0.0.0:7000*: Listen for UDP unicasts on port 7000, from any source, headed to the VM interface.
-    - *udp://239.120.200.101:5000*: Listen for UDP multicast on multicast address 239.120.200.101, on port 5000. The multicast request will be registered with your router, which will then forward multicasts on this address to the VM interface.
+**Challenge**: Failures in transport stream inputs or outputs can disrupt caption delivery and impact downstream broadcast or OTT services.
 
-  - **Source**: This parameter is optional and permits an additional input stream, which will be used for caption bridging (in caption bridging, caption data from the "Source" stream will be transferred to the "Primary" stream). The same address formats permitted for the primary stream are permitted for the source stream.
+**Solution**: The connector monitors stream configurations and operational status for RTP, UDP unicast, and UDP multicast workflows configured on Alta-TS instances.
 
-  - **Output**: This parameter sets the destination address and port for the output video stream. The destination can be either unicast or multicast. All output data is sent in RTP format.
+**Benefit**: Operations teams gain immediate visibility into failing or misconfigured streams, accelerating fault isolation and resolution.
 
-  - **iCap Reference**: This parameter is optional and permits an additional input stream, which will be used as the audio source to a remote transcriber connecting through iCap. The stream may be audio-only, or may also contain a video elementary stream, which will be used to send reduced frame rate picture reference data. The same address formats permitted for the primary stream are permitted for the iCap reference stream.
+### Multi-Channel Encoder Management
 
-  - **Multicast Interface**: This parameter is optional, and is recommended only for setups where the virtual machine is connected to multiple NIC interfaces and networks, and where IP multicast is used for the input/output streams. In these cases, you should specify the IP address of one of the interfaces that sits on the network where all multicast input and output traffic will be directed. (It is not currently possible with the Alta VM to subscribe to different multicasts on multiple interfaces within the same instance.)
+**Challenge**: Managing multiple caption encoding channels through individual web interfaces becomes increasingly complex and time-consuming.
 
-- **iCap Settings**: Allows you to edit the iCap settings for existing instances.
+**Solution**: The connector aggregates information from all configured Alta-TS instances into a single DataMiner view, including status, configuration, and logs.
 
-  - **iCap Company, Username, and Password**: iCap account information will be provided to you by EEG with your purchase or demo, or will be accessible from your company's admin account at [https://www.eegicap.com](https://www.eegicap.com/). Each iCap account has a company namespace, a username and a password. This account will be used to allow unique identification of your stream by your contracted real-time captioner over iCap, so you must use a different username for each simultaneously operating Alta encoder instance. You do not need an iCap account to perform certain non-cloud functions such as caption bridging between input sources or SCTE-35 cue insertion.
-  - **iCap Reference PIDs**: When connected to iCap, the Alta instance will send an audio reference signal for transcription to authorized captioners connected across iCap. Separate audio programs can be transmitted for up to 6 languages of transcription simultaneously. The Audio PID field can be used to list PIDs from the input stream to be sent over iCap. If you list multiple PIDs, they will be associated with numbered language services on iCap in the order they are specified. If this field is left blank, the Alta instance will send audio only for one language, and will auto-detect the first listed audio PID in your transport stream. Each Alta instance can send only one video reference program to captioners. If more than one video PID is present in your stream, you can use the Video PID field to specify which one is the source of the feedback.
+**Benefit**: Operators can monitor and troubleshoot multiple channels from a centralized operational platform, improving efficiency and reducing operational overhead.
 
-- **SCTE-35 Settings**: Allows you to edit the SCTE-35 settings for existing instances.
+### Faster Incident Troubleshooting
 
-  - **SCTE-104 Command Listen Address**: This parameter is optional and can be used to open a local port on the VM to accept SCTE-104 commands from an external automation controller, which will be used to generate SCTE-35 splicing and segmentation data in this instance's output stream. The parameter can be a port number only in a VM with a single network interface, or should include a local IP address and a port number in a multi-homed configuration. The default port specified for communication in the SCTE-104 standard is 5167; however, please note that if you are running multiple Alta instances on a single VM, you must have a different IP address/port number combination for each instance that accepts SCTE-104 commands. When this parameter is specified, SCTE-35 data will be announced in the output stream PMT on a default PID of 0x1f2. Splices will be injected based on the SCTE-104 commands received from the Automation System over the specified port. SCTE-104 command receipt will be logged in the system log as well.
-  - **SCTE-35 PIDs**: Up to eight PIDs may be allocated for SCTE-35 data from the Alta instance. If multiple PIDs are specified, the SCTE-104 controller uses the DPI_PID_index field in the incoming SCTE-104 messages to direct Alta which PID each message is for. Do not specify a PID for SCTE-35 service that may already contain upstream data of any type.
+**Challenge**: When caption delivery problems occur, engineers need quick access to diagnostic information to identify the root cause.
 
-- **Telnet Settings**: Allows you to edit the Telnet settings for existing instances.
+**Solution**: The connector exposes operational logs and instance health information directly within DataMiner.
 
-  - The Telnet Settings menu provides functionality to clone "CTRL+A" style caption data from the iCap connection over to a legacy SDI closed captioning encoder or other similar devices/systems. The IP address and port number of the receiving device must be provided, and if the receiving device requires a username and password to open a connection, fill in these fields as well. This is the sole output mode of the "Alta Bridge" license option.
+**Benefit**: Troubleshooting time is reduced, enabling faster restoration of services and minimizing the impact on viewers.
 
-- **Other Settings**: Allows you to edit the following other settings for existing instances:
+### Configuration Validation
 
-  - **warnlevel**: This parameter sets the verbosity of logging for the Alta instance. We recommend the "0" setting when troubleshooting; otherwise, leave the parameter blank. Once each setting is configured and the Alta instance has started up, you should begin to see an output stream arriving at the destination that matches the "primary" input stream.
-  - **Caption Output Format**: This setting controls the format used to write captioning data into the output transport stream. Alta supports ATSC CEA-708 in MPEG-2 or H264, SMPTE RDD-11 CEA-708, DVB Text (teletext) or DVB Subtitles (bitmap). Note that the ASTC user data setting is not compatible with the Alta "low latency mode", and requires a processing delay of approximately one complete video GOP.
-  - **DVB Text Config**: Use only with the DVB Text Caption Output format. Specifies how many languages of DVB text data to output, and provides a language identifier and Teletext magazine and page for each.
-  - **DVB Bitmap Config**: Use only with the DVB Bitmap Caption Output format. Specifies how many languages of DVB subtitle data to output, and provides a language identifier and page identifier for each.
-  - **Transport Rate**: This parameter is optional and can be used to constrain a fixed transport rate on the output stream. If the parameter is not specified or set to 0, the input transport rate will be auto-detected from the stream's PCR data and bitrate, and will be replicated on the output. If a specific transport rate is desired, it is often preferable to use this setting to avoid the possibility that temporary data loss/corruption on the input could lead to a change of transport rate on the output as well. This feature can also be used to increase the output transport rate above the input rate to accommodate additional data insertion by Alta. This could be necessary if the input transport stream has insufficient null packets to replace with timely insertion of captions, subtitles, or SCTE-35 trigger data. A fixed transport rate separate from the input rate cannot be used in "Low Latency Mode".
-  - **Low Latency Mode**: This checkbox can be used to disable detailed de-multiplexing of the transport stream passing from the master input to the master output. Certain Alta product features such as ATSC format captioning in user data or SEI require data insertion in video picture display order, and therefore an additional buffer delay of approximately one Group of Pictures (GoP) is introduced. In low latency mode, this additional delay passing through Alta is not incurred. SCTE-35 injection can still be used, along with captioning in formats that do not embed in the video elementary stream, such as SMPTE-2038 or DVB Subtitles. For full control of input-to-output latency in Low Latency mode, also see "UDP Buffer Size" in "Other Settings".
-  - **UDP Buffer Size**: This parameter is optional and allows finer control over the output buffer size used between Alta's internal transport stream processing and the network output buffer. Higher values provide greater resistance to output hits when the underlying computer or network is busy. Lower values reduce the input-to-output delay of the stream passing through the Alta system. It may also be necessary to use higher values to maintain low output jitter when a stream is being used in the standard re-multiplex mode (not Low Latency Mode), which has significant variation in the size in bytes of successive GoPs.
-  - **Test Captions**: This option begins outputting a stream of scrolling test captions on Language 1 whenever the Alta instance is started. The stream of test captions will continue until a live iCap captioner first sends data to the encoder. After this occurs, the test captions will not resume again unless the instance is stopped and restarted.
+**Challenge**: Misconfigured source, primary, or output stream settings can lead to caption loss or incorrect stream routing.
+
+**Solution**: The connector exposes stream configuration information for each Alta-TS instance, allowing operators to validate channel setups directly from DataMiner.
+
+**Benefit**: Configuration issues can be identified proactively, reducing service interruptions and operational errors.
+
+## Technical Reference
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_EEG_Alta-TS_Caption_Encoder_Technical).

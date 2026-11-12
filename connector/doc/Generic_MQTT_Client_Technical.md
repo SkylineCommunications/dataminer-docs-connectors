@@ -35,7 +35,8 @@ The **General** and **Broker Statistics** pages display the current connection s
 ### Messages
 
 The **Messages** page contains a table listing all received MQTT messages. This includes the topic, payload, and timestamp for each message.
-**Cleanup Configuration** subpage allows users to configure automatic cleanup of the **Received Messages** table. This includes specifying the maximum number of rows to retain and defining the maximum age of messages before they are automatically removed.
+
+The **Cleanup Configuration** subpage allows you to configure automatic cleanup of the **Received Messages** table. This includes specifying the maximum number of rows to retain and defining the maximum age of messages before they are automatically removed.
 
 ### Topics
 
@@ -43,4 +44,4 @@ The **Topics** page allows you to define the MQTT topics you want to subscribe t
 
 ### Publish Data
 
-The **Publish Data** page allows users to publish MQTT messages directly to the broker by specifying a target topic and the message payload.
+The **Publish Data** page allows you to publish MQTT messages directly to the broker by specifying a target topic and the message payload.

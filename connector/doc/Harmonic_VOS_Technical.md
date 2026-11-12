@@ -24,7 +24,9 @@ uid: Connector_help_Harmonic_VOS_Technical
 | 1.1.0.x | OAUTH2 authentication. | No | Yes |
 | 1.1.1.x | Added new connection to improve polling rate. | No | Yes |
 | 1.1.2.x | Updated Origin engine table primary key to fix duplicate key errors. | No | Yes |
-| 1.1.3.x [SLC Main] | Updated Client Secret to be a password. | No | Yes |
+| 1.1.3.x | Updated Client Secret to be a password. | No | Yes |
+| 1.1.4.x [SLC Main] | Added additional prometheus endpoints. | No | Yes |
+
 
 ### Product Info
 
@@ -35,6 +37,8 @@ uid: Connector_help_Harmonic_VOS_Technical
 | 1.1.1.x   | API version 1.3.5.0.122 |
 | 1.1.2.x   | API version 1.3.5.0.122 |
 | 1.1.3.x   | API version 1.3.5.0.122 |
+| 1.1.4.x   | API version 1.3.5.0.122 |
+
 
 ## Configuration
 

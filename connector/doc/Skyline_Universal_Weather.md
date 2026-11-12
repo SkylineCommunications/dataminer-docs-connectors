@@ -12,7 +12,7 @@ The **Skyline Universal Weather** connector is designed to retrieve weather cond
 
 ## Key Features
 
-- **Compatibility with different Weather APIs**: The connector is highly versatile, supporting multiple API services to provide flexibility based on your preferences and requirements. Currently, it is compatible with three distinct weather APIs: OpenWeather OneCall 2.5, OpenWeather OneCall 3.0, and Windy Point-Forecast API v4.
+- **Compatibility with different Weather APIs**: The connector is highly versatile, supporting multiple API services to provide flexibility based on your preferences and requirements. Currently, it is compatible with three distinct weather APIs: OpenWeather OneCall 2.5, OpenWeather OneCall 3.0, and Windy Point-Forecast API v2.
 
 - **Access to a wide range of meteorological data**: Access to specialized information such as wind patterns or precipitation trends.
 

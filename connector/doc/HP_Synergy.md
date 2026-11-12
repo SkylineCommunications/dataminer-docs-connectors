@@ -4,88 +4,59 @@ uid: Connector_help_HP_Synergy
 
 # HP Synergy
 
-This connector is used to monitor an HP Synergy device via the HP OneView management platform. The connector makes use of the RESTful API to communicate with the device.
-
 ## About
 
-### Version Info
+HP Synergy is a composable infrastructure platform that enables IT teams to provision and manage compute, storage, and network resources through the HP OneView management platform. This DataMiner connector integrates HP Synergy into DataMiner via the HP OneView RESTful API, giving operators centralized visibility across all physical and logical resources within the Synergy frame.
 
-| Range              | Key Features             | Based on | System Impact                                       |
-|--------------------|--------------------------|----------|-----------------------------------------------------|
-| 1.0.0.x            | Initial version          | -        | -                                                   |
-| 1.0.1.x [SLC Main] | Add support for Unicode. | 1.0.0.3  | Element must be recreated. Saved data will be lost. |
+## Key Features
 
-### Product Info
+- **Composable infrastructure overview**: Monitor enclosures, enclosure groups, and logical enclosures alongside the device bays, fan bays, power supply bays, and manager bays they contain.
 
-| Range     | Supported Firmware       |
-|-----------|--------------------------|
-| 1.0.0.x   | OneView API Version 1000 |
-| 1.0.1.x   | OneView API Version 1000 |
+- **Server lifecycle visibility**: Track server hardware, server hardware types, server profiles, and server profile templates from a single DataMiner element.
 
-### System Info
+- **Network resource monitoring**: Get a unified view of connections, connection templates, Ethernet networks, FC networks, FCoE networks, fabrics, and network sets.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+- **Interconnect topology**: Monitor interconnects, logical interconnects, uplink sets, uplink ports, and logical interconnect groups to understand the full switching fabric.
 
-## Configuration
+- **Storage management**: Track storage systems, storage pools, storage volumes, storage volume sets, managed SANs, SAN volume attachments, and server profile storage configurations.
 
-### Connections
+- **Alerts and task tracking**: Monitor active alerts, events, and operational tasks — with configurable task filters — to stay on top of infrastructure changes and incidents.
 
-#### HTTP Main Connection
+## Use Cases
 
-This connector uses an HTTP connection and requires the following input during element creation:
+### Centralized Composable Infrastructure Management
 
-HTTP CONNECTION:
+**Challenge**: Large data centers running HP Synergy need to be able to track the health and configuration of hundreds of compute, network, and storage resources, spread across multiple enclosures and frames, from a single pane of glass.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Solution**: The HP Synergy connector pulls all resource data from the HP OneView API into DataMiner, making enclosures, servers, networks, storage, and facilities available in one consolidated view with trending and alarm monitoring.
 
-### Initialization
+**Benefit**: Reduced mean time to detect (MTTD) infrastructure issues, fewer manual checks, and a consistent operational overview regardless of the number of Synergy frames deployed.
 
-The **HP Synergy** device requires authentication. Specify the necessary credentials on the **General** page.
+### Proactive Hardware Health Monitoring
 
-### Web Interface
+**Challenge**: Hardware faults in blade servers, drive enclosures, or power supplies can go unnoticed until they cause service-impacting outages.
 
-The web interface is only accessible when the client machine has network access to the product.
+**Solution**: The connector continuously polls the HP OneView API for device bay status, drive enclosure health, power supply bay information, and appliance health data. DataMiner alarm thresholds and trending ensure degradation trends are detected before they escalate.
 
-## How to Use
+**Benefit**: Earlier detection of hardware issues, faster response times, and reduced risk of unplanned downtime caused by undetected component failures.
 
-### General
+### Server Profile Compliance and Change Tracking
 
-On this page, you can enter the credentials to authenticate to the HP Synergy device. If the credentials are correct, the **Connection Status** parameter will indicate the value *Connected*, and the element will start polling data from the device.
+**Challenge**: In composable environments, server profiles and their associated network and storage configurations change frequently. Tracking what is deployed where — and detecting unauthorized changes — is difficult without automated tooling.
 
-The general page also displays the **Current Version** and **Minimum Version** supported by the device.
+**Solution**: The connector monitors server profiles, server profile templates, and server profile storage configurations (local storage controllers, logical drives, logical JBODs, and SAN volume attachments). DataMiner can trigger alerts when profile configurations drift from expected templates.
 
-### Enclosures
+**Benefit**: Improved configuration governance, faster change auditing, and reduced risk of misconfigured server profiles causing network or storage connectivity issues.
 
-This page displays information about the enclosures (Enclosure Group, Logical Enclosure, etc.).
+## Technical Reference
 
-### Servers
+### Prerequisites
 
-This page displays information about the servers (Server Hardware, Server Profile, etc.).
+- **DataMiner version 10.4.0.0 (build 14003) or higher** is required.
 
-### Networks
+- **HP OneView credentials** (username, password, and domain) must be available and entered on the **General** page after element creation before polling can start.
 
-This page displays information about the network and connections (Connection, Ethernet Network, etc.).
+- **HTTP network connectivity** between the DataMiner Agent and the HP OneView management platform on the configured IP and port is required.
 
-### Interconnect
-
-This page displays the interconnections between the different resources.
-
-### Storage
-
-This page displays information about the storage (Storage Volume, Managed SANs, etc.).
-
-### Facilities
-
-This page displays information about data centers, power devices and racks.
-
-### Activity
-
-This page displays information about alerts, events and tasks.
-
-### Appliance
-
-This page displays information about appliances and licenses.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_HP_Synergy_Technical).
