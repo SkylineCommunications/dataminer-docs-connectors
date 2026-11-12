@@ -7794,6 +7794,11 @@
     topicUid: Connector_help_OpenTelemetry_Collector
   - name: OpenTelemetry Generic Log Receiver
     topicUid: Connector_help_OpenTelemetry_Generic_Log_Receiver
+  - name: OpenTelemetry Generic Metric Receiver
+    topicUid: Connector_help_OpenTelemetry_Generic_Metric_Receiver
+    items:
+    - name: OpenTelemetry Generic Metric Receiver Technical
+      topicUid: Connector_help_OpenTelemetry_Generic_Metric_Receiver_Technical
 - name: Opsview
   items:
   - name: Opsview Opsview
