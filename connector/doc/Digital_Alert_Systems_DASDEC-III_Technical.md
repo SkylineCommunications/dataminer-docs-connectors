@@ -89,6 +89,8 @@ With the **EAS_NET** license installed, the DASDEC-III can send data over TCP/IP
    - **Event Transfer Protocol**: TCP event notification.
    - **Local Network Device**: First (main) Ethernet.
 
+1. Select the EAS NET Send option to enable which EAS alerts will be sent to the DataMiner System. To be able to approve and deny alerts, ensure that Decoded EAS Alerts are included.
+
 1. Accept the changes.
 
 1. Test the connection by clicking the **Test Connection** button.
@@ -107,7 +109,11 @@ To perform the public-private key initialization, follow these steps:
 
    This will generate a private key file in `C:\Skyline DataMiner\Documents\DASDEC\privatekey` as well as a public key in the **Public Key** parameter.
 
-1. In the DASDEC web GUI, navigate to **Setup** > **Network** > **Security**, and change the **SSH Key Type** in the dropdown list to RSA.
+1. In the DASDEC web GUI, navigate to **Setup** > **Network** > **Security**.
+
+1. Enable SSHD under **Incoming Secure Shell connection** and disable **SSHD password authentication**.
+	
+   ![SSH Enable](~/connector/images/DASDEC-III_SSHD_Enable.png)
 
 1. Copy the public key from the parameter and paste it into the box next to the **Add Public Key** button.
 
@@ -120,6 +126,8 @@ To perform the public-private key initialization, follow these steps:
 1. Ensure that the DataMiner IP address is included in the **SSHD Whitelist Configuration**.
 
    ![SSH Key Whitelist](~/connector/images/DASDEC-III_SSHD_Whitelist.png)
+
+1. DataMiner will use Port 22 to connect to the DASDEC-III device. Ensure that this port is open and not blocked by any firewall or network restrictions.
 
 You can now approve mandatory/voluntary open alerts. If an alert is not forwarded, check the element logging for errors.
 
