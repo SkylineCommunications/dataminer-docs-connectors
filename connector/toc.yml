@@ -3653,6 +3653,13 @@
   items:
   - name: EventIS TraxIS
     topicUid: Connector_help_EventIS_TraxIS
+- name: EverExceed
+  items:
+  - name: EverExceed Inverter UPS
+    topicUid: Connector_help_EverExceed_Inverter_UPS
+    items:
+    - name: EverExceed Inverter UPS Technical
+      topicUid: Connector_help_EverExceed_Inverter_UPS_Technical
 - name: Evertz
   items:
   - name: Evertz 160RM
