@@ -3688,7 +3688,10 @@
   - name: Evertz 5700ACO
     topicUid: Connector_help_Evertz_5700ACO
   - name: Evertz 5700MSC
-    topicUid: Connector_help_Evertz_5700MSC
+    topicUid: Connector_marketing_Evertz_5700MSC
+    items:
+      - name: Evertz_5700MSC_Technical
+        topicUid: Connector_help_Evertz_5700MSC_Technical
   - name: Evertz 5700MSC - PTP Interface
     topicUid: Connector_help_Evertz_5700MSC_-_PTP_Interface
   - name: Evertz 570ACO-X19-10G
