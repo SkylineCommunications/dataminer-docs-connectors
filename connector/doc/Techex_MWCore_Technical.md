@@ -24,7 +24,7 @@ Optionally, the connector can **export a DVE for each device** monitored by the 
 This connector uses an HTTP connection and requires the following input during element creation:
 
 - **IP address/host**: The polling IP or URL of the TXCore node.
-- **IP port**: The IP port of the TXCore node (default: *443*).
+- **IP port**: The IP port of the TXCore node (default: 443).
 - **Bus address**: If the proxy server has to be bypassed, specify *BypassProxy*.
 
 This connection is used for the regular polling, which retrieves data from TXCore based on a request/response mechanism.
@@ -34,10 +34,10 @@ This connection is used for the regular polling, which retrieves data from TXCor
 Prior to range 1.0.4.x, this connector also uses a redundant HTTP connection and requires the following input during element creation:
 
 - **IP address/host**: The polling IP or URL of the secondary TXCore node.
-- **IP port**: The IP port of the secondary TXCore node (default: *443*).
+- **IP port**: The IP port of the secondary TXCore node (default: 443).
 - **Bus address**: If the proxy server has to be bypassed, specify *BypassProxy*.
 
-This redundant connection is used for the regular polling when the main connection fails. From range 1.0.4.x onwards, this connection is no longer used. Instead, you can specify additional TXCore nodes of the same cluster in the Connections table on the **General** page (see [Redundancy](#redundancy)).
+This redundant connection is used for the regular polling when the main connection fails. From range 1.0.4.x onwards, this connection is no longer used. Instead, you can specify additional TXCore nodes of the same cluster in the **Connections** table on the **General** page (see [Redundancy](#redundancy)).
 
 ### Initialization
 
@@ -56,7 +56,7 @@ To enable the statistics connection, configure the following parameters on the *
 
 ### Redundancy
 
-From range 1.0.4.x onwards, a Connections table is available on the **General** page, where you can specify additional TXCore nodes for DataMiner to automatically connect to if the primary connection becomes unavailable. The first entry (with priority 1) is added automatically and always matches the connection defined in the element editor.
+From range 1.0.4.x onwards, a **Connections** table is available on the **General** page, where you can specify additional TXCore nodes for DataMiner to automatically connect to if the primary connection becomes unavailable. The first entry (with priority 1) is added automatically and always matches the connection defined in the element editor.
 
 ### Web Interface
 
@@ -78,9 +78,9 @@ Below you can find more information about the different data pages available in 
 
 On this page, specify the username and password for connecting to TXCore during element initialization.
 
-The Connections table allows you to specify additional TXCore nodes for DataMiner to automatically connect to if the primary connection becomes unavailable. The active connection is indicated by the **Active Connection** parameter.
+The **Connections** table allows you to specify additional TXCore nodes for DataMiner to automatically connect to if the primary connection becomes unavailable. The active connection is indicated by the **Active Connection** parameter.
 
-The first entry in the Connections table (with priority 1) is added automatically and always matches the connection defined in the element editor. You can edit a connection or force a specific connection to become active via the right-click menu of the table. The state of each node address is monitored at 10-second intervals.
+The first entry in the **Connections** table (with priority 1) is added automatically and always matches the connection defined in the element editor. You can edit a connection or force a specific connection to become active via the right-click menu of the table. The state of each node address is monitored at 10-second intervals.
 
 This page has several subpages:
 
@@ -182,7 +182,7 @@ In most cases, this issue is related to the firewall or to the client certificat
    Test-NetConnection -ComputerName <TXCore node IP> -Port <port>
    ```
 
-   Replace `<TXCore node IP>` with the IP address of the node that has to send the telemetry data, and `<port>` with the port configured in TXCore for telemetry data (default: *7834*).
+   Replace `<TXCore node IP>` with the IP address of the node that has to send the telemetry data, and `<port>` with the port configured in TXCore for telemetry data (default: 7834).
 
    By default, DataMiner uses the IP address listed in the **IP Address** column of the table on the **Cluster Members** page. As TXCore does not always provide the public IP address of a node, this IP address may not be accessible from the DataMiner host. In that case, specify the IP address that DataMiner should use in the **Public IP Address** column of the same table.
 

@@ -13,17 +13,17 @@ The **Techex MWCore** connector integrates the TXCore platform with DataMiner. T
 
 ## Key Features
 
-- **Cluster Infrastructure Monitoring**: Monitor the health of every node in the TXCore cluster, including CPU, memory, and disk usage, as well as the number of devices and TXEdges connected to each node.
+- **Cluster infrastructure monitoring**: Monitor the health of every node in the TXCore cluster, including CPU, memory, and disk usage, as well as the number of devices and TXEdges connected to each node.
 
-- **TXEdge Monitoring**: Track the state of all TXEdges or a filtered subset, including addresses, licenses, number of streams, and bandwidth usage.
+- **TXEdge monitoring**: Track the state of all TXEdges or a filtered subset, including addresses, licenses, number of streams, and bandwidth usage.
 
-- **Real-Time Telemetry**: Receive bit rates, missing packets, source and output states, and ETR 290 messages asynchronously through the statistics connection, so that alarms and trends reflect the live situation.
+- **Real-time telemetry**: Receive bit rates, missing packets, source and output states, and ETR 290 messages asynchronously through the statistics connection, so that alarms and trends reflect the live situation.
 
-- **Stream, Source, and Output Configuration**: Add, edit, and delete channels, streams, sources, and outputs directly from DataMiner, and clear statistics for a selected stream, source, or output.
+- **Stream, source, and output configuration**: Add, edit, and delete channels, streams, sources, and outputs directly from DataMiner, and clear statistics for a selected stream, source, or output.
 
-- **Connection Redundancy**: Specify additional TXCore nodes in the Connections table so that DataMiner automatically fails over when the primary node becomes unavailable.
+- **Connection redundancy**: Specify additional TXCore nodes in the Connections table so that DataMiner automatically fails over when the primary node becomes unavailable.
 
-- **Automation and SRM Integration**: Use the InterApp library and the SRM resource tables to orchestrate streams, sources, outputs, and ports from Automation scripts and SRM solutions.
+- **Automation and SRM integration**: Use the InterApp library and the SRM resource tables to orchestrate streams, sources, outputs, and ports from automation scripts and SRM solutions.
 
 ## Use Cases
 
@@ -51,13 +51,14 @@ The **Techex MWCore** connector integrates the TXCore platform with DataMiner. T
 
 **Benefit**: Consistent and repeatable configuration, reduced manual effort, and end-to-end orchestration of video workflows alongside other DataMiner-managed systems.
 
-For a real-world example, see the [Mastering TXCore orchestration with DataMiner](https://community.dataminer.services/use-case/mastering-tx-core-orchestration-with-dataminer/) use case on DataMiner Dojo.
+> [!TIP]
+> For a real-world example, see the [Mastering TXCore orchestration with DataMiner](https://community.dataminer.services/use-case/mastering-tx-core-orchestration-with-dataminer/) use case on DataMiner Dojo.
 
 ## Technical Reference
 
 ### Prerequisites
 
-- **TXCore REST API access**: The DataMiner Agent must be able to reach the TXCore REST API over HTTPS (default port *443*), and a TXCore user account is needed for authentication.
+- **TXCore REST API access**: The DataMiner Agent must be able to reach the TXCore REST API over HTTPS (default port 443), and a TXCore user account is needed for authentication.
 
 - **Client certificate**: A .pfx client certificate is required to establish the statistics connection with each TXCore node.
 
