@@ -4,7 +4,10 @@ uid: Connector_help_Papouch_T2HE
 
 # Papouch T2HE
 
-Depending on the sensor connected to it, **T2HE** is able to measure temperature and humidity, and calculate the dew point. The **Papouch T2HE** connector is an **HTTP** connector that is used to monitor this device.
+Depending on the sensor connected to it, the Papouch **TH2E** is able to measure temperature and humidity, and calculate the dew point. The **Papouch T2HE** connector is an **HTTP** connector that is used to monitor this device.
+
+> [!NOTE]
+> The supported Papouch device is the **TH2E**. **T2HE** is the established name of the DataMiner connector and its Catalog item.
 
 ## About
 
