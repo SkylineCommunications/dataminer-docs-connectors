@@ -3662,7 +3662,10 @@
   - name: Evertz 3067VIP-10G-HW
     topicUid: Connector_help_Evertz_3067VIP-10G-HW
   - name: Evertz 3080IPX-128-25G
-    topicUid: Connector_help_Evertz_3080IPX-128-25G
+    topicUid: Connector_marketing_Evertz_3080IPX-128-25G
+    items:
+      - name: Evertz_3080IPX-128-25G_Technical
+        topicUid: Connector_help_Evertz_3080IPX-128-25G_Technical
   - name: Evertz 3080IPX
     topicUid: Connector_help_Evertz_3080IPX
   - name: Evertz 3080ITXE-HW-P60-UDC
