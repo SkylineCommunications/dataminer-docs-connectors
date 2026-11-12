@@ -9498,6 +9498,11 @@
     topicUid: Connector_help_Skyline_Service_Assurance
   - name: Skyline Service Definition Basic
     topicUid: Connector_help_Skyline_Service_Definition_Basic
+  - name: Skyline Service Management Mediation
+    topicUid: Connector_help_Skyline_Service_Management_Mediation
+    items:
+    - name: Skyline Service Management Mediation Technical
+      topicUid: Connector_help_Skyline_Service_Management_Mediation_Technical
   - name: Skyline SLA Definition Basic
     topicUid: Connector_help_Skyline_SLA_Definition_Basic
   - name: Skyline SmartRec Application
