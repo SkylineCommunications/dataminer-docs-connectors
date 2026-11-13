@@ -1,19 +1,24 @@
 ---
 uid: Connector_help_Rohde_Schwarz_FSC3
+description: "Monitor Rohde Schwarz FSC3 spectrum analyzers in DataMiner with live trace data, RF frequency translation, and VISA connectivity."
 ---
 
 # Rohde Schwarz FSC3
 
 ## About
 
-The Rohde Schwarz FSC3 connector allows seamless integration of the R&S FSC3 spectrum analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument information over a virtual connection driven by the Rohde & Schwarz RsInstrument (VISA) library, making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from a single interface.
+The Rohde Schwarz FSC3 connector brings the R&S FSC3 spectrum analyzer into DataMiner. You can view live traces in the DataMiner Spectrum Analysis module, change the analyzer settings remotely, and monitor the health of the analyzer from one place.
+
+The connector connects to the analyzer over the network through VISA.
 
 ## Key Features
 
-- **Real-time spectrum analysis**: View live trace data from the analyzer directly in DataMiner's spectrum analysis component.
-- **Instrument identification**: View key device details to verify the connected analyzer and its current software state.
-- **Measurement control**: Remotely adjust core analyzer settings to quickly adapt the device to changing operational needs.
-- **Trace monitoring toggle**: Enable or disable trace monitoring to reduce load when only identity and settings are needed.
+- **Live spectrum traces**: View and control the analyzer from the [DataMiner Spectrum Analysis module](https://aka.dataminer.services/Working_with_spectrum_analyzer_elements), including spectrum presets and measurement scripts.
+- **Work in RF frequencies**: When the analyzer measures the output of an LNB or downconverter, enter the LO frequency once. You then see and set all frequencies in RF, while the connector tunes the analyzer in L-band or IF.
+- **Protection against invalid settings**: Frequency settings outside the range of the analyzer are rejected and logged before anything is sent to the device.
+- **Analyzer health**: Monitor IF overload and the status of the external frequency reference, and trend them over time.
+- **Device control**: Select the detector and the frequency reference, start a zero span sweep, switch between single and continuous sweep, and reset the analyzer with a preset.
+- **Flexible connectivity**: Connect over VXI-11, Raw Socket, or HiSLIP.
 
 ## Use Cases
 
@@ -27,23 +32,28 @@ The Rohde Schwarz FSC3 connector allows seamless integration of the R&S FSC3 spe
 
 ### Remote Measurement Setup
 
-**Challenge**: Engineers need to change measurement parameters (frequency, span, bandwidths, reference level) on a remote analyzer.
+**Challenge**: Engineers need to change measurement settings (frequency, span, bandwidths, reference level) on a remote analyzer.
 
-**Solution**: Use the connector's write settings to push measurement configuration to the device and read the applied values when data is next polled.
+**Solution**: Change the settings in the Spectrum Analysis module. The connector sends them to the analyzer and reads back the applied values.
 
-**Benefit**: Removes the need for physical access and speeds up measurement reconfiguration.
+**Benefit**: No physical access is needed, and measurements can be reconfigured quickly.
 
-### Automated Signal Analysis
+### Satellite Downlink Monitoring
 
-**Challenge**: Repetitive sweeps and trace capture are time-consuming to run manually.
+**Challenge**: The analyzer measures an L-band signal, but operators think and work in RF frequencies. Converting every frequency by hand is slow and error-prone.
 
-**Solution**: Drive the analyzer from DataMiner to automate sweep acquisition and collect trace data.
+**Solution**: Configure the LO frequency and LO side of the downconverter on the element. Operators then enter and read RF frequencies directly.
 
-**Benefit**: Increases efficiency and ensures consistent, repeatable data collection.
+**Benefit**: Fewer tuning mistakes, and spectrum presets that match the RF carrier plan.
 
 ## Technical Reference
 
-The device connection is configured through the element's IP address, port, and connection type (VXI-11, Raw Socket (default, port 5025), or HiSLIP).
+### Prerequisites
+
+- DataMiner 10.4.0.0 - 14003 or higher.
+- A VISA library (R&S VISA or NI-VISA) on every DataMiner Agent that hosts an element.
+
+The connection is configured with parameters on the **General** page of the element.
 
 > [!NOTE]
 > For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Rohde_Schwarz_FSC3_Technical).
