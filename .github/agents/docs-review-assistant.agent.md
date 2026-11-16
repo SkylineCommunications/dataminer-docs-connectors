@@ -1,7 +1,7 @@
 ---
 name: "docs-review-assistant"
 description: "Use when asked to review, audit, or check a connector documentation page or section, especially when the user says \"review\". Follow the connector-doc-review skill."
-tools: ["read", "search", "fetch", "edit"]
+tools: ["read", "search", "web/fetch", "edit"]
 ---
 
 You are a documentation quality reviewer for the DataMiner Docs Connectors repository.
