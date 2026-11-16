@@ -4,32 +4,9 @@ uid: Connector_help_Eltek_Smartpack_S
 
 # Eltek Smartpack S
 
-The Eltek Smartpack S is a controller that allows you to monitor and control DC power systems.
-
-Information is polled from the device using SNMP calls. In addition, the original web interface of the device is available through the connector.
-
 ## About
 
-### Version Info
-
-| Range   | Key Features           | Based on | System Impact |
-|---------|------------------------|----------|---------------|
-| 1.0.0.x | Initial version.       | -        | -             |
-| 1.0.1.x | HTTP connection added. | -        | -             |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+The Eltek Smartpack S is a controller that allows you to monitor and control DC power systems. The connector polls device data over SNMP and provides access to the device's web interface. Optional log-file retrieval is available over HTTP or FTP.
 
 ## Configuration
 
@@ -49,7 +26,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-#### HTTP secondary connection (only available in range 1.0.1.x)
+#### HTTP secondary connection
 
 This connector also uses a secondary HTTP connection and requires the following input during element creation:
 
@@ -57,12 +34,15 @@ HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *80*).
-- **Bus address**: The proxy server to be bypassed (default: *bypassproxy).*
+- **Bus address**: *BypassProxy*.
 
-### Configuration of credentials to retrieve logging (range 1.0.1.x)
+### Log Retrieval
 
-When the element goes in timeout, it will wait until it can retrieve the log file from the device and update the element with the data available in the file.
-However, for this feature to work, you need to make sure valid **credentials** for the web interface are specified on the System Overview page, as well as the **name** of the log file. Note that you need to specify the **encode password**.
+The **Connection Use for Retrieve Log File** parameter defaults to **Only SNMP**, which does not retrieve a log file. Select **HTTP** or **FTP** to enable file retrieval.
+
+For HTTP retrieval, enter the device's web-interface username and password. The connector encrypts the password for the login request. Set **Name of the Log File** to the file name without its extension.
+
+The **Force Fetch Log** action is triggered when **Status of Element** is nonzero, including **Running**, **Fetching File...**, or **Timeout...**. It is ignored when the status is 0.
 
 ### Configuration of normal or lite mode
 
@@ -82,9 +62,7 @@ The connector consists of different pages that cover the various subsections tha
 
 This page displays general information about the device, such as the general **Status**, the physical **Location**, **Information** about the **System Model**, and the **Units** that are used.
 
-In range **1.0.1.x**, an **Access Configuration** section is available, where you can specify the credentials and the name of the log file to retrieve in case the element goes into timeout. The **Status of the Element** is also displayed here. With the **Force Fetch Log** button, you can manually trigger the retrieval of the log file; however, this will only work if the element is in timeout.
-
-In version **1.0.1.3**, the possibility is added to set the web interface address using the parameter **Device HTTP IP**.
+The **Access Configuration** controls include the log-retrieval settings and **Status of Element**. Use **Device HTTP IP** to set the address used to access the device's web interface.
 
 ### Lite Mode
 
@@ -114,7 +92,7 @@ This page displays information about the **Solar Chargers**, such as the **Solar
 
 The page contains two page buttons. The **Configuration** page button provides access to all configurable parameters. The page button **Energy Log Tables** provides access to a number of tables.
 
-### Dcdc
+### DCDC
 
 This page displays information about the **Dcdc**, such as the **Dcdc Number of Groups**.
 
@@ -160,10 +138,18 @@ The page contains two page buttons. The **Configuration** page button provides a
 
 ### Alarm Groups
 
-This page displays information about the **Alarm Group**, such as the **Status** and **Description**.
+This page displays each alarm group's **Status** and **Description**. Alarm Group status alarms include the **IG Code**, **IG Description**, **Node IP Address**, **Node Name**, and **Alarm Description** properties. **Alarm Description** is taken from the alarm group's Description column.
 
 ### Inverters
 
 This page displays information about the **Inverters**, such as the **Energy Log** and the **Reactive Energy Log**.
 
 The page contains a number of page buttons. The **Configuration** page button provides access to all configurable parameters. The page buttons **Energy Log Tables** and **Reactive Energy Log Tables** provide access to a number of tables.
+
+### Rectiverters
+
+This page displays rectiverter status and measurements, including DC current, AC output currents and voltages, temperature, and frequency deviation. Related alarm settings are available in the Rectiverters configuration.
+
+### Polling Settings
+
+Use the polling controls to enable or disable polling for supported subsystem pages. These controls are enabled by default.
