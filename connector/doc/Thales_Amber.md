@@ -15,10 +15,10 @@ This connector gives headend operators a single view of the unit's **inputs and 
 
 - **Monitor transport stream bit rates**: Track the useful, stuffing, and total rate of every stream, with their minimum and maximum values, and the number of services and PIDs carried in each stream. All rates are trended and can be monitored with alarm templates.
 - **Supervise services and PIDs**: Follow the running state, bit rate, and name of every service, and the type, scrambling state, and minimum, maximum, and current bit rate of every PID.
-- **Check input and output status at a glance**: See all ASI, Ethernet, VSB, QPSK, SDI, CVBS, analog audio, and AES/EBU inputs and all ASI and Ethernet outputs, each with its Not Configured, OK, Warning, or Error state.
-- **Navigate the multiplex as a tree**: The Overview page shows the streams, services, and PIDs as a hierarchy, with alarm bubble-up from PID to service to stream.
-- **Inventory the unit**: View the unit type, product model, serial number, part number, software versions, redundancy and scrambling capabilities, and the number of inputs, outputs, processors, and HD/SD services the unit supports.
-- **Control the polling load**: Switch between fast and slow polling for the whole element, and separately control a fast poll of the input status and TDT configuration.
+- **Check input and output status at a glance**: See the status of all ASI, Ethernet, VSB, QPSK, SDI, CVBS, analog audio, and AES/EBU inputs and all ASI and Ethernet outputs.
+- **Navigate the multiplex as a tree**: View the streams, services, and PIDs as a hierarchy, with alarm bubble-up from PID to service to stream.
+- **Inventory the unit**: View the unit type, product model, serial number, part number, software versions, redundancy and scrambling capabilities, and the number of inputs, outputs, processors, and HD/SD services supported by the unit.
+- **Control the polling load**: Switch between fast and slow polling for the whole element, and separately control fast polling of the input status and TDT configuration.
 
 ## Use Cases
 
@@ -26,7 +26,7 @@ This connector gives headend operators a single view of the unit's **inputs and 
 
 **Challenge**: In a multiplex with many services, a service that stops running or a PID whose bit rate collapses is easy to miss until a viewer complains.
 
-**Solution**: The connector alarms on the running state and bit rate of every service and on the bit rate and scrambling state of every PID, and the Overview tree bubbles these alarms up to the service and stream they belong to.
+**Solution**: The connector monitors the running state and bit rate of every service and the bit rate and scrambling state of every PID, and triggers alarms that bubble up through the Overview tree to the service and stream they belong to.
 
 **Benefit**: Operators see which stream, service, and PID is affected in one glance, without browsing the device.
 
