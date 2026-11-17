@@ -8549,6 +8549,9 @@
     topicUid: Connector_help_Rohde_Schwarz_SX8000_DTT
   - name: Rohde Schwarz TCE900 (System 9000)
     topicUid: Connector_help_Rohde_Schwarz_TCE900_(System_9000)
+    items:
+    - name: Rohde Schwarz TCE900 (System 9000) Technical
+      topicUid: Connector_help_Rohde_Schwarz_TCE900_(System_9000)_Technical
   - name: Rohde Schwarz THR9 FM Dual Drive
     topicUid: Connector_help_Rohde_Schwarz_THR9_FM_Dual_Drive
   - name: Rohde Schwarz THR9 FM N+1
