@@ -1,24 +1,15 @@
 ---
 uid: Connector_help_Evertz_7x00_General_Platform_Technical
+description: "Technical reference for the Evertz 7x00 General Platform connector, including chassis requirements, configuration, operation, and supported card details."
 ---
 
 # Evertz 7x00 General Platform
 
-The **Evertz 7x00 General Platform** connector is used to monitor and control an Evertz chassis containing different Evertz 7700/7800 series cards.
-
 ## About
 
+The **Evertz 7x00 General Platform** connector is used to monitor and control an Evertz chassis containing different Evertz 7700/7800 series cards.
+
 The chassis must include an **Evertz 7700-FC, Evertz 7800-FC, or Evertz 7801-FC** card in order to be functional. Data about the location of other cards is polled from this card. The Evertz 7700-FC/7800-FC/7801-FC is placed in slot 1; other cards are inserted into slots 2 to 15. A DVE will be created for each (supported) card. Data is polled via **SNMP**. Traps are supported to reduce the amount of polling. When a trap is received, the corresponding parameter is polled again to update its value.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x | Initial version. | No | Yes |
-| 1.0.1.x | Refactored version. | No | Yes |
-| 1.0.2.x | Based on 1.0.1.11. Output Stream Column in Output Stream Table and Send Trap Column in Demod Fault Table have been updated to display the correct information for 7780DM-LB card. **Old trend and alarm data will be lost for these tables.** | No | Yes |
-| 1.0.4.x | Based on 1.0.3.1. | No | Yes |
-| 1.0.5.x [SLC Main] | Based on 1.0.4.12. | No | Yes |
 
 ### Product Info
 
@@ -30,13 +21,13 @@ The chassis must include an **Evertz 7700-FC, Evertz 7800-FC, or Evertz 7801-FC*
 | 1.0.4.x   | Software Build: 2.7 Build 18 |
 | 1.0.5.x   | Software Build: 2.7 Build 18 |
 
-### Exported connectors
+### Exported Connectors
 
 Details about the supported cards can be found at the end of this document.
 
 | Exported Connector | Description |
 |--|--|
-| Evertz 7x00 General Platform - 7700R2X2-HD | Used for the 7700R2X2-HD module. |
+| [Evertz 7x00 General Platform - 7700R2X2-HD](xref:Connector_help_Evertz_7x00_General_Platform_-_7700R2X2-HD) | Used for the 7700R2X2-HD module. |
 | Evertz 7x00 General Platform - 7700DA7 | Used for the 7700DA7-HD and 7700DA7 types. |
 | Evertz 7x00 General Platform - SWPBRF7700 | Used for the SWRF87703, SWRF167703, SWRF16A7703, SWRF16B7703, SWRF8B7703 and SWRF47703 types. |
 | Evertz 7x00 General Platform - 7880IPASIIP | Used for the 7880IPASIIP module. |
@@ -67,18 +58,18 @@ Details about the supported cards can be found at the end of this document.
 | Evertz 7x00 General Platform - 7807LT2 | Used for the 7807LT2 module. |
 | Evertz 7x00 General Platform - 7707EO (DA2EOSD) | Used for the 7707EO module a.k.a. DA2EOSD (product name). |
 | Evertz 7x00 General Platform - 7707OE (DA2OESD) | Used for the 7707OE module a.k.a. DA2OESD (product name). |
-| Evertz 7x00 General Platform - 7746FSHD | User for the 7746FSxxxx modules. |
-| Evertz 7x00 General Platform - 7781DEC2MP2HD | Used for 7781DEC2MP2HD module. |
-| Evertz 7x00 General Platform - 7707VR8 | Used for 7707VR8 module. |
-| Evertz 7x00 General Platform - 7782DECH264 | Used for 7782DECH264 module. |
-| Evertz 7x00 General Platform - 7890MG | Used for 7890MG module. |
-| Evertz 7x00 General Platform - 7707VT4HS | User for 7707VT4HS module. |
-| Evertz 7x00 General Platform - 7707VT4 | Used for 7707VT4 module. |
-| Evertz 7x00 General Platform - 7707VR4HS | Used for 7707VR4HS module. |
-| Evertz 7x00 General Platform - ENC7882H264HDFC | Used for ENC7882H264HDFC module. |
-| [Evertz 7x00 General Platform - 7800R4X23G](xref:Connector_help_Evertz_7x00_General_Platform_-_7800R4X23G) | Used for 7800R4X23G module. |
+| Evertz 7x00 General Platform - 7746FSHD | Used for the 7746FSxxxx modules. |
+| Evertz 7x00 General Platform - 7781DEC2MP2HD | Used for the 7781DEC2MP2HD module. |
+| Evertz 7x00 General Platform - 7707VR8 | Used for the 7707VR8 module. |
+| Evertz 7x00 General Platform - 7782DECH264 | Used for the 7782DECH264 module. |
+| Evertz 7x00 General Platform - 7890MG | Used for the 7890MG module. |
+| Evertz 7x00 General Platform - 7707VT4HS | Used for the 7707VT4HS module. |
+| Evertz 7x00 General Platform - 7707VT4 | Used for the 7707VT4 module. |
+| Evertz 7x00 General Platform - 7707VR4HS | Used for the 7707VR4HS module. |
+| Evertz 7x00 General Platform - ENC7882H264HDFC | Used for the ENC7882H264HDFC module. |
+| [Evertz 7x00 General Platform - 7800R4X23G](xref:Connector_help_Evertz_7x00_General_Platform_-_7800R4X23G) | Used for the 7800R4X23G module. |
 | [Evertz 7x00 General Platform - 7812UDXD](xref:Connector_help_Evertz_7x00_General_Platform_-_7812UDXD) | Used for the 7812UDXD module. |
-| [Evertz 7x00 General Platform - 746FSEAES8HD](xref:Connector_help_Evertz_7x00_General_Platform_-_7746FSEAES8HD) | Used for the 746FS-EAES8-HD module. |
+| [Evertz 7x00 General Platform - 7746FSEAES8HD](xref:Connector_help_Evertz_7x00_General_Platform_-_7746FSEAES8HD) | Used for the 7746FS-EAES8-HD module. |
 | [Evertz 7x00 General platform - 7882DM-SAT](xref:Connector_help_Evertz_7x00_General_platform_-_7882DM-SAT) | Used for the 7882DM-SAT module. |
 | [Evertz 7x00 General Platform - 7707IFTA](xref:Connector_help_Evertz_7x00_General_Platform_-_7707IFTA) | Used for the 7707IFTA module - 7707LT card family. |
 | [Evertz 7x00 General Platform - 7707IFRA](xref:Connector_help_Evertz_7x00_General_Platform_-_7707IFRA) | Used for the 7707IFRA module - 7707RT card family. |
@@ -87,31 +78,26 @@ Details about the supported cards can be found at the end of this document.
 
 ### Connections
 
-#### SNMP main connection
+#### SNMP Connection - Main
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-SNMP Connection:
+This connector uses an SNMP connection and requires the following input during element creation:
 
 - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
-
-SNMP Settings:
-
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.
 - **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 ## How to Use
 
-This connector displays information about the Frame Controller (**Evertz 7700-FC/Evertz 7800-FC**) and the inserted cards.
+This connector displays information about the Frame Controller (**Evertz 7700-FC/7800-FC/7801-FC**) and the inserted cards.
 
 ### Input Cards
 
-This page lists all the modules embedded in the chassis and their corresponding slots. If cards have been changed, press the **Refresh Cards** button to see the changes immediately. If you activate the **Automatically Delete Offline Rows** toggle button, cards that get removed from the frame will not be moved to the Input Cards \[DEL\] page.
+This page lists all the modules embedded in the chassis and their corresponding slots. If cards have been changed, use the **Refresh Cards** button to see the changes immediately. If you activate the **Automatically Delete Offline Rows** toggle button, cards that get removed from the frame will not be moved to the Input Cards \[DEL\] page.
 
 ### Traps Logging
 
-The connector can log traps directly into the database for all cards that have the **Log Traps** column set to enabled in the **Input Cards** table. These rows will **expire after one year**.
+The connector can log traps directly into the database for all cards that have the **Log Traps** column set to *Enabled* in the **Input Cards** table. These rows will **expire after one year**.
 
 ### General
 
@@ -121,7 +107,7 @@ This page displays general parameters for the **Evertz 7700-FC/Evertz 7800-FC** 
 
 On this page, you can configure the **SNMP** agent: the **trap** destination, the communities, etc.
 
-### License (range 1.0.2.x only)
+### License (Range 1.0.2.x Only)
 
 This page displays information and settings related to the licensing for the different supported cards.
 
@@ -149,7 +135,7 @@ The **License** page also contains the **Enforce License Check button**, which e
 
 Finally, the **Refresh button** can be used to update the contents of the Card License Table with the contents from the source file.
 
-## Supported cards
+## Supported Cards
 
 ### Evertz 7700R2X2-HD
 
@@ -181,7 +167,7 @@ The 7703DA-RF active splitters provide amplification and distribution of RF sign
 
 ### Evertz 7880IRD-H264
 
-The 7780IRD-H264-HD-LB is a hardware-based solution for the demodulating of digital DVB-S/S2 satellite signals and the decoding of these signals to SD or HD-SDI.
+The 7780IRD-H264-HD-LB is a hardware-based solution for demodulating digital DVB-S/S2 satellite signals and decoding these signals to SD or HD-SDI.
 
 ### Evertz 7700DA6
 
@@ -338,11 +324,11 @@ The 7890MG-10GE2 is part of the Evertz family of IP Gateway products, which use 
 
 ### Evertz 7707VT4HS
 
-Single-card TDM multiplexer for two HD-SDI signals, or one HD-SDI signal and three SDI/DVB-ASI signals, or four SDI/DVB-ASI signals.
+This is a single-card TDM multiplexer for two HD-SDI signals, or one HD-SDI signal and three SDI/DVB-ASI signals, or four SDI/DVB-ASI signals.
 
 ### Evertz 7707VT4
 
-Single-card TDM multiplexer for four synchronous or asynchronous 270 Mb/s SDI, SDTi or DVB-ASI video signals.
+This is a single-card TDM multiplexer for four synchronous or asynchronous 270 Mb/s SDI, SDTi or DVB-ASI video signals.
 
 ### Evertz ENC7882H264HDFC
 
@@ -363,4 +349,3 @@ The 7707IFTA is a VistaLink Pro capable fiber-optic transmitter for 70/140 MHz I
 ### Evertz 7707IFRA
 
 The 7707IFRA is a VistaLink Pro capable fiber-optic receiver for 70/140 MHz IF signals. The 7707IFRA accepts a fiber-optic input from the companion 7707IFTA and provides two 70/140 MHz IF output signals. Monitoring and control of card status and parameters is provided locally at the card edge and remotely via VistaLink Pro capability.
-

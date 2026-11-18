@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Evertz_7x00_General_Platform
-description: Monitor and control an Evertz 7700/7800/7801 chassis and its inserted cards, with SNMP-based polling and trap support.
+description: "Monitor and control an Evertz 7700/7800/7801 chassis and its inserted cards, with SNMP-based polling and trap support."
 ---
 
 # Evertz 7x00 General Platform
@@ -23,7 +23,7 @@ The **Evertz 7x00 General Platform** connector lets you monitor and control an E
 
 ## Use Cases
 
-### Use Case 1
+### Automatic Card Discovery
 
 **Challenge**: Broadcast facilities running large Evertz 7700/7800 chassis need a single, reliable view of dozens of interchangeable cards without manually configuring monitoring for every card type.
 
@@ -31,7 +31,7 @@ The **Evertz 7x00 General Platform** connector lets you monitor and control an E
 
 **Benefit**: Reduced configuration effort and faster onboarding of new or replaced cards, with monitoring available as soon as a card is detected.
 
-### Use Case 2
+### Efficient Trap-Based Polling
 
 **Challenge**: Continuously polling every parameter on every card in a busy frame can create unnecessary network and system load.
 
@@ -39,7 +39,7 @@ The **Evertz 7x00 General Platform** connector lets you monitor and control an E
 
 **Benefit**: Lower polling overhead while still keeping parameter values accurate and up to date in near real time.
 
-### Use Case 3
+### Chassis Health Monitoring
 
 **Challenge**: Operators need to quickly assess the overall health of a chassis, including environmental conditions and the status of individual cards.
 
@@ -50,4 +50,4 @@ The **Evertz 7x00 General Platform** connector lets you monitor and control an E
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Amazon_AWS_CloudWatch_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_7x00_General_Platform_Technical).
