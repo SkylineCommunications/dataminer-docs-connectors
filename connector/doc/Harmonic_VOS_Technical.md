@@ -1,8 +1,11 @@
 ---
 uid: Connector_help_Harmonic_VOS_Technical
+description: "Learn how to configure and use the Harmonic VOS connector, including element setup, service configuration, source monitoring, and system status."
 ---
 
 # Harmonic VOS
+
+## About
 
 > [!IMPORTANT]
 >
@@ -14,13 +17,11 @@ uid: Connector_help_Harmonic_VOS_Technical
 >   - /vos-api/platform-config/v1/rfStatistics
 >   - /vos-api/platform-config/v1/rfSettings
 
-## About
-
 ## Configuration
 
 ### Connections
 
-#### HTTP Main Connection
+#### HTTP Connection - Main
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
