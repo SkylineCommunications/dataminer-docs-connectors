@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Radeus_Labs_ACU_8200
+description: "Learn how to monitor and configure the Radeus Labs ACU 8200, including antenna position, receiver performance, device status, and motion settings."
 ---
 
 # Radeus Labs ACU 8200
@@ -20,7 +21,7 @@ With this connector, operators get a clear, real-time view of antenna positionin
 
 ## Use Cases
 
-### Use Case 1
+### Antenna Position and Receiver Monitoring
 
 **Challenge**: Operators of satellite teleports with multiple antennas need to know at any moment whether each antenna is correctly pointed and whether the received signal is healthy, without visiting the antenna site.
 
@@ -28,7 +29,7 @@ With this connector, operators get a clear, real-time view of antenna positionin
 
 **Benefit**: Enables quick detection of pointing or signal issues and proactive action before service is affected.
 
-### Use Case 2
+### Remote Fault Response and Reconfiguration
 
 **Challenge**: Operators need to react quickly to ACU faults and limit conditions, and adjust antenna targets and motion settings remotely.
 

@@ -3847,7 +3847,9 @@
     topicUid: Connector_help_Evertz_7891MG_-_Card
   - name: Evertz 7x00 General Platform
     topicUid: Connector_help_Evertz_7x00_General_Platform
-    items: 
+    items:
+      - name: Evertz 7x00 General Platform Technical
+        topicUid: Connector_help_Evertz_7x00_General_Platform_Technical
       - name: Evertz 7x00 General Platform - 7700ACO2HD
         topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700ACO2HD
       - name: Evertz 7x00 General Platform - 7700ACOHD
@@ -8217,6 +8219,9 @@
       topicUid: Connector_help_Radeus_Labs_3500_BTR_Technical
   - name: Radeus Labs ACU 8200
     topicUid: Connector_help_Radeus_Labs_ACU_8200
+    items:
+    - name: Radeus Labs ACU 8200 Technical
+      topicUid: Connector_help_Radeus_Labs_ACU_8200_Technical
   - name: Radeus Labs ACU DL9000
     topicUid: Connector_help_Radeus_Labs_ACU_DL9000
 - name: Raisecom
