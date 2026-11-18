@@ -5,17 +5,12 @@ description: "Monitor a Papouch TH2E device over HTTP to view temperature, humid
 
 # Papouch T2HE
 
+## About
+
 The **Papouch T2HE** connector uses **HTTP** to monitor the [Papouch TH2E Ethernet thermometer and hygrometer](https://en.papouch.com/th2e-ethernet-thermometer-and-hygrometer-p4825/?vid=2374). Depending on the connected sensor, the device can measure temperature and humidity, and calculate the dew point.
 
 > [!NOTE]
 > The device is named **Papouch TH2E**, not T2HE. While **T2HE** is the established name of the DataMiner connector in the Catalog, it works correctly with the TH2E device.
-
-## About
-
-Depending on the sensor connected to it, the Papouch **TH2E** is able to measure temperature and humidity, and calculate the dew point. The **Papouch T2HE** connector is an **HTTP** connector that is used to monitor this device.
-
-> [!NOTE]
-> The supported Papouch device is the **TH2E**. While **T2HE** is the established name of the DataMiner connector in the Catalog, it works correctly with the TH2E device.
 
 ## Configuration
 
