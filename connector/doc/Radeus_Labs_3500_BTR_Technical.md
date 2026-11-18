@@ -36,7 +36,7 @@ SERIAL CONNECTION:
 
   - For a serial port of the DataMiner Agent, select the COM port and use the following settings:
 
-    - **Baudrate**: The baud rate configured on the front panel of the receiver (*1200*, *2400*, *4800*, *9600*, or *19200*).
+    - **Baudrate**: The baud rate configured on the front panel of the receiver (*1200*, *2400*, *4800*, *9600*, or *19200*). The default is *9600*.
     - **Databits**: *8*
     - **Stopbits**: *1*
     - **Parity**: *No*
@@ -45,15 +45,11 @@ SERIAL CONNECTION:
 - **Bus address**:
 
   - **RS-232** or **Ethernet**: Leave the bus address empty.
-  - **RS-485**: Enter the unit address configured on the receiver as a decimal number. For example, enter *70* for address 0x46.
+  - **RS-485**: Enter the unit address configured on the receiver as a decimal number. For example, enter *70* for address 0x46. The addresses *0*, *10*, and *13* cannot be used. Replies from other units on the bus are ignored.
 
 ### Initialization
 
 No additional configuration is needed after the element is created. To control the receiver from DataMiner, set it to **Remote** mode with the **L/R** button on the front panel.
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
 
@@ -61,20 +57,20 @@ The web interface is only accessible when the client machine has network access 
 
 This page shows the main receiver status:
 
-- **Receive Frequency** and **Reference Level**: The frequency the receiver is tuned to, and the reference level for the signal strength output.
-- **Signal Strength Voltage**: The DC output voltage proportional to the received signal level. This parameter can be trended.
+- **Receive Frequency** and **Reference Level**: The frequency the receiver is tuned to, and the RF input level that gives 7.5 V on the signal strength output. Both parameters are trended.
+- **Signal Strength Voltage**: The DC output voltage (0 to 10 V) proportional to the received signal level. This parameter is trended and can be alarmed, but it has no default thresholds, because the normal level depends on the reference level and the DAC slope. Set the thresholds per site in the alarm template.
 - **Carrier Lock**: *OK* when the receiver is locked on to the carrier, *Fail* otherwise. *Fail* raises a critical alarm.
 - **AFC Status**: The automatic frequency control status. *High* and *Low* raise a warning, and *Alarm* raises a critical alarm.
 - **RF Input Selection**: The RF input (1 to 4) in use.
 - **Last Device Error**: The last command error returned by the receiver, with a timestamp, for example *FREQ ERROR* or *REF ERROR*.
 
-The receiver sets the frequency and the reference level with a single command. When you change one of them, the connector sends it together with the current value of the other one. Before sending them, the connector checks that the frequency is within one of the supported bands, and that the reference level is valid for that band:
+The receiver sets the frequency and the reference level with a single command. When you change one of them, the connector sends it together with the value of the other one reported by the receiver, or with the value you set just before if the receiver has not answered that set yet. Before sending them, the connector checks that the frequency is within one of the supported bands, and that the reference level is valid for that band:
 
 - **L-band**: 930 to 2300 MHz, with a reference level from -100 to -40 dBm.
 - **C-band**: 3400 to 4200 MHz, with a reference level from -90 to -30 dBm.
 - **Ku-band**: 10700 to 12750 MHz, with a reference level from -90 to -30 dBm.
 
-The frequency has a 1 kHz resolution, and the reference level has a 0.5 dB resolution. Values outside these ranges are logged in the element log and are not sent to the receiver. A frequency outside the band of your receiver model is rejected by the receiver itself, and is shown in **Last Device Error**.
+The frequency has a 1 kHz resolution, and the reference level has a 0.5 dB resolution. Once the **Model** is known, the connector also rejects a frequency outside the band of your receiver model, e.g., a C-band frequency on a 3500-L. Rejected values are not sent to the receiver: a pop-up window shows the reason, which is also logged in the element log.
 
 ### Accu-Trac Page
 
@@ -88,7 +84,13 @@ As with the frequency and reference level, the search width and the delay are se
 
 ### Configuration Page
 
-This page contains the receiver settings: **5G Filter Mode**, **FFT AFC**, **FFT LPF Bandwidth**, **Analog Output Slope**, and **FFT Pre-Detection Bandwidth**.
+This page contains the receiver settings. The parameter names match the front panel of the receiver:
+
+- **FFT AFC**: *Enabled* selects AFC mode and *Disabled* selects MFC mode (front panel AFC MFC selection). AFC mode is recommended in most cases.
+- **FFT Average**: The low-pass filter bandwidth of the signal strength output (*Disabled*, *0.5 Hz*, or *5 Hz*).
+- **FFT Width**: The FFT pre-detection bandwidth, from *3* to *280 kHz*. A narrow width rejects more interference, and a wide width tolerates more frequency drift.
+- **5G Filter Mode**: Enables or disables the 5G filter.
+- **DAC Slope**: The scaling of the signal strength output in V/dB (*0.25*, *0.50*, or *1.00 V/dB*).
 
 When the receiver does not report a valid value for a setting, for example because the setting does not apply to the current receiver configuration, the connector shows the parameter as *Not Available*.
 
@@ -98,12 +100,8 @@ This page shows the **Model**, **Firmware Version**, **Control Mode**, **Active 
 
 **Control Mode** raises a warning when the receiver is in *Local* mode, because changes from DataMiner may then not be applied.
 
-### Web Interface Page
-
-This page shows the configuration web page of the Ethernet port of the receiver. It is only available when the element connects directly to the Ethernet port of the receiver, not when it connects through a serial-to-IP converter.
-
 ## Notes
 
 - After a setting is changed, the connector reads it back from the receiver, so the displayed value always reflects the receiver.
-- If the receiver rejects a command, the error is shown in **Last Device Error**, and the previous value is restored after the next polling.
+- If the receiver rejects a command, the error is shown in **Last Device Error**, and the displayed value does not change.
 - The baud rate, the active interface, and the RS-485 address cannot be changed remotely.

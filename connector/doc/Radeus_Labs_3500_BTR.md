@@ -17,11 +17,11 @@ The connector communicates with the receiver through its remote monitoring and c
 
 - **Beacon level and lock monitoring**: The connector shows the signal strength voltage, the carrier lock, and the AFC status, and raises alarms when the receiver loses its lock or the AFC leaves its normal range.
 
-- **Remote tuning**: Operators can set the receive frequency and the reference level from DataMiner. The connector checks the values against the frequency band of the receiver before it sends them.
+- **Remote tuning**: Operators can set the receive frequency and the reference level from DataMiner. The connector checks the values against the frequency band of the receiver before it sends them, and shows the reason in a pop-up window when it rejects a value.
 
 - **Accu-Trac monitoring and control**: The connector shows the Accu-Trac state and the current frequency offset, and lets operators configure the search width and delay.
 
-- **Receiver configuration**: The 5G filter mode, FFT AFC, FFT low-pass filter bandwidth, analog output slope, FFT pre-detection bandwidth, and RF input can be viewed and changed remotely.
+- **Receiver configuration**: The 5G filter mode, FFT AFC, FFT average, DAC slope, FFT width, and RF input can be viewed and changed remotely. The parameter names match the front panel of the receiver.
 
 - **Device error reporting**: Command errors returned by the receiver are shown with a timestamp, so operators can see why a change was rejected.
 
@@ -49,7 +49,7 @@ The connector communicates with the receiver through its remote monitoring and c
 
 **Challenge**: Rain fade, antenna misalignment, and equipment faults all show up as changes in the received beacon level, but they are hard to spot without history.
 
-**Solution**: The signal strength voltage and the Accu-Trac offset can be trended and alarmed in DataMiner.
+**Solution**: The connector trends the signal strength voltage, the Accu-Trac offset, the receive frequency, and the reference level. The signal strength voltage can also be alarmed, with thresholds set per site in the alarm template.
 
 **Benefit**: Operators can correlate level drops with weather and maintenance, and spot slow degradation early.
 

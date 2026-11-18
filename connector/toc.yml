@@ -10828,6 +10828,11 @@
     topicUid: Connector_help_Tetronik_DAKS_-_Department
 - name: Thales
   items:
+  - name: Thales Amber
+    topicUid: Connector_help_Thales_Amber
+    items:
+    - name: Thales Amber Technical
+      topicUid: Connector_help_Thales_Amber_Technical
   - name: Thales S7HP
     topicUid: Connector_help_Thales_S7HP
     items:
