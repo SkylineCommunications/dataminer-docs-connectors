@@ -17,13 +17,13 @@ The **Techex MWCore** connector integrates the TXCore platform with DataMiner. T
 
 - **TXEdge monitoring**: Track the state of all TXEdges or a filtered subset, including addresses, licenses, number of streams, and bandwidth usage.
 
-- **Real-time telemetry**: Receive bit rates, missing packets, source and output states, and ETR 290 messages asynchronously through the statistics connection, so that alarms and trends reflect the live situation.
+- **Real-time telemetry**: View bit rates, missing packets, source and output states, and ETR 290 messages, received asynchronously through the statistics connection so that alarms and trends reflect the live situation.
 
 - **Stream, source, and output configuration**: Add, edit, and delete channels, streams, sources, and outputs directly from DataMiner, and clear statistics for a selected stream, source, or output.
 
 - **Connection redundancy**: Specify additional TXCore nodes in the Connections table so that DataMiner automatically fails over when the primary node becomes unavailable.
 
-- **Automation and SRM integration**: Use the InterApp library and the SRM resource tables to orchestrate streams, sources, outputs, and ports from automation scripts and SRM solutions.
+- **Automation and SRM integration**: Orchestrate streams, sources, outputs, and ports from automation scripts and SRM solutions.
 
 ## Use Cases
 

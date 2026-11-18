@@ -37,7 +37,7 @@ Prior to range 1.0.4.x, this connector also uses a redundant HTTP connection and
 - **IP port**: The IP port of the secondary TXCore node (default: 443).
 - **Bus address**: If the proxy server has to be bypassed, specify *BypassProxy*.
 
-This redundant connection is used for the regular polling when the main connection fails. From range 1.0.4.x onwards, this connection is no longer used. Instead, you can specify additional TXCore nodes of the same cluster in the **Connections** table on the **General** page (see [Redundancy](#redundancy)).
+This redundant connection is used for the regular polling when the main connection fails. From range 1.0.4.x onward, this connection is no longer used. Instead, you can specify additional TXCore nodes of the same cluster in the **Connections** table on the **General** page (see [Redundancy](#redundancy)).
 
 ### Initialization
 
@@ -56,7 +56,7 @@ To enable the statistics connection, configure the following parameters on the *
 
 ### Redundancy
 
-From range 1.0.4.x onwards, a **Connections** table is available on the **General** page, where you can specify additional TXCore nodes for DataMiner to automatically connect to if the primary connection becomes unavailable. The first entry (with priority 1) is added automatically and always matches the connection defined in the element editor.
+From range 1.0.4.x onward, a **Connections** table is available on the **General** page, where you can specify additional TXCore nodes for DataMiner to automatically connect to if the primary connection becomes unavailable. The first entry (with priority 1) is added automatically and always matches the connection defined in the element editor.
 
 ### Web Interface
 
@@ -70,7 +70,7 @@ The Techex MWCore connector offers management and monitoring capabilities for th
 
 Configuration settings are retrieved through a polling mechanism that integrates with the TXCore REST API (documented at `<txcore-ip-address>/doc/`). Additionally, a socket connection can be established with each TXCore node to asynchronously receive telemetry data about the attached TXEdges. This connection uses client certificate authentication.
 
-The connector also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Techex_MWCore_ConnectorAPI), which enables a running element to communicate with other DataMiner elements and Automation scripts. This library supports create, read, update, and delete actions for streams, sources, and outputs.
+The connector also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Techex_MWCore_ConnectorAPI), which enables a running element to communicate with other DataMiner elements and automation scripts. This library supports create, read, update, and delete actions for streams, sources, and outputs.
 
 Below you can find more information about the different data pages available in the element.
 
