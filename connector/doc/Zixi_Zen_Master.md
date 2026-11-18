@@ -1,49 +1,39 @@
 ---
 uid: Connector_help_Zixi_Zen_Master
+description: "Monitor and manage Zixi Zen Master live video networks in DataMiner, tracking broadcasters, feeders, receivers, sources, channels, targets, and events."
 ---
 
 # Zixi Zen Master
 
-The Zixi Zen Master is a platform to monitor and control live video orchestration and telemetry. It provides a centralized overview of the Zixi devices.
-
 ## About
 
-### Version Info
+Zixi Zen Master is the central control point for a Zixi live video delivery network. This connector brings the health and configuration of that network into DataMiner, so operators can follow every video stream, and the equipment carrying it, from a single place.
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x [Obsolete] | Initial version. | - | - |
-| 1.0.1.x | DCF interfaces enabled. | 1.0.0.1 | DCF interfaces are now available for this connector. |
-| 1.1.0.x | DCF interfaces enabled. Supports Zixi Zen API version 1.0.0. | 1.0.1.4 | Table modifications have been implemented to adapt to the new API. |
-| 1.1.1.x [SLC Main] | DCF interfaces enabled. Supports Zixi Zen API version 1.0.0. | 1.1.0.6 | General status parameters are now discrete strings. |
+## Key Features
 
-### Product Info
+- **One view of your entire video delivery network**: See broadcasters, feeders, receivers, sources, channels, and targets side by side, instead of switching between tools.
 
-| Range     | Supported Firmware        |
-|-----------|---------------------------|
-| 1.0.0.x   | 2019 c Zixi LLC.          |
-| 1.0.1.x   | 2019 c Zixi LLC.          |
-| 1.1.0.x   | Software version 22.06.01 |
-| 1.1.1.x   | Software version 22.06.01 |
+- **Complete visibility of your streams**: Follow each stream from its source, through the channels that carry it, to the targets that receive it.
 
-### System Info
+- **Built-in event tracking**: Keep a history of events reported by Zen Master, so you can quickly understand what happened and when.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.1.1.x   | Yes                 | Yes                     | -                     | -                       |
+## Use Case: Monitoring Live Video Delivery from One Dashboard
 
-## Configuration
+**Challenge**: Live video delivery relies on many connected components. Operators often have to check each one separately to find out where a problem occurs.
 
-### Connections
+**Solution**: The connector collects the status of all broadcasters, feeders, receivers, sources, channels, and targets in DataMiner, where they can be shown on dashboards and in alarm views.
 
-#### HTTP Main Connection
+**Benefit**: Operators spot issues faster, find the affected part of the delivery chain sooner, and reduce the time that viewers are impacted.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+## Technical Reference
 
-HTTP CONNECTION:
+### Prerequisites
+
+- **A Zen Master account** is needed for the connector to access the system. Either an API key or a username and password can be used.
+
+### Connection
+
+When you create a DataMiner element with this connector, configure the HTTP connection as follows:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *443*).
@@ -51,14 +41,4 @@ HTTP CONNECTION:
 
 ### Initialization
 
-Before the API can be polled, you need to specify the **Username** and **Password** on the **Configuration** page. With the **Connect** button, you can enforce the connection setup.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
-
-The first pages display **Broadcasters**, **Feeders**, and **Receivers** in a tree view.
-
-The remaining pages (**Channels**, **Targets**, **Sources**, and **Events**) display information in a table.
+Before the API can be polled, you need to specify the **Username** and **Password** on the **Configuration** page. Click the **Connect** button to trigger the connection setup.

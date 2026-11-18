@@ -4,164 +4,60 @@ uid: Connector_help_Touchstream_StreamCAM
 
 # Touchstream StreamCAM
 
-Touchstream StreamCAM is a cloud-based stream monitoring solution.
-
 ## About
 
-This connector uses an HTTPS connection to retrieve data from Touchstream StreamCAM, allowing users to monitor and configure streams.
+The **Touchstream StreamCAM** connector provides HTTPS-based integration between DataMiner and the Touchstream StreamCAM cloud stream monitoring platform. It enables DataMiner to monitor the health and availability of live and VOD streams, to automatically provision monitoring for short-lived events, and to schedule planned outages, all from within DataMiner dashboards and low-code apps.
 
-### Version Info
+## Key Features
 
-| Range     | Description                                                                                  | DCF Integration | Cassandra Compliant |
-|----------------------|--------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                                                                                  | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | Restructured Live Status Detail table (2200) to support unlimited Stream Status Detail elements. | No                  | Yes                     |
+- **Dynamic stream provisioning**: Monitoring for an event is created automatically from a reusable **template**. When an event or channel is received, the connector expands the assigned template into the full set of streams to monitor, it provisions them in StreamCAM, and then it deactivates and cleans them up when the event ends. Provisioning can be driven entirely from an external system, such as an automation script or a booking platform, so no manual configuration is needed per event.
+- **Cloud-based stream monitoring**: Retrieves live stream status, per-bitrate detail, and manifest health from the Touchstream StreamCAM API over HTTPS.
+- **Availability and reliability metrics**: Exposes availability percentages, outage counts, outage duration, MTBF, and MTTR for any configured time period.
+- **End-to-end provisioning**: Allows you to add, edit, and delete channels, products, stream types and streams directly from DataMiner, without switching to the StreamCAM web interface.
+- **VOD monitoring with selective polling**: Monitors VOD status, detailed VOD status and manifest trawl failures, and lets you disable VOD polling for data sources that do not support it.
+- **Outage and event scheduling**: Schedules planned outages and events against one or more streams, with a tree view showing the impacted streams.
 
-### Product Info
+## Use Cases
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | V5                          |
-| 1.0.1.x          | API V9                      |
+### Unified Stream Health Visibility
 
-## Installation and configuration
+**Challenge**: Stream health data lived in the StreamCAM portal, separate from the rest of the delivery chain monitored in DataMiner.
 
-### Creation
+**Solution**: Use the StreamCAM connector to bring live status, per-bitrate detail, and manifest health into DataMiner alongside encoders, packagers, and CDN data.
 
-#### HTTP Main Connection
+**Benefit**: A single operational view of the full delivery chain, so operators can correlate a stream failure with the upstream component that caused it.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+### Automated Availability Reporting
 
-HTTP CONNECTION:
+**Challenge**: Reporting on stream availability required manually exporting statistics from the platform for each reporting period.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination. The default value is *443*.
-- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
+**Solution**: The connector exposes availability, outage count, outage duration, MTBF, and MTTR for a configurable time period as trended DataMiner parameters.
 
-### Configuration of authentication
+**Benefit**: SLA and availability reporting is automated and always current, and the same data can feed DataMiner dashboards and reports.
 
-To start using this connector, you need to specify the **Authorization Token** and **X-TS-ID Token** on the **General** page.
+### Template-Based Event Provisioning
 
-## Usage
+**Challenge**: For every short-lived event, the streams had to be manually configured for monitoring before the event and then torn down afterwards, which did not scale and left orphaned streams behind.
 
-### General
+**Solution**: Define a template once per event type, then have the booking or scheduling system hand the connector an event with its assigned template. The connector creates the streams, tracks them for the duration of the event, and deactivates and removes them automatically when it ends.
 
-See "Configuration of authentication" section above.
+**Benefit**: Event monitoring is provisioned in seconds with no manual setup, coverage is consistent across events of the same type, and stale streams do not accumulate.
 
-### Live Overview
+### Planned Outages and In-Element Provisioning
 
-On this page, the **Status Overview** table displays a high-level overview of all production streams. The table contains the following information:
+**Challenge**: Planned maintenance on a stream generated alarm noise, and provisioning changes required work in a separate portal.
 
-- **Product**: The name of the streaming product.
-- **Format**: The stream format.
-- **Channel**: The name of the stream channel.
-- **Location**: The POP location that is monitoring the stream.
-- **Status:** The percentage of successful monitoring results for the last 30 measurements.
-- **Current Status:** The current status of the stream.
-- **Average Speed:** The stream average speed.
-- **Max Speed:** The stream maximum speed.
+**Solution**: Operators can schedule planned outages and manage channels, products, stream types, and streams straight from the DataMiner element.
 
-### Live Status Detail
+**Benefit**: Fewer false alarms during maintenance windows and a single provisioning workflow, reducing context switching and configuration errors.
 
-This page contains the **Status Detail** table. This table is similar to the **Status Overview** table, but breaks each stream down further, displaying the following information:
+## Technical Reference
 
-- **Product**
-- **Format**
-- **Channel**
-- **Manifest Status**: The status of the call to obtain the stream manifest.
-- **BR1 - BR11 Speed**: The status of up to 11 individual bitrates.
+### Prerequisites
 
-In the **1.0.1.x** range, the **Live Status Detail** table contains more rows than in the 1.0.0.x range, because the status details are implemented by row (instead of by column). The columns are also adjusted accordingly.
+- **Touchstream StreamCAM API V9** is required for the current connector range. Earlier connector ranges target API V5.
+- **API credentials**: A valid **authorization token** and **X-TS-ID token** are required for authentication.
+- **Network access**: The DataMiner Agent must be able to reach the StreamCAM cloud endpoint over HTTPS (port 443).
 
-### Stream Availability
-
-This page displays the **Stream Availability** table, with availability statistics for a particular time period. The table contains the following information:
-
-- **Product**
-- **Format**
-- **Channel**
-- **CDN**
-- **Availability**: The availability as a percentage of time for the specified time period.
-- **Outage Count**: The number of outage records created for the stream in the specified time period.
-- **Outage Duration**: The total amount of time for all outage records in the specified time period.
-- **MTBF**: The Mean Time Between Failures for the stream in the specified time period.
-- **MTTR**: The Mean Time to Repair for the stream in the specified time period.
-
-Via the **Config Time Period** page button, you can access a subpage where you can specify the time frame for which stream availability statistics should be displayed.
-
-### Channels
-
-This page contains the **Channels** table, which displays the following information:
-
-- **ID**: The channel identifier.
-- **Name**: The channel name.
-- **Category**: The chosen category.
-- **Default APP**: The default app.
-
-It is possible to add, edit or delete a channel in the table. To add a channel, click the **Add Channel** page button, specify the **ID**, **Name** and **Category** of the channel, and click the **Add Channel** button.
-
-### Products
-
-This page contains the **Products** table, which displays the **Name** of each product as well as the **Default APP**.
-
-It is possible to add, edit or delete a product in the table. To add a product, click the **Add Product** page button, specify the name and click the **Add Product** button.
-
-### Stream Types
-
-This page contains the **Stream** **Types** table, which displays the following information:
-
-- **Product**
-- **Format**
-- **CDN**
-- **Status**
-
-It is possible to add, edit or delete a stream type in the table. To add a stream type, click the **Add** **Stream** **Type** page button, specify the **Product**, **Format** and **CDN**, and click the **Add Stream Type** button.
-
-### Streams
-
-This page contains the **Streams** table, which displays the following information:
-
-- **Channel**
-- **Stream Type**
-- **Manifest URL**
-- **Status**
-- **Media Format**
-
-It is possible to add, edit or delete a stream in the table. To add a stream, click the **Add Stream** page button, specify the **Channel**, **Stream Type**, **Manifest URL** and **Media Format**, and click the **Add Stream** button.
-
-### VOD Status / Detailed VOD Status / Manifest Trawl - Failed Assets
-
-These three pages apply to data sources that have VOD services.
-
-In the **1.0.1.x** range of the connector, you can **enable/disable** VOD-related data polling using the **VOD Polling** toggle button. In case the data source does not support VOD, disabling the polling will help to prevent the element from going into timeout (404 NOT FOUND status).
-
-### Planned Outages
-
-This page allows you to schedule an outage for one or more streams.
-
-A **tree view** displays the planned outages information. The tables that are used to generate the tree view are located on the **Planned Outage Tables** subpage.
-
-The tree view contains the following information:
-
-- **Change Request**
-- **Description**
-- **Start**: The start time of the planned outage.
-- **End**: The end time of the planned outage.
-- **Streams**: The streams that are available to be added to this planned outage.
-- **Impacted Streams**: The selected impacted streams.
-
-### Event Scheduler
-
-This page displays a **tree view** that allows you to edit or delete an event scheduler. The tree view contains the following information:
-
-- **Description**
-- **Start**
-- **End**
-- **Type**
-- **Status**
-- **Streams**
-- **Impacted Streams**
-
-### Web Interface
-
-This page displays the Touchstream StreamCAM web interface. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+> [!NOTE]
+> For detailed technical information about the connector, refer to our [technical documentation](xref:Connector_help_Touchstream_StreamCAM_Technical).

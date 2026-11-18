@@ -6,7 +6,7 @@ uid: Connector_help_Huawei_MA5800-MA5633
 
 This is an SNMP protocol for the Huawei MA5633 device and Huawei MA5800.
 
-The Huawei MA5633 (CMC) is a D-CCAP (distributed converged cable access platform) device that makes it possible to provide broadband and TV to cable modems through a cable network. The device is always linked to the Huawei MA580 (OLT) hardware based on GPON fiber links. This specific configuration makes it possible to push the fiber deeper into the network, making it easier to meet the increasing bandwidth demands. A typical CMC device can serve up to 1024 CMs. The MA5633 (CMC) has no embedded SNMP agent and therefore the MA5800 acts as a gateway to retrieve the information managed by every single CMC attached to the OLT.
+The Huawei MA5633 (CMC) is a D-CCAP (distributed converged cable access platform) device that makes it possible to provide broadband and TV to cable modems through a cable network. The device is always linked to the Huawei MA5800 (OLT) hardware based on GPON fiber links. This specific configuration makes it possible to push the fiber deeper into the network, making it easier to meet the increasing bandwidth demands. A typical CMC device can serve up to 1024 CMs. The MA5633 (CMC) has no embedded SNMP agent and therefore the MA5800 acts as a gateway to retrieve the information managed by every single CMC attached to the OLT.
 
 This connector is designed to retrieve information from the MA5633, including the network topology, which another component using a CPE manager protocol can reuse. The connector will also configure the Target Address table, so the traps are sent to the correct interface.
 

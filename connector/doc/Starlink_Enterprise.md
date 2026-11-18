@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Starlink_Enterprise
+description: "Monitor and manage Starlink devices in DataMiner via the Telemetry and Management APIs, tracking user terminals, data usage, and service line metrics."
 ---
 
 # Starlink Enterprise
@@ -34,7 +35,10 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 - **Simulation mode**: Replicate real-world scenarios using a simulation extension with built-in logic based on mock accounts and user terminals.
 
-- **User terminal dynamic virtual elements**: Use separate child elements (DVE) to represent the different user terminals, allowing you to view and monitor their data separately. The DVEs will get created automatically using the [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) connector, which gets exported by this connector.
+- **Dynamic virtual elements**: Use separate child elements (DVEs) to represent the different user terminals or service groups, allowing you to view and monitor their data separately. The DVEs will get created automatically using the following connectors, which are exported by this connector:
+
+  - [Starlink Enterprise - Service Group](xref:Connector_help_Starlink_Enterprise_-_Service_Group)
+  - [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal)
 
 - **Ticketing system integration**: Export a CSV file for customer data elements to ingest for ticketing. This CSV file contains basic info about all terminals with valid service lines.
 
@@ -65,6 +69,14 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 **Solution**: Ability to create a dynamic virtual element per user terminal.
 
 **Benefit**: Monitor the KPIs of the most relevant terminals only.
+
+### Service Group DVEs
+
+**Challenge**: Visualizing information from a subset of user terminals, assigned to different accounts, in a low-code app without client-side filtering.
+
+**Solution**: Ability to create a dynamic virtual element per service group and to assign any user terminal to that group.
+
+**Benefit**: Use a low-code app with server-side filtering by linking a service group dynamic virtual element to it, instead of the parent Starlink Enterprise element.
 
 ### Load Balancing
 

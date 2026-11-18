@@ -1,49 +1,68 @@
 ---
 uid: Connector_help_Fortinet_FortiManager
+description: "Explore key features, use cases, and technical details of the Fortinet FortiManager connector for monitoring security infrastructure using DataMiner."
 ---
 
 # Fortinet FortiManager
 
-The Fortinet FortiManager protocol can be used to monitor the different devices and administrative domains managed by this management server.
-
 ## About
 
-### Version Info
+Fortinet FortiManager provides centralized management of Fortinet security infrastructure. The DataMiner connector uses SNMPv2 to monitor the management server, its managed devices, and its administrative domains, bringing operational health, configuration status, and license expiration information into a single view.
 
-| Range   | Key Features                                            | Based on | System Impact |
-|---------|---------------------------------------------------------|----------|---------------|
-| 1.0.0.x | Initial version FORTINET-FORTIMANAGER-FORTIANALYZER-MIB | -        | -             |
+## Key Features
 
-### Product Info
+- **System health monitoring**: Monitor CPU usage, memory consumption, disk usage, uptime, firmware version, and log rate.
+- **Managed device and domain visibility**: View device inventory, connectivity, configuration state, and administrative domain membership, alongside domain status and capacity information.
+- **License expiration tracking**: Track expiration dates for antivirus, intrusion prevention, web content filtering, and antispam licenses on managed devices.
+- **Hardware and high-availability monitoring**: Monitor RAID status, individual disks, power supplies, HA mode, and HA peer status.
+- **IP session visibility**: Inspect session protocols, source and destination IP addresses, ports, and expiration times.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 5.6.8                  |
+## Use Cases
 
-### System Info
+### Identify Infrastructure Health Issues
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+**Challenge**: Resource constraints, storage faults, or degraded redundancy can affect the availability of the security management environment.
 
-## Configuration
+**Solution**: Bring CPU, memory, disk, RAID, power supply, and HA information into DataMiner. Configure DataMiner alarming around the monitored parameters to match operational requirements.
 
-### Connections
+**Benefit**: You can identify deteriorating conditions earlier and prioritize investigation and maintenance.
 
-#### SNMP Main Connection
+### Maintain Visibility Across Managed Devices and Domains
 
-This connector uses a Simple Network Management Protocol (SNMPv2) connection and requires the following input during element creation:
+**Challenge**: Tracking device connectivity and configuration status becomes more difficult as the number of managed devices and administrative domains grows.
 
-SNMP CONNECTION:
+**Solution**: Use the connector's device and administrative domain tables to review inventory, domain membership, connection state, database state, configuration state, and policy package state.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Benefit**: You get a consolidated view to identify disconnected devices and investigate configuration inconsistencies.
 
-SNMP Settings:
+### Plan Security License Renewals
 
-- **Get community string**: The community string used when reading values from the device (default value: *public*).
-- **Set community string**: The community string used when setting values on the device (default value: *private*).
+**Challenge**: License expiration dates distributed across multiple devices are difficult to track manually, increasing the risk of missed renewals.
 
-### Web Interface
+**Solution**: Collect antivirus, intrusion prevention, web content filtering, and antispam license expiration dates in the managed device table.
 
-The web interface is only accessible when the client machine has network access to the product.
+**Benefit**: Facilitates renewal planning and helps reduce the risk of interruptions to licensed security services.
+
+## Technical Reference
+
+### Prerequisites
+
+- **DataMiner 10.4.0.0 - 14003** or later.
+- **An SNMPv2-enabled Fortinet FortiManager server** exposing the relevant FORTINET-FORTIMANAGER-FORTIANALYZER-MIB objects is needed for monitoring.
+- **Network access and a valid SNMP read community string** are required for DataMiner to poll the server.
+
+### Supported Firmware
+
+Connector range **1.0.0.x** supports FortiManager firmware **5.6.8**.
+
+### Connectivity
+
+Configure the FortiManager polling IP address or hostname, SNMP port, and community strings during element creation. A valid set community string is needed when using writable parameters.
+
+For trap-driven refreshes, configure FortiManager to send SNMP traps to DataMiner. Supported HA switch, RAID status change, and CPU threshold traps trigger polling of the corresponding data.
+
+The embedded web interface requires network access from the client machine to the FortiManager server.
+
+### Version 1.0.0.2
+
+Version **1.0.0.2** is based on **1.0.0.1** and records the connector's migration to GitHub. This new version was required to restore availability in the DataMiner Catalog. Version 1.0.0.1 is not available in the Catalog.

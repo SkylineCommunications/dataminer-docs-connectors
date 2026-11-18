@@ -1,31 +1,58 @@
 ---
 uid: Connector_help_Linear_Acoustic_Aero_2000
+description: "Monitor Linear Acoustic AERO 2000 device status, hardware, inputs, program loudness and silence states, and incoming SNMP traps in DataMiner."
 ---
 
-# Linear Acoustic AERO.2000
+# Linear Acoustic Aero 2000
 
 ## About
 
-The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of hosting one or two AEROMAXr processing instances (at least one is required). It provides real-time adaptive wideband and/or multiband processing, including an advanced ITU limiter.
+The Linear Acoustic AERO 2000 connector enables seamless integration of the AERO.2000 loudness management platform with DataMiner. It provides real-time monitoring of audio processing parameters, hardware status, and SNMP trap management, ensuring broadcasters maintain optimal audio quality and system reliability.
 
 ## Key Features
 
-- **General**: Displays the SNMP connection status, as well as system information such as the model name, software version, and FPGA version.
-- **Status**: Provides a quick overview of the hardware (CPU and RAM usage), temperature and fan readings, video and audio input status, redundant power supply, engine status, and Cn 2000 state.
-- **Instance 1 and 2**: Displays the programs of each processing instance, including the silence state and loudness of each program, with a loudness alarm when the value falls out of range.
-- **Traps**: Logs incoming SNMP traps, with settings to configure how traps are logged and when they are removed.
+- **Real-time adaptive processing**: Monitors wideband and multiband audio processing, including advanced ITU limiting.
+
+- **SNMP integration**: Polls device data and reacts to incoming SNMP trap messages for proactive system management.
+
+- **Comprehensive hardware monitoring**: Tracks CPU, RAM, temperature, fan speed, and redundant power supply status.
+
+- **Input status monitoring**: Provides visibility into video, audio, and audio reference inputs.
+
+- **Loudness and silence alarms**: Alerts for out-of-range loudness values and silence states per program instance.
 
 ## Use Cases
 
-**Challenge**: Ensuring that broadcast audio stays within loudness regulations and that processing hardware remains healthy, without constant manual checks.
+### Broadcast Audio Quality Assurance
 
-**Solution**: Installing the Linear Acoustic AERO.2000 connector lets you monitor the loudness and silence state of every program in real time. You are alerted through a loudness alarm when a value falls out of range.
+**Challenge**: Maintaining consistent audio loudness and quality across multiple broadcast channels.
 
-**Challenge**: Detecting hardware or signal problems before they affect on-air audio.
+**Solution**: Real-time monitoring and adaptive processing via DataMiner integration.
 
-**Solution**: The connector shows CPU and RAM usage, temperatures, fan speeds, power supply redundancy, and the status of video, audio, and reference inputs. It also logs incoming SNMP traps, so you can quickly identify and react to faults.
+**Benefit**: Ensures compliance with loudness standards and delivers a superior listener experience.
+
+### Proactive System Health Monitoring
+
+**Challenge**: Detecting hardware failures or performance issues before they impact operations.
+
+**Solution**: Comprehensive hardware and input monitoring with SNMP trap alerts.
+
+**Benefit**: Minimizes downtime and enables rapid troubleshooting.
+
+### Efficient Device Management
+
+**Challenge**: Managing multiple AERO.2000 devices in a complex broadcast environment.
+
+**Solution**: Centralized control and status visibility through DataMiner.
+
+**Benefit**: Streamlines operations and reduces management overhead.
 
 ## Technical Reference
 
+### Prerequisites
+
+- **SNMP connectivity**: The device must be reachable via SNMP from the DataMiner Agent.
+- **Web interface access**: To use the **web interface** feature, the client machine must have network access to the device.
+
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Linear_Acoustic_Aero_2000_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Linear_Acoustic_Aero_2000_Technical).

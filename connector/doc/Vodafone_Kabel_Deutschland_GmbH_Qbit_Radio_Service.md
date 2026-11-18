@@ -1,56 +1,33 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service
+description: "Explore key features and use cases of the Vodafone Kabel Deutschland GmbH Qbit Radio Service connector for monitoring Qbit radio services in DataMiner."
 ---
 
-# Vodafone Kabel Deutschland GmbH QBit Radio Service
-
-The Vodafone Deutschland GmbH QBit Radio service protocol monitors the active configuration of the QBit element per service.
+# Vodafone Kabel Deutschland GmbH Qbit Radio Service
 
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH Qbit Radio Service connector monitors the active configuration of the Qbit element per service.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
+- **Radio configuration**: Monitor the active configuration of the Qbit element.
+- **Site-level status**: View active stream states per site.
+- **Service diagnostics**: Retrieve active alarms and enable debug logging.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | -                       |
+### Monitoring Qbit Radio Services
 
-## Configuration
+**Challenge**: Qbit element configuration and stream states need to be reviewed in the context of a radio service.
 
-To create a service using this service protocol:
+**Solution**: The connector provides a dedicated overview of site-level streaming states with access to service alarms.
 
-1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol **Vodafone Kabel Deutschland GmbH QBit Radio Service**, with the latest version or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+**Benefit**: You can investigate radio service issues with the relevant status and diagnostics available together.
 
-### Initialization
+## Technical Reference
 
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
-
-The **General** page contains the overview of the active stream states per site.
-
-The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
-
-The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
-
-## Notes
-
-This enhanced service protocol was designed for a specific project and is not expected to be reused in general.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service_Technical).
