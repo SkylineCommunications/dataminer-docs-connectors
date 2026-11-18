@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_OpenTelemetry_Generic_Metric_Receiver_Technical
-description: Technical details for the OpenTelemetry Generic Metric Receiver, which stores metrics forwarded by the OpenTelemetry Collector in a Metric Records table.
+description: "Learn how to configure the OpenTelemetry Generic Metric Receiver to collect, filter, and view metrics forwarded by the OpenTelemetry Collector."
 ---
 
 # OpenTelemetry Generic Metric Receiver

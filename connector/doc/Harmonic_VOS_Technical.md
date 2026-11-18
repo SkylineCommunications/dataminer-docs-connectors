@@ -7,6 +7,8 @@ description: "Learn how to configure and use the Harmonic VOS connector, includi
 
 ## About
 
+Harmonic VOS retrieves monitoring information from the Harmonic VOS and XOS application, which runs on Amazon Web Services. It allows you to monitor the services, sources, and destinations, as well as logs, notifications, and Origin Engine info. A Visio file is provided with the connector to group data and allow easy navigation.
+
 > [!IMPORTANT]
 >
 > - If you **update to the 1.1.3.x range**, you will need to **re-enter the credentials** of the client secret.

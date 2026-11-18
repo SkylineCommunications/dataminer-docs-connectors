@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_OpenTelemetry_Generic_Metric_Receiver
-description: Capture and view OpenTelemetry metrics in DataMiner. Receive metrics forwarded by the OpenTelemetry Collector and filter them to keep only what matters.
+description: "Capture and view OpenTelemetry metrics in DataMiner. Receive metrics forwarded by the OpenTelemetry Collector and filter them to keep only what matters."
 ---
 
 # OpenTelemetry Generic Metric Receiver
