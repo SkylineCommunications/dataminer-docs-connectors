@@ -3043,6 +3043,13 @@
   items:
   - name: D-Link DGS-3630 Series
     topicUid: Connector_help_D-Link_DGS-3630_Series
+- name: DMED
+  items:
+  - name: DMED Feeds API
+    topicUid: Connector_help_DMED_Feeds_API
+    items:
+      - name: DMED Feeds API Technical
+        topicUid: Connector_help_DMED_Feeds_API_Technical
 - name: DNF Controls
   items:
   - name: DNF Controls USP-8D
@@ -3847,7 +3854,9 @@
     topicUid: Connector_help_Evertz_7891MG_-_Card
   - name: Evertz 7x00 General Platform
     topicUid: Connector_help_Evertz_7x00_General_Platform
-    items: 
+    items:
+      - name: Evertz 7x00 General Platform Technical
+        topicUid: Connector_help_Evertz_7x00_General_Platform_Technical
       - name: Evertz 7x00 General Platform - 7700ACO2HD
         topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700ACO2HD
       - name: Evertz 7x00 General Platform - 7700ACOHD
@@ -7794,6 +7803,11 @@
     topicUid: Connector_help_OpenTelemetry_Collector
   - name: OpenTelemetry Generic Log Receiver
     topicUid: Connector_help_OpenTelemetry_Generic_Log_Receiver
+  - name: OpenTelemetry Generic Metric Receiver
+    topicUid: Connector_help_OpenTelemetry_Generic_Metric_Receiver
+    items:
+    - name: OpenTelemetry Generic Metric Receiver Technical
+      topicUid: Connector_help_OpenTelemetry_Generic_Metric_Receiver_Technical
 - name: Opsview
   items:
   - name: Opsview Opsview
@@ -8212,6 +8226,9 @@
       topicUid: Connector_help_Radeus_Labs_3500_BTR_Technical
   - name: Radeus Labs ACU 8200
     topicUid: Connector_help_Radeus_Labs_ACU_8200
+    items:
+    - name: Radeus Labs ACU 8200 Technical
+      topicUid: Connector_help_Radeus_Labs_ACU_8200_Technical
   - name: Radeus Labs ACU DL9000
     topicUid: Connector_help_Radeus_Labs_ACU_DL9000
 - name: Raisecom
@@ -9137,6 +9154,8 @@
   items:
   - name: Signiant Manager
     topicUid: Connector_help_Signiant_Manager
+  - name: Signiant Media Shuttle
+    topicUid: Connector_help_Signiant_Media_Shuttle
 - name: SingTel
   items:
   - name: Singtel ANTlabs Tru Auth Radius
@@ -9706,12 +9725,19 @@
     topicUid: Connector_help_Socomec_Diris_A40-A41
   - name: Socomec Diris D-50
     topicUid: Connector_help_Socomec_Diris_D-50
-  - name: Socomec Diris D-50 - B30
-    topicUid: Connector_help_Socomec_Diris_D-50_-_B30
-  - name: Socomec Diris D-50 - I-60
-    topicUid: Connector_help_Socomec_Diris_D-50_-_I-60
-  - name: Socomec Diris D-50 - U-30
-    topicUid: Connector_help_Socomec_Diris_D-50_-_U-30
+    items:
+    - name: Socomec Diris D-50 - B-30
+      topicUid: Connector_help_Socomec_Diris_D-50_-_B-30
+    - name: Socomec Diris D-50 - I-35
+      topicUid: Connector_help_Socomec_Diris_D-50_-_I-35
+    - name: Socomec Diris D-50 - I-60
+      topicUid: Connector_help_Socomec_Diris_D-50_-_I-60
+    - name: Socomec Diris D-50 - S-130
+      topicUid: Connector_help_Socomec_Diris_D-50_-_S-130
+    - name: Socomec Diris D-50 - U-10
+      topicUid: Connector_help_Socomec_Diris_D-50_-_U-10
+    - name: Socomec Diris D-50 - U-30
+      topicUid: Connector_help_Socomec_Diris_D-50_-_U-30
   - name: Socomec Diris Digiware DC
     topicUid: Connector_help_Socomec_Diris_Digiware_DC
   - name: Socomec Diris Digiware DC - I30 DC
@@ -10239,6 +10265,9 @@
     topicUid: Connector_help_TDC_KPI_and_KQI_Editor
   - name: TDC OLT CM Collector
     topicUid: Connector_help_TDC_OLT_CM_Collector
+    items:
+    - name: TDC OLT CM Collector Technical
+      topicUid: Connector_help_TDC_OLT_CM_Collector_Technical
   - name: TDC Topology DB
     topicUid: Connector_help_TDC_Topology_DB
 - name: TDF
@@ -10326,6 +10355,9 @@
     topicUid: Connector_help_Techex_MW4_Server_-_Generic_Device
   - name: Techex MWCore
     topicUid: Connector_help_Techex_MWCore
+    items:
+    - name: Techex MWCore Technical
+      topicUid: Connector_help_Techex_MWCore_Technical
   - name: Techex MWCore - Generic Device
     topicUid: Connector_help_Techex_MWCore_-_Generic_Device
 - name: Technetix
@@ -10828,6 +10860,11 @@
     topicUid: Connector_help_Tetronik_DAKS_-_Department
 - name: Thales
   items:
+  - name: Thales Amber
+    topicUid: Connector_help_Thales_Amber
+    items:
+    - name: Thales Amber Technical
+      topicUid: Connector_help_Thales_Amber_Technical
   - name: Thales S7HP
     topicUid: Connector_help_Thales_S7HP
     items:

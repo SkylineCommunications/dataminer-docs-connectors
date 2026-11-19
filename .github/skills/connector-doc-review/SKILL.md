@@ -9,7 +9,7 @@ Use this workflow for every connector documentation review request. This skill i
 
 ## Review Procedure
 
-1. Ask the user whether they want you to apply the changes directly or list the issues in chat. Use their answer to determine the output mode.
+1. If the user has not already selected a mode, use the available question tool to ask whether to apply the changes directly or list the issues in chat. Use their answer to determine the output mode.
 2. Before evaluating the page, retrieve and read all three sources:
    - Markdown instructions: <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html>
    - General house style: <https://docs.dataminer.services/contributing/CTB_Docs_house_style.html>
