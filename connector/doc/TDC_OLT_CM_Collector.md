@@ -13,7 +13,7 @@ The collector works with the [TDC CPE Manager](xref:Connector_help_TDC_CPE_Manag
 ## Key Features
 
 - **Modem health**: Review registration status, uptime, latency, and packet loss when investigating a modem's service.
-- **Channel measurements**: Collect power levels, modulation error ratio, and codeword statistics across QAM, OFDM, and OFDMA channels.
+- **Channel measurements**: View power levels, modulation error ratio, and codeword statistics across QAM, OFDM, and OFDMA channels.
 - **CPE Manager integration**: View the collected data in your existing TDC CPE monitoring environment.
 - **CSV exports**: Choose which modem, interface, and channel measurements to export, and how long to keep the files.
 - **Amplifier-chain mapping**: Link modem channels to their amplifier paths using data from the CPE backend manager.
@@ -48,7 +48,6 @@ The collector works with the [TDC CPE Manager](xref:Connector_help_TDC_CPE_Manag
 
 ### Prerequisites
 
-- A DataMiner release that meets the requirements for your connector version.
 - A configured [TDC CPE Manager](xref:Connector_help_TDC_CPE_Manager) and a connection between the collector and the appropriate backend manager.
 - Network and SNMP read access to the cable modems and Huawei MA5800-MA5633 equipment. Supported modem standards include DOCSIS 2.0, 3.0, and 3.1.
 - Access to your CPE deployment's IAM provisioning database.
@@ -56,4 +55,4 @@ The collector works with the [TDC CPE Manager](xref:Connector_help_TDC_CPE_Manag
 - To use amplifier-chain mapping, AMP Chain export files from the CPE backend manager.
 
 > [!NOTE]
-> For connection settings, provisioning, CSV export configuration, and amplifier-chain import procedures, see the [technical documentation](xref:Connector_help_TDC_OLT_CM_Collector_Technical).
+> For connection settings, provisioning, CSV export configuration, and amplifier-chain import procedures, refer to the [technical documentation](xref:Connector_help_TDC_OLT_CM_Collector_Technical).
