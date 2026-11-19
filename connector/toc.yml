@@ -10240,6 +10240,11 @@
     topicUid: Connector_help_Tandberg_RX_6way
   - name: Tandberg SM6620
     topicUid: Connector_help_Tandberg_SM6620
+  - name: Tandberg TT1222 SNMP
+    topicUid: Connector_help_Tandberg_TT1222_SNMP
+    items:
+    - name: Tandberg TT1222 SNMP Technical
+      topicUid: Connector_help_Tandberg_TT1222_SNMP_Technical
   - name: Tandberg TT1260 SNMP
     topicUid: Connector_help_Tandberg_TT1260_SNMP
   - name: Tandberg TT4030 HTTP
