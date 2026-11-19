@@ -10249,6 +10249,9 @@
     topicUid: Connector_help_TDC_KPI_and_KQI_Editor
   - name: TDC OLT CM Collector
     topicUid: Connector_help_TDC_OLT_CM_Collector
+    items:
+    - name: TDC OLT CM Collector Technical
+      topicUid: Connector_help_TDC_OLT_CM_Collector_Technical
   - name: TDC Topology DB
     topicUid: Connector_help_TDC_Topology_DB
 - name: TDF
