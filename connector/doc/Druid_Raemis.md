@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Druid_Raemis
-description: Monitor Druid Raemis alarms, heartbeat health, 4G cells, users, and MGW control flow statistics in DataMiner.
+description: "Monitor Druid Raemis alarms, heartbeat health, 4G cells, users, and MGW control flow statistics in DataMiner."
 ---
 
 # Druid Raemis
@@ -11,23 +11,23 @@ Raemis is a cellular core network platform by Druid Software that combines 5G, 4
 
 ## Key Features
 
-- **Active alarms**: Retrieve active alarms from Raemis through the REST API.
-- **Heartbeat monitoring**: Receive SNMP heartbeat traps and monitor missed heartbeats using the configured heartbeat delay and status.
+- **Active alarms**: Get the active alarms from Raemis, retrieved through the REST API.
+- **Heartbeat monitoring**: Monitor missed heartbeats using the configured heartbeat delay and status, based on received SNMP heartbeat traps.
 - **Cell and user visibility**: View 4G cell and user data on dedicated element pages.
 - **MGW control flow statistics**: Review control and flow identifiers, measurement period, aggregation value, and ingress, egress, and dropped packet/octet counts, including cumulative totals.
-- **Configurable polling**: Configure polling for datasets, including MGW Control Flow Stats, on the **Polling Configuration** page.
+- **Configurable polling**: Configure polling for datasets, including MGW Control Flow Stats.
 
 ## Use Cases
 
-### Monitor Raemis health
+### Monitor Raemis Health
 
-**Challenge**: Operators need visibility into active alarms and platform availability.
+**Challenge**: Operators need visibility on active alarms and platform availability.
 
 **Solution**: The connector retrieves active alarms and monitors periodic heartbeat traps. Missed-heartbeat alarms use the configured **Heartbeat Delay**.
 
 **Benefit**: Operators can view alarm and heartbeat status in DataMiner.
 
-### Review MGW traffic statistics
+### Review MGW Traffic Statistics
 
 **Challenge**: Operators need to inspect ingress, egress, and dropped traffic across media gateway (MGW) control flows.
 
@@ -39,9 +39,7 @@ Raemis is a cellular core network platform by Druid Software that combines 5G, 4
 
 ### Prerequisites
 
-- DataMiner 10.2.10.0 (build 12242) or later.
 - Supported Raemis firmware: 5.2.6.0-1, rd974ae4.
-- The connector is Cassandra-ready.
 
 ### Connections
 
@@ -71,4 +69,4 @@ The web interface is only accessible when the client machine has network access 
 
 ### Polling
 
-The MGW Control Flow Stats dataset has a default polling interval of 60 seconds. Use the **Polling Configuration** page to enable or disable the dataset and change its interval.
+The MGW Control Flow Stats dataset has a default polling interval of 60 seconds. Use the **Polling Configuration** page to enable or disable the dataset or to change its interval.
