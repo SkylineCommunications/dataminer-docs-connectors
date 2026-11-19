@@ -3043,6 +3043,13 @@
   items:
   - name: D-Link DGS-3630 Series
     topicUid: Connector_help_D-Link_DGS-3630_Series
+- name: DMED
+  items:
+  - name: DMED Feeds API
+    topicUid: Connector_help_DMED_Feeds_API
+    items:
+      - name: DMED Feeds API Technical
+        topicUid: Connector_help_DMED_Feeds_API_Technical
 - name: DNF Controls
   items:
   - name: DNF Controls USP-8D
