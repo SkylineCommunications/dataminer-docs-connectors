@@ -4108,6 +4108,9 @@
       topicUid: Connector_help_Evertz_Scorpion_18_MIO-DD4-3G_Technical
   - name: Evertz TR-4800E
     topicUid: Connector_help_Evertz_TR-4800E
+    items:
+    - name: Evertz TR-4800E Technical
+      topicUid: Connector_help_Evertz_TR-4800E_Technical
   - name: Evertz VIP-X
     topicUid: Connector_help_Evertz_VIP-X
   - name: Evertz Vistalink
