@@ -1,13 +1,13 @@
 ---
 uid: Connector_help_Signiant_Media_Shuttle
-description: Monitor Signiant Media Shuttle transfers, rates, storage, portals, and package and file metadata for packages discovered through active transfers.
+description: "Monitor Signiant Media Shuttle transfers, rates, storage, portals, and package and file metadata for packages discovered through active transfers."
 ---
 
 # Signiant Media Shuttle
 
 ## About
 
-The Signiant Media Shuttle connector provides visibility into active file transfers and related storage, portal, and package information in DataMiner. It requires DataMiner 10.4.0.0-14003 or later.
+The Signiant Media Shuttle connector provides visibility into active file transfers and related storage, portal, and package information in DataMiner.
 
 ## Key Features
 
@@ -16,3 +16,7 @@ The Signiant Media Shuttle connector provides visibility into active file transf
 - **Portals**: Displays portals and their storage assignments.
 - **Packages and files**: Provides package details and file metadata, including file sizes, for packages discovered through active transfers.
 - **Configurable retention**: Retains transfer, package, and file observations according to configurable retention settings.
+
+## Prerequisites
+
+- **DataMiner 10.4.0.0-14003 or higher** is required to run the connector.
