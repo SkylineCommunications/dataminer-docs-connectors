@@ -52,13 +52,11 @@ This connector polls the D-50 over a serial connection, discovers the modules co
 
 **Solution**: The alarm status tables of each DVE list the active alarms with their type, cause, criticality, start date, and duration.
 
-**Benefit**: Module alarms are integrated in the DataMiner alarm console next to the rest of the infrastructure.
+**Benefit**: Module alarms are integrated in the DataMiner Alarm Console next to the rest of the infrastructure.
 
 ## Technical Reference
 
 ### Prerequisites
-
-- **DataMiner 10.2.0.0-12603 or higher** is required to run the connector.
 
 - **A Diris D-50 gateway** that is reachable from the DataMiner Agent, either through a direct serial port or through a serial-over-IP interface.
 
@@ -66,7 +64,7 @@ This connector polls the D-50 over a serial connection, discovers the modules co
 
 ### Exported Connectors
 
-The parent element creates a DVE for each module for which **DVE Creation** is enabled. The following exported connectors are available:
+The parent element creates a DVE for each module for which DVE creation is enabled. The following exported connectors are available:
 
 - [Socomec Diris D-50 - B-30](xref:Connector_help_Socomec_Diris_D-50_-_B-30)
 - [Socomec Diris D-50 - I-35](xref:Connector_help_Socomec_Diris_D-50_-_I-35)
@@ -77,7 +75,7 @@ The parent element creates a DVE for each module for which **DVE Creation** is e
 
 ### Connections
 
-#### Serial Main Connection
+#### Serial Connection - Main
 
 This connector uses a serial connection (Modbus/JBUS RTU) and requires the following input during element creation:
 

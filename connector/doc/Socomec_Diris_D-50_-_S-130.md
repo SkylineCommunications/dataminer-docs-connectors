@@ -7,9 +7,9 @@ description: "Monitor a Socomec Diris S-130 measurement module exported by the D
 
 ## About
 
-The Socomec Diris S-130 is a measurement module of the DIRIS Digiware system. It provides instruments, fundamental, and energy measurements for the monitored circuit and reports Boolean and system alarms.
+The Socomec Diris S-130 is a measurement module of the DIRIS Digiware system. It provides instrument measurements, fundamental measurements, and energy data for the monitored circuit and reports Boolean and system alarms.
 
-This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the S-130 module through the D-50 gateway and shows its measurements, energy counters, and alarms in this DVE.
+This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the S-130 module through the D-50 gateway. The DVE shows the module's measurements, energy counters, and alarms.
 
 ## Configuration
 

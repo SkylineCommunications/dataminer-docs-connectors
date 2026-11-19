@@ -9,7 +9,7 @@ description: "Monitor a Socomec Diris I-35 module exported by the Diris D-50 con
 
 The Socomec Diris I-35 is a measurement module of the DIRIS Digiware system. It measures voltages, currents, power, and energy on the monitored circuit and reports system alarms.
 
-This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the I-35 module through the D-50 gateway and shows its measurements, energy counters, and alarms in this DVE.
+This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the I-35 module through the D-50 gateway. The DVE shows the module's measurements, energy counters, and alarms.
 
 ## Configuration
 

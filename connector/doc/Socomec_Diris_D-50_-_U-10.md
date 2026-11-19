@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Socomec_Diris_D-50_-_U-10
-description: "Monitor a Socomec Diris U-10 measurement module exported by the Diris D-50 connector in DataMiner, with instruments measurements and system alarms."
+description: "Monitor a Socomec Diris U-10 measurement module exported by the Diris D-50 connector in DataMiner, with instrument measurements and system alarms."
 ---
 
 # Socomec Diris D-50 - U-10
@@ -9,7 +9,7 @@ description: "Monitor a Socomec Diris U-10 measurement module exported by the Di
 
 The Socomec Diris U-10 is a voltage measurement module of the DIRIS Digiware system. It provides the frequency and the phase-to-neutral and phase-to-phase voltages of the monitored network and reports system alarms.
 
-This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the U-10 module through the D-50 gateway and shows its measurements and alarms in this DVE.
+This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the U-10 module through the D-50 gateway. The DVE shows the module's measurements and alarms.
 
 ## Configuration
 

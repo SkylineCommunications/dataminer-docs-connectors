@@ -9,7 +9,7 @@ description: "Monitor a Socomec Diris I-60 current measurement module exported b
 
 The Socomec Diris I-60 is a current measurement module that connects to the DIRIS Digiware bus. It is a panel-mounted multifunction meter with enhanced data logging functions and curve recording for power quality events. The sensors can be adapted to all types of new or existing installations.
 
-This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the I-60 module through the D-50 gateway and shows its measurements, energy counters, and alarms in this DVE.
+This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the I-60 module through the D-50 gateway. The DVE shows the module's measurements, energy counters, and alarms.
 
 ## Configuration
 

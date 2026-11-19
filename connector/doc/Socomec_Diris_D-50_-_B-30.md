@@ -9,7 +9,7 @@ description: "Monitor a Socomec Diris B-30 power monitoring module exported by t
 
 The Socomec Diris B-30 is a modular power monitoring device that can communicate wirelessly or over RS485. Its four independent RJ12 current inputs allow it to manage circuits of different types and in different numbers.
 
-This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the B-30 module through the D-50 gateway and shows its measurements, energy counters, I/O status, and alarms in this DVE.
+This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the B-30 module through the D-50 gateway. The DVE shows the module's measurements, energy counters, I/O status, and alarms.
 
 ## Configuration
 

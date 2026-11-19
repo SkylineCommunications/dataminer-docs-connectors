@@ -9,7 +9,7 @@ description: "Monitor a Socomec Diris U-30 voltage measurement module exported b
 
 The Socomec Diris U-30 is a voltage measurement module that is part of the DIRIS Digiware system. It measures the system voltages and detects voltage dips, interruptions, and swells. It also captures alarms and keeps a history of the average values.
 
-This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the U-30 module through the D-50 gateway and shows its voltage measurements and alarms in this DVE.
+This connector is exported by the [Socomec Diris D-50](xref:Connector_help_Socomec_Diris_D-50) connector. The parent element polls the U-30 module through the D-50 gateway. The DVE shows the module's voltage measurements and alarms.
 
 ## Configuration
 
