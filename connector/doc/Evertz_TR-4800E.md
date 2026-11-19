@@ -1,45 +1,59 @@
 ---
 uid: Connector_help_Evertz_TR-4800E
+description: "Monitor GPI inputs and control GPO tally outputs of the Evertz TR-4800E tally router, with immediate and scheduled tally automation."
 ---
 
 # Evertz TR-4800E
 
-The TR-4800E Tally Router is an Ethernet-controlled interface for 32 general-purpose inputs (GPIs) and 48 general-purpose outputs (GPOs). It is the successor the TR-3200E.
-
 ## About
 
-### Version Info
+The Evertz TR-4800E is an Ethernet-controlled tally router with 32 general-purpose inputs (GPIs) and 48 general-purpose outputs (GPOs). With the +BP16 option, it has up to 64 of each. It is the successor of the TR-3200E.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+This connector uses the Quartz protocol over TCP/IP to poll the status of all GPIs and GPOs, process unsolicited tally updates from the device, and switch GPO tallies on or off. Tallies can be switched manually, by Automation scripts, or at a scheduled time through a command table.
 
-### System Info
+## Key Features
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+- **GPI monitoring**: The status of every general-purpose input is shown in a table and can be monitored for alarms.
 
-## Configuration
+- **GPO tally control**: Each general-purpose output can be switched on or off directly from the Outputs table.
 
-### Connections
+- **Real-time updates**: Unsolicited tally changes sent by the device are processed immediately, in addition to regular polling.
 
-#### Serial Main Connection
+- **Tally automation**: Automation scripts can switch several tallies on or off in one command.
 
-This connector uses a smart-serial connection and requires the following input during element creation:
+- **Scheduled commands**: Tally commands can be scheduled for a specific time, for example to follow a booking, and are executed automatically.
 
-SERIAL CONNECTION:
+## Use Cases
 
-- Interface connection:
+### On-Air Tally Control
 
-  - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination.
-  - **Bus address**: The bus address of the device.
+**Challenge**: Studio tally lights and on-air signals must be switched reliably when a production goes live.
 
-## How to use
+**Solution**: Operators switch the GPO tallies from the Outputs table, or an Automation script switches several tallies at once.
 
-On the **General** page, you can find the number of general-purpose inputs and outputs.
+**Benefit**: Tally control is centralized in DataMiner, next to the rest of the broadcast chain.
 
-The **Inputs** page contains a table with the status for each input of the system.
+### Booking-Driven Tally Automation
 
-The **Outputs** page contains a table where you can configure and view the status of each output of the system.
+**Challenge**: Tallies need to go on and off at exact times that follow the broadcast schedule, without manual intervention.
+
+**Solution**: An Automation script adds scheduled ON and OFF commands to the command table, and the connector executes them at the scheduled time.
+
+**Benefit**: Fewer manual actions and fewer mistakes during live transitions.
+
+### GPI Status Monitoring
+
+**Challenge**: Contact closures from external equipment are only visible on the device.
+
+**Solution**: The connector polls and shows the status of every GPI, and updates it as soon as the device reports a change.
+
+**Benefit**: Operators see GPI changes in DataMiner and can use them for alarms and correlation.
+
+## Technical Reference
+
+### Prerequisites
+
+- **An Evertz TR-4800E** reachable over TCP/IP from the DataMiner Agent, with Quartz control enabled.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_TR-4800E_Technical).
