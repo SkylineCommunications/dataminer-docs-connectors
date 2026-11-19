@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_DMED_Feeds_API_Technical
+description: "Retrieve current and past DMED feed bookings, configure facility and device type filters, and set polling, retrieval, and history windows."
 ---
 
 # DMED Feeds API
@@ -24,20 +25,18 @@ This connector uses an HTTP connection and requires the following input during e
 
 ### Initialization
 
-After the element is created, go to the **Configuration** page and enter the **User Name** and **Password** used for Basic authentication on the Feeds API. Optionally, adjust the filters and time windows described below.
+After the element is created, go to the **Configuration** page and enter the **User Name** and **Password** to authenticate with the Feeds API using basic authentication. Optionally, adjust the filters and time windows described below.
 
 ## How to Use
 
-The connector polls the Feeds API periodically. No manual action is needed after the credentials are configured.
+After you have configured the credentials, the connector will poll the Feeds API periodically.
 
-### Configuration
+On the **Configuration** page, you can configure the following settings:
 
-On the **Configuration** page, you can set the following:
-
-- **User Name** and **Password**: The credentials used to authenticate on the Feeds API. The password is masked.
-- **Facility Filter**: A semicolon-separated list of destination facility descriptions to include (e.g., *Bristol (ESPN)*). Default: *\**, which includes all facilities.
+- **User Name** and **Password**: The credentials used to authenticate with the Feeds API (see [Initialization](#initialization)). The password is masked.
+- **Facility Filter**: A semicolon-separated list of destination facility descriptions to include (e.g., *Bristol (ESPN)*). The default is *\**, which includes all facilities.
 - **Device Type Filter**: A semicolon-separated list of destination device types to include. Default: *ASIS*. Use *\** to include all.
-- **Poll Interval**: The time between two polls of the Feeds API, in minutes (default: *1*).
-- **Past Feed Window**: How far back in time feeds are retrieved, in hours. This also determine how long a feed last in the Feeds table before being moved to Feeds History table. (default: *24*).
+- **Poll Interval**: The interval, in minutes, between consecutive polling of the Feeds API (default: *1*).
+- **Past Feed Window**: How far back in time feeds are retrieved, in hours. This also determines how long a feed is retained in the Feeds table before being moved to the Feed History table. (default: *24*).
 - **Future Feed Window**: How far ahead in time feeds are retrieved, in hours (default: *24*).
 - **Feed History Time**: How far back feed history is loaded at startup, in hours (default: *168*). History older than this is removed.

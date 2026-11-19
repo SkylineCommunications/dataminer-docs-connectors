@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_DMED_Feeds_API
+description: "Monitor DMED feed bookings, schedules, facilities, sources, destinations, and status in DataMiner, with configurable filters and a history of past feeds."
 ---
 
 # DMED Feeds API
@@ -22,7 +23,7 @@ The connector can be limited to the facilities and device types you care about, 
 
 ## Use Cases
 
-### Operational awareness of scheduled feeds
+### Operational Awareness of Scheduled Feeds
 
 **Challenge**: Operators need to know which feeds are scheduled, where they come from, and where they go, without logging in to a separate booking system.
 
@@ -30,7 +31,7 @@ The connector can be limited to the facilities and device types you care about, 
 
 **Benefit**: Operations teams get a single, always up-to-date view of feed activity alongside the rest of their monitored infrastructure.
 
-### Facility-focused monitoring
+### Facility-Focused Monitoring
 
 **Challenge**: A specific facility or team only cares about the feeds that concern its own destinations and equipment.
 
@@ -38,7 +39,7 @@ The connector can be limited to the facilities and device types you care about, 
 
 **Benefit**: Less noise and a focused view tailored to each facility or team.
 
-### Post-event review
+### Post-Event Review
 
 **Challenge**: After an event, teams need to check which feeds were booked, when, and between which locations.
 
@@ -50,12 +51,11 @@ The connector can be limited to the facilities and device types you care about, 
 
 ### Prerequisites
 
-- **A DMED Feeds API account** is needed for the connector to authenticate. A user name and password are entered after the element is created.
+- **A DMED Feeds API account** is needed for the connector to authenticate. A username and password are entered after the element is created.
 
 - **Network access to the Feeds API over HTTPS** is required from the DataMiner Agent.
 
 - **DataMiner 10.4.0 (14003) or higher** is required.
 
-
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_DMED_Feeds_API_Technical).
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_DMED_Feeds_API_Technical).
