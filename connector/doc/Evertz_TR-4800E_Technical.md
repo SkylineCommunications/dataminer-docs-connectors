@@ -73,7 +73,3 @@ While the table contains commands, the connector checks it every 300 ms. A comma
 
 - **Custom Command**: Sends a raw Quartz command to the device. Enter the full command, including the leading period (for example *.MA001,002*). A carriage return is added automatically.
 - **Clear Commands**: Removes all entries from the Command Table.
-
-## Notes
-
-- The **ExecuteBookingStartFromAutomationPreLoad** (296) and **ExecuteBookingStartFromAutomationPreLoadStop** (396) parameters are kept for compatibility with existing Automation scripts. For new scripts, use the parameters listed under [Automation Scripts](#automation-scripts).
