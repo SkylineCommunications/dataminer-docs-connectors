@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Skyline_Service_Management_Mediation_Technical
+description: "Configure the Skyline Service Management Mediation connector to register export and import scripts, run them sequentially, and monitor operation status."
 ---
 
 # Skyline Service Management Mediation
@@ -38,7 +39,7 @@ Only one export or import operation can run at a time. While **Mediation Action*
 
 The **Export Scripts** table contains the automation scripts that export service data. Each row has a unique **Description**, the name of the **Script**, the output **Directory**, and optional **Extra Input Parameters**.
 
-Right-click the table to:
+The following actions are available via the right-click menu of the table:
 
 - **Run Script**: Run the selected export script.
 - **Add Script**: Add a script by entering a description, the script name, and the output directory. The description must be unique.

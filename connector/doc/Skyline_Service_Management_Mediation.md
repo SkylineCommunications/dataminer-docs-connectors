@@ -1,12 +1,13 @@
 ---
 uid: Connector_help_Skyline_Service_Management_Mediation
+description: "Use the Skyline Service Management Mediation connector to manage and monitor serialized service data export and import operations in DataMiner."
 ---
 
 # Skyline Service Management Mediation
 
 ## About
 
-The Skyline Service Management Mediation connector is a virtual connector that serves as a central execution point for Service Management automation scripts. It handles the export of service data from and the import of service data into the DataMiner system.
+The Skyline Service Management Mediation connector is a virtual connector that serves as a central execution point for Service Management automation scripts. It handles the export of service data from and the import of service data into the DataMiner System.
 
 ## Key Features
 
@@ -38,7 +39,7 @@ The Skyline Service Management Mediation connector is a virtual connector that s
 
 ### Prerequisites
 
-- The export and import automation scripts that the connector needs to run must be available in the DataMiner system.
+- The export and import automation scripts that the connector needs to run must be available in the DataMiner System.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Service_Management_Mediation_Technical).
