@@ -21,7 +21,7 @@ The GPX-Pro does not communicate with DataMiner directly. Both the device and th
 
 [Eclipse Mosquitto](https://mosquitto.org/) is the recommended broker. It is free, runs on Windows and Linux, and uses very few resources. It can be installed on the DataMiner Agent or on a separate server, as long as both the GPX-Pro and the DataMiner Agent can reach it.
 
-### Supported devices
+### Supported Devices
 
 | Model | Channels | Firmware |
 |--|--|--|
@@ -45,26 +45,30 @@ HTTP CONNECTION:
 > [!NOTE]
 > The MQTT broker settings are not configured during element creation. Configure them on the **Configuration** page after the element has been created (see [Initialization](#initialization)).
 
-### Broker and device preparation
+### Broker and Device Preparation
 
 Before you create the element:
 
-1. Install an MQTT broker, for example Mosquitto, and make sure its listener port (by default *1883*, or *8883* for TLS) is reachable from both the GPX-Pro and the DataMiner Agent. From Mosquitto 2.0 onwards, a `listener` must be configured explicitly to accept remote connections, and either `allow_anonymous true` or a password file must be set.
-1. In the GPX-Pro web interface, enable MQTT, enter the broker address and credentials, and note the **topic prefix** (for example *fox/gpx32*). You will need this prefix in DataMiner.
-1. Optionally, allow subscriptions to the *$SYS/#* topics on the broker if you want to see broker statistics in DataMiner.
+1. Install an MQTT broker, for example Mosquitto, and make sure its listener port (by default *1883*, or *8883* for TLS) is reachable from both the GPX-Pro and the DataMiner Agent.
+
+   From Mosquitto 2.0 onwards, a `listener` must be configured explicitly to accept remote connections, and either `allow_anonymous true` or a password file must be set.
+
+1. In the GPX-Pro web interface, enable MQTT, enter the broker address and credentials, and note the **topic prefix** (for example `fox/gpx32`). You will need this prefix in DataMiner.
+
+1. Optionally, allow subscriptions to the `$SYS/#` topics on the broker if you want to see broker statistics in DataMiner.
 
 ### Initialization
 
 After you create the element, configure the following parameters on the **Configuration** page, and then click **Connect**:
 
 - **Broker Hostname** and **Broker Hostname Port**: The hostname or IP address and the TCP port of the MQTT broker.
-- **Client ID**: Optional. Must be unique on the broker. If this is empty, *dm-[DMA ID]-[element ID]* is used.
+- **Client ID**: Optional. Must be unique on the broker. If this is empty, `dm-[DMA ID]-[element ID]` is used.
 - **Username** and **Password**: The credentials for the broker, if it requires authentication.
 - **TLS Method**:
   - *None*: No TLS. Not recommended.
   - *Server*: The connection is encrypted with the server certificate. The server CA must be trusted on the DataMiner Agent.
   - *Mutual*: Server TLS plus a client certificate. Configure **Certificates Folder**, **CA Certificate**, **Client Certificate**, and **Client Certificate Password** on the **Client TLS** subpage.
-- **GPX Topic Prefix**: The MQTT topic prefix configured on the GPX device (for example *fox/gpx32*). While this is empty, no GPX topics are subscribed to or published.
+- **GPX Topic Prefix**: The MQTT topic prefix configured on the GPX device (for example `fox/gpx32`). While this is empty, no GPX topics are subscribed to or published.
 
 ### Web Interface
 
@@ -76,14 +80,14 @@ The web interface is only accessible when the client machine has network access 
 
 The connector communicates with the broker from within QActions. As a result, no MQTT traffic is shown in the Stream Viewer. Use the **Diagnostics** page and the element log file to troubleshoot the communication.
 
-### Device status
+### Device Status
 
 The **General** page shows the **Connection Status** with the broker and the device information, such as **Device State**, **Device Firmware Version**, and **Uptime**.
 
 - **Device State** is *Online* while the GPX publishes its heartbeat (every 30 seconds). It becomes *Offline* when the device's last will message arrives or when no device message has been received for about 90 seconds.
 - If an established connection to the broker is lost, the element reconnects automatically. Retries start after 10 seconds and double up to 5 minutes.
 
-### Monitoring channels
+### Monitoring Channels
 
 - **Relays**: The GPX control channels, with their state and mode.
 - **Status Inputs**: The GPX status channels. The **Value** is digital (0/1), and **Display** shows the configured on or off text.
@@ -91,7 +95,7 @@ The **General** page shows the **Connection Status** with the broker and the dev
 - **Connections**: The GPX connections (for example GPX, PING, and SNMP) with their online state.
 - **Advanced**: The channels of the SNMP and PING connections on the GPX.
 
-### Controlling relays
+### Controlling Relays
 
 The **Mode** of a relay depends on **Pulse Ms**:
 
@@ -100,7 +104,7 @@ The **Mode** of a relay depends on **Pulse Ms**:
 
 All relay commands ask for confirmation before they are sent.
 
-### Changing channel settings
+### Changing Channel Settings
 
 You can change the following settings in the tables. The changes are sent to the device:
 
@@ -111,7 +115,7 @@ You can change the following settings in the tables. The changes are sent to the
 
 Use the **Delete** button in a row to remove that channel from the GPX device.
 
-### Handling device alarms
+### Handling Device Alarms
 
 The **Alarms** table lists the active GPX alarms with their severity, value, and acknowledgment details. A row is removed when the alarm clears on the device.
 
