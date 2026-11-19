@@ -87,15 +87,19 @@ The **General** page shows the **Connection Status** with the broker and the dev
 - **Device State** is *Online* while the GPX publishes its heartbeat (every 30 seconds). It becomes *Offline* when the device's last will message arrives or when no device message has been received for about 90 seconds.
 - If an established connection to the broker is lost, the element reconnects automatically. Retries start after 10 seconds and double up to 5 minutes.
 
-### Monitoring Channels
+### Viewing the Channel Data
 
-- **Relays**: The GPX control channels, with their state and mode.
-- **Status Inputs**: The GPX status channels. The **Value** is digital (0/1), and **Display** shows the configured on or off text.
-- **Analog Inputs**: The GPX analog channels, with their value, units, state, and minimum, maximum, and sample statistics.
-- **Connections**: The GPX connections (for example GPX, PING, and SNMP) with their online state.
-- **Advanced**: The channels of the SNMP and PING connections on the GPX.
+The GPX-Pro channels are shown in tables, each on its own page of the element. Each item below is the name of a data page:
+
+- **Relays** page: The GPX control channels, with their **State**, **Mode**, and **Pulse Ms**.
+- **Status Inputs** page: The GPX status channels. **Value** is digital (0/1), and **Display** shows the configured on or off text.
+- **Analog Inputs** page: The GPX analog channels, with their **Value**, **Units**, **State**, and **Min**, **Max**, and **Samples** statistics.
+- **Connections** page: The GPX connections (for example GPX, PING, and SNMP) with their online **State**.
+- **Advanced** page: The **SNMP** and **Ping** tables, with the channels of the SNMP and PING connections on the GPX.
 
 ### Controlling Relays
+
+Relays are controlled from the **Relay** table on the **Relays** page. In each row, the **Mode** column shows whether the relay is latching or pulsed. **Mode** is determined by the **Pulse Ms** column in the same row, which you can edit. The **Latch** and **Pulse** buttons are also in that row.
 
 The **Mode** of a relay depends on **Pulse Ms**:
 
@@ -106,14 +110,14 @@ All relay commands ask for confirmation before they are sent.
 
 ### Changing Channel Settings
 
-You can change the following settings in the tables. The changes are sent to the device:
+You can edit the following columns directly in the tables. The changes are sent to the GPX device:
 
-- **Relays**: **Pulse Ms** and **GPX Channel**.
-- **Status Inputs**: **Label**, **Off Text**, **On Text**, and **GPX Channel**.
-- **Analog Inputs**: **GPX Channel** and **Calibrate To**. In **Calibrate To**, enter the engineering value that the current reading should show. The connector calculates the calibration factor and sends it to the device.
-- **Ping** (on the **Advanced** page): **Host**, **Off Text**, and **On Text**.
+- **Relays** page (**Relay** table): **Pulse Ms** and **GPX Channel**.
+- **Status Inputs** page (**Status** table): **Label**, **Off Text**, **On Text**, and **GPX Channel**.
+- **Analog Inputs** page (**Analog** table): **GPX Channel** and **Calibrate To**. In **Calibrate To**, enter the engineering value that the current reading should show. The connector calculates the calibration factor and sends it to the device.
+- **Advanced** page (**Ping** table): **Host**, **Off Text**, and **On Text**.
 
-Use the **Delete** button in a row to remove that channel from the GPX device.
+Use the **Delete** button in a row of the **Status**, **Analog**, **SNMP**, or **Ping** table to remove that channel from the GPX device.
 
 ### Handling Device Alarms
 
