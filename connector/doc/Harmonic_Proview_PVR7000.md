@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Harmonic_Proview_PVR7000
+description: "Control and monitor Harmonic Proview PVR7000 devices in DataMiner, including version-specific connections, input status, decoder settings, and alarms."
 ---
 
 # Harmonic Proview PVR7000
@@ -10,7 +11,7 @@ This connector can be used to control and monitor the Harmonic Proview PVR7000.
 
 ## About
 
-### Version info
+### Version Info
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
@@ -46,9 +47,9 @@ This connector can be used to control and monitor the Harmonic Proview PVR7000.
 
 ### Connections
 
-This connector uses an **SNMP** and/or **serial** and/or **HTTP** connection, depending on the version. It requires the following input during element creation:
+Depending on the version, this connector uses SNMP, serial, HTTP, or a combination of these connections. It requires the input detailed below during element creation.
 
-#### SNMP connection (versions up to 4.2.0.x)
+#### SNMP Connection (Versions up to 4.2.0.x)
 
 Version 1.1.0.x uses SNMP as its main connection. SNMP is also used in other versions up to 4.2.0.x.
 
@@ -62,7 +63,7 @@ SNMP Settings:
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: the community string in order to set to the device. The default value is *private*.
 
-#### Serial connection (no longer available from version 4.2.0.x onwards)
+#### Serial Connection (No Longer Available from Version 4.2.0.x Onwards)
 
 Some versions before 4.2.0.x use a serial connection. Version 1.1.0.x does not.
 
@@ -71,49 +72,45 @@ SERIAL CONNECTION:
 - **IP address/host**: The polling IP of the device.
 - **IP port**: 23 (telnet) or 22 (SSH)
 
-<a id="http-connection-available-from-version-4101-onwards"></a>
-
-#### HTTP connection (version 1.1.0.x and from version 4.1.0.1 onwards)
+#### HTTP Connection (Version 1.1.0.x and from Version 4.1.0.1 Onwards)
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *80*.
-- **Bus address**: If the proxy server has to be bypassed, by default *bypassproxy*.
-
-In version 1.1.0.x, the HTTP bus address is preset to *ByPassProxy* and cannot be changed.
+- **Bus address**: If the proxy server has to be bypassed, by default *bypassproxy*. In version 1.1.0.x, the HTTP bus address is preset to *ByPassProxy* and cannot be changed.
 
 ## Usage
 
 ### Version 1.1.0.x
 
-#### General and Modules pages
+#### General and Modules Pages
 
 The **General** page displays device and SNMP system information. Select **Modules** to open the Modules table.
 
-From version 1.1.0.2, the Modules table lets you assign a **Custom Name** to each module. Names must be unique among the displayed modules. To clear a custom name, enter `-9999`.
+Starting from version 1.1.0.2, the Modules table lets you assign a **Custom Name** to each module. Names must be unique among the displayed modules. To clear a custom name, enter `-9999`.
 
-From version 1.1.0.6, custom names are saved by module SNMP instance. When Modules polling is disabled and re-enabled, or a module row reappears, its saved name can be restored if the name is not already in use by another row. Check the names after a hardware or license change, as a reused SNMP instance can retain a previous name.
+Starting from version 1.1.0.6, custom names are saved by module SNMP instance. When module polling is disabled and re-enabled, or a module row reappears, its saved name can be restored if the name is not already in use by another row. Check the names after a hardware or license change, as a reused SNMP instance can retain a previous name.
 
-#### Alarm page (1.1.0.x)
+#### Alarm Page
 
 The **Alarm** page shows active SNMP alarms in the **Raised Alarms** table. Use **Raised Alarms Displaykey** to select how the rows are named.
 
-#### Satellite Input page
+#### Satellite Input Page
 
 The **Satellite Inputs Table** shows satellite input status. Select **Refresh Physical IDs** to update the **Physical ID** values.
 
-From version 1.1.0.5, you can set a custom name for an input. Set **Satellite Inputs Display Key** to **Custom Name DVB-S/S2 Index** to include the name in the row's display key. Enter `-9999` to clear a custom name. The **Physical ID** and custom name are saved independently of the polled table and restored when the same input is polled again after polling has been disabled.
+Starting from version 1.1.0.5, you can set a custom name for an input. Set **Satellite Inputs Display Key** to **Custom Name DVB-S/S2 Index** to include the name in the row's display key. Enter `-9999` to clear a custom name. The **Physical ID** and custom name are saved independently of the polled table and restored when the same input is polled again after polling has been disabled.
 
-#### TS Inputs page
+#### TS Inputs Page
 
-From version 1.1.0.2, the **TS Inputs** page contains the **TS Inputs** table with information polled from the device.
+Starting from version 1.1.0.2, the **TS Inputs** page contains the **TS Inputs** table with information polled from the device.
 
-#### Polling Settings page
+#### Polling Settings Page
 
-From version 1.1.0.3, use the **Polling Manager** to enable or disable individual datasets and adjust their polling intervals. From version 1.1.0.4, the default interval is one minute; previously configured intervals can differ. Disabling **Modules** or **Satellite Inputs** polling clears the respective table, which is populated again after polling resumes successfully.
+Starting from version 1.1.0.3, use the **Polling Manager** to enable or disable individual datasets and adjust their polling intervals. Starting from version 1.1.0.4, the default interval is one minute; previously configured intervals can differ. Disabling **Modules** or **Satellite Inputs** polling clears the respective table, which is populated again after polling resumes successfully.
 
-#### HTTP Login page
+#### HTTP Login Page
 
 Set the **HTTP Username** and **HTTP Password** for HTTP requests, including configuration retrieval and device restart. SNMP polling is configured separately.
 
@@ -121,9 +118,9 @@ Set the **HTTP Username** and **HTTP Password** for HTTP requests, including con
 
 The following pages and controls vary by connector version.
 
-#### General page
+#### General Page
 
-This page displays general information about the device. It also contains the **Login Status** and the **Login** page button. To start the communication, click the **Login** page button, fill in the username and password to access the device and click the **Login** button. The **Login Status** will then show if the login succeeded or failed.
+This page displays general information about the device. It also contains the **Login Status** and the **Login** page button. To start the communication, click the **Login** page button, fill in the username and password to access the device, and click the **Login** button. The **Login Status** will then show if the login succeeded or failed.
 
 With the **Enable Multiplex Retrieval** toggle button, you can disable/enable the retrieval of multiplex data.
 
@@ -131,106 +128,106 @@ The **Device Info** page button shows all the connected hardware. Depending on t
 
 For versions with an **HTTP Login** page button, use it to define the username and password for HTTP requests. These parameters must be filled in to use the HTTP API.
 
-#### Alarm page
+#### Alarm Page
 
 This page displays a table with the **active alarms** on the device. In addition, a toggle button at the top of the page allows you to enable or disable the **Alarm Polling (SNMP)**. However, note that SNMP alarm polling is no longer used in the connector from version 4.2.1.x onwards.
 
-#### Physical Inputs page (from version 4.2.0.x onwards)
+#### Physical Inputs Page (From Version 4.2.0.x Onwards)
 
 This page displays the **DVB-S/S2 Status Table**, with the reception status of the DVB-S/S2 input port properties, the **GbE Socket In** **Table**, and the **ASI Ports Input** **Table**. You can access the configuration table for the DVB-S/S2 via a page button.
 
-#### Input Transport Streams page (from version 4.2.0.x onwards)
+#### Input Transport Streams Page (From Version 4.2.0.x Onwards)
 
 This page contains the **Input Transport Stream Table** and **Input TS Services Table**.
 
-#### Output Transport Streams page (from version 4.2.0.x onwards)
+#### Output Transport Streams Page (From Version 4.2.0.x Onwards)
 
 This page is similar to the Input Transport Streams page, except that it shows the **Output Transport Streams Tables**.
 
-#### Physical Outputs page (from version 4.2.0.x onwards)
+#### Physical Outputs Page (From Version 4.2.0.x Onwards)
 
 Similar to the Physical Inputs page, this page contains the **GbE Socket Out Table** and **ASI Ports Output Table**.
 
-#### Demodulator Status and Demodulator Config page (prior to version 4.2.0.x)
+#### Demodulator Status and Demodulator Config Page (Prior to Version 4.2.0.x)
 
 With the **Demodulator Port Selection**, you can select a port to display all the relevant info on the same page. The **Demodulator Status/Config Table** buttons display information about all the available ports.
 
-#### CAM page (prior to version 4.2.0.x)
+#### CAM Page (Prior to Version 4.2.0.x)
 
 This page displays information about the **CAM** and **BISS** properties and the associated programs. In the **CAM Table**, the **Reboot CAM** column allows you to reboot a specific CAM module.
 
-#### CAM page (from version 4.2.0.x onwards)
+#### CAM Page (From Version 4.2.0.x Onwards)
 
 This page displays information about the **CAM BISS** parameters in two separate tables. It also contains the **Create BissKey** page button.
 
-#### Multiplex page
+#### Multiplex Page
 
 This page displays information on the **Multiplex** input ports and their **Services**.
 
 Prior to version 4.2.0.x, at the bottom of the page, you can find the **Normalize Multiplex** and **Normalize PIDs** buttons. These will normalize the values for the respective tables. The normalized values then become available via the page button **Normalized Values**.
 
-#### DSR page (prior to version 4.2.0.x)
+#### DSR Page (Prior to Version 4.2.0.x)
 
 This page displays information about the **DSR** configuration.
 
-#### XC page (prior to version 4.2.0.x)
+#### XC Page (Prior to Version 4.2.0.x)
 
-This page contains the tables **Current Program XC**, **Current Program XC Additional Info** and **Current TS XC**, which shows detailed information regarding the XC programs that are running on the device.
+This page contains the tables **Current Program XC**, **Current Program XC Additional Info**, and **Current TS XC**, which show detailed information regarding the XC programs that are running on the device.
 
-#### Decoder page
+#### Decoder Page
 
 This page contains the **Decoding Services** table and **Decoder Settings** table. It also contains the page buttons **Descramble Program** and **Decode Program**.
 
 From Version 4.2.1.2 onwards, it also contains the **Selected Service ID** and **Service Hunt** parameters.
 
-#### Video page (prior to version 4.2.0.x)
+#### Video Page (Prior to Version 4.2.0.x)
 
 On this page, you can view and configure parameters related to the **Video** decoder. The page also contains the page buttons **Advanced** and **More**, which display more advanced video features.
 
-#### Video page (from version 4.2.0.x onwards)
+#### Video Page (From Version 4.2.0.x Onwards)
 
 On this page, you can view and configure parameters related to the video decoder:
 
-- **Video PID Selection Table**: This table contains information related to the video program ID selection, including **Mode**, **Input PID** and **Cfg Input PID**.
-- **Video Settings page button**: Displays all configuration and status parameters related to the video decoding, including **HD Resolution/Frame Rate**, **Aspect Ratio** and **Video Display Format**.
+- **Video PID Selection Table**: This table contains information related to the video program ID selection, including **Mode**, **Input PID**, and **Cfg Input PID**.
+- **Video Settings page button**: Displays all configuration and status parameters related to the video decoding, including **HD Resolution/Frame Rate**, **Aspect Ratio**, and **Video Display Format**.
 
-#### Audio1 page (prior to version 4.2.0.x)
+#### Audio1 Page (Prior to Version 4.2.0.x)
 
 On this page, you can view and configure parameters related to the **Audio 1** decoder. For more advanced information, click the page button **Advanced Audio 1**.
 
-#### Audio2 page (prior to version 4.2.0.x)
+#### Audio2 Page (Prior to Version 4.2.0.x)
 
 On this page, you can view and configure parameters related to the **Audio 2** decoder. For more advanced information, click the page button **Advanced Audio 2**.
 
-#### Audio page (version 4.2.0.x)
+#### Audio Page (Version 4.2.0.x)
 
 On this page, you can view and configure parameters related to the audio decoder. This includes the **Audio PID Selection Table** and **Audio Decoder Configuration Table**. Via a page button, you can access the **Embedded Audio Table**.
 
-#### Ethernet Input page (prior to version 4.2.0.x)
+#### Ethernet Input Page (Prior to Version 4.2.0.x)
 
 This page displays information regarding **Ethernet Input Sockets** settings.
 
-#### Output page (prior to version 4.2.0.x)
+#### Output Page (Prior to Version 4.2.0.x)
 
 This page provides an overview of the **Physical** and **Socket Outputs** in the **Interfaces** **Table** and **Ethernet Output Sockets Table**, respectively.
 
-#### PCR page (version 4.2.0.x)
+#### PCR Page (Version 4.2.0.x)
 
 On this page, you can view and configure parameters related to the PCR decoder, such as **Audio-Video Sync**, **Generator Lock Input**, **Frame Sync Horizontal Delay**, etc.
 
-#### VBI page (version 4.2.0.x)
+#### VBI Page (Version 4.2.0.x)
 
 This page contains multiple parameters related to the VBI. There are also several page buttons, including **VBI AMOL**, **VBI CC**, **TV Guide**, **Teletext**, etc.
 
-#### DPI page (version 4.2.0.x)
+#### DPI Page (Version 4.2.0.x)
 
 This page contains multiple parameters related to the DPI, such as **DPI Pre Roll**, **DPI AS Index**, etc.
 
-#### OSD page (version 4.2.0.x)
+#### OSD Page (Version 4.2.0.x)
 
 This page contains parameters related to the OSD decoder, such as **Subs PID Selection Mode**, **OSD DVB Subtitles Mode**, etc. Via page buttons, you can access more information about DVB and TTX.
 
-## Web Interface page
+## Web Interface Page
 
 When available, this page provides access to the device's web interface. The web interface is only accessible when the client machine has network access to the product.
 
