@@ -4,137 +4,127 @@ uid: Connector_help_Linux_Platform_Memory_Calculation
 
 # Memory Calculation
 
-Below, you can find how the Linux Platform connector calculates memory-related parameters. The connector supports two connection types (SSH and SNMP), each with its own method for retrieving and computing memory metrics such as real memory, swap memory, and physical memory usage.
-
-The sections below detail the parameters retrieved from the system, the formulas used for calculated values, and the mapping between raw system data and connector parameters.
+The Linux Platform connector retrieves memory information through SSH or SNMP and calculates RAM, swap, and combined RAM and swap metrics.
 
 > [!NOTE]
-> The calculations below are used starting from version 2.0.2.8 (see [Changes in Range 2.0.x Compared to Earlier Ranges](#changes-in-range-20x-compared-to-earlier-ranges)).
+> The calculations on this page apply from connector version 2.1.0.4 onward. Earlier versions can use different calculations.
 
-| Parameter Name                   | PID | Display              | SSH Command    | SNMP OID                     | Comments                        |
-| -------------------------------- | --- | -------------------- | -------------- | -----------------------------| ------------------------------- |
-| Total Memory                     | 172 | General, Memory Info | N/A            | N/A                          | Value calculated                |
-| Total RAM Memory                 | 114 | Memory Info          | `MemTotal`     | OID: 1.3.6.1.4.1.2021.4.5.0  | N/A                             |
-| Total Swap Memory                | 118 | Memory Info          | `SwapTotal`    | OID: 1.3.6.1.4.1.2021.4.3.0  | N/A                             |
-| Available Memory                 | 112 | General, Memory Info | `MemAvailable` | OID: 1.3.6.1.4.1.2021.4.6.0  | N/A                             |
-| Available Swap Memory            | 119 | Memory Info          | `SwapFree`     | OID: 1.3.6.1.4.1.2021.4.4.0  | N/A                             |
-| Memory Buffer                    | 121 | Memory Info          | `Buffers`      | OID: 1.3.6.1.4.1.2021.4.14.0 | N/A                             |
-| Memory Cached                    | 122 | Memory Info          | N/A            | OID: 1.3.6.1.4.1.2021.4.3.0  | Value calculated (only for SSH) |
-| Memory Usage                     | 111 | General, Memory Info | N/A            | N/A                          | Value calculated                |
-| Swap Memory Usage                | 110 | General, Memory Info | N/A            | N/A                          | Value calculated                |
-| Memory Used                      | 113 | General, Memory Info | N/A            | N/A                          | Value calculated                |
+| Parameter Name | PID | Display | SSH (`/proc/meminfo`) | SNMP: hrStorageTable (preferred) | SNMP: UCD-SNMP-MIB (fallback) | Comments |
+|---|---|---|---|---|---|---|
+| Total Memory | 172 | General, Memory Info | N/A | N/A | N/A | Value calculated: Total RAM Memory + Total Swap Memory |
+| Total RAM Memory | 114 | Memory Info | `MemTotal` | `Physical memory` row, `hrStorageSize` (OID: 1.3.6.1.2.1.25.2.3.1.5) | `memTotalReal` (OID: 1.3.6.1.4.1.2021.4.5.0) | N/A |
+| Total Swap Memory | 118 | Memory Info | `SwapTotal` | `Swap space` row, `hrStorageSize` (OID: 1.3.6.1.2.1.25.2.3.1.5) | `memTotalSwap` (OID: 1.3.6.1.4.1.2021.4.3.0) | N/A |
+| Available Memory | 112 | General, Memory Info | N/A | N/A | N/A | Value calculated: Available RAM + Available Swap Memory |
+| Available RAM | 177 | Memory Info | `MemAvailable` | `Available memory` row, `hrStorageSize` (OID: 1.3.6.1.2.1.25.2.3.1.5) | `memSysAvail` (OID: 1.3.6.1.4.1.2021.4.27.0) | Estimated when `MemAvailable` or `memSysAvail` is unavailable (see [Available RAM](#available-ram)) |
+| Available Swap Memory | 119 | Memory Info | `SwapFree` | N/A | `memAvailSwap` (OID: 1.3.6.1.4.1.2021.4.4.0) | hrStorageTable: value calculated as Total Swap Memory - Used Swap |
+| Memory Buffer | 121 | Memory Info | `Buffers` | `Memory buffers` row, `hrStorageUsed` (OID: 1.3.6.1.2.1.25.2.3.1.6) | `memBuffer` (OID: 1.3.6.1.4.1.2021.4.14.0) | N/A |
+| Memory Cached | 122 | Memory Info | `Cached` + `SReclaimable` | `Cached memory` row, `hrStorageUsed` (OID: 1.3.6.1.2.1.25.2.3.1.6) | `memCached` (OID: 1.3.6.1.4.1.2021.4.15.0) | SSH value includes reclaimable slab memory |
+| Memory Usage | 111 | General, Memory Info | N/A | N/A | N/A | Value calculated; includes RAM and swap |
+| Memory RAM Usage | 124 | Memory Info | N/A | N/A | N/A | Value calculated; RAM only |
+| Swap Memory Usage | 110 | General, Memory Info | N/A | N/A | N/A | Value calculated |
+| Memory Used | 113 | General, Memory Info | N/A | N/A | N/A | Value calculated: Used RAM + Used Swap |
+| Used RAM | 178 | Memory Info | N/A | N/A | N/A | Value calculated: Total RAM Memory - Available RAM |
+| Used Swap | 179 | Memory Info | N/A | `Swap space` row, `hrStorageUsed` (OID: 1.3.6.1.2.1.25.2.3.1.6) | N/A | SSH and UCD-SNMP-MIB: value calculated as Total Swap Memory - Available Swap Memory |
 
-## Total Memory
+- Memory amounts are displayed in MB, using binary conversion: 1 MB = 1024 kB, and 1 kB = 1024 bytes.
+- Through SNMP, the connector uses `hrStorageTable` only if it contains all five required rows: `Physical memory`, `Memory buffers`, `Cached memory`, `Available memory`, and `Swap space`. Otherwise, it uses the UCD-SNMP-MIB objects.
+- The hrStorageTable OIDs are column OIDs. Rows are identified by their `hrStorageDescr` value (OID: 1.3.6.1.2.1.25.2.3.1.3). Row indexes depend on the SNMP agent. To query a single value, append the row index to the column OID, e.g., `1.3.6.1.2.1.25.2.3.1.5.<row index>`.
 
-Total memory on this host (both real and swap memory). Since the value is returned in KB, it is divided by 1024 to convert it to MB.
+> [!IMPORTANT]
+> **Memory Usage** (PID 111), **Memory Used** (PID 113), **Available Memory** (PID 112), and **Total Memory** (PID 172) include both RAM and swap. For RAM only, use **Memory RAM Usage** (PID 124), **Used RAM** (PID 178), **Available RAM** (PID 177), and **Total RAM Memory** (PID 114).
 
-- **SNMP**
+## RAM
 
-$$
-\text{Total Memory}=\frac{\text{Total Swap Memory}+\text{Total RAM Memory}}{1024}
-$$
+```text
+Used RAM = Total RAM Memory - Available RAM
 
-- **SSH**
+Memory RAM Usage = Used RAM / Total RAM Memory * 100
+```
 
-$$
-\begin{equation}
-\begin{split}
-\text{Total Memory}&=\frac{\text{Total RAM Memory}+\text{Total Swap Memory}}{1024}\\[10pt]
-&=\frac{\text{MemTotal}+\text{SwapTotal}}{1024}
-\end{split}
-\end{equation}
-$$
+**Memory Buffer** and **Memory Cached** are not subtracted again when calculating **Used RAM**. They only contribute to the **Available RAM** estimates described below.
 
-### Memory Usage
+## Swap
 
-The percentage of total memory currently in use. This metric indicates how much of the combined RAM and swap memory is being utilized by the system.
+Through SSH and UCD-SNMP-MIB, the connector retrieves the available swap memory and calculates the used swap memory:
 
-- **SNMP**
+```text
+Used Swap = Total Swap Memory - Available Swap Memory
+```
 
-$$
-\text{Memory Usage}=\left(1-\left(\frac{\text{Available Memory}}{\text{Total Memory}}\right)\right)\times{100}
-$$
+Through hrStorageTable, the connector retrieves the used swap memory and calculates the available swap memory:
 
-- **SSH**
+```text
+Available Swap Memory = Total Swap Memory - Used Swap
+```
 
-$$
-\begin{equation}
-\begin{split}
-\text{Memory Usage}&=\left(1-\frac{\text{Available Memory}}{\text{Total Memory}}\right)\times 100\\[10pt]
-&=\left(1-\frac{\text{MemAvailable}}{\text{MemTotal}}\right)\times{100}
-\end{split}
-\end{equation}
-$$
+For all sources, the usage is calculated as follows:
 
-## Swap Memory Usage
+```text
+Swap Memory Usage = Used Swap / Total Swap Memory * 100
+```
 
-The percentage of swap space currently in use. Swap memory is disk space used as virtual memory when physical RAM is full. High swap usage may indicate memory pressure on the system.
+## Total (RAM + Swap)
 
-- **SNMP**
+```text
+Total Memory = Total RAM Memory + Total Swap Memory
 
-$$
-\text{Swap Memory Usage}=\left(1-\left(\frac{\text{Available Swap Memory}}{\text{Total Swap Memory}}\right)\right)\times{100}
-$$
+Available Memory = Available RAM + Available Swap Memory
 
-- **SSH**
+Memory Used = Used RAM + Used Swap
 
-$$
-\begin{equation}
-\begin{split}
-\text{Swap Memory Usage}&=\left(1-\frac{\text{Available Swap Memory}}{\text{Total Swap Memory}}\right)\times{100}\\[10pt]
-&=\left(1-\frac{\text{SwapFree}}{\text{SwapTotal}}\right)\times{100}
-\end{split}
-\end{equation}
-$$
+Memory Usage = Memory Used / Total Memory * 100
+```
 
-## Memory Used
+Because **Memory Usage** includes swap in both its used amount and its total, unused swap can make this percentage considerably lower than **Memory RAM Usage**.
 
-The absolute amount of memory currently in use, expressed in MB. This represents the difference between total available memory and free memory.
+## Available RAM
 
-- **SNMP**
+The source of **Available RAM** depends on the connection type:
 
-$$
-\text{Memory Used}=\frac{\text{Total Memory}-\text{Available Memory}}{1024}
-$$
+- **SSH**: `MemAvailable`, if present and greater than 0. Otherwise, the connector estimates it:
 
-- **SSH**
+  ```text
+  Available RAM = MemFree + Buffers + Cached + SReclaimable - Shmem
+  ```
 
-$$
-\begin{equation}
-\begin{split}
-\text{Memory Used}&=\frac{\lvert\text{Total Memory}-\text{Available Memory}\rvert}{1024}\\[10pt]
-&=\frac{\lvert(\text{MemTotal})-(\text{MemAvailable})\rvert}{1024}
-\end{split}
-\end{equation}
-$$
+- **SNMP, hrStorageTable**: the `hrStorageSize` value of the `Available memory` row, as reported by the SNMP agent.
 
-## Memory Cached
+- **SNMP, UCD-SNMP-MIB**: `memSysAvail`, if greater than 0. Otherwise, the connector estimates it:
 
-The amount of memory used for caching file data to improve system performance, expressed in MB. This includes page cache (`Cached`) and reclaimable slab memory (`SReclaimable`). Cached memory can be freed by the system when applications need more memory.
+  ```text
+  Available RAM = memAvailReal + memBuffer + memCached - memShared
+  ```
 
-- **SSH Only**
+  This estimate uses `memAvailReal` (OID: 1.3.6.1.4.1.2021.4.6.0) and `memShared` (OID: 1.3.6.1.4.1.2021.4.13.0). `memAvailReal` is free RAM, comparable to `MemFree`, not to `MemAvailable`.
 
-$$
-\begin{equation}
-\begin{split}
-\text{Memory Cached}&=\frac{\text{Cached}+\text{SReclaimable}}{1024}\\[10pt]
-\end{split}
-\end{equation}
-$$
+Both fallback formulas are estimates and can differ from the kernel's `MemAvailable` value.
 
-## Changes in Range 2.0.x Compared to Earlier Ranges
+## hrStorageTable Values
 
-- The following parameters have been renamed to better reflect their purpose:
+`hrStorageSize` and `hrStorageUsed` are counts of allocation units, not kB. The connector converts each value using `hrStorageAllocationUnits` (OID: 1.3.6.1.2.1.25.2.3.1.4) of the same row:
 
-  - Total Physical Memory (PID: 172) is now Total Memory.
-  - Available Physical Memory (PID: 112) is now Available Memory.
-  - Used Physical Memory (PID: 113) is now Memory Used.
+```text
+Amount (kB) = count * hrStorageAllocationUnits / 1024
+```
 
-- The following parameters have been removed as they are no longer necessary due to the updated calculations:
+The result is rounded down to whole kB and then converted to MB.
 
-  - Actual Available Physical Memory (PID: 173)
-  - Actual Used Physical Memory (PID: 123)
-  - Actual Physical Memory Usage (PID: 174)
-  - Physical Memory Usage (PID: 124)
+**Used RAM** is always calculated from **Total RAM Memory** and **Available RAM**. The `hrStorageUsed` value of the `Physical memory` row is not used.
 
-- For SNMP, the available memory was retrieved initially using the OID 1.3.6.1.4.1.2021.4.11.0 (`MemTotalFree`), which has now been replaced with OID 1.3.6.1.4.1.2021.4.6.0 to align with the SSH command `MemAvailable`.
+## Percentages and Special Cases
+
+- Percentages are calculated from the source values before they are rounded for display. Recalculating a percentage from the displayed MB values can therefore give a slightly different result.
+- If the corresponding total is 0, the usage is 0%. For example, a host without swap reports 0% for **Swap Memory Usage**.
+- Negative memory amounts are displayed as 0 MB.
+
+## Comparing SSH and SNMP Values
+
+Values retrieved through SSH, through SNMP, or with tools on the host do not necessarily match:
+
+- Memory use changes continuously, so samples taken at different times can differ.
+- The SNMP agent determines how its values are calculated. The `Available memory` row is not guaranteed to match `MemAvailable` in `/proc/meminfo`.
+- The fallback formulas for **Available RAM** are estimates.
+- **Memory Cached** includes `SReclaimable` through SSH, but contains the cached value reported by the agent through SNMP.
+- Tools such as `free`, `top`, and `htop` can define used memory differently and use different units.
+
+For a meaningful comparison, use samples taken at the same time, compare RAM-only values with RAM-only values, and use the same units.
