@@ -9,7 +9,7 @@ description: "Learn how to configure the TestTree StreamProbe connector to monit
 
 The **TestTree StreamProbe** connector monitors transport streams, programs, PIDs, RF reception, and OTT services using HTTP data and SNMP traps. It also exposes provisioning information and stream provisioning controls.
 
-See the [connector overview](xref:Connector_help_TestTree_StreamProbe) for key capabilities and supported firmware. This page describes connector version **1.0.1.20**, which requires DataMiner **10.3.0.0 - 12752** or higher.
+See the [connector overview](xref:Connector_help_TestTree_StreamProbe) for key capabilities and supported firmware. This page describes connector version **1.0.1.21**, which requires DataMiner **10.3.0.0 - 12752** or higher.
 
 ## Configuration
 
@@ -48,6 +48,8 @@ The **Web Interface** page opens the product interface at the HTTP polling IP ad
 ### General
 
 Use **Probe Status**, CPU and memory usage, and **Total Bitrate** to distinguish probe availability or resource issues from a problem affecting individual content. Compare declared and active stream and program counts to identify missing monitored content.
+
+**Manager Database Status** shows whether the database of the StreamProbe Manager is *Online* or *Offline*. It is derived from the **Alarm List** response and shows *Offline* when that response reports that the database is not ready or not started. Check this status when alarm data is missing. The status is only updated while alarms are retrieved over HTTP (see [Alarms](#alarms)), and it shows **N/A** when **Alarm List** polling is disabled.
 
 **Automatic Removal Delay** exposes a retention setting with a default of *5 days*; *0* is displayed as **N/A**. The current source does not register the legacy delayed-cleanup actions, so do not rely on this setting alone to remove unavailable entries. See [Notes](#notes).
 
