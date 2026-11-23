@@ -972,7 +972,10 @@
   - name: Ateme Titan File
     topicUid: Connector_help_Ateme_Titan_File
   - name: Ateme Titan Live
-    topicUid: Connector_help_Ateme_Titan_Live
+    topicUid: Connector_marketing_Ateme_Titan_Live
+    items:
+    - name: Technical Documentation
+      topicUid: Connector_help_Ateme_Titan_Live
   - name: Ateme Titan Live - Service
     topicUid: Connector_help_Ateme_Titan_Live_-_Service
   - name: Ateme Titan Mux
