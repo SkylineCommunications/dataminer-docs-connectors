@@ -10888,6 +10888,11 @@
     topicUid: Connector_help_Thales_TDU21K50_Exciter_A
   - name: Thales TDU21K50 Exciter B
     topicUid: Connector_help_Thales_TDU21K50_Exciter_B
+  - name: Thales TDU2K5DD UHF DVB-T
+    topicUid: Connector_help_Thales_TDU2K5DD_UHF_DVB-T
+    items:
+    - name: Thales TDU2K5DD UHF DVB-T Technical
+      topicUid: Connector_help_Thales_TDU2K5DD_UHF_DVB-T_Technical
   - name: Thales TNM-7122-D
     topicUid: Connector_help_Thales_TNM-7122-D
   - name: Thales TNM-7222-D Amethyst III
