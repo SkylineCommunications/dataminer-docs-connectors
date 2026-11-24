@@ -1,87 +1,44 @@
 ---
-uid: Connector_help_Evertz_3080IPX-128-25G
+uid: Connector_marketing_Evertz_3080IPX-128-25G
 ---
 
 # Evertz 3080IPX-128-25G
 
-The 3080IPX is an integrated multicast label switching fabric that allows 10GE and 1GE signaling and can be used for video LAN/WAN transport applications.
-
 ## About
 
-### Version Info
+The Evertz 3080IPX-128-25G is a high-capacity IP routing switch that moves live video, audio, and data streams across 10G and 25G connections in broadcast facilities. This DataMiner connector brings the health, traffic, and routing status of the switch into DataMiner, so your team can see at a glance what is flowing through the network and whether the device is in good shape.
 
-| Range              | Key Features           | Based on | System Impact |
-|--------------------|------------------------|----------|---------------|
-| 1.0.0.x            | Initial version.       | -        | -             |
-| 1.0.1.x            |                        | 1.0.0.2  | -             |
-| 1.0.2.x [SLC Main] | HTTP connection added. | 1.0.1.1  | -             |
+## Key Features
 
-### Product Info
+- **Live multicast route visibility**: See which streams are active, where they come from, where they go, and how much bandwidth they use, without logging in to the device.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.3                    |
-| 1.0.1.x   | 2.3                    |
-| 1.0.2.x   | 2.3                    |
+- **Port-level insight**: Follow the status and activity of every port, and choose which ports you want to track, so you focus on the connections that matter.
 
-### System Info
+- **Connected device overview**: Find out which neighboring devices are linked to each port, making it easier to understand how the switch fits into the wider network.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+- **Link and signal problem reporting**: Get notified of fabric link and user-defined problems as they occur, so issues are noticed early.
 
-## Configuration
+- **Timing configuration and monitoring**: Review and adjust the synchronization (PTP) settings of the switch to keep your facility in step.
 
-### Connections
+- **Hardware health at a glance**: Keep an eye on power supplies, fans, temperatures, and overall health faults to catch hardware problems before they cause an outage.
 
-#### SNMP Main Connection
+## Use Cases
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+### Keeping Live Streams Under Control
 
-SNMP CONNECTION:
+**Challenge**: In a busy IP facility, operators need to know quickly whether a stream is routed correctly and how much of the available bandwidth it uses. Checking this on the device itself is slow and does not scale.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Solution**: DataMiner shows the multicast routes of the switch, including their sources, destinations, and bandwidth, together with the status of the ports that carry them.
 
-SNMP Settings:
+**Benefit**: Operators find routing problems faster and can spot overloaded links before they affect the signal.
 
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+### Early Warning for Hardware and Link Issues
 
-#### SNMP Secondary Connection
+**Challenge**: A failing fan, power supply, or network link can go unnoticed until it affects the production.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+**Solution**: The connector reports hardware status, temperatures, and link problems in DataMiner, where they can trigger alarms and notifications for the right people.
 
-SNMP CONNECTION:
+**Benefit**: Your team can act before a small issue becomes an outage, which reduces downtime and protects your on-air quality.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-
-SNMP Settings:
-
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
-
-#### HTTP Connection
-
-This connection is used to poll the Evertz REST API.
-
-### Initialization
-
-For the HTTP connection, the **API Key** parameter on the **General** page needs to be set for the outgoing requests to work.
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
-## How to Use
-
-The **General** page of this connector shows the version running on the device. You can also see and configure the alias name and the API key there.
-
-The **Ports** page contains information about the ports, such as the Maximum Ports, the Port Config Table, and the Port Status Table. This page also contains a Port Measurement subpage, where you can enable or disable the measurement of each port. If the measurement of the port is disabled, it will not be displayed in the Port Config, Port Status, and IGMP Ports tables.
-
-The **Multicast Sources** page contains information such as Multicast Count, Maximum, and Egress Count. It also displays the Multicast Table.
-
-The **IGMP Ports** page contains a table with basic information about the IGMP Ports, including IGMP Routing, Fast Leave, Sources with VLAN, etc.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_3080IPX-128-25G_Technical).
