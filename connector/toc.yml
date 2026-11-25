@@ -8498,6 +8498,11 @@
         topicUid: Connector_help_Rohde_Schwarz_FSC3_Technical
   - name: Rohde Schwarz FSH3
     topicUid: Connector_help_Rohde_Schwarz_FSH3
+  - name: Rohde Schwarz FSL18
+    topicUid: Connector_help_Rohde_Schwarz_FSL18
+    items:
+      - name: Rohde Schwarz FSL18 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSL18_Technical
   - name: Rohde Schwarz FSL3
     topicUid: Connector_help_Rohde_Schwarz_FSL3
     items:
