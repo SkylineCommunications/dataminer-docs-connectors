@@ -3315,6 +3315,9 @@
   items:
   - name: ELTI TERX Series
     topicUid: Connector_help_ELTI_TERX_Series
+    items:
+    - name: ELTI TERX Series Technical
+      topicUid: Connector_help_ELTI_TERX_Series_Technical
 - name: EM Solutions
   items:
   - name: EM Solutions Cobra Maritime Terminal 368B
