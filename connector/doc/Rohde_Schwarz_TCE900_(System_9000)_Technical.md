@@ -3,7 +3,7 @@ uid: Connector_help_Rohde_Schwarz_TCE900_(System_9000)_Technical
 description: Technical help for the Rohde Schwarz TCE900 (System 9000) connector, with SNMP connection setup, page overview, and control cautions.
 ---
 
-# Rohde Schwarz TCE900 (System 9000) Technical
+# Rohde Schwarz TCE900 (System 9000)
 
 ## About
 
@@ -28,19 +28,15 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the TCE900 (default: *public*).
 - **Set community string**: The community string used when setting values on the TCE900 (default: *private*).
 
-### Initialization
-
-No further configuration is required after element creation. All data is polled on three cycles (1 min, 1 h, and 24 h); each cycle also runs once immediately after element startup, so the slow-changing configuration pages are filled in without waiting for the daily cycle.
-
-The **Web Interface** address on the General page is filled in automatically with the polling IP of the element when it is empty. You can overwrite it if the web interface must be reached on a different address, for example when the element polls through a gateway.
-
 ### Web Interface
 
-The Web Interface page embeds the web interface of the TCE900 using the address configured on the General page.
+The Web Interface page embeds the web interface of the TCE900 using the **Web Interface** address on the General page. This address is filled in automatically with the polling IP of the element when it is empty. You can overwrite it if the web interface must be reached on a different address, for example when the element polls through a gateway.
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
+
+All data is retrieved by SNMP polling on three cycles (1 min, 1 h, and 24 h); each cycle also runs once immediately after element startup, so the slow-changing configuration pages are filled in without waiting for the daily cycle.
 
 ### General Page
 
