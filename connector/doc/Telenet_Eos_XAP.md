@@ -8,12 +8,6 @@ The Telenet Eos XAP protocol provides an interface for integration and managemen
 
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
 ### Product Info
 
 | Range     | Supported Firmware     |
@@ -34,11 +28,9 @@ The Telenet Eos XAP protocol provides an interface for integration and managemen
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP of the device, e.g., *xxx.yyy.zzz.com*.
-- **IP port**: The IP port of the device, e.g., *8080*.
-- **Device address**: The device address (default: *ByPassProxy*).
+- **IP address/host**: The HTTP gateway host used for XAP requests.
+- **IP port**: The gateway port (default: *443*).
+- **Device address**: The device address (default: *false*).
 
 ## How to Use
 
@@ -50,6 +42,15 @@ The **General** page includes the following parameters:
 
 - **Press Key**: This parameter is used to simulate the pressing of buttons on the remote control. You can select a specific key to trigger an action on the set-top box. It supports discrete measurements, providing a clear response for each action.
 - **HDMI Resolution**: Displays or configures the current HDMI output resolution of the set-top box. You can use this to read the current resolution and set a new resolution to adjust the display settings as required.
+
+From connector version 1.0.0.3, the page also includes:
+
+- **Broker Status**: Shows whether the set-top box is connected to its broker. A disconnected or unavailable status triggers a warning by default.
+- **Power State**: Shows whether the set-top box is operational or in active standby. Alarm levels can be configured in an alarm template. An unavailable state triggers a warning by default.
+- **Auto Standby Timer**: Shows the auto standby timer in seconds.
+- **Refresh Status**: Requests an update of the broker status, power state, and auto standby timer.
+
+The status values are also refreshed every 12 hours. When a response is processed, an unsuccessful HTTP status, invalid data, or an unrecognized status is shown as *N/A*.
 
 ### Settings
 
