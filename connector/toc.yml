@@ -609,6 +609,9 @@
   items:
   - name: Apache Cassandra Cluster Monitor
     topicUid: Connector_help_Apache_Cassandra_Cluster_Monitor
+    items:
+    - name: Apache Cassandra Cluster Monitor Technical
+      topicUid: Connector_help_Apache_Cassandra_Cluster_Monitor_Technical
 - name: Apantac
   items:
   - name: Apantac LE-20HD

@@ -1,54 +1,57 @@
 ---
 uid: Connector_help_Apache_Cassandra_Cluster_Monitor
+description: The Apache Cassandra Cluster Monitor connector monitors a Cassandra cluster, providing information on nodes, roles, tables, repair history, and more.
 ---
 
 # Apache Cassandra Cluster Monitor
+
+## About
 
 Apache Cassandra is a NoSQL database designed to provide scalability, reliability, and availability with linear performance scaling. Cassandra databases are designed as a distributed system, aimed to handle big data efficiently.
 
 This connector is designed to monitor a Cassandra cluster, providing useful information on nodes, roles, tables, repair history, and more.
 
-## About
+## Key Features
 
-### Version Info
+- **Node monitoring**: Displays information on the nodes in the Cassandra cluster.
+- **Role overview**: Lists the roles defined in the Cassandra cluster.
+- **Table information**: Provides details on the cluster tables, including virtual tables such as clients, disk usage, maximum partition size, settings, and tombstones per read.
+- **Repair history**: Shows the repair history of the cluster.
+- **System checks**: Performs system checks on the Cassandra cluster.
+- **Cassandra Installer integration**: Lets you launch the Cassandra Installer directly from a context menu in the element.
 
-| Range                | Key Features                                   | Based on     | System Impact     |
-|----------------------|------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                | -            | -                 |
-| 1.0.1.x              | System checks                                  | 1.0.0.2      | -                 |
-| 1.0.2.x [SLC Main]   | Context menu to launch the Cassandra Installer | 1.0.1.5      | -                 |
+## Use Cases
 
-### Product Info
+### Centralized Cluster Visibility
 
-| Range     | Supported Firmware                                                                                |
-|-----------|---------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | 3.11 4.0 (virtual tables: clients, disk_usage, max_partition_size, settings, tombstones_per_read) |
-| 1.0.1.x   | 3.11 4.0 (virtual tables: clients, disk_usage, max_partition_size, settings, tombstones_per_read) |
-| 1.0.2.x   | 3.11 4.x (virtual tables: clients, disk_usage, max_partition_size, settings, tombstones_per_read) |
+**Challenge**: A Cassandra cluster is distributed across multiple nodes, which makes it difficult to get a clear overview of its overall state.
 
-### System Info
+**Solution**: The connector retrieves node, role, and table information from the cluster and displays it in a single DataMiner element.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+**Benefit**: You can follow up on the entire cluster from one place, using standard DataMiner alarm and trend capabilities.
 
-## Configuration
+### Following Up on Repairs
 
-### Connections
+**Challenge**: Regular repairs are needed to keep data consistent across replicas, but verifying whether they were executed is time-consuming.
 
-#### Virtual Connection
+**Solution**: The connector displays the repair history of the cluster.
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Benefit**: You can quickly verify that repairs have run and detect gaps before they lead to data inconsistencies.
+
+### Managing Cassandra Nodes
+
+**Challenge**: Monitoring and setting up Cassandra nodes typically requires switching between different tools.
+
+**Solution**: The connector provides a context menu to launch the Cassandra Installer directly from the element.
+
+**Benefit**: You can monitor and manage your Cassandra setup from within DataMiner.
+
+## Technical Reference
+
+### Prerequisites
+- **Apache Cassandra 3.11 or 4.x** is required. Version 4.x is needed to retrieve the virtual table data.
+ 
+- **Cluster credentials** (IP, port, user name, and password) are needed to connect to the Cassandra cluster.
 
 > [!NOTE]
-> For the **1.0.0.x** range only: Make sure *ApacheCassandraCluster.dll* and *System.Threading.Tasks.Dataflow.dll* are present on the DMA in the folder *C:\Skyline DataMiner\Files*.
-
-### Initialization
-
-When the element has been created, configure the connection to the Cassandra cluster. To do so, on the **Connector Settings** page, specify the **IP**, **Port**, **User Name,** and **Password**.
-
-## How to Use
-
-When the connection on the **Connector Settings** page has been configured, information from the Cassandra cluster will be retrieved and displayed in the element.
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Apache_Cassandra_Cluster_Monitor_Technical).
